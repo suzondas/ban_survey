@@ -18,7 +18,8 @@ class LoginController extends Controller
         $credentials = $request->only('eiin', 'password');
         if (Auth::attempt($credentials)) {
             if (Auth::user()->user_type == 'Institute') {
-                if (in_array(Auth::user()->institute_type, [1,3,4])) {
+//                if (in_array(Auth::user()->institute_type, [1,3,4])) {
+                if (Auth::user()->institute_type == 1) {
                     return redirect('schoolAndCollege/firstPage');
                 }
             } else {

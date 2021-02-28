@@ -7,64 +7,108 @@
         School Second Page
         <hr>
         <div class="container">
-            <div>
-                <br>
-                <lavel>১.৭.১ জমির অবস্থান:</lavel>
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col"> </th>
-                        <th scope="col">দখল স্বত্বে</th>
-                        <th scope="col"> </th>
-                        <th scope="col">দখল স্বত্বে নয় </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">মৌজার নাম: </th>
-                        <td><input type="text" name=""></td>
-                        <th scope="row">মৌজার নাম: </th>
-                        <td><input type="text" name=""></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">খতিয়ান নং:</th>
-                        <td><input type="text" name=""></td>
-                        <th scope="row">খতিয়ান নং:</th>
-                        <td><input type="text" name=""></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">দাগ নং:</th>
-                        <td><input type="text" name=""></td>
-                        <th scope="row">দাগ নং:</th>
-                        <td><input type="text" name=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td scope="row">অখন্ড………….শতাংশ</td>
-                        <td></td>
-                        <td scope="row">অখন্ড………….শতাংশ</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-            </div>
-            <div class="row" style="align-content: end">
-                <label for="totalLand"> ১.৭ প্রতিষ্ঠানটির মোট জমির পরিমাণ:</label>
-                <div>
-                    <label for="">(১) দখল স্বত্বে (শতাংশ):</label> <input type="number" name="">
-                    <label for="">(২) দখল স্বত্বে নয় (শতাংশ):</label><input type="number" name="">
-                    <label for=""> মোট (শতাংশ):</label><input type="number" name="">
+            <div class="body">
+                <label>১.৭.১ জমির অবস্থান:</label>
+            <div class="row">
+                <div class="col-md"></div>
+                <div class="col-md">
+                    দখল স্বত্বে
                 </div>
-                <div>
-
+                <div class="col-md"></div>
+                <div class="col-md">
+                    দখল স্বত্বে নয়
                 </div>
 
             </div>
-            <div>
-                <lavel>১.৭.২ জমির ব্যবহার ও পরিমাণ (শতাংশে):</lavel>
-                <input type="number" name="">
+            <div class="row">
+                <div class="col-md">মৌজার নাম:</div>
+                <div class="col-md"><input type="text" class="form-control" name=""></div>
+                <div class="col-md">মৌজার নাম:</div>
+                <div class="col-md"><input type="text" class="form-control" name=""></div>
+
             </div>
+            <div class="row">
+                <div class="col-md">খতিয়ান নং:</div>
+                <div class="col-md"><input type="number" class="form-control" name=""></div>
+                <div class="col-md">খতিয়ান নং:</div>
+                <div class="col-md"><input type="number" class="form-control" name=""></div>
+
+            </div>
+            <div class="row">
+                <div class="col-md">দাগ নং:</div>
+                <div class="col-md"><input type="number" class="form-control" name=""></div>
+                <div class="col-md">দাগ নং:</div>
+                <div class="col-md"><input type="number" class="form-control" name=""></div>
+
+            </div>
+            <div class="row">
+                <div class="col-md">অখন্ড (শতাংশ)</div>
+                <div class="col-md"><input type="number" class="form-control" name=""></div>
+                <div class="col-md">অখন্ড (শতাংশ)</div>
+                <div class="col-md"><input type="number" class="form-control" name=""></div>
+            </div>
+
+            <div class=" row mt-2">
+                <label>১.৭ প্রতিষ্ঠানটির মোট জমির পরিমাণ:</label>
+</div>
+                <div class="row mt-2">
+                    <div class="col-">
+                        <label for="">(১) দখল স্বত্বে (শতাংশ):</label>
+                    </div>
+                    <div class="col-sm">
+                        <input type="number" name="" style="width:70px" >
+                    </div>
+                    <div class="col-">
+                        <label for="">(২) দখল স্বত্বে নয় (শতাংশ):</label>
+                    </div>
+                   <div class="col-md">
+                       <input type="number" name="" style="width:70px" >
+                   </div>
+                    <div class="col-sm">
+                        <label for=""> মোট (শতাংশ):</label>
+                    </div>
+
+                   <div class="col-md">
+                       <input type="number" name="" style="width:70px" >
+                   </div>
+
+                <div>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <lavel class="label-text">১.৭.২ জমির ব্যবহার ও পরিমাণ (শতাংশে):</lavel>
+            </div>
+<div class="row mt-2">
+        <div class="col-sm">বিবরণ</div>
+        <div class="col-sm">প্রতিষ্ঠানের ভবন</div>
+        <div class="col-sm">খেলার মাঠ</div>
+        <div class="col-sm">ছাত্রাবাস</div>
+        <div class="col-sm"></div>
+        <div class="col-sm">শিক্ষক আবাসন</div>
+        <div class="col-sm">আবাদি জমি</div>
+        <div class="col-sm">পুকুর</div>
+        <div class="col-sm">বাগান</div>
+        <div class="col-sm">শহিদ মিনার</div>
+        <div class="col-sm">অব্যবহৃত</div>
+        <div class="col-sm">অন্যান্য</div>
+        <div class="col-sm">মোট</div>
+</div>
+                <div class="row">
+                    <div class="col-">শতাংশ</div>
+                    <div class="col-"><input type="text" style=" width:70px" name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px" name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px" name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px" name=""></div>
+                    <div class="col-"><input type="text" style=" width:70px"  name=""></div>
+                </div>
             <div>
                 <table class="table table-striped">
                     <thead>
@@ -125,6 +169,10 @@
                 <lavel>১.৭.৮ প্রতিষ্ঠানটির অবস্থান:</lavel>
 
             </div>
+
+
+            </div>
+
 
         </div>
 
