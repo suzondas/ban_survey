@@ -22,8 +22,10 @@ class LoginController extends Controller
                     return redirect('schoolAndCollege/firstPage');
                 }
             } else {
-                return redirect('/')->withErrors(['Email or Password did not match!']);
+                return redirect('/')->withErrors(['Email or Password did not match!'])
+                    ;
             }
+
         }
     }
 

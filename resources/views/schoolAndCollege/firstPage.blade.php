@@ -7,11 +7,11 @@
         School First Page
         <hr>
         <div class="container">
-            <div class="row" align="right">
-                <div class="col-md-4">
-                    <label for="eiin">ইআইআইএন (EIIN):</label><input type="number" id="eiin">
-                    <label for="lat">অক্ষাংশ (Latitude):</label><input type="number" id="lat">
-                    <label for="long">দ্রাঘিমাংশ (Longitude):</label><input type="number" id="long">
+            <div class="row">
+                <div class="col text-right">
+                    <label for="eiin">ইআইআইএন (EIIN): &nbsp</label><input type="number" id="eiin"><br>
+                    <label for="lat">অক্ষাংশ (Latitude):&nbsp</label><input type="number" id="lat"><br>
+                    <label for="long">দ্রাঘিমাংশ (Longitude):&nbsp</label><input type="number" id="long">
                 </div>
             </div>
 
@@ -20,18 +20,21 @@
             </div>
             <div class="body">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col">
                         <label class="label-text" for="bangla_name">১.১ প্রতিষ্ঠানের নাম: বাংলায় (অনুমতি/স্বীকৃতিপত্র
                             অনুযায়ী): </label> &nbsp;
                         <input type="text" class="form-control" name="bangla_name"
                                id="bangla_name">
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col">
                         <label class="label-text" for="english_name">ইংরেজিতে (ব্লক লেটার): </label> &nbsp
                         <input type="text" class="form-control" name="english_name"
                                id="english_name">
                     </div>
+                </div>
+
+                <div class="row">
                     <div class="col-md-3">
                         <label class="label-number" for="holding_no">১.১.১ ঠিকানা: গ্রাম/হোল্ডিং নম্বর:</label> &nbsp
                         <input type="text"  class="form-control" name="holding_no" id="holding_no">
@@ -48,6 +51,8 @@
                         <label class="label-number" for="post_code">পোস্ট কোড:</label> &nbsp
                         <input type="number"  class="form-control" name="post_code" id="post_code">
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-3">
                         <label class="label-number" for="division">বিভাগ:</label>
                         <select class="custom-select" name="division">
@@ -78,9 +83,8 @@
                             <option value="" selected>Select</option>
                         </select>
                     </div>
-                    <div class="col-md-9">
-
-                    </div>
+                </div>
+                   <div class="row">
 
                     <div class="col-md-3">
                         <label class="label-number" for="mobile">১.১.২ মোবাইল নম্বর:</label> &nbsp
@@ -117,10 +121,9 @@
                         <input type="text"  class="form-control" name="constituency_dist"
                                id="constituency_dist">
                     </div>
-                    <div class="col-md-3">
-
-                    </div>
-                    <div class="col-md-3">
+                   </div>
+                <div class="row">
+                    <div class="col-md-4">
                         <label class="label-number" for="education_level">প্রতিষ্ঠানের স্তর :</label>
                         <select class="custom-select" name="education_level">
                             <option value="" selected>Select</option>
@@ -133,7 +136,7 @@
                             <option value="6">স্নাতকোত্তর</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label class="label-number" for="education_group">১.২.১ গ্রুপ স্কুল শাখা (একাধিক হতে পারে):</label>
                         <select class="custom-select" name="education_group">
                             <option value="" selected>Select</option>
@@ -142,7 +145,7 @@
                             <option value="3">ব্যবসা শিক্ষা</option>
                         </select>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <label class="label-number" for="education_group_col">১.২.২ গ্রুপ কলেজ শাখা:(একাধিক হতে পারে)</label>
                         <select class="custom-select" name="education_group_col">
                             <option value="" selected>Select</option>
