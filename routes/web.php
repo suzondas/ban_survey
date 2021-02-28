@@ -23,4 +23,4 @@ Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
         return view("{$Controller}.{$action}");
 });
-//    ->middleware('login.check');
+//->middleware('login.check');
