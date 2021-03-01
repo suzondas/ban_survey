@@ -140,33 +140,66 @@
                     </div>
                 </div>
 
-                <div class="row mt-2">
-                    <lavel>১.৭.৩ প্রতিষ্ঠানের সবচেয়ে পুরাতন ভবনটি নির্মাণের বছর</lavel> &nbsp &nbsp
-                    <input type="number" name="" class="">
+                <div class="row mt-2 col-8">
+                    <div class="col-6">
+                        ১.৭.৩ প্রতিষ্ঠানের সবচেয়ে পুরাতন ভবনটি নির্মাণের বছর
+                    </div>
+                    <div class="col col-2">
+                        <input type="number" name="" class="form-control">
+                    </div>
                 </div>
-                <div class="row mt-2">
-                    <lavel>১.৭.৪ প্রতিষ্ঠানের সর্বশেষ নতুন ভবনটি নির্মাণের বছর</lavel> &nbsp &nbsp
-                    <input type="number" name="">
+                <div class="row mt-2 col-8">
+                    <div class="col-6">
+                        ১.৭.৪ প্রতিষ্ঠানের সর্বশেষ নতুন ভবনটি নির্মাণের বছর
+                    </div>
+                    <div class="col col-2">
+                        <input type="number" name="" class="form-control">
+                    </div>
                 </div>
-                <div class="row mt-2">
-                    <lavel>১.৭.৫ সর্বশেষ ভবনটি নির্মাণে অর্থের উৎস</lavel>
+                <div class="row mt-2 col-8">
+                    <div class="col-6">
+                        ১.৭.৫ সর্বশেষ ভবনটি নির্মাণে অর্থের উৎস
+                    </div>
+                    <div class="col col-2">
+                        <select class="custom-select " name="english_version">
+                            <option value="1">সরকার-১</option>
+                            <option value="2">প্রকল্প-২</option>
+                            <option value="2">নিজস্ব-৩</option>
+                            <option value="2">এনজিও-৪</option>
+                            <option value="2">ব্যাক্তি-৫</option>
+                        </select>
+                    </div>
+                </div>
 
+                <div class="row mt-2 col-8">
+                    <div class="col-6">
+                        ১.৭.৬ সর্বশেষ নির্মিত ভবনের আয়তন(বর্গফুট)
+                    </div>
+                    <div class="col col-2">
+                        <input type="number" name="" class="form-control">
+                    </div>
                 </div>
-                <div class="row mt-2">
-                    <lavel>১.৭.৬ সর্বশেষ নির্মিত ভবনের আয়তন:-----------বর্গফুট</lavel>
-
+                <div class="row mt-2 col-8">
+                    <div class="col-6">
+                        ১.৭.৭ সকল ভবনের মোট আয়তন(বর্গফুট)
+                    </div>
+                    <div class="col col-2">
+                        <input type="number" name="" class="form-control">
+                    </div>
                 </div>
-                <div class="row mt-2">
-                    <lavel>১.৭.৭ সকল ভবনের মোট আয়তন:----------------বর্গফুট</lavel>
+                <div class="row mt-2 col-8">
+                    <div class="col-6">
+                        ১.৭.৮ প্রতিষ্ঠানটির অবস্থান:
+                    </div>
+                    <div class="col col-2">
+                        <select class="custom-select " name="english_version" style="width: 130px">
+                            <option value="1">নিজস্ব জমিতে</option>
+                            <option value="2">ভাড়া বাড়িতে</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="row mt-2">
-                    <lavel>১.৭.৮ প্রতিষ্ঠানটির অবস্থান:</lavel>
-
-                </div>
-
                 <div class="row mt-2">
                     <lavel>১.৭.৯ ভবন গৃহের মালিকানা, ধরন ও অবস্থা অনুযায়ী সংখ্যাঃ</lavel>
-
                 </div>
 
                 <div class="row border border-info py-1 mt-2">
@@ -579,14 +612,149 @@
                     </div>
 
                 </div>
-                <div class="row mt-2 col-3">
-                    ১.৭.১৪ প্রতিষ্ঠানটির কী কী অবকাঠামো/ সুবিধা রয়েছে ?
-                    <input type="checkbox" id="" name="" value="1">
-                    <label for=""> <label for="vehicle1"> সততা স্টোর </label><br></label><br>
-                    <input type="checkbox" id="" name="" value="1">
-                    <label for=""> <label for="vehicle1"> পতাকা স্ট্যান্ড </label><br></label><br>
 
+                <div class="row">
+                    ১.৭.১৪ প্রতিষ্ঠানটির কী কী অবকাঠামো/ সুবিধা রয়েছে ?
                 </div>
+                <div class="row border border-info py-1 mt-2 col-7">
+
+                    <div class="col">
+                        <label class="label-number" for="">শহীদ মিনার</label>
+                        <input type="checkbox"  class="form-control" name="" id="" value="1" style="width: 20px">
+                    </div>
+                    <div class="col">
+                        <label class="label-number" for="">পতাকা স্ট্যান্ড </label>
+                        <input type="checkbox"  class="form-control" name="" id="" value="2" style="width: 20px">
+                    </div>
+                    <div class="col">
+                        <label class="label-number" for="">সততা স্টোর</label>
+                        <input type="checkbox"  class="form-control" name="" id="" value="3" style="width: 20px">
+                    </div>
+                    <div class="col">
+                        <label class="label-number" for="">গ্যাস সংযোগ</label>
+                        <input type="checkbox"  class="form-control" name="" id="" value="4" style="width: 20px">
+                    </div>
+                    <div class="col">
+                        <label class="label-number" for="">হ্যান্ড স্যানিটাইজার</label>
+                        <input type="checkbox"  class="form-control" name="" id="" value="4" style="width: 20px">
+                    </div>
+                    <div class="col">
+                        <label class="label-number" for="">টয়লেট পেপার</label>
+                        <input type="checkbox"  class="form-control" name="" id="" value="4" style="width: 20px">
+                    </div>
+                    <div class="col">
+                        <label class="label-number" for="">সাবান</label> &nbsp
+                        <input type="checkbox"  class="form-control " name="" id="" value="4" style="width: 20px">
+                    </div>
+                </div>
+
+                <div class="row mt-2 col-4">
+                    ১.৭.১৫ প্রতিষ্ঠানের সীমানা প্রাচীর আছে কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-3">
+                    ১.৭.১৬ উত্তর হ্যাঁ হলে, প্রাচীরের অবস্থাঃ
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">সম্পূর্ণ</option>
+                        <option value="2">আংশিক</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-2">
+                    ১.৭.১৭ প্রাচীরের ধরন
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">পাকা</option>
+                        <option value="2">আধাপাকা</option>
+                        <option value="3">কাঁচা</option>
+                        <option value="4">প্রাকৃতিক</option>
+                    </select>
+                </div>
+
+                <div class="row mt-2 col-4">
+                    ১.৮ লাইব্রেরির জন্য পৃথক ভবন আছে কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-3">
+                    ১.৮.১ লাইব্রেরির জন্য কক্ষ আছে কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+
+                <div class="row mt-2">
+                    ১.৮.২ লাইব্রেরিতে বইয়ের সংখ্যা
+                </div>
+
+                <div class="row border border-info py-1 col-3">
+                    <div class="col">
+                        <label class="label-number" for="">পাঠ্যপুস্তক</label> &nbsp
+                        <input type="number"  class="form-control" name="" id="">
+                    </div>
+                    <div class="col">
+                        <label class="label-number" for="">সহায়ক</label> &nbsp
+                        <input type="number"  class="form-control" name="" id="">
+                    </div>
+                </div>
+                <div class="row mt-2 col-3">
+                    ১.৮.৩ শিক্ষার্থীদের লাইব্রেরি থেকে বই ইস্যু করা হয় কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-3">
+                    ১.৮.৪ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-4">
+                    ১.৮.৫ উত্তর হ্যাঁ হলে, মাসে ইস্যুকৃত বই এর সংখ্যা
+                    <input type="number"  class="form-control" name="" id="">
+                </div>
+                <div class="row mt-2 col-4">
+                    ১.৮.৬ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-4">
+                    ১.৮.৭ লাইব্রেরির পুস্তকাদির ক্যাটালগিং কম্পিউটারাইজড কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-4">
+                    ১.৮.৮ লাইব্রেরি পরিচালনার জন্য সহকারী লাইব্রেরিয়ান আছে কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-4">
+                    ১.৮.৯ লাইব্রেরি বিষয়ে সহকারী লাইব্রেরিয়ানের প্রশিক্ষণ আছে কি?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+                <div class="row mt-2 col-4">
+                    ১.৮.১০ লাইব্রেরি আওয়ার ক্লাস রুটিনে অনর্ভুক্ত আছে কি ?
+                    <select class="custom-select " name="english_version" style="width: 90px">
+                        <option value="1">হ্যাঁ</option>
+                        <option value="2">না</option>
+                    </select>
+                </div>
+
             </div>
         </div>
 
