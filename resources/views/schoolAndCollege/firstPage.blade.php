@@ -1,4 +1,4 @@
-@extends('template')
+@extends('schoolAndCollege/template')
 @section('content')
     <div class="container">
         @include('../components/banner')
@@ -181,7 +181,7 @@
                     <div class="col-md-4">
                         <label class="label-date" for="establish_date">১.২.৪  প্রতিষ্ঠার তারিখ :</label> &nbsp
                         <div class="input-group date">
-                      <input type="date" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span> 
+                      <input type="date" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                      <!-- $('#sandbox-container .input-group.date').datepicker({
                     format: "dd/mm/yyyy"
                 }); -->
@@ -302,7 +302,7 @@
                                     <td> <div class="input-group date">
                                         <input type="date" name="masters_not_apply" id="masters_not_apply" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
                                 </tr>
-                                
+
                                 <tr>
                                 <td scope="row">৭। এসএসসি ভোক</td>
                                    <td><select class="custom-select" style="width: 150px" name="nimmo_recog">
@@ -530,7 +530,7 @@
                     <div class="col">
                         <div class=""><label>১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
                         </div>
-                        
+
                         <table class="table table-bordered" style="text-align:center">
                               <thead>
                                 <tr>
@@ -631,7 +631,7 @@
                                 <tr>
                                   <th scope="col">অনুমোদনের তারিখ</th>
                                   <th scope="col">মেয়াদ উত্তীর্ণের তারিখ</th>
-                                  
+
                                 </tr>
                               </thead>
                               <tbody>

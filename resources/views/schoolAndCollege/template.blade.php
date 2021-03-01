@@ -8,6 +8,8 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Styles -->
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body class="">
 @yield('content')
