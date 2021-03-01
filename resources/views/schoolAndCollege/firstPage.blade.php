@@ -606,7 +606,15 @@
                 <div class="col">
                     <div class=""><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
                     </div>
-
+                        <label for="men"> পুরুষ: </label>
+                        <input type="number"  class="form-control" name="men"
+                               id="men" style="width:100px">
+                               <label for="female"> মহিলা: </label>
+                        <input type="number"  class="form-control" name="female"
+                               id="female" style="width:100px">
+                               <label for="total"> মোট:</label>
+                        <input type="number"  class="form-control" name="total"
+                               id="total" style="width:100px">
                 </div>
                 <div class="col">
                     <div class=""><label>১.৬.৩ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
@@ -616,9 +624,8 @@
 
                 </div>
                     <div class="col">
-                        <div class=""><label>১.৬.২ কমিটিতে সদস্য সংখ্যা: </label>
+                        <div class=""><label>১.৬.১  কমিটি থাকলে: </label>
                         </div>
-                        
                         <table class="table table-bordered" style="text-align:center">
                               <thead>
                                 <tr>
