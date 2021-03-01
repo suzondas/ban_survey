@@ -333,9 +333,310 @@
                                     <td> <div class="input-group date">
                                         <input type="date" name="hscvoc_not_apply" id="hscvoc_not_apply" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
                                 </tr>
+                                <tr>
+                                <td scope="row">৯। এইচএসসি বিএম</td>
+                                   <td><select class="custom-select" style="width: 150px" name="nimmo_recog">
+                                    <option value="" selected>Select</option>
+                                    <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                    <option value="2">অনুমতি প্রাপ্ত</option>
+                                    <option value="3">প্রযোজ্য নয়</option>
+                                    </select></td>
+                                    <td> <div class="input-group date">
+                                        <input type="date" name="hscbm_first_recog" id="hscbm_first_recog" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                    <td> <div class="input-group date">
+                                         <input type="date" name="hscbm_first_approve" id="hscbm_first_approve" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                    <td> <div class="input-group date">
+                                        <input type="date" name="hscbm_not_apply" id="hscbm_not_apply" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                </tr>
+                                <tr>
+                                <td scope="row">১০। ডিপ্লোমা ও সমমান</td>
+                                   <td><select class="custom-select" style="width: 150px" name="nimmo_recog">
+                                    <option value="" selected>Select</option>
+                                    <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                    <option value="2">অনুমতি প্রাপ্ত</option>
+                                    <option value="3">প্রযোজ্য নয়</option>
+                                    </select></td>
+                                    <td> <div class="input-group date">
+                                        <input type="date" name="diploma_first_recog" id="diploma_first_recog" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                    <td> <div class="input-group date">
+                                         <input type="date" name="diploma_first_approve" id="diploma_first_approve" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                    <td> <div class="input-group date">
+                                        <input type="date" name="diploma_not_apply" id="diploma_not_apply" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                </tr>
                               </tbody>
                             </table>
                     </div>
+            </div>
+            <br>
+            <div class="row border border-info py-1">
+                <div class="col">
+                    <label class="label-number" for="management">১.২.৭ ব্যবস্থাপনা:</label>
+                        <select class="custom-select" name="management">
+                            <option value="" selected>Select</option>
+                            <option value="1">সরকারি</option>
+                            <option value="2">বেসরকারি</option>
+                            <option value="3">স্থানীয় সরকার</option>
+                            <option value="4">স্বায়ত্তশাসিত</option>
+                            <option value="5">খ্রিষ্টান মিশনারি</option>
+                            <option value="6">অন্যান্য</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="nationalization_date">সরকারি হলে জাতীয়করণের তারিখ  :</label>
+                    <div class="input-group date">
+                     <input type="date" name="nationalization_date" id="nationalization_date" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                </div>
+               </div>
+                <div class="col">
+                    <label class="label-number" for="for_whom">১.২.৯ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
+                        <select class="custom-select" name="for_whom">
+                            <option value="" selected>Select</option>
+                            <option value="1">বালক</option>
+                            <option value="2">বালিকা</option>
+                            <option value="3">সহশিক্ষা একত্রে</option>
+                            <option value="4">সহশিক্ষা আলাদা</option>
+                        </select>
+                </div>
+                 <div class="col">
+                    <label class="label-number" for="geographical_location">১.৩ ভৌগলিক অবস্থান:</label>
+                        <select class="custom-select" name="geographical_location">
+                            <option value="" selected>Select</option>
+                            <option value="1">সমতল</option>
+                            <option value="2">পাহাড়ি</option>
+                            <option value="3">সমুদ্র উপকূল (বাঁধের ভিতর)</option>
+                            <option value="4">সমুদ্র উপকূল (বাঁধের বাইরে)</option>
+                            <option value="5">হাওড়/বিল(বাঁধের ভিতরে)</option>
+                            <option value="6">হাওড়/বিল(বাঁধের বাইরে)</option>
+                            <option value="7">চরাঞ্চল</option>
+                            <option value="8">জলাবদ্ধ এলাকা</option>
+                            <option value="9">শিল্পাঞ্চল</option>
+                            <option value="10">সীমান্ত এলাকা</option>
+                            <option value="11">চাবাগান</option>
+                            <option value="12">দ্বীপ</option>
+                            <option value="13">অন্যান্য</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="geographical_area">১.৩.১ প্রতিষ্ঠানটি কোন এলাকায়?</label>
+                        <select class="custom-select" name="geographical_area">
+                            <option value="" selected>Select</option>
+                            <option value="1">গ্রামীণ</option>
+                            <option value="2">জেলা সদর পৌরসভা</option>
+                            <option value="3">উপজেলা সদর পৌরসভা</option>
+                            <option value="4">উপজেলা সদর পৌরসভা নয়</option>
+                            <option value="5">সিটি কর্পোরেশন</option>
+                            <option value="6">অন্যান্য পৌর এলাকা</option>
+                        </select>
+                </div>
+            </div>
+            <br>
+            <div class="row border border-info py-1">
+                <div class="col">
+                    <label class="label-number" for="admin_unit">১.৩.২ প্রশাসনিক ইউনিটের সাথে যোগাযোগ ব্যবস্থার ধরন:</label>
+                        <select class="custom-select" name="admin_unit" style="width:200px">
+                            <option value="" selected>Select</option>
+                            <option value="1">উত্তম</option>
+                            <option value="2">মোটমুটি</option>
+                            <option value="3">দুর্গম</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="near_inst">১.৩.৩ নিকটবর্তী অনুরুপ শিক্ষা প্রতিষ্ঠানের দূরত্ব (কি.মি.)</label>
+                        <input type="nuber"  class="form-control" name="near_inst"
+                        id="near_inst">
+                </div>
+                <div class="col">
+                    <label class="label-number" for="branch">১.৪ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি?</label> &nbsp
+                       <select class="custom-select" name="admin_unit">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="branch_no">১.৪.১ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
+                        <input type="number"  class="form-control" name="branch_no"
+                        id="branch_no">
+                </div>
+            </div>
+            <br>
+            <div class="row border border-info py-1">
+                <div class="col">
+                    <label class="label-number" for="double_shift">১.৪.২ প্রতিষ্ঠানটিতে ডাবল-শিফ্ট আছে কি? </label>
+                       <select class="custom-select" name="double_shift">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="own_campus">১.৪.৩ প্রতিষ্ঠানটির নিজস্ব ক্যাম্পাস আছে কি?</label>
+                       <select class="custom-select" name="own_campus">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="other_inst">১.৪.৪ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা প্রতিষ্ঠান আছে?</label>
+                       <select class="custom-select" name="other_inst">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="other_insttype">১.৪.৫ উত্তর হ্যাঁ হলে, প্রতিষ্ঠানটির ধরন: </label>
+                       <select class="custom-select" name="other_insttype">
+                            <option value="" selected>Select</option>
+                            <option value="1">প্রাথমিক বিদ্যালয়</option>
+                            <option value="2">কিন্ডার গার্টেন</option>
+                            <option value="3">এবতেদায়ী মাদ্রাসা</option>
+                            <option value="4">মাধ্যমিক স্কুল</option>
+                            <option value="5">কলেজ</option>
+                            <option value="6">অন্যান্য</option>
+                        </select>
+                </div>
+            </div>
+            <br>
+            <div class="row border border-info py-1">
+                <div class="col">
+                    <label class="label-number" for="mpo_yn">১.৫ প্রতিষ্ঠানটি এমপিওভুক্ত কি?</label>
+                       <select class="custom-select" name="mpo_yn">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
+                </div>
+                 <div class="col">
+                    <label class="label-number" for="technical_mpo_yn">১.৫.১ কারিগরি শাখা এমপিওভুক্ত কি?</label>
+                       <select class="custom-select" name="technical_mpo_yn">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
+                </div>
+                <div class="col">
+                    <label class="label-number" for="technical_mpo_yn">১.৫.১ কারিগরি শাখা এমপিওভুক্ত কি?</label>
+                       <select class="custom-select" name="technical_mpo_yn">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
+                </div>
+            </div>
+            <br>
+            <div class="row border border-info py-1">
+                    <div class="col">
+                        <div class=""><label>১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
+                        </div>
+                        
+                        <table class="table table-bordered" style="text-align:center">
+                              <thead>
+                                <tr>
+                                  <th scope="col">এমপিওভুক্তির স্তর</th>
+                                  <th scope="col">এমপিও ভুক্তির তারিখ</th>
+                                  <th scope="col">এমপিওভুক্তির স্তর</th>
+                                  <th scope="col">এমপিও ভুক্তির তারিখ</th>
+                                  <th scope="col">এমপিওভুক্তির স্তর</th>
+                                  <th scope="col">এমপিও ভুক্তির তারিখ</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td scope="row">১। নিম্ন মাধ্যমিক</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="nimmo_mpo" id="nimmo_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                  <td scope="row">২। মাধ্যমিক (এসএসসি)</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="maddo_mpo" id="maddo_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                  <td scope="row">৩। উচ্চ মাধ্যমিক (এইচএসসি)</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="uchho_mpo" id="uchho_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">৪। স্নাতক</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="deg_mpo" id="deg_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                  <td scope="row">৫। স্নাতক (সম্মান)</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="honours_mpo" id="honours_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                  <td scope="row">৬। স্নাতকো্ত্তর</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="masters_mpo" id="masters_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                </tr>
+                                 <tr>
+                                  <td scope="row">৭।এসএসসি ভোক</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="sscvoc_mpo" id="sscvoc_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                  <td scope="row">৮। এইচএসসি ভোক</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="hscvoc_mpo" id="hscvoc_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                  <td scope="row">৯। এইচএসসি বিএম</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="hscbm_mpo" id="hscbm_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">১০। ডিপ্লোমা ইন ফিশারিজ</td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="dip_fish_mpo" id="dip_fish_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                  <td scope="row">১১। ডিপ্লোমা ইন এগ্রিকালচার </td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="dip_agri_mpo" id="dip_agri_mpo" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+            <br>
+             <div class="row border border-info py-1">
+                    <div class="col">
+                        <div class=""><label>১.৬ কমিটির ধরন:</label>
+                            <select class="custom-select" name="committee_type">
+                            <option value="" selected>Select</option>
+                            <option value="1">ম্যানেজিং কমিটি</option>
+                            <option value="2">গর্ভনিং বডি</option>
+                            <option value="3">এডহক কমিটি</option>
+                            <option value="4">নির্বাহী কমিটি</option>
+                            <option value="5">প্রযোজ্য নয়</option>
+                            <option value="6">অন্যান্য</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=""><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class=""><label>১.৬.৩ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
+                    </div>
+                    <div class="input-group date">
+                                        <input type="date" name="committee_appdate" id="committee_appdate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></div>
+
+                </div>
+                    <div class="col">
+                        <div class=""><label>১.৬.২ কমিটিতে সদস্য সংখ্যা: </label>
+                        </div>
+                        
+                        <table class="table table-bordered" style="text-align:center">
+                              <thead>
+                                <tr>
+                                  <th scope="col">অনুমোদনের তারিখ</th>
+                                  <th scope="col">মেয়াদ উত্তীর্ণের তারিখ</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td> <div class="input-group date">
+                                        <input type="date" name="committee_appdate" id="committee_appdate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                     <td> <div class="input-group date">
+                                        <input type="date" name="committee_expdate" id="committee_expdate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
 
             </div>
         </div>
