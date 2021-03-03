@@ -17,7 +17,6 @@
                   <div class="col-md">
                       দখল স্বত্বে নয়
                   </div>
-
               </div>
               <div class="row">
                   <div class="col-md">মৌজার নাম:</div>
@@ -276,7 +275,9 @@
                                 <th scope="col">বিজ্ঞানাগার</th>
                                 <th scope="col">গ্রন্থাগার কক্ষ</th>
                                 <th scope="col">কম্পিউটার ল্যাব</th>
-                                <th scope="col">ছাত্র কমন রুমব্যামাগার</th>
+                                <th scope="col">ছাত্র কমন রুম</th>
+                                <th scope="col">ছাত্রী কমন রুম</th>
+                                <th scope="col">ব্যামাগার</th>
                                 <th scope="col">সিক রুম</th>
                                 <th scope="col">ছাত্রাবাসের সংখ্যা</th>
 
@@ -287,19 +288,6 @@
                                 <td scope="row">সংখ্যা</td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-
-                            </tr>
-                            <tr>
-                                <td scope="row">আয়তন (বর্গফুট)</td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
@@ -324,36 +312,21 @@
                             <tr>
                                 <th scope="col">ভবন/কক্ষ</th>
                                 <th scope="col">ছাত্রাবাসের সিট সংখ্যা</th>
-                                <th scope="col">ছাত্রাবাসে অবস্থানকারী শিক্ষার্থী</th>
-                                <th scope="col">ছাত্রীনিবাসে অবস্থানকারী শিক্ষার্থী</th>
+                                <th scope="col">ছাত্রাবাসে অবস্থানকারী</th>
+                                <th scope="col">ছাত্রীনিবাসে অবস্থানকারী</th>
                                 <th scope="col">প্রতিষ্ঠান প্রধানের আবাসন</th>
-                                <th scope="col">শিক্ষক আবাসিক ভবন সংখ্যা</th>
+                                <th scope="col">শিক্ষক আবাসিক ভবন</th>
                                 <th scope="col">আবাসিক শিক্ষক সংখ্যা</th>
-                                <th scope="col">শিক্ষক আআবাসন সিট সংখ্যা</th>
-                                <th scope="col">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থীর বিশ্রামাগার</th>
+                                <th scope="col">শিক্ষক আআবাসন সিট</th>
+                                <th scope="col">বিশেষ চাহিদা সম্পন্ন</th>
                                 <th scope="col">কাউন্সিলিং রুম</th>
-                                <th scope="col">শিক্ষা উপকরণ সংরক্ষণের জন্য পৃথক কক্ষ</th>
+                                <th scope="col">শিক্ষা উপকরণ</th>
                                 <th scope="col">অন্যান্য</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <td scope="row">সংখ্যা</td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-
-                            </tr>
-                            <tr>
-                                <td scope="row">আয়তন (বর্গফুট)</td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
@@ -386,7 +359,6 @@
                                 <th scope="col">কত তলা নির্মিত</th>
                                 <th scope="col">নির্মানের বছর</th>
                                 <th scope="col">উর্ধ্মুখী সম্প্রসারণ যোগ্য কিনা? হাঁ-১, না-২</th>
-
                             </tr>
                             </thead>
                             <tbody>
