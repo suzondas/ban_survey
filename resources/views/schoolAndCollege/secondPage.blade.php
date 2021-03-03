@@ -81,7 +81,7 @@
                 </div>
                 <div class="row border border-info py-1 mt-2">
                     <div class="col">
-                        <label class="label-number">বিবরণ</label> &nbsp <br><br>
+                        <label class="label-number">বিবরণ</label> <br><br>
                         <label class="label-number">শতাংশ</label>
                     </div>
                     <div class="col">
@@ -95,7 +95,7 @@
                                id="phone">
                     </div>
                     <div class="col">
-                        <label class="label-number" for="email">ছাত্রাবাস</label> &nbsp &nbsp
+                        <label class="label-number" for="email">ছাত্রাবাস</label>
                         <input type="text" class="form-control" name="email"
                                id="email">
                     </div>
@@ -110,12 +110,12 @@
                                id="website">
                     </div>
                     <div class="col">
-                        <label class="label-number" for="website">পুকুর</label> <br><br>
+                        <label class="label-number" for="website">পুকুর</label> <br>
                         <input type="text" class="form-control" name=""
                                id="">
                     </div>
                     <div class="col">
-                        <label class="label-number" for="website">বাগান</label> <br><br>
+                        <label class="label-number" for="website">বাগান</label> <br>
                         <input type="text" class="form-control" name="website"
                                id="website">
                     </div>
@@ -125,17 +125,17 @@
                                id="website">
                     </div>
                     <div class="col">
-                        <label class="label-number" for="website">অব্যবহৃত</label> &nbsp
+                        <label class="label-number" for="website">অব্যবহৃত</label>
                         <input type="text" class="form-control" name="website"
                                id="website">
                     </div>
                     <div class="col">
-                        <label class="label-number" for="website">অন্যান্য</label> &nbsp <br><br>
+                        <label class="label-number" for="website">অন্যান্য</label><br>
                         <input type="text" class="form-control" name="website"
                                id="website">
                     </div>
                     <div class="col">
-                        <label class="label-number" for="website">মোট</label> &nbsp <br><br>
+                        <label class="label-number" for="website">মোট</label> <br>
                         <input type="text" class="form-control" name="website"
                                id="website">
                     </div>

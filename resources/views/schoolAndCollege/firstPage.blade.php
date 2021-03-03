@@ -4,7 +4,7 @@
         @include('../components/banner')
         @include('schoolAndCollege.navBar')
 
-        School First Page
+        
         <hr>
         <div class="container">
             <div class="row">
