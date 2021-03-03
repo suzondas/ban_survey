@@ -3,8 +3,6 @@
     <div class="container">
         @include('../components/banner')
         @include('schoolAndCollege.navBar')
-
-        
         <hr>
         <div class="container">
             <div class="row">

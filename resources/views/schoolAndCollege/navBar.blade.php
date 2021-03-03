@@ -5,7 +5,6 @@
                 <a class="nav-link {{ (request()->is('schoolAndCollege/firstPage')) ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/firstPage') }}">প্রথম পাতা</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/secondPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/secondPage') }}">দ্বিতীয় পাতা</a>
@@ -21,6 +20,10 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/fifthPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/fifthPage') }}">পঞ্চম পাতা</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/sixthPage') }}">ষষ্ঠ পাতা</a>
             </li>
         </ul>
         <span class="navbar-text">
