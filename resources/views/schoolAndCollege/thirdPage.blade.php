@@ -7,13 +7,13 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">৩</span>
+                    <span class="input-group-text">৩.১</span>
                 </div>
                 <div class="form-control">ল্যাব সংক্রান্ত</div>
             </div>
             <div class="contentBoxBody">
                 <div class="input-group form-inline contentItem">
-                    <label for="labYN">৩.১। প্রতিষ্ঠানে কম্পিউটার ল্যাব আছে কি?</label>
+                    <label for="labYN">৩.১.১। প্রতিষ্ঠানে কম্পিউটার ল্যাব আছে কি?</label>
                     <select class="contentBoxInput" id="labYN">
                         <option>হ্যাঁ</option>
                         <option>না</option>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="input-group form-inline contentItem">
-                    <label for="labYN">৩.২। ল্যাব ব্যতিত অন্য কম্পিউটার আছে কি?</label>
+                    <label for="labYN">৩.১.২। ল্যাব ব্যতিত অন্য কম্পিউটার আছে কি?</label>
                     <select class="contentBoxInput" id="labYN">
                         <option>হ্যাঁ</option>
                         <option>না</option>
@@ -86,6 +86,128 @@
                             </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{--Multimedia Classroom/Projector--}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">৩.২</span>
+                </div>
+                <div class="form-control">মাল্টিমিডিয়া ক্লাসরুম সংক্রান্ত</div>
+            </div>
+            <div class="contentBoxBody">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group form-inline contentItem">
+                            <label for="multimediaClassroom">৩.২.১। মাল্টিমিডিয়া ক্লাসরুমের সংখ্যা</label>
+                            <input class="contentBoxInput" id="multimediaClassroom" type="text"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        ৩.২.১। মাল্টিমিডিয়া ক্লাসরুমের ব্যবহারে সক্ষম শিক্ষকের সংখ্যা<br>
+                        <div class="row">
+                            <div class="col-md-6 input-group form-inline contentItem">
+                                মহিলাঃ <input class="contentBoxInput" id="" type="text"/>
+                            </div>
+                            <div class="col-md-6 input-group form-inline contentItem">
+                                পুরুষ <input class="contentBoxInput" id="" type="text"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group form-inline contentItem">
+                            <label for="">৩.২.১। মাল্টিমিডিয়া ব্যবহার করে প্রতিদিন কয়টি ক্লাস নেওয়া হয়</label>
+                            <input class="contentBoxInput" style="width: 40px;" id="" type="text"/> টি
+                        </div>
+                    </div>
+                    <div class="col-md-6 contentItem">
+                        ৩.১.১। মাল্টিমিডিয়া ক্লাসরুমের ব্যবহার করে ক্লাস নেওয়ার<br> পর
+                        ড্যাসবোর্ডে এন্ট্রি দেওয়া হয় কি?
+                        <select class="contentBoxInput" id="dashboardEntry">
+                            <option>হ্যাঁ</option>
+                            <option>না</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 input-group form-inline contentItem">
+                        <label for="projectorYN">৩.১.১। মাল্টিমিডিয়া প্রজেক্টর আছে কি?</label>
+                        <select class="contentBoxInput" id="projectorYN">
+                            <option>হ্যাঁ</option>
+                            <option>না</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group form-inline contentItem">
+                            <label for="">৩.২.১। মাল্টিমিডিয়া প্রজেক্টরের সংখ্যা</label>
+                            <input class="contentBoxInput" id="" type="text"/> টি
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">৩.২</span>
+                </div>
+                <div class="form-control">আইসিটি সংক্রান্ত</div>
+            </div>
+            <div class="contentBoxBody">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group form-inline contentItem">
+                            <label for="multimediaClassroom">৩.২.১। মাল্টিমিডিয়া ক্লাসরুমের সংখ্যা</label>
+                            <input class="contentBoxInput" id="multimediaClassroom" type="text"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        ৩.২.১। মাল্টিমিডিয়া ক্লাসরুমের ব্যবহারে সক্ষম শিক্ষকের সংখ্যা<br>
+                        <div class="row">
+                            <div class="col-md-6 input-group form-inline contentItem">
+                                মহিলাঃ <input class="contentBoxInput" id="" type="text"/>
+                            </div>
+                            <div class="col-md-6 input-group form-inline contentItem">
+                                পুরুষ <input class="contentBoxInput" id="" type="text"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group form-inline contentItem">
+                            <label for="">৩.২.১। মাল্টিমিডিয়া ব্যবহার করে প্রতিদিন কয়টি ক্লাস নেওয়া হয়</label>
+                            <input class="contentBoxInput" style="width: 40px;" id="" type="text"/> টি
+                        </div>
+                    </div>
+                    <div class="col-md-6 contentItem">
+                        ৩.১.১। মাল্টিমিডিয়া ক্লাসরুমের ব্যবহার করে ক্লাস নেওয়ার<br> পর
+                        ড্যাসবোর্ডে এন্ট্রি দেওয়া হয় কি?
+                        <select class="contentBoxInput" id="dashboardEntry">
+                            <option>হ্যাঁ</option>
+                            <option>না</option>
+                        </select>৩৩
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 input-group form-inline contentItem">
+                        <label for="projectorYN">৩.১.১। মাল্টিমিডিয়া প্রজেক্টর আছে কি?</label>
+                        <select class="contentBoxInput" id="projectorYN">
+                            <option>হ্যাঁ</option>
+                            <option>না</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group form-inline contentItem">
+                            <label for="">৩.২.১। মাল্টিমিডিয়া প্রজেক্টরের সংখ্যা</label>
+                            <input class="contentBoxInput" id="" type="text"/> টি
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,10 +8,24 @@
         <hr>
         <div class="container">
             <div class="row">
-                <div class="col text-right">
+                <div class="col-md-6">
                     <label for="eiin">ইআইআইএন (EIIN): &nbsp</label><input type="number" id="eiin"><br>
-                    <label for="lat">অক্ষাংশ (Latitude):&nbsp</label><input type="number" id="lat"><br>
-                    <label for="long">দ্রাঘিমাংশ (Longitude):&nbsp</label><input type="number" id="long">
+                </div>
+                <div class="col-md-6 d-flex flex-row-reverse">
+                        <table class="" style="width:300px;" border="1">
+                            <tr>
+                                <td rowspan="2" class="align-middle">GIS</td>
+                                <td class="text-center">Lat</td>
+                                  <td class="text-center">Long</td>
+                            </tr>
+                              <tr>
+                                <td> <input type="text" class="" name="lat"
+                               id="lat"></td>
+                                  <td> <input type="text" class="" name="long"
+                               id="long"></td>
+                            </tr>
+                             
+                        </table>
                 </div>
             </div>
 
@@ -590,6 +604,11 @@
             </div>
             <br>
              <div class="row border border-info py-1">
+                <div class="row container">
+                    <nav class="navbar navbar-light bg-light">
+                        <span class="navbar-brand font-weight-bold">কমিটি সংক্রান্ত তথ্য</span></nav>
+                </div>
+                <div class="row container">
                     <div class="col">
                         <div class=""><label>১.৬ কমিটির ধরন:</label>
                             <select class="custom-select" name="committee_type">
@@ -603,27 +622,28 @@
                         </select>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col table table-bordered">
                     <div class=""><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
                     </div>
-                        <label for="men"> পুরুষ: </label>
+                    <div class="row ">
+                        <div class="col-md-4">
+                          <label for="men"> পুরুষ: </label>
                         <input type="number"  class="form-control" name="men"
-                               id="men" style="width:100px">
-                               <label for="female"> মহিলা: </label>
+                               id="men">  
+                        </div>
+                        <div class="col-md-4">
+                            <label for="female"> মহিলা: </label>
                         <input type="number"  class="form-control" name="female"
-                               id="female" style="width:100px">
-                               <label for="total"> মোট:</label>
+                               id="female">
+                        </div>
+                        <div class="col-md-4">
+                             <label for="total"> মোট:</label>
                         <input type="number"  class="form-control" name="total"
-                               id="total" style="width:100px">
+                               id="total">
+                        </div>
+                           </div>
                 </div>
-                <div class="col">
-                    <div class=""><label>১.৬.৩ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
-                    </div>
-                    <div class="input-group date">
-                                        <input type="date" name="committee_appdate" id="committee_appdate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></div>
-
-                </div>
-                    <div class="col">
+                 <div class="col">
                         <div class=""><label>১.৬.১  কমিটি থাকলে: </label>
                         </div>
                         <table class="table table-bordered" style="text-align:center">
@@ -644,7 +664,14 @@
                             </tbody>
                         </table>
                 </div>
+                <div class="col table table-bordered ml-2">
+                    <div class=""><label>১.৬.৩ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
+                    </div>
+                    <div class="input-group date">
+                                        <input type="date" name="committee_appdate" id="committee_appdate" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></div>
 
+                </div>
+                </div>   
             </div>
         </div>
 

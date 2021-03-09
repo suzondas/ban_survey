@@ -29,6 +29,14 @@
                 <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/sixthPage') }}">ষষ্ঠ পাতা</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/collegeFirstPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/collegeFirstPage') }}">কলেজ(১ম পাতা)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/collegeSecondPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/collegeSecondPage') }}">কলেজ(২য় পাতা)</a>
+            </li>
         </ul>
         <span class="navbar-text">
         <a href="/logout" class="btn btn-success">Logout</a>
