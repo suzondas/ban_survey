@@ -14,6 +14,10 @@
                    href="{{ url('schoolAndCollege/schoolFirstPage') }}">স্কুল সম্পর্কিত-১</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/schoolSecondPage') }}">স্কুল সম্পর্কিত-২</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/thirdPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/thirdPage') }}">তৃতীয় পাতা</a>
             </li>
