@@ -34,338 +34,338 @@
                     </tr>
                     <tbody>
                     <tr>
-                        <td scope="row" rowspan="4">একাদশ (১১)</td>
-                        <td scope="row">(১) মানবিক</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   rowspan="4">একাদশ (১১)</td>
+                        <td  >(১) মানবিক</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(২) বিজ্ঞান</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(২) বিজ্ঞান</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৩) ব্যবসায় শিক্ষা</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৩) ব্যবসায় শিক্ষা</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৫) অন্যান্য</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৫) অন্যান্য</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     <tr>
-                        <td scope="row" rowspan="4">দ্বাদশ (১২)</td>
-                        <td scope="row">(১) মানবিক</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   rowspan="4">দ্বাদশ (১২)</td>
+                        <td  >(১) মানবিক</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     <tr>
-                        <td scope="row">(২) বিজ্ঞান</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(২) বিজ্ঞান</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৩) ব্যবসায় শিক্ষা</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৩) ব্যবসায় শিক্ষা</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৫) অন্যান্য</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৫) অন্যান্য</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row" rowspan="5">স্নাতক (পাস) ১ম বর্ষ(১৩)</td>
-                        <td scope="row">(১) মানবিক</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   rowspan="5">স্নাতক (পাস) ১ম বর্ষ(১৩)</td>
+                        <td  >(১) মানবিক</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(২) বিজ্ঞান</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(২) বিজ্ঞান</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৩) ব্যবসায় শিক্ষা</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৩) ব্যবসায় শিক্ষা</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৪) সামাজিক বিজ্ঞান</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৪) সামাজিক বিজ্ঞান</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৫) অন্যান্য</td>
-                       <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৫) অন্যান্য</td>
+                       <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     <tr>
-                        <td scope="row" rowspan="5">স্নাতক (পাস) ২য় বর্ষ(১৪)</td>
-                        <td scope="row">(১) মানবিক</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   rowspan="5">স্নাতক (পাস) ২য় বর্ষ(১৪)</td>
+                        <td  >(১) মানবিক</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(২) বিজ্ঞান</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(২) বিজ্ঞান</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৩) ব্যবসায় শিক্ষা</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৩) ব্যবসায় শিক্ষা</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৪) সামাজিক বিজ্ঞান</td>
-                       <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৪) সামাজিক বিজ্ঞান</td>
+                       <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৫) অন্যান্য</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৫) অন্যান্য</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row" rowspan="5">স্নাতক (পাস) ৩য় বর্ষ(১৫)</td>
-                        <td scope="row">(১) মানবিক</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   rowspan="5">স্নাতক (পাস) ৩য় বর্ষ(১৫)</td>
+                        <td  >(১) মানবিক</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(২) বিজ্ঞান</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(২) বিজ্ঞান</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৩) ব্যবসায় শিক্ষা</td>
-                       <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৩) ব্যবসায় শিক্ষা</td>
+                       <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৪) সামাজিক বিজ্ঞান</td>
-                       <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৪) সামাজিক বিজ্ঞান</td>
+                       <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">(৫) অন্যান্য</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >(৫) অন্যান্য</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                      <tr>
-                        <td scope="row" rowspan="4">স্নাতক (সম্মান)(১৬)</td>
-                        <td scope="row">১ম বর্ষ (নতুন, পুরাতন সহ)</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   rowspan="4">স্নাতক (সম্মান)(১৬)</td>
+                        <td  >১ম বর্ষ (নতুন, পুরাতন সহ)</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">২য় বর্ষ (নতুন, পুরাতন সহ)</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >২য় বর্ষ (নতুন, পুরাতন সহ)</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">৩য় বর্ষ (নতুন, পুরাতন সহ)</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >৩য় বর্ষ (নতুন, পুরাতন সহ)</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">৪র্থ বর্ষ (নতুন, পুরাতন সহ)</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >৪র্থ বর্ষ (নতুন, পুরাতন সহ)</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row" rowspan="2">স্নাতকোত্তর (১৭) </td>
-                        <td scope="row">প্রিলিমিনারি</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   rowspan="2">স্নাতকোত্তর (১৭) </td>
+                        <td  >প্রিলিমিনারি</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">শেষ বর্ষ</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >শেষ বর্ষ</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row" colspan="2">সর্বমোট:</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   colspan="2">সর্বমোট:</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     </tbody>
                 </table>
@@ -404,19 +404,19 @@
                     </tr>
                     <tbody>
                     <tr>
-                        <td scope="row" style="width:150px">বাংলা</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td   style="width:150px">বাংলা</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     </tbody>
                 </table>
@@ -462,160 +462,160 @@
                     <tbody>
                     <tr>
                         <td rowspan="3">এইচএসসি (২০১৯)</td>
-                        <td scope="row">মানবিক</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  >মানবিক</td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
                     </tr>
                     <tr>
-                        <td scope="row">বিজ্ঞান</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >বিজ্ঞান</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">ব্যাবসায় শিক্ষা</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >ব্যাবসায় শিক্ষা</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
                         <td rowspan="4">স্নাতক (পাস) (সর্বশেষ বছর) চূড়ান্ত (২০১৯)</td>
-                        <td scope="row">বিএ</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  >বিএ</td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
                     </tr>
                     <tr>
-                        <td scope="row">বিএসএস</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >বিএসএস</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">বিএসসি</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >বিএসসি</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td scope="row">বিবিএস</td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                        <td  >বিবিএস</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
                         <td rowspan="1">স্নাতক (সম্মান)</td>
-                        <td scope="row"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
                     </tr>
                     <tr>
                         <td rowspan="1">স্নাতকোত্তর</td>
-                        <td scope="row"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td><td scope="row"><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1262,6 +1262,31 @@
                                     <td style="width: 350px">স্নাতক (পাস) পর্যায়ে বাধ্যতামূলক ১০০ নম্বরের ইংরেজি ছিল</td>
                                 <td><input type="number"  class="form-control" name="" id="" ></td>
                                 </tr>
+                                <tr>
+                                    <td>২</td>
+                                    <td style="width: 350px">স্নাতক (পাস) পর্যায়ে  ৩০০ নম্বরের ইংরেজি ছিল</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৩</td>
+                                    <td style="width: 350px">ইংরেজিতে স্নাতক সম্মান</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৪</td>
+                                    <td style="width: 350px">ইংরেজিতে স্নাতকোত্তর</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৫</td>
+                                    <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ইংরেজি ছিলা না</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৬</td>
+                                    <td style="width: 350px">এইচ এস সি পাস</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
                                 </tbody>
                         </table>
                     </div>
@@ -1287,14 +1312,39 @@
 
                         <table class="table table-bordered text-center">
                                 <tr>
-                                  <td>ক্রমিক নং</td>
+                                    <td>ক্রমিক নং</td>
                                   <td>বিবরণ</td>
                                   <td>শিক্ষক/ শিক্ষিকার সংখ্যা</td>
                                 </tr>
                                 <tbody>
                                 <tr>
                                     <td>১</td>
-                                    <td style="width: 350px">স্নাতক (পাস) পর্যায়ে বাধ্যতামূলক ১০০ নম্বরের ইংরেজি ছিল</td>
+                                    <td style="width: 350px">স্নাতক (পাস) পর্যায়ে পদার্থ ও রসায়নসহ গণিত ছিল</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>২</td>
+                                    <td style="width: 350px">স্নাতক (পাস) পর্যায়ে  অন্যান্য বিষয়সহ গণিত ছিল</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৩</td>
+                                    <td style="width: 350px">গণিতে স্নাতক সম্মান</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৪</td>
+                                    <td style="width: 350px">গণিতে স্নাতকোত্তর</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৫</td>
+                                    <td style="width: 350px">স্নাতক (পাস) পর্যায়ে গণিত ছিল না কিন্তু এইচএসসিতে ছিল</td>
+                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                </tr>
+                                <tr>
+                                    <td>৬</td>
+                                    <td style="width: 350px">স্নাতক বা এইচ এস সি পর্যায়ে ছিল না</td>
                                 <td><input type="number"  class="form-control" name="" id="" ></td>
                                 </tr>
                                 </tbody>
@@ -1384,12 +1434,105 @@
                                 <td><input type="number"  class="form-control" name="" id="" ></td>
                                 </tr>
                                 </tbody>
-                        </table>
-                    </div>
-                    </div>
+                            </table>
+                            </div>
+                        </div>
                     </div>
                     <br>
-                </div>
+                    <div class="row border border-info py-1">
+                        <div class="col-md-8">
+                            ২.৫ শিক্ষা প্রতিষ্ঠানে প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য (নির্দিষ্ট স্থানে টিক চিহ্ন দিন)
+                        <table class="table table-bordered text-center">
+                    <tbody>
+                    <tr>
+                        <td rowspan="7">শিক্ষকদের জন্য</td>
+                        <td >বিষয়</td>
+                        <td >জাতীয়</td>
+                        <td >বিভাগ/মহানগর</td>
+                        <td >জেলা</td>
+                        <td >উপজেলা/থানা</td>
+                        <td style="width:100px">সাল</td>
+                    </tr>
+                    <tr>
+                        <td>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr>
+                        <td>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান প্রধান</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>শ্রেষ্ঠ শ্রেণি শিক্ষক</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>শ্রেষ্ঠ শ্রেণি শিক্ষক (বিএনসিসি)</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>শ্রেষ্ঠ শ্রেণি শিক্ষক (স্কাউট)</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>শ্রেষ্ঠ শ্রেণি শিক্ষক (গার্ল গাইড)</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"> শিক্ষার্থীদের জন্য</td>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td >শ্রেষ্ঠ শিক্ষার্থী ( স্কাউট)</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td >শ্রেষ্ঠ শিক্ষার্থী (গার্ল গাইড)</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <br>
+            </div>
         </div>
     </div>
 
