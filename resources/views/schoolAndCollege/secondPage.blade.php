@@ -78,67 +78,47 @@
                 <div class="row mt-2">
                     <lavel class="label-text">১.৭.২ জমির ব্যবহার ও পরিমাণ (শতাংশে):</lavel>
                 </div>
-                <div class="row border border-info py-1 mt-2">
-                    <div class="col">
-                        <label class="label-number">বিবরণ</label> <br><br>
-                        <label class="label-number">শতাংশ</label>
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="">প্রতিষ্ঠানের ভবন</label>
-                        <input type="number" class="form-control" name=""
-                               id="">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="phone">খেলার মাঠ</label>
-                        <input type="number" class="form-control" name="phone"
-                               id="phone">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="email">ছাত্রাবাস</label>
-                        <input type="text" class="form-control" name="email"
-                               id="email">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">শিক্ষক আবাসন</label>
-                        <input type="text" class="form-control" name="website"
-                               id="website">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">আবাদি জমি</label>
-                        <input type="text" class="form-control" name="website"
-                               id="website">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">পুকুর</label> <br>
-                        <input type="text" class="form-control" name=""
-                               id="">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">বাগান</label> <br>
-                        <input type="text" class="form-control" name="website"
-                               id="website">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">শহিদ মিনার</label>
-                        <input type="text" class="form-control" name="website"
-                               id="website">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">অব্যবহৃত</label>
-                        <input type="text" class="form-control" name="website"
-                               id="website">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">অন্যান্য</label><br>
-                        <input type="text" class="form-control" name="website"
-                               id="website">
-                    </div>
-                    <div class="col">
-                        <label class="label-number" for="website">মোট</label> <br>
-                        <input type="text" class="form-control" name="website"
-                               id="website">
-                    </div>
+            <div class="row border border-info py-1 mt-2">
+                <div class="col">
+                    <table class="table table-bordered" style="text-align:center">
+                        <thead>
+                        <tr>
+                            <th scope="col">বিবরণ</th>
+                            <th scope="col">প্রতিষ্ঠানের ভবন</th>
+                            <th scope="col">খেলার মাঠ</th>
+                            <th scope="col">ছাত্রাবাস</th>
+                            <th scope="col">শিক্ষক আবাসন</th>
+                            <th scope="col">আবাদি জমি</th>
+                            <th scope="col">পুকুর</th>
+                            <th scope="col">বাগান</th>
+                            <th scope="col">শহিদ মিনার</th>
+                            <th scope="col">অব্যবহৃত</th>
+                            <th scope="col">অন্যান্য</th>
+                            <th scope="col">মোট</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td scope="row">শতাংশ</td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                            <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
+
+            </div>
+
 
                 <div class="row mt-2 col-8">
                     <div class="col-6">
@@ -202,7 +182,7 @@
                     <lavel>১.৭.৯ ভবন গৃহের মালিকানা, ধরন ও অবস্থা অনুযায়ী সংখ্যাঃ</lavel>
                 </div>
 
-                <div class="row border border-info py-1 mt-2">
+                <div class="row  py-1 mt-2">
                     <div class="col">
                         <table class="table table-bordered" style="text-align:center">
                             <thead>
@@ -235,23 +215,23 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:30px;"></td>
                             </tr>
                             </tbody>
                         </table>
@@ -261,7 +241,7 @@
                 <div class="row mt-2">
                     <lavel>১.৭.১০ ভবন/গৃহের ব্যাবহার</lavel>
                 </div>
-                <div class="row border border-info py-1 mt-2">
+                <div class="row  py-1 mt-2 ">
                     <div class="col">
                         <table class="table table-bordered" style="text-align:center">
                             <thead>
@@ -286,19 +266,19 @@
                             <tbody>
                             <tr>
                                 <td scope="row">সংখ্যা</td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><input type="number" class="form-control" name="" id=""></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
+                                <td scope="row"><input type="number" class="form-control" name="" id="" style="width:40px;"></td>
                             </tr>
                             </tbody>
                         </table>
@@ -348,7 +328,7 @@
                 <div class="row mt-2">
                     <lavel>১.৭.১১ ভবনভিত্তিক তলা ও উর্ধ্মূখী সম্প্রসারণ ইত্যাদি সম্পর্কিত তথ্য</lavel>
                 </div>
-                <div class="row border border-info py-1 mt-2">
+                <div class="row border border-info py-1 mt-2 col-7">
                     <div class="col">
                         <table class="table table-bordered" style="text-align:center">
                             <thead>
@@ -368,7 +348,8 @@
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
-                                <td scope="row"><select class="custom-select" name="english_version">
+                                <td scope="row"><select class="custom-select" name="english_version" >
+                                        <option value="">select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
                                     </select></td>
@@ -380,6 +361,7 @@
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><select class="custom-select" name="english_version">
+                                        <option value="">select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
                                     </select></td>
@@ -391,6 +373,7 @@
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><select class="custom-select" name="english_version">
+                                        <option value="">select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
                                     </select></td>
@@ -402,6 +385,7 @@
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><select class="custom-select" name="english_version">
+                                        <option value="">select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
                                     </select></td>
@@ -413,6 +397,7 @@
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><input type="number" class="form-control" name="" id=""></td>
                                 <td scope="row"><select class="custom-select" name="english_version">
+                                        <option value="">select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
                                     </select></td>
@@ -646,6 +631,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -657,6 +643,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">সম্পূর্ণ</option>
                             <option value="2">আংশিক</option>
                         </select>
@@ -668,6 +655,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">পাকা</option>
                             <option value="2">আধাপাকা</option>
                             <option value="3">কাঁচা</option>
@@ -683,6 +671,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -694,6 +683,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -716,6 +706,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -727,6 +718,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -746,6 +738,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -757,6 +750,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -768,6 +762,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version" style="width: 90px">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -779,6 +774,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version" style="width: 90px">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>
@@ -790,6 +786,7 @@
                     </div>
                     <div class="col col-2">
                         <select class="custom-select " name="english_version" style="width: 90px">
+                            <option value="">select</option>
                             <option value="1">হ্যাঁ</option>
                             <option value="2">না</option>
                         </select>

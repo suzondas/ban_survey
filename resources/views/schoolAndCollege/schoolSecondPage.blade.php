@@ -9,7 +9,7 @@
         <div class="row mt-4 col-9">
             ২.৩.৫ বিভাগভিত্তিক বিভিন্ন বোর্ড পরীক্ষার ফলাফল:
         </div>
-        <div class="row border border-info py-1 mt-2 ">
+        <div class="row  py-1 mt-2 ">
             <div class="col">
                 <table class="table table-bordered" style="text-align:center">
                     <thead>
@@ -273,7 +273,6 @@
                     <tbody>
                     <tr>
                         <td scope="row" >২০২০</td>
-                        td>
                         <td scope="row"><input type="number" class="form-control" name="" id="" ></td>
                         <td scope="row"><input type="number" class="form-control" name="" id="" ></td>
                         <td scope="row"><input type="number" class="form-control" name="" id="" ></td>

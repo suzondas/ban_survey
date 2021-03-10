@@ -46,7 +46,7 @@
         <div class="row mt-2">
             ২.১.১ শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, ট্রান্সফার ইন, ট্রান্সফার আউট, পুস্তকের চাহিদা অনুযায়ী শিক্ষার্থীর সংখ্যা ২০২০
         </div>
-        <div class="row border border-info  py-1 mt-2 ">
+        <div class="row   py-1 mt-2 ">
             <div class="col">
                 <table class="table table-bordered  " style="text-align:center">
                     <thead>
