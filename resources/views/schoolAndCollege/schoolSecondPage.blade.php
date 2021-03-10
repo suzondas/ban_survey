@@ -800,8 +800,321 @@
                         <td scope="row">সিপিডি-১ ট্রেনিং (১৪ দিন)</td>
                         <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
                         <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row border border-info py-1 mt-2">
+            <div class="col-md-6">
+                <div class="col">
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <td></td>
+                            <td>মোট</td>
+                            <td>মহিলা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td style="width: 350px">২.৪.১৪  ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
+                            <td><input type="number"  class="form-control" name="" id=""></td>
+                            <td><input type="number"  class="form-control" name="" id=""></td>
+                        </tr>
 
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">২.৪.১৫ ইংরেজি বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <td>ক্রমিক নং</td>
+                            <td>বিবরণ</td>
+                            <td>শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td>১</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে বাধ্যতামূলক ১০০ নম্বরের ইংরেজি ছিল</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>২</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ৩০০ নম্বরের ইংরেজি ছিল</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৩</td>
+                            <td style="width: 350px">ইংরেজিতে স্নাতক-সম্মান</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৪</td>
+                            <td style="width: 350px">ইংরেজিতে স্নাতকোত্তর</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৫</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ইংরেজি ছিল না</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৬</td>
+                            <td style="width: 350px">এইচএসসি পাস</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col">
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <td></td>
+                            <td>মোট</td>
+                            <td>মহিলা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td style="width: 350px">২.৪.১৬  ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:</td>
+                            <td><input type="number"  class="form-control" name="" id=""></td>
+                            <td><input type="number"  class="form-control" name="" id=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">২.৪.১৭ গণিত বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
+
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <td>ক্রমিক নং</td>
+                            <td>বিবরণ</td>
+                            <td>শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td>১</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে পদার্থ ও রসায়নসহ গণিত ছিল</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>২</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে অন্যান্য বিষয়সহ গণিত ছিল</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৩</td>
+                            <td style="width: 350px">গণিতে স্নাতক-সম্মান</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৪</td>
+                            <td style="width: 350px">গণিতে স্নাতকোত্তর</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৫</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে গণিত ছিল না কিন্তু এইচএসসিতে ছিল</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৬</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে গণিত ছিল না</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৭</td>
+                            <td style="width: 350px">গণিতসহ এইচএসসি পাশ</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৮</td>
+                            <td style="width: 350px">গণিত ছাড়া এইচএসসি পাশ</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row border border-info py-1">
+            <div class="col-md-8">
+                <div class="col">২.৪.১৮ অবসর গ্রহণ, নতুন নিয়োগপ্রাপ্ত, গবেষণা কাজ, পুরষ্কার প্রাপ্ত ইত্যাদি সম্পর্কিত শিক্ষকের সংখ্যা
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <td rowspan="2">ক্রমিক নং</td>
+                            <td rowspan="2" style="width:450px">বিবরণ</td>
+                            <td colspan="2"> শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                        </tr>
+                        <tr>
+                            <td>মোট</td>
+                            <td>মহিলা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td>১</td>
+                            <td style="width: 300px">তথ্য প্রদানের দিন শিক্ষক উপস্থিতি</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>২</td>
+                            <td style="width: 300px">অবসরে গিয়েছেন (১/৭/২০২০থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৩</td>
+                            <td style="width: 300px">অবসরে যাবেন (১/৭/২০২১ থেকে ৩০/৬/২০২২ পর্যন্ত)</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৪</td>
+                            <td style="width: 300px">নতুন নিয়োগপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৫</td>
+                            <td style="width: 300px">শিক্ষকতা পেশা ছেড়ে দিয়েছেন (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৬</td>
+                            <td style="width: 300px">NTRCA কর্তৃক সুপারিশকৃত শিক্ষকের সংখ্যা</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৭</td>
+                            <td style="width: 300px">বর্তমানে কতজন শিক্ষক গবেষণা কাজে সম্পৃক্ত</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৮</td>
+                            <td style="width: 300px">একাডেমিক বিষয়ের ওপর পুরষ্কারপ্রাপ্ত শিক্ষকের সংখ্যা</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>৯</td>
+                            <td style="width: 300px">শিখন-শেখানো বিষয়ে প্রশিক্ষণপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>১০</td>
+                            <td style="width: 300px">বিশেষ চাহিদাসম্পন্ন (Special needs) শিক্ষার্থীর শিক্ষা বিষয়ে প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        <tr>
+                            <td>১১</td>
+                            <td style="width: 300px">একীভূত শিক্ষা (Inclusive education), শিশু অধিকার এবং বিদ্যালয়ের ইতিবাচক শৃঙ্খলা বিষয়ের ওপর প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা</td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                            <td><input type="number"  class="form-control" name="" id="" ></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 col-9">
+            ২.৫ শিক্ষা প্রতিষ্ঠানে প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য (নির্দিষ্ট স্থানে টিক চিহ্ন দিন)
+        </div>
+        <div class="row border border-info py-1 mt-2 col-8">
+            <div class="col">
+                <table class="table table-bordered" style="text-align:center">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="col" rowspan="7" >শিক্ষকদের জন্য</td>
+                        <td scope="col" >বিষয়</td>
+                        <td scope="col" >জাতীয়</td>
+                        <td scope="col" >বিভাগ/মহানগর</td>
+                        <td scope="col" >জেলা</td>
+                        <td scope="col" >উপজেলা/থানা</td>
+                        <td scope="col" >সাল</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" >শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান প্রধান</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">শ্রেষ্ঠ শ্রেণি শিক্ষক</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" >শ্রেষ্ঠ শ্রেণি শিক্ষক (বিএনসিসি)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" >শ্রেষ্ঠ শ্রেণি শিক্ষক (স্কাউট)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" >শ্রেষ্ঠ শ্রেণি শিক্ষক (গার্ল গাইড)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" rowspan="3">শিক্ষার্থীদের জন্য</td>
+                        <td scope="row" >শ্রেষ্ঠ শিক্ষার্থী</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" >শ্রেষ্ঠ শিক্ষার্থী ( স্কাউট)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" >শ্রেষ্ঠ শিক্ষার্থী (গার্ল গাইড)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width:60px;" ></td>
                     </tr>
                     </tbody>
                 </table>
