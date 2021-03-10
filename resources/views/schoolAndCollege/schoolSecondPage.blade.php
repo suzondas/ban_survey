@@ -546,6 +546,267 @@
                 </table>
             </div>
         </div>
+        <div class="row border border-info py-1 mt-2">
+            <div class="col-md-4" > ২.৪ মূল প্রতিষ্ঠানের পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে) শিক্ষক ও কর্মচারীর সংখ্যা: ২০২১
+
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <td rowspan="2">পদবী</td>
+                        <td colspan="2">শিক্ষক সংখ্যা</td>
+                    </tr>
+                    <tr>
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td>(৩৫)পিএইচডি</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(৩৪)এমফিল/এমএস</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(১৪)স্নাতকোত্তর (অনার্সসহ)</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(৩৬)স্নাতকোত্তর (অনার্সছাড়া)</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(১৫)কামিল</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(১৩)স্নাতক সম্মান (৩ বছর মেয়াদী)</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(৩৮)স্নাতক সম্মান  (৪ বছর মেয়াদী)</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(১০)স্নাতক</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(১১)ফাজিল</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(০৪)এইচএসসি/ আলিম বা সমমান</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(২৫)কৃষি ডিপ্লোমা</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <td rowspan="2">পদবী</td>
+                        <td colspan="2">শিক্ষক সংখ্যা</td>
+                    </tr>
+                    <tr>
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td>(০৭)এম এড</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(০৪)বিএড/ডিপ ইন এড</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(০৫)বি পি এড</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(০৬)বি এজি এড</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                ২.৪.৪ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <td rowspan="2">প্রশিক্ষণ/ ডিগ্রি</td>
+                        <td colspan="2">শিক্ষক সংখ্যা</td>
+                    </tr>
+                    <tr>
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td>ডিপ্লোমা (আইসিটি)</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>সার্টিফিকেট ট্রেনিং</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>হার্ডওয়্যার এন্ড ট্রাবল স্যুটিং</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>ডিজিটাল কনটেন্ট ডেভলপমেন্ট ট্রেনিং</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>বেসিক আেই.সি.টি ট্রেনিং</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>বিষয়ভিত্তিক প্রশিক্ষণ</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>ব্যবস্থাপনা</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>অন্যান্য</td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                        <td><input type="number"  class="form-control" name="" id=""></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mt-4 col-9">
+            ২.৪.১২ কর্মকালীন প্রশিক্ষণের তথ্য
+        </div>
+        <div class="row border border-info py-1 mt-2 col-8">
+            <div class="col">
+                <table class="table table-bordered" style="text-align:center">
+                    <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">প্রশিক্ষণ</th>
+                        <th scope="col" colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+                        <th scope="col" rowspan="2">প্রশিক্ষণ</th>
+                        <th scope="col" colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+
+                    </tr>
+                    <tr>
+
+                        <th scope="col" colspan="2">হ্যাঁ/না</th>
+                        <th scope="col">মোট</th>
+                        <th scope="col">মহিলা</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="row">হেড টিচার ট্রেনিং (২১ দিন)</td>
+                        <td scope="row" colspan="2"> <select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td scope="row" >সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">হেড টিচার ফলো-আপ ট্রেনিং (৬ দিন)</td>
+                        <td scope="row" colspan="2"> <select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td scope="row">সিপিডি-২ ট্রেনিং (৫ দিন)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">হেড টিচার প্রি-সার্ভিস ট্রেনিং (৩৫ দিন)</td>
+                        <td scope="row" colspan="2"> <select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td scope="row">ক্লাস্টার ট্রেনিং (১ দিন)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" rowspan="2"></td>
+                        <td scope="row" colspan="2" >প্রশিক্ষণপ্রাপ্ত শিক্ষক সংখ্যা</td>
+                        <td scope="row">এস.বি. এ ট্রেনিং</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+
+                        <td scope="row">মোট</td>
+                        <td scope="row">মহিলা</td>
+                        <td scope="row">সৃজনশীল প্রশ্ন সংক্রান্ত ট্রেনিং</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                     <tr>
+                        <td scope="row">এসটিসি ট্রেনিং (৩ মাস)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row">অন্যান্য ট্রেনিং</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">এসটিটি থেকে বি.এড (৯ মাস)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row" colspan="3" rowspan="2">•প্রধান শিক্ষকগণ হ্যাঁ/না টিক দিবেন <br>
+                            •অন্যান্য শিক্ষকগণের সংখ্যা লিখবেন
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">সিপিডি-১ ট্রেনিং (১৪ দিন)</td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td scope="row"><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         @include('components/footer')
     </div>
 @endsection
