@@ -1440,7 +1440,7 @@
                     </div>
                     <br>
                     <div class="row border border-info py-1">
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             ২.৫ শিক্ষা প্রতিষ্ঠানে প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য (নির্দিষ্ট স্থানে টিক চিহ্ন দিন)
                         <table class="table table-bordered text-center">
                     <tbody>
@@ -1525,6 +1525,98 @@
                         <td><input type="radio" name="easy" id="" ></td>
                         <td><input type="radio" name="easy" id="" ></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                            ৩.৫.১৭ বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা
+                        <table class="table table-bordered text-center">
+                    <tbody>
+                    <tr>
+                        <td>বিষয়</td>
+                        <td></td>
+                        <td>প্রতিষ্ঠান পর্যায়ে</td>
+                        <td >উপজেলা/থানা পর্যায়ে</td>
+                        <td >জেলা পর্যায়ে</td>
+                        <td >বিভাগীয় পর্যায়ে</td>
+                        <td >জাতীয় পর্যায়ে</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">সাহিত্য ও সংস্কৃতি</td>
+                        <td >অংশগ্রহণকারী</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td>পুরষ্কারপ্রাপ্ত</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">ক্রীড়া (আউটডোর)</td>
+                        <td >অংশগ্রহণকারী</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td>পুরষ্কারপ্রাপ্ত</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">ক্রীড়া (ইনডোর)</td>
+                        <td >অংশগ্রহণকারী</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    <tr>
+                        <td>পুরষ্কারপ্রাপ্ত</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">সৃজনশীল মেধা অন্বেষণ</td>
+                        <td >অংশগ্রহণকারী</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td>পুরষ্কারপ্রাপ্ত</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td>বিশেষ কৃতিত্বপূর্ণ অবদান</td>
+                        <td >পুরষ্কারপ্রাপ্ত</td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
+                        <td><input type="radio" name="easy" id="" ></td>
                     </tr>
                     </tbody>
                 </table>
