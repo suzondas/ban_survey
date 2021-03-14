@@ -198,10 +198,6 @@
                 <input type="button" class="" name="" id="" value="Add More">
             </div>
         </div>
-
-
-
-
         {{--        open university --}}
         <div class="row contentBox">
             <div class="input-group contentHeader">
@@ -213,7 +209,9 @@
             </div>
             <div class="contentBoxBody">
                 <div class="row col-8">
-                    <div class="col-7">২.৩.৭ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম পরিচালিত হয় কি?</div>
+                    <div class="col-7">২.৩.৭ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম পরিচালিত হয়
+                        কি?
+                    </div>
                     <div class="col-1">
                         <select class="custom-select " name="english_version" style="width: 90px">
                             <option value="">Select</option>
@@ -521,7 +519,6 @@
                 </table>
             </div>
         </div>
-
         <div class="row border border-info py-1 mt-2 contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -698,7 +695,7 @@
                         <div class="col">
                             <table class="table table-bordered text-center">
                                 <tr>
-                                    <td  rowspan="2">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক
+                                    <td rowspan="2">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক
                                         সংখ্যা:
                                     </td>
                                     <td>মোট</td>
@@ -762,7 +759,8 @@
                             <table class="table table-bordered text-center">
                                 <tr>
                                     <td rowspan="2">২.৪.১৬ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক
-                                        সংখ্যা:</td>
+                                        সংখ্যা:
+                                    </td>
                                     <td>মোট</td>
                                     <td>মহিলা</td>
                                 </tr>
