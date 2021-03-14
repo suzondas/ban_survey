@@ -28,7 +28,7 @@ input[type=number] {
     padding: 5px;
     margin: 5px;
     box-shadow: 2px 2px 2px gainsboro;
-    border: 1px solid gainsboro;
+    border: 1px solid dodgerblue;
 }
 .contentBoxBody{
     padding: 5px;
@@ -39,4 +39,13 @@ input[type=number] {
 }
 .contentItem{
     padding-top:5px;
+}
+.bg-number{
+    background:orange;
+    color: white;
+}
+.bg-number-label{
+    background:skyblue;
+    font-weight: bold;
+    color: black;
 }
