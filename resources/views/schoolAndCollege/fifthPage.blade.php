@@ -11,7 +11,7 @@
                 </div>
             </div>
              <div class="body">
-                <div class="row border border-info py-1">
+                <div class="row">
                     <div class="col-md-2">
                         <label class="label-text" for="meeting_no"> ৩.১ ২০২০ সালে ম্যানেজিং কমিটির কতটি সভা হয়েছে? </label>
                         <input type="text" class="form-control" name="meeting_no"
@@ -55,9 +55,6 @@
                             <option value="10">অন্যান্য</option>
                         </select>
                     </div>
-                </div>
-                <br>
-                <div class="row border border-info py-1">
                     <div class="col-md-3">
                        <label class="label-number" for="safe_water">৩.৩ শিক্ষক ও শিক্ষার্থীদের জন্য নিরাপদ খাবার পানির ব্যবস্থা আছে কি?</label>
                         <select class="custom-select" name="safe_water" style="width: 100px">
