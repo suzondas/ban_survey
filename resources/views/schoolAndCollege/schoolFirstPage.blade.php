@@ -7,9 +7,9 @@
         <div class="contentBox col-8">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.১</span>
+                    <span class="input-group-text bg-number">২.১</span>
                 </div>
-                <div class="form-control">স্তরভিত্তিক শিক্ষার্থী সংখ্যা ২০২১ঃ</div>
+                <div class="form-control bg-number-label">স্তরভিত্তিক শিক্ষার্থী সংখ্যা ২০২১ঃ</div>
             </div>
             <div class="contentBoxBody">
                 <table class="table table-bordered" style="text-align:center">
@@ -44,9 +44,9 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.১.১</span>
+                    <span class="input-group-text bg-number">২.১.১</span>
                 </div>
-                <div class="form-control">শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, ট্রান্সফার ইন, ট্রান্সফার আউট, পুস্তকের
+                <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, ট্রান্সফার ইন, ট্রান্সফার আউট, পুস্তকের
                     চাহিদা অনুযায়ী শিক্ষার্থীর সংখ্যা ২০২০
                 </div>
             </div>
@@ -380,9 +380,9 @@
         <div class="contentBox col-10">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.১.২</span>
+                    <span class="input-group-text bg-number">২.১.২</span>
                 </div>
-                <div class="form-control">২০২০ ও তার পূর্বের শিক্ষার্থী ২০২১ সালে একই শ্রেণিতে (রিপিটার) অধ্যয়নরত আছে
+                <div class="form-control bg-number-label">২০২০ ও তার পূর্বের শিক্ষার্থী ২০২১ সালে একই শ্রেণিতে (রিপিটার) অধ্যয়নরত আছে
                     এইরূপ শিক্ষার্থীর
                     সংখ্যা
                 </div>
@@ -430,9 +430,9 @@
         <div class="contentBox col-10">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.১.৩</span>
+                    <span class="input-group-text bg-number">২.১.৩</span>
                 </div>
-                <div class="form-control">২০২০ সালের ঝরে পড়া (ড্রপআউট) শিক্ষার্থীর সংখ্যা
+                <div class="form-control bg-number-label">২০২০ সালের ঝরে পড়া (ড্রপআউট) শিক্ষার্থীর সংখ্যা
                 </div>
             </div>
             <div class="contentBoxBody">
@@ -479,9 +479,9 @@
         <div class="contentBox col-12">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.১.৪</span>
+                    <span class="input-group-text bg-number">২.১.৪</span>
                 </div>
-                <div class="form-control">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার প্রয়োজন নেই)২.১.৪
+                <div class="form-control bg-number-label">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার প্রয়োজন নেই)২.১.৪
                     সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার প্রয়োজন নেই)
                 </div>
             </div>
@@ -622,9 +622,9 @@
         <div class="contentBox col-10 ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.২ </span>
+                    <span class="input-group-text bg-number">২.২ </span>
                 </div>
-                <div class="form-control">স্তর ও ক্যাটাগরিভিত্তিক শিক্ষার্থীর সংখ্যা ২০২১
+                <div class="form-control bg-number-label">স্তর ও ক্যাটাগরিভিত্তিক শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -792,9 +792,9 @@
         <div class="contentBox col-12 ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.২</span>
+                    <span class="input-group-text bg-number">২.২</span>
                 </div>
-                <div class="form-control">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
+                <div class="form-control bg-number-label">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -1064,9 +1064,9 @@
         <div class="contentBox col-11">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.২.৪</span>
+                    <span class="input-group-text bg-number">২.২.৪</span>
                 </div>
-                <div class="form-control">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
+                <div class="form-control bg-number-label">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -1318,9 +1318,9 @@
         <div class="contentBox col-9">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.৩</span>
+                    <span class="input-group-text bg-number">২.৩</span>
                 </div>
-                <div class="form-control">বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১ তারিখের বয়স)
+                <div class="form-control bg-number-label">বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১ তারিখের বয়স)
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -1477,9 +1477,9 @@
         <div class="contentBox col-9">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.৩.১</span>
+                    <span class="input-group-text bg-number">২.৩.১</span>
                 </div>
-                <div class="form-control">বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১ তারিখের বয়স)
+                <div class="form-control bg-number-label">বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১ তারিখের বয়স)
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -1662,9 +1662,9 @@
         <div class="contentBox col-9">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">২.৩.২</span>
+                    <span class="input-group-text bg-number">২.৩.২</span>
                 </div>
-                <div class="form-control">অভিভাবকের পেশা অনুযায়ী শিক্ষার্থীর সংখ্যা ২০২১
+                <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -1833,12 +1833,16 @@
             </div>
         </div>
 
-        <div class="row mt-4 col-9">
-            ২.৩.৩ শ্রেণি, বিভাগভিত্তিক উত্তীর্ণ ও অনুত্তীর্ণ শিক্ষার্থীর তথ্য, ডিসেম্বর ২০২০
-        </div>
-        <div class="row border border-info py-1 mt-2 col-10">
-            <div class="col">
-                <table class="table table-bordered" style="text-align:center">
+        <div class="contentBox col-9">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩.৩</span>
+                </div>
+                <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক উত্তীর্ণ ও অনুত্তীর্ণ শিক্ষার্থীর তথ্য, ডিসেম্বর ২০২০
+                </div>
+            </div>
+            <div class="contentBoxBody ">
+                <table class="table table-bordered text-center">
                     <thead>
                     <tr>
                         <th>শ্রেণি</th>
@@ -2001,12 +2005,16 @@
                 </table>
             </div>
         </div>
-        <div class="row mt-4 col-9">
-            ২.৩.৪ বিষয়ভিত্তিক পাঠদানের তথ্য:
-        </div>
-        <div class="row border border-info py-1 mt-2 col-12">
-            <div class="col">
-                <table class="table table-bordered" style="text-align:center">
+        <div class="contentBox col-9">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩.৪</span>
+                </div>
+                <div class="form-control bg-number-label">বিষয়ভিত্তিক পাঠদানের তথ্য:
+                </div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered text-center">
                     <thead>
                     <tr>
 
