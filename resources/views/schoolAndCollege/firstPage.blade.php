@@ -14,9 +14,9 @@
                 <div class="col-md-6 d-flex flex-row-reverse">
                         <table class="" style="width:300px;" border="1">
                             <tr>
-                                <td rowspan="2" class="align-middle">GIS</td>
-                                <td class="text-center">Lat</td>
-                                  <td class="text-center">Long</td>
+                                <td rowspan="2" class="align-middle">GIS(জিআইএস)</td>
+                                <td class="text-center">অক্ষাংশ (Latitude)</td>
+                                  <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                             </tr>
                               <tr>
                                 <td> <input type="text" class="" name="lat"

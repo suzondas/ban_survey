@@ -12,7 +12,7 @@
             <div class="body">
         <div class="row border border-info py-1">
             <div class="col">
-              ২.৩.২ শ্রেণি, বিষয়ভিত্তিক শিক্ষার্থী, উত্তীর্ণ ও অনুত্তীর্ণ সম্পর্কিত তথ্য ২০২১
+              ২.৩.৫ উচ্চ মাধ্যমিক ও তদুর্ধ্বস্তরে শ্রেণি, বিভাগ ও লিঙ্গভিত্তিক উত্তীর্ণ ও অনুত্তীর্ণ শিক্ষার্থীর তথ্য (বার্ষিক পরীক্ষার ফলাফল)
                 <table class="table table-bordered  " style="text-align:center">
                     <tr>
                         <td scope="col" rowspan="2" >শ্রেণি</td>
@@ -374,7 +374,7 @@
         <br>
         <div class="row border border-info py-1">
             <div class="col">
-                    ২.৩.৩ বিষয়ভিত্তিক শিক্ষক ও শিক্ষার্থীর সংখ্যা (শিক্ষকগণের তথ্য নিয়োগ অনুযায়ী সন্নিবেশিত করুন):
+                    ২.৩.৬ বিষয়ভিত্তিক পাঠদানের তথ্য:
                 <table class="table table-bordered text-center">
                     <tr>
                         <td scope="col" rowspan="3">বিষয়</td>
@@ -425,7 +425,7 @@
             <br>
             <div class="row">
             <div class="col">
-                    ২.৩.৪ বিভাগভিত্তিক বিভিন্ন বোর্ড এবং বিশ্ববিদ্যালয় পরীক্ষার ফলাফল
+                    ২.৩.৭ বিভাগভিত্তিক বিভিন্ন বোর্ড পরীক্ষার ফলাফল:
                 <table class="table table-bordered text-center">
                     <tr>
                         <td scope="col" rowspan="3">পরীক্ষার নাম ও বছর</td>
@@ -460,8 +460,21 @@
                         <td scope="col">ছাত্রী</td>
                     </tr>
                     <tbody>
+                        <tr>
+                        <td>জেএসসি (২০২০)</td>
+                        <td></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                    </tr>
                     <tr>
-                        <td rowspan="3">এইচএসসি (২০১৯)</td>
+                        <td rowspan="4">এসএসসি (২০২০)</td>
                         <td  >মানবিক</td>
                         <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
                         <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
@@ -516,20 +529,7 @@
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td rowspan="4">স্নাতক (পাস) (সর্বশেষ বছর) চূড়ান্ত (২০১৯)</td>
-                        <td  >বিএ</td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                    </tr>
-                    <tr>
-                        <td  >বিএসএস</td>
+                        <td  >এসএসসি (ভোক)</td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
@@ -550,7 +550,20 @@
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td  >বিএসসি</td>
+                        <td rowspan="5">এইচএসসি (২০২০)</td>
+                        <td  >মানবিক</td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                    </tr>
+                    <tr>
+                        <td  >বিজ্ঞান</td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
@@ -571,7 +584,7 @@
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td  >বিবিএস</td>
+                        <td  >ব্যাবসায় শিক্ষা</td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                         <td  ><input type="number" class="form-control" name="" id=""></td>
@@ -592,30 +605,46 @@
                         <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td rowspan="1">স্নাতক (সম্মান)</td>
-                        <td  ></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  >এইচএসসি (ভোক)</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td rowspan="1">স্নাতকোত্তর</td>
-                        <td  ></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
-                        <td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td><td  ><input type="number" class="form-control" name="" id="" style="width:35px"></td>
+                        <td  >এইচএসসি (বিএম)</td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
+                        <td  ><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     </tbody>
                 </table>
@@ -623,8 +652,8 @@
                 </div>
             <br>
             <div class="row border border-info py-1">
-                    <div class="col-md-12">
-                        ২.৩.৫ ট্রেডভিত্তিক এইচএসসি (ভোকেশনাল) শাখার শিক্ষার্থী ২০২১ (যদি এইচএসসি (ভোকেশনাল) থাকে)
+                <div class="col-md-12">
+                        ২.৩.৮ কোর্স ভিত্তিক এসএসসি (ভোকেশনাল) শাখার শিক্ষার্থী ২০২১
                         <table class="table table-bordered" style="text-align:center">
                                 <tr>
                                   <td rowspan="3"> কোড</td>
@@ -665,7 +694,48 @@
                     </div>
                 <br>
                     <div class="col-md-12">
-                        ২.৩.৬ ট্রেডভিত্তিক এইচএসসি-বিএম শাখার শিক্ষার্থী-২০২১ (যদি এইচএসসি বিএম থাকে)
+                        ২.৩.৯ এইচএসসি বিএম শাখার শিক্ষার্থী ২০২১
+                        <table class="table table-bordered" style="text-align:center">
+                                <tr>
+                                  <td rowspan="3"> কোড</td>
+                                  <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
+                                  <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
+                                  <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা</td>
+                                  <td rowspan="2" colspan="2"> পাসের সংখ্যা</td>
+                                </tr> 
+                                <tr>
+                                  <td colspan="2">১ম বর্ষ (একাদশ)</td>
+                                  <td colspan="2">২য় বর্ষ (দ্বাদশ)</td>
+                                </tr>
+                                <tr>
+                                  <td>মোট</td>
+                                  <td>ছাত্রী</td>
+                                  <td>মোট</td>
+                                  <td>ছাত্রী</td>
+                                  <td>মোট</td>
+                                  <td>ছাত্রী</td>
+                                  <td>মোট</td>
+                                  <td>ছাত্রী</td>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                <br>
+                    <div class="col-md-12">
+                        ২.৩.১০ এইচএসসি ভোকেশনাল শাখার শিক্ষার্থী ২০২১
                         <table class="table table-bordered" style="text-align:center">
                                 <tr>
                                   <td rowspan="3"> কোড</td>
@@ -707,7 +777,7 @@
                     </div>
                 <br>
                     <div class="row border border-info py-1">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                     <label class="label-number" for="">২.৩.৭ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম পরিচালিত হয় কি?</label>
                         <select class="custom-select" name="" style="width: 75px">
                             <option value="" selected>Select</option>
@@ -715,18 +785,17 @@
                             <option value="2">না-২</option>>
                         </select>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <label class="label-number" for="">২.৩.৮ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের ছক মোতাবেক প্রদান করুন</label>
                         <table class="table table-bordered text-center">
                                 <tr>
                                   <td rowspan="3">ভর্তির বছর</td>
+                                  <td colspan="4"> এসএসসি প্রোগ্রাম</td>
                                   <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">স্নাতক (পাস) প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">স্নাতক (সম্মান) প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">স্নাতকোত্তর প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">অন্যান্য প্রোগ্রাম</td>
                                 </tr> 
                                 <tr>
+                                  <td colspan="2">৯ম শ্রেণি</td>
+                                  <td colspan="2">১০ম  শ্রেণি</td>
                                   <td colspan="2">একাদশ শ্রেণি</td>
                                   <td colspan="2">দ্বাদশ শ্রেণি</td>
                                 </tr>
@@ -739,19 +808,10 @@
                                   <td>ছাত্রী</td>
                                   <td>মোট</td>
                                   <td>ছাত্রী</td>
-                                  <td>মোট</td>
-                                  <td>ছাত্রী</td>
-                                  <td>মোট</td>
-                                  <td>ছাত্রী</td>
-
                                 </tr>
                                 <tbody>
                                 <tr>
                                     <td>২০২১</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -771,17 +831,9 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>২০১৯</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -801,17 +853,9 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>২০১৭</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -824,26 +868,21 @@
                                 </tbody>
                         </table>
                     </div>
-                    <div class="col">
+                    <div class="col-md-10">
                         <label class="label-number" for="">২.৩.৯ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক প্রদান করুন</label>
                         <table class="table table-bordered" style="text-align:center">
                                 <tr>
-                                  <td rowspan="3" colspan="2">ভর্তির বছর</td>
+                                  <td rowspan="3" colspan="2" style="width:250px">ভর্তির বছর</td>
                                   <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">স্নাতক (পাস) প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">স্নাতক (সম্মান) প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">স্নাতকোত্তর প্রোগ্রাম</td>
-                                  <td rowspan="2" colspan="2">অন্যান্য প্রোগ্রাম</td>
+                                  <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
                                 </tr> 
                                 <tr>
+                                  <td colspan="2">৯ম শ্রেণি</td>
+                                  <td colspan="2">১০ম শ্রেণি</td>
                                   <td colspan="2">একাদশ শ্রেণি</td>
                                   <td colspan="2">দ্বাদশ শ্রেণি</td>
                                 </tr>
                                 <tr>
-                                  <td>পরিক্ষার্থী</td>
-                                  <td>পাশের সংখ্যা</td>
-                                  <td>পরিক্ষার্থী</td>
-                                  <td>পাশের সংখ্যা</td>
                                   <td>পরিক্ষার্থী</td>
                                   <td>পাশের সংখ্যা</td>
                                   <td>পরিক্ষার্থী</td>
@@ -865,17 +904,9 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>ছাত্রী</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -896,17 +927,9 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>ছাত্রী</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -927,17 +950,9 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>ছাত্রী</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -957,18 +972,9 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>ছাত্রী</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -989,17 +995,9 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
                                     <td>ছাত্রী</td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
-                                <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -1015,7 +1013,7 @@
                 </div>
                 <br>
                 <div class="row border border-info py-1">
-                <div class="col-md-9"> ২.৪ মূল প্রতিষ্ঠানের পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে) শিক্ষক ও কর্মচারীর সংখ্যা: ২০২১ </label>
+                <div class="col-md-9">২.৪ পদবীভিত্তিক কর্মরত ও এমপিওভুক্ত শিক্ষক ও কর্মচারীর সংখ্যা: </label>
                         <table class="table table-bordered text-center">
                                 <tr>
                                   <td rowspan="2">পদবী</td>
@@ -1048,7 +1046,7 @@
                         </table>
                     </div>
                     <div class="col-md-9">
-                        <label class="label-number" for="">২.৪.১ সংযুক্ত এসএসসি (ভোকেশনাল) এইচএসসি (বিএম) শাখার শিক্ষক/কর্মচারীর সংখ্যা: ২০২০</label>
+                        <label class="label-number" for="">২.৪.১ সংযু্ক্ত এসএসসি (ভোকেশনাল)/এইচএসসি (বিএম) শাখার শিক্ষক/কর্মচারীর সংখ্যা:</label>
                         <table class="table table-bordered text-center">
                                 <tr>
                                   <td rowspan="2">পদবী</td>
@@ -1087,7 +1085,7 @@
 
                         <table class="table table-bordered text-center">
                                 <tr>
-                                  <td rowspan="2">পদবী</td>
+                                  <td rowspan="2" style="width: 200px">পদবী</td>
                                   <td colspan="2">শিক্ষক সংখ্যা</td>
                                 </tr>
                                 <tr>
@@ -1157,7 +1155,7 @@
                         ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
                         <table class="table table-bordered text-center">
                                 <tr>
-                                  <td rowspan="2">পদবী</td>
+                                  <td rowspan="2" style="width: 200px">পদবী</td>
                                   <td colspan="2">শিক্ষক সংখ্যা</td>
                                 </tr>
                                 <tr>
@@ -1192,7 +1190,7 @@
                         ২.৪.৪ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা
                         <table class="table table-bordered text-center">
                                 <tr>
-                                  <td rowspan="2">প্রশিক্ষণ/ ডিগ্রি</td>
+                                  <td rowspan="2" style="width: 200px">প্রশিক্ষণ/ ডিগ্রি</td>
                                   <td colspan="2">শিক্ষক সংখ্যা</td>
                                 </tr>
                                 <tr>
@@ -1221,6 +1219,21 @@
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                                 <tr>
+                                    <td>বেসিক আই.সি.টি ট্রেনিং</td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                </tr>
+                                <tr>
+                                    <td>বিষয়ভিত্তিক প্রশিক্ষণ</td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                </tr>
+                                <tr>
+                                    <td>ব্যবস্থাপনা</td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                <td><input type="number"  class="form-control" name="" id=""></td>
+                                </tr>
+                                <tr>
                                     <td>অন্যান্য</td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
@@ -1229,6 +1242,103 @@
                         </table>
                     </div>
                 </div>
+                <br>
+                
+            <div class="row border border-info py-1">
+            <div class="col-md-8">
+                ২.৪.১২ কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন):s
+                <table class="table table-bordered" style="text-align:center">
+                    <thead>
+                    <tr>
+                        <th  rowspan="2">প্রশিক্ষণ</th>
+                        <th  colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+                        <th  rowspan="2">প্রশিক্ষণ</th>
+                        <th  colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+
+                    </tr>
+                    <tr>
+
+                        <th  colspan="2">হ্যাঁ/না</th>
+                        <th >মোট</th>
+                        <th >মহিলা</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td >হেড টিচার ট্রেনিং (২১ দিন)</td>
+                        <td  colspan="2"> <select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td  >সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+
+                    <tr>
+                        <td >হেড টিচার ফলো-আপ ট্রেনিং (৬ দিন)</td>
+                        <td  colspan="2"> <select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td >সিপিডি-২ ট্রেনিং (৫ দিন)</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td >হেড টিচার প্রি-সার্ভিস ট্রেনিং (৩৫ দিন)</td>
+                        <td  colspan="2"> <select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td >ক্লাস্টার ট্রেনিং (১ দিন)</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td  rowspan="2"></td>
+                        <td  colspan="2" >প্রশিক্ষণপ্রাপ্ত শিক্ষক সংখ্যা</td>
+                        <td >এস.বি. এ ট্রেনিং</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+
+                        <td >মোট</td>
+                        <td >মহিলা</td>
+                        <td >সৃজনশীল প্রশ্ন সংক্রান্ত ট্রেনিং</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                     <tr>
+                        <td >এসটিসি ট্রেনিং (৩ মাস)</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td >অন্যান্য ট্রেনিং</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td >এসটিটি থেকে বি.এড (৯ মাস)</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td  colspan="3" rowspan="2">•প্রধান শিক্ষকগণ হ্যাঁ/না টিক দিবেন <br>
+                            •অন্যান্য শিক্ষকগণের সংখ্যা লিখবেন
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td >সিপিডি-১ ট্রেনিং (১৪ দিন)</td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td ><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
                 <br>
                 <div class="row border border-info py-1">
                 <div class="col-md-6"> 
@@ -1241,14 +1351,14 @@
                                 </tr>
                                 <tbody>
                                 <tr>
-                                    <td style="width: 350px">২.৪.১৪  ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
+                                    <td style="width: 350px">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="col">২.৪.১৫ ইংরেজি বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
+                    <div class="col">২.৪.১৫ যারা ইংরেজি পড়ান তাদের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
                         <table class="table table-bordered text-center">
                                 <tr>
@@ -1301,14 +1411,14 @@
                                 </tr>
                                 <tbody>
                                 <tr>
-                                    <td style="width: 350px">২.৪.১৬  ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:</td>
+                                    <td style="width: 350px">২.৪.১৬ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:</td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 <td><input type="number"  class="form-control" name="" id=""></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="col">২.৪.১৭ গণিত বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
+                    <div class="col">২.৪.১৭ যারা গণিত পড়ান তাদের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
                         <table class="table table-bordered text-center">
                                 <tr>
@@ -1530,7 +1640,7 @@
                 </table>
             </div>
             <div class="col-md-6">
-                            ৩.৫.১৭ বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা
+                            বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা
                         <table class="table table-bordered text-center">
                     <tbody>
                     <tr>

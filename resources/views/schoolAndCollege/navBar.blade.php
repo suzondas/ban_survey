@@ -14,6 +14,10 @@
                    href="{{ url('schoolAndCollege/schoolFirstPage') }}">স্কুল সম্পর্কিত-১</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/schoolSecondPage') }}">স্কুল সম্পর্কিত-২</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/thirdPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/thirdPage') }}">তৃতীয় পাতা</a>
             </li>
@@ -36,6 +40,14 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/collegeSecondPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/collegeSecondPage') }}">কলেজ(২য় পাতা)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/sncFirstPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/sncFirstPage') }}">স্কুল এন্ড কলেজ-১</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/sncSecondPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/sncSecondPage') }}">স্কুল এন্ড কলেজ-২</a>
             </li>
         </ul>
         <span class="navbar-text">
