@@ -667,6 +667,7 @@
                     <table class="table table-bordered" style="text-align:center">
                         <thead>
                         <tr class="custom-table-header">
+
                             <td>এমপিওভুক্তির স্তর</td>
                             <td>এমপিও ভুক্তির তারিখ</td>
                             <td>এমপিওভুক্তির স্তর</td>
@@ -777,7 +778,7 @@
                 <div class="row">
                     <div class="col">
                         <div class=""><label>১.৬ কমিটির ধরন:</label>
-                            <select class="custom-select" name="committee_type">
+                            <select class="custom-select" name="" style="width:100px">
                                 <option value="" selected>Select</option>
                                 <option value="1">ম্যানেজিং কমিটি</option>
                                 <option value="2">গর্ভনিং বডি</option>
@@ -788,10 +789,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col table table-bordered">
+                    <div class="col table table-bordered ">
                         <div class=""><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
                         </div>
-                        <div class="row ">
+                        <div class="row text-center">
                             <div class="col-md-4">
                                 <label for="men"> পুরুষ: </label>
                                 <input type="number" class="form-control" name="men"
@@ -844,10 +845,53 @@
                         </div>
                     </div>
                 </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label class="label-text" for="meeting_no"> ৩.১ ২০২০ সালে ম্যানেজিং কমিটির কতটি সভা
+                                হয়েছে? </label>
+                            <input type="text" class="w-50" name="meeting_no"
+                                   id="meeting_no">  টি
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label-number" for="meeting_discuss">৩.১.১ ম্যানেজিং কমিটির সভায় শিক্ষার
+                                মানোন্নয়ন সম্পর্কিত বিষয়ে কী কী আলোচনা হয়েছে?</label>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষক প্রশিক্ষণ<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষক ও শিক্ষার্থীর উপস্থিতি<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিগ্রহ/পীড়ন (বুলিং)<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বাল্যবিবাহ<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিছিয়ে পড়া শিক্ষার্থী<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষার্থীদের যাতায়াতে নিরাপত্তা<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">মাদক বিরোধী <br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ঝড়ে পড়া রোধ<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিরাপদ সড়ক<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">অন্যান্য
+                        </div>
+                        <div class="col-md-2">
+                            <label class="label-text" for="pti_meeting"> ৩.২ ২০২১ সালে পিটিএ এর কতগুলো সভা হয়েছে? </label>
+                            <input type="text" class="w-50" name="pti_meeting"
+                                   id="pti_meeting" style="width: 100px">  টি
+                        </div>
+                        <div class="col-md-4">
+                            <label class="label-number" for="pti_discuss">৩.২.১ পিটিএ সভায় কী কী বিষয় আলোচনা ও সিদ্ধান্ত
+                                গৃহীত হয়েছ?</label>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষার্থীর উপস্থিতি<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সচেতনতামূলক কার্যক্রম<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিগ্রহ/পীড়ন (বুলিং)<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বাল্যবিবাহ<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিছিয়ে পড়া শিক্ষার্থী<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষার্থীদের যাতায়াতে নিরাপত্তা<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">মাদক বিরোধী <br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ঝড়ে পড়া রোধ<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিরাপদ সড়ক<br>
+                            <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">অন্যান্য
+                        </div>
+                    </div>
             </div>
         </div>
 
-        @include('components/footer');
+    @include('components/footer');
 
     </div>
 @endsection

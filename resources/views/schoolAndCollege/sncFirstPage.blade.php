@@ -12,7 +12,7 @@
                 <div class="form-control bg-number-label"> স্তরভিত্তিক শিক্ষার্থী সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th colspan="2">১ম-৫ম</th>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="contentBoxBody">
-            <table class="table table-bordered text-center">
+            <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th>স্তর</th>
@@ -399,7 +399,7 @@
                 <div class="form-control bg-number-label">২০২০ ও তার পূর্বের শিক্ষার্থী ২০২১ সালে একই শ্রেণিতে অধ্যয়নরত আছে এইরুপ শিক্ষার্থীর সংখ্যা (রিপিটার)</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th colspan="2">৬ষ্ঠ শ্রেণি</th>
@@ -457,7 +457,7 @@
                 <div class="form-control bg-number-label">২০২০ সালের ঝরেপড়া (ড্রপআউট) শিক্ষার্থীর সংখ্যা</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th colspan="2">৬ষ্ঠ শ্রেণি</th>
@@ -515,7 +515,7 @@
                 <div class="form-control bg-number-label">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করা প্রযোজ্য নয়)</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">সেকশন</th>
@@ -717,7 +717,7 @@
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে শ্রেণি ও বিভাগভিত্তিক শিক্ষার্থীর সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <tr>
                     <td rowspan="2">শ্রেণি</td>
                     <td rowspan="2" style="width:120px">বিভাগ</td>
@@ -1276,7 +1276,7 @@
                 <div class="form-control bg-number-label">এসএসসি ভোকেশনাল এর শ্রেণিভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <tr>
                     <td rowspan="2">শ্রেণি</td>
                     <td colspan="2">শিক্ষার্থীর সংখ্যা</td>
@@ -1347,7 +1347,7 @@
                 <div class="form-control bg-number-label">এইচএসসি ভোকেশনাল এর বর্ষভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <tr>
                     <td rowspan="2">শ্রেণি</td>
                     <td colspan="2">শিক্ষার্থীর সংখ্যা</td>
@@ -1418,7 +1418,7 @@
                 <div class="form-control bg-number-label">এইচএসসি বিএম এর বর্ষভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <tr>
                     <td rowspan="2">শ্রেণি</td>
                     <td colspan="2">শিক্ষার্থীর সংখ্যা</td>
@@ -1490,7 +1490,7 @@
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বিভিন্ন ক্যাটাগরিভিত্তিক শিক্ষার্থীর তথ্য ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">ক্র. নং</th>
@@ -1659,7 +1659,7 @@
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে বিভিন্ন ক্যাটাগরিভিত্তিক শিক্ষার্থীর তথ্য ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">ক্র. নং</th>
@@ -1828,7 +1828,7 @@
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">ক্র. নং</th>
@@ -2098,7 +2098,7 @@
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">ক্র. নং</th>
@@ -2430,7 +2430,7 @@
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে ক্ষুদ্র নৃ-গোষ্ঠীর ধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th>ক্র. নং</th>
@@ -2685,7 +2685,7 @@
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে ক্ষুদ্র নৃ-গোষ্ঠীর ধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">ক্র. নং</th>
@@ -2996,7 +2996,7 @@
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১ তারিখে বয়স)</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th colspan="2">শ্রেণি</th>
@@ -3180,7 +3180,7 @@
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১তারিখে বয়স)</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th colspan="2" style="width:250px">শ্রেণি</th>
@@ -3378,7 +3378,7 @@
                 <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী মাধ্যমিক স্তরে শিক্ষার্থী সংখ্যা (৬ষ্ঠ-১০ম):</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">ক্র. নং</th>
@@ -3551,7 +3551,7 @@
                 <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে শিক্ষার্থীর সংখ্যা:</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">ক্র. নং</th>
@@ -3724,7 +3724,7 @@
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, উত্তীর্ণ ও অনুত্তীর্ণ সম্পর্কিত তথ্য, ডিসেম্বর ২০২০ (বার্ষিক পরীক্ষার ফলাফল)</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
                     <th rowspan="2">শ্রেণি</th>

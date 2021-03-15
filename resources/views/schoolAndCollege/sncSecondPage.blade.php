@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td scope="col" rowspan="2">শ্রেণি</td>
                         <td scope="col" rowspan="2" style="width:120px">বিভাগ</td>
@@ -381,7 +381,7 @@
                 <div class="form-control bg-number-label">বিষয়ভিত্তিক পাঠদানের তথ্য:</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td scope="col" rowspan="3">বিষয়</td>
                         <td scope="col" colspan="2" rowspan="2">শিক্ষক (বিষয় ভিত্তিক)</td>
@@ -437,7 +437,7 @@
                 <div class="form-control bg-number-label">বিভাগভিত্তিক বিভিন্ন বোর্ড পরীক্ষার ফলাফল:</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td scope="col" rowspan="3">পরীক্ষার নাম ও বছর</td>
                         <td scope="col" rowspan="3">বিভাগ</td>
@@ -492,7 +492,6 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
-
                     </tr>
                     <tr>
                         <td rowspan="4">এসএসসি (২০২০)</td>
@@ -698,7 +697,7 @@
                 <div class="form-control bg-number-label">কোর্স ভিত্তিক এসএসসি (ভোকেশনাল) শাখার শিক্ষার্থী ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="3"> কোড</td>
                         <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
@@ -746,7 +745,7 @@
                 <div class="form-control bg-number-label">এইচএসসি বিএম শাখার শিক্ষার্থী ২০২১</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="3"> কোড</td>
                         <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
@@ -807,7 +806,7 @@
             <div class="col-md-9 contentBoxBody">
                 <label class="label-number" for="">২.৩.৮ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের
                     ছক মোতাবেক প্রদান করুন</label>
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="3">ভর্তির বছর</td>
                         <td colspan="4"> এসএসসি প্রোগ্রাম</td>
@@ -891,7 +890,7 @@
             <div class="col-md-10 contentBoxBody">
                 <label class="label-number" for="">২.৩.৯ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক
                     প্রদান করুন</label>
-                <table class="table table-bordered" style="text-align:center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="3" colspan="2" style="width:250px">ভর্তির বছর</td>
                         <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
@@ -1041,7 +1040,7 @@
                 <div class="form-control bg-number-label">পদবীভিত্তিক কর্মরত ও এমপিওভুক্ত শিক্ষক ও কর্মচারীর সংখ্যা:</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">পদবী</td>
                         <td colspan="2"> কর্মরত</td>
@@ -1075,7 +1074,7 @@
             <div class="col-md-9">
                 <label class="label-number" for="">২.৪.১ সংযু্ক্ত এসএসসি (ভোকেশনাল)/এইচএসসি (বিএম) শাখার
                     শিক্ষক/কর্মচারীর সংখ্যা:</label>
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">পদবী</td>
                         <td colspan="2"> কর্মরত</td>
@@ -1119,7 +1118,7 @@
             <div class="col-md-4 contentBoxBody"> ২.৪.২ মূল প্রতিষ্ঠানের পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে) শিক্ষক ও
                 কর্মচারীর সংখ্যা: ২০২১
 
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2" style="width: 200px">পদবী</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -1189,7 +1188,7 @@
             </div>
             <div class="col-md-4 contentBoxBody">
                 ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2" style="width: 200px">পদবী</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -1224,7 +1223,7 @@
             </div>
             <div class="col-md-4 contentBoxBody">
                 ২.৪.৪ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2" style="width: 200px">প্রশিক্ষণ/ ডিগ্রি</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -1287,7 +1286,7 @@
                 <div class="form-control bg-number-label">কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন):</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th rowspan="2">প্রশিক্ষণ</th>
@@ -1390,7 +1389,7 @@
 
             <div class="col-md-6 ">
                 <div class="col mt-2">
-                    <table class="table table-bordered text-center">
+                    <table class="table table-bordered table-striped text-center">
                         <tr>
                             <td rowspan="2">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:
                             </td>
@@ -1408,7 +1407,7 @@
                 <div class="col">২.৪.১৫ যারা ইংরেজি পড়ান তাদের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে
                     ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
-                    <table class="table table-bordered text-center">
+                    <table class="table table-bordered table-striped text-center">
                         <tr>
                             <td>ক্রমিক নং</td>
                             <td>বিবরণ</td>
@@ -1451,7 +1450,7 @@
             </div>
             <div class="col-md-6">
                 <div class="col mt-2">
-                    <table class="table table-bordered text-center">
+                    <table class="table table-bordered table-striped text-center">
                         <tr>
                             <td rowspan="2">২.৪.১৬ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক
                                 সংখ্যা:
@@ -1469,7 +1468,7 @@
                 <div class="col">২.৪.১৭ যারা গণিত পড়ান তাদের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে
                     গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
-                    <table class="table table-bordered text-center">
+                    <table class="table table-bordered table-striped text-center">
                         <tr>
                             <td>ক্রমিক নং</td>
                             <td>বিবরণ</td>
@@ -1520,7 +1519,7 @@
                 <div class="form-control bg-number-label">অবসর গ্রহণ, নতুন নিয়োগপ্রাপ্ত, গবেষণা কাজ, পুরষ্কার প্রাপ্ত ইত্যাদি সম্পর্কিত শিক্ষকের সংখ্যা</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                         <tr>
                             <td rowspan="2">ক্রমিক নং</td>
                             <td rowspan="2" style="width:450px">বিবরণ</td>
@@ -1619,7 +1618,7 @@
             </div>
             <div class="col-md-6 contentBoxBody">
                 ২.৫ শিক্ষা প্রতিষ্ঠানে প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য (নির্দিষ্ট স্থানে টিক চিহ্ন দিন)
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tbody>
                     <tr>
                         <td rowspan="7">শিক্ষকদের জন্য</td>
@@ -1708,7 +1707,7 @@
             </div>
             <div class="col-md-6 contentBoxBody">
                 বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tbody>
                     <tr>
                         <td>বিষয়</td>

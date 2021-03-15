@@ -3,11 +3,11 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link {{ (request()->is('schoolAndCollege/firstPage')) ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/firstPage') }}">প্রথম পাতা</a>
+                   href="{{ url('schoolAndCollege/firstPage') }}"> মৌলিক তথ্য-১</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/secondPage') ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/secondPage') }}">দ্বিতীয় পাতা</a>
+                   href="{{ url('schoolAndCollege/secondPage') }}">মৌলিক তথ্য-২</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
@@ -17,22 +17,7 @@
                 <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/schoolSecondPage') }}">স্কুল সম্পর্কিত-২</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/thirdPage') ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/thirdPage') }}">তৃতীয় পাতা</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/fourthPage') ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/fourthPage') }}">চতুর্থ পাতা</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/fifthPage') ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/fifthPage') }}">পঞ্চম পাতা</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/sixthPage') }}">ষষ্ঠ পাতা</a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/collegeFirstPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/collegeFirstPage') }}">কলেজ(১ম পাতা)</a>
@@ -48,6 +33,18 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/sncSecondPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/sncSecondPage') }}">স্কুল এন্ড কলেজ-২</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/thirdPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/thirdPage') }}"> বিবিধ-১ </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/fourthPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/fourthPage') }}">বিবিধ-২</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/fifthPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/fifthPage') }}">বিবিধ-৩</a>
             </li>
         </ul>
         <span class="navbar-text">
