@@ -772,25 +772,8 @@
                     </div>
                 </div>
             </div>
+
         </div>
-        <td class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.১</span>
-                </div>
-                <div class="form-control bg-number-label">অন্যান্য তথ্য</div>
-            </div>
-            <div class="contentBoxBody">
-                <div class="row">
-                    <div class="col-md-6">
-
-                    </div>
-                    <div class="col-md-6">
-
-                    </div>
-                </div>
-            </div>
-            @include('components/footer');
-
+    @include('components/footer')
     </div>
 @endsection
