@@ -12,7 +12,7 @@
                 <div class="form-control bg-number-label">স্তরভিত্তিক শিক্ষার্থী সংখ্যা ২০২১ঃ</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered" style="text-align:center">
+                <table class="table table-bordered table-striped" style="text-align:center">
                     <thead>
                     <tr>
                         <th colspan="2">১ম-৫ম</th>
@@ -51,7 +51,6 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-
                 <table class="table table-bordered table-striped text-center" style="font-size: 12px;">
                     <thead>
                     <tr>
@@ -388,7 +387,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th colspan="2">৬ষ্ঠ শ্রেণি</th>
@@ -436,7 +435,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th colspan="2">৬ষ্ঠ শ্রেণি</th>
@@ -486,7 +485,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th rowspan="2">সেকশন</th>
@@ -628,7 +627,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th rowspan="2">ক্র. নং</th>
@@ -798,7 +797,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th rowspan="2">ক্র. নং</th>
@@ -1070,7 +1069,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th rowspan="2">ক্র. নং</th>
@@ -1324,7 +1323,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th colspan="2">শ্রেণি</th>
@@ -1483,7 +1482,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th colspan="2">শ্রেণি</th>
@@ -1668,7 +1667,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th rowspan="2">ক্র. নং</th>
@@ -1842,7 +1841,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th>শ্রেণি</th>
@@ -2014,7 +2013,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
 
