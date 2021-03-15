@@ -383,10 +383,10 @@
                 <table class="table table-bordered table-striped">
                     <td colspan="5"><label class="align-middle"> ৩.১০.৩ সর্বশেষ দুর্যোগের ফলে শিক্ষার্থীঝরে পড়ার
                             সংখ্যা:</label></td>
-                    <td><label class="align-middle"> ৩.১০.৩ সর্বশেষ দুর্যোগের ফলে শিক্ষার্থীঝরে
-                            পড়ার সংখ্যা:</label></td>
+                    <td><label class="align-middle"> ৩.১০.৪ সর্বশেষ দুর্যোগের পর কোন ধরনের ক্ষয়ক্ষতি কাটিয়ে ওঠা যায় নি?
+                            (একাধিক টিক হতে পারে)</label></td>
                     <tr>
-                        <td rowspan="2">দুর্যোগের প্রকৃতি</td>
+                        <td rowspan="2" style="width: 100px">দুর্যোগের প্রকৃতি</td>
                         <td rowspan="2">দুর্যোগের নাম</td>
                         <td colspan="3" class="text-center">ঝড়ে পড়া শিক্ষার্থীর সংখ্যা</td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ভবনের ক্ষয়ক্ষতি</td>
@@ -399,21 +399,21 @@
                     </tr>
                     <tr>
                         <td rowspan="3">প্রাকৃতিক</td>
-                        <td>১. <input type="text"></td>
+                        <td>১. <input type="text" class="w-75"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ছাদ</td>
                     </tr>
                     <tr>
-                        <td>২. <input type="text"></td>
+                        <td>২. <input type="text" class="w-75"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">দরজা/জানালা</td>
                     </tr>
                     <tr>
-                        <td>৩. <input type="text"></td>
+                        <td>৩. <input type="text" class="w-75"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
@@ -421,25 +421,25 @@
                     </tr>
                     <tr>
                         <td rowspan="3">মানব সৃষ্ট</td>
-                        <td>১. <input type="text"></td>
+                        <td>১. <input type="text" class="w-75"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">স্যানিটেশন ব্যবস্থা</td>
                     </tr>
                     <tr>
-                        <td>২. <input type="text"></td>
+                        <td>২. <input type="text" class="w-75"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সংযোগ রাস্তা</td>
                     </tr>
                     <tr>
-                        <td>৩. <input type="text"></td>
+                        <td>৩. <input type="text" class="w-75"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
-                        <td> অন্যান্য<input class="mr-2" type="number" name=""></td>
+                        <td> অন্যান্য: <input class="w-75" type="number" name=""></td>
                     </tr>
                 </table>
                 <table class="table table-bordered table-striped text-center">
@@ -469,9 +469,11 @@
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">উল্লেখযোগ্য কোন পদক্ষেপ
-                            গ্রহণ করা হয়নি</td>
+                            গ্রহণ করা হয়নি
+                        </td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">হ্যাঁ, বিভাগীয় ছক ও
-                            নির্দেশনা অনুযায়ী পাঠানো হয়</td>
+                            নির্দেশনা অনুযায়ী পাঠানো হয়
+                        </td>
                     </tr>
                     <tr>
                         <td>ইংরেজি (২)</td>
@@ -479,33 +481,46 @@
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সমস্যাসমূহ সনাক্ত ও
-                            তালিকাভুক্ত করা হয়েছে</td>
+                            তালিকাভুক্ত করা হয়েছে
+                        </td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সমস্যাসমূহ সনাক্ত ও
-                            তালিকাভুক্ত করা হয়েছে</td>
+                            তালিকাভুক্ত করা হয়েছে
+                        </td>
                     </tr>
                     <tr>
                         <td>গণিত (৩)</td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">প্রশাসনকে লিখিতভাবে জানানো হয়েছে</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ফোনে প্রতিষ্ঠান প্রধান কর্তৃপক্ষকে অবহিত করেছেন</td>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">প্রশাসনকে লিখিতভাবে জানানো
+                            হয়েছে
+                        </td>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ফোনে প্রতিষ্ঠান প্রধান
+                            কর্তৃপক্ষকে অবহিত করেছেন
+                        </td>
                     </tr>
                     <tr>
                         <td>বিজ্ঞান (৪)</td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিভিন্ন আলোচনা সভায় উত্থাপন করা হয়েছে</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ভালোভাবে নিজেদের জন্য করেছে</td>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিভিন্ন আলোচনা সভায়
+                            উত্থাপন করা হয়েছে
+                        </td>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ভালোভাবে নিজেদের জন্য
+                            করেছে
+                        </td>
                     </tr>
                     <tr>
                         <td>সমাজ বিজ্ঞান (৫)</td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিটিএ ও এসএমসি সভায় আলোচনা হয়েছে</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">কখনো এভাবে চিন্তা করা হয়নি</td>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিটিএ ও এসএমসি সভায় আলোচনা
+                            হয়েছে
+                        </td>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">কখনো এভাবে চিন্তা করা হয়নি
+                        </td>
                     </tr>
                     <tr>
                         <td>সমাজ বিজ্ঞান (৫)</td>
@@ -533,6 +548,101 @@
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                         <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
                     </tr>
+                </table>
+            </div>
+        </div>
+        {{--Covid-19 related info--}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">৩.৭</span>
+                </div>
+                <div class="form-control bg-number-label">কোভিড-১৯ সংক্রান্ত</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+
+                    <tr>
+                        <td>৩.১১ করোনাকালীন শিক্ষার্থীদের পড়াশোনার ক্ষেত্রে আপনার প্রতিষ্ঠানের ভূমিকা কী ছিল?</td>
+                        <td>
+                            <label>৩.১১.১ সংসদ টেলিভিশনে প্রচারিত শিখন-শেখানো কার্যক্রমে আপনার শিক্ষা প্রতিষ্ঠানের
+                                শিক্ষার্থীদের অংশগ্রহণ কেমন?</label>
+                            <select class="contentBox">
+                                <option>সন্তোষজনক-১</option>
+                                <option>মোটামুটি-২</option>
+                                <option>সন্তোষজনক নয়-৩</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">অনলাইন ক্লাসের আয়োজন করা
+                            হয়েছে-১
+                        </td>
+                        <td>
+                            <label>৩.১১.৪ আপনার প্রতিষ্ঠানে স্বাস্থ্যবিধি নিশ্চিত করে পাঠদান কার্যক্রম পরিচালনা করা সম্ভব হচ্ছে কি না?</label>
+                            <select class="contentBox">
+                                <option>হ্যাঁ-১</option>
+                                <option>না-২</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষার্থীদের পড়াশোনার
+                            বিষয়ে টেলিফোনিক তদারকি করা হয়েছে-২
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">লকডাউনের কারণে কোন উদ্যোগ
+                            নেওয়া যায়নি-৩
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">অনলাইনে পরীক্ষা নিয়েছেন
+                            কিনা-৪
+                        </td>
+                    </tr>
+                </table>
+                <table class="table table-bordered table-striped">
+
+                    <tr>
+                        <td colspan="6">৩.১১.২ করোনায় আক্রান্ত শিক্ষার্থী, শিক্ষক ও কর্মচারীদের তথ্য:</td>
+                        <td colspan="6">৩.১১.৩ করোনায় মৃত্যুবরণকারী শিক্ষার্থী, শিক্ষক ও কর্মচারীদের তথ্য:</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td colspan="2">শিক্ষার্থী</td>
+                        <td colspan="2">শিক্ষক</td>
+                        <td colspan="2">কর্মচারী</td>
+                        <td colspan="2">শিক্ষার্থী</td>
+                        <td colspan="2">শিক্ষক</td>
+                        <td colspan="2">কর্মচারী</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
+                        <td><input type="number" class="w-75"></td>
                 </table>
             </div>
         </div>
