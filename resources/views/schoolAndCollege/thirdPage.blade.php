@@ -17,14 +17,14 @@
                 <div class="">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="labYN">৩.১.১। প্রতিষ্ঠানে কম্পিউটার ল্যাব আছে কি?</label>
+                            <label for="labYN">৩.৯ প্রতিষ্ঠানে কম্পিউটার ল্যাব আছে কি?</label>
                             <select class="contentBoxInput" id="labYN">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <label for="labYN">৩.১.১। প্রতিষ্ঠানে কম্পিউটার ল্যাবের সংখ্যা</label>
+                            <label for="labYN">৩.৯.১ উত্তর হ্যাঁ হলে, কম্পিউটার ল্যাব সংখ্যা</label>
                             <input type="text"/> টি
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <label for="labYN">৩.১.২। ল্যাব ব্যতিত অন্য কম্পিউটার আছে কি?</label>
+                    <label for="labYN">৩.৯.৬ ল্যাব ব্যতিত অন্য কম্পিউটার আছে কি?</label>
                     <select class="contentBoxInput" id="labYN">
                         <option>হ্যাঁ</option>
                         <option>না</option>
@@ -112,28 +112,24 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td class="">
-                            <label for="multimediaClassroom">৩.২.১। মাল্টিমিডিয়া ক্লাসরুমের সংখ্যা</label>
+                            <label for="multimediaClassroom">৩.৯.১৩ মাল্টিমিডিয়া ক্লাসরুমের সংখ্যা</label>
                             <input class="" id="multimediaClassroom" type="text"/>
                         </td>
                         <td>
                             ৩.২.১। মাল্টিমিডিয়া ক্লাসরুমের ব্যবহারে সক্ষম শিক্ষকের সংখ্যা<br>
                             <div class="row">
                                 <div class="col-md-6 input-group form-inline">
-                                    মহিলাঃ <input class="" id="" type="text"/>
+                                    মহিলা: <input class="w-25" id="" type="text"/>
                                 </div>
                                 <div class="col-md-6 input-group form-inline">
-                                    পুরুষ <input class="" id="" type="text"/>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+                                    পুরুষ:<input class="w-25" id="" type="text"/>
                     <tr>
                         <td class="">
                             <label for="">৩.৫.৮ মাল্টিমিডিয়া ব্যবহার করে প্রতিদিন কয়টি ক্লাস নেয়া হয়? </label>
                             <input style="width: 40px;" id="" type="text"/> টি
                         </td>
                         <td>
-                            ৩.৫.৯ মাল্টিমিডিয়া ব্যবহার করে ক্লাস নেয়ার পর <br> পর
+                            ৩.৫.৯ মাল্টিমিডিয়া ব্যবহার করে ক্লাস নেয়ার পর
                             ড্যাসবোর্ডে এন্ট্রি দেওয়া হয় কি?
                             <select class="" id="dashboardEntry">
                                 <option>হ্যাঁ</option>
@@ -143,14 +139,14 @@
                     </tr>
                     <tr>
                         <td class="">
-                            <label for="projectorYN">৩.১.১। মাল্টিমিডিয়া প্রজেক্টর আছে কি?</label>
+                            <label for="projectorYN">৩.৯.১১  মাল্টিমিডিয়া প্রজেক্টর আছে কি?</label>
                             <select class="" id="projectorYN">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td class="">
-                            <label for="">৩.২.১। মাল্টিমিডিয়া প্রজেক্টরের সংখ্যা</label>
+                            <label for="">৩.৯.১২ উত্তর হ্যাঁ হলে, মাল্টিমিডিয়া প্রজেক্টর সংখ্যা</label>
                             <input class="" id="" type="text"/> টি
                         </td>
                     </tr>
@@ -233,43 +229,43 @@
                         </td>
                     </tr>
                     <tr>
+                        <td><label>৩.৮.৬ প্রতিদিন কত ঘন্ট কম্পিউটার (আইসিটি) ল্যাব ব্যবহার করা হয়?</label>
+                            <input type="number" class="w-25" /> </td>
                         <td>
-                            <label for="digitalHajiraYN">৩.৮.৭ প্রতিষ্ঠানে ডিজিটাল হাজিরা সংক্রান্ত তথ্য:</label>
-                            <select class="contentBoxInput" id="digitalHajiraYN">
-                                <option>১. হ্যাঁ</option>
-                                <option>২. না</option>
-                            </select>
-                        </td>
-                        <td>
-                            <label for="digitalHajiraType">৩.২.১। প্রতিষ্ঠানে ডিজিটাল হাজিরা কাদের জন্য ব্যবহৃত
-                                হয়?</label>
+                            <label for="digitalHajiraType">৩.৮.৭ প্রতিষ্ঠানে ডিজিটাল হাজিরা সংক্রান্ত তথ্য:</label>
                             <select class="contentBoxInput" id="digitalHajiraType">
                                 <option>১. শিক্ষার্থীর জন্য</option>
                                 <option>২. শিক্ষক ও কর্মচারীর জন্য</option>
+                                <option>৩. নাই</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
+                        <td><label>৩.৯.১৪ বিদ্যুৎ সংযোগ আছে কি?</label>
+                            <select class="contentBoxInput" id="">
+                                <option>হ্যাঁ</option>
+                                <option>না</option>
+                            </select></td>
                         <td>
-                            <label for="languageClubYN">৩.৮.৮ Language club আছে কি?</label>
-                            <select class="contentBoxInput" id="languageClubYN">
-                                <option>১. হ্যাঁ</option>
-                                <option>২. না</option>
+                            <label for="">৩.৯.১৫ প্রতিষ্ঠানে কোন ধরনের সংযোগ আছে?</label>
+                            <select class="contentBoxInput" id="">
+                                <option>বিদ্যুৎ-১</option>
+                                <option>সোলার প্যানেল-২</option>
+                                <option>ফুয়েল গ্যাস জেনারেটর-৩</option>
+                                <option>অন্যান্য-৪</option>
                             </select>
                         </td>
+                    </tr>
+                    <tr>
+                        <td><label>৩.৯.১৬ সোলার প্যানেল আছে কি?</label>
+                            <select class="contentBoxInput" id="">
+                                <option>হ্যাঁ</option>
+                                <option>না</option>
+                            </select></td>
                         <td>
-                            <label for="languageClubType">৩.৮.৮.১ উত্তর হ্যাঁ হলে, কোন কোন ভাষা চর্চা হয়?</label>
-                            <select class="contentBoxInput" id="languageClubType">
-                                <option>১. বাংলা</option>
-                                <option>২. ইংরেজি</option>
-                                <option>২. আরবি</option>
-                                <option>২. চাইনিজ</option>
-                                <option>২. কোরিয়ান</option>
-                                <option>২. জাপানি</option>
-                                <option>২. রুশ</option>
-                                <option>২. স্প্যানিশ</option>
-                                <option>২. অন্যান্য</option>
-                            </select>
+                            <label for="">৩.৯.১৭ উত্তর হ্যাঁ হলে, কতটি ফ্যান ও লাইট চলে?</label><br>
+                            ফ্যান: &nbsp;<input type="number" class="w-25" />
+                            লাইট: &nbsp;<input type="number" class="w-25" />
                         </td>
                     </tr>
                     <tr>
@@ -281,7 +277,20 @@
                             </select>
                         </td>
                         <td>
-                            <label for="wifiYN">৩.২.১। প্রতিষ্ঠানে WiFi সংযোগ আছে কি?</label>
+                            <label for="internetType">৩.৯.১৯ ইন্টারনেট সংযোগ এর ধরন?</label>
+                            <select class="contentBoxInput" id="internetType">
+                                <option>১-মডেম</option>
+                                <option>২-ব্রডব্যান্ড</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bandwidth">৩.৯.২০ ইন্টারনেট সংযোগ ব্রডব্যান্ড হলে ব্যান্ডউইথ কত?</label>
+                            <input class="contentBoxInput" id="bandwidth" type="text" class="w-25"/>
+                        </td>
+                        <td>
+                            <label for="wifiYN">৩.৯.২১ প্রতিষ্ঠানে WiFi সংযোগ আছে কি?</label>
                             <select class="contentBoxInput" id="wifiYN">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -289,34 +298,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <label for="ccCameraYN">৩.২.১। প্রতিষ্ঠানে সিসি ক্যামেরা আছে কি?</label>
-                            <select class="contentBoxInput" id="ccCameraYN">
-                                <option>হ্যাঁ</option>
-                                <option>না</option>
-                            </select>
-                        </td>
-                        <td>
-                            <label for="ccCameraAmount">৩.২.১। প্রতিষ্ঠানে সিসি ক্যামেরার সংখ্যা?</label>
-                            <input class="contentBoxInput" id="" type="text"/> টি
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="internetType">৩.৯.১৯ ইন্টারনেট সংযোগ এর ধরন?</label>
-                            <select class="contentBoxInput" id="internetType">
-                                <option>১-মডেম</option>
-                                <option>২-ব্রডব্যান্ড</option>
-                            </select>
-                        </td>
-                        <td>
-                            <label for="bandwidth">৩.২.১। ইন্টারনেট সংযোগ ব্রডব্যান্ড হলে ব্যান্ডউইথ কত?</label>
-                            <input class="contentBoxInput" id="bandwidth" type="text"/>
-                        </td>
-                    </tr>
-                    <tr>
                         <td class="align-middle">
-                            <label for="computerInPedagogy">৩.২.১। Pedagogical(শিখন-শেখানো) কাজে কম্পিউটার ব্যবহৃত
+                            <label for="computerInPedagogy">৩.৯.২২ Pedagogical(শিখন-শেখানো) কাজে কম্পিউটার ব্যবহৃত
                                 হয়
                                 কি?</label>
                             <select class="contentBoxInput" id="computerInPedagogy">
@@ -325,8 +308,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="computerInPedagogyAmount">৩.২.১। শিখন-শেখানো কাজে ব্যবহহৃত কম্পিউটার
-                                সংখ্যা?</label>
+                            <label for="computerInPedagogyAmount">৩.৯.২৩ Pedagogical (শিখন-শেখানো) কাজে ব্যবহৃত কম্পিউটার সংখ্যা (প্রতিষ্ঠান ও ব্যক্তিগত কম্পিউটার সহ)</label>
                             <table class="table-bordered">
                                 <tr>
                                     <td>ডেস্কটপ</td>
@@ -343,15 +325,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="internetInPedagogy">৩.২.১। শিখন-শেখানো কাজে ইন্টারনেট ব্যবহৃত হয় কি?</label>
+                            <label for="internetInPedagogy">৩.৯.২৪ ইন্টারনেট Pedagogical (শিখন-শেখানো) কাজে ব্যবহৃত হয় কি?</label>
                             <select class="contentBoxInput" id="internetInPedagogy">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="internetInPedagogyUser">৩.২.১। শিখন-শেখানো কাজে ইন্টারনেট কে ব্যবহার
-                                করে?</label>
+                            <label for="internetInPedagogyUser">৩.৯.২৫ উত্তর হ্যাঁ হলে, ইন্টারনেট কে ব্যবহার করে?</label>
                             <select class="contentBoxInput" id="internetInPedagogyUser">
                                 <option>১. শিক্ষার্থী</option>
                                 <option>২. শিক্ষক</option>
@@ -361,17 +342,14 @@
                     </tr>
                     <tr>
                         <td class="align-middle">
-                            <label for="computerBasicCourseYN">৩.২.১। প্রতিষ্ঠানটিতে Computer Basic Course পাঠদান
-                                করানো
-                                হয় কি?</label>
+                            <label for="computerBasicCourseYN">৩.৯.২৬ প্রতিষ্ঠানটিতে Computer Basic Course পাঠদান করানো হয় কি?</label>
                             <select class="contentBoxInput" id="computerBasicCourseYN">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="computerBasicCourseStudents">৩.২.১। Computer Basic Course পাঠদানরত মোট
-                                শিক্ষার্থীর সংখ্যা?</label>
+                            <label for="computerBasicCourseStudents">৩.৯.২৭ উত্তর হ্যাঁ হলে, পাঠদানরত মোট শিক্ষার্থীর সংখ্যা?</label>
                             <table class="table-bordered">
                                 <tr>
                                     <td>শ্রেণি</td>
@@ -409,6 +387,12 @@
                                     <td><input class="contentBoxInput w-50" id="" type="text"/></td>
                                 </tr>
                             </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ccCameraAmount">৩.৯.২৮ প্রতিষ্ঠানে সিসি ক্যামেরার সংখ্যা?</label>
+                            <input class="w-25" id="" type="text"/> টি
                         </td>
                     </tr>
                 </table>
