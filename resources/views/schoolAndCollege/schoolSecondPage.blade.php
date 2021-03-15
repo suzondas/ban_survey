@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="contentBoxBody" style="font-size: 12px">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th rowspan="3">পরিক্ষার নাম ও বছর</th>
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th rowspan="3">কোড</th>
@@ -224,7 +224,7 @@
                 <div class="row">
                     <div class=" mt-4 col-6">
                         ২.৩.৮ উত্তর হ্যাঁ হলে, প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের ছক মোতাবেক প্রদান করুন
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered table-striped text-center">
                             <thead>
                             <tr>
                                 <th rowspan="3">ভর্তির বছর</th>
@@ -283,7 +283,7 @@
                     </div>
                     <div class=" mt-4 col-6">
                         ২.৩.৯ উত্তর হ্যাঁ হলে, প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক প্রদান করুন
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered table-striped text-center">
                             <thead>
                             <tr>
                                 <th rowspan="3" colspan="2">ভর্তির বছর</th>
@@ -392,7 +392,7 @@
                 </div>
             </div>
             <div class="contentBoxBody ">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th rowspan="2">পদবি কোড</th>
@@ -531,7 +531,7 @@
             <div class="mt-2 col-md-4 contentBoxBody"> ২.৪ মূল প্রতিষ্ঠানের পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য
                 ক্ষেত্রে) শিক্ষক ও
                 কর্মচারীর সংখ্যা: ২০২১
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">পদবী</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -601,7 +601,7 @@
             </div>
             <div class=" mt-2 col-md-4 contentBoxBody">
                 ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">পদবী</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -636,7 +636,7 @@
             </div>
             <div class="mt-2 col-md-4 contentBoxBody">
                 ২.৪.৪ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">প্রশিক্ষণ/ ডিগ্রি</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -693,7 +693,7 @@
                 <div class="row  mt-2">
                     <div class="col-md-6">
                         <div class="col">
-                            <table class="table table-bordered text-center">
+                            <table class="table table-bordered table-striped text-center">
                                 <tr>
                                     <td rowspan="2">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক
                                         সংখ্যা:
@@ -712,7 +712,7 @@
                             পর্যায়ে
                             ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
-                            <table class="table table-bordered text-center">
+                            <table class="table table-bordered table-striped text-center">
                                 <tr>
                                     <td>ক্রমিক নং</td>
                                     <td>বিবরণ</td>
@@ -756,7 +756,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="col">
-                            <table class="table table-bordered text-center">
+                            <table class="table table-bordered table-striped text-center">
                                 <tr>
                                     <td rowspan="2">২.৪.১৬ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক
                                         সংখ্যা:
@@ -775,7 +775,7 @@
                             পর্যায়ে
                             গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
-                            <table class="table table-bordered text-center">
+                            <table class="table table-bordered table-striped text-center">
                                 <tr>
                                     <td>ক্রমিক নং</td>
                                     <td>বিবরণ</td>
@@ -833,7 +833,7 @@
                         <div class="col">২.৪.১৮ অবসর গ্রহণ, নতুন নিয়োগপ্রাপ্ত, গবেষণা কাজ, পুরষ্কার প্রাপ্ত ইত্যাদি
                             সম্পর্কিত
                             শিক্ষকের সংখ্যা
-                            <table class="table table-bordered text-center">
+                            <table class="table table-bordered table-striped text-center">
                                 <tr>
                                     <td rowspan="2">ক্রমিক নং</td>
                                     <td rowspan="2" style="width:450px">বিবরণ</td>
@@ -938,7 +938,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th rowspan="2">প্রশিক্ষণ</th>
@@ -1040,7 +1040,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
 
                     </thead>
@@ -1141,7 +1141,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered text-center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
 
                     </thead>
