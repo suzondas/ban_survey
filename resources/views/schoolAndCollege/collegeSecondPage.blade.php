@@ -1,19 +1,19 @@
 @extends('schoolAndCollege/template')
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         @include('../components/banner')
         @include('schoolAndCollege.navBar')
 
-        <div class="container">
-
-            <div class="header mt-2">
                 <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩.২</span>
+                </div>
+                <div class="form-control bg-number-label">শ্রেণি, বিষয়ভিত্তিক শিক্ষার্থী, উত্তীর্ণ ও অনুত্তীর্ণ সম্পর্কিত তথ্য ২০২১</div>
             </div>
-            <div class="body">
-        <div class="row border border-info py-1">
-            <div class="col">
-              ২.৩.২ শ্রেণি, বিষয়ভিত্তিক শিক্ষার্থী, উত্তীর্ণ ও অনুত্তীর্ণ সম্পর্কিত তথ্য ২০২১
-                <table class="table table-bordered  " style="text-align:center">
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td scope="col" rowspan="2" >শ্রেণি</td>
                         <td scope="col" rowspan="2" style="width:120px">বিভাগ</td>
@@ -372,10 +372,15 @@
             </div>
           </div>
         <br>
-        <div class="row border border-info py-1">
-            <div class="col">
-                    ২.৩.৩ বিষয়ভিত্তিক শিক্ষক ও শিক্ষার্থীর সংখ্যা (শিক্ষকগণের তথ্য নিয়োগ অনুযায়ী সন্নিবেশিত করুন):
-                <table class="table table-bordered text-center">
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩.৩</span>
+                </div>
+                <div class="form-control bg-number-label">বিষয়ভিত্তিক শিক্ষক ও শিক্ষার্থীর সংখ্যা (শিক্ষকগণের তথ্য নিয়োগ অনুযায়ী সন্নিবেশিত করুন):</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td scope="col" rowspan="3">বিষয়</td>
                         <td scope="col" colspan="2"   rowspan="2">শিক্ষক (বিষয় ভিত্তিক)</td>
@@ -423,10 +428,15 @@
                 </div>
             </div>
             <br>
-            <div class="row">
-            <div class="col">
-                    ২.৩.৪ বিভাগভিত্তিক বিভিন্ন বোর্ড এবং বিশ্ববিদ্যালয় পরীক্ষার ফলাফল
-                <table class="table table-bordered text-center">
+        <div class="contentBox col-12" style="font-size: 11px;">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩.৪ </span>
+                </div>
+                <div class="form-control bg-number-label">বিভাগভিত্তিক বিভিন্ন বোর্ড এবং বিশ্ববিদ্যালয় পরীক্ষার ফলাফল</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td scope="col" rowspan="3">পরীক্ষার নাম ও বছর</td>
                         <td scope="col" rowspan="3">বিভাগ</td>
@@ -445,16 +455,16 @@
                         <td scope="col">মোট</td>
                         <td scope="col">ছাত্রী</td>
                         <td scope="col">৫.০০</td>
-                        <td scope="col">৪-৪.৯৯</td>
-                        <td scope="col">৩.৫-৩.৯৯</td>
-                        <td scope="col">৩-৩.৫</td>
-                        <td scope="col">২-২.৯৯</td>
+                        <td scope="col">৪- ৪.৯৯</td>
+                        <td scope="col">৩.৫- ৩.৯৯</td>
+                        <td scope="col">৩- ৩.৫</td>
+                        <td scope="col">২- ২.৯৯</td>
                         <td scope="col">২ এর কম</td>
                         <td scope="col">৫.০০</td>
-                        <td scope="col">৪-৪.৯৯</td>
-                        <td scope="col">৩.৫-৩.৯৯</td>
-                        <td scope="col">৩-৩.৫</td>
-                        <td scope="col">২-২.৯৯</td>
+                        <td scope="col">৪- ৪.৯৯</td>
+                        <td scope="col">৩.৫- ৩.৯৯</td>
+                        <td scope="col">৩- ৩.৫</td>
+                        <td scope="col">২- ২.৯৯</td>
                         <td scope="col">২ এর কম</td>
                         <td scope="col">মোট</td>
                         <td scope="col">ছাত্রী</td>
@@ -622,17 +632,23 @@
                 </div>
                 </div>
             <br>
-            <div class="row border border-info py-1">
+            <div class="contentBox">
+                <div class="input-group contentHeader">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-number">২.৩.৫ </span>
+                    </div>
+                    <div class="form-control bg-number-label">ট্রেডভিত্তিক শিক্ষার্থী </div>
+                </div>
                     <div class="col-md-12">
                         ২.৩.৫ ট্রেডভিত্তিক এইচএসসি (ভোকেশনাল) শাখার শিক্ষার্থী ২০২১ (যদি এইচএসসি (ভোকেশনাল) থাকে)
-                        <table class="table table-bordered" style="text-align:center">
+                        <table class="table table-bordered table-striped text-center" >
                                 <tr>
                                   <td rowspan="3"> কোড</td>
                                   <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
                                   <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
                                   <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা</td>
                                   <td rowspan="2" colspan="2"> পাসের সংখ্যা</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                   <td colspan="2">১ম বর্ষ (একাদশ)</td>
                                   <td colspan="2">২য় বর্ষ (দ্বাদশ)</td>
@@ -666,14 +682,14 @@
                 <br>
                     <div class="col-md-12">
                         ২.৩.৬ ট্রেডভিত্তিক এইচএসসি-বিএম শাখার শিক্ষার্থী-২০২১ (যদি এইচএসসি বিএম থাকে)
-                        <table class="table table-bordered" style="text-align:center">
+                        <table class="table table-bordered table-striped text-center" >
                                 <tr>
                                   <td rowspan="3"> কোড</td>
                                   <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
                                   <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
                                   <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা</td>
                                   <td rowspan="2" colspan="2"> পাসের সংখ্যা</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                   <td colspan="2">১ম বর্ষ (একাদশ)</td>
                                   <td colspan="2">২য় বর্ষ (দ্বাদশ)</td>
@@ -706,7 +722,14 @@
                     </div>
                     </div>
                 <br>
-                    <div class="row border border-info py-1">
+                    <div class="row contentBox">
+
+                            <div class="input-group contentHeader">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-number">২.৩.৭ </span>
+                                </div>
+                                <div class="form-control bg-number-label">উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম </div>
+                            </div>
                     <div class="col-md-2">
                     <label class="label-number" for="">২.৩.৭ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম পরিচালিত হয় কি?</label>
                         <select class="custom-select" name="" style="width: 75px">
@@ -725,7 +748,7 @@
                                   <td rowspan="2" colspan="2">স্নাতক (সম্মান) প্রোগ্রাম</td>
                                   <td rowspan="2" colspan="2">স্নাতকোত্তর প্রোগ্রাম</td>
                                   <td rowspan="2" colspan="2">অন্যান্য প্রোগ্রাম</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                   <td colspan="2">একাদশ শ্রেণি</td>
                                   <td colspan="2">দ্বাদশ শ্রেণি</td>
@@ -834,7 +857,7 @@
                                   <td rowspan="2" colspan="2">স্নাতক (সম্মান) প্রোগ্রাম</td>
                                   <td rowspan="2" colspan="2">স্নাতকোত্তর প্রোগ্রাম</td>
                                   <td rowspan="2" colspan="2">অন্যান্য প্রোগ্রাম</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                   <td colspan="2">একাদশ শ্রেণি</td>
                                   <td colspan="2">দ্বাদশ শ্রেণি</td>
@@ -1014,7 +1037,13 @@
                     </div>
                 </div>
                 <br>
-                <div class="row border border-info py-1">
+                <div class="row contentBox">
+                    <div class="input-group contentHeader">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-number">২.৪</span>
+                        </div>
+                        <div class="form-control bg-number-label">পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে) শিক্ষক ও কর্মচারীর সংখ্যা </div>
+                    </div>
                 <div class="col-md-9"> ২.৪ মূল প্রতিষ্ঠানের পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে) শিক্ষক ও কর্মচারীর সংখ্যা: ২০২১ </label>
                         <table class="table table-bordered text-center">
                                 <tr>
@@ -1082,10 +1111,17 @@
                     </div>
                 </div>
                 <br>
-                <div class="row border border-info py-1">
-                <div class="col-md-4" > ২.৪ মূল প্রতিষ্ঠানের পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে) শিক্ষক ও কর্মচারীর সংখ্যা: ২০২১
+                <div class="row contentBox">
+                        <div class="input-group contentHeader">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-number">২.৪.২ </span>
+                            </div>
+                            <div class="form-control bg-number-label"> শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা </div>
+                        </div>
 
-                        <table class="table table-bordered text-center">
+                <div class="col-md-4 contentBoxBody" >২.৪.২ মূল প্রতিষ্ঠানের সার্বোচ্চ শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা:
+
+                    <table class="table table-bordered table-striped text-center">
                                 <tr>
                                   <td rowspan="2">পদবী</td>
                                   <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -1153,9 +1189,9 @@
                                 </tbody>
                         </table>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 contentBoxBody">
                         ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered  table-striped text-center">
                                 <tr>
                                   <td rowspan="2">পদবী</td>
                                   <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -1188,9 +1224,9 @@
                                 </tbody>
                         </table>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 contentBoxBody">
                         ২.৪.৪ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered table-striped text-center">
                                 <tr>
                                   <td rowspan="2">প্রশিক্ষণ/ ডিগ্রি</td>
                                   <td colspan="2">শিক্ষক সংখ্যা</td>
@@ -1230,10 +1266,16 @@
                     </div>
                 </div>
                 <br>
-                <div class="row border border-info py-1">
-                <div class="col-md-6"> 
+                <div class="row contentBox">
+                    <div class="input-group contentHeader">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-number">২.৪.১৪</span>
+                        </div>
+                        <div class="form-control bg-number-label"> বিষয়ভিত্তিক শিক্ষক সংখ্যা</div>
+                    </div>
+                <div class="col-md-6 mt-2">
                     <div class="col">
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered table-striped text-center">
                                 <tr>
                                     <td></td>
                                   <td>মোট</td>
@@ -1250,7 +1292,7 @@
                     </div>
                     <div class="col">২.৪.১৫ ইংরেজি বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered table-striped text-center">
                                 <tr>
                                   <td>ক্রমিক নং</td>
                                   <td>বিবরণ</td>
@@ -1291,9 +1333,9 @@
                         </table>
                     </div>
                     </div>
-                    <div class="col-md-6"> 
+                    <div class="col-md-6 mt-2">
                     <div class="col">
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered  table-striped text-center">
                                 <tr>
                                     <td></td>
                                   <td>মোট</td>
@@ -1310,7 +1352,7 @@
                     </div>
                     <div class="col">২.৪.১৭ গণিত বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর পর্যায়ে গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
 
-                        <table class="table table-bordered text-center">
+                        <table class="table table-bordered table-striped text-center">
                                 <tr>
                                     <td>ক্রমিক নং</td>
                                   <td>বিবরণ</td>
@@ -1353,10 +1395,15 @@
                     </div>
                     </div>
                     <br>
-                <div class="row border border-info py-1">
-                <div class="col-md-8">
-                    <div class="col">২.৪.১৮ অবসর গ্রহণ, নতুন নিয়োগপ্রাপ্ত, গবেষণা কাজ, পুরষ্কার প্রাপ্ত ইত্যাদি সম্পর্কিত শিক্ষকের সংখ্যা
-                        <table class="table table-bordered text-center">
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৪.১৮</span>
+                </div>
+                <div class="form-control bg-number-label">অবসর গ্রহণ, নতুন নিয়োগপ্রাপ্ত, গবেষণা কাজ, পুরষ্কার প্রাপ্ত ইত্যাদি সম্পর্কিত শিক্ষকের সংখ্যা</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped ">
                                 <tr>
                                   <td rowspan="2">ক্রমিক নং</td>
                                   <td rowspan="2" style="width:450px">বিবরণ</td>
@@ -1370,68 +1417,68 @@
                                 <tr>
                                     <td>১</td>
                                     <td style="width: 300px">তথ্য প্রদানের দিন শিক্ষক উপস্থিতি</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>২</td>
                                     <td style="width: 300px">অবসরে গিয়েছেন (১/৭/২০২০থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>৩</td>
                                     <td style="width: 300px">অবসরে যাবেন (১/৭/২০২১ থেকে ৩০/৬/২০২২ পর্যন্ত)</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>৪</td>
                                     <td style="width: 300px">নতুন নিয়োগপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>৫</td>
                                     <td style="width: 300px">শিক্ষকতা পেশা ছেড়ে দিয়েছেন (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>৬</td>
                                     <td style="width: 300px">NTRCA কর্তৃক সুপারিশকৃত শিক্ষকের সংখ্যা</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>৭</td>
                                     <td style="width: 300px">বর্তমানে কতজন শিক্ষক গবেষণা কাজে সম্পৃক্ত</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>৮</td>
                                     <td style="width: 300px">একাডেমিক বিষয়ের ওপর পুরষ্কারপ্রাপ্ত শিক্ষকের সংখ্যা</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>৯</td>
                                     <td style="width: 300px">শিখন-শেখানো বিষয়ে প্রশিক্ষণপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>১০</td>
                                     <td style="width: 300px">বিশেষ চাহিদাসম্পন্ন (Special needs) শিক্ষার্থীর শিক্ষা বিষয়ে প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                    <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 <tr>
                                     <td>১১</td>
                                     <td style="width: 300px">একীভূত শিক্ষা (Inclusive education), শিশু অধিকার এবং বিদ্যালয়ের ইতিবাচক শৃঙ্খলা বিষয়ের ওপর প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা</td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
-                                <td><input type="number"  class="form-control" name="" id="" ></td>
+                                <td><input type="number"  class="form-control w-25" name="" id="" ></td>
+                                <td><input type="number"  class="form-control w-25" name="" id="" ></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -1439,7 +1486,13 @@
                         </div>
                     </div>
                     <br>
-                    <div class="row border border-info py-1">
+                    <div class="row contentBox">
+                        <div class="input-group contentHeader">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-number">২.৫</span>
+                            </div>
+                            <div class="form-control bg-number-label">প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য</div>
+                        </div>
                         <div class="col-md-6">
                             ২.৫ শিক্ষা প্রতিষ্ঠানে প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য (নির্দিষ্ট স্থানে টিক চিহ্ন দিন)
                         <table class="table table-bordered text-center">
@@ -1530,7 +1583,7 @@
                 </table>
             </div>
             <div class="col-md-6">
-                            ৩.৫.১৭ বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা
+                            ২.৫.১ বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা
                         <table class="table table-bordered text-center">
                     <tbody>
                     <tr>
@@ -1621,7 +1674,7 @@
                     </tbody>
                 </table>
             </div>
-            
+
         </div>
         <br>
             </div>

@@ -12,7 +12,7 @@
                 <div class="form-control bg-number-label">স্তরভিত্তিক শিক্ষার্থী সংখ্যা ২০২১ঃ</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered table-striped" style="text-align:center">
+                <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th colspan="2">১ম-৫ম</th>
@@ -791,7 +791,7 @@
         <div class="contentBox col-12 ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২</span>
+                    <span class="input-group-text bg-number">২.২.৪</span>
                 </div>
                 <div class="form-control bg-number-label">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
@@ -1063,9 +1063,9 @@
         <div class="contentBox col-11">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৪</span>
+                    <span class="input-group-text bg-number">২.২.৫</span>
                 </div>
-                <div class="form-control bg-number-label">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
+                <div class="form-control bg-number-label">ক্ষুদ্র-নৃ-গোষ্ঠীর ধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -1703,7 +1703,7 @@
                     </tr>
                     <tr>
                         <td>১</td>
-                        <td>সাঁওতাল</td>
+                        <td>কৃষি শ্রমিক</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
