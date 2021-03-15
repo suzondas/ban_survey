@@ -1,11 +1,13 @@
 @extends('schoolAndCollege/template')
 @section('content')
+    {{--Banner--}}
+    @include('../components/banner')
+    {{--Navbar--}}
+    @include('schoolAndCollege.navBar')
+    <hr>
     <div class="container">
-        {{--Banner--}}
-        @include('../components/banner')
-        {{--Navbar--}}
-        @include('schoolAndCollege.navBar')
-        {{--LAB--}}
+        <h3 class="text-center">বিবিধ তথ্য (২)</h3>
+        {{--Curriculam--}}
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">

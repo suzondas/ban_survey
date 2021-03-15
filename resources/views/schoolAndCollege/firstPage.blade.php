@@ -1,9 +1,10 @@
 @extends('schoolAndCollege/template')
 @section('content')
+    @include('../components/banner')
+    @include('schoolAndCollege.navBar')
+    <hr>
+
     <div class="container">
-        @include('../components/banner')
-        @include('schoolAndCollege.navBar')
-        <hr>
         <h3 class="text-center">সেকশন ১: মৌলিক তথ্য (ক)</h3>
         <div class="row">
             <div class="col-md-6">
@@ -36,7 +37,7 @@
             <div class="contentBoxBody">
                 <table class="table table-striped table-bordered">
                     <tr>
-                        <td colspan="2">১.১ প্রতিষ্ঠানের নাম:</td>
+                        <td colspan="2" class="font-weight-bold">১.১ প্রতিষ্ঠানের নাম:</td>
                     </tr>
                     <tr>
                         <td><label class="" for="bangla_name"> বাংলায় (অনুমতি/স্বীকৃতিপত্র
@@ -243,7 +244,7 @@
             </div>
             <div class="contentBoxBody">
                 <table class="table table-bordered" style="text-align:center">
-                    <tr>
+                    <tr class="custom-table-header">
                         <td>স্তর</td>
                         <td>স্বীকৃতি/অনুমতি (টিক চিহ্ন দিন)</td>
                         <td>প্রথম অনুমতির তারিখ</td>
@@ -662,17 +663,17 @@
                 </table>
 
                 <div class="row container">
-                    <label>১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
+                    <label class="font-weight-bold">১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
                     <table class="table table-bordered" style="text-align:center">
                         <thead>
-                            <tr>
-                                <td>এমপিওভুক্তির স্তর</td>
-                                <td>এমপিও ভুক্তির তারিখ</td>
-                                <td>এমপিওভুক্তির স্তর</td>
-                                <td>এমপিও ভুক্তির তারিখ</td>
-                                <td>এমপিওভুক্তির স্তর</td>
-                                <td>এমপিও ভুক্তির তারিখ</td>
-                            </tr>
+                        <tr class="custom-table-header">
+                            <td>এমপিওভুক্তির স্তর</td>
+                            <td>এমপিও ভুক্তির তারিখ</td>
+                            <td>এমপিওভুক্তির স্তর</td>
+                            <td>এমপিও ভুক্তির তারিখ</td>
+                            <td>এমপিওভুক্তির স্তর</td>
+                            <td>এমপিও ভুক্তির তারিখ</td>
+                        </tr>
                         </thead>
                         <tbody>
                         <tr>

@@ -11,7 +11,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
-<body class="">
+<body class="container-fluid">
 @yield('content')
 </body>
 </html>

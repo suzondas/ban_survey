@@ -1,9 +1,9 @@
 @extends('schoolAndCollege/template')
 @section('content')
-    <div class="container-fluid" xmlns="http://www.w3.org/1999/html">
-        @include('../components/banner')
-        @include('schoolAndCollege.navBar')
-        <hr>
+    @include('../components/banner')
+    @include('schoolAndCollege.navBar')
+    <hr>
+    <div class="container" style="font-size:13px !important;">
         <h3 class="text-center">সেকশন ১: মৌলিক তথ্য (খ)</h3>
 
         <div class="contentBox">
@@ -18,7 +18,7 @@
                     <div class="col-md-8">
                         <label>জমির অবস্থান:</label>
                         <table class="table table-striped table-bordered">
-                            <tr>
+                            <tr class="custom-table-header">
                                 <td colspan="2">
                                     দখল স্বত্বে
                                 </td>
@@ -76,7 +76,7 @@
                 <lavel class="label-text container">১.৭.২ জমির ব্যবহার ও পরিমাণ (শতাংশে):</lavel>
                 <table class="table table-bordered" style="text-align:center">
                     <thead>
-                    <tr>
+                    <tr class="custom-table-header">
                         <th>বিবরণ</th>
                         <th>প্রতিষ্ঠানের ভবন</th>
                         <th>খেলার মাঠ</th>
@@ -177,7 +177,7 @@
                         <label>১.৭.১১ ভবনভিত্তিক তলা ও উর্ধ্মূখী সম্প্রসারণ ইত্যাদি সম্পর্কিত তথ্য</label>
                         <table class="table table-bordered" style="text-align:center">
                             <thead>
-                            <tr>
+                            <tr class="custom-table-header">
                                 <th>ভবন নং</th>
                                 <th>ভবনের নাম</th>
                                 <th>কত তলা ফাউন্ডেশন</th>
@@ -219,7 +219,7 @@
 
                 <table class="table table-bordered" style="text-align:center">
                     <thead>
-                    <tr>
+                    <tr class="custom-table-header">
                         <th colspan="7">ভবন সংখ্যা</th>
                         <th colspan="2">মালিকানা অনুসারে ভবন সংখ্যা</th>
                         <th colspan="3">ধরন অনুযায়ী ভবন সংখ্যা</th>
@@ -248,39 +248,39 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
-                        <td><input type="number" class="form-control" name="" id="" style="width:30px;">
+                        <td><input type="number" class="form-control" name="" id="" style="">
                         </td>
                     </tr>
                     </tbody>
@@ -290,7 +290,7 @@
                 <div class="table-bordered">
                     <table class="table table-bordered" style="text-align:center">
                         <thead>
-                        <tr>
+                        <tr class="custom-table-header">
                             <th>ভবন/কক্ষ</th>
                             <th>অফিস কক্ষ</th>
                             <th>প্রতিষ্ঠান প্রধানের কক্ষ</th>
@@ -311,31 +311,31 @@
                         <tbody>
                         <tr>
                             <td>সংখ্যা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style="width:40px;">
+                            <td><input type="number" class="form-control" name="" id="" style="">
                             </td>
                         </tr>
                         </tbody>
@@ -343,7 +343,7 @@
 
                     <table class="table table-bordered" style="text-align:center">
                         <thead>
-                        <tr>
+                        <tr class="custom-table-header">
                             <th>ভবন/কক্ষ</th>
                             <th>ছাত্রাবাসের সিট সংখ্যা</th>
                             <th>ছাত্রাবাসে অবস্থানকারী</th>
@@ -381,10 +381,10 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                    <lavel>১.৭.১৩ শ্রেণী ভিত্তিক কক্ষ সংখ্যা ও আয়তনঃ</lavel>
+                        <lavel>১.৭.১৩ শ্রেণী ভিত্তিক কক্ষ সংখ্যা ও আয়তনঃ</lavel>
                         <table class="table table-bordered" style="text-align:center">
                             <thead>
-                            <tr>
+                            <tr class="custom-table-header">
                                 <th>স্তর</th>
                                 <th>শ্রেণি/পর্ব</th>
                                 <th colspan="3">কক্ষ সংখ্যা</th>
@@ -565,11 +565,11 @@
                                 </td>
                             </tr>
                         </table>
-                        <label>প্রতিষ্ঠানের সীমানা প্রাচীর সংক্রান্ত তথ্য</label>
+                        <label> ১.৭.১৫ প্রতিষ্ঠানের সীমানা প্রাচীর সংক্রান্ত তথ্য</label>
                         <table class="table table-bordered table-striped">
                             <tr>
                                 <td>
-                                    ১.৭.১৫ প্রতিষ্ঠানের সীমানা প্রাচীর আছে কি?
+                                    প্রতিষ্ঠানের সীমানা প্রাচীর আছে কি?
                                     <select name="english_version">
                                         <option value="">select</option>
                                         <option value="1">হ্যাঁ</option>
@@ -577,7 +577,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    ১.৭.১৬ উত্তর হ্যাঁ হলে, প্রাচীরের অবস্থাঃ
+                                    উত্তর হ্যাঁ হলে, প্রাচীরের অবস্থাঃ
                                     <select name="english_version">
                                         <option value="">select</option>
                                         <option value="1">সম্পূর্ণ</option>
@@ -585,7 +585,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    ১.৭.১৭ প্রাচীরের ধরন
+                                    প্রাচীরের ধরন
                                     <select name="english_version">
                                         <option value="">select</option>
                                         <option value="1">পাকা</option>
@@ -641,156 +641,11 @@
                         </table>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="row mt-2 col-9">
 
-                        <div class="col-7">
-                            ১.৮ লাইব্রেরির জন্য পৃথক ভবন আছে কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.১ লাইব্রেরির জন্য কক্ষ আছে কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.২ লাইব্রেরিতে বইয়ের সংখ্যা
-                        </div>
-                        <div class="col col-2">
-                            <label class="label-number" for="">পাঠ্যপুস্তক</label>
-                            <input type="number" class="form-control" name="" id="">
-                            <label class="label-number" for="">সহায়ক</label>
-                            <input type="number" class="form-control" name="" id="">
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.৩ শিক্ষার্থীদের লাইব্রেরি থেকে বই ইস্যু করা হয় কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.৪ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.৫ উত্তর হ্যাঁ হলে, মাসে ইস্যুকৃত বই এর সংখ্যা
-                        </div>
-                        <div class="col col-2">
-                            <input type="number" class="form-control" name="" id="">
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.৬ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.৭ লাইব্রেরির পুস্তকাদির ক্যাটালগিং কম্পিউটারাইজড কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.৮ লাইব্রেরি পরিচালনার জন্য সহকারী লাইব্রেরিয়ান আছে কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version" style="width: 90px">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.৯ লাইব্রেরি বিষয়ে সহকারী লাইব্রেরিয়ানের প্রশিক্ষণ আছে কি?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version" style="width: 90px">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2 col-9">
-                        <div class="col-7">
-                            ১.৮.১০ লাইব্রেরি আওয়ার ক্লাস রুটিনে অনর্ভুক্ত আছে কি ?
-                        </div>
-                        <div class="col col-2">
-                            <select name="english_version" style="width: 90px">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <td class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.১</span>
-                </div>
-                <div class="form-control bg-number-label">অন্যান্য তথ্য</div>
-            </div>
-            <div class="contentBoxBody">
-                <div class="row">
-                    <div class="col-md-6">
 
-                    </div>
-                    <div class="col-md-6">
-
-                    </div>
-                </div>
-            </div>
-            @include('components/footer');
+        @include('components/footer');
 
     </div>
 @endsection
