@@ -890,7 +890,7 @@
             <div class="col-md-10 contentBoxBody">
                 <label class="label-number" for="">২.৩.৯ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক
                     প্রদান করুন</label>
-                <table class="table table-bordered" style="text-align:center">
+                <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="3" colspan="2" style="width:250px">ভর্তির বছর</td>
                         <td colspan="4"> এইচএসসি প্রোগ্রাম</td>

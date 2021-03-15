@@ -51,8 +51,7 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-
-                <table class="table table-bordered table-striped" style="font-size: 12px;">
+                <table class="table table-bordered table-striped text-center" style="font-size: 12px;">
                     <thead>
                     <tr>
                         <th>স্তর</th>
