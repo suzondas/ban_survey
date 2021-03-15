@@ -129,11 +129,11 @@
                     </tr>
                     <tr>
                         <td class="">
-                            <label for="">৩.২.১। মাল্টিমিডিয়া ব্যবহার করে প্রতিদিন কয়টি ক্লাস নেওয়া হয়</label>
+                            <label for="">৩.৫.৮ মাল্টিমিডিয়া ব্যবহার করে প্রতিদিন কয়টি ক্লাস নেয়া হয়? </label>
                             <input style="width: 40px;" id="" type="text"/> টি
                         </td>
                         <td>
-                            ৩.১.১। মাল্টিমিডিয়া ক্লাসরুমের ব্যবহার করে ক্লাস নেওয়ার<br> পর
+                            ৩.৫.৯ মাল্টিমিডিয়া ব্যবহার করে ক্লাস নেয়ার পর <br> পর
                             ড্যাসবোর্ডে এন্ট্রি দেওয়া হয় কি?
                             <select class="" id="dashboardEntry">
                                 <option>হ্যাঁ</option>
@@ -169,7 +169,7 @@
                 <table class="table table-striped table-bordered">
                     <tr>
                         <td colspan="2">
-                            <label for="ictClassYN">৩.২.১। আইসিটি বিষয়ে পাঠদান করা হয় কি?</label>
+                            <label for="ictClassYN">৩.৮ আইসিটি বিষয়ে পাঠদান করা হয় কি?</label>
                             <select class="contentBoxInput" id="ictClassYN">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -178,15 +178,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="ictTeacherYN">৩.২.১। আইসিটি বিষয়ে শিক্ষক আছে কি?</label>
+                            <label for="ictTeacherYN">৩.৮.১ আইসিটি বিষয়ে শিক্ষক আছে কি?</label>
                             <select class="contentBoxInput" id="ictTeacherYN">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="ictTeacherQualification">৩.২.১। আইসিটি বিষয়ে পাঠদানকারী শিক্ষকের শিক্ষাগত
-                                যোগ্যতা কী (সর্বোচ্চ)?</label>
+                            <label for="ictTeacherQualification">৩.৮.১.১ উত্তর হ্যাঁ হলে, আইসটি বিষয়ে পাঠদানকারী
+                                শিক্ষকের শিক্ষাগত যোগ্যতা কী (সর্বোচ্চ)?</label>
                             <select class="contentBoxInput" id="ictTeacherQualification">
                                 <option>১. স্নাতক (পাস)</option>
                                 <option>২. বিএসসি ইঞ্জি:(কম্পিউটার)</option>
@@ -199,7 +199,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="nonIctTeacherQualification">৩.২.১। আইসিটি বিষয়ে ডিগ্রিধারী নয় এমন শিক্ষকের
+                            <label for="nonIctTeacherQualification">৩.৮.২ আইসিটি বিষয়ে ডিগ্রিধারী নয় এমন শিক্ষকের
                                 শিক্ষাগত যোগ্যতা কী (সর্বোচ্চ)?</label>
                             <select class="contentBoxInput" id="nonIctTeacherQualification">
                                 <option>১. স্নাতক (পাস)</option>
@@ -208,8 +208,8 @@
                             </select>
                         </td>
                         <td>
-                            <label for="ictTeacherTraining"> ৩.২.১। আইসিটি বিষয়ে ডিগ্রিধারী নয় এমন শিক্ষক কী ধরনের
-                                প্রশিক্ষণ গ্রহণ করেছেন</label>
+                            <label for="ictTeacherTraining"> ৩.৮.৩ কী ধরনের প্রশিক্ষণ নিয়েছেন? (আইসিটি বিষয়ে ডিগ্রিধারী
+                                নয় এমন শিক্ষক)</label>
                             <select class="contentBoxInput" id="ictTeacherTraining">
                                 <option>১. সার্টিফিকেট কোর্স</option>
                                 <option>২. ডিপ্লোমা কোর্স</option>
@@ -219,8 +219,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="shikkhokBatayonYN">৩.২.১। প্রতিষ্ঠানের শিক্ষকগণ শিক্ষক বাতায়নের সদস্য
-                                কি?</label>
+                            <label for="shikkhokBatayonYN">৩.৮.৪ প্রতিষ্ঠানের শিক্ষকগণ শিক্ষক বাতায়নের সদস্য কি?</label>
                             <select class="contentBoxInput" id="shikkhokBatayonYN">
                                 <option>১. হ্যাঁ</option>
                                 <option>২. না</option>
@@ -228,15 +227,14 @@
                         </td>
                         <td>
                             <div class="">
-                                <label for="shikkhokBatayonTeacher"> ৩.২.১। শিক্ষক বাতায়নে সদস্য শিক্ষকের
-                                    সংখ্যা</label>
+                                <label for="shikkhokBatayonTeacher"> ৩.৮.৫ উত্তর হ্যাঁ হলে, কতজন?</label>
                                 <input class="contentBoxInput" id="" type="text"/> জন
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="digitalHajiraYN">৩.২.১। প্রতিষ্ঠানে ডিজিটাল হাজিরা ব্যবহৃত হয় কি?</label>
+                            <label for="digitalHajiraYN">৩.৮.৭ প্রতিষ্ঠানে ডিজিটাল হাজিরা সংক্রান্ত তথ্য:</label>
                             <select class="contentBoxInput" id="digitalHajiraYN">
                                 <option>১. হ্যাঁ</option>
                                 <option>২. না</option>
@@ -253,15 +251,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="languageClubYN">৩.২.১। প্রতিষ্ঠানে ল্যাংগুয়েজ ক্লাব আছে কি?</label>
+                            <label for="languageClubYN">৩.৮.৮ Language club আছে কি?</label>
                             <select class="contentBoxInput" id="languageClubYN">
                                 <option>১. হ্যাঁ</option>
                                 <option>২. না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="languageClubType">৩.২.১। ল্যাংগুয়েজ ক্লাবে কোন ধরনের ভাষার চর্চা
-                                হয়?</label>
+                            <label for="languageClubType">৩.৮.৮.১ উত্তর হ্যাঁ হলে, কোন কোন ভাষা চর্চা হয়?</label>
                             <select class="contentBoxInput" id="languageClubType">
                                 <option>১. বাংলা</option>
                                 <option>২. ইংরেজি</option>
@@ -277,7 +274,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="internetYN">৩.২.১। ইন্টারনেট সংযোগ আছে কি?</label>
+                            <label for="internetYN">৩.৯.১৮ ইন্টারনেট সংযোগ আছে কি?</label>
                             <select class="contentBoxInput" id="internetYN">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -306,7 +303,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="internetType">৩.২.১। ইন্টারনেট সংযোগের ধরণ?</label>
+                            <label for="internetType">৩.৯.১৯ ইন্টারনেট সংযোগ এর ধরন?</label>
                             <select class="contentBoxInput" id="internetType">
                                 <option>১-মডেম</option>
                                 <option>২-ব্রডব্যান্ড</option>
@@ -421,7 +418,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৪</span>
+                    <span class="input-group-text bg-number">৩.৩</span>
                 </div>
                 <div class="form-control bg-number-label">খাবার পানি সংক্রান্ত</div>
             </div>
@@ -429,14 +426,14 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td class="align-middle">
-                            <label>৩.২.১। শিক্ষক ও শিক্ষার্থীদের জন্য নিরাপদ খাবার পানির ব্যবস্থা আছে কি ?</label>
+                            <label>৩.৩ শিক্ষক ও শিক্ষার্থীদের জন্য নিরাপদ খাবার পানির ব্যবস্থা আছে কি ?</label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। উত্তর হাঁ হলে খাবার পানির উৎস কী ? (একাধিক হতে পারে)</label>
+                            <label>৩.৩.১ উত্তর হাঁ হলে খাবার পানির উৎস কী ? (একাধিক হতে পারে)</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td><input class="mr-2" type="checkbox" name="kup" id="kup"
@@ -473,14 +470,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। পানির উৎস নলকূপ হলে আর্সেনিক পরীক্ষা করা হয়েছে কি ?</label>
+                            <label>৩.৩.২ পানির উৎস নলকূপ হলে আর্সেনিক পরীক্ষা করা হয়েছে কি ?</label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। পানির আর্সেনিক পরীক্ষার ফলাফল কী ?</label>
+                            <label>৩.৩.৩ পানির আর্সেনিক পরীক্ষার ফলাফল কী ?</label>
                             <select class="contentBoxInput">
                                 <option>১-মাত্রা সহনীয়</option>
                                 <option>২-মাত্রা অসহনীয়</option>
@@ -489,14 +486,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। পানির ম্যাঙ্গানিজ পরীক্ষা করা হয়েছে কি ?</label>
+                            <label>৩.৩.৪ পানির ম্যাঙ্গানিজ পরীক্ষা করা হয়েছে কি ?</label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। পানির ম্যাঙ্গানিজ পরীক্ষা করা হয়েছে কি?</label>
+                            <label>৩.৩.৫ পানির ম্যাঙ্গানিজ পরীক্ষা করা হয়েছে কি?</label>
                             <select class="contentBoxInput">
                                 <option>১-মাত্রা সহনীয়</option>
                                 <option>২-মাত্রা অসহনীয়</option>
@@ -505,7 +502,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <label>৩.২.১। পানি বিশুদ্ধকরণ মেশিন / সুবিধা আছে কি?</label>
+                            <label>৩.৩.৬ পানি বিশুদ্ধকরণ মেশিন / সুবিধা আছে কি?</label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -519,7 +516,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৫</span>
+                    <span class="input-group-text bg-number">৩.৪</span>
                 </div>
                 <div class="form-control bg-number-label">টয়লেট ও ওয়াশব্লক সংক্রান্ত</div>
             </div>
@@ -527,14 +524,14 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td class="align-middle">
-                            <label>৩.২.১। প্রতিষ্ঠানটিতে টয়লেট সুবিধা আছে কি?</label>
+                            <label>৩.৪ প্রতিষ্ঠানটিতে টয়লেট সুবিধা আছে কি?</label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td class="w-50">
-                            <label>৩.২.১। উত্তর হাঁ হলে কোন ধরনের টয়লেট (সংখ্যা)</label>
+                            <label>৩.৪.১ উত্তর হাঁ হলে কোন ধরনের টয়লেট (সংখ্যা)</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>স্লাব টয়লেট</td>
@@ -553,7 +550,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। অবস্থা অনুযায়ী টয়লেট সংখ্যা</label>
+                            <label>৩.৪.২ অবস্থা অনুযায়ী টয়লেট সংখ্যা</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>ব্যবহার যোগ্য</td>
@@ -566,7 +563,7 @@
                             </table>
                         </td>
                         <td class="align-middle">
-                            <label>৩.২.১।প্রতিষ্ঠান প্রধানের জন্য সংযুক্ত টয়লেটের সুবিধা আছে কি ?</label>
+                            <label>৩.৪.৩ প্রতিষ্ঠান প্রধানের জন্য সংযুক্ত টয়লেটের সুবিধা আছে কি ?</label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -574,13 +571,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="align-middle"><label>৩.২.১। ছাত্রীদের জন্য পৃথক টয়লেটের ব্যবস্থা আছে কি ?</label>
+                        <td class="align-middle"><label>৩.৪.৪ ছাত্রীদের জন্য পৃথক টয়লেটের ব্যবস্থা আছে কি ?</label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
-                        <td><label>৩.২.১। ছাত্রীদের পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৪.৫ ছাত্রীদের জন্য পৃথক টয়লেট সংখ্যা </label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -596,7 +593,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label>৩.২.১। ছাত্রদের পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৪.৬ ছাত্রদের পৃথক টয়লেট সংখ্যা:</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -610,7 +607,7 @@
                                 </tr>
                             </table>
                         </td>
-                        <td><label>৩.২.১। শিক্ষকদের পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৪.৭ শিক্ষকদের জন্য পৃথক টয়লেট সংখ্যা</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -626,7 +623,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label>৩.২.১। কর্মচারীর পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৪.৮ কর্মচারীদের জন্য পৃথক টয়লেট সংখ্যা</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -640,7 +637,7 @@
                                 </tr>
                             </table>
                         </td>
-                        <td><label>৩.২.১। যৌথ ব্যবহার্য টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৪.৯ যৌত ব্যবহার্য টয়লেট সংখ্যা</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -657,14 +654,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। বিশেষ চাহিদা সম্পন্ন শিক্ষার্থীদের জন্য পৃথক টয়লেট আছে কি ?</label>
+                            <label>৩.৪.১০ বিশেষ চাহিদা সম্পন্ন শিক্ষার্থীদের জন্য পৃথক টয়লেট আছে কি ?</label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। টয়লেট পরিষ্কার পরিচ্ছন্ন রাখা হয় কি ?</label>
+                            <label>৩.৪.১১ টয়লেট পরিষ্কার পরিচ্ছন্ন রাখা হয় কি ?</label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -673,14 +670,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। ব্যবহারের জন্য পর্যাপ্ত পানির ব্যবস্থা আছে কি ?</label>
+                            <label>৩.৪.১২ ব্যবহারের জন্য পর্যাপ্ত পানির ব্যবস্থা আছে কি ?</label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। প্রতিষ্ঠানে সাবান পানিসহ হাত ধোয়ার ব্যবস্থা আছে কি ?</label>
+                            <label>৩.৪.১৩ প্রতিষ্ঠানে সাবান পানিসহ হাত ধোয়ার ব্যবস্থা আছে কি ?</label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -688,14 +685,21 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <label>৩.৪.১৪ প্রতিষ্ঠানের সাবান পানিসহ হাত ধোয়া/হ্যান্ডস্যানিটাইজার এর সুবিধা আছে
+                                কি?</label>
+                            <select class="" id="">
+                                <option>হ্যাঁ</option>
+                                <option>না</option>
+                            </select>
+                        </td>
                         <td colspan="2">
-                            <label>৩.২.১। প্রতিষ্ঠানে সাবান পানিসহ হাত ধোয়ার ব্যবস্থা থাকলে কোন ধরনের ব্যবস্থা
-                                আছে</label>
+                            <label>৩.৪.১৫ উত্তর হ্যাঁ হলে:</label>
                             <table>
                                 <tr>
-                                    <td>ছাত্রদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
-                                    <td>ছাত্রীদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
-                                    <td>শিক্ষকদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
+                                    <td>সকল ছাত্রের জন্য (১)</td>
+                                    <td>সকল ছাত্রীর জন্য (২)</td>
+                                    <td>সকল শিক্ষকদের জন্য (৩)</td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"/></td>
@@ -705,31 +709,32 @@
                             </table>
                         </td>
                     </tr>
+
                     <tr>
-                        <td><label>৩.২.১। ওয়াশ ব্লক আছে কি ? ?</label>
+                        <td><label>৩.৪.১৬ ওয়াশ ব্লক আছে কি ?</label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select></td>
-                        <td><label>৩.২.১। ওয়াশ ব্লক পরিষ্কার পরিচ্ছন্ন রাখা হয় কি ?</label>
+                        <td><label>৩.৪.১৭ উত্তর হ্যাঁ হলে, পরিষ্কার পরিচ্ছন্ন রাখা হয় কি?</label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select></td>
                     </tr>
                     <tr>
-                        <td><label>৩.২.১। ওয়াশ ব্লকের সংখ্যা ?</label>
+                        <td><label>৩.৪.১৮ উত্তর হ্যাঁ হলে ওয়াস ব্লকের সংখ্যা</label>
                             <input type="text"/> টি
                         </td>
-                        <td><label>৩.২.১। ওয়াশ ব্লক সংখ্যা পর্যাপ্ত কি ?</label>
+                        <td><label>৩.৪.১৯ ওয়াস ব্লক সংখ্যা পর্যাপ্ত কি?</label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><label>৩.২.১। ট্যাংক হতে ট্যাপের মাধ্যমে (Running Water)পানি সরবারহের
-                                ব্যবস্থা আছে কি ?</label>
+                        <td colspan="2"><label>৩.৪.২০ ট্যাংক থেকে ট্যাপের পানি (Running water) সরবরাহের ব্যবস্থা আছে
+                                কি? </label>
                             <select class="" id="">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
