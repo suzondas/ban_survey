@@ -480,8 +480,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.১.৪</span>
                 </div>
-                <div class="form-control bg-number-label">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার প্রয়োজন নেই)২.১.৪
-                    সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার প্রয়োজন নেই)
+                <div class="form-control bg-number-label">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার প্রয়োজন নেই)
                 </div>
             </div>
             <div class="contentBoxBody ">

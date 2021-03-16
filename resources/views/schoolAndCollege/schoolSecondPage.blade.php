@@ -528,9 +528,8 @@
                 </div>
             </div>
 
-            <div class="mt-2 col-md-4 contentBoxBody"> ২.৪ মূল প্রতিষ্ঠানের পদবিভিত্তিক কর্মরত ও এমপিওভুক্ত (প্রযোজ্য
-                ক্ষেত্রে) শিক্ষক ও
-                কর্মচারীর সংখ্যা: ২০২১
+            <div class="mt-2 col-md-4 contentBoxBody">
+                ২.৪.২ মূল প্রতিষ্ঠানের সার্বোচ্চ শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা:
                 <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">পদবী</td>
@@ -716,7 +715,7 @@
                                 <tr>
                                     <td>ক্রমিক নং</td>
                                     <td>বিবরণ</td>
-                                    <td>শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                                    <td>শিক্ষক সংখ্যা</td>
                                 </tr>
                                 <tbody>
                                 <tr>
@@ -779,7 +778,7 @@
                                 <tr>
                                     <td>ক্রমিক নং</td>
                                     <td>বিবরণ</td>
-                                    <td>শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                                    <td>শিক্ষক সংখ্যা</td>
                                 </tr>
                                 <tbody>
                                 <tr>
