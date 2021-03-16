@@ -1266,6 +1266,106 @@
                     </div>
                 </div>
                 <br>
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৪.১২</span>
+                </div>
+                <div class="form-control bg-number-label">কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন):</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                    <tr>
+                        <th rowspan="2">প্রশিক্ষণ</th>
+                        <th colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+                        <th rowspan="2">প্রশিক্ষণ</th>
+                        <th colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+
+                    </tr>
+                    <tr>
+
+                        <th colspan="2">হ্যাঁ/না</th>
+                        <th>মোট</th>
+                        <th>মহিলা</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>হেড টিচার ট্রেনিং (২১ দিন)</td>
+                        <td colspan="2"><select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td>সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+
+                    <tr>
+                        <td>হেড টিচার ফলো-আপ ট্রেনিং (৬ দিন)</td>
+                        <td colspan="2"><select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td>সিপিডি-২ ট্রেনিং (৫ দিন)</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td>হেড টিচার প্রি-সার্ভিস ট্রেনিং (৩৫ দিন)</td>
+                        <td colspan="2"><select class="custom-select " name="english_version" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td>ক্লাস্টার ট্রেনিং (১ দিন)</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক সংখ্যা</td>
+                        <td>এস.বি. এ ট্রেনিং</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                        <td>সৃজনশীল প্রশ্ন সংক্রান্ত ট্রেনিং</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td>এসটিসি ট্রেনিং (৩ মাস)</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td>অন্যান্য ট্রেনিং</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    <tr>
+                        <td>এসটিটি থেকে বি.এড (৯ মাস)</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td colspan="3" rowspan="2">•প্রধান শিক্ষকগণ হ্যাঁ/না টিক দিবেন <br>
+                            •অন্যান্য শিক্ষকগণের সংখ্যা লিখবেন
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>সিপিডি-১ ট্রেনিং (১৪ দিন)</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
                 <div class="row contentBox">
                     <div class="input-group contentHeader">
                         <div class="input-group-prepend">

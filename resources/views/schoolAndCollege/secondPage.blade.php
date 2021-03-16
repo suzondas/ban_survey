@@ -48,7 +48,7 @@
                             <tr>
                                 <td>অখন্ড (শতাংশ)</td>
                                 <td><input type="number" class="form-control" name=""></td>
-                                <td>অখন্ড (শতাংশ)</td>
+                                <td>অন্যত্র (শতাংশ)</td>
                                 <td><input type="number" class="form-control" name=""></td>
                             </tr>
                         </table>
@@ -351,7 +351,7 @@
                             <th>প্রতিষ্ঠান প্রধানের আবাসন</th>
                             <th>শিক্ষক আবাসিক ভবন</th>
                             <th>আবাসিক শিক্ষক সংখ্যা</th>
-                            <th>শিক্ষক আআবাসন সিট</th>
+                            <th>শিক্ষক আবাসন সিট</th>
                             <th>বিশেষ চাহিদা সম্পন্ন</th>
                             <th>কাউন্সিলিং রুম</th>
                             <th>শিক্ষা উপকরণ</th>
