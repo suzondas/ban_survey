@@ -1030,6 +1030,73 @@
                 </table>
             </div>
         </div>
+        {{--Special Training Info --}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৪.১৩</span>
+                </div>
+                <div class="form-control bg-number-label">বিশেষ প্রশিক্ষণের তথ্য
+                </div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>
+
+                            <label>২.৪.৬ সৃজনশীল প্রশ্নপত্র প্রণয়ন ও উত্তরপত্র মূল্যায়ন বিষয়ক প্রশিক্ষণপ্রাপ্ত শিক্ষক
+                                সংখ্যা</label>
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <td colspan="2" class="text-center">৩ দিন প্রশিক্ষণপ্রাপ্ত</td>
+                                    <td colspan="2" class="text-center">১২ দিন প্রশিক্ষণপ্রাপ্ত</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"> মোট: <input type="text" class="w-25"/></td>
+                                    <td class="text-center"> মহিলা: <input type="text" class="w-25"/></td>
+                                    <td class="text-center"> মোট: <input type="text" class="w-25"/></td>
+                                    <td class="text-center"> মহিলা: <input type="text" class="w-25"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>২.৪.৭ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <td class="text-center"> মোট: <input type="text" class="w-25"/></td>
+                                    <td class="text-center"> মহিলা: <input type="text" class="w-25"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td><label>২.৪.৭ বিশেষ চাহিদাসম্পন্ন  শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25" />
+                            মহিলা: <input type="text" class="w-25" /> </td>
+                        <td><label>২২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25" />
+                            মহিলা: <input type="text" class="w-25" /> </td>
+                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে কি? </label><br>
+                            <select class="w-25">
+                                <option> হ্যাঁ</option>
+                                <option> না</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে কি? </label><br>
+                            <select class="w-25">
+                                <option> হ্যাঁ</option>
+                                <option> না</option>
+                            </select></td>
+                        <td><label>২২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25" />
+                            মহিলা: <input type="text" class="w-25" /> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {{--Special Trainig Ends--}}
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
