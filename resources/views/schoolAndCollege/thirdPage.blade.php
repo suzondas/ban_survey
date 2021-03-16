@@ -1,10 +1,13 @@
 @extends('schoolAndCollege/template')
 @section('content')
+    {{--Banner--}}
+    @include('../components/banner')
+    {{--Navbar--}}
+    @include('schoolAndCollege.navBar')
+    <hr>
     <div class="container">
-        {{--Banner--}}
-        @include('../components/banner')
-        {{--Navbar--}}
-        @include('schoolAndCollege.navBar')
+        <h3 class="text-center">বিবিধ তথ্য (১)</h3>
+
         {{--LAB--}}
         <div class="contentBox">
             <div class="input-group contentHeader">
@@ -421,7 +424,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৪</span>
+                    <span class="input-group-text bg-number">৩.৩</span>
                 </div>
                 <div class="form-control bg-number-label">খাবার পানি সংক্রান্ত</div>
             </div>
@@ -519,7 +522,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৫</span>
+                    <span class="input-group-text bg-number">৩.৩</span>
                 </div>
                 <div class="form-control bg-number-label">টয়লেট ও ওয়াশব্লক সংক্রান্ত</div>
             </div>
@@ -739,7 +742,110 @@
                 </table>
             </div>
         </div>
-
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">৩.৩</span>
+                </div>
+                <div class="form-control bg-number-label">লাইব্রেরী সংক্রান্ত তথ্য</div>
+            </div>
+            <tr class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>
+                            ১.৮ লাইব্রেরির জন্য পৃথক ভবন আছে কি?
+                            <select name="english_version">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                        <td>
+                            ১.৮.১ লাইব্রেরির জন্য কক্ষ আছে কি?
+                            <select name="english_version">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                        <td>
+                            ১.৮.২ লাইব্রেরিতে বইয়ের সংখ্যা
+                            <div class="row">
+                                <div class="col form-inline"> <label class="label-number" for="">পাঠ্যপুস্তক</label>
+                                    <input type="number" class="w-50 ml-2 form-control" name="" id=""></div>
+                                <div class="col form-inline"> <label class="label-number" for="">সহায়ক</label>
+                                    <input type="number" class="w-50 ml-2 form-control" name="" id=""></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ১.৮.৩ শিক্ষার্থীদের লাইব্রেরি থেকে বই ইস্যু করা হয় কি?
+                            <select name="english_version">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                        <td>
+                            ১.৮.৪ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
+                            <select name="english_version">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                        <td>
+                            ১.৮.৫ উত্তর হ্যাঁ হলে, মাসে ইস্যুকৃত বই এর সংখ্যা
+                            <input type="number" class="form-control w-25" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ১.৮.৬ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
+                            <select name="english_version">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                        <td>
+                            ১.৮.৭ লাইব্রেরির পুস্তকাদির ক্যাটালগিং কম্পিউটারাইজড কি?
+                            <select name="english_version">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                        <td>
+                            ১.৮.৮ লাইব্রেরি পরিচালনার জন্য সহকারী লাইব্রেরিয়ান আছে কি?
+                            <select name="english_version" style="width: 90px">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ১.৮.৯ লাইব্রেরি বিষয়ে সহকারী লাইব্রেরিয়ানের প্রশিক্ষণ আছে কি?
+                            <select name="english_version" style="width: 90px">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                        <td>
+                            ১.৮.১০ লাইব্রেরি আওয়ার ক্লাস রুটিনে অনর্ভুক্ত আছে কি ?
+                            <select name="english_version" style="width: 90px">
+                                <option value="">select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+        </div>
     </div>
     {{--Footer--}}
     @include('components/footer');

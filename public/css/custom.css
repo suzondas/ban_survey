@@ -49,3 +49,7 @@ input[type=number] {
     font-weight: bold;
     color: black;
 }
+.custom-table-header{
+    background-color:#848688 !important;
+    color: white !important;
+}

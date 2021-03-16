@@ -35,12 +35,16 @@
                    href="{{ url('schoolAndCollege/sncSecondPage') }}">স্কুল এন্ড কলেজ-২</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/misFirstPage') ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/misFirstPage') }}"> বিবিধ-১ </a>
+                <a class="nav-link {{ request()->is('schoolAndCollege/thirdPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/thirdPage') }}"> বিবিধ-১ </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/misSecondPage') ? 'active' : '' }}"
-                   href="{{ url('schoolAndCollege/misSecondPage') }}">বিবিধ-২</a>
+                <a class="nav-link {{ request()->is('schoolAndCollege/fourthPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/fourthPage') }}">বিবিধ-২</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/fifthPage') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/fifthPage') }}">বিবিধ-৩</a>
             </li>
         </ul>
         <span class="navbar-text">
