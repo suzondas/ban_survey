@@ -849,6 +849,4 @@
     </div>
     {{--Footer--}}
     @include('components/footer');
-
-    </div>
 @endsection
