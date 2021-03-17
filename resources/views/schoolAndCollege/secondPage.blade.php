@@ -16,7 +16,7 @@
             <div class="contentBoxBody">
                 <div class="row">
                     <div class="col-md-8">
-                        <label>জমির অবস্থান:</label>
+                        <label class="font-weight-bold">১.৭ জমির অবস্থান:</label>
                         <table class="table table-striped table-bordered">
                             <tr class="custom-table-header">
                                 <td colspan="2">

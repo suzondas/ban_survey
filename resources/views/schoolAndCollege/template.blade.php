@@ -6,6 +6,9 @@
     <title>Laravel</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/datatable.js') }}" defer></script>
+    <script src="{{ asset('js/datatable.bootstrap4.js') }}" defer></script>
+    <script src="{{ asset('js/custom.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Styles -->

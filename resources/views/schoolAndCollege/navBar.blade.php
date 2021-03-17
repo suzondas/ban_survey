@@ -46,6 +46,10 @@
                 <a class="nav-link {{ request()->is('schoolAndCollege/fifthPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/fifthPage') }}">বিবিধ-৩</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/teacherStaffInfo') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/teacherStaffInfo') }}">শিক্ষক-কর্মচারী তথ্য</a>
+            </li>
         </ul>
         <span class="navbar-text">
         <a href="/logout" class="btn btn-success">Logout</a>

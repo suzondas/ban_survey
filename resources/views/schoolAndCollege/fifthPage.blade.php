@@ -1,11 +1,11 @@
 @extends('schoolAndCollege/template')
 @section('content')
+    {{--Banner--}}
+    @include('../components/banner')
+    {{--Navbar--}}
+    @include('schoolAndCollege.navBar')
+    {{--Natural Disaster--}}
     <div class="container">
-        {{--Banner--}}
-        @include('../components/banner')
-        {{--Navbar--}}
-        @include('schoolAndCollege.navBar')
-        {{--Natural Disaster--}}
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -59,182 +59,201 @@
                         </td>
                     </tr>
                 </table>
-                <table class="table table-bordered table-striped">
-                    <label class="align-middle"> ৩.১০.১ আপনার প্রতিষ্ঠানটি ২০২০ সালে কোন ধরনের দূর্যোগে কবলিত
-                        হয়েছিল?</label>
-                    <tr>
-                        <td>ক্ষতির বিবরণ</td>
-                        <td>সর্বশেষ (২০২০ সাল)</td>
-                        <td>২০২০ এর আম্ফান</td>
-                        <td>২০২০ এর বন্যা</td>
-                    </tr>
-                    <tr>
-                        <td><label>১. ছাত্রাবাসের কক্ষ ক্ষতিগ্রস্ত</label>
-                        </td>
-                        <td><input type="text"/> টি</td>
-                        <td><input type="text"/> টি</td>
-                        <td><input type="text"/> টি</td>
-                    </tr>
-                    <tr>
-                        <td><label>২. শ্রেণিকক্ষ ক্ষতিগ্রস্ত</label>
-                        </td>
-                        <td><input type="text"/> টি</td>
-                        <td><input type="text"/> টি</td>
-                        <td><input type="text"/> টি</td>
-                    </tr>
-                    <tr>
-                        <td><label>৩. বৃক্ষ মারা গিয়াছে অন্তত</label>
-                        </td>
-                        <td><input type="text"/> টি</td>
-                        <td><input type="text"/> টি</td>
-                        <td><input type="text"/> টি</td>
-                    </tr>
-                    <tr>
-                        <td><label>৪. শিক্ষা প্রতিষ্ঠান বন্ধ ছিল</label>
-                        </td>
-                        <td><input type="text"/> দিন</td>
-                        <td><input type="text"/> দিন</td>
-                        <td><input type="text"/> দিন</td>
-                    </tr>
-                    <tr>
-                        <td><label>৫. প্রতিষ্ঠান খোলা ছিল, কিন্তু ক্লাস নেয়া যায় নি</label>
-                        </td>
-                        <td><input type="text"/> দিন</td>
-                        <td><input type="text"/> দিন</td>
-                        <td><input type="text"/> দিন</td>
-                    </tr>
-                    <tr>
-                        <td><label>৬. প্রতিষ্ঠান স্থানান্তর করতে হয়েছে</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>৭. প্রতিষ্ঠানে আসার রাস্তা আংশিক ক্ষতিগ্রস্থ হয়েছে</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>৮. প্রতিষ্ঠানে আসার রাস্তা পুরা ক্ষতিগ্রস্থ হয়েছ</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>৯. প্রতিষ্ঠান খোলা ছিল, কিন্তু শিক্ষকদের স্কুল আসতে খু সমস্যা হয়েছিল</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>১০. শিক্ষকদের দুর্যোগ সহায়তা কাজে নিয়োজিত হবার জন্য অন্যত্র যেতে হয়েছিল অন্তত</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>১১.পানি সরবরাহ ব্যবস্থা ভেঙ্গে পড়েছিল অন্তত</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>১২. টয়লেট ব্যবস্থা ভেঙ্গে পড়েছিল অন্তত</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>১৩. প্রতিষ্ঠানটি আশ্রয় কেন্দ্র হিসেবে ব্যবহৃত হয়েছিল অন্তত</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>১৪. খেলার মাঠ ব্যবহার অনুপযোগী হয়ে পড়েছিল</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                    </tr>
-                    <tr>
-                        <td><label>১৫. কারিকুলাম সটিকভাবে শেষ করা যায়নি অন্তত</label>
-                        </td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                        <td><input type="text"/> বার</td>
-                </table>
-                <table class="table table-bordered table-striped">
-                    <td colspan="5"><label class="align-middle"> ৩.১০.৩ সর্বশেষ দুর্যোগের ফলে শিক্ষার্থীঝরে পড়ার
-                            সংখ্যা:</label></td>
-                    <td><label class="align-middle"> ৩.১০.৪ সর্বশেষ দুর্যোগের পর কোন ধরনের ক্ষয়ক্ষতি কাটিয়ে ওঠা যায় নি?
-                            (একাধিক টিক হতে পারে)</label></td>
-                    <tr>
-                        <td rowspan="2" style="width: 100px">দুর্যোগের প্রকৃতি</td>
-                        <td rowspan="2">দুর্যোগের নাম</td>
-                        <td colspan="3" class="text-center">ঝড়ে পড়া শিক্ষার্থীর সংখ্যা</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ভবনের ক্ষয়ক্ষতি</td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">ছাত্র</td>
-                        <td class="text-center">ছাত্রী</td>
-                        <td class="text-center">মোট</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">আসবাবপত্র</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">প্রাকৃতিক</td>
-                        <td>১. <input type="text" class="w-75"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ছাদ</td>
-                    </tr>
-                    <tr>
-                        <td>২. <input type="text" class="w-75"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">দরজা/জানালা</td>
-                    </tr>
-                    <tr>
-                        <td>৩. <input type="text" class="w-75"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পানীয় জলের ব্যবস্থা</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">মানব সৃষ্ট</td>
-                        <td>১. <input type="text" class="w-75"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">স্যানিটেশন ব্যবস্থা</td>
-                    </tr>
-                    <tr>
-                        <td>২. <input type="text" class="w-75"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সংযোগ রাস্তা</td>
-                    </tr>
-                    <tr>
-                        <td>৩. <input type="text" class="w-75"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td> অন্যান্য: <input class="w-75" type="number" name=""></td>
-                    </tr>
-                </table>
+                <div><label class="align-middle font-weight-bold"> ৩.১০.১ গত ১০ বছর এবং সর্বশেষ দূর্যোগে আক্রান্ত হয়ে এ
+                        শিক্ষা প্রতিষ্ঠানে যে সকল ক্ষতি হয়েছে তার বিবরণ (সংখ্যা লিখুন):?</label>
+                    <table class="table table-bordered table-striped">
+
+                        <tr class="custom-table-header">
+                            <td>ক্ষতির বিবরণ</td>
+                            <td>সর্বশেষ (২০২০ সাল)</td>
+                            <td>২০২০ এর আম্ফান</td>
+                            <td>২০২০ এর বন্যা</td>
+                        </tr>
+                        <tr>
+                            <td><label>১. ছাত্রাবাসের কক্ষ ক্ষতিগ্রস্ত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                        </tr>
+                        <tr>
+                            <td><label>২. শ্রেণিকক্ষ ক্ষতিগ্রস্ত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                        </tr>
+                        <tr>
+                            <td><label>৩. বৃক্ষ মারা গিয়াছে অন্তত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                            <td><input type="text" class="w-50"/> টি</td>
+                        </tr>
+                        <tr>
+                            <td><label>৪. শিক্ষা প্রতিষ্ঠান বন্ধ ছিল</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> দিন</td>
+                            <td><input type="text" class="w-50"/> দিন</td>
+                            <td><input type="text" class="w-50"/> দিন</td>
+                        </tr>
+                        <tr>
+                            <td><label>৫. প্রতিষ্ঠান খোলা ছিল, কিন্তু ক্লাস নেয়া যায় নি</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> দিন</td>
+                            <td><input type="text" class="w-50"/> দিন</td>
+                            <td><input type="text" class="w-50"/> দিন</td>
+                        </tr>
+                        <tr>
+                            <td><label>৬. প্রতিষ্ঠান স্থানান্তর করতে হয়েছে</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>৭. প্রতিষ্ঠানে আসার রাস্তা আংশিক ক্ষতিগ্রস্থ হয়েছে</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>৮. প্রতিষ্ঠানে আসার রাস্তা পুরা ক্ষতিগ্রস্থ হয়েছ</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>৯. প্রতিষ্ঠান খোলা ছিল, কিন্তু শিক্ষকদের স্কুল আসতে খু সমস্যা হয়েছিল</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>১০. শিক্ষকদের দুর্যোগ সহায়তা কাজে নিয়োজিত হবার জন্য অন্যত্র যেতে হয়েছিল
+                                    অন্তত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>১১.পানি সরবরাহ ব্যবস্থা ভেঙ্গে পড়েছিল অন্তত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>১২. টয়লেট ব্যবস্থা ভেঙ্গে পড়েছিল অন্তত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>১৩. প্রতিষ্ঠানটি আশ্রয় কেন্দ্র হিসেবে ব্যবহৃত হয়েছিল অন্তত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>১৪. খেলার মাঠ ব্যবহার অনুপযোগী হয়ে পড়েছিল</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                        </tr>
+                        <tr>
+                            <td><label>১৫. কারিকুলাম সটিকভাবে শেষ করা যায়নি অন্তত</label>
+                            </td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                            <td><input type="text" class="w-50"/> বার</td>
+                    </table>
+                </div>
+                <div><label class="align-middle"> ৩.১০.৩ সর্বশেষ দুর্যোগের ফলে শিক্ষার্থীঝরে পড়ার
+                        সংখ্যা:</label>
+                    <table class="table table-bordered table-striped">
+
+                        <tr>
+                            <td rowspan="2" style="width: 100px">দুর্যোগের প্রকৃতি</td>
+                            <td rowspan="2">দুর্যোগের নাম</td>
+                            <td colspan="3" class="text-center">ঝড়ে পড়া শিক্ষার্থীর সংখ্যা</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">ছাত্র</td>
+                            <td class="text-center">ছাত্রী</td>
+                            <td class="text-center">মোট</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">প্রাকৃতিক</td>
+                            <td>১. <input type="text" class="w-75"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>২. <input type="text" class="w-75"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>৩. <input type="text" class="w-75"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+
+                        </tr>
+                        <tr>
+                            <td rowspan="3">মানব সৃষ্ট</td>
+                            <td>১. <input type="text" class="w-75"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+
+                        </tr>
+                        <tr>
+                            <td>২. <input type="text" class="w-75"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>৩. <input type="text" class="w-75"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <label class="align-middle font-weight-bold">
+                        ৩.১০.৪ সর্বশেষ দুর্যোগের পর কোন ধরনের ক্ষয়ক্ষতি কাটিয়ে ওঠা যায় নি? (একাধিক টিক হতে পারে)
+                    </label>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ভবনের ক্ষয়ক্ষতি</td>
+                            <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">আসবাবপত্র</td>
+                            <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ছাদ</td>
+                            <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">দরজা/জানালা</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পানীয় জলের ব্যবস্থা
+                            </td>
+                            <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">স্যানিটেশন ব্যবস্থা
+                            </td>
+                            <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সংযোগ রাস্তা</td>
+                            <td> অন্যান্য: <input class="w-75" type="number" name=""></td>
+                        </tr>
+                    </table>
+                </div>
                 <table class="table table-bordered table-striped text-center">
                     <label class="align-middle"> ৩.১০.৫ দুর্যোগের ফলে ছাত্র-ছাত্রীরা কোন বিষয়সমূহে ক্ষতিগ্রস্ত হয়/পিছিয়ে
                         পড়ে? (ক্ষতিগ্রস্ত বিষয় (টিক চিহ্ন দিন))</label>
@@ -372,7 +391,8 @@
                             হয়েছে-১
                         </td>
                         <td>
-                            <label>৩.১১.৪ আপনার প্রতিষ্ঠানে স্বাস্থ্যবিধি নিশ্চিত করে পাঠদান কার্যক্রম পরিচালনা করা সম্ভব হচ্ছে কি না?</label>
+                            <label>৩.১১.৪ আপনার প্রতিষ্ঠানে স্বাস্থ্যবিধি নিশ্চিত করে পাঠদান কার্যক্রম পরিচালনা করা
+                                সম্ভব হচ্ছে কি না?</label>
                             <select class="contentBox">
                                 <option>হ্যাঁ-১</option>
                                 <option>না-২</option>

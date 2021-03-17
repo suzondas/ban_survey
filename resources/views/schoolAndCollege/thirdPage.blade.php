@@ -51,16 +51,27 @@
                                 <td>ল্যাপটপ</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>1</td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><select>
+                                        <option value=""></option>
+                                        <option value="">শিক্ষা মন্ত্রণালয়</option>
+                                        <option value="">মাউশি</option>
+                                        <option value="">প্রকল্প</option>
+                                        <option value="">শিক্ষাবোর্ড</option>
+                                        <option value="">বিসিসি</option>
+                                        <option value="">এনজিও</option>
+                                        <option value="">ক্রয়কৃত</option>
+                                        <option value="">স্থানীয় সরকার</option>
+                                        <option value="">অন্যান্য</option>
+                                    </select></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
                             </tr>
                             </tbody>
                         </table>
@@ -77,29 +88,54 @@
                         <table class="table table-bordered text-center font-weight-bold">
                             <tbody>
                             <tr>
-                                <td rowspan="2">ক্রমিক</td>
                                 <td rowspan="2">মোট কম্পিউটার</td>
                                 <td colspan="2">সচল</td>
                                 <td rowspan="2">মেরামতযোগ্য</td>
                                 <td rowspan="2">অচল</td>
-                                <td rowspan="2">প্রদানকারী সংস্থা</td>
                             </tr>
                             <tr>
                                 <td>ডেস্কটপ</td>
                                 <td>ল্যাপটপ</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
+                                <td><input type="text" class="contentBoxInput w-50"/></td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div>
+                    <label>৩.১.৩। কম্পিউটার প্রদানকারী সংস্থা অনুযায়ী সংখ্যা:</label>
+                    <table class="table table-bordered text-center font-weight-bold">
+                        <tr>
+                            <td>সংস্থার নাম</td>
+                            <td>শিক্ষা মন্ত্রণালয়</td>
+                            <td>মাউশি</td>
+                            <td>প্রকল্প</td>
+                            <td>শিক্ষাবোর্ড</td>
+                            <td>বিসিসি</td>
+                            <td>এনজিও</td>
+                            <td>ক্রয়কৃত</td>
+                            <td>স্থানীয় সরকার</td>
+                            <td>অন্যান্য</td>
+                        </tr>
+                        <tr>
+                            <td>সংখ্যা</td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                            <td><input type="text" class="contentBoxInput w-50"/></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -561,8 +597,10 @@
                                 <tr>
                                     <td>ব্যবহার যোগ্য</td>
                                     <td>ব্যবহার অযোগ্য</td>
+                                    <td>মোট</td>
                                 </tr>
                                 <tr>
+                                    <td><input class="w-50"/></td>
                                     <td><input class="w-50"/></td>
                                     <td><input class="w-50"/></td>
                                 </tr>
@@ -742,6 +780,47 @@
                 </table>
             </div>
         </div>
+        {{--Electricity--}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">৩.৩</span>
+                </div>
+                <div class="form-control bg-number-label">বিদ্যুৎ সংক্রান্ত</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>প্রতিষ্ঠানে বিদ্যুৎ সংযোগ আছে কি?
+                            <select class="contentBoxInput" id="">
+                                <option>হ্যাঁ</option>
+                                <option>না</option>
+                            </select></td>
+                        <td>প্রতিষ্ঠানে কোন ধরনের সংযোগ আছে?
+                            <select class="contentBoxInput" id="">
+                                <option>বিদ্যুৎ</option>
+                                <option>সোলার প্যানেল</option>
+                                <option>ফুয়েল গ্যাস জেনারেটর</option>
+                                <option>অন্যান্য</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>প্রতিষ্ঠানে সোলার প্যানেল আছে কি?<select class="contentBoxInput" id="">
+                                <option>হ্যাঁ</option>
+                                <option>না</option>
+                            </select></td>
+                        <td>সোলার প্যানেলে কতটি লাইট ফ্যান চলে?
+                            <div class="row">
+                                <div class="col">ফ্যান: <input type="text"/></div>
+                                <div class="col">লাইট: <input type="text"/></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {{--Library--}}
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -771,9 +850,9 @@
                         <td>
                             ১.৮.২ লাইব্রেরিতে বইয়ের সংখ্যা
                             <div class="row">
-                                <div class="col form-inline"> <label class="label-number" for="">পাঠ্যপুস্তক</label>
+                                <div class="col form-inline"><label class="label-number" for="">পাঠ্যপুস্তক</label>
                                     <input type="number" class="w-50 ml-2 form-control" name="" id=""></div>
-                                <div class="col form-inline"> <label class="label-number" for="">সহায়ক</label>
+                                <div class="col form-inline"><label class="label-number" for="">সহায়ক</label>
                                     <input type="number" class="w-50 ml-2 form-control" name="" id=""></div>
                             </div>
                         </td>
