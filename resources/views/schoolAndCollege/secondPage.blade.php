@@ -2,9 +2,8 @@
 @section('content')
     @include('../components/banner')
     @include('schoolAndCollege.navBar')
-    <hr>
     <div class="container" style="font-size:13px !important;">
-        <h3 class="text-center">সেকশন ১: মৌলিক তথ্য (খ)</h3>
+        <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (খ)</h3>
 
         <div class="contentBox">
             <div class="input-group contentdeader">
@@ -380,8 +379,8 @@
 
 
                 <div class="row">
-                    <div class="col-md-6">
-                        <lavel>১.৭.১৩ শ্রেণী ভিত্তিক কক্ষ সংখ্যা ও আয়তনঃ</lavel>
+                    <div class="col-md-12">
+                        <label>১.৭.১৩ শ্রেণী ভিত্তিক কক্ষ সংখ্যা ও আয়তনঃ</label>
                         <table class="table table-bordered" style="text-align:center">
                             <thead>
                             <tr class="custom-table-header">
@@ -404,7 +403,7 @@
                             <tbody>
                             <tr>
                                 <td rowspan="3">নিম্ন মাধ্যমিক</td>
-                                <td>৬ ষ্ঠ</td>
+                                <td>৬ষ্ঠ</td>
                                 <td><input type="number" class="form-control" name="" id=""></td>
                                 <td><input type="number" class="form-control" name="" id=""></td>
                                 <td><input type="number" class="form-control" name="" id=""></td>
@@ -523,121 +522,7 @@
                                 <td><input type="number" class="form-control" name="" id=""></td>
                                 <td><input type="number" class="form-control" name="" id=""></td>
                             </tr>
-
                             </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-6">
-                        <label>
-                            ১.৭.১১ প্রতিষ্ঠানের প্রার্থনা গৃহঃ
-                        </label>
-                        <table class="table table-bordered table-striped">
-                            <tr>
-                                <td>
-                                    <label class="label-number" for="">মসজিদ</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="1"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">নামাজ ঘর</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="2"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">মন্দির</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="3"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">গীর্জা</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="4"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">প্যাগোডা</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="4"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">অন্যান্য</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="4"
-                                           style="width: 20px">
-                                </td>
-                            </tr>
-                        </table>
-                        <label> ১.৭.১৫ প্রতিষ্ঠানের সীমানা প্রাচীর সংক্রান্ত তথ্য</label>
-                        <table class="table table-bordered table-striped">
-                            <tr>
-                                <td>
-                                    প্রতিষ্ঠানের সীমানা প্রাচীর আছে কি?
-                                    <select name="english_version">
-                                        <option value="">select</option>
-                                        <option value="1">হ্যাঁ</option>
-                                        <option value="2">না</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    উত্তর হ্যাঁ হলে, প্রাচীরের অবস্থাঃ
-                                    <select name="english_version">
-                                        <option value="">select</option>
-                                        <option value="1">সম্পূর্ণ</option>
-                                        <option value="2">আংশিক</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    প্রাচীরের ধরন
-                                    <select name="english_version">
-                                        <option value="">select</option>
-                                        <option value="1">পাকা</option>
-                                        <option value="2">আধাপাকা</option>
-                                        <option value="3">কাঁচা</option>
-                                        <option value="4">প্রাকৃতিক</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </table>
-                        <label>১.৭.১৪ প্রতিষ্ঠানটির কী কী অবকাঠামো/ সুবিধা রয়েছে ?
-                        </label>
-                        <table class="table table-striped table-bordered">
-                            <tr>
-                                <td>
-                                    <label class="label-number" for="">শহীদ মিনার</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="1"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">পতাকা স্ট্যান্ড </label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="2"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">সততা স্টোর</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="3"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">গ্যাস সংযোগ</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="4"
-                                           style="width: 20px">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="label-number" for="">হ্যান্ড স্যানিটাইজার</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="4"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">টয়লেট পেপার</label>
-                                    <input type="checkbox" class="form-control" name="" id="" value="4"
-                                           style="width: 20px">
-                                </td>
-                                <td>
-                                    <label class="label-number" for="">সাবান</label>&nbsp
-                                    <input type="checkbox" class="form-control " name="" id="" value="4"
-                                           style="width: 20px">
-                                </td>
-                            </tr>
                         </table>
                     </div>
                 </div>

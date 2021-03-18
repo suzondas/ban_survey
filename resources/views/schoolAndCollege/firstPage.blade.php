@@ -2,10 +2,9 @@
 @section('content')
     @include('../components/banner')
     @include('schoolAndCollege.navBar')
-    <hr>
 
     <div class="container">
-        <h3 class="text-center">সেকশন ১: মৌলিক তথ্য (ক)</h3>
+        <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (ক)</h3>
         <div class="row">
             <div class="col-md-6">
                 <label for="eiin">ইআইআইএন (EIIN): &nbsp</label><input type="number" id="eiin">
@@ -23,7 +22,6 @@
                         <td><input type="text" class="" name="long"
                                    id="long"></td>
                     </tr>
-
                 </table>
             </div>
         </div>
@@ -55,16 +53,12 @@
                 </table>
                 <table class="table table-bordered table-striped">
                     <tr>
-                        <td colspan="4"><b>১.১.১ ঠিকানা:</b></td>
+                        <td colspan="5"><b>১.১.১ ঠিকানা:</b></td>
                     </tr>
                     <tr>
                         <td>
-                            <label class="" for="holding_no">হোল্ডিং নম্বর:</label> &nbsp
+                            <label class="" for="holding_no">হোল্ডিং নম্বর/রোড:</label> &nbsp
                             <input type="text" class="form-control" name="holding_no" id="holding_no">
-                        </td>
-                        <td>
-                            <label class="" for="road">রোড:</label> &nbsp
-                            <input type="text" class="form-control" name="road" id="road">
                         </td>
                         <td>
                             <label class="" for="post_office">ডাকঘর:</label> &nbsp
@@ -74,9 +68,6 @@
                             <label class="" for="post_code">পোস্ট কোড:</label> &nbsp
                             <input type="number" class="form-control" name="post_code" id="post_code">
                         </td>
-                    </tr>
-
-                    <tr>
                         <td>
                             <label class="" for="division">বিভাগ:</label>
                             <select class="form-control" name="division">
@@ -89,6 +80,9 @@
                                 <option value="" selected>Select</option>
                             </select>
                         </td>
+                    </tr>
+
+                    <tr>
                         <td>
                             <label class="" for="upazila">উপজেলা/থানা:</label>
                             <select class="form-control" name="upazila">
@@ -101,8 +95,6 @@
                                 <option value="" selected>Select</option>
                             </select>
                         </td>
-                    </tr>
-                    <tr>
                         <td>
                             <label class="" for="union">ইউনিয়ন/ওয়ার্ড:</label>
                             <select class="form-control" name="union">
@@ -119,13 +111,14 @@
                             <input type="number" class="form-control" name="alt_mobile"
                                    id="alt_mobile">
                         </td>
+                    </tr>
+                    <tr>
+
                         <td>
                             <label class="" for="phone">ফোন:</label> &nbsp
                             <input type="number" class="form-control" name="phone"
                                    id="phone">
                         </td>
-                    </tr>
-                    <tr>
                         <td>
                             <label class="" for="email">ই-মেইল:</label> &nbsp
                             <input type="text" class="form-control" name="email"
@@ -304,7 +297,7 @@
                             <option value="6">অন্যান্য পৌর এলাকা</option>
                         </select>
                     </td>
-                    <td>
+                    <td class="form-inline">
                         <label class="" for="management">১.৩.২ প্রশাসনিক ইউনিটের সাথে যোগাযোগ ব্যবস্থার
                             ধরন:</label>
                         <select class="" name="management">
@@ -316,17 +309,25 @@
                     </td>
                     <td>
                         <label class="" for="branch_no">১.৩.৩ নিকটবর্তী অনুরুপ শিক্ষা প্রতিষ্ঠানের
-                            দূরত্ব</label> &nbsp
-                        <input type="number" class="form-control" name="branch_no"
-                               id="branch_no">
+                            দূরত্ব: &nbsp;</label>
+                        <input type="number" name="branch_no"
+                               id="branch_no" class="w-25">কি.মি.
                     </td>
                     <td>
-                        <label class="" for="branch_no">১.৪.১ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
-                        <input type="number" class="form-control" name="branch_no"
-                               id="branch_no">
+                        <label class="" for="double_shift">১.৪ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
+                        <select class="" name="double_shift">
+                            <option value="" selected>Select</option>
+                            <option value="1">হ্যাঁ-১</option>
+                            <option value="2">না-২</option>
+                        </select>
                     </td>
                     </tr>
                     <tr>
+                        <td>
+                            <label class="" for="branch_no">১.৪.১ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
+                            <input type="number" class="w-25" name="branch_no"
+                                   id="branch_no" placeholder="">
+                        </td>
                         <td>
                             <label class="" for="double_shift">১.৪.২ প্রতিষ্ঠানটিতে ডাবল-শিফ্ট আছে কি? </label>
                             <select class="" name="double_shift">
@@ -353,7 +354,7 @@
                                 <option value="2">না-২</option>
                             </select>
                         </td>
-
+                    <tr>
                         <td>
                             <label class="" for="otder_insttype">১.৪.৫ উত্তর হ্যাঁ হলে, প্রতিষ্ঠানটির
                                 ধরন: </label>
@@ -367,7 +368,6 @@
                                 <option value="6">অন্যান্য</option>
                             </select>
                         </td>
-                    <tr>
                         <td>
                             <label class="" for="mpo_yn">১.৫ প্রতিষ্ঠানটি এমপিওভুক্ত কি?</label>
                             <select class="" name="mpo_yn">
@@ -392,7 +392,6 @@
                                 <option value="2">না-২</option>
                             </select>
                         </td>
-                        <td></td>
                     </tr>
                 </table>
                 <label class="font-weight-bold">১.২.৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের ক্ষেত্রে প্রযোজ্য নয়):</label>
@@ -840,14 +839,13 @@
                         </td>
                         <td colspan="2">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-5">
                                     <label class="" for="pti_meeting"> ৩.২ ২০২১ সালে পিটিএ এর কতগুলো সভা
                                         হয়েছে? </label></div>
-                                <div class="col-md-4"><input type="text" class="w-50" name="pti_meeting"
+                                <div class="col-md-4"><input type="text" class="w-25" name="pti_meeting"
                                                              id="pti_meeting" style="width: 100px"> টি
                                 </div>
                             </div>
-
                         </td>
                     </tr>
                     <tr>

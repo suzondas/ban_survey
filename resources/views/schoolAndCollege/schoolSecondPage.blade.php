@@ -3,7 +3,7 @@
     <div class="container-fluid">
         @include('../components/banner')
         @include('schoolAndCollege.navBar')
-        <h2 style="text-align:center">স্কুল ২য় পাতা</h2>
+        <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox col-12">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
