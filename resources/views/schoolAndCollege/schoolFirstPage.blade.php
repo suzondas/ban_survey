@@ -3,7 +3,7 @@
     <div class="container-fluid">
         @include('../components/banner')
         @include('schoolAndCollege.navBar')
-        <h2 class="text-center">স্কুল</h2>
+        <h3 class="text-center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox col-8">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -46,7 +46,8 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.১.১</span>
                 </div>
-                <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, ট্রান্সফার ইন, ট্রান্সফার আউট, পুস্তকের
+                <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, ট্রান্সফার ইন, ট্রান্সফার
+                    আউট, পুস্তকের
                     চাহিদা অনুযায়ী শিক্ষার্থীর সংখ্যা ২০২০
                 </div>
             </div>
@@ -381,7 +382,8 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.১.২</span>
                 </div>
-                <div class="form-control bg-number-label">২০২০ ও তার পূর্বের শিক্ষার্থী ২০২১ সালে একই শ্রেণিতে (রিপিটার) অধ্যয়নরত আছে
+                <div class="form-control bg-number-label">২০২০ ও তার পূর্বের শিক্ষার্থী ২০২১ সালে একই শ্রেণিতে (রিপিটার)
+                    অধ্যয়নরত আছে
                     এইরূপ শিক্ষার্থীর
                     সংখ্যা
                 </div>
@@ -480,7 +482,8 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.১.৪</span>
                 </div>
-                <div class="form-control bg-number-label">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার প্রয়োজন নেই)
+                <div class="form-control bg-number-label">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ করার
+                    প্রয়োজন নেই)
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -617,7 +620,7 @@
             </div>
         </div>
 
-        <div class="contentBox col-10 ">
+        <div class="contentBox col-12">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.২ </span>
@@ -625,7 +628,7 @@
                 <div class="form-control bg-number-label">স্তর ও ক্যাটাগরিভিত্তিক শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
             </div>
-            <div class="contentBoxBody ">
+            <div class="contentBoxBody">
                 <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
@@ -792,10 +795,30 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.২.৪</span>
                 </div>
-                <div class="form-control bg-number-label">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
+                <div class="form-control bg-number-label">বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীরধরন অনুযায়ী শিক্ষক ও
+                    শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
             </div>
             <div class="contentBoxBody ">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
+                            <select class="">
+                                <option>হ্যাঁ-১</option>
+                                <option>না-২</option>
+                            </select></td>
+                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
+                            <input type="checkbox">&nbsp; অডিও-১ &nbsp;
+                            <input type="checkbox">&nbsp; ব্রেইল-২ &nbsp;
+                            <input type="checkbox"> &nbsp;সাইন ভাষা-৩ &nbsp;
+                            <input type="checkbox"> &nbsp;অন্যান্য-৪ </td>
+                        <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
+                            <select class="">
+                                <option>হ্যাঁ-১</option>
+                                <option>না-২</option>
+                            </select></td>
+                    </tr>
+                </table>
                 <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
@@ -1064,7 +1087,8 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.২.৫</span>
                 </div>
-                <div class="form-control bg-number-label">ক্ষুদ্র-নৃ-গোষ্ঠীর ধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
+                <div class="form-control bg-number-label">ক্ষুদ্র-নৃ-গোষ্ঠীর ধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা
+                    ২০২১
                 </div>
             </div>
             <div class="contentBoxBody ">
@@ -1836,7 +1860,8 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.৩.৩</span>
                 </div>
-                <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক উত্তীর্ণ ও অনুত্তীর্ণ শিক্ষার্থীর তথ্য, ডিসেম্বর ২০২০
+                <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক উত্তীর্ণ ও অনুত্তীর্ণ শিক্ষার্থীর তথ্য,
+                    ডিসেম্বর ২০২০
                 </div>
             </div>
             <div class="contentBoxBody ">

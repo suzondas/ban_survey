@@ -456,11 +456,139 @@
                 </table>
             </div>
         </div>
-        {{--Drinking Water--}}
+        {{--Infrustructure AND Facilities--}}
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">৩.৩</span>
+                </div>
+                <div class="form-control bg-number-label">অবকাঠামো/সুবিধা সংক্রান্ত</div>
+            </div>
+            <div class="contentBoxBody">
+                <div class="row">
+                <div class="col-md-6">
+                    <label>
+                        ১.৭.১১ প্রতিষ্ঠানের প্রার্থনা গৃহঃ
+                    </label>
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <td>
+                                <label class="label-number" for="">মসজিদ</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="1"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">নামাজ ঘর</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="2"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">মন্দির</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="3"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">গীর্জা</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="4"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">প্যাগোডা</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="4"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">অন্যান্য</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="4"
+                                       style="width: 20px">
+                            </td>
+                        </tr>
+                    </table>
+                    <label> ১.৭.১৫ প্রতিষ্ঠানের সীমানা প্রাচীর সংক্রান্ত তথ্য</label>
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <td>
+                                প্রতিষ্ঠানের সীমানা প্রাচীর আছে কি?
+                                <select name="english_version">
+                                    <option value="">select</option>
+                                    <option value="1">হ্যাঁ</option>
+                                    <option value="2">না</option>
+                                </select>
+                            </td>
+                            <td>
+                                উত্তর হ্যাঁ হলে, প্রাচীরের অবস্থাঃ
+                                <select name="english_version">
+                                    <option value="">select</option>
+                                    <option value="1">সম্পূর্ণ</option>
+                                    <option value="2">আংশিক</option>
+                                </select>
+                            </td>
+                            <td>
+                                প্রাচীরের ধরন
+                                <select name="english_version">
+                                    <option value="">select</option>
+                                    <option value="1">পাকা</option>
+                                    <option value="2">আধাপাকা</option>
+                                    <option value="3">কাঁচা</option>
+                                    <option value="4">প্রাকৃতিক</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <label>১.৭.১৪ প্রতিষ্ঠানটির কী কী অবকাঠামো/ সুবিধা রয়েছে ?
+                    </label>
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <td>
+                                <label class="label-number" for="">শহীদ মিনার</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="1"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">পতাকা স্ট্যান্ড </label>
+                                <input type="checkbox" class="form-control" name="" id="" value="2"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">সততা স্টোর</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="3"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">গ্যাস সংযোগ</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="4"
+                                       style="width: 20px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="label-number" for="">হ্যান্ড স্যানিটাইজার</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="4"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">টয়লেট পেপার</label>
+                                <input type="checkbox" class="form-control" name="" id="" value="4"
+                                       style="width: 20px">
+                            </td>
+                            <td>
+                                <label class="label-number" for="">সাবান</label>&nbsp
+                                <input type="checkbox" class="form-control " name="" id="" value="4"
+                                       style="width: 20px">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+        {{--Drinking Water--}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">৩.৪</span>
                 </div>
                 <div class="form-control bg-number-label">খাবার পানি সংক্রান্ত</div>
             </div>
