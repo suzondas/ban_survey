@@ -1,8 +1,6 @@
 @extends('schoolAndCollege/template')
 @section('content')
     <div class="container">
-        @include('../components/banner')
-        @include('schoolAndCollege.navBar')
         <div class="row mt-2 col-9">
             <div class="col-7">
                 ৩.৭.২৭ উত্তর হ্যাঁ হলে মামলার সংখ্যা ?
@@ -390,6 +388,5 @@
                 <input type="number" class="form-control" name="" id=""  style="width: 70px">
             </div>
         </div>
-        @include('components/footer')
     </div>
 @endsection

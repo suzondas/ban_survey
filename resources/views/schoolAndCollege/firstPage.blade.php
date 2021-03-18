@@ -1,8 +1,5 @@
 @extends('schoolAndCollege/template')
 @section('content')
-    @include('../components/banner')
-    @include('schoolAndCollege.navBar')
-
     <div class="container">
         <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (ক)</h3>
         <div class="row">
@@ -970,7 +967,4 @@
             </div>
         </div>
     </div>
-
-    @include('components/footer');
-
 @endsection

@@ -1,10 +1,5 @@
 @extends('schoolAndCollege/template')
 @section('content')
-    {{--Banner--}}
-    @include('../components/banner')
-    {{--Navbar--}}
-    @include('schoolAndCollege.navBar')
-    {{--Natural Disaster--}}
     <div class="container">
         <div class="contentBox">
             <div class="input-group contentHeader">
@@ -477,10 +472,5 @@
                 </table>
             </div>
         </div>
-    </div>
-
-    {{--Footer--}}
-    @include('components/footer');
-
     </div>
 @endsection

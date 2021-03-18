@@ -11,10 +11,22 @@
     <script src="{{ asset('js/custom.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- Styles -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body class="container-fluid">
+
+{{--Top Banner--}}
+@include('../components/banner')
+
+{{--Navbar--}}
+@include('schoolAndCollege.navBar')
+
+{{--Content Inject--}}
 @yield('content')
+{{--Content Inject End--}}
+
+{{--Footer--}}
+@include('components/footer');
+
 </body>
 </html>

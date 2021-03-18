@@ -1,10 +1,5 @@
 @extends('schoolAndCollege/template')
 @section('content')
-    {{--Banner--}}
-    @include('../components/banner')
-    {{--Navbar--}}
-    @include('schoolAndCollege.navBar')
-    <hr>
     <div class="container">
         <h3 class="text-center">বিবিধ তথ্য (১)</h3>
 
@@ -1054,6 +1049,4 @@
                 </table>
         </div>
     </div>
-    {{--Footer--}}
-    @include('components/footer');
 @endsection

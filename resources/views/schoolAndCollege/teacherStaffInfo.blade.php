@@ -1,8 +1,5 @@
 @extends('schoolAndCollege/template')
 @section('content')
-    @include('../components/banner')
-    @include('schoolAndCollege.navBar')
-    <hr>
     <div class="container">
         <h3 style="text-align:center">শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <table id="example" class="table table-bordered" style="width:100%">
@@ -35,8 +32,12 @@
                 <td><input type="text"/></td>
                 <td class="form-inline">
                     <div class="btn-group" role="group" style="font-size: 11px;">
-                        <button type="button" class="btn btn-success p-1 m-0" data-toggle="modal" data-target="#exampleModalLong">View</button>
-                        <button type="button" class="btn btn-danger p-1 m-0" onclick="confirm('Are You Sure to Delete?');">Delete</button>
+                        <button type="button" class="btn btn-success p-1 m-0" data-toggle="modal"
+                                data-target="#exampleModalLong">View
+                        </button>
+                        <button type="button" class="btn btn-danger p-1 m-0"
+                                onclick="confirm('Are You Sure to Delete?');">Delete
+                        </button>
                     </div>
                 </td>
 
@@ -55,8 +56,7 @@
             </tr>
             </tfoot>
         </table>
-    <button class="btn btn-info">+ Add Teacher</button>
+        <button class="btn btn-info">+ Add Teacher</button>
     </div>
-    @include('components/footer')
     @include('components/teacherStaffInfoModal')
 @endsection
