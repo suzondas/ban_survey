@@ -53,3 +53,40 @@ input[type=number] {
     background-color:#848688 !important;
     color: white !important;
 }
+
+/*datatable*/
+
+.dataTables_filter label input{
+    display: block;
+    flex-flow: row wrap;
+    align-items: center;
+    width:80%;
+    margin-left:5px;
+}
+.dataTables_length label select{
+    width:80px;
+}
+.dataTables_filter label{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/*bootstrap Modal*/
+.modal {
+    padding: 10px !important; // override inline padding-right added from js
+}
+.modal .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+}
+.modal .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+.modal .modal-body {
+    overflow-y: auto;
+}

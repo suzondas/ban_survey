@@ -39,7 +39,7 @@
                             <input type="text"/>
                         </td>
                         <td>
-                            <label>৩.৫.৩ অতিরক্তি ক্লাস নেয়া হয় কি? </label>
+                            <label>৩.৫.৩ অতিরিক্ত ক্লাস নেয়া হয় কি? </label>
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
@@ -48,7 +48,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.৫.৪ উত্তর হ্যাঁ হলে, কখন নেয়া হয়?</label>
+                            <label>৩.৫.৪ অতিরিক্ত ক্লাস নেয়া হলে, কখন নেয়া হয়?</label>
                             <select class="contentBoxInput">
                                 <option>স্কুল সময়ে</option>
                                 <option>স্কুল সময়ের বাইরে</option>
@@ -295,7 +295,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">৩.২</span>
                 </div>
-                <div class="form-control bg-number-label">অডিট সংক্রান্ত</div>
+                <div class="form-control bg-number-label">অডিট ও মামলা সংক্রান্ত</div>
             </div>
             <div class="contentBoxBody">
                 <table class="table table-bordered table-striped">
@@ -346,6 +346,84 @@
                             <select class="contentBoxInput">
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>৩.৭.২৬ প্রতিষ্ঠানটির বিরুদ্ধে কোন মামলা আছে কি?</label>
+                            <select class="contentBoxInput">
+                                <option>হ্যাঁ</option>
+                                <option>না</option>
+                            </select>
+                        </td>
+                        <td><label> ৩.৭.২৭ উত্তর হ্যাঁ হলে, মামলার সংখ্যা </label>
+                            <input type="text" class="w-25"/>
+                        </td>
+                        <td><label> ৩.৭.২৮ উত্তর হ্যাঁ হলে, মামলার বিষয়</label>
+                            <input type="text" class="w-100"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {{--Library Area deleted by suzon and moved on bibid 1--}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">৩</span>
+                </div>
+                <div class="form-control bg-number-label">কমিউনিটি সার্ভিস ও অন্যান্য</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <label>৩.৭.১০ প্রতিষ্ঠানের সহায়তামূলক ও কমিউনিটি সার্ভিস গ্রহণকারী শিক্ষার্থী সংখ্যা:</label>
+                    <tr>
+                        <td>সার্ভিসের ধরন</td>
+                        <td>স্কাউট</td>
+                        <td>গার্লস ইন গাইড</td>
+                        <td>রোভার স্কাউট</td>
+                        <td>কাব</td>
+                        <td>বিএনসিসি</td>
+                        <td>রেড ক্রিসেন্ট</td>
+                        <td>স্টুডেন্টস কেবিনেট</td>
+                        <td>স্বাস্থ্য সেবা</td>
+                        <td>কাউন্সেলিং সেবা</td>
+                        <td>পরিবহন সুবিধা</td>
+                        <td>ক্যান্টিন</td>
+                    </tr>
+                    <tr>
+                        <td>সদস্য/ছাত্র-ছাত্রীর সংখ্যা</td>
+                        <td class="text-center"><input type="text" class="w-50"/> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                        <td class="text-center"><input type="text" class="w-50" /> </td>
+                    </tr>
+                </table>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>৩.৭.১১ প্রতিষ্ঠানের সহায়তামূলক ও কমিউনিটি সার্ভিস পরিচালনার জন্য কোন পৃথক ব্যাংক হিসাব আছে কি?
+                            <select class="contentBoxInput">
+                                <option>১. হ্যাঁ</option>
+                                <option>২. না</option>
+                            </select>
+                        </td>
+                        <td>৩.৭.১২ প্রতিষ্ঠানের স্কাউট/গার্লস গাইড পরিচালনার জন্য কোন পৃথক ব্যাংক হিসাব আছে কি?
+                            <select class="contentBoxInput">
+                                <option>১. হ্যাঁ</option>
+                                <option>২. না</option>
+                            </select>
+                        </td>
+                        <td>৩.৭.১৩ প্রতিষ্ঠানের স্কাউটের ট্রুপমিটিং করা হয় কি?
+                            <select class="contentBoxInput">
+                                <option>১. হ্যাঁ</option>
+                                <option>২. না</option>
                             </select>
                         </td>
                     </tr>
@@ -423,90 +501,11 @@
                             </select>
                         </td>
                     </tr>
-                    <tr>
-                        <td><label>৩.৭.২৬ প্রতিষ্ঠানটির বিরুদ্ধে কোন মামলা আছে কি?</label>
-                            <select class="contentBoxInput">
-                                <option>হ্যাঁ</option>
-                                <option>না</option>
-                            </select>
-                        </td>
-                        <td><label> ৩.৭.২৭ উত্তর হ্যাঁ হলে, মামলার সংখ্যা </label>
-                            <input type="text" class="w-25"/>
-                        </td>
-                        <td><label> ৩.৭.২৮ উত্তর হ্যাঁ হলে, মামলার বিষয়</label>
-                            <input type="text" class="w-100"/>
-                        </td>
-                    </tr>
+
                     <tr>
                         <td><label>৩.৭.২৯ প্রতিষ্ঠানটিতে নিম্নের রেজিস্ট্রার বহি আছে কি?</label><br>
                             <input type="checkbox"/> SMC সদস্যদের উপস্থিতি রেজিস্ট্রারবহি<br>
                             <input type="checkbox"/> PTA সদস্যদের উপস্থিতি রেজিস্ট্রারবহি
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        {{--Library Area deleted by suzon and moved on bibid 1--}}
-        <div class="contentBox">
-            <div class="input-group contentHeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩</span>
-                </div>
-                <div class="form-control bg-number-label">কমিউনিটি সার্ভিস  সংক্রান্ত</div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped">
-                    <label>৩.৭.১০ প্রতিষ্ঠানের সহায়তামূলক ও কমিউনিটি সার্ভিস গ্রহণকারী শিক্ষার্থী সংখ্যা:</label>
-                    <tr>
-                        <td>সার্ভিসের ধরন</td>
-                        <td>স্কাউট</td>
-                        <td>গার্লস ইন গাইড</td>
-                        <td>রোভার স্কাউট</td>
-                        <td>কাব</td>
-                        <td>বিএনসিসি</td>
-                        <td>রেড ক্রিসেন্ট</td>
-                        <td>স্টুডেন্টস কেবিনেট</td>
-                        <td>স্বাস্থ্য সেবা</td>
-                        <td>কাউন্সেলিং সেবা</td>
-                        <td>পরিবহন সুবিধা</td>
-                        <td>ক্যান্টিন</td>
-                    </tr>
-                    <tr>
-                        <td>সদস্য/ছাত্র-ছাত্রীর সংখ্যা</td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                        <td class="text-center"><input type="checkbox" /> </td>
-                    </tr>
-                </table>
-                <table class="table table-bordered table-striped">
-                    <tr>
-                        <td>৩.৭.১১ প্রতিষ্ঠানের সহায়তামূলক ও কমিউনিটি সার্ভিস পরিচালনার জন্য কোন পৃথক ব্যাংক হিসাব আছে কি?
-                            <select class="contentBoxInput">
-                                <option>১. হ্যাঁ</option>
-                                <option>২. না</option>
-                            </select>
-                        </td>
-                        <td>৩.৭.১২ প্রতিষ্ঠানের স্কাউট/গার্লস গাইড পরিচালনার জন্য কোন পৃথক ব্যাংক হিসাব আছে কি?
-                            <select class="contentBoxInput">
-                                <option>১. হ্যাঁ</option>
-                                <option>২. না</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>৩.৭.১৩ প্রতিষ্ঠানের স্কাউটের ট্রুপমিটিং করা হয় কি?
-                            <select class="contentBoxInput">
-                                <option>১. হ্যাঁ</option>
-                                <option>২. না</option>
-                            </select>
                         </td>
                     </tr>
                 </table>

@@ -970,8 +970,8 @@
                 </table>
             </div>
         </div>
-
-        @include('components/footer');
-
     </div>
+
+    @include('components/footer');
+
 @endsection

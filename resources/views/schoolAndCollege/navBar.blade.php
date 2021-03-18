@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0 sticky-top">
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -45,6 +45,10 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->is('schoolAndCollege/fifthPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/fifthPage') }}">বিবিধ-৩</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('schoolAndCollege/teacherStaffInfo') ? 'active' : '' }}"
+                   href="{{ url('schoolAndCollege/teacherStaffInfo') }}">শিক্ষক-কর্মচারী তথ্য</a>
             </li>
         </ul>
         <span class="navbar-text">
