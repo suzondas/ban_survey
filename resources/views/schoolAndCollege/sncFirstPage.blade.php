@@ -1,8 +1,6 @@
 @extends('schoolAndCollege/template')
 @section('content')
     <div class="container-fluid">
-        @include('../components/banner')
-        @include('schoolAndCollege.navBar')
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox">
             <div class="input-group contentHeader">
@@ -1828,6 +1826,25 @@
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
+                            <select class="">
+                                <option>হ্যাঁ-১</option>
+                                <option>না-২</option>
+                            </select></td>
+                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
+                            <input type="checkbox">&nbsp; অডিও-১ &nbsp;
+                            <input type="checkbox">&nbsp; ব্রেইল-২ &nbsp;
+                            <input type="checkbox"> &nbsp;সাইন ভাষা-৩ &nbsp;
+                            <input type="checkbox"> &nbsp;অন্যান্য-৪ </td>
+                        <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
+                            <select class="">
+                                <option>হ্যাঁ-১</option>
+                                <option>না-২</option>
+                            </select></td>
+                    </tr>
+                </table>
                 <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
@@ -2098,6 +2115,25 @@
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১</div>
             </div>
             <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
+                            <select class="">
+                                <option>হ্যাঁ-১</option>
+                                <option>না-২</option>
+                            </select></td>
+                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
+                            <input type="checkbox">&nbsp; অডিও-১ &nbsp;
+                            <input type="checkbox">&nbsp; ব্রেইল-২ &nbsp;
+                            <input type="checkbox"> &nbsp;সাইন ভাষা-৩ &nbsp;
+                            <input type="checkbox"> &nbsp;অন্যান্য-৪ </td>
+                        <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
+                            <select class="">
+                                <option>হ্যাঁ-১</option>
+                                <option>না-২</option>
+                            </select></td>
+                    </tr>
+                </table>
                 <table class="table table-bordered table-striped text-center">
                 <thead>
                 <tr>
@@ -3917,6 +3953,5 @@
             </table>
         </div>
     </div>
-    @include('components/footer')
     </div>
 @endsection

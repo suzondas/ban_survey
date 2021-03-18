@@ -1,9 +1,7 @@
 @extends('schoolAndCollege/template')
 @section('content')
     <div class="container-fluid">
-        @include('../components/banner')
-        @include('schoolAndCollege.navBar')
-        <h2 style="text-align:center">স্কুল ২য় পাতা</h2>
+        <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox col-12">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -1070,27 +1068,31 @@
                 </table>
                 <table class="table table-bordered table-striped">
                     <tr>
-                        <td><label>২.৪.৭ বিশেষ চাহিদাসম্পন্ন  শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
-                            মোট: <input type="text" class="w-25" />
-                            মহিলা: <input type="text" class="w-25" /> </td>
-                        <td><label>২২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
-                            মোট: <input type="text" class="w-25" />
-                            মহিলা: <input type="text" class="w-25" /> </td>
-                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে কি? </label><br>
+                        <td><label>২.৪.৭ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25"/>
+                            মহিলা: <input type="text" class="w-25"/></td>
+                        <td><label>২২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
+                                লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25"/>
+                            মহিলা: <input type="text" class="w-25"/></td>
+                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
+                                কি? </label><br>
                             <select class="w-25">
                                 <option> হ্যাঁ</option>
                                 <option> না</option>
                             </select></td>
                     </tr>
                     <tr>
-                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে কি? </label><br>
+                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
+                                কি? </label><br>
                             <select class="w-25">
                                 <option> হ্যাঁ</option>
                                 <option> না</option>
                             </select></td>
-                        <td><label>২২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
-                            মোট: <input type="text" class="w-25" />
-                            মহিলা: <input type="text" class="w-25" /> </td>
+                        <td><label>২২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
+                                লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25"/>
+                            মহিলা: <input type="text" class="w-25"/></td>
                     </tr>
                 </table>
             </div>
@@ -1303,6 +1305,5 @@
                 </table>
             </div>
         </div>
-        @include('components/footer')
     </div>
 @endsection

@@ -1,10 +1,5 @@
 @extends('schoolAndCollege/template')
 @section('content')
-    {{--Banner--}}
-    @include('../components/banner')
-    {{--Navbar--}}
-    @include('schoolAndCollege.navBar')
-    {{--Natural Disaster--}}
     <div class="container">
         <div class="contentBox">
             <div class="input-group contentHeader">
@@ -254,113 +249,131 @@
                         </tr>
                     </table>
                 </div>
-                <table class="table table-bordered table-striped text-center">
-                    <label class="align-middle"> ৩.১০.৫ দুর্যোগের ফলে ছাত্র-ছাত্রীরা কোন বিষয়সমূহে ক্ষতিগ্রস্ত হয়/পিছিয়ে
-                        পড়ে? (ক্ষতিগ্রস্ত বিষয় (টিক চিহ্ন দিন))</label>
-                    <tr>
-                        <td rowspan="2" style="width:150px">বিষয়</td>
-                        <td colspan="3" class="text-center">ক্ষতির মাত্রা (টিক চিহ্ন দিন)</td>
-                        <td></td>
-                        <td></td>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="align-middle"> ৩.১০.৫ দুর্যোগের ফলে ছাত্র-ছাত্রীরা কোন বিষয়সমূহে ক্ষতিগ্রস্ত হয়/পিছিয়ে
+                            পড়ে? (ক্ষতিগ্রস্ত বিষয় (টিক চিহ্ন দিন))</label>
+                        <table class="table table-bordered table-striped text-center">
+                            <tr>
+                                <td rowspan="2" style="width:150px">বিষয়</td>
+                                <td colspan="3" class="text-center">ক্ষতির মাত্রা (টিক চিহ্ন দিন)</td>
 
-                    </tr>
-                    <tr>
-                        <td>বাড়িতে চালিয়ে নিতে পারে</td>
-                        <td>স্কুলে না আসলে খুবই সমস্যায় পড়ে</td>
-                        <td>পিছিয়ে পড়ার ফলে স্থায়ী ক্ষতি হয়</td>
-                        <td style="width:250px">৩.১০.৬ দুর্যোগ মোকাবেলায় সক্ষমতা বাড়ানোর জন্য কী কী পদক্ষেপ
-                            গ্রহণ করা হয়েছে?
-                        </td>
-                        <td style="width:300px">৩.১০.৭ প্রতিষ্ঠানটি প্রতিবছর এবং দীর্ঘমেয়াদী দুর্যোগ ঝুঁকি
-                            সংক্রান্ত কোন মূল্যায়ন প্রতিবেদন করেছে/পাঠিয়েছে কী?
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>বাংলা (১)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">উল্লেখযোগ্য কোন পদক্ষেপ
-                            গ্রহণ করা হয়নি
-                        </td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">হ্যাঁ, বিভাগীয় ছক ও
-                            নির্দেশনা অনুযায়ী পাঠানো হয়
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>ইংরেজি (২)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সমস্যাসমূহ সনাক্ত ও
-                            তালিকাভুক্ত করা হয়েছে
-                        </td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সমস্যাসমূহ সনাক্ত ও
-                            তালিকাভুক্ত করা হয়েছে
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>গণিত (৩)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">প্রশাসনকে লিখিতভাবে জানানো
-                            হয়েছে
-                        </td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ফোনে প্রতিষ্ঠান প্রধান
-                            কর্তৃপক্ষকে অবহিত করেছেন
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>বিজ্ঞান (৪)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিভিন্ন আলোচনা সভায়
-                            উত্থাপন করা হয়েছে
-                        </td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ভালোভাবে নিজেদের জন্য
-                            করেছে
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>সমাজ বিজ্ঞান (৫)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিটিএ ও এসএমসি সভায় আলোচনা
-                            হয়েছে
-                        </td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">কখনো এভাবে চিন্তা করা হয়নি
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>সমাজ বিজ্ঞান (৫)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td> অন্যান্য: <input class="mr-2" type="number" name=""></td>
-                        <td> অন্যান্য: <input class="mr-2" type="number" name=""></td>
-                    </tr>
-                    <tr>
-                        <td>হিসাব বিজ্ঞান (৬)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                    </tr>
-                    <tr>
-                        <td>ধর্ম (৭)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                    </tr>
-                    <tr>
-                        <td>অন্যান্য (৮)</td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                        <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
-                    </tr>
-                </table>
+                            </tr>
+                            <tr>
+                                <td>বাড়িতে চালিয়ে নিতে পারে</td>
+                                <td>স্কুলে না আসলে খুবই সমস্যায় পড়ে</td>
+                                <td>পিছিয়ে পড়ার ফলে স্থায়ী ক্ষতি হয়</td>
+                            </tr>
+                            <tr>
+                                <td>বাংলা (১)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+
+                            </tr>
+                            <tr>
+                                <td>ইংরেজি (২)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>গণিত (৩)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>বিজ্ঞান (৪)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>সমাজ বিজ্ঞান (৫)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>সমাজ বিজ্ঞান (৫)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>হিসাব বিজ্ঞান (৬)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>ধর্ম (৭)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                            <tr>
+                                <td>অন্যান্য (৮)</td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <label> ৩.১০.৬ দুর্যোগ মোকাবেলায় সক্ষমতা বাড়ানোর জন্য কী কী পদক্ষেপ
+                            গ্রহণ করা হয়েছে? </label>
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">উল্লেখযোগ্য কোন পদক্ষেপ
+                                    গ্রহণ করা হয়নি
+                                </td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সমস্যাসমূহ সনাক্ত ও
+                                    তালিকাভুক্ত করা হয়েছে
+                                </td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">প্রশাসনকে লিখিতভাবে জানানো
+                                    হয়েছে
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিভিন্ন আলোচনা সভায়
+                                    উত্থাপন করা হয়েছে
+                                </td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিটিএ ও এসএমসি সভায় আলোচনা
+                                    হয়েছে
+                                </td>
+                                <td> অন্যান্য: <input class="w-50" type="number" name=""></td>
+                            </tr>
+                        </table>
+                        <label> ৩.১০.৭ প্রতিষ্ঠানটি প্রতিবছর এবং দীর্ঘমেয়াদী দুর্যোগ ঝুঁকি
+                            সংক্রান্ত কোন মূল্যায়ন প্রতিবেদন করেছে/পাঠিয়েছে কী? </label>
+                        <table class="table table-bordered table-striped">
+                            <tr>
+
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">হ্যাঁ, বিভাগীয় ছক ও
+                                    নির্দেশনা অনুযায়ী পাঠানো হয়
+                                </td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সমস্যাসমূহ সনাক্ত ও
+                                    তালিকাভুক্ত করা হয়েছে
+                                </td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ফোনে প্রতিষ্ঠান প্রধান
+                                    কর্তৃপক্ষকে অবহিত করেছেন
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ভালোভাবে নিজেদের জন্য
+                                    করেছে
+                                </td>
+                                <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">কখনো এভাবে চিন্তা করা হয়নি
+                                </td>
+                                <td> অন্যান্য: <input class="w-50" type="number" name=""></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
             </div>
         </div>
         {{--Covid-19 related info--}}
@@ -459,10 +472,5 @@
                 </table>
             </div>
         </div>
-    </div>
-
-    {{--Footer--}}
-    @include('components/footer');
-
     </div>
 @endsection
