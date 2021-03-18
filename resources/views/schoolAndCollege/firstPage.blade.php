@@ -656,7 +656,6 @@
                     <table class="table table-bordered" style="text-align:center">
                         <thead>
                         <tr class="custom-table-header">
-
                             <td>এমপিওভুক্তির স্তর</td>
                             <td>এমপিও ভুক্তির তারিখ</td>
                             <td>এমপিওভুক্তির স্তর</td>
