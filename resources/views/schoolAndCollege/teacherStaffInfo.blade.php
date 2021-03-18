@@ -43,7 +43,7 @@
             </tr>
             </tbody>
             <tfoot>
-            <tr>
+            <tr class="custom-table-header">
                 <th>ক্রমিক</th>
                 <th>নাম</th>
                 <th>পদবি</th>
@@ -55,7 +55,7 @@
             </tr>
             </tfoot>
         </table>
-
+    <button class="btn btn-info">+ Add Teacher</button>
     </div>
     @include('components/footer')
     @include('components/teacherStaffInfoModal')
