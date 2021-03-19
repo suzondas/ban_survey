@@ -71,7 +71,6 @@ input[type=number] {
     flex-flow: row wrap;
     align-items: center;
 }
-
 /*bootstrap Modal*/
 .modal {
     padding: 10px !important; // override inline padding-right added from js
