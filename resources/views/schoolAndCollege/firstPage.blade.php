@@ -35,8 +35,8 @@
                         <td colspan="2" class="font-weight-bold">১.১ প্রতিষ্ঠানের নাম:</td>
                     </tr>
                     <tr>
-                        <td><label class="" for="bangla_name"> বাংলায় (অনুমতি/স্বীকৃতিপত্র
-                                অনুযায়ী): </label>
+                        <td style="width:50%" ><label class="" for="bangla_name"> বাংলায় <small>(অনুমতি/স্বীকৃতিপত্র
+                                    অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):</small> </label>
                             <input type="text" class="form-control" name="bangla_name"
                                    id="bangla_name">
                         </td>
