@@ -557,23 +557,6 @@
                                        style="width: 20px">
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <label class="label-number" for="">হ্যান্ড স্যানিটাইজার</label>
-                                <input type="checkbox" class="form-control" name="" id="" value="4"
-                                       style="width: 20px">
-                            </td>
-                            <td>
-                                <label class="label-number" for="">টয়লেট পেপার</label>
-                                <input type="checkbox" class="form-control" name="" id="" value="4"
-                                       style="width: 20px">
-                            </td>
-                            <td>
-                                <label class="label-number" for="">সাবান</label>&nbsp
-                                <input type="checkbox" class="form-control " name="" id="" value="4"
-                                       style="width: 20px">
-                            </td>
-                        </tr>
                     </table>
                 </div>
                 </div>
@@ -1004,14 +987,6 @@
                     </tr>
                     <tr>
                         <td>
-                            ১.৮.৬ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
-                            <select name="english_version">
-                                <option value="">select</option>
-                                <option value="1">হ্যাঁ</option>
-                                <option value="2">না</option>
-                            </select>
-                        </td>
-                        <td>
                             ১.৮.৭ লাইব্রেরির পুস্তকাদির ক্যাটালগিং কম্পিউটারাইজড কি?
                             <select name="english_version">
                                 <option value="">select</option>
@@ -1019,7 +994,7 @@
                                 <option value="2">না</option>
                             </select>
                         </td>
-                        <td>
+                        <td colspan="2">
                             ১.৮.৮ লাইব্রেরি পরিচালনার জন্য সহকারী লাইব্রেরিয়ান আছে কি?
                             <select name="english_version" style="width: 90px">
                                 <option value="">select</option>
@@ -1037,7 +1012,7 @@
                                 <option value="2">না</option>
                             </select>
                         </td>
-                        <td>
+                        <td colspan="2">
                             ১.৮.১০ লাইব্রেরি আওয়ার ক্লাস রুটিনে অনর্ভুক্ত আছে কি ?
                             <select name="english_version" style="width: 90px">
                                 <option value="">select</option>
