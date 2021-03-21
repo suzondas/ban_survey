@@ -1,4 +1,4 @@
-@extends('schoolAndCollege/template')
+@extends('components/template')
 @section('content')
     <div class="container">
         <div class="contentBox">
