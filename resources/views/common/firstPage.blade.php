@@ -1,10 +1,11 @@
 @extends('components.template')
 @section('content')
-    <div class="container">
+    <div class="container" id="firstPage">
         <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (ক)</h3>
         <div class="row">
             <div class="col-md-6">
-                <label for="eiin">ইআইআইএন (EIIN): &nbsp</label><input type="number" id="eiin">
+                <label for="eiin">ইআইআইএন (EIIN): &nbsp</label>
+                <input type="number" id="eiin" name="eiin">
             </div>
             <div class="col-md-6 d-flex flex-row-reverse">
                 <table class="" style="width:300px;" border="1">
@@ -968,3 +969,7 @@
         </div>
     </div>
 @endsection
+{{--Page wise js--}}
+@section('javascript')
+    <script src="{{ asset('js/firstPage.js') }}" type="module" defer></script>
+@stop

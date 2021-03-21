@@ -9,7 +9,8 @@
     <script src="{{ asset('js/datatable.js') }}" defer></script>
     <script src="{{ asset('js/datatable.bootstrap4.js') }}" defer></script>
     <script src="{{ asset('js/custom.js') }}" defer></script>
-    <script src="{{ asset('js/schoolAndCollege.js') }}" defer></script>
+@yield('javascript')
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
