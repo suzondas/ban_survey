@@ -344,6 +344,7 @@
                             <th>ভবন/কক্ষ</th>
                             <th>ছাত্রাবাসের সিট সংখ্যা</th>
                             <th>ছাত্রাবাসে অবস্থানকারী</th>
+                            <th>ছাত্রীনিবাসের সিট সংখ্যা</th>
                             <th>ছাত্রীনিবাসে অবস্থানকারী</th>
                             <th>প্রতিষ্ঠান প্রধানের আবাসন</th>
                             <th>শিক্ষক আবাসিক ভবন</th>
@@ -358,6 +359,7 @@
                         <tbody>
                         <tr>
                             <td>সংখ্যা</td>
+                            <td><input type="number" class="form-control" name="" id=""></td>
                             <td><input type="number" class="form-control" name="" id=""></td>
                             <td><input type="number" class="form-control" name="" id=""></td>
                             <td><input type="number" class="form-control" name="" id=""></td>

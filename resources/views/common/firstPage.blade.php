@@ -140,6 +140,7 @@
                 </table>
             </div>
         </div>
+
         {{-- General Info ends here--}}
         <div class="contentBox">
             <div class="input-group contentdeader">
@@ -150,6 +151,17 @@
             </div>
             <div class="contentBoxBody">
                 <table class="table table-striped table-bordered">
+                    <tr>
+                        <td colspan="3">
+                            <label class="" for="">১.২.১প্রতিষ্ঠানের ধরনঃ</label>
+                            <select class="" name="">
+                                <option value="" selected>Select</option>
+                                <option value="1">১.স্কুল</option>
+                                <option value="2">২.কলেজ</option>
+                                <option value="3">৩. স্কুল এন্ড কলেজ</option>
+                            </select>
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <label class="" for="education_level">১.২ প্রতিষ্ঠানের স্তর :</label>
@@ -206,7 +218,7 @@
                         <td>
                             <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
                             <div class="input-group date">
-                                <input type="date" class=""><span class="input-group-addon"><i
+                                <input type="date" class="date"><span class="input-group-addon"><i
                                             class="glyphicon glyphicon-td"></i></span>
                             </div>
                         </td>
@@ -373,15 +385,7 @@
                                 <option value="2">না-২</option>
                             </select>
                         </td>
-                        <td>
-                            <label class="" for="technical_mpo_yn">১.৫.১ কারিগরি শাখা এমপিওভুক্ত কি?</label>
-                            <select class="" name="technical_mpo_yn">
-                                <option value="" selected>Select</option>
-                                <option value="1">হ্যাঁ-১</option>
-                                <option value="2">না-২</option>
-                            </select>
-                        </td>
-                        <td>
+                        <td colspan="2">
                             <label class="" for="technical_mpo_yn">১.৫.১ কারিগরি শাখা এমপিওভুক্ত কি?</label>
                             <select class="" name="technical_mpo_yn">
                                 <option value="" selected>Select</option>
@@ -773,6 +777,28 @@
                                 <option value="6">অন্যান্য</option>
                             </select>
                         </td>
+                        <td><label>১.৬.১ কমিটি থাকলে: </label>
+                            <table class="table table-bordered" style="text-align:center">
+                                <tr>
+                                    <td>অনুমোদনের তারিখ</td>
+                                    <td>মেয়াদ উত্তীর্ণের তারিখ</td>
+                                </tr>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="date" name="committee_appdate" id="committee_appdate"
+                                               class="form-control"><span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-td"></i></span>
+                                    </td>
+                                    <td>
+                                        <input type="date" name="committee_expdate" id="committee_expdate"
+                                               class="form-control"><span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-td"></i></span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
                         <td><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
                             <div class="row">
                                 <div class="col-md-4">
@@ -791,29 +817,6 @@
                                            id="total">
                                 </div>
                             </div>
-                        </td>
-
-                        <td><label>১.৬.১ কমিটি থাকলে: </label>
-                            <table class="table table-bordered" style="text-align:center">
-                                <tr>
-                                    <td>অনুমোদনের তারিখ</td>
-                                    <td>মেয়াদ উত্তীর্ণের তারিখ</td>
-                                </tr>
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <input type="date" name="committee_appdate" id="committee_appdate"
-                                               class="form-control"><span class="input-group-addon"><i
-                                                    class="glyphicon glyphicon-td"></i></span>
-                                    </td>
-                                    <td>
-                                        <input type="date" name="committee_expdate" id="committee_expdate"
-                                               class="form-control"><span class="input-group-addon"><i
-                                                    class="glyphicon glyphicon-td"></i></span>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
                         </td>
                         <td><label>১.৬.৩ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
                             <input type="date" name="committee_appdate" id="committee_appdate"

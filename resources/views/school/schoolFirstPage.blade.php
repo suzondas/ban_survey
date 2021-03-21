@@ -654,7 +654,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>২</td>
+                        <td>১</td>
                         <td>কর্মজীবী শিক্ষার্থী</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
@@ -668,7 +668,7 @@
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                     </tr>
                     <tr>
-                        <td>৩</td>
+                        <td>২</td>
                         <td>ভূমিহীন অভিভাবকের সন্তান</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
@@ -682,7 +682,7 @@
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                     </tr>
                     <tr>
-                        <td>৪</td>
+                        <td>৩</td>
                         <td>মুক্তিযোদ্ধা পোষ্য/ নাতি-নাতনি</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
@@ -696,8 +696,36 @@
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                     </tr>
                     <tr>
-                        <td>৫</td>
+                        <td>৪</td>
                         <td>ক্ষুদ্রনৃ-গোষ্ঠী শিক্ষার্থী</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                    </tr>
+                    <tr>
+                        <td>৫</td>
+                        <td>অনাথ/এতিম শিক্ষার্থী</td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                        <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                    </tr>
+                    <tr>
+                        <td>৬</td>
+                        <td>বিশেষ চাহিদা সম্পন্ন শিক্কার্থী</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
