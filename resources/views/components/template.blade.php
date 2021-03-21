@@ -17,17 +17,17 @@
 <body class="container-fluid">
 
 {{--Top Banner--}}
-@include('../components/banner')
+@include('components.banner')
 
 {{--Navbar--}}
-@include('schoolAndCollege.navBar')
+@include('components.navBar')
 
 {{--Content Inject--}}
 @yield('content')
 {{--Content Inject End--}}
 
 {{--Footer--}}
-@include('components/footer');
+@include('components.footer');
 
 </body>
 </html>

@@ -20,10 +20,10 @@ class LoginController extends Controller
             if (Auth::user()->user_type == 'Institute') {
                 if (in_array(Auth::user()->institute_type, [1, 3, 4])) {
                     //    if (Auth::user()->institute_type == 1) {
-                    return redirect('schoolAndCollege/firstPage');
+                    return redirect('common/firstPage');
                 }
             } else {
-                return redirect('/')->withErrors(['Wront Type of Login! Contact System Administrator!']);
+                return redirect('/')->withErrors(['Wrong Type of Login! Contact System Administrator!']);
             }
 
         } else {

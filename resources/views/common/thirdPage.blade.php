@@ -1,4 +1,4 @@
-@extends('schoolAndCollege/template')
+@extends('components.template')
 @section('content')
     <div class="container">
         <h3 class="text-center">বিবিধ তথ্য (১)</h3>

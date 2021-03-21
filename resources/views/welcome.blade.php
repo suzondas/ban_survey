@@ -1,4 +1,4 @@
-@extends('template')
+@extends('welcomeTemplate')
 @section('content')
     <div class="container">
         @include('components/banner')

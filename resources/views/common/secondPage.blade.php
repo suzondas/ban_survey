@@ -1,4 +1,4 @@
-@extends('schoolAndCollege/template')
+@extends('components.template')
 @section('content')
     <div class="container" style="font-size:13px !important;">
         <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (খ)</h3>

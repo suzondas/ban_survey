@@ -1,4 +1,4 @@
-@extends('schoolAndCollege/template')
+@extends('components.template')
 @section('content')
     <div class="container">
         <h3 style="text-align:center">শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
