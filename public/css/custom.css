@@ -15,12 +15,31 @@ input[type=number] {
 
 /*Navbar*/
 .nav-link {
-    color: black !important;
+    color: white !important;
 }
 
 .active {
     color: white !important;
     background: darkblue;
+    border-bottom: 2px solid darksalmon;
+}
+
+.nav-item {
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: darkblue;
+    border-bottom: 2px solid darksalmon;
+}
+
+.logOutButton {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    background-color: darksalmon;
+    border-bottom: 4px solid darkblue;
 }
 
 /*Content Box*/
@@ -30,43 +49,51 @@ input[type=number] {
     box-shadow: 2px 2px 2px gainsboro;
     border: 1px solid dodgerblue;
 }
-.contentBoxBody{
+
+.contentBoxBody {
     padding: 5px;
 }
-.contentBoxInput{
-    width:auto;
-    margin-left:5px;
+
+.contentBoxInput {
+    width: auto;
+    margin-left: 5px;
 }
-.contentItem{
-    padding-top:5px;
+
+.contentItem {
+    padding-top: 5px;
 }
-.bg-number{
-    background:orange;
+
+.bg-number {
+    background: orange;
     color: white;
 }
-.bg-number-label{
-    background:skyblue;
+
+.bg-number-label {
+    background: #1a5998;
     font-weight: bold;
-    color: black;
+    color: white;
 }
-.custom-table-header{
-    background-color:#848688 !important;
+
+.custom-table-header {
+    background-color: #1a5998 !important;
     color: white !important;
 }
 
 /*datatable*/
 
-.dataTables_filter label input{
+.dataTables_filter label input {
     display: block;
     flex-flow: row wrap;
     align-items: center;
-    width:80%;
-    margin-left:5px;
+    width: 80%;
+    margin-left: 5px;
 }
-.dataTables_length label select{
-    width:80px;
+
+.dataTables_length label select {
+    width: 80px;
 }
-.dataTables_filter label{
+
+.dataTables_filter label {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -74,19 +101,23 @@ input[type=number] {
 
 /*bootstrap Modal*/
 .modal {
-    padding: 10px !important; // override inline padding-right added from js
+    padding: 10px !important;
+/ / override inline padding-right added from js
 }
+
 .modal .modal-dialog {
     width: 100%;
     max-width: none;
     height: 100%;
     margin: 0;
 }
+
 .modal .modal-content {
     height: 100%;
     border: 0;
     border-radius: 0;
 }
+
 .modal .modal-body {
     overflow-y: auto;
 }

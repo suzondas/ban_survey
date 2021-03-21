@@ -13,4 +13,5 @@ yarn-error.log
 .idea
 .idea/
 .idea/*
+/config/oracle.php
 

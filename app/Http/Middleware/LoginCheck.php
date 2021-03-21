@@ -18,7 +18,7 @@ class LoginCheck
     public function handle(Request $request, Closure $next)
     {
         if(Auth::guest()){
-            return response()->json(['Message', 'You do not access to this module.'], 403);
+            return redirect()->route('logout');
         }
         return $next($request);
     }

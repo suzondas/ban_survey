@@ -16,11 +16,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('login', [\App\Http\Controllers\LoginController::class, 'login']);
-Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout']);
+Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
 
 /*Dynamic Routing*/
 Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
         return view("{$Controller}.{$action}");
-});
-// ->middleware('login.check');
+})
+ ->middleware('login.check');

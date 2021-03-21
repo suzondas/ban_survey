@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0 sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0 pb-0 sticky-top">
     <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link {{ (request()->is('schoolAndCollege/firstPage')) ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/firstPage') }}"> মৌলিক তথ্য-১</a>
@@ -10,11 +10,11 @@
                    href="{{ url('schoolAndCollege/secondPage') }}">মৌলিক তথ্য-২</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
+                <a class="nav-link {{ request()->is('schoolAndCollege/schoolFirstPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/schoolFirstPage') }}">স্কুল সম্পর্কিত-১</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->is('schoolAndCollege/sixthPage') ? 'active' : '' }}"
+                <a class="nav-link {{ request()->is('schoolAndCollege/schoolSecondPage') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/schoolSecondPage') }}">স্কুল সম্পর্কিত-২</a>
             </li>
 
@@ -50,10 +50,11 @@
                 <a class="nav-link {{ request()->is('schoolAndCollege/teacherStaffInfo') ? 'active' : '' }}"
                    href="{{ url('schoolAndCollege/teacherStaffInfo') }}">শিক্ষক-কর্মচারী তথ্য</a>
             </li>
+            <li>
+                <a href="/logout" class="btn logOutButton" style="">Logout</a>
+            </li>
         </ul>
-        <span class="navbar-text">
-        <a href="/logout" class="btn btn-success">Logout</a>
-        </span>
+
     </div>
 </nav>
 <hr>
