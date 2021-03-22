@@ -2,9 +2,9 @@ const app = new Vue({
     el: '#firstPage',
     data: {},
     mounted() {
-        axios.get('https://jsonplaceholder.typicode.com/todos/2')
+        axios.get('http://127.0.0.1/firstPage/112211')
             .then(function (response) {
-                let institute = response.data.institute;
+console.log(response.data)
             })
             .catch(function (error) {
                 console.log(error)
