@@ -1,10 +1,15 @@
 const app = new Vue({
     el: '#firstPage',
-    data: {},
+    data() {
+        return {
+            data:null
+        }
+    },
     mounted() {
-        axios.get('http://127.0.0.1/firstPage/112211')
+        var self=this
+        axios.get('http://127.0.0.1:8000/firstPage/'+eiin)
             .then(function (response) {
-console.log(response.data)
+                self.data=response.data
             })
             .catch(function (error) {
                 console.log(error)
