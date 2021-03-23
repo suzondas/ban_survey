@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6">
                 <label for="eiin">ইআইআইএন (EIIN): &nbsp</label>
-                <input type="text" v-model="data.eiin">
+                <input type="text" v-model="data.eiin" readonly>
             </div>
             <div class="col-md-6 d-flex flex-row-reverse">
                 <table class="" style="width:300px;" border="1">
@@ -15,10 +15,10 @@
                         <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="" name="lat"
-                                   id="lat"></td>
-                        <td><input type="text" class="" name="long"
-                                   id="long"></td>
+                        <td><input type="text" class="" name="latitude"
+                                   v-model="data.latitude"></td>
+                        <td><input type="text" class="" name="longitude"
+                                   v-model="data.longitude"></td>
                     </tr>
                 </table>
             </div>
@@ -38,14 +38,14 @@
                     <tr>
                         <td style="width:50%" ><label class="" for="bangla_name"> বাংলায় <small>(অনুমতি/স্বীকৃতিপত্র
                                     অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):</small> </label>
-                            <input type="text" class="form-control" name="bangla_name"
-                                   id="bangla_name">
+                            <input type="text" class="form-control" name="institute_name_bangla"
+                                   v-model="data.institute_name_bangla">
                         </td>
                         <td>
                             <label class="" for="english_name" style="text-align: right">ইংরেজিতে (ব্লক লেটার): </label>
                             &nbsp
-                            <input type="text" class="form-control" name="english_name"
-                                   id="english_name">
+                            <input type="text" class="form-control" name="institute_name_new"
+                                   v-model="data.institute_name_new" readonly>
                         </td>
                     </tr>
                 </table>
