@@ -382,7 +382,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr v-if="">
+                            <tr>
                                 <td rowspan="3">nimmo</td>
                                 <td>৬ষ্ঠ</td>
                                 <td><input type="number" class="form-control" name="" id=""></td>
