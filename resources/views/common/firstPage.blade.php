@@ -266,8 +266,8 @@
                     <tr>
                         <td>
                             <label class="" for="management">১.২.৭ ব্যবস্থাপনা </label>
-                            <select class="" name="management">
-                                <option value="" selected>Select</option>
+                            <select class="" name="management" v-model="data.management">
+                                <option value="" >Select</option>
                                 <option value="1">সরকারি</option>
                                 <option value="2">বেসরকারি</option>
                                 <option value="3">স্থানীয় সরকার</option>
@@ -278,12 +278,12 @@
                         </td>
                         <td>
                             <label class="" for="nationalization_date">১.২.৮ সরকারি হলে জাতীয়করণের তারিখ :</label>
-                            <input type="text" v-model="data.nationalization_date"></i></span>
+                            <input type="text" v-model="data.nationalization_date"></span>
                         </td>
                         <td>
-                            <label class="" for="management">১.২.৯ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
-                            <select class="" name="management">
-                                <option value="" selected>Select</option>
+                            <label>১.২.৯ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
+                            <select class="" name="for_whom" v-model="data.for_whom">
+                                <option value="" >Select</option>
                                 <option value="1">বালক</option>
                                 <option value="2">বালিকা</option>
                                 <option value="3">সহশিক্ষা একত্রে</option>
@@ -291,9 +291,9 @@
                             </select>
                         </td>
                         <td>
-                            <label class="" for="management">১.৩ ভৌগলিক অবস্থান:</label>
-                            <select class="" name="management">
-                                <option value="" selected>Select</option>
+                            <label>১.৩ ভৌগলিক অবস্থান:</label>
+                            <select  name="geographical_status" v-model="data.geographical_status">
+                                <option value="">Select</option>
                                 <option value="1">সমতল</option>
                                 <option value="2">পাহাড়ি</option>
                                 <option value="3">সমুদ্র উপকূল (বাঁধের ভিতর)</option>
@@ -311,9 +311,9 @@
                         </td>
                     </tr>
                     <td>
-                        <label class="" for="management">১.৩.১ প্রতিষ্ঠানটি কোন এলাকায়?</label>
-                        <select class="" name="management">
-                            <option value="" selected>Select</option>
+                        <label>১.৩.১ প্রতিষ্ঠানটি কোন এলাকায়?</label>
+                        <select class="" name="area_status1" v-model="data.area_status1">
+                            <option value="">Select</option>
                             <option value="1">গ্রামীণ</option>
                             <option value="2">জেলা সদর পৌরসভা</option>
                             <option value="3">উপজেলা সদর পৌরসভা</option>
@@ -323,24 +323,23 @@
                         </select>
                     </td>
                     <td class="form-inline">
-                        <label class="" for="management">১.৩.২ প্রশাসনিক ইউনিটের সাথে যোগাযোগ ব্যবস্থার
+                        <label>১.৩.২ প্রশাসনিক ইউনিটের সাথে যোগাযোগ ব্যবস্থার
                             ধরন:</label>
-                        <select class="" name="management">
-                            <option value="" selected>Select</option>
+                        <select name="admin_unit_communication" v-model="data.admin_unit_communication">
+                            <option value="">Select</option>
                             <option value="1">উত্তম</option>
                             <option value="2">মোটমুটি</option>
                             <option value="3">দুর্গম</option>
                         </select>
                     </td>
                     <td>
-                        <label class="" for="branch_no">১.৩.৩ নিকটবর্তী অনুরুপ শিক্ষা প্রতিষ্ঠানের
-                            দূরত্ব: &nbsp;</label>
+                        <label>১.৩.৩ নিকটবর্তী অনুরুপ শিক্ষা প্রতিষ্ঠানের দূরত্ব: &nbsp;</label>
                         <input type="text" class="w-25" v-model="data.nearest_inst_distant">কি.মি.
                     </td>
                     <td>
-                        <label class="" for="double_shift">১.৪ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
-                        <select class="" name="double_shift">
-                            <option value="" selected>Select</option>
+                        <label>১.৪ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
+                        <select class="" name="branch_yn" v-model="data.branch_yn">
+                            <option value="" >Select</option>
                             <option value="1">হ্যাঁ-১</option>
                             <option value="2">না-২</option>
                         </select>
@@ -348,40 +347,39 @@
                     </tr>
                     <tr>
                         <td>
-                            <label class="" for="branch_no">১.৪.১ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
+                            <label>১.৪.১ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
                             <input type="number" class="w-25" v-model="data.branch_no">
                         </td>
                         <td>
-                            <label class="" for="double_shift">১.৪.২ প্রতিষ্ঠানটিতে ডাবল-শিফ্ট আছে কি? </label>
-                            <select class="" name="double_shift">
-                                <option value="" selected>Select</option>
+                            <label>১.৪.২ প্রতিষ্ঠানটিতে ডাবল-শিফট আছে কি? </label>
+                            <select name="double_shipt_yn" v-model="data.double_shipt_yn">
+                                <option value="" >Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
                             </select>
                         </td>
                         <td>
-                            <label class="" for="own_campus">১.৪.৩ প্রতিষ্ঠানটির নিজস্ব ক্যাম্পাস আছে
+                            <label>১.৪.৩ প্রতিষ্ঠানটির নিজস্ব ক্যাম্পাস আছে
                                 কি?</label>
-                            <select class="" name="own_campus">
-                                <option value="" selected>Select</option>
+                            <select name="campus_yn" v-model="data.campus_yn">
+                                <option value="">Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
                             </select>
                         </td>
                         <td>
-                            <label class="" for="older_inst">১.৪.৪ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা
+                            <label>১.৪.৪ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা
                                 প্রতিষ্ঠান আছে?</label>
-                            <select class="" name="older_inst">
-                                <option value="" selected>Select</option>
+                            <select name="attach_inst_yn" v-model="data.attach_inst_yn">
+                                <option value="">Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
                             </select>
                         </td>
                     <tr>
                         <td>
-                            <label class="" for="otder_insttype">১.৪.৫ উত্তর হ্যাঁ হলে, প্রতিষ্ঠানটির
-                                ধরন: </label>
-                            <select class="" name="otder_insttype">
+                            <label>১.৪.৫ উত্তর হ্যাঁ হলে, প্রতিষ্ঠানটির ধরন: </label>
+                            <select name="">
                                 <option value="" selected>Select</option>
                                 <option value="1">প্রাথমিক বিদ্যালয়</option>
                                 <option value="2">কিন্ডার গার্টেন</option>
@@ -392,19 +390,21 @@
                             </select>
                         </td>
                         <td>
-                            <label class="" for="mpo_yn">১.৫ প্রতিষ্ঠানটি এমপিওভুক্ত কি?</label>
-                            <select class="" name="mpo_yn">
-                                <option value="" selected>Select</option>
+                            <label>১.৫ প্রতিষ্ঠানটি এমপিওভুক্ত কি?</label>
+                            <select class="" name="mpo_status" v-model="data.mpo_status">
+                                <option value="">Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
+                                <option value="3">প্রযোজ্য নয়-৩</option>
                             </select>
                         </td>
                         <td colspan="2">
-                            <label class="" for="technical_mpo_yn">১.৫.১ কারিগরি শাখা এমপিওভুক্ত কি?</label>
-                            <select class="" name="technical_mpo_yn">
-                                <option value="" selected>Select</option>
+                            <label>১.৫.১ কারিগরি শাখা এমপিওভুক্ত কি?</label>
+                            <select name="technical_branch_mpo_status" v-model="data.technical_branch_mpo_status">
+                                <option value="">Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
+                                <option value="3">প্রযোজ্য নয়-৩</option>
                             </select>
                         </td>
                     </tr>
