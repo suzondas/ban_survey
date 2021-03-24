@@ -757,6 +757,7 @@
                     </tr>
                     </tbody>
                 </table>
+
             </div>
         </div>
         <br>
@@ -1130,9 +1131,7 @@
                         <td colspan="2"> কর্মরত</td>
                         <td colspan="2"> এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে)</td>
                         <td rowspan="2">শূন্য পদের সংখ্যা</td>
-                        <td rowspan="2">নিবন্ধনকৃত শিক্ষক সংখ্যা (NTRCA) (প্রযোজ্য ক্ষেত্রে)</td>
-                        <td rowspan="2">খন্ডকালীন শিক্ষক সংখ্যা</td>
-                        <td rowspan="2">NTRCA কর্তৃক পূরণযোগ্য শূন্য পদের সংখ্যা</td>
+
                     </tr>
                     <tr>
                         <td>মোট</td>
@@ -1143,9 +1142,6 @@
                     <tbody>
                     <tr>
                         <td>প্রভাষক</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -1169,7 +1165,7 @@
 
                 <table class="table table-bordered table-striped text-center">
                     <tr>
-                        <td rowspan="2">পদবী</td>
+                        <td rowspan="2">শিক্ষাগত যোগ্যতা</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
                     </tr>
                     <tr>
@@ -1239,7 +1235,7 @@
                 ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
                 <table class="table table-bordered  table-striped text-center">
                     <tr>
-                        <td rowspan="2">পদবী</td>
+                        <td rowspan="2">ডিগ্রী</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
                     </tr>
                     <tr>
@@ -1558,7 +1554,7 @@
                     <tr>
                         <td rowspan="2">ক্রমিক নং</td>
                         <td rowspan="2" style="width:450px">বিবরণ</td>
-                        <td colspan="2"> শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                        <td colspan="2"> শিক্ষকের সংখ্যা</td>
                     </tr>
                     <tr>
                         <td>মোট</td>
@@ -1685,7 +1681,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শ্রেণি শিক্ষক (বিএনসিসি)</td>
+                        <td>শ্রেষ্ঠ শিক্ষক (বিএনসিসি)</td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
@@ -1693,7 +1689,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শ্রেণি শিক্ষক (স্কাউট)</td>
+                        <td>শ্রেষ্ঠ শিক্ষক (রোভার)</td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
@@ -1701,7 +1697,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শ্রেণি শিক্ষক (গার্ল গাইড)</td>
+                        <td>শ্রেষ্ঠ শিক্ষক (রেঞ্জার)</td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
@@ -1710,7 +1706,7 @@
                     <tr>
                     </tr>
                     <tr>
-                        <td rowspan="3"> শিক্ষার্থীদের জন্য</td>
+                        <td rowspan="4"> শিক্ষার্থীদের জন্য</td>
                         <td>শ্রেষ্ঠ শিক্ষার্থী</td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
@@ -1719,7 +1715,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শিক্ষার্থী ( স্কাউট)</td>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী (বিএন্সিসি)</td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
@@ -1727,7 +1723,15 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শিক্ষার্থী (গার্ল গাইড)</td>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী (রোভার)</td>
+                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী (রেঞ্জার)</td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>
                         <td><input type="radio" name="easy" id=""></td>

@@ -33,7 +33,7 @@
                     </tr>
                     <tbody>
                     <tr>
-                        <td rowspan="4">একাদশ (১১)</td>
+                        <td rowspan="6">একাদশ (১১)</td>
                         <td>(১) মানবিক</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -67,7 +67,29 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>(৫) অন্যান্য</td>
+                        <td>(৪) এইচএসসি (ভোক)</td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(৫) এইচএসসি (বিএম)</td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(৬) অন্যান্য</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -77,7 +99,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                     <tr>
-                        <td rowspan="4">দ্বাদশ (১২)</td>
+                        <td rowspan="6">দ্বাদশ (১২)</td>
                         <td>(১) মানবিক</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -110,7 +132,29 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>(৫) অন্যান্য</td>
+                        <td>(৪) এইচএসসি (ভোক)</td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(৫) এইচএসসি (বিএম)</td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>(৬) অন্যান্য</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -144,7 +188,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>(৩) ব্যবসায় শিক্ষা</td>
+                        <td>(৩) বানিজ্য</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -199,7 +243,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>(৩) ব্যবসায় শিক্ষা</td>
+                        <td>(৩) বানিজ্য</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -255,7 +299,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
-                        <td>(৩) ব্যবসায় শিক্ষা</td>
+                        <td>(৩) বানিজ্য</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -434,7 +478,7 @@
                 </div>
                 <div class="form-control bg-number-label">বিভাগভিত্তিক বিভিন্ন বোর্ড পরীক্ষার ফলাফল:</div>
             </div>
-            <div class="contentBoxBody">
+            <div class="contentBoxBody ">
                 <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td scope="col" rowspan="3">পরীক্ষার নাম ও বছর</td>
@@ -700,12 +744,12 @@
                         <td rowspan="3"> কোড</td>
                         <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
                         <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
-                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা</td>
-                        <td rowspan="2" colspan="2"> পাসের সংখ্যা</td>
+                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা (২০২০)</td>
+                        <td rowspan="2" colspan="2"> পাসের সংখ্যা (২০২০)</td>
                     </tr>
                     <tr>
-                        <td colspan="2">১ম বর্ষ (একাদশ)</td>
-                        <td colspan="2">২য় বর্ষ (দ্বাদশ)</td>
+                        <td colspan="2">৯ম</td>
+                        <td colspan="2">১০ম</td>
                     </tr>
                     <tr>
                         <td>মোট</td>
@@ -747,9 +791,58 @@
                     <tr>
                         <td rowspan="3"> কোড</td>
                         <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
-                        <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
-                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা</td>
-                        <td rowspan="2" colspan="2"> পাসের সংখ্যা</td>
+                        <td colspan="4"> শিক্ষার্থীর সংখ্যা(২০২১)</td>
+                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা(২০২০)</td>
+                        <td rowspan="2" colspan="2"> পাসের সংখ্যা(২০২০)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">১ম বর্ষ (একাদশ)</td>
+                        <td colspan="2">২য় বর্ষ (দ্বাদশ)</td>
+                    </tr>
+                    <tr>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩.৯</span>
+                </div>
+                <div class="form-control bg-number-label">এইচএসসি ভোকেশনাল শাখার শিক্ষার্থী ২০২১</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
+                    <tr>
+                        <td rowspan="3"> কোড</td>
+                        <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
+                        <td colspan="4"> শিক্ষার্থীর সংখ্যা(২০২১)</td>
+                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা(২০২০)</td>
+                        <td rowspan="2" colspan="2"> পাসের সংখ্যা(২০২০)</td>
                     </tr>
                     <tr>
                         <td colspan="2">১ম বর্ষ (একাদশ)</td>
@@ -990,6 +1083,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
                     </tr>
                     <tr>
                         <td>ছাত্রী</td>
@@ -1045,9 +1139,12 @@
                         <td colspan="2"> কর্মরত</td>
                         <td colspan="2"> এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে)</td>
                         <td rowspan="2">শূন্য পদের সংখ্যা</td>
-                        <td rowspan="2">নিবন্ধনকৃত শিক্ষক সংখ্যা (NTRCA) (প্রযোজ্য ক্ষেত্রে)</td>
+                        <td rowspan="2">শাখা শিক্ষক (কর্মরততেও অন্তর্ভূক্ত থাকবে)</td>
                         <td rowspan="2">খন্ডকালীন শিক্ষক সংখ্যা</td>
+                        <td rowspan="2">নিবন্ধনকৃত শিক্ষক সংখ্যা (NTRCA) (প্রযোজ্য ক্ষেত্রে)</td>
                         <td rowspan="2">NTRCA কর্তৃক পূরণযোগ্য শূন্য পদের সংখ্যা</td>
+
+
                     </tr>
                     <tr>
                         <td>মোট</td>
@@ -1058,6 +1155,7 @@
                     <tbody>
                     <tr>
                         <td>অধ্যক্ষ</td>
+                        <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
