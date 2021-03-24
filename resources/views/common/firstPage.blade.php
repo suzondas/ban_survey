@@ -34,6 +34,7 @@
                         <td colspan="2" class="font-weight-bold">১.১ প্রতিষ্ঠানের নাম:</td>
                     </tr>
                     <tr>
+
                         <td style="width:50%"><label class="" for="bangla_name"> বাংলায় (অনুমতি/স্বীকৃতিপত্র
                                 অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):
                             </label>
@@ -131,6 +132,7 @@
                             <label class="" for="constituency_dist">নির্বাচনী এলাকা (জেলা নম্বর):</label> &nbsp
                             <input type="text" class="form-control" name="ec_district_code"
                                    v-model="data.ec_district_code">
+
                         </td>
                     </tr>
                 </table>
