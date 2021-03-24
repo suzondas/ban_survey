@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6">
                 <label for="eiin">ইআইআইএন (EIIN): &nbsp</label>
-                <input type="text" name="eiin" v-model="data.eiin" readonly disabled>
+                <input type="text" v-model="data.eiin" readonly disabled>
             </div>
             <div class="col-md-6 d-flex flex-row-reverse">
                 <table class="" style="width:300px;" border="1">
@@ -34,10 +34,9 @@
                         <td colspan="2" class="font-weight-bold">১.১ প্রতিষ্ঠানের নাম:</td>
                     </tr>
                     <tr>
-                        <td style="width:50%"><label class="" for="bangla_name"> বাংলায়
-                                <small>(অনুমতি/স্বীকৃতিপত্র
-                                    অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):
-                                </small>
+
+                        <td style="width:50%"><label class="" for="bangla_name"> বাংলায় (অনুমতি/স্বীকৃতিপত্র
+                                অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):
                             </label>
                             <input type="text" class="form-control" name="institute_name_bangla"
                                    v-model="data.institute_name_bangla">
@@ -46,7 +45,7 @@
                             <label class="" for="english_name" style="text-align: right">ইংরেজিতে (ব্লক লেটার): </label>
                             &nbsp
                             <input type="text" class="form-control" name="institute_name_new"
-                                   v-model="data.institute_name_new" readonly>
+                                   v-model="data.institute_name_new">
                         </td>
                     </tr>
                 </table>
@@ -126,11 +125,14 @@
                         </td>
                         <td>
                             <label class="" for="constituency_area">নির্বাচনী এলাকা (জাতীয় নম্বর):</label> &nbsp
-                            <input type="text" class="form-control" name="ec_national_code" v-model="data.ec_national_code">
+                            <input type="text" class="form-control" name="ec_national_code"
+                                   v-model="data.ec_national_code">
                         </td>
                         <td>
                             <label class="" for="constituency_dist">নির্বাচনী এলাকা (জেলা নম্বর):</label> &nbsp
-                            <input type="text" class="form-control" name="ec_district_code" v-model="data.ec_district_code">
+                            <input type="text" class="form-control" name="ec_district_code"
+                                   v-model="data.ec_district_code">
+
                         </td>
                     </tr>
                 </table>
@@ -783,10 +785,10 @@
                                 <tbody>
                                 <tr>
                                     <td>
-                                        <input type="text" v-model="data.committees[0].approve_date" />
+                                        <input type="text" v-model="data.committees[0].approve_date"/>
                                     </td>
                                     <td>
-                                        <input type="text" v-model="data.committees[0].expire_date" />
+                                        <input type="text" v-model="data.committees[0].expire_date"/>
                                     </td>
                                 </tr>
                                 </tbody>

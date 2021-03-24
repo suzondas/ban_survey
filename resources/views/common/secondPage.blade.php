@@ -1,6 +1,6 @@
 @extends('components.template')
 @section('content')
-    <div class="container" style="font-size:13px !important;">
+    <div class="container" style="font-size:13px !important;" id="secondPage">
         <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (খ)</h3>
 
         <div class="contentBox">
@@ -25,7 +25,7 @@
                             </tr>
                             <tr>
                                 <td>মৌজার নাম:</td>
-                                <td><input type="text" class="form-control" name=""></td>
+                                <td><input type="text" class="form-control" name="" v-model="data.institutes_land_usage[0].attached_land_mauza1"></td>
                                 <td>মৌজার নাম:</td>
                                 <td><input type="text" class="form-control" name=""></td>
                             </tr>
@@ -531,3 +531,6 @@
         </div>
     </div>
 @endsection
+@section('javascript')
+    <script src="{{ asset('js/secondPage.js') }}" type="module" defer></script>
+@stop
