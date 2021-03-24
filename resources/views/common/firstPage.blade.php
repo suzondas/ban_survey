@@ -100,7 +100,7 @@
                             </select>
                         </td>
                         <td>
-                            <label class="" for="mobile">১.১.২ মোবাইল নম্বর:</label> &nbsp
+                            <label class="" for="mobile">মোবাইল নম্বর:</label> &nbsp
                             <input type="number" class="form-control" name="mobphone" v-model="data.mobphone">
                         </td>
                         <td>
