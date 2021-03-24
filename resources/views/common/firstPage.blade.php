@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6">
                 <label for="eiin">ইআইআইএন (EIIN): &nbsp</label>
-                <input type="text" v-model="data.eiin" readonly>
+                <input type="text" name="eiin" v-model="data.eiin" readonly disabled>
             </div>
             <div class="col-md-6 d-flex flex-row-reverse">
                 <table class="" style="width:300px;" border="1">
@@ -15,10 +15,8 @@
                         <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="" name="latitude"
-                                   v-model="data.latitude"></td>
-                        <td><input type="text" class="" name="longitude"
-                                   v-model="data.longitude"></td>
+                        <td><input type="text" class="" name="latitude" v-model="data.latitude" readonly></td>
+                        <td><input type="text" class="" name="longitude" v-model="data.longitude" readonly></td>
                     </tr>
                 </table>
             </div>
@@ -36,8 +34,11 @@
                         <td colspan="2" class="font-weight-bold">১.১ প্রতিষ্ঠানের নাম:</td>
                     </tr>
                     <tr>
-                        <td style="width:50%" ><label class="" for="bangla_name"> বাংলায় <small>(অনুমতি/স্বীকৃতিপত্র
-                                    অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):</small> </label>
+                        <td style="width:50%"><label class="" for="bangla_name"> বাংলায়
+                                <small>(অনুমতি/স্বীকৃতিপত্র
+                                    অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):
+                                </small>
+                            </label>
                             <input type="text" class="form-control" name="institute_name_bangla"
                                    v-model="data.institute_name_bangla">
                         </td>
@@ -56,15 +57,15 @@
                     <tr>
                         <td>
                             <label class="" for="holding_no">হোল্ডিং নম্বর/রোড:</label> &nbsp
-                            <input type="text" class="form-control" name="holding_no" id="holding_no">
+                            <input type="text" class="form-control" name="location" v-model="data.location">
                         </td>
                         <td>
                             <label class="" for="post_office">ডাকঘর:</label> &nbsp
-                            <input type="text" class="form-control" name="post_office" id="post_office">
+                            <input type="text" class="form-control" name="post_office" v-model="data.post_office">
                         </td>
                         <td>
                             <label class="" for="post_code">পোস্ট কোড:</label> &nbsp
-                            <input type="number" class="form-control" name="post_code" id="post_code">
+                            <input type="number" class="form-control" name="post_code" v-model="data.post_code">
                         </td>
                         <td>
                             <label class="" for="division">বিভাগ:</label>
@@ -101,41 +102,35 @@
                         </td>
                         <td>
                             <label class="" for="mobile">১.১.২ মোবাইল নম্বর:</label> &nbsp
-                            <input type="number" class="form-control" name="mobile"
-                                   id="mobile">
+                            <input type="number" class="form-control" name="mobphone" v-model="data.mobphone">
                         </td>
                         <td>
                             <label class="" for="alt_mobile">বিকল্প মোবাইর নম্বর:</label> &nbsp
-                            <input type="number" class="form-control" name="alt_mobile"
-                                   id="alt_mobile">
+                            <input type="number" class="form-control" name="mobphone_alternate"
+                                   v-model="data.mobphone_alternate">
                         </td>
                     </tr>
                     <tr>
 
                         <td>
                             <label class="" for="phone">ফোন:</label> &nbsp
-                            <input type="number" class="form-control" name="phone"
-                                   id="phone">
+                            <input type="number" class="form-control" name="telephone" v-model="telephone">
                         </td>
                         <td>
                             <label class="" for="email">ই-মেইল:</label> &nbsp
-                            <input type="text" class="form-control" name="email"
-                                   id="email">
+                            <input type="text" class="form-control" name="e_mail" v-model="data.e_mail">
                         </td>
                         <td>
                             <label class="" for="website">ওয়েবসাইট:</label> &nbsp
-                            <input type="text" class="form-control" name="website"
-                                   id="website">
+                            <input type="text" class="form-control" name="web_site" v-model="data.web_site">
                         </td>
                         <td>
                             <label class="" for="constituency_area">নির্বাচনী এলাকা (জাতীয় নম্বর):</label> &nbsp
-                            <input type="text" class="form-control" name="constituency_area"
-                                   id="constituency_area">
+                            <input type="text" class="form-control" name="ec_national_code" v-model="data.ec_national_code">
                         </td>
                         <td>
                             <label class="" for="constituency_dist">নির্বাচনী এলাকা (জেলা নম্বর):</label> &nbsp
-                            <input type="text" class="form-control" name="constituency_dist"
-                                   id="constituency_dist">
+                            <input type="text" class="form-control" name="ec_district_code" v-model="data.ec_district_code">
                         </td>
                     </tr>
                 </table>
@@ -396,262 +391,263 @@
                         </td>
                     </tr>
                 </table>
-                <label class="font-weight-bold">১.২.৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের ক্ষেত্রে প্রযোজ্য নয়):</label>
-                        <table class="table table-bordered" style="text-align:center">
-                            <tr class="custom-table-header">
-                                <td>স্তর</td>
-                                <td>স্বীকৃতি/অনুমতি (টিক চিহ্ন দিন)</td>
-                                <td>প্রথম অনুমতির তারিখ</td>
-                                <td>প্রথম স্বীকৃতির তারিখ</td>
-                                <td>সর্বশেষ স্বীকৃতি/ অনুমতি মেয়াদ শেষ হওয়ার তারিখ</td>
-                            </tr>
-                            <tbody>
-                            <tr>
-                                <td>১। নিম্ন মাধ্যমিক</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="nimmo_first_recog" id="nimmo_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="nimmo_first_approve" id="nimmo_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="nimmo_not_apply" id="nimmo_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">২। মাধ্যমিক</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="maddo_first_recog" id="maddo_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="maddo_first_approve" id="maddo_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="maddo_not_apply" id="maddo_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">৩। উচ্চ মাধ্যমিক (এইচএসসি)</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="uccho_first_recog" id="uccho_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="uccho_first_approve" id="uccho_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="uccho_not_apply" id="uccho_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">৪। স্নাতক (পাস)</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="degpass_first_recog" id="degpass_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="degpass_first_approve"
-                                           id="degpass_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="degpass_not_apply" id="degpass_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">৫। স্নাতক (সম্মান)</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="honors_first_recog" id="honors_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="honors_first_approve" id="honors_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="honors_not_apply" id="honors_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">৬। স্নাতকোত্তর</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="masters_first_recog" id="masters_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="masters_first_approve"
-                                           id="masters_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="masters_not_apply" id="masters_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
+                <label class="font-weight-bold">১.২.৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের ক্ষেত্রে প্রযোজ্য
+                    নয়):</label>
+                <table class="table table-bordered" style="text-align:center">
+                    <tr class="custom-table-header">
+                        <td>স্তর</td>
+                        <td>স্বীকৃতি/অনুমতি (টিক চিহ্ন দিন)</td>
+                        <td>প্রথম অনুমতির তারিখ</td>
+                        <td>প্রথম স্বীকৃতির তারিখ</td>
+                        <td>সর্বশেষ স্বীকৃতি/ অনুমতি মেয়াদ শেষ হওয়ার তারিখ</td>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td>১। নিম্ন মাধ্যমিক</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="nimmo_first_recog" id="nimmo_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="nimmo_first_approve" id="nimmo_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="nimmo_not_apply" id="nimmo_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">২। মাধ্যমিক</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="maddo_first_recog" id="maddo_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="maddo_first_approve" id="maddo_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="maddo_not_apply" id="maddo_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">৩। উচ্চ মাধ্যমিক (এইচএসসি)</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="uccho_first_recog" id="uccho_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="uccho_first_approve" id="uccho_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="uccho_not_apply" id="uccho_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">৪। স্নাতক (পাস)</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="degpass_first_recog" id="degpass_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="degpass_first_approve"
+                                   id="degpass_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="degpass_not_apply" id="degpass_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">৫। স্নাতক (সম্মান)</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="honors_first_recog" id="honors_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="honors_first_approve" id="honors_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="honors_not_apply" id="honors_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">৬। স্নাতকোত্তর</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="masters_first_recog" id="masters_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="masters_first_approve"
+                                   id="masters_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="masters_not_apply" id="masters_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
 
-                            <tr>
-                                <td scope="row">৭। এসএসসি ভোক</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="sscvoc_first_recog" id="sscvoc_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="sscvoc_first_approve" id="sscvoc_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="sscvoc_not_apply" id="sscvoc_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">৮। এইচএসসি ভোক</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="hscvoc_first_recog" id="hscvoc_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="hscvoc_first_approve" id="hscvoc_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="hscvoc_not_apply" id="hscvoc_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">৯। এইচএসসি বিএম</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="hscbm_first_recog" id="hscbm_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="hscbm_first_approve" id="hscbm_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="hscbm_not_apply" id="hscbm_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">১০। ডিপ্লোমা ও সমমান</td>
-                                <td><select class="" style="widtd: 150px" name="nimmo_recog">
-                                        <option value="" selected>Select</option>
-                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                        <option value="2">অনুমতি প্রাপ্ত</option>
-                                        <option value="3">প্রযোজ্য নয়</option>
-                                    </select></td>
-                                <td>
-                                    <input type="date" name="diploma_first_recog" id="diploma_first_recog"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="diploma_first_approve"
-                                           id="diploma_first_approve"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                                <td>
-                                    <input type="date" name="diploma_not_apply" id="diploma_not_apply"
-                                           class="form-control"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <tr>
+                        <td scope="row">৭। এসএসসি ভোক</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="sscvoc_first_recog" id="sscvoc_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="sscvoc_first_approve" id="sscvoc_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="sscvoc_not_apply" id="sscvoc_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">৮। এইচএসসি ভোক</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="hscvoc_first_recog" id="hscvoc_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="hscvoc_first_approve" id="hscvoc_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="hscvoc_not_apply" id="hscvoc_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">৯। এইচএসসি বিএম</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="hscbm_first_recog" id="hscbm_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="hscbm_first_approve" id="hscbm_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="hscbm_not_apply" id="hscbm_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">১০। ডিপ্লোমা ও সমমান</td>
+                        <td><select class="" style="widtd: 150px" name="nimmo_recog">
+                                <option value="" selected>Select</option>
+                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                <option value="3">প্রযোজ্য নয়</option>
+                            </select></td>
+                        <td>
+                            <input type="date" name="diploma_first_recog" id="diploma_first_recog"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="diploma_first_approve"
+                                   id="diploma_first_approve"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                        <td>
+                            <input type="date" name="diploma_not_apply" id="diploma_not_apply"
+                                   class="form-control"><span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-td"></i></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 <div class="row container">
                     <label class="font-weight-bold">১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
                     <table class="table table-bordered" style="text-align:center">
@@ -787,14 +783,10 @@
                                 <tbody>
                                 <tr>
                                     <td>
-                                        <input type="date" name="committee_appdate" id="committee_appdate"
-                                               class="form-control"><span class="input-group-addon"><i
-                                                class="glyphicon glyphicon-td"></i></span>
+                                        <input type="text" v-model="data.committees[0].approve_date" />
                                     </td>
                                     <td>
-                                        <input type="date" name="committee_expdate" id="committee_expdate"
-                                               class="form-control"><span class="input-group-addon"><i
-                                                class="glyphicon glyphicon-td"></i></span>
+                                        <input type="text" v-model="data.committees[0].expire_date" />
                                     </td>
                                 </tr>
                                 </tbody>
