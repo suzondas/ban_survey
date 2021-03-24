@@ -7,7 +7,7 @@ const app = new Vue({
     },
     mounted() {
         var self=this;
-        axios.get('http://127.0.0.1:80/firstPage/'+eiin)
+        axios.get('http://127.0.0.1:8000/firstPage/'+eiin)
             .then(function (response) {
                 self.data=response.data
             })

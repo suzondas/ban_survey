@@ -17,6 +17,7 @@ $eiin=Auth::user()->eiin;
 @yield('javascript')
 
     <!-- Styles -->
+    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>

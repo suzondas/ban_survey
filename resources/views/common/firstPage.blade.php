@@ -152,18 +152,18 @@
                     <tr>
                         <td colspan="3">
                             <label class="" for="">১.২.১প্রতিষ্ঠানের ধরনঃ</label>
-                            <select class="" name="">
-                                <option value="" selected>Select</option>
+                            <select class="" name="institute_type_id" v-model="data.institute_type_id">
+                                <option value="">Select</option>
                                 <option value="1">১.স্কুল</option>
-                                <option value="2">২.কলেজ</option>
-                                <option value="3">৩. স্কুল এন্ড কলেজ</option>
+                                <option value="3">২.কলেজ</option>
+                                <option value="4">৩. স্কুল এন্ড কলেজ</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label class="" for="education_level">১.২ প্রতিষ্ঠানের স্তর :</label>
-                            <select class="" name="education_level" v-model="data.education_level_id">
+                            <select class="" name="education_level" v-model="data.education_level_id" disabled>
                                 <option value="">Select</option>
                                 <option value="12">নিম্ন মাধ্যমিক</option>
                                 <option value="13">মাধ্যমিক</option>
@@ -174,43 +174,65 @@
                                 <option value="34">স্নাতকোত্তর</option>
                             </select>
                         </td>
-                        <td>
+                        <td v-if="data.institute_type_id !=3">
                             <label class="" for="education_group">১.২.১ গ্রুপ স্কুল শাখা (একাধিক হতে
                                 পারে):</label>
-                            <select class="" name="education_group">
-                                <option value="" selected>Select</option>
-                                <option value="1">মানবিক</option>
-                                <option value="2">বিজ্ঞান</option>
-                                <option value="3">ব্যবসা শিক্ষা</option>
-                            </select>
+                            <div class="row">
+                                <div class="col">মানবিক <input type="checkbox" v-model="data.arts_group"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">বিজ্ঞান <input type="checkbox" v-model="data.science_group"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" v-model="data.commerce_group"/>
+                                </div>
+                            </div>
                         </td>
-                        <td>
+                        <td v-if="data.institute_type_id !=1">
                             <label class="" for="education_group_col">১.২.২ গ্রুপ কলেজ শাখা:(একাধিক হতে
                                 পারে)</label>
-                            <select class="" name="education_group_col">
-                                <option value="" selected>Select</option>
-                                <option value="1">মানবিক</option>
-                                <option value="2">বিজ্ঞান</option>
-                                <option value="3">ব্যবসায় শিক্ষা</option>
-                                <option value="4">সামাজিক বিজ্ঞান</option>
-                                <option value="4">ডিপ্লোমা ইন ফিশারিজ</option>
-                                <option value="5">ডিপ্লোমা ইন কৃষি</option>
-                                <option value="6">ইসলামী শিক্ষা</option>
-                                <option value="7">গার্হস্থ্য বিজ্ঞান</option>
-                                <option value="8">সংগীত</option>
-                            </select>
+                            <div class="row">
+                                <div class="col">মানবিক <input type="checkbox" v-model="data.arts_group_col"/></div>
+                                <div class="col">বিজ্ঞান <input type="checkbox" v-model="data.science_group_col"/></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">ব্যবসায় শিক্ষা <input type="checkbox"
+                                                                       v-model="data.commerce_group_col"/></div>
+                                <div class="col">সামাজিক বিজ্ঞান <input type="checkbox"
+                                                                        v-model="data.social_science_group"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">ইসলামী শিক্ষা <input type="checkbox"
+                                                                      v-model="data.islamic_stadies_group"/></div>
+                                <div class="col">গার্হস্থ্য বিজ্ঞান <input type="checkbox"
+                                                                           v-model="data.home_economic_group"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">সংগীত<input type="checkbox" v-model="music_group"/></div>
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label class="" for="education_group_col">১.২.৩ সংযুক্ত কারিগরি শাখার ধরন (প্রযোজ্য
                                 ক্ষেত্রে):</label>
-                            <select class="" name="education_group_col">
-                                <option value="" selected>Select</option>
-                                <option value="1">এসএসসি (ভোক)</option>
-                                <option value="2">এইচএসসি (বিএম)</option>
-                                <option value="3">এইচএসসি (ভোক)</option>
-                            </select>
+                            <div class="row">
+                                <div class="col">এসএসসি (ভোক)<input type="checkbox"
+                                                                    v-model="data.technical_branch_type"></div>
+                                <div class="col">এইচএসসি(ভোক)<input type="checkbox"
+                                                                    v-model="data.technical_branch_type_hscvoc"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">এইচএসসি (বিএম)<input type="checkbox"
+                                                                    v-model="data.technical_branch_type_bm"></div>
+                                <div class="col">ডিপ্লোমা ইন ফিশারিজ<input type="checkbox"
+                                                                    v-model="data.technical_branch_type_fish"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">ডিপ্লোমা ইন এগ্রিকালচার<input type="checkbox"
+                                                                      v-model="data.technical_branch_type_agro"></div>
+                            </div>
                         </td>
 
                         <td>
@@ -220,10 +242,9 @@
                             </div>
                         </td>
                         <td>
-                            <label class="" for="english_version">১.২.৫ প্রতিষ্ঠানটিতে ইংরেজি ভার্সনে পাঠদান হয়
-                                কি?</label>
-                            <select class="" name="english_version">
-                                <option value="" selected>Select</option>
+                            <label>১.২.৫ প্রতিষ্ঠানটিতে ইংরেজি ভার্সনে পাঠদান হয় কি?</label>
+                            <select class="" name="english_ver_yn" v-model="data.english_ver_yn">
+                                <option value="">Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
                             </select>
