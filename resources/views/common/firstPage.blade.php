@@ -44,7 +44,7 @@
                             <label class="" for="english_name" style="text-align: right">ইংরেজিতে (ব্লক লেটার): </label>
                             &nbsp
                             <input type="text" class="form-control" name="institute_name_new"
-                                   v-model="data.institute_name_new"
+                                   v-model="data.institute_name_new">
                         </td>
                     </tr>
                 </table>
@@ -214,8 +214,7 @@
                         <td>
                             <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
                             <div class="input-group date">
-                                <input type="date" class="date"><span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
+                                <input type="text" v-model="data.establish_date"></i></span>
                             </div>
                         </td>
                         <td>
@@ -256,9 +255,7 @@
                         </td>
                         <td>
                             <label class="" for="nationalization_date">১.২.৮ সরকারি হলে জাতীয়করণের তারিখ :</label>
-                            <input type="date" name="nationalization_date" id="nationalization_date"
-                                   class="form-control"><span class="input-group-addon"><i
-                                        class="glyphicon glyphicon-td"></i></span>
+                            <input type="text" v-model="data.nationalization_date"></i></span>
                         </td>
                         <td>
                             <label class="" for="management">১.২.৯ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
@@ -315,8 +312,7 @@
                     <td>
                         <label class="" for="branch_no">১.৩.৩ নিকটবর্তী অনুরুপ শিক্ষা প্রতিষ্ঠানের
                             দূরত্ব: &nbsp;</label>
-                        <input type="number" name="branch_no"
-                               id="branch_no" class="w-25">কি.মি.
+                        <input type="text" class="w-25" v-model="data.nearest_inst_distant">কি.মি.
                     </td>
                     <td>
                         <label class="" for="double_shift">১.৪ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
@@ -330,8 +326,7 @@
                     <tr>
                         <td>
                             <label class="" for="branch_no">১.৪.১ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
-                            <input type="number" class="w-25" name="branch_no"
-                                   id="branch_no" placeholder="">
+                            <input type="number" class="w-25" v-model="data.branch_no">
                         </td>
                         <td>
                             <label class="" for="double_shift">১.৪.২ প্রতিষ্ঠানটিতে ডাবল-শিফ্ট আছে কি? </label>
@@ -351,9 +346,9 @@
                             </select>
                         </td>
                         <td>
-                            <label class="" for="otder_inst">১.৪.৪ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা
+                            <label class="" for="older_inst">১.৪.৪ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা
                                 প্রতিষ্ঠান আছে?</label>
-                            <select class="" name="otder_inst">
+                            <select class="" name="older_inst">
                                 <option value="" selected>Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
@@ -795,47 +790,34 @@
                         <td><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <label for=""> পুরুষ: </label>
-                                    <input type="number" class="form-control" name="men"
-                                           id="">
-                                </div>
-                                <div class="col-md-4">
                                     <label for="female"> মহিলা: </label>
-                                    <input type="number" class="form-control" name="female"
-                                           id="">
+                                    <input type="number" class="form-control" v-model="data.committees[0].total_female">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="total"> মোট:</label>
-                                    <input type="number" class="form-control" name="total"
-                                           id="total">
+                                    <input type="number" class="form-control" v-model="data.committees[0].total_member">
                                 </div>
                             </div>
                         </td>
                         <td><label>১.৬.৩ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
-                            <input type="date" name="committee_appdate" id="committee_appdate"
-                                   class="form-control"><span
-                                    class="input-group-addon"><i class="glyphicon glyphicon-td"></i></span>
+                            <input type="text" v-model="data.committees[0].last_commitee_expire_date">
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <div class="row">
-                                <div class="col-md-8"><label class="label-text" for="meeting_no"> ৩.১ ২০২০ সালে
-                                        ম্যানেজিং কমিটির কতটি সভা
-                                        হয়েছে? </label></div>
-                                <div class="col-md-4"><input type="text" class="w-50" name="meeting_no"
-                                                             id="meeting_no"> টি
+                                <div class="col-md-6"><label> ৩.১ ২০২০ সালে ম্যানেজিং কমিটির কতটি সভা হয়েছে? </label></div>
+                                <div><input type="text" class="w-25" v-model="data.committees[0].last_yr_meeting"> টি
                                 </div>
                             </div>
 
                         </td>
                         <td colspan="2">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-6">
                                     <label class="" for="pti_meeting"> ৩.২ ২০২১ সালে পিটিএ এর কতগুলো সভা
                                         হয়েছে? </label></div>
-                                <div class="col-md-4"><input type="text" class="w-25" name="pti_meeting"
-                                                             id="pti_meeting" style="width: 100px"> টি
+                                <div><input type="text" class="w-25" v-model="data.committees[0].last_yr_pta_meeting"> টি
                                 </div>
                             </div>
                         </td>
