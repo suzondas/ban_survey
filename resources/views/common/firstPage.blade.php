@@ -4,7 +4,7 @@
         <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (ক)</h3>
         <div class="row">
             <div class="col-md-6">
-                <label for="eiin">ইআইআইএন (EIIN): &nbsp</label>
+                <label for="">ইআইআইএন (EIIN): &nbsp</label>
                 <input type="text" v-model="data.eiin" readonly disabled>
             </div>
             <div class="col-md-6 d-flex flex-row-reverse">
@@ -113,7 +113,7 @@
 
                         <td>
                             <label class="" for="phone">ফোন:</label> &nbsp
-                            <input type="number" class="form-control" name="telephone" v-model="telephone">
+                            <input type="number" class="form-control" name="telephone" v-model="data.telephone">
                         </td>
                         <td>
                             <label class="" for="email">ই-মেইল:</label> &nbsp
@@ -163,15 +163,15 @@
                     <tr>
                         <td>
                             <label class="" for="education_level">১.২ প্রতিষ্ঠানের স্তর :</label>
-                            <select class="" name="education_level">
-                                <option value="" selected>Select</option>
-                                <option value="1">নিম্ন মাধ্যমিক</option>
-                                <option value="2">মাধ্যমিক</option>
-                                <option value="3">৮ম শ্রেণি পর্যন্ত সরকারি প্রাথমিক বিদ্যালয়</option>
-                                <option value="4">উচ্চ মাধ্যমিক</option>
-                                <option value="4">স্নাতক (পাস)</option>
-                                <option value="5">স্নাতক (সম্মান)</option>
-                                <option value="6">স্নাতকোত্তর</option>
+                            <select class="" name="education_level" v-model="data.education_level_id">
+                                <option value="">Select</option>
+                                <option value="12">নিম্ন মাধ্যমিক</option>
+                                <option value="13">মাধ্যমিক</option>
+                                <option value="11">৮ম শ্রেণি পর্যন্ত সরকারি প্রাথমিক বিদ্যালয়</option>
+                                <option value="31">উচ্চ মাধ্যমিক</option>
+                                <option value="32">স্নাতক (পাস)</option>
+                                <option value="33">স্নাতক (সম্মান)</option>
+                                <option value="34">স্নাতকোত্তর</option>
                             </select>
                         </td>
                         <td>
