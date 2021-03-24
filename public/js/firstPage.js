@@ -1,10 +1,13 @@
 const app = new Vue({
     el: '#firstPage',
-    data: {},
+    data: {
+        inst:{}
+    },
     mounted() {
-        axios.get('https://jsonplaceholder.typicode.com/todos/2')
+        var self = this;
+        axios.get('http://127.0.0.1:8000/firstPage/112211')
             .then(function (response) {
-                let institute = response.data.institute;
+                self.inst = response.data;
             })
             .catch(function (error) {
                 console.log(error)

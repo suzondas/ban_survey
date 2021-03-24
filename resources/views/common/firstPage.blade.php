@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6">
                 <label for="eiin">ইআইআইএন (EIIN): &nbsp</label>
-                <input type="number" id="eiin" name="eiin">
+                <input type="number" id="eiin" v-model="inst.eiin">
             </div>
             <div class="col-md-6 d-flex flex-row-reverse">
                 <table class="" style="width:300px;" border="1">
