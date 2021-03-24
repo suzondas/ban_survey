@@ -792,12 +792,12 @@
                         <td><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <label for="female"> মহিলা: </label>
-                                    <input type="number" class="form-control" v-model="data.committees[0].total_female">
-                                </div>
-                                <div class="col-md-4">
                                     <label for="total"> মোট:</label>
                                     <input type="number" class="form-control" v-model="data.committees[0].total_member">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="female"> মহিলা: </label>
+                                    <input type="number" class="form-control" v-model="data.committees[0].total_female">
                                 </div>
                             </div>
                         </td>
@@ -808,7 +808,8 @@
                     <tr>
                         <td colspan="2">
                             <div class="row">
-                                <div class="col-md-6"><label> ৩.১ ২০২০ সালে ম্যানেজিং কমিটির কতটি সভা হয়েছে? </label></div>
+                                <div class="col-md-6"><label> ৩.১ ২০২০ সালে ম্যানেজিং কমিটির কতটি সভা হয়েছে? </label>
+                                </div>
                                 <div><input type="text" class="w-25" v-model="data.committees[0].last_yr_meeting"> টি
                                 </div>
                             </div>
@@ -819,7 +820,8 @@
                                 <div class="col-md-6">
                                     <label class="" for="pti_meeting"> ৩.২ ২০২১ সালে পিটিএ এর কতগুলো সভা
                                         হয়েছে? </label></div>
-                                <div><input type="text" class="w-25" v-model="data.committees[0].last_yr_pta_meeting"> টি
+                                <div><input type="text" class="w-25" v-model="data.committees[0].last_yr_pta_meeting">
+                                    টি
                                 </div>
                             </div>
                         </td>
