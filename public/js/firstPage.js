@@ -26,13 +26,14 @@ const app = new Vue({
                 }
             }
         },
-        levelMpo: function(mpoId){
-            var self =this;
+        levelMpo: function (mpoId) {
+            var self = this;
 
-            for (var j=0; j<self.data.eduLevel[j].education_level_id == mpoId){
-                return self.data.eduLevel[j].education_level_bangla_name;
+            for (var j = 0; j < self.data.eduLevel.length; j++) {
+                if (self.data.eduLevel[j].education_level_id == mpoId) {
+                    return self.data.eduLevel[j].education_level_bangla_name;
+                }
             }
         }
     }
-
 });
