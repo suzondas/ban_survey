@@ -19,8 +19,7 @@ const app = new Vue({
     methods:
     {
         addBuildingDetails(){
-            var self=this
-            self.data.building_details.push(
+            data.building_details.push(
                 {
                     "id": '',
                     "institute_id": null,
