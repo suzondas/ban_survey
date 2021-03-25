@@ -209,7 +209,7 @@
                                                                            v-model="data.home_economic_group"/></div>
                             </div>
                             <div class="row">
-                                <div class="col">সংগীত<input type="checkbox" v-model="music_group"/></div>
+                                <div class="col">সংগীত<input type="checkbox" v-model="data.music_group"/></div>
                             </div>
                         </td>
                     </tr>
@@ -481,8 +481,8 @@
                     <tr>
                         <td>
                             <label>১.৬ কমিটির ধরন:</label>
-                            <select class="custom-select" name="" style="width:100px">
-                                <option value="" selected>Select</option>
+                            <select class="custom-select" v-model="data.committees[0].type" style="width:120px">
+                                <option value="">Select</option>
                                 <option value="1">ম্যানেজিং কমিটি</option>
                                 <option value="2">গর্ভনিং বডি</option>
                                 <option value="3">এডহক কমিটি</option>
@@ -551,56 +551,58 @@
                             <label class="" for="meeting_discuss">৩.১.১ ম্যানেজিং কমিটির সভায় শিক্ষার
                                 মানোন্নয়ন সম্পর্কিত বিষয়ে কী কী আলোচনা হয়েছে?</label>
                             <table class="table table-bordered">
+
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষক
-                                        প্রশিক্ষণ
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_teacher_training">শিক্ষক প্রশিক্ষণ
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষক ও
-                                        শিক্ষার্থীর
-                                        উপস্থিতি
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_teacher_std_presents">শিক্ষক ও শিক্ষার্থীর উপস্থিতি
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিগ্রহ/পীড়ন
+                                    <td>
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_awarness_program">সচেতনতা মূলক কার্যক্রম
+                                    </td>
+                                    <td>
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_eve_teasing">ইভটিজিং
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class="mr-2" type="checkbox" v-model="data.committees[0].mc_bulling_related" >নিগ্রহ/পীড়ন
                                         (বুলিং)
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বাল্যবিবাহ
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_early_marriage">বাল্যবিবাহ
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিছিয়ে পড়া
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_poor_std">পিছিয়ে পড়া
                                         শিক্ষার্থী
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিশেষ চাহিদা
-                                        সম্পন্ন
-                                        শিক্ষার্থী
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_disabled_std">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষার্থীদের
-                                        যাতায়াতে
-                                        নিরাপত্তা
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_std_transport">শিক্ষার্থীদের যাতায়াতে নিরাপত্তা
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">মাদক বিরোধী
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_anti_drug">মাদক বিরোধী
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ঝড়ে পড়া রোধ
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_dropout">ঝড়ে পড়া রোধ
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিরাপদ সড়ক
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_saferoad">নিরাপদ সড়ক
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><input class="mr-2" type="checkbox" name="kup" id="kup" value="1">অন্যান্য
+                                    <td colspan="2"><input class="mr-2" type="checkbox" v-model="data.committees[0].mc_other">অন্যান্য
                                     </td>
                                 </tr>
                             </table>
@@ -611,54 +613,46 @@
                             <table class="table table-bordered">
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষার্থীর
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_std_present">শিক্ষার্থীর
                                         উপস্থিতি
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">সচেতনতামূলক
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].ptaawarnessprogram">সচেতনতামূলক
                                         কার্যক্রম
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিগ্রহ/পীড়ন
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_bulling_related">নিগ্রহ/পীড়ন
                                         (বুলিং)
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বাল্যবিবাহ
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_early_marriage">বাল্যবিবাহ
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">পিছিয়ে পড়া
-                                        শিক্ষার্থী
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_eve_teasing">ইভটিজিং
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">বিশেষ চাহিদা
-                                        সম্পন্ন
-                                        শিক্ষার্থী
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_militant">জঙ্গীবাদ দমন
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">শিক্ষার্থীদের
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_std_transport">শিক্ষার্থীদের
                                         যাতায়াতে নিরাপত্তা
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">মাদক বিরোধী
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_anti_drug">মাদক বিরোধী
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">ঝড়ে পড়া রোধ
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_acid_throw">এসিড নিক্ষেপ
                                     </td>
-                                    <td>
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">নিরাপদ সড়ক
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td colspan="2">
-                                        <input class="mr-2" type="checkbox" name="kup" id="kup" value="1">অন্যান্য
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_other">অন্যান্য
                                     </td>
                                 </tr>
                             </table>
