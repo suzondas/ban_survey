@@ -225,13 +225,15 @@
                             </div>
                             <div class="row">
                                 <div class="col">এইচএসসি (বিএম)<input type="checkbox"
-                                                                    v-model="data.technical_branch_type_bm"></div>
+                                                                      v-model="data.technical_branch_type_bm"></div>
                                 <div class="col">ডিপ্লোমা ইন ফিশারিজ<input type="checkbox"
-                                                                    v-model="data.technical_branch_type_fish"></div>
+                                                                           v-model="data.technical_branch_type_fish">
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col">ডিপ্লোমা ইন এগ্রিকালচার<input type="checkbox"
-                                                                      v-model="data.technical_branch_type_agro"></div>
+                                                                               v-model="data.technical_branch_type_agro">
+                                </div>
                             </div>
                         </td>
 
@@ -267,7 +269,7 @@
                         <td>
                             <label class="" for="management">১.২.৭ ব্যবস্থাপনা </label>
                             <select class="" name="management" v-model="data.management">
-                                <option value="" >Select</option>
+                                <option value="">Select</option>
                                 <option value="1">সরকারি</option>
                                 <option value="2">বেসরকারি</option>
                                 <option value="3">স্থানীয় সরকার</option>
@@ -283,7 +285,7 @@
                         <td>
                             <label>১.২.৯ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
                             <select class="" name="for_whom" v-model="data.for_whom">
-                                <option value="" >Select</option>
+                                <option value="">Select</option>
                                 <option value="1">বালক</option>
                                 <option value="2">বালিকা</option>
                                 <option value="3">সহশিক্ষা একত্রে</option>
@@ -292,7 +294,7 @@
                         </td>
                         <td>
                             <label>১.৩ ভৌগলিক অবস্থান:</label>
-                            <select  name="geographical_status" v-model="data.geographical_status">
+                            <select name="geographical_status" v-model="data.geographical_status">
                                 <option value="">Select</option>
                                 <option value="1">সমতল</option>
                                 <option value="2">পাহাড়ি</option>
@@ -339,7 +341,7 @@
                     <td>
                         <label>১.৪ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
                         <select class="" name="branch_yn" v-model="data.branch_yn">
-                            <option value="" >Select</option>
+                            <option value="">Select</option>
                             <option value="1">হ্যাঁ-১</option>
                             <option value="2">না-২</option>
                         </select>
@@ -353,7 +355,7 @@
                         <td>
                             <label>১.৪.২ প্রতিষ্ঠানটিতে ডাবল-শিফট আছে কি? </label>
                             <select name="double_shipt_yn" v-model="data.double_shipt_yn">
-                                <option value="" >Select</option>
+                                <option value="">Select</option>
                                 <option value="1">হ্যাঁ-১</option>
                                 <option value="2">না-২</option>
                             </select>
@@ -411,140 +413,58 @@
                 </table>
                 <div class="row">
                     <div class="col-md-12">
-                <label class="font-weight-bold">১.২.৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের ক্ষেত্রে প্রযোজ্য
-                    নয়):</label>
-                <table class="table table-bordered">
-                    <tr class="custom-table-header">
-                        <td style="text-align:center">স্তর</td>
-                        <td style="text-align:center">স্বীকৃতি/অনুমতি (টিক চিহ্ন দিন)</td>
-                        <td style="text-align:center">প্রথম অনুমতির তারিখ</td>
-                        <td style="text-align:center">প্রথম স্বীকৃতির তারিখ</td>
-                        <td style="text-align:center">সর্বশেষ স্বীকৃতি/ অনুমতি মেয়াদ শেষ হওয়ার তারিখ</td>
-                    </tr>
-                    <tbody>
-                    <tr v-for="item in data.institutes_recognition">
-                        <td>@{{ item.education_level_id }}</td>
-                        <td><select class="" name="" v-model="item.recognition_status">
-                                <option value="" >Select</option>
-                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                <option value="2">অনুমতি প্রাপ্ত</option>
-                                <option value="3">প্রযোজ্য নয়</option>
-                            </select></td>
-                        <td>
-                            <input type="text" v-model="item.permitted_date"/>
-                        </td>
-                        <td>
-                           <input type="text" v-model="item.recognition_date">
-                        </td>
-                        <td>
-                            <input type="text" v-model="item.recognition_expire_date">
-
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                        <label class="font-weight-bold">১.২.৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের ক্ষেত্রে
+                            প্রযোজ্য
+                            নয়):</label>
+                        <table class="table table-bordered">
+                            <tr class="custom-table-header">
+                                <td style="text-align:center">স্তর</td>
+                                <td style="text-align:center">স্বীকৃতি/অনুমতি (টিক চিহ্ন দিন)</td>
+                                <td style="text-align:center">প্রথম অনুমতির তারিখ</td>
+                                <td style="text-align:center">প্রথম স্বীকৃতির তারিখ</td>
+                                <td style="text-align:center">সর্বশেষ স্বীকৃতি/ অনুমতি মেয়াদ শেষ হওয়ার তারিখ</td>
+                            </tr>
+                            <tbody>
+                            <tr v-for="item in data.institutes_recognition">
+                                <td>@{{ item.education_level_id }}</td>
+                                <td><select class="" name="" v-model="item.recognition_status">
+                                        <option value="">Select</option>
+                                        <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                        <option value="2">অনুমতি প্রাপ্ত</option>
+                                        <option value="3">প্রযোজ্য নয়</option>
+                                    </select></td>
+                                <td>
+                                    <input type="text" v-model="item.permitted_date"/>
+                                </td>
+                                <td>
+                                    <input type="text" v-model="item.recognition_date">
+                                </td>
+                                <td>
+                                    <input type="text" v-model="item.recognition_expire_date">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="row container">
-                    <label class="font-weight-bold">১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
-                    <table class="table table-bordered" style="text-align:center">
-                        <thead>
-                        <tr class="custom-table-header">
-                            <td>এমপিওভুক্তির স্তর</td>
-                            <td>এমপিও ভুক্তির তারিখ</td>
-                            <td>এমপিওভুক্তির স্তর</td>
-                            <td>এমপিও ভুক্তির তারিখ</td>
-                            <td>এমপিওভুক্তির স্তর</td>
-                            <td>এমপিও ভুক্তির তারিখ</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td scope="row">১। নিম্ন মাধ্যমিক</td>
-                            <td>
-                                <input type="date" name="nimmo_mpo" id="nimmo_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                            <td scope="row">২। মাধ্যমিক (এসএসসি)</td>
-                            <td>
-                                <input type="date" name="maddo_mpo" id="maddo_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                            <td scope="row">৩। উচ্চ মাধ্যমিক (এইচএসসি)</td>
-                            <td>
-                                <input type="date" name="uchho_mpo" id="uchho_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">৪। স্নাতক</td>
-                            <td>
-                                <input type="date" name="deg_mpo" id="deg_mpo" class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                            <td scope="row">৫। স্নাতক (সম্মান)</td>
-                            <td>
-                                <input type="date" name="honours_mpo" id="honours_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                            <td scope="row">৬। স্নাতকো্ত্তর</td>
-                            <td>
-                                <input type="date" name="masters_mpo" id="masters_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">৭।এসএসসি ভোক</td>
-                            <td>
-                                <input type="date" name="sscvoc_mpo" id="sscvoc_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                            <td scope="row">৮। এইচএসসি ভোক</td>
-                            <td>
-                                <input type="date" name="hscvoc_mpo" id="hscvoc_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                            <td scope="row">৯। এইচএসসি বিএম</td>
-                            <td>
-                                <input type="date" name="hscbm_mpo" id="hscbm_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">১০। ডিপ্লোমা ইন ফিশারিজ</td>
-                            <td>
-                                <input type="date" name="dip_fish_mpo" id="dip_fish_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                            <td scope="row">১১। ডিপ্লোমা ইন এগ্রিকালচার</td>
-                            <td>
-                                <input type="date" name="dip_agri_mpo" id="dip_agri_mpo"
-                                       class="form-control"><span
-                                        class="input-group-addon"><i
-                                            class="glyphicon glyphicon-td"></i></span>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="col-md-6">
+                        <label class="font-weight-bold">১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
+                        <table class="table table-bordered" style="text-align:center">
+                            <tr class="custom-table-header">
+                                <td>এমপিওভুক্তির স্তর</td>
+                                <td>এমপিও ভুক্তির তারিখ</td>
+                            </tr>
+                            <tbody>
+                            <tr v-for="mpo in data.institutes_mpo_status">
+                                <td>@{{mpo.education_level_id}}</td>
+                                <td>
+                                    <input type="text" v-model="mpo.mpo_date"/>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
