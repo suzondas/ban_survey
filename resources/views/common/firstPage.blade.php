@@ -426,7 +426,7 @@
                             </tr>
                             <tbody>
                             <tr v-for="item in data.institutes_recognition">
-                                <td>@{{ item.education_level_id }}</td>
+                                <td>@{{ levelName(item.education_level_id) }}</td>
                                 <td><select class="" name="" v-model="item.recognition_status">
                                         <option value="">Select</option>
                                         <option value="1">স্বীকৃতি প্রাপ্ত</option>
@@ -457,7 +457,7 @@
                             </tr>
                             <tbody>
                             <tr v-for="mpo in data.institutes_mpo_status">
-                                <td>@{{mpo.education_level_id}}</td>
+                                <td>@{{levelMpo(mpo.education_level_id) }}</td>
                                 <td>
                                     <input type="text" v-model="mpo.mpo_date"/>
                                 </td>
