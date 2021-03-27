@@ -551,12 +551,21 @@
                             <label class="" for="meeting_discuss">৩.১.১ ম্যানেজিং কমিটির সভায় শিক্ষার
                                 মানোন্নয়ন সম্পর্কিত বিষয়ে কী কী আলোচনা হয়েছে?</label>
                             <table class="table table-bordered">
+
                                 <tr>
                                     <td>
                                         <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_teacher_training">শিক্ষক প্রশিক্ষণ
                                     </td>
                                     <td>
                                         <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_teacher_std_presents">শিক্ষক ও শিক্ষার্থীর উপস্থিতি
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_awarness_program">সচেতনতা মূলক কার্যক্রম
+                                    </td>
+                                    <td>
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].mc_eve_teasing">ইভটিজিং
                                     </td>
                                 </tr>
                                 <tr>
@@ -623,11 +632,10 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].">পিছিয়ে পড়া
-                                        শিক্ষার্থী
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_eve_teasing">ইভটিজিং
                                     </td>
                                     <td>
-                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থী
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_militant">জঙ্গীবাদ দমন
                                     </td>
                                 </tr>
                                 <tr>
@@ -641,13 +649,8 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].">ঝড়ে পড়া রোধ
+                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_acid_throw">এসিড নিক্ষেপ
                                     </td>
-                                    <td>
-                                        <input class="mr-2" type="checkbox" v-model="data.committees[0].">নিরাপদ সড়ক
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td colspan="2">
                                         <input class="mr-2" type="checkbox" v-model="data.committees[0].pta_other">অন্যান্য
                                     </td>
