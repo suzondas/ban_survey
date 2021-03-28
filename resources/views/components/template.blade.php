@@ -1,6 +1,5 @@
 <?php
 use Illuminate\Support\Facades\Auth;
-$eiin=Auth::user()->eiin;
 $inst_id=Auth::user()->institute_id;
 ?>
 <!DOCTYPE html>
@@ -11,7 +10,6 @@ $inst_id=Auth::user()->institute_id;
     <title>বার্ষিক শিক্ষা জরিপ-২০২১। ব্যানবেইস</title>
     <!-- Scripts -->
     <script>
-        var eiin="<?php echo $eiin;?>"
         var inst_id="<?php echo $inst_id;?>"
     </script>
     <script src="{{ asset('js/app.js') }}" defer></script>

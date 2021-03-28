@@ -5,8 +5,9 @@
  */
 
 require('./bootstrap');
-
+import datepicker from 'vuejs-datepicker';
 window.Vue = require('vue').default;
+Vue.component('datepicker', datepicker);
 
 /**
  * The following block of code may be used to automatically register your
