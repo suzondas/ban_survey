@@ -3,6 +3,7 @@ const app = new Vue({
     data() {
         return {
             data:null,
+            dataLoaded:false,
             banglaBorno:['ক','খ','গ','ঘ','ঙ','চ','ছ','জ','ঝ','ঞ']
         }
     },
@@ -11,6 +12,7 @@ const app = new Vue({
         axios.get('http://127.0.0.1:8000/schoolFirst/'+inst_id)
             .then(function (response) {
                 self.data=response.data
+                self.dataLoaded=true
                 console.log(self.data)
             })
             .catch(function (error) {
