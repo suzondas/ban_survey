@@ -7,7 +7,7 @@ const app = new Vue({
     },
     mounted() {
         var self=this
-        axios.get('http://127.0.0.1:8000/secondPage/'+eiin)
+        axios.get('http://127.0.0.1:8000/secondPage/'+inst_id)
             .then(function (response) {
                 self.data=response.data
                 console.log(self.data)
@@ -19,7 +19,7 @@ const app = new Vue({
     methods:
     {
         addBuildingDetails(){
-            data.building_details.push(
+            this.data.building_details.push(
                 {
                     "id": '',
                     "institute_id": null,

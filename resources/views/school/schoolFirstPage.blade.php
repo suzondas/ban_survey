@@ -1,6 +1,6 @@
 @extends('components.template')
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid" id="schoolFirst">
         <h3 class="text-center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox col-8">
             <div class="input-group contentHeader">
@@ -28,12 +28,12 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="text" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="text" class="form-control" name="" v-model="data.Student_summary_total[0].one_five_total" ></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_total[0].one_five_girl"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_total[0].six_ten_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_total[0].six_ten_girl"></td>
+                        <td><input type="number" class="form-control" name="" ></td>
+                        <td><input type="number" class="form-control" name="" ></td>
                     </tr>
                     </tbody>
                 </table>
@@ -411,16 +411,16 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="text" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="text" class="form-control" name="" v-model="data.Student_summary_repeater[0].six_total" ></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].six_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].seven_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].seven_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].eight_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].eight_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].nine_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].nine_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].ten_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_repeater[0].ten_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -459,16 +459,16 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="text" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="text" class="form-control" name="" v-model="data.Student_summary_dropout[0].six_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].six_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].seven_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].seven_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].eight_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].eight_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].nine_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].nine_female"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].ten_total"></td>
+                        <td><input type="number" class="form-control" name="" v-model="data.Student_summary_dropout[0].ten_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -494,6 +494,7 @@
                         <th rowspan="2">৮ম শ্রেণি</th>
                         <th colspan="3">৯ম শ্রেণি</th>
                         <th colspan="3">১০ম শ্রেণি</th>
+                        <th></th>
                     </tr>
                     <tr>
                         <th>বিজ্ঞান</th>
@@ -502,93 +503,24 @@
                         <th>বিজ্ঞান</th>
                         <th>মানবিক</th>
                         <th>মানবিক</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>ক</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr v-for="(item,index) in data.secWise_student_summary">
+                        <td>@{{ banglaBorno[index] }}</td>
+                        <td><input type="number" class="form-control" name="" v-model="item.SIX" ></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.SEVEN"></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.EIGHT"></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.NINE_SCIENCE"></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.NINE_ARTS"></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.NINE_COMMERCE"></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.TEN_SCIENCE"></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.TEN_ARTS"></td>
+                        <td><input type="number" class="form-control" name="" v-model="item.TEN_COMMERCE"></td>
+                       <td><input type="button" class="btn-danger" value="Remove" @click="removeSection(index)"></td>
                     </tr>
-                    <tr>
-                        <td>খ</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>গ</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ঘ</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ঙ</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>চ</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছ</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
+
                     <tr>
                         <td>মোট সেকশন</td>
                         <td><input type="number" class="form-control" name="" id=""></td>
@@ -600,6 +532,7 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>অনুমোদিত সেকশন:</td>
@@ -612,9 +545,11 @@
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
                         <td><input type="number" class="form-control" name="" id=""></td>
+                        <td></td>
                     </tr>
                     </tbody>
                 </table>
+                <input type="button" class="btn-warning" value="Add section" @click="addSection()">
             </div>
         </div>
 
@@ -2657,3 +2592,7 @@
         </div>
     </div>
 @endsection
+{{--Page wise js--}}
+@section('javascript')
+    <script src="{{ asset('js/schoolFirst.js') }}" type="module" defer></script>
+@stop
