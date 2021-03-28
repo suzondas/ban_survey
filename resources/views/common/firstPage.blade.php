@@ -238,8 +238,9 @@
                         </td>
 
                         <td>
-                            <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
+                            <label>১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
                             <div class="input-group date">
+                                <input type="date" v-model="data.establish_date">
                             </div>
                         </td>
                         <td>
