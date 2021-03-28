@@ -1,3 +1,4 @@
+
 const app = new Vue({
     el: '#firstPage',
     data() {
@@ -7,7 +8,7 @@ const app = new Vue({
     },
     mounted() {
         var self = this;
-        axios.get('http://127.0.0.1:8000/firstPage/' + eiin)
+        axios.get('http://127.0.0.1:8000/firstPage/' + inst_id)
             .then(function (response) {
                 self.data = response.data
             })
@@ -16,6 +17,9 @@ const app = new Vue({
             });
     },
     methods: {
+        test:function(v){
+            console.log(v);
+        },
         levelName: function (levelId) {
             var self = this;
             // console.log(self.data);return;
@@ -37,3 +41,5 @@ const app = new Vue({
         }
     }
 });
+
+

@@ -238,9 +238,9 @@
                         </td>
 
                         <td>
-                            <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
+                            <label>১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
                             <div class="input-group date">
-                                <input type="date" value="2020-09-22">
+                                <input type="date" v-model="data.establish_date">
                             </div>
                         </td>
                         <td>
@@ -434,13 +434,13 @@
                                         <option value="3">প্রযোজ্য নয়</option>
                                     </select></td>
                                 <td>
-                                    <input type="text" v-model="item.permitted_date"/>
+                                    <datepicker type="text" v-model="item.permitted_date"></datepicker>
                                 </td>
                                 <td>
-                                    <input type="text" v-model="item.recognition_date">
+                                    <datepicker type="text" v-model="item.recognition_date"></datepicker>
                                 </td>
                                 <td>
-                                    <input type="text" v-model="item.recognition_expire_date">
+                                    <datepicker type="text" v-model="item.recognition_expire_date"></datepicker>
                                 </td>
                             </tr>
                             </tbody>
