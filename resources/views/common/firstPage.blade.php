@@ -240,7 +240,7 @@
                         <td>
                             <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
                             <div class="input-group date">
-                                <input type="text" v-model="data.establish_date"></i></span>
+                                <input type="date" value="2020-09-22">
                             </div>
                         </td>
                         <td>
