@@ -1,23 +1,26 @@
-
 const app = new Vue({
     el: '#firstPage',
     data() {
         return {
-            data: null
+            data: null,
+            dataLoaded:false,
+            dataLoadingError:false
         }
     },
     mounted() {
         var self = this;
         axios.get('http://127.0.0.1:8000/firstPage/' + inst_id)
             .then(function (response) {
-                self.data = response.data
+                self.data = response.data;
+                self.dataLoaded = true;
             })
             .catch(function (error) {
                 console.log(error)
+                self.dataLoadingError = true;
             });
     },
     methods: {
-        test:function(v){
+        test: function (v) {
             console.log(v);
         },
         levelName: function (levelId) {
