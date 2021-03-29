@@ -23,7 +23,6 @@ const app = new Vue({
     methods:
         {
             addSection() {
-
                 this.data.secWise_student_summary.push(
                     {
                         "id": '',
@@ -39,19 +38,9 @@ const app = new Vue({
                     }
                 )
             },
-
             removeSection: function(index) {
                 console.log("Removing", index);
                 this.data.secWise_student_summary.splice(index, 1);
-            },
-            className: function (classId) {
-                var self = this;
-                // console.log(self.data);return;
-                for (var i = 0; i < self.data.Students_summary.length; i++) {
-                    if (self.data.Students_summary[i].class_id == classId) {
-                        return self.data.Students_summary[i].class_name_bangla;
-                    }
-                }
             }
         }
 
