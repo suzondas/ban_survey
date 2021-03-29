@@ -1,6 +1,8 @@
 @extends('components.template')
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid" id="schoolSecondPage">
+        <div v-if="dataLoaded">
+
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox col-12">
             <div class="input-group contentHeader">
@@ -24,8 +26,8 @@
                     <tr>
                         <th colspan="5">ছাত্র</th>
                         <th colspan="5">ছাত্রী</th>
-                        <th rowspan="2">মোট</th>
-                        <th rowspan="2">ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
                     </tr>
                     <tr>
                         <th>মোট</th>
@@ -42,11 +44,14 @@
                         <th>৩-৩.৯৯</th>
                         <th>২-২.৯৯</th>
                         <th>২ এর নিচে</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td colspan="2">জেএসসি (২০২০)</td>
+                        <td>জেএসসি (২০২০)</td>
+                        <td></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
@@ -64,7 +69,7 @@
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                     </tr>
-                    <tr>
+                    <tr >
                         <td rowspan="3">এসএসসি (২০২০)</td>
                         <td>মানবিক</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
@@ -103,7 +108,7 @@
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                     </tr>
-                    <tr>
+                    <tr >
                         <td>ব্যবসায় শিক্ষা</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
@@ -122,7 +127,8 @@
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                     </tr>
-                    <tr>
+
+                    <tr >
                         <td colspan="2">এসএসসি ভোক (২০২০)</td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
                         <td><input type="number" class="form-control" name="" id="" style="width: 40px"></td>
@@ -1306,4 +1312,16 @@
             </div>
         </div>
     </div>
+        <div v-if="!dataLoaded">
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
+        </div>
+    </div>
+
 @endsection
+{{--Page wise js--}}
+@section('javascript')
+    <script src="{{ asset('js/schoolSecondPage.js') }}" type="module" defer></script>
+@stop
