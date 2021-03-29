@@ -2,7 +2,9 @@ const app = new Vue({
     el: '#secondPage',
     data() {
         return {
-            data:null
+            data:null,
+            dataLoaded:false,
+            dataLoadingError:false
         }
     },
     mounted() {
@@ -10,10 +12,12 @@ const app = new Vue({
         axios.get('http://127.0.0.1:8000/secondPage/'+inst_id)
             .then(function (response) {
                 self.data=response.data
-                console.log(self.data)
+                self.dataLoaded = true;
+
             })
             .catch(function (error) {
                 console.log(error)
+                self.dataLoadingError = true;
             });
     },
     methods:
