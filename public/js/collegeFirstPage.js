@@ -1,5 +1,5 @@
 const app = new Vue({
-    el: '#schoolFirst',
+    el: '#collegeFirstPage',
     data() {
         return {
             data:null,
@@ -44,16 +44,15 @@ const app = new Vue({
                 console.log("Removing", index);
                 this.data.secWise_student_summary.splice(index, 1);
             },
-            levelName: function (levelId) {
+            className: function (classId) {
                 var self = this;
                 // console.log(self.data);return;
-
-                for (var i = 0; i < self.data.eduLevel.length; i++) {
-                    if (self.data.eduLevel[i].education_level_id == levelId) {
-                        return self.data.eduLevel[i].education_level_bangla_name;
+                for (var i = 0; i < self.data.Students_summary.length; i++) {
+                    if (self.data.Students_summary[i].class_id == classId) {
+                        return self.data.Students_summary[i].class_name_bangla;
                     }
                 }
-            },
+            }
         }
 
 });
