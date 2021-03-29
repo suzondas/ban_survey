@@ -1,28 +1,30 @@
 const app = new Vue({
-    el: '#collegeFirstPage',
+    el: '#SnCFirstPage',
     data() {
         return {
             data:null,
             dataLoaded:false,
+            dataLoadingError:false,
             banglaBorno:['ক','খ','গ','ঘ','ঙ','চ','ছ','জ','ঝ','ঞ']
         }
     },
     mounted() {
         var self=this
-        axios.get('http://127.0.0.1:8000/collegeFirstPage/'+inst_id)
+        axios.get('http://127.0.0.1:8000/SnCFirstPage/'+inst_id)
             .then(function (response) {
                 self.data=response.data
                 self.dataLoaded=true
-                console.log(self.data)
             })
             .catch(function (error) {
                 console.log(error)
+                self.dataLoadingError = true;
+
             });
     },
-
     methods:
         {
             addSection() {
+
                 this.data.secWise_student_summary.push(
                     {
                         "id": '',
@@ -38,10 +40,10 @@ const app = new Vue({
                     }
                 )
             },
+
             removeSection: function(index) {
                 console.log("Removing", index);
                 this.data.secWise_student_summary.splice(index, 1);
             }
         }
-
 });

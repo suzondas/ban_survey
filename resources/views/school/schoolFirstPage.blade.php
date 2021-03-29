@@ -1,6 +1,6 @@
 @extends('components.template')
 @section('content')
-    <div class="container-fluid" id="schoolFirst">
+    <div class="container-fluid" id="schoolFirstPage">
         <div v-if="dataLoaded">
             <h3 class="text-center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
             <div class="contentBox col-8">
@@ -615,165 +615,160 @@
 
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
+                        <tbody v-for="(item,index) in data.Categorywise_student_summary">
+                        <tr v-if="item.category_id==='01'">
                             <td>১</td>
                             <td>কর্মজীবী শিক্ষার্থী</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='02'">
                             <td>২</td>
                             <td>ভূমিহীন অভিভাবকের সন্তান</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='03'">
                             <td>৩</td>
                             <td>মুক্তিযোদ্ধা পোষ্য/ নাতি-নাতনি</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='04'">
                             <td>৪</td>
                             <td>ক্ষুদ্রনৃ-গোষ্ঠী শিক্ষার্থী</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='05'">
                             <td>৫</td>
                             <td>অনাথ/এতিম শিক্ষার্থী</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='06'">
                             <td>৬</td>
                             <td>বিশেষ চাহিদা সম্পন্ন শিক্কার্থী</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td>ধর্মভিত্তিক বিভাজন</td>
-
-                        </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='07'">
                             <td></td>
                             <td>মুসলিম-৭</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='08'">
                             <td></td>
                             <td>হিন্দু-৮</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='09'">
                             <td></td>
                             <td>খ্রিষ্টান-৯</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='10'">
                             <td></td>
                             <td>বৌদ্ধ-১০</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.category_id==='11'">
                             <td></td>
                             <td>অন্যান্য-১১</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.six_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.seven_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.nine_female" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total" style="width: 60px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_female" style="width: 60px"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -792,18 +787,20 @@
                     <table class="table table-bordered table-striped">
                         <tr>
                             <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
-                                <select class="">
-                                    <option>হ্যাঁ-১</option>
-                                    <option>না-২</option>
+                                <select class="" v-model="data.Institutes_special_student[0].special_std_yn">
+                                    <option value=null>select</option>
+                                    <option value="1">হ্যাঁ-১</option>
+                                    <option value="2">না-২</option>
                                 </select></td>
-                            <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
-                                <input type="checkbox">&nbsp; অডিও-১ &nbsp;
-                                <input type="checkbox">&nbsp; ব্রেইল-২ &nbsp;
-                                <input type="checkbox"> &nbsp;সাইন ভাষা-৩ &nbsp;
-                                <input type="checkbox"> &nbsp;অন্যান্য-৪
+                            <td>২.২.১ উত্তর হ্যাঁ হলে তাদের জন্য সুবিধাসমূহ কী কী ?<br>
+                                <input type="checkbox" v-model="data.Institutes_special_student[0].disable_facility_audio">&nbsp; অডিও-১
+                                <input type="checkbox" v-model="data.Institutes_special_student[0].disable_facility_braille">&nbsp; ব্রেইল-২ &nbsp;
+                                <input type="checkbox" v-model="data.Institutes_special_student[0].disable_facility_signlan"> &nbsp;সাইন ভাষা-৩ &nbsp;
+                                <input type="checkbox" v-model="data.Institutes_special_student[0].disable_facility_others"> &nbsp;অন্যান্য-৪
                             </td>
                             <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
-                                <select class="">
+                                <select class="" v-model="data.Institutes_special_student[0].ramp_access_yn">
+                                    <option value=null>select</option>
                                     <option>হ্যাঁ-১</option>
                                     <option>না-২</option>
                                 </select></td>
@@ -836,204 +833,202 @@
                             <th>ছাত্রী</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
+                        <tbody v-for="(item,index) in data.Categorywise_disable">
+                        <tr v-if="item.disable_type==='01'">
                             <td>১</td>
                             <td>অটিস্টিক</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.disable_type==='02'">
                             <td>২</td>
                             <td>শারীরিক প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.disable_type==='03'">
                             <td>৩</td>
                             <td>দীর্ঘস্থায়ী মানসিক অসুস্থতাজনিত প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.disable_type==='04'">
                             <td>৪</td>
                             <td>দৃষ্টি প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.disable_type==='05'">
                             <td>৫</td>
                             <td>বাক প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.disable_type==='06'">
                             <td>৬</td>
                             <td>বুদ্ধি প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.disable_type==='07'">
                             <td>৭</td>
                             <td>শ্রবণ প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-
-                        <tr>
+                        <tr v-if="item.disable_type==='08'">
                             <td>৮</td>
                             <td>শ্রবণ-দৃষ্টি প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-                        <tr>
+                        <tr v-if="item.disable_type==='09'">
                             <td>৯</td>
                             <td>সেরিব্রালপালসি</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-
-                        <tr>
+                        <tr v-if="item.disable_type==='10'">
                             <td>১০</td>
                             <td>বহুমাত্রিক প্রতিবন্ধিতা</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-
-                        <tr>
+                        <tr v-if="item.disable_type==='11'">
                             <td>১১</td>
                             <td>ডাউন সিনড্রম</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-
-                        <tr>
+                        <tr v-if="item.disable_type==='12'">
                             <td>১২</td>
                             <td>অন্যান্য</td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                            <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.total_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.female_teacher" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.six_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.seven_girls" style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.eight_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name=""  v-model="item.nine_girls"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_total"  style="width: 50px"></td>
+                            <td><input type="number" class="form-control" name="" v-model="item.ten_girls"  style="width: 50px"></td>
                         </tr>
-
+                        </tbody>
+                    </table>
+                    <table class="table">
                         <tr>
                             <td></td>
                             <td>মোট</td>
@@ -1067,8 +1062,8 @@
                             <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
                             <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
                         </tr>
-                        </tbody>
                     </table>
+
                 </div>
             </div>
 
@@ -2631,5 +2626,5 @@
 @endsection
 {{--Page wise js--}}
 @section('javascript')
-    <script src="{{ asset('js/schoolFirst.js') }}" type="module" defer></script>
+    <script src="{{ asset('js/schoolFirstPage.js') }}" type="module" defer></script>
 @stop
