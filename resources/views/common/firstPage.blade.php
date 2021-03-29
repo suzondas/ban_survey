@@ -252,7 +252,6 @@
                                     </div>
                                 </div>
                             </td>
-
                             <td>
                                 <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
                                 <div class="input-group date">
@@ -269,7 +268,6 @@
                             </td>
                         </tr>
                     </table>
-                </div>
             </div>
 
             <div class="contentBox">
