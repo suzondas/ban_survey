@@ -1,6 +1,6 @@
 @extends('components.template')
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid" id="SnCSecondPage">
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox">
             <div class="input-group contentHeader">

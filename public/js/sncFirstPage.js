@@ -3,6 +3,8 @@ const app = new Vue({
     data() {
         return {
             data:null,
+            dataLoaded:false,
+            dataLoadingError:false,
             banglaBorno:['ক','খ','গ','ঘ','ঙ','চ','ছ','জ','ঝ','ঞ']
         }
     },
@@ -12,10 +14,11 @@ const app = new Vue({
             .then(function (response) {
                 self.data=response.data
                 self.dataLoaded=true
-                console.log(self.data)
             })
             .catch(function (error) {
                 console.log(error)
+                self.dataLoadingError = true;
+
             });
     },
     methods:
