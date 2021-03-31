@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +22,6 @@ Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->
 /*Dynamic Routing*/
 Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
-        return view("{$Controller}.{$action}");
+        return view("{$Controller}.{$action}")->with('inst_id',Auth::user()->institute_id);
 })
  ->middleware('login.check');

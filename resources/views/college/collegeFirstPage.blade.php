@@ -1,6 +1,11 @@
-@extends('components.template')
+@extends('components.ngTemplate')
 @section('content')
-    <div class="container-fluid" id="collegeFirstPage">
+    <style>
+        .w-50 {
+            width: 40px !important;
+        }
+    </style>
+    <div class="container-fluid" data-ng-app="collegeFirstPage" ng-controller="myCtrl">
         <h3 align="center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox col-8 ">
             <div class="input-group contentHeader">
@@ -29,22 +34,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tr>
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].eleven_twelve_total"></td>--}}
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].eleven_twelve_girl"></td>--}}
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].bachelor_pass_total"></td>--}}
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].bachelor_pass_girl"></td>--}}
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].bachelor_honors_total"></td>--}}
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].bachelor_honors_girl"></td>--}}
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].masters_total"></td>--}}
-                        {{--<td><input type="number" class="form-control w-50" name=""--}}
-                        {{--v-model="data.Student_summary_total[0].masters_girl"></td>--}}
+
                     </tr>
                     </tbody>
                 </table>
@@ -61,9 +51,9 @@
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
+                <table class="table table-bordered text-center">
                     <thead>
-                    <tr class="custom-table-header">
+                    <tr>
                         <td rowspan="2">স্তর</td>
                         <td rowspan="2">শ্রেণি</td>
                         <td rowspan="2" style="width:120px">বিভাগ</td>
@@ -76,41 +66,57 @@
                         <td rowspan="2">ট্রান্সফার ইন</td>
                         <td rowspan="2">ট্রান্সফার আউট</td>
                     </tr>
-                    <tr class="custom-table-header">
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tr v-for="item in data.institutes_recognition">
-                        <td :rowspan="item.classes.length">@{{item.education_level.education_level_bangla_name }}</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-
-                    </thead>
-                    <tbody>
                     <tr>
-
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>ছাত্র</td>
+                        <td>ছাত্রী</td>
+                        <td>ছাত্র</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                    </tr>
+                    </thead>
+                    <tbody ng-repeat="item in data.institutes_recognition">
+                    <tr ng-repeat-start="i in item.classes" ng-init="index = $index">
+                        <td ng-if="index==0" rowspan="@{{item.classes.length*item.groups.length }}">@{{
+                            item.education_level.education_level_bangla_name }}
+                        </td>
+                        <td rowspan="@{{item.groups.length}}">@{{i.class_name}}</td>
+                        <td>@{{item.groups[0].group_name}}</td>
+                        <td><input class="w-50" ng-init="idx = findIndex(item.groups[0].group_id, i.class_id)"
+                                   type="text" ng-model="stuentsSummery[idx].seat"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_student"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_student"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_stipend"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_stipend"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_scholarship"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_scholarship"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_eng"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_eng"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_present"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_present"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_in"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_out"/></td>
+                    </tr>
+                    <tr ng-repeat-end ng-repeat="value in item.groups.slice(1)">
+                        <td>@{{value.group_name}}</td>
+                        <td><input class="w-50" ng-init="idx = findIndex(value.group_id, i.class_id)" type="text"
+                                   ng-model="stuentsSummery[idx].seat"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_student"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_student"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_stipend"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_stipend"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_scholarship"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_scholarship"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_eng"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_eng"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_present"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_present"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_in"/></td>
+                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_out"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -134,36 +140,39 @@
                         <th colspan="2">১২শ শ্রেণি</th>
                         <th colspan="2">স্নাতক (পাশ)</th>
                         <th colspan="2">স্নাতক (সম্মান)</th>
+                        <th colspan="2">স্নাতকোত্তর</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
                     <tr>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryRepeater.eleven_total">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.eleven_female"></td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryRepeater.twelve_total">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.twelve_female"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.masters_total"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.masters_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -177,36 +186,40 @@
                         <th colspan="2">১২শ শ্রেণি</th>
                         <th colspan="2">স্নাতক (পাশ)</th>
                         <th colspan="2">স্নাতক (সম্মান)</th>
+                        <th colspan="2">স্নাতকোত্তর</th>
+
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
-                        <td>ছাত্র</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
                     <tr>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.eleven_total">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.eleven_female">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.twelve_total">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.twelve_female">
+                        </td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.masters_total">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryDropout.masters_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1578,11 +1591,13 @@
                         <td rowspan="2">ক্র. নং</td>
                         <td rowspan="2">ক্ষুদ্র নৃ-গোষ্ঠীর ধরন</td>
                         <td colspan="2">শিক্ষক</td>
-                        <td colspan="2">৬ষ্ঠ শ্রেণি</td>
-                        <td colspan="2">৭ম শ্রেণি</td>
-                        <td colspan="2">৮ম শ্রেণি</td>
-                        <td colspan="2">৯ম শ্রেণি</td>
-                        <td colspan="2">১০ম শ্রেণি</td>
+                        <td colspan="2">একাদশ শ্রেণি</td>
+                        <td colspan="2">দ্বাদশ শ্রেণি</td>
+                        <td colspan="2">ডিগ্রি ১ম বর্ষ</td>
+                        <td colspan="2">ডিগ্রি ২য় বর্ষ</td>
+                        <td colspan="2">ডিগ্রি ৩য় বর্ষ</td>
+                        <td colspan="2">স্নাতক (সম্মান)</td>
+                        <td colspan="2">স্নাতকোত্তর</td>
                     </tr>
                     <tr>
                         <td>মোট</td>
@@ -1597,23 +1612,31 @@
                         <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>১</td>
-                        <td>সাঁওতাল</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    <tr ng-repeat="item in data.ethnicityData">
+                        <td ng-bind="$index+1"></td>
+                     <td ng-bind="findUpajaitName(item.upajati_id)"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree1st_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree1st_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree2nd_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree2nd_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree3rd_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree3rd_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.honors_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.honors_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_girls"/> </td>
                     </tr>
                     </tbody>
                 </table>
@@ -1633,133 +1656,55 @@
                 <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
-                        <th colspan="2" style="width:250px">শ্রেণি</th>
-                        <th>১৫ বছরের নীচে</th>
-                        <th>১৬ বছর</th>
-                        <th>১৭ বছর</th>
-                        <th>১৮ বছর</th>
-                        <th>১৯ বছর</th>
-                        <th>২০ বছরের উপরে</th>
-                        <th>২১ বছরের উপরে</th>
+                        <th>শ্রেণি</th>
+                        <th colspan="2">১৫ বছরের নীচে</th>
+                        <th colspan="2">১৬ বছর</th>
+                        <th colspan="2">১৭ বছর</th>
+                        <th colspan="2">১৮ বছর</th>
+                        <th colspan="2">১৯ বছর</th>
+                        <th colspan="2">২০ বছরের উপরে</th>
+                        <th colspan="2">২১ বছরের উপরে</th>
+                        <th colspan="2">মোট</th>
+                    </tr>
+                    <tr>
+                        <th></th>
                         <th>মোট</th>
+                        <th>ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
+                        <th>মোট</th>
+                        <th>ছাত্রী</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td rowspan="2">একাদশ</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">দ্বাদশ</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">স্নাতক (পাস)</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">স্নাতক (সম্মান)</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">স্নাতকোত্তর</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.ageWiseStudentSummery">
+                        <td ng-bind="findClassName(item.class_id)"></td>
+                        <td><input class="w-50" ng-model="item.under_fifteen_total"/> </td>
+                        <td><input class="w-50"  ng-model="item.under_fifteen_female"/> </td>
+                        <td><input class="w-50" ng-model="item.sixteen_total"/> </td>
+                        <td><input class="w-50" ng-model="item.sixteen_female"/> </td>
+                        <td><input class="w-50" ng-model="item.seventeen_total"/> </td>
+                        <td><input class="w-50" ng-model="item.seventeen_female"/> </td>
+                        <td><input class="w-50" ng-model="item.eighteen_total"/> </td>
+                        <td><input class="w-50" ng-model="item.eighteen_female"/> </td>
+                        <td><input class="w-50" ng-model="item.nineteen_total"/> </td>
+                        <td><input class="w-50" ng-model="item.nineteen_female"/> </td>
+                        <td><input class="w-50" ng-model="item.twenty_total"/> </td>
+                        <td><input class="w-50" ng-model="item.twenty_female"/> </td>
+                        <td><input class="w-50" ng-model="item.upper_twentyone_total"/> </td>
+                        <td><input class="w-50" ng-model="item.upper_twentyone_female"/> </td>
+                        <td><input class="w-50" ng-model="item.total_student"/> </td>
+                        <td><input class="w-50" ng-model="item.female_student"/> </td>
                     </tr>
                     </tbody>
                 </table>
@@ -1787,13 +1732,13 @@
                         <td>স্নাতকোত্তর</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>১</td>
-                        <td>কৃষি</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.guardianOccupation">
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="occupationName(item.occupation_id)"></td>
+                        <td><input type="text" ng-model="item.hsc"/></td>
+                        <td><input type="text" ng-model="item.honours_pass"/></td>
+                        <td><input type="text" ng-model="item.honours_somman"/></td>
+                        <td><input type="text" ng-model="item.masters"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1802,5 +1747,5 @@
     </div>
 @endsection
 @section('javascript')
-    <script src="{{ asset('js/collegeFirstPage.js') }}" type="module" defer></script>
+    <script src="{{ asset('js/collegeFirstPage.js') }}"></script>
 @stop
