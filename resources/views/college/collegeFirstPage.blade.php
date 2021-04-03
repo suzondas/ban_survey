@@ -34,7 +34,30 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tr>
-
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryTotal.eleven_twelve_total">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryTotal.eleven_twelve_girl">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryTotal.bachelor_pass_total">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryTotal.bachelor_pass_girl">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryTotal.bachelor_honors_total">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                        ng-model="data.studentSummaryTotal.bachelor_honors_girl">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryTotal.masters_total">
+                        </td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryTotal.masters_girl">
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -54,7 +77,7 @@
                 <table class="table table-bordered text-center">
                     <thead>
                     <tr>
-                        <td rowspan="2">স্তর</td>
+                        {{--<td rowspan="2">স্তর</td>--}}
                         <td rowspan="2">শ্রেণি</td>
                         <td rowspan="2" style="width:120px">বিভাগ</td>
                         <td rowspan="2">আসন সংখ্যা</td>
@@ -79,15 +102,11 @@
                         <td>ছাত্রী</td>
                     </tr>
                     </thead>
-                    <tbody ng-repeat="item in data.institutes_recognition">
-                    <tr ng-repeat-start="i in item.classes" ng-init="index = $index">
-                        <td ng-if="index==0" rowspan="@{{item.classes.length*item.groups.length }}">@{{
-                            item.education_level.education_level_bangla_name }}
-                        </td>
-                        <td rowspan="@{{item.groups.length}}">@{{i.class_name}}</td>
-                        <td>@{{item.groups[0].group_name}}</td>
-                        <td><input class="w-50" ng-init="idx = findIndex(item.groups[0].group_id, i.class_id)"
-                                   type="text" ng-model="stuentsSummery[idx].seat"/></td>
+                    <tbody ng-repeat="item in data.classes">
+                    <td rowspan="@{{item.groups.length+1}}">@{{item.class_name_bangla}}</td>
+                    <tr ng-repeat="i in item.groups">
+                        <td>@{{i.group_name_bn}}</td>
+                        <td><input class="w-50" type="text" idx = findIndex(i.group_id,item.class_id) ng-model="stuentsSummery[idx].seat"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_student"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_student"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_stipend"/></td>
@@ -101,23 +120,7 @@
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_in"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_out"/></td>
                     </tr>
-                    <tr ng-repeat-end ng-repeat="value in item.groups.slice(1)">
-                        <td>@{{value.group_name}}</td>
-                        <td><input class="w-50" ng-init="idx = findIndex(value.group_id, i.class_id)" type="text"
-                                   ng-model="stuentsSummery[idx].seat"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_student"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_student"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_stipend"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_stipend"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_scholarship"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_scholarship"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_eng"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_eng"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_present"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_present"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_in"/></td>
-                        <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_out"/></td>
-                    </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -259,63 +262,21 @@
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
-                    <tr>
-                        <td>১ম বর্ষ (১১শ)</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২য় বর্ষ (১২শ)</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
+                    <tr ng-repeat="item in data.hscVocStudent">
+                        <td ng-bind="hscVocName(item.class_id)"></td>
+                        <td><input type="number" class="w-50" ng-model="item.total_student"></td>
+                        <td><input type="number" class="w-50" ng-model="item.female_student"></td>
+                        <td><input type="number" class="w-50"ng-model="item.male_stipend"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_stipend"></td>
+                        <td><input type="number" class="w-50"ng-model="item.male_scholarship"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_scholarship"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_present"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_present"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_rep"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_rep"></td>
+                        <td><input type="number" class="w-50"ng-model="item.transfer_in"></td>
+                        <td><input type="number" class="w-50"ng-model="item.transfer_out"></td>
+                        <td><input type="number" class="w-50"ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -355,63 +316,21 @@
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
-                    <tr>
-                        <td>১ম বর্ষ (১১শ)</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২য় বর্ষ (১২শ)</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
+                    <tr ng-repeat="item in data.hscBmStudent">
+                        <td ng-bind="hscBmName(item.class_id)"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_student"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_student"></td>
+                        <td><input type="number" class="w-50"ng-model="item.male_stipend"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_stipend"></td>
+                        <td><input type="number" class="w-50"ng-model="item.male_scholarship"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_scholarship"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_present"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_present"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_rep"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_rep"></td>
+                        <td><input type="number" class="w-50"ng-model="item.transfer_in"></td>
+                        <td><input type="number" class="w-50"ng-model="item.transfer_out"></td>
+                        <td><input type="number" class="w-50"ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -451,237 +370,21 @@
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
-                    <tr>
-                        <td>১ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২য় পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৩য় পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৪র্থ পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৫ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৬ষ্ঠ পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৭ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৮ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
+                    <tr ng-repeat="item in data.hscDiplomaFisheries">
+                        <td ng-bind="dipFName(item.class_id)"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_student"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_student"></td>
+                        <td><input type="number" class="w-50"ng-model="item.male_stipend"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_stipend"></td>
+                        <td><input type="number" class="w-50"ng-model="item.male_scholarship"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_scholarship"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_present"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_present"></td>
+                        <td><input type="number" class="w-50"ng-model="item.total_rep"></td>
+                        <td><input type="number" class="w-50"ng-model="item.female_rep"></td>
+                        <td><input type="number" class="w-50"ng-model="item.transfer_in"></td>
+                        <td><input type="number" class="w-50"ng-model="item.transfer_out"></td>
+                        <td><input type="number" class="w-50"ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -721,237 +424,21 @@
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
-                    <tr>
-                        <td>১ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২য় পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৩য় পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৪র্থ পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৫ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৬ষ্ঠ পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৭ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৮ম পর্ব</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control w-50" name=""
-                                   id=""></td>
+                    <tr ng-repeat="item in data.hscDiplomaAgriculture">
+                        <td ng-bind="dipAgName(item.class_id)"></td>
+                        <td><input type="number" class="w-50" ng-model="item.total_student"></td>
+                        <td><input type="number" class="w-50" ng-model="item.female_student"></td>
+                        <td><input type="number" class="w-50" ng-model="item.male_stipend"></td>
+                        <td><input type="number" class="w-50" ng-model="item.female_stipend"></td>
+                        <td><input type="number" class="w-50" ng-model="item.male_scholarship"></td>
+                        <td><input type="number" class="w-50" ng-model="item.female_scholarship"></td>
+                        <td><input type="number" class="w-50" ng-model="item.total_present"></td>
+                        <td><input type="number" class="w-50" ng-model="item.female_present"></td>
+                        <td><input type="number" class="w-50" ng-model="item.total_rep"></td>
+                        <td><input type="number" class="w-50" ng-model="item.female_rep"></td>
+                        <td><input type="number" class="w-50" ng-model="item.transfer_in"></td>
+                        <td><input type="number" class="w-50" ng-model="item.transfer_out"></td>
+                        <td><input type="number" class="w-50" ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -973,7 +460,9 @@
                         <td rowspan="2" style="width:150px">ক্যাটাগরি(শিক্ষার্থী)</td>
                         <td colspan="2">১১শ শ্রেণি</td>
                         <td colspan="2">১২শ শ্রেণি</td>
-                        <td colspan="2">স্নাতক (পাস)</td>
+                        <td colspan="2">ডিগ্রি ১ম বর্ষ</td>
+                        <td colspan="2">ডিগ্রি ২য় বর্ষ</td>
+                        <td colspan="2">ডিগ্রি ৩য় বর্ষ</td>
                         <td colspan="2">স্নাতক (সম্মান)</td>
                         <td colspan="2">স্নাতকোত্তর</td>
                     </tr>
@@ -988,294 +477,28 @@
                         <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
                     </tr>
-                    <tr>
-                        <td>১</td>
-                        <td>কর্মজীবী শিক্ষার্থী</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২</td>
-                        <td>ভূমিহীন অভিভাবকের সন্তান</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৩</td>
-                        <td>মুক্তিযোদ্ধ পোষ্য/নাতি-নাতনি</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৪</td>
-                        <td>ক্ষুদ্র নৃ-গোষ্ঠী শিক্ষার্থী</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৫</td>
-                        <td>অনাথ/এতিম শিক্ষার্থী</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td>৬</td>
-                        <td>প্রতিবন্ধি শিক্ষার্থী</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>ধর্মভিত্তিক বিভাজন</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>মুসলিম-৭</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>হিন্দু-৮</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>খ্রিষ্টান-৯</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>বৌদ্ধ-১০</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>অন্যান্য-১১</td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
-                        <td><input type="number" class="form-control" name=""
-                                   id=""></td>
+                    <tr ng-repeat="item in data.categoryWiseStudent">
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="catStdName(item.category_id)"></td>
+                        <td><input type="number" class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="number" class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="number" class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="number" class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="number" class="w-50" ng-model="item.degree1st_total"></td>
+                        <td><input type="number" class="w-50" ng-model="item.degree1st_female"></td>
+                        <td><input type="number" class="w-50" ng-model="item.degree2nd_total"></td>
+                        <td><input type="number" class="w-50" ng-model="item.degree2nd_female"></td>
+                        <td><input type="number" class="w-50" ng-model="item.degree3rd_total"></td>
+                        <td><input type="number" class="w-50" ng-model="item.degree3rd_female"></td>
+                        <td><input type="number" class="w-50" ng-model="item.honors_total"></td>
+                        <td><input type="number" class="w-50" ng-model="item.honors_female"></td>
+                        <td><input type="number" class="w-50" ng-model="item.masters_total"></td>
+                        <td><input type="number" class="w-50" ng-model="item.masters_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1295,18 +518,18 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
-                            <select class="">
+                            <select class="" ng-model="data.instituteSpecialStudents.special_std_yn">
                                 <option>হ্যাঁ-১</option>
                                 <option>না-২</option>
                             </select></td>
-                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
-                            <input type="checkbox">&nbsp; অডিও-১ &nbsp;
-                            <input type="checkbox">&nbsp; ব্রেইল-২ &nbsp;
-                            <input type="checkbox"> &nbsp;সাইন ভাষা-৩ &nbsp;
-                            <input type="checkbox"> &nbsp;অন্যান্য-৪
+                        <td>২.২.২ উত্তর হ্যাঁ হলে তাদের জন্য সুবিধাসমূহ কি কি?<br>
+                            <input type="checkbox" ng-model="data.instituteSpecialStudents.disable_facility_audio">&nbsp; অডিও-১ &nbsp;
+                            <input type="checkbox" ng-model="data.instituteSpecialStudents.disable_facility_braille">&nbsp; ব্রেইল-২ &nbsp;
+                            <input type="checkbox" ng-model="data.instituteSpecialStudents.disable_facility_signlan"> &nbsp;সাইন ভাষা-৩ &nbsp;
+                            <input type="checkbox" ng-model="data.instituteSpecialStudents.disable_facility_others"> অন্যান্য-৪
                         </td>
                         <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
-                            <select class="">
+                            <select class="" ng-model="data.instituteSpecialStudents.ramp_access_yn">
                                 <option>হ্যাঁ-১</option>
                                 <option>না-২</option>
                             </select></td>
@@ -1340,235 +563,21 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>১</td>
-                        <td>অটিস্টিক</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr>
-                        <td>২</td>
-                        <td>শারীরিক প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr>
-                        <td>৩</td>
-                        <td>দীর্ঘস্থায়ী মানসিক অসুস্থতাজনিত প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr>
-                        <td>৪</td>
-                        <td>দৃষ্টি প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr>
-                        <td>৫</td>
-                        <td>বাক প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr>
-                        <td>৬</td>
-                        <td>বুদ্ধি প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr>
-                        <td>৭</td>
-                        <td>শ্রবণ প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-
-                    <tr>
-                        <td>৮</td>
-                        <td>শ্রবণ-দৃষ্টি প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr>
-                        <td>৯</td>
-                        <td>সেরিব্রালপালসি</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-
-                    <tr>
-                        <td>১০</td>
-                        <td>বহুমাত্রিক প্রতিবন্ধিতা</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-
-                    <tr>
-                        <td>১১</td>
-                        <td>ডাউন সিনড্রম</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-
-                    <tr>
-                        <td>১২</td>
-                        <td>অন্যান্য</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td></td>
-                        <td>তৃতীয় লিঙ্গ</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                    <tr ng-repeat="item in data.categoryWiseDisableStudent">
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="catDisStdName(item.disable_type)"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1618,7 +627,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.ethnicityData">
+                    <tr ng-repeat="item in data.categoryWiseUpajati">
                         <td ng-bind="$index+1"></td>
                      <td ng-bind="findUpajaitName(item.upajati_id)"></td>
                         <td><input type="text" class="w-50" ng-model="item.total_teacher"/> </td>
@@ -1687,7 +696,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="item in data.ageWiseStudentSummery">
+                    <tr ng-repeat="item in data.ageWiseStudent">
                         <td ng-bind="findClassName(item.class_id)"></td>
                         <td><input class="w-50" ng-model="item.under_fifteen_total"/> </td>
                         <td><input class="w-50"  ng-model="item.under_fifteen_female"/> </td>

@@ -28,7 +28,7 @@ var app = angular.module('collegeFirstPage', []);
                 var occupationName = null;
                 occupationsList.forEach(function (currentValue, index, arr) {
                     if(currentValue.occupation_id == id){
-                        return occupationName = currentValue.occupation_bangla_name;
+                        return occupationName = currentValue.details_bn;
                     }
                 });
                 return occupationName;
@@ -37,14 +37,12 @@ var app = angular.module('collegeFirstPage', []);
 
             /*FInding class name*/
             $scope.findClassName = function (id) {
-                var classList = $scope.data.institutes_recognition;
+                var classList = $scope.data.classes;
                 var clsName = null;
                 classList.forEach(function (currentValue, index) {
-                    currentValue.classes.forEach(function (className, classIndex) {
-                        if(className.class_id == id){
-                            return clsName = className.class_name;
+                        if(currentValue.class_id == id){
+                            return clsName = currentValue.class_name_bangla;
                         }
-                    });
                 });
                 return clsName;
                 console.log(clsName)
@@ -53,17 +51,101 @@ var app = angular.module('collegeFirstPage', []);
 
             /*upajatiName name finding*/
             $scope.findUpajaitName = function (id) {
-                var upajatiList = $scope.data.ethnicityList;
+                var upajatiList = $scope.data.upajatiList;
                 var upajatiName = null;
                 upajatiList.forEach(function (currentValue, index, arr) {
                     if(currentValue.upajati_id == id){
-                        return upajatiName = currentValue.name;
+                        return upajatiName = currentValue.name_bn;
                     }
                 });
                 return upajatiName;
             }
             /*upajatiName name finding*/
 
+            /*FInding hscVocName*/
+            $scope.hscVocName = function (id) {
+                var vocClassList = $scope.data.vocClasses;
+                var vocClsName = null;
+                vocClassList.forEach(function (currentValue, index) {
+                    if(currentValue.class_id == id){
+                        return vocClsName = currentValue.class_name_bangla;
+                    }
+                });
+                return vocClsName;
+                console.log(vocClsName)
+            }
+            /*FInding hscVocName*/
+
+            /*FInding hscBmName*/
+            $scope.hscBmName = function (id) {
+                var bmClassList = $scope.data.bmClasses;
+                var bmClsName = null;
+                bmClassList.forEach(function (currentValue, index) {
+                    if(currentValue.class_id == id){
+                        return bmClsName = currentValue.class_name_bangla;
+                    }
+                });
+                return bmClsName;
+                console.log(bmClsName)
+            }
+            /*FInding hscBmName*/
+
+            /*FInding dipFName*/
+            $scope.dipFName = function (id) {
+                var dipFClassList = $scope.data.diplomaFisheriesClasses;
+                var dipFClsName = null;
+                dipFClassList.forEach(function (currentValue, index) {
+                    if(currentValue.class_id == id){
+                        return dipFClsName = currentValue.class_name_bangla;
+                    }
+                });
+                return dipFClsName;
+                console.log(dipFClsName)
+            }
+            /*FInding dipFName*/
+
+
+            /*FInding dipAgName*/
+            $scope.dipAgName = function (id) {
+                var dipAgClassList = $scope.data.diplomaAgriClasses;
+                var dipAgClsName = null;
+                dipAgClassList.forEach(function (currentValue, index) {
+                    if(currentValue.class_id == id){
+                        return dipAgClsName = currentValue.class_name_bangla;
+                    }
+                });
+                return dipAgClsName;
+                console.log(dipAgClsName)
+            }
+            /*FInding dipAgName*/
+
+            /*FInding catStdName*/
+            $scope.catStdName = function (id) {
+                var catStdList = $scope.data.categoryWiseList;
+                var catStdNm = null;
+                catStdList.forEach(function (currentValue, index) {
+                    if(currentValue.category_id == id){
+                        return catStdNm = currentValue.details_bn;
+                    }
+                });
+                return catStdNm;
+                console.log(catStdNm)
+            }
+            /*FInding catStdName*/
+
+            /*FInding catDisStdName*/
+            $scope.catDisStdName = function (id) {
+                var catDisStdList = $scope.data.disableCategory;
+                var catDisStdNm = null;
+                catDisStdList.forEach(function (currentValue, index) {
+                    if(currentValue.disable_type == id){
+                        return catDisStdNm = currentValue.disability_bn;
+                    }
+                });
+                return catDisStdNm;
+                console.log(catDisStdNm)
+            }
+            /*FInding catDisStdName*/
 
         }, function (error) {
 
