@@ -106,7 +106,7 @@
                     <td rowspan="@{{item.groups.length+1}}">@{{item.class_name_bangla}}</td>
                     <tr ng-repeat="i in item.groups">
                         <td>@{{i.group_name_bn}}</td>
-                        <td><input class="w-50" type="text" idx = findIndex(i.group_id,item.class_id) ng-model="stuentsSummery[idx].seat"/></td>
+                        <td><input class="w-50" type="text" ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="stuentsSummery[idx].seat"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].total_student"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].female_student"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].male_stipend"/></td>
@@ -120,7 +120,6 @@
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_in"/></td>
                         <td><input class="w-50" type="text" ng-model="stuentsSummery[idx].transfer_out"/></td>
                     </tr>
-
                     </tbody>
                 </table>
             </div>
