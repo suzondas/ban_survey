@@ -579,65 +579,65 @@
                     <tbody>
                     <tr>
                         <td>হেড টিচার ট্রেনিং (২১ দিন)</td>
-                        <td colspan="2"><select class="custom-select " name="english_version" style="width: 90px">
+                        <td colspan="2"><select class="custom-select " ng-model="data.teacherInservTr.ht_training_yn" style="width: 90px" >
                                 <option value="">Select</option>
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select></td>
                         <td>সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
                     </tr>
 
                     <tr>
                         <td>হেড টিচার ফলো-আপ ট্রেনিং (৬ দিন)</td>
-                        <td colspan="2"><select class="custom-select " name="english_version" style="width: 90px">
+                        <td colspan="2"><select class="custom-select " ng-model="data.teacherInservTr.ht_fl_training_yn" style="width: 90px">
                                 <option value="">Select</option>
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select></td>
                         <td>সিপিডি-২ ট্রেনিং (৫ দিন)</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd2_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd2_female"></td>
                     </tr>
                     <tr>
                         <td>হেড টিচার প্রি-সার্ভিস ট্রেনিং (৩৫ দিন)</td>
-                        <td colspan="2"><select class="custom-select " name="english_version" style="width: 90px">
+                        <td colspan="2"><select class="custom-select " ng-model="data.teacherInservTr.ht_prserv_training_yn" style="width: 90px">
                                 <option value="">Select</option>
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select></td>
                         <td>ক্লাস্টার ট্রেনিং (১ দিন)</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cluster_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cluster_female"></td>
                     </tr>
                     <tr>
                         <td rowspan="2"></td>
                         <td colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক সংখ্যা</td>
                         <td>এস.বি. এ ট্রেনিং</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.sba_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.sba_female"></td>
                     </tr>
                     <tr>
 
                         <td>মোট</td>
                         <td>মহিলা</td>
                         <td>সৃজনশীল প্রশ্ন সংক্রান্ত ট্রেনিং</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.srizonsil_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.srizonsil_female"></td>
                     </tr>
                     <tr>
                         <td>এসটিসি ট্রেনিং (৩ মাস)</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stc_training_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stc_training_female"></td>
                         <td>অন্যান্য ট্রেনিং</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.other_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.other_female"></td>
                     </tr>
                     <tr>
                         <td>এসটিটি থেকে বি.এড (৯ মাস)</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stt_bed_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stt_bed_female"></td>
                         <td colspan="3" rowspan="2">•প্রধান শিক্ষকগণ হ্যাঁ/না টিক দিবেন <br>
                             •অন্যান্য শিক্ষকগণের সংখ্যা লিখবেন
                         </td>
@@ -645,8 +645,8 @@
                     </tr>
                     <tr>
                         <td>সিপিডি-১ ট্রেনিং (১৪ দিন)</td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="form-control" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_female"></td>
                     </tr>
                     </tbody>
                 </table>
