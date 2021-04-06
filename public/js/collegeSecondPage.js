@@ -50,6 +50,32 @@ var app = angular.module('collegeSecondPage', []);
             };
             /*find idx of board result*/
 
+            /*desigName finding*/
+            $scope.desigName = function (id) {
+                var desigList = $scope.data.desigList;
+                var designationtName = null;
+                desigList.forEach(function (currentValue, index, arr) {
+                    if(currentValue.designation_id == id){
+                        return designationtName = currentValue.designation_name;
+                    }
+                });
+                return designationtName;
+            }
+            /*desigName finding*/
+
+            /*desigVocName finding*/
+            $scope.desigVocName = function (id) {
+                var desigVocList = $scope.data.desigVocList;
+                var designationVocName = null;
+                desigVocList.forEach(function (currentValue, index, arr) {
+                    if(currentValue.designation_id == id){
+                        return designationVocName = currentValue.designation_name;
+                    }
+                });
+                return designationVocName;
+            }
+            /*desigVocName finding*/
+
         }, function (error) {
 
         });

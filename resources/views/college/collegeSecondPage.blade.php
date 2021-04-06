@@ -437,16 +437,16 @@
                         <td>মহিলা</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>অধ্যক্ষ</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.teachStafSum">
+                        <td ng-bind="desigName(item.designation_id)"></td>
+                        <td><input type="text" class="w-50" ng-model="item.teachers_in_service"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_teachers_in_service"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.mpo_teachers"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_mpo_teachers"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.blank_post_no"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.ntrc_teacher"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.parttime_teacher"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.ntrc_blank_post"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -469,13 +469,13 @@
                         <td>মহিলা</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>প্রভাষক</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.teachVocStafSum">
+                        <td ng-bind="desigVocName(item.designation_id)"></td>
+                        <td><input type="text" class="w-50" ng-model="item.teachers_in_service"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_teachers_in_service"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.mpo_teachers"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_mpo_teachers"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.blank_post_no"/></td>
                     </tr>
                     </tbody>
                 </table>
