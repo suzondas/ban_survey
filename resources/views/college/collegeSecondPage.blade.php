@@ -502,60 +502,10 @@
                         <td>মহিলা</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>পিএইচডি</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>এমফিল/এমএস</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>স্নাতকোত্তর (অনার্সসহ)</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>স্নাতকোত্তর (অনার্সছাড়া)</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>কামিল</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>স্নাতক সম্মান (৩ বছর মেয়াদী)</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>স্নাতক সম্মান (৪ বছর মেয়াদী)</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>স্নাতক</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ফাজিল</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>এইচএসসি/ আলিম বা সমমান</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>কৃষি ডিপ্লোমা</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.teachQualiSum">
+                        <td ng-bind="qualiName(item.quli_id)"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -572,25 +522,10 @@
                         <td>মহিলা</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>এম এড</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>বিএড/ডিপ ইন এড</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>বি পি এড</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>বি এজি এড</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.hdTeachSum">
+                        <td ng-bind="hdName(item.higher_degree_id)"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -607,30 +542,10 @@
                         <td>মহিলা</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>ডিপ্লোমা (আইসিটি)</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>সার্টিফিকেট ট্রেনিং</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>হার্ডওয়্যার এন্ড ট্রাবল স্যুটিং</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ডিজিটাল কনটেন্ট ডেভলপমেন্ট ট্রেনিং</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>অন্যান্য</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.hdTrnSum">
+                        <td ng-bind="hdTrName(item.higher_degree_id)"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/></td>
                     </tr>
                     </tbody>
                 </table>

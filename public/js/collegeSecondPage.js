@@ -76,6 +76,45 @@ var app = angular.module('collegeSecondPage', []);
             }
             /*desigVocName finding*/
 
+            /*qualiName finding*/
+            $scope.qualiName = function (id) {
+                var qualiList = $scope.data.qualiList;
+                var qualificationName = null;
+                qualiList.forEach(function (currentValue, index, arr) {
+                    if(currentValue.id == id){
+                        return qualificationName = currentValue.name_bn;
+                    }
+                });
+                return qualificationName;
+            }
+            /*qualiName finding*/
+
+            /*hdName finding*/
+            $scope.hdName = function (id) {
+                var hdList = $scope.data.hdList;
+                var hdTrName = null;
+                hdList.forEach(function (currentValue, index, arr) {
+                    if(currentValue.higher_degree_id == id){
+                        return hdTrName = currentValue.bn_name;
+                    }
+                });
+                return hdTrName;
+            }
+            /*hdName finding*/
+
+            /*hdTrName finding*/
+            $scope.hdTrName = function (id) {
+                var hdTrList = $scope.data.hdTrList;
+                var hdTrEdName = null;
+                hdTrList.forEach(function (currentValue, index, arr) {
+                    if(currentValue.higher_degree_id == id){
+                        return hdTrEdName = currentValue.bn_name;
+                    }
+                });
+                return hdTrEdName;
+            }
+            /*hdTrName finding*/
+
         }, function (error) {
 
         });
