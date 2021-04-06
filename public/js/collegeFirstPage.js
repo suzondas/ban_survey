@@ -8,7 +8,7 @@ var app = angular.module('collegeFirstPage', []);
         }).then(function (response) {
             // console.log(response.data)
             $scope.data = response.data;
-            $scope.stuentsSummery = $scope.data.Students_summary;
+            $scope.stuentsSummery = $scope.data.studentSummery;
             $scope.findIndex = function(groupId, classId){
                 var idx = null;
                 for(var i =0;i<$scope.stuentsSummery.length;i++){

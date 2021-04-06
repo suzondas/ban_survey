@@ -263,19 +263,19 @@
                     </tr>
                     <tr ng-repeat="item in data.hscVocStudent">
                         <td ng-bind="hscVocName(item.class_id)"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_student"></td>
-                        <td><input type="number" class="w-50" ng-model="item.female_student"></td>
-                        <td><input type="number" class="w-50"ng-model="item.male_stipend"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_stipend"></td>
-                        <td><input type="number" class="w-50"ng-model="item.male_scholarship"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_scholarship"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_present"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_present"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_rep"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_rep"></td>
-                        <td><input type="number" class="w-50"ng-model="item.transfer_in"></td>
-                        <td><input type="number" class="w-50"ng-model="item.transfer_out"></td>
-                        <td><input type="number" class="w-50"ng-model="item.nextyr_book_reg"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_student"></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_student"></td>
+                        <td><input type="text" class="w-50"ng-model="item.male_stipend"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_stipend"></td>
+                        <td><input type="text" class="w-50"ng-model="item.male_scholarship"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_scholarship"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_present"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_present"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_rep"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_rep"></td>
+                        <td><input type="text" class="w-50"ng-model="item.transfer_in"></td>
+                        <td><input type="text" class="w-50"ng-model="item.transfer_out"></td>
+                        <td><input type="text" class="w-50"ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -317,19 +317,19 @@
                     </tr>
                     <tr ng-repeat="item in data.hscBmStudent">
                         <td ng-bind="hscBmName(item.class_id)"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_student"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_student"></td>
-                        <td><input type="number" class="w-50"ng-model="item.male_stipend"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_stipend"></td>
-                        <td><input type="number" class="w-50"ng-model="item.male_scholarship"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_scholarship"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_present"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_present"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_rep"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_rep"></td>
-                        <td><input type="number" class="w-50"ng-model="item.transfer_in"></td>
-                        <td><input type="number" class="w-50"ng-model="item.transfer_out"></td>
-                        <td><input type="number" class="w-50"ng-model="item.nextyr_book_reg"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_student"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_student"></td>
+                        <td><input type="text" class="w-50"ng-model="item.male_stipend"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_stipend"></td>
+                        <td><input type="text" class="w-50"ng-model="item.male_scholarship"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_scholarship"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_present"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_present"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_rep"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_rep"></td>
+                        <td><input type="text" class="w-50"ng-model="item.transfer_in"></td>
+                        <td><input type="text" class="w-50"ng-model="item.transfer_out"></td>
+                        <td><input type="text" class="w-50"ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -371,19 +371,19 @@
                     </tr>
                     <tr ng-repeat="item in data.hscDiplomaFisheries">
                         <td ng-bind="dipFName(item.class_id)"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_student"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_student"></td>
-                        <td><input type="number" class="w-50"ng-model="item.male_stipend"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_stipend"></td>
-                        <td><input type="number" class="w-50"ng-model="item.male_scholarship"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_scholarship"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_present"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_present"></td>
-                        <td><input type="number" class="w-50"ng-model="item.total_rep"></td>
-                        <td><input type="number" class="w-50"ng-model="item.female_rep"></td>
-                        <td><input type="number" class="w-50"ng-model="item.transfer_in"></td>
-                        <td><input type="number" class="w-50"ng-model="item.transfer_out"></td>
-                        <td><input type="number" class="w-50"ng-model="item.nextyr_book_reg"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_student"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_student"></td>
+                        <td><input type="text" class="w-50"ng-model="item.male_stipend"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_stipend"></td>
+                        <td><input type="text" class="w-50"ng-model="item.male_scholarship"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_scholarship"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_present"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_present"></td>
+                        <td><input type="text" class="w-50"ng-model="item.total_rep"></td>
+                        <td><input type="text" class="w-50"ng-model="item.female_rep"></td>
+                        <td><input type="text" class="w-50"ng-model="item.transfer_in"></td>
+                        <td><input type="text" class="w-50"ng-model="item.transfer_out"></td>
+                        <td><input type="text" class="w-50"ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -425,19 +425,19 @@
                     </tr>
                     <tr ng-repeat="item in data.hscDiplomaAgriculture">
                         <td ng-bind="dipAgName(item.class_id)"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_student"></td>
-                        <td><input type="number" class="w-50" ng-model="item.female_student"></td>
-                        <td><input type="number" class="w-50" ng-model="item.male_stipend"></td>
-                        <td><input type="number" class="w-50" ng-model="item.female_stipend"></td>
-                        <td><input type="number" class="w-50" ng-model="item.male_scholarship"></td>
-                        <td><input type="number" class="w-50" ng-model="item.female_scholarship"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_present"></td>
-                        <td><input type="number" class="w-50" ng-model="item.female_present"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_rep"></td>
-                        <td><input type="number" class="w-50" ng-model="item.female_rep"></td>
-                        <td><input type="number" class="w-50" ng-model="item.transfer_in"></td>
-                        <td><input type="number" class="w-50" ng-model="item.transfer_out"></td>
-                        <td><input type="number" class="w-50" ng-model="item.nextyr_book_reg"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_student"></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_student"></td>
+                        <td><input type="text" class="w-50" ng-model="item.male_stipend"></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_stipend"></td>
+                        <td><input type="text" class="w-50" ng-model="item.male_scholarship"></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_scholarship"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_present"></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_present"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_rep"></td>
+                        <td><input type="text" class="w-50" ng-model="item.female_rep"></td>
+                        <td><input type="text" class="w-50" ng-model="item.transfer_in"></td>
+                        <td><input type="text" class="w-50" ng-model="item.transfer_out"></td>
+                        <td><input type="text" class="w-50" ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -484,20 +484,20 @@
                     <tr ng-repeat="item in data.categoryWiseStudent">
                         <td ng-bind="$index+1"></td>
                         <td ng-bind="catStdName(item.category_id)"></td>
-                        <td><input type="number" class="w-50" ng-model="item.eleven_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.eleven_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.twelve_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.twelve_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.degree1st_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.degree1st_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.degree2nd_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.degree2nd_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.degree3rd_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.degree3rd_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.honors_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.honors_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.masters_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.masters_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.degree1st_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.degree1st_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.degree2nd_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.degree2nd_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.degree3rd_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.degree3rd_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honors_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honors_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -565,18 +565,18 @@
                     <tr ng-repeat="item in data.categoryWiseDisableStudent">
                         <td ng-bind="$index+1"></td>
                         <td ng-bind="catDisStdName(item.disable_type)"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="number" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
                     </tr>
                     </tbody>
                 </table>

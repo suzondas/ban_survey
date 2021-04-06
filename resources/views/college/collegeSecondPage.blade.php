@@ -95,18 +95,18 @@
                     <tbody>
                     <tr ng-repeat="item in data.subjectWiseData">
                         <td ng-bind="subjectName(item.subject_id)"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_teacher"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_teacher_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.hsc"></td>
-                        <td><input type="number" class="w-50" ng-model="item.hsc_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.honours_pass"></td>
-                        <td><input type="number" class="w-50" ng-model="item.honours_pass_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.honours"></td>
-                        <td><input type="number" class="w-50" ng-model="item.honours_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.pr_masters"></td>
-                        <td><input type="number" class="w-50" ng-model="item.pr_masters_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.masters"></td>
-                        <td><input type="number" class="w-50" ng-model="item.masters_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_teacher"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_teacher_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.hsc"></td>
+                        <td><input type="text" class="w-50" ng-model="item.hsc_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_pass_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.pr_masters"></td>
+                        <td><input type="text" class="w-50" ng-model="item.pr_masters_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -218,14 +218,14 @@
                     <tr ng-repeat="item in data.hscVocStd">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="number" class="w-50" ng-model="item.eleven_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.eleven_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.twelve_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.twelve_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_candidate"></td>
-                        <td><input type="number" class="w-50" ng-model="item.girls_candidate"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_pass"></td>
-                        <td><input type="number" class="w-50" ng-model="item.girls_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="text" class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -259,14 +259,14 @@
                     <tr ng-repeat="item in data.hscBMStd">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="number" class="w-50" ng-model="item.eleven_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.eleven_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.twelve_total"></td>
-                        <td><input type="number" class="w-50" ng-model="item.twelve_female"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_candidate"></td>
-                        <td><input type="number" class="w-50" ng-model="item.girls_candidate"></td>
-                        <td><input type="number" class="w-50" ng-model="item.total_pass"></td>
-                        <td><input type="number" class="w-50" ng-model="item.girls_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="text" class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -285,7 +285,7 @@
             <div class="col-md-2">
                 <label class="label-number" for="">২.৩.৭ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম
                     পরিচালিত হয় কি?</label>
-                <select class="custom-select" name="" style="width: 75px">
+                <select class="custom-select" name="" style="width: 75px" ng-model="data.instOtherInfo.open_unvi_course_yn">
                     <option value="" selected>Select</option>
                     <option value="1">হ্যাঁ-১</option>
                     <option value="2">না-২</option>
@@ -324,80 +324,20 @@
 
                     </tr>
                     <tbody>
-                    <tr>
-                        <td>২০২১</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২০২০</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২০১৯</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২০১৮</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>২০১৭</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                    <tr ng-repeat="item in data.openUnStd">
+                        <td>@{{ item.admit_year }}</td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_pass_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.others"></td>
+                        <td><input type="text" class="w-50" ng-model="item.others_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -432,161 +372,37 @@
                         <td>পরিক্ষার্থী</td>
                         <td>পাশের সংখ্যা</td>
                     </tr>
-                    <tbody>
+                    <tbody ng-repeat="item in data.openUnRes">
                     <tr>
-                        <td rowspan="2">২০২০</td>
+                        <td rowspan="2">@{{ item.year }}</td>
                         <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="text" class="w-50" string-to-number ng-model="item.eleven_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_p_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_p_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.others_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.others_pass"></td>
                     </tr>
                     <tr>
                         <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">২০১৯</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">২০১৮</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">২০১৭</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">২০১৬</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_fem_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_fem_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_fem_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_fem_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_p_fem_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_p_fem_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_fem_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.honours_fem_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_fem_std"></td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_fem_pass"></td>
+                        <td><input type="text" class="w-50" ng-model="item.others_female"></td>
+                        <td><input type="text" class="w-50" ng-model="item.others_fem_pass"></td>
                     </tr>
                     </tbody>
                 </table>
