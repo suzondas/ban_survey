@@ -67,6 +67,10 @@
     </ul>
     <ul class="navbar-nav justify-content-end ml-auto">
         <li class="nav-item">
+            <a type="button" class="nav-link" data-toggle="modal"
+               data-target="#helpModal">Help</a>
+        </li>
+        <li class="nav-item">
             <a href="#" class="nav-link" style="">Print</a>
         </li>
         <li>
@@ -75,3 +79,4 @@
     </ul>
 </nav>
 <hr>
+
