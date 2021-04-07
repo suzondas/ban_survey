@@ -552,10 +552,79 @@
             </div>
         </div>
         <br>
+        {{--Special Training Info --}}
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.৪.১২</span>
+                </div>
+                <div class="form-control bg-number-label">বিশেষ প্রশিক্ষণের তথ্য
+                </div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>
+
+                            <label>২.৪.৬ সৃজনশীল প্রশ্নপত্র প্রণয়ন ও উত্তরপত্র মূল্যায়ন বিষয়ক প্রশিক্ষণপ্রাপ্ত শিক্ষক
+                                সংখ্যা</label>
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <td colspan="2" class="text-center">৩ দিন প্রশিক্ষণপ্রাপ্ত</td>
+                                    <td colspan="2" class="text-center">১২ দিন প্রশিক্ষণপ্রাপ্ত</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"> মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_3day_total"/></td>
+                                    <td class="text-center"> মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_3day_female"/></td>
+                                    <td class="text-center"> মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_12day_total"/></td>
+                                    <td class="text-center"> মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_12day_female"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td><label>২.৪.৭ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_total"/>
+                            মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_female"/></td>
+                        <td><label>২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
+                                লিখুন)</label><br>
+                            মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_total"/>
+                            মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_female"/></td>
+                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
+                                কি? </label><br>
+                            <select class="w-25" ng-model="data.teacherTrainInfo.autism_guide_teacher_yn">
+                                <option> হ্যাঁ</option>
+                                <option> না</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="form-inline"><label>২.৪.১০ দুর্যোগ ব্যবস্থাপনা সংক্রান্ত প্রশিক্ষণপ্রাপ্ত শিক্ষক আছে কি? </label><br>
+                            <select class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher_yn">
+                                <option> হ্যাঁ</option>
+                                <option> না</option>
+                            </select></td>
+                        <td><label>২.৪.১১ উত্তর হ্যাঁ হলে কয়জন?</label><br>
+                            <input type="text" class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher"/>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>২.৪.১২শিক্ষকদের কোন কোন বিষয়ে প্রশিক্ষণ প্রয়োজন?</td>
+                        <td>১.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required1"/></td>
+                        <td>২.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required2"/></td>
+                        <td>৩.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required3"/></td>
+                        <td>৪.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required4"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {{--Special Trainig Ends--}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৪.১৩</span>
                 </div>
                 <div class="form-control bg-number-label">কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন):</div>
             </div>
@@ -670,8 +739,8 @@
                         <tbody>
                         <tr>
                             <td style="width: 350px">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.total_eng_teachers"></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.female_eng_teacher"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -689,32 +758,32 @@
                         <tr>
                             <td>১</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে বাধ্যতামূলক ১০০ নম্বরের ইংরেজি ছিল</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_100_eng"></td>
                         </tr>
                         <tr>
                             <td>২</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ৩০০ নম্বরের ইংরেজি ছিল</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_300_eng"></td>
                         </tr>
                         <tr>
                             <td>৩</td>
                             <td style="width: 350px">ইংরেজিতে স্নাতক সম্মান</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.eng_hons"></td>
                         </tr>
                         <tr>
                             <td>৪</td>
                             <td style="width: 350px">ইংরেজিতে স্নাতকোত্তর</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.eng_hons_mst"></td>
                         </tr>
                         <tr>
                             <td>৫</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ইংরেজি ছিলা না</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_without_eng"></td>
                         </tr>
                         <tr>
                             <td>৬</td>
                             <td style="width: 350px">এইচ এস সি পাস</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.eng_hsc_pass"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -732,8 +801,8 @@
                         <tr>
                             <td style="width: 350px">২.৪.১৬ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:
                             </td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.total_math_teachers"></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.female_math_teacher"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -751,32 +820,32 @@
                         <tr>
                             <td>১</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে পদার্থ ও রসায়নসহ গণিত ছিল</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_pcm"></td>
                         </tr>
                         <tr>
                             <td>২</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে অন্যান্য বিষয়সহ গণিত ছিল</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_other_math"></td>
                         </tr>
                         <tr>
                             <td>৩</td>
                             <td style="width: 350px">গণিতে স্নাতক সম্মান</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.math_hons"></td>
                         </tr>
                         <tr>
                             <td>৪</td>
                             <td style="width: 350px">গণিতে স্নাতকোত্তর</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.math_hons_mst"></td>
                         </tr>
                         <tr>
                             <td>৫</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে গণিত ছিল না কিন্তু এইচএসসিতে ছিল</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.deg_hsc_with_math"></td>
                         </tr>
                         <tr>
                             <td>৬</td>
                             <td style="width: 350px">স্নাতক বা এইচ এস সি পর্যায়ে ছিল না</td>
-                            <td><input type="number" class="form-control" name="" id=""></td>
+                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_without_math"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -808,73 +877,73 @@
                     <tr>
                         <td>১</td>
                         <td style="width: 300px">তথ্য প্রদানের দিন শিক্ষক উপস্থিতি</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.count_day_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.count_day_female" id=""></td>
                     </tr>
                     <tr>
                         <td>২</td>
                         <td style="width: 300px">অবসরে গিয়েছেন (১/৭/২০২০থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.retired_teacher_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.rerired_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৩</td>
                         <td style="width: 300px">অবসরে যাবেন (১/৭/২০২১ থেকে ৩০/৬/২০২২ পর্যন্ত)</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.retiredfu_teacher_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.reriredfu_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৪</td>
                         <td style="width: 300px">নতুন নিয়োগপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.new_recruite_teacher_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.new_recruite_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৫</td>
                         <td style="width: 300px">শিক্ষকতা পেশা ছেড়ে দিয়েছেন (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.leave_teacher_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.leave_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৬</td>
                         <td style="width: 300px">NTRCA কর্তৃক সুপারিশকৃত শিক্ষকের সংখ্যা</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.ntrc_teacher_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.ntrc_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৭</td>
                         <td style="width: 300px">বর্তমানে কতজন শিক্ষক গবেষণা কাজে সম্পৃক্ত</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.research_teacher_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.research_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৮</td>
                         <td style="width: 300px">একাডেমিক বিষয়ের ওপর পুরষ্কারপ্রাপ্ত শিক্ষকের সংখ্যা</td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৯</td>
                         <td style="width: 300px">শিখন-শেখানো বিষয়ে প্রশিক্ষণপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)
                         </td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_female" id=""></td>
                     </tr>
                     <tr>
                         <td>১০</td>
                         <td style="width: 300px">বিশেষ চাহিদাসম্পন্ন (Special needs) শিক্ষার্থীর শিক্ষা বিষয়ে
                             প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা
                         </td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_total" id=""></td>
+                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_female" id=""></td>
                     </tr>
                     <tr>
                         <td>১১</td>
                         <td style="width: 300px">একীভূত শিক্ষা (Inclusive education), শিশু অধিকার এবং বিদ্যালয়ের ইতিবাচক
                             শৃঙ্খলা বিষয়ের ওপর প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা
                         </td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
-                        <td><input type="number" class="form-control w-25" name="" id=""></td>
+                        <td><input type="text" class="form-control w-25" ng-model="data.teacherRetAwInfo.inclusive_total" id=""></td>
+                        <td><input type="text" class="form-control w-25" ng-model="data.teacherRetAwInfo.inclusive_female" id=""></td>
                     </tr>
                     </tbody>
                 </table>
@@ -903,84 +972,84 @@
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_inst_year"></td>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান প্রধান</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_inst_head_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শ্রেণি শিক্ষক</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_class_tea_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষক (বিএনসিসি)</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_bncc_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষক (রোভার)</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_scout_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষক (রেঞ্জার)</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_gguide_year"></td>
                     <tr>
                     </tr>
                     <tr>
                         <td rowspan="4"> শিক্ষার্থীদের জন্য</td>
                         <td>শ্রেষ্ঠ শিক্ষার্থী</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_year"></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শিক্ষার্থী (বিএন্সিসি)</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী (বিএনসিসি)</td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_divisional"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_bncc_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষার্থী (রোভার)</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_scout_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষার্থী (রেঞ্জার)</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="number" class="form-control" name="" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_national"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_division"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_district"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_thana"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_gguide_year"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1001,78 +1070,78 @@
                     <tr>
                         <td rowspan="2">সাহিত্য ও সংস্কৃতি</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_cultureal_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_cultureal_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_cultureal_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_cultureal_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_cultureal_parti"></td>
                     </tr>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_cultureal_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_cultureal_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_cultureal_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_cultureal_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_cultureal_award"></td>
                     </tr>
                     <tr>
                         <td rowspan="2">ক্রীড়া (আউটডোর)</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_sports_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_sports_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_sports_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_sports_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_sports_parti"></td>
                     </tr>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_sports_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_sports_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_sports_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_sports_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_sports_award"></td>
                     </tr>
                     <tr>
                         <td rowspan="2">ক্রীড়া (ইনডোর)</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_indoor_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_indoor_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_indoor_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_indoor_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_indoor_parti"></td>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_indoor_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_indoor_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_indoor_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_indoor_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_indoor_award"></td>
                     </tr>
                     <tr>
                         <td rowspan="2">সৃজনশীল মেধা অন্বেষণ</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_creative_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_creative_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_creative_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_creative_parti"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_creative_parti"></td>
                     </tr>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_creative_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_creative_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_creative_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_creative_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_creative_award"></td>
                     </tr>
                     <tr>
                         <td>বিশেষ কৃতিত্বপূর্ণ অবদান</td>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
-                        <td><input type="radio" name="easy" id=""></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_special_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_special_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_special_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_special_award"></td>
+                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_special_award"></td>
                     </tr>
                     </tbody>
                 </table>

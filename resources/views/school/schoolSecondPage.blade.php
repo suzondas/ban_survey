@@ -1062,14 +1062,6 @@
                                 </tr>
                             </table>
                         </td>
-                        <td>২.৪.৭ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)
-                            <table class="table table-bordered table-striped">
-                                <tr>
-                                    <td class="text-center"> মোট: <input type="text" class="w-25"/></td>
-                                    <td class="text-center"> মহিলা: <input type="text" class="w-25"/></td>
-                                </tr>
-                            </table>
-                        </td>
                     </tr>
                 </table>
                 <table class="table table-bordered table-striped">
@@ -1089,16 +1081,13 @@
                             </select></td>
                     </tr>
                     <tr>
-                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
-                                কি? </label><br>
+                        <td class="form-inline"><label>২.৪.১০ দুর্যোগ ব্যবস্থাপনা সংক্রান্ত প্রশিক্ষণপ্রাপ্ত শিক্ষক আছে কি? </label><br>
                             <select class="w-25">
                                 <option> হ্যাঁ</option>
                                 <option> না</option>
                             </select></td>
-                        <td><label>২২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
-                                লিখুন)</label><br>
-                            মোট: <input type="text" class="w-25"/>
-                            মহিলা: <input type="text" class="w-25"/></td>
+                        <td><label>২.৪.১১ উত্তর হ্যাঁ হলে কয়জন?</label><br>
+                             <input type="text" class="w-25"/>
                     </tr>
                 </table>
             </div>
