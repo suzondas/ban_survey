@@ -150,20 +150,20 @@ var app = angular.module('collegeFirstPage', []);
 
         /*==========================Data Saving=======================================*/
         $scope.save = function () {
-            console.log($scope.data.studentSummaryTotal);
-            console.log($scope.data.stuentsSummery);
-            console.log($scope.data.studentSummaryRepeater);
-            console.log($scope.data.studentSummaryDropout);
-            console.log($scope.data.hscVocStudent);
-            console.log($scope.data.hscBmStudent);
-            console.log($scope.data.hscDiplomaFisheries);
-            console.log($scope.data.hscDiplomaAgriculture);
-            console.log($scope.data.categoryWiseStudent);
-            console.log($scope.data.instituteSpecialStudents);
-            console.log($scope.data.categoryWiseDisableStudent);
-            console.log($scope.data.categoryWiseUpajati);
-            console.log($scope.data.ageWiseStudent);
-            console.log($scope.data.guardianOccupation);
+            // console.log($scope.data.studentSummaryTotal);
+            console.log($scope.stuentsSummery);
+            // console.log($scope.data.studentSummaryRepeater);
+            // console.log($scope.data.studentSummaryDropout);
+            // console.log($scope.data.hscVocStudent);
+            // console.log($scope.data.hscBmStudent);
+            // console.log($scope.data.hscDiplomaFisheries);
+            // console.log($scope.data.hscDiplomaAgriculture);
+            // console.log($scope.data.categoryWiseStudent);
+            // console.log($scope.data.instituteSpecialStudents);
+            // console.log($scope.data.categoryWiseDisableStudent);
+            // console.log($scope.data.categoryWiseUpajati);
+            // console.log($scope.data.ageWiseStudent);
+            // console.log($scope.data.guardianOccupation);
         }
         /*==========================Data Saving Ends=======================================*/
 
