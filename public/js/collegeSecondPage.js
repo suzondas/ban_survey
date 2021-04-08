@@ -56,7 +56,7 @@ var app = angular.module('collegeSecondPage', []);
                 var designationtName = null;
                 desigList.forEach(function (currentValue, index, arr) {
                     if(currentValue.designation_id == id){
-                        return designationtName = currentValue.designation_name;
+                        return designationtName = currentValue.designation_name_bn;
                     }
                 });
                 return designationtName;
