@@ -167,10 +167,14 @@
                         </td>
                         <td><input type="text" class="form-control"
                                    ng-model="data.studentSummaryRepeater.twelve_female"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_pass_total"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_pass_female"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_somman_total"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_somman_female"></td>
                         <td><input type="text" class="form-control"
                                    ng-model="data.studentSummaryRepeater.masters_total"></td>
                         <td><input type="text" class="form-control"
@@ -214,10 +218,14 @@
                         </td>
                         <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.twelve_female">
                         </td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_pass_total">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_pass_female">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_somman_total">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_somman_female">
+                        </td>
                         <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.masters_total">
                         </td>
                         <td><input type="text" class="form-control"
@@ -565,18 +573,20 @@
                     <tr ng-repeat="item in data.categoryWiseDisableStudent">
                         <td ng-bind="$index+1"></td>
                         <td ng-bind="catDisStdName(item.disable_type)"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
-                        <td><input type="text" class="w-50" name="" id="" style="width: 50px"></td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.eleven_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.twelve_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree1st_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree1st_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree2nd_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree2nd_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree3rd_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.degree3rd_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.honors_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.honors_girls"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.masters_girls"/> </td>
                     </tr>
                     </tbody>
                 </table>
@@ -697,22 +707,22 @@
                     <tbody>
                     <tr ng-repeat="item in data.ageWiseStudent">
                         <td ng-bind="findClassName(item.class_id)"></td>
-                        <td><input class="w-50" ng-model="item.under_fifteen_total"/> </td>
-                        <td><input class="w-50"  ng-model="item.under_fifteen_female"/> </td>
-                        <td><input class="w-50" ng-model="item.sixteen_total"/> </td>
-                        <td><input class="w-50" ng-model="item.sixteen_female"/> </td>
-                        <td><input class="w-50" ng-model="item.seventeen_total"/> </td>
-                        <td><input class="w-50" ng-model="item.seventeen_female"/> </td>
-                        <td><input class="w-50" ng-model="item.eighteen_total"/> </td>
-                        <td><input class="w-50" ng-model="item.eighteen_female"/> </td>
-                        <td><input class="w-50" ng-model="item.nineteen_total"/> </td>
-                        <td><input class="w-50" ng-model="item.nineteen_female"/> </td>
-                        <td><input class="w-50" ng-model="item.twenty_total"/> </td>
-                        <td><input class="w-50" ng-model="item.twenty_female"/> </td>
-                        <td><input class="w-50" ng-model="item.upper_twentyone_total"/> </td>
-                        <td><input class="w-50" ng-model="item.upper_twentyone_female"/> </td>
-                        <td><input class="w-50" ng-model="item.total_student"/> </td>
-                        <td><input class="w-50" ng-model="item.female_student"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.under_fifteen_total"/> </td>
+                        <td><input type="text" class="w-50"  ng-model="item.under_fifteen_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.sixteen_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.sixteen_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.seventeen_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.seventeen_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.eighteen_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.eighteen_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.nineteen_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.nineteen_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.twenty_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.twenty_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.upper_twentyone_total"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.upper_twentyone_female"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.total_student"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.female_student"/> </td>
                     </tr>
                     </tbody>
                 </table>
