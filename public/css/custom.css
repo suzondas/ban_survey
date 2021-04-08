@@ -99,7 +99,7 @@ input[type=number] {
     align-items: center;
 }
 
-/*bootstrap Modal*/
+/*bootstrap Modal for Teacher Staff info*/
 .modal {
     padding: 10px !important;
 / / override inline padding-right added from js
@@ -146,4 +146,10 @@ select:focus{
 input:focus{
     background-color:skyblue !important;
     border-color: yellow !important;
+}
+/*mujib borsho logo*/
+.mujib_borsho{
+    float:right;width:80px;height:80px;
+    margin-left:-40px;
+    margin-right: -20px;
 }

@@ -4,3 +4,4 @@
                 reserved by BANBEIS.</b>
     </div>
 </div>
+@include('components/helpModal')
