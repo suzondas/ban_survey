@@ -167,10 +167,14 @@
                         </td>
                         <td><input type="text" class="form-control"
                                    ng-model="data.studentSummaryRepeater.twelve_female"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_pass_total"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_pass_female"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_somman_total"></td>
+                        <td><input type="text" class="form-control"
+                                   ng-model="data.studentSummaryRepeater.honours_somman_female"></td>
                         <td><input type="text" class="form-control"
                                    ng-model="data.studentSummaryRepeater.masters_total"></td>
                         <td><input type="text" class="form-control"
@@ -214,10 +218,14 @@
                         </td>
                         <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.twelve_female">
                         </td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_pass_total">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_pass_female">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_somman_total">
+                        </td>
+                        <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.honours_somman_female">
+                        </td>
                         <td><input type="text" class="form-control" ng-model="data.studentSummaryDropout.masters_total">
                         </td>
                         <td><input type="text" class="form-control"
