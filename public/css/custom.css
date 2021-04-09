@@ -26,6 +26,7 @@ input[type=number] {
 
 .nav-item {
     font-size: 14px;
+    border-right:2px solid #e2d7d7;
 }
 
 .nav-link:hover {
@@ -149,7 +150,7 @@ input:focus{
 }
 /*mujib borsho logo*/
 .mujib_borsho{
-    float:right;width:80px;height:80px;
-    margin-left:-40px;
-    margin-right: -20px;
+    float:right;
+    width:80px;height:80px;
+    vertical-align: center;
 }
