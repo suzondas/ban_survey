@@ -1148,6 +1148,7 @@
             </div>
 
         </div>
+        <div align="center"><button ng-click="save()" type="button" class="btn btn-success">Submit</button></div>
     </div>
 @endsection
 @section('javascript')

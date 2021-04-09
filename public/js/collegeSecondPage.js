@@ -118,5 +118,12 @@ var app = angular.module('collegeSecondPage', []);
         }, function (error) {
 
         });
+
+
+        /*Data Saving*/
+        $scope.save=function () {
+
+            console.log($scope.studentSummeryPrevYr);
+        }
     });
 })(app);
