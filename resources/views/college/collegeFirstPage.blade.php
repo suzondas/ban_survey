@@ -90,6 +90,7 @@
                         <td rowspan="2">ট্রান্সফার আউট</td>
                     </tr>
                     <tr>
+
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                         <td>ছাত্র</td>
@@ -544,20 +545,24 @@
                 </table>
                 <table class="table table-bordered table-striped text-center">
                     <tr>
-                        <td>ক্র. নং</td>
-                        <td>বিশেষ চাহিদা সম্পন্ন শিক্ষার্থীর ধরন</td>
+                        <td rowspan="2">ক্র. নং</td>
+                        <td rowspan="2">বিশেষ চাহিদা সম্পন্ন শিক্ষার্থীর ধরন</td>
                         <td colspan="2">শিক্ষক</td>
-                        <td colspan="2">৬ষ্ঠ শ্রেণি</td>
-                        <td colspan="2">৭ম শ্রেণি</td>
-                        <td colspan="2">৮ম শ্রেণি</td>
-                        <td colspan="2">৯ম শ্রেণি</td>
-                        <td colspan="2">১০ম শ্রেণি</td>
+                        <td colspan="2">১১শ শ্রেণি</td>
+                        <td colspan="2">১২শ শ্রেণি</td>
+                        <td colspan="2">ডিগ্রি ১ম বর্ষ</td>
+                        <td colspan="2">ডিগ্রি ২য় বর্ষ</td>
+                        <td colspan="2">ডিগ্রি ৩য় বর্ষ</td>
+                        <td colspan="2">স্নাতক (সম্মান)</td>
+                        <td colspan="2">স্নাতকোত্তর</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
                         <td>মোট</td>
                         <td>মহিলা</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                         <td>মোট</td>
@@ -573,6 +578,8 @@
                     <tr ng-repeat="item in data.categoryWiseDisableStudent">
                         <td ng-bind="$index+1"></td>
                         <td ng-bind="catDisStdName(item.disable_type)"></td>
+                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/> </td>
+                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/> </td>
                         <td><input type="text" class="w-50" ng-model="item.eleven_total"/> </td>
                         <td><input type="text" class="w-50" ng-model="item.eleven_female"/> </td>
                         <td><input type="text" class="w-50" ng-model="item.twelve_total"/> </td>
