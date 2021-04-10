@@ -13,7 +13,7 @@ var app = angular.module('collegeFirstPage', []);
         };
 
         //Finding Class Index
-        $scope.stuentsSummery = $scope.data.studentSummery;
+        //$scope.stuentsSummery = $scope.data.studentSummery;
         $scope.findIndex = function (groupId, classId) {
             var idx = null;
             for (var i = 0; i < $scope.stuentsSummery.length; i++) {
