@@ -9,6 +9,21 @@ var app = angular.module('collegeSecondPage', []);
             // console.log(response.data)
             $scope.data = response.data;
             $scope.studentSummeryPrevYr = $scope.data.studentSummeryPrevYr;
+            $scope.subjectWiseData=$scope.data.subjectWiseData;
+            $scope.hscVocStd=$scope.data.hscVocStd;
+            $scope.hscBMStd=$scope.data.hscBMStd;
+            $scope.instOtherInfo=$scope.data.instOtherInfo;
+            $scope.openUnStd=$scope.data.openUnStd;
+            $scope.teachStafSum=$scope.data.teachStafSum;
+            $scope.openUnRes=$scope.data.openUnRes;
+            $scope.teachVocStafSum=$scope.data.teachVocStafSum;
+            $scope.teachQualiSum=$scope.data.teachQualiSum;
+            $scope.hdTeachSum=$scope.data.hdTeachSum;
+            $scope.hdTrnSum=$scope.data.hdTrnSum;
+            $scope.teacherInservTr=$scope.data.teacherInservTr;
+            $scope.teacherTrainInfo=$scope.data.teacherTrainInfo;
+            $scope.teacherRetAwInfo=$scope.data.teacherRetAwInfo;
+
             $scope.findIndex = function(groupId, classId){
                 var idx = null;
                 for(var i =0;i<$scope.studentSummeryPrevYr.length;i++){
@@ -124,6 +139,21 @@ var app = angular.module('collegeSecondPage', []);
         $scope.save=function () {
 
             console.log($scope.studentSummeryPrevYr);
+            console.log($scope.subjectWiseData);
+            console.log($scope.boardWiseExamResults);
+            console.log($scope.hscVocStd);
+            console.log($scope.hscBMStd);
+            console.log($scope.instOtherInfo);
+            console.log($scope.openUnStd);
+            console.log($scope.openUnRes);
+            console.log($scope.teachStafSum);
+            console.log($scope.teachVocStafSum);
+            console.log($scope.teachQualiSum);
+            console.log($scope.hdTeachSum);
+            console.log($scope.hdTrnSum);
+            console.log($scope.teacherInservTr);
+            console.log($scope.teacherTrainInfo);
+            console.log($scope.teacherRetAwInfo);
         }
     });
 })(app);

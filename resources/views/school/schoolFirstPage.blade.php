@@ -2032,8 +2032,6 @@
                             <th colspan="10">শিক্ষার্থী সংখ্যা</th>
                         </tr>
                         <tr>
-
-
                             <th colspan="2">৬ষ্ঠ শ্রেণি</th>
                             <th colspan="2">৭ম শ্রেণি</th>
                             <th colspan="2">৮ম শ্রেণি</th>
