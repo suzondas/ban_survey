@@ -1,6 +1,11 @@
-@extends('components.template')
+@extends('components.ngTemplate')
 @section('content')
-    <div class="container-fluid" id="SnCFirstPage">
+    <style>
+        .w-50 {
+            width: 40px !important;
+        }
+    </style>
+    <div class="container-fluid" data-ng-app="sncFirstPage" ng-controller="myCtrl">
         <div v-if="!dataLoaded">
             <div class="d-flex justify-content-center">
                 <div class="spinner-border" role="status">
@@ -45,18 +50,18 @@
                     </tdead>
                     <tbody>
                     <tr>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].one_five_total" ></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].one_five_girl"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].six_ten_total"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].six_ten_girl"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].eleven_twelve_total"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].eleven_twelve_girl"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].bachelor_pass_total"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].bachelor_pass_girl"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].bachelor_honors_total"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].bachelor_honors_girl"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].masters_total"></td>
-                        <td><input type="text" class="form-control" v-model="data.Student_summary_total[0].masters_girl"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.one_five_total" ></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.one_five_girl"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.six_ten_total"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.six_ten_girl"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.eleven_twelve_total"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.eleven_twelve_girl"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.bachelor_pass_total"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.bachelor_pass_girl"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.bachelor_honors_total"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.bachelor_honors_girl"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.masters_total"></td>
+                        <td><input type="text" class="form-control" v-model="data.studentSummaryTotal.masters_girl"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -431,25 +436,25 @@
                         <tbody>
                         <tr>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].six_total"></td>
+                                       v-model="data.studentSummaryRepeater.six_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].six_female"></td>
+                                       v-model="data.studentSummaryRepeater.six_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].seven_total"></td>
+                                       v-model="data.studentSummaryRepeater.seven_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].seven_female"></td>
+                                       v-model="data.studentSummaryRepeater.seven_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].eight_total"></td>
+                                       v-model="data.studentSummaryRepeater.eight_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].eight_female"></td>
+                                       v-model="data.studentSummaryRepeater.eight_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].nine_total"></td>
+                                       v-model="data.studentSummaryRepeater.nine_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].nine_female"></td>
+                                       v-model="data.studentSummaryRepeater.nine_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].ten_total"></td>
+                                       v-model="data.studentSummaryRepeater.ten_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_repeater[0].ten_female"></td>
+                                       v-model="data.studentSummaryRepeater.ten_female"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -491,25 +496,25 @@
                         <tbody>
                         <tr>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].six_total"></td>
+                                       v-model="data.studentSummaryDropout.six_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].six_female"></td>
+                                       v-model="data.studentSummaryDropout.six_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].seven_total"></td>
+                                       v-model="data.studentSummaryDropout.seven_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].seven_female"></td>
+                                       v-model="data.studentSummaryDropout.seven_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].eight_total"></td>
+                                       v-model="data.studentSummaryDropout.eight_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].eight_female"></td>
+                                       v-model="data.studentSummaryDropout.eight_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].nine_total"></td>
+                                       v-model="data.studentSummaryDropout.nine_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].nine_female"></td>
+                                       v-model="data.studentSummaryDropout.nine_female"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].ten_total"></td>
+                                       v-model="data.studentSummaryDropout.ten_total"></td>
                             <td><input type="text" class="form-control"
-                                       v-model="data.Student_summary_dropout[0].ten_female"></td>
+                                       v-model="data.studentSummaryDropout.ten_female"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -534,7 +539,6 @@
                             <td rowspan="2">৮ম শ্রেণি</td>
                             <td colspan="3">৯ম শ্রেণি</td>
                             <td colspan="3">১০ম শ্রেণি</td>
-                            <td rowspan="2"><b>অতিরিক্ত সেকশন মুছে ফেলতে 'Remove' বাটনে ক্লিক করুন</b></td>
                         </tr>
                         <tr>
                             <td>বিজ্ঞান</td>
@@ -545,8 +549,8 @@
                             <td>ব্যবসায় শিক্ষা</td>
                         </tr>
                         <tbody>
-                        <tr v-for="(item,index) in data.secWise_student_summary">
-                            <td>@{{ banglaBorno[index] }}</td>
+                        <tr>
+                            <td></td>
                             <td><input type="text" class="form-control" v-model="item.six"></td>
                             <td><input type="text" class="form-control" v-model="item.seven"></td>
                             <td><input type="text" class="form-control" v-model="item.eight"></td>
@@ -556,8 +560,6 @@
                             <td><input type="text" class="form-control" v-model="item.ten_science"></td>
                             <td><input type="text" class="form-control" v-model="item.ten_arts"></td>
                             <td><input type="text" class="form-control" v-model="item.ten_commerce"></td>
-                            <td><input type="button" class="btn-danger" value="Remove" @click="removeSection(index)">
-                            </td>
                         </tr>
                         <tr>
                             <td>মোট সেকশন</td>
@@ -585,7 +587,6 @@
                         </tr>
                         </tbody>
                     </table>
-                    <input type="button" class="btn-warning" value="Add section" @click="addSection()">
                 </div>
             </div>
             <div class="contentBox">

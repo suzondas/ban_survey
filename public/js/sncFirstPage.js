@@ -1,49 +1,153 @@
-const app = new Vue({
-    el: '#SnCFirstPage',
-    data() {
-        return {
-            data:null,
-            dataLoaded:false,
-            dataLoadingError:false,
-            banglaBorno:['ক','খ','গ','ঘ','ঙ','চ','ছ','জ','ঝ','ঞ']
-        }
-    },
-    mounted() {
-        var self=this
-        axios.get('http://127.0.0.1:8000/SnCFirstPage/'+ inst_id)
-            .then(function (response) {
-                self.data=response.data
-                self.dataLoaded=true
-            })
-            .catch(function (error) {
-                console.log(error)
-                self.dataLoadingError = true;
+var app = angular.module('sncFirstPage', []);
+(function (app) {
+    "use strict";
+    app.controller('myCtrl', function ($scope, $http) {
 
-            });
-    },
-    methods:
-        {
-            addSection() {
+        /*Initial Variables*/
+        $scope.data = null;
 
-                this.data.secWise_student_summary.push(
-                    {
-                        "id": '',
-                        "SIX": null,
-                        "SEVEN": null,
-                        "EIGHT": null,
-                        "NINE_SCIENCE": null,
-                        "NINE_ARTS": null,
-                        "NINE_COMMERCE": null,
-                        "TEN_SCIENCE": null,
-                        "TEN_ARTS": null,
-                        "TEN_COMMERCE": null
-                    }
-                )
-            },
+        /*===========================Helper Functions==============================*/
+        // Console global
+        $scope.console = function () {
+            console.log($scope.stuentsSummery);
+        };
 
-            removeSection: function(index) {
-                console.log("Removing", index);
-                this.data.secWise_student_summary.splice(index, 1);
+        //Finding Class Index
+        //$scope.stuentsSummery = $scope.data.studentSummery;
+        $scope.findIndex = function (groupId, classId) {
+            var idx = null;
+            for (var i = 0; i < $scope.stuentsSummery.length; i++) {
+                if ($scope.stuentsSummery[i].class_id == classId && $scope.stuentsSummery[i].group_id == groupId) {
+                    idx = i;
+                    break;
+                }
             }
+            return idx;
+        };
+
+        /*Occupation name finding*/
+        $scope.occupationName = function (id) {
+            var occupationsList = $scope.data.occupationsList;
+            var occupationName = null;
+            occupationsList.forEach(function (currentValue, index, arr) {
+                if (currentValue.occupation_id == id) {
+                    return occupationName = currentValue.details_bn;
+                }
+            });
+            return occupationName;
+        };
+
+        /*upajatiName name finding*/
+        $scope.findUpajaitName = function (id) {
+            var upajatiList = $scope.data.upajatiList;
+            var upajatiName = null;
+            upajatiList.forEach(function (currentValue, index, arr) {
+                if (currentValue.upajati_id == id) {
+                    return upajatiName = currentValue.name_bn;
+                }
+            });
+            return upajatiName;
         }
-});
+
+        /*FInding hscVocName*/
+        $scope.hscVocName = function (id) {
+            var vocClassList = $scope.data.vocClasses;
+            var vocClsName = null;
+            vocClassList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return vocClsName = currentValue.class_name_bangla;
+                }
+            });
+            return vocClsName;
+        }
+
+        /*FInding hscBmName*/
+        $scope.hscBmName = function (id) {
+            var bmClassList = $scope.data.bmClasses;
+            var bmClsName = null;
+            bmClassList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return bmClsName = currentValue.class_name_bangla;
+                }
+            });
+            return bmClsName;
+        }
+
+        /*FInding dipFName*/
+        $scope.dipFName = function (id) {
+            var dipFClassList = $scope.data.diplomaFisheriesClasses;
+            var dipFClsName = null;
+            dipFClassList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return dipFClsName = currentValue.class_name_bangla;
+                }
+            });
+            return dipFClsName;
+        }
+
+
+        /*FInding dipAgName*/
+        $scope.dipAgName = function (id) {
+            var dipAgClassList = $scope.data.diplomaAgriClasses;
+            var dipAgClsName = null;
+            dipAgClassList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return dipAgClsName = currentValue.class_name_bangla;
+                }
+            });
+            return dipAgClsName;
+        }
+
+        /*FInding catStdName*/
+        $scope.catStdName = function (id) {
+            var catStdList = $scope.data.categoryWiseList;
+            var catStdNm = null;
+            catStdList.forEach(function (currentValue, index) {
+                if (currentValue.category_id == id) {
+                    return catStdNm = currentValue.details_bn;
+                }
+            });
+            return catStdNm;
+        }
+
+        /*FInding catDisStdName*/
+        $scope.catDisStdName = function (id) {
+            var catDisStdList = $scope.data.disableCategory;
+            var catDisStdNm = null;
+            catDisStdList.forEach(function (currentValue, index) {
+                if (currentValue.disable_type == id) {
+                    return catDisStdNm = currentValue.disability_bn;
+                }
+            });
+            return catDisStdNm;
+        };
+
+        /*FInding class name*/
+        $scope.findClassName = function (id) {
+            var classList = $scope.data.classes;
+            var clsName = null;
+            classList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return clsName = currentValue.class_name_bangla;
+                }
+            });
+            return clsName;
+        };
+        /*===========================Helper Functions Ends==============================*/
+
+        /*==========================Data Fetching=======================================*/
+        $http({
+            method: 'GET',
+            url: 'http://127.0.0.1:8000/SnCFirstPage/' + inst_id
+        }).then(function (response) {
+            // console.log(response.data)
+            $scope.data = response.data;
+            $scope.stuentsSummery = $scope.data.studentSummery;
+
+        }, function (error) {
+            console.log(error);
+        });
+        /*==========================Data Fetching Ends=======================================*/
+
+    });
+})(app);
