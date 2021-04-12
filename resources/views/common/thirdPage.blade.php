@@ -1,8 +1,15 @@
 @extends('components.template')
 @section('content')
-    <div class="container">
+    <div class="container"  id="thirdPage">
         <h3 class="text-center">বিবিধ তথ্য (১)</h3>
-
+        <div v-if="!dataLoaded">
+            <div class="d-flex justify-content-center">
+                <h3 class="p-2">Loading...</h3>
+                <div class="spinner-border" role="status">
+                </div>
+            </div>
+        </div>
+        <div v-if="dataLoaded">
         {{--LAB--}}
         <div class="contentBox">
             <div class="input-group contentHeader">
@@ -1024,4 +1031,11 @@
                 </table>
         </div>
     </div>
+        <div v-show="dataLoadingError">
+            <span class="d-flex justify-content-center btn-warning">Error in Fetching Data, Please contact System Administrator!</span>
+        </div>
+    </div>
 @endsection
+@section('javascript')
+    <script src="{{ asset('js/thirdPage.js') }}" type="module" defer></script>
+@stop
