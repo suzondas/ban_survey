@@ -155,5 +155,19 @@ var app = angular.module('collegeSecondPage', []);
             console.log($scope.teacherTrainInfo);
             console.log($scope.teacherRetAwInfo);
         }
-    });
+
+        $scope.submitData = function () {
+			var dataToSend={};
+			dataToSend.studentSummeryPrevYr=$scope.studentSummeryPrevYr;
+           $http.post('http://127.0.0.1:8000/collegeSecondPage/submitData', 
+            dataToSend).then(
+                            function (response){
+                                console.log(response);
+                            },
+                            function (response) {
+                                console.log(response);
+                                    }
+                                );
+                            }
+                     });
 })(app);
