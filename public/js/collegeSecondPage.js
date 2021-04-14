@@ -4,37 +4,37 @@ var app = angular.module('collegeSecondPage', []);
     app.controller('myCtrl', function ($scope, $http) {
         $http({
             method: 'GET',
-            url: 'http://127.0.0.1:8000/collegeSecondPage/'+inst_id
+            url: 'http://127.0.0.1:8000/collegeSecondPage/' + inst_id
         }).then(function (response) {
             // console.log(response.data)
             $scope.data = response.data;
             $scope.studentSummeryPrevYr = $scope.data.studentSummeryPrevYr;
-            $scope.subjectWiseData=$scope.data.subjectWiseData;
-            $scope.hscVocStd=$scope.data.hscVocStd;
-            $scope.hscBMStd=$scope.data.hscBMStd;
-            $scope.instOtherInfo=$scope.data.instOtherInfo;
-            $scope.openUnStd=$scope.data.openUnStd;
-            $scope.teachStafSum=$scope.data.teachStafSum;
-            $scope.openUnRes=$scope.data.openUnRes;
-            $scope.teachVocStafSum=$scope.data.teachVocStafSum;
-            $scope.teachQualiSum=$scope.data.teachQualiSum;
-            $scope.hdTeachSum=$scope.data.hdTeachSum;
-            $scope.hdTrnSum=$scope.data.hdTrnSum;
-            $scope.teacherInservTr=$scope.data.teacherInservTr;
-            $scope.teacherTrainInfo=$scope.data.teacherTrainInfo;
-            $scope.teacherRetAwInfo=$scope.data.teacherRetAwInfo;
+            $scope.subjectWiseData = $scope.data.subjectWiseData;
+            $scope.hscVocStd = $scope.data.hscVocStd;
+            $scope.hscBMStd = $scope.data.hscBMStd;
+            $scope.instOtherInfo = $scope.data.instOtherInfo;
+            $scope.openUnStd = $scope.data.openUnStd;
+            $scope.teachStafSum = $scope.data.teachStafSum;
+            $scope.openUnRes = $scope.data.openUnRes;
+            $scope.teachVocStafSum = $scope.data.teachVocStafSum;
+            $scope.teachQualiSum = $scope.data.teachQualiSum;
+            $scope.hdTeachSum = $scope.data.hdTeachSum;
+            $scope.hdTrnSum = $scope.data.hdTrnSum;
+            $scope.teacherInservTr = $scope.data.teacherInservTr;
+            $scope.teacherTrainInfo = $scope.data.teacherTrainInfo;
+            $scope.teacherRetAwInfo = $scope.data.teacherRetAwInfo;
 
-            $scope.findIndex = function(groupId, classId){
+            $scope.findIndex = function (groupId, classId) {
                 var idx = null;
-                for(var i =0;i<$scope.studentSummeryPrevYr.length;i++){
-                    if($scope.studentSummeryPrevYr[i].class_id == classId && $scope.studentSummeryPrevYr[i].group_id == groupId){
+                for (var i = 0; i < $scope.studentSummeryPrevYr.length; i++) {
+                    if ($scope.studentSummeryPrevYr[i].class_id == classId && $scope.studentSummeryPrevYr[i].group_id == groupId) {
                         idx = i;
                         break;
                     }
                 }
                 return idx;
             };
-            $scope.console = function(){
+            $scope.console = function () {
                 console.log($scope.studentSummeryPrevYr);
             }
 
@@ -43,7 +43,7 @@ var app = angular.module('collegeSecondPage', []);
                 var subjtList = $scope.data.subjectList;
                 var subjectName = null;
                 subjtList.forEach(function (currentValue, index, arr) {
-                    if(currentValue.subjectdtl_id == id){
+                    if (currentValue.subjectdtl_id == id) {
                         return subjectName = currentValue.subject_name_ban;
                     }
                 });
@@ -53,10 +53,10 @@ var app = angular.module('collegeSecondPage', []);
 
             /*find idx of board result*/
             $scope.boardWiseExamResults = $scope.data.boardWiseExamResults;
-            $scope.findIndexEx = function(examId, subId){
+            $scope.findIndexEx = function (examId, subId) {
                 var idx = null;
-                for(var i =0;i<$scope.boardWiseExamResults.length;i++){
-                    if($scope.boardWiseExamResults[i].exam_id == examId && $scope.boardWiseExamResults[i].subject == subId){
+                for (var i = 0; i < $scope.boardWiseExamResults.length; i++) {
+                    if ($scope.boardWiseExamResults[i].exam_id == examId && $scope.boardWiseExamResults[i].subject == subId) {
                         idx = i;
                         break;
                     }
@@ -70,7 +70,7 @@ var app = angular.module('collegeSecondPage', []);
                 var desigList = $scope.data.desigList;
                 var designationtName = null;
                 desigList.forEach(function (currentValue, index, arr) {
-                    if(currentValue.designation_id == id){
+                    if (currentValue.designation_id == id) {
                         return designationtName = currentValue.designation_name_bn;
                     }
                 });
@@ -83,7 +83,7 @@ var app = angular.module('collegeSecondPage', []);
                 var desigVocList = $scope.data.desigVocList;
                 var designationVocName = null;
                 desigVocList.forEach(function (currentValue, index, arr) {
-                    if(currentValue.designation_id == id){
+                    if (currentValue.designation_id == id) {
                         return designationVocName = currentValue.designation_name;
                     }
                 });
@@ -96,7 +96,7 @@ var app = angular.module('collegeSecondPage', []);
                 var qualiList = $scope.data.qualiList;
                 var qualificationName = null;
                 qualiList.forEach(function (currentValue, index, arr) {
-                    if(currentValue.id == id){
+                    if (currentValue.id == id) {
                         return qualificationName = currentValue.name_bn;
                     }
                 });
@@ -109,7 +109,7 @@ var app = angular.module('collegeSecondPage', []);
                 var hdList = $scope.data.hdList;
                 var hdTrName = null;
                 hdList.forEach(function (currentValue, index, arr) {
-                    if(currentValue.higher_degree_id == id){
+                    if (currentValue.higher_degree_id == id) {
                         return hdTrName = currentValue.bn_name;
                     }
                 });
@@ -122,7 +122,7 @@ var app = angular.module('collegeSecondPage', []);
                 var hdTrList = $scope.data.hdTrList;
                 var hdTrEdName = null;
                 hdTrList.forEach(function (currentValue, index, arr) {
-                    if(currentValue.higher_degree_id == id){
+                    if (currentValue.higher_degree_id == id) {
                         return hdTrEdName = currentValue.bn_name;
                     }
                 });
@@ -136,7 +136,7 @@ var app = angular.module('collegeSecondPage', []);
 
 
         /*Data Saving*/
-        $scope.save=function () {
+        $scope.save = function () {
 
             console.log($scope.studentSummeryPrevYr);
             console.log($scope.subjectWiseData);
@@ -157,17 +157,34 @@ var app = angular.module('collegeSecondPage', []);
         }
 
         $scope.submitData = function () {
-			var dataToSend={};
-			dataToSend.studentSummeryPrevYr=$scope.studentSummeryPrevYr;
-           $http.post('http://127.0.0.1:8000/collegeSecondPage/submitData', 
-            dataToSend).then(
-                            function (response){
-                                console.log(response);
-                            },
-                            function (response) {
-                                console.log(response);
-                                    }
-                                );
-                            }
-                     });
+            var dataToSend = {};
+            dataToSend.studentSummeryPrevYr = $scope.studentSummeryPrevYr;
+            dataToSend.subjectWiseData = $scope.subjectWiseData;
+            dataToSend.boardWiseExamResults = $scope.boardWiseExamResults;
+            dataToSend.hscVocStd = $scope.hscVocStd;
+            dataToSend.hscBMStd = $scope.hscBMStd;
+            dataToSend.instOtherInfo = $scope.instOtherInfo;
+            dataToSend.openUnStd = $scope.openUnStd;
+            dataToSend.openUnRes = $scope.openUnRes;
+            dataToSend.teachStafSum = $scope.teachStafSum;
+            dataToSend.teachVocStafSum = $scope.teachVocStafSum;
+            dataToSend.teachQualiSum = $scope.teachQualiSum;
+            dataToSend.hdTeachSum = $scope.hdTeachSum;
+            dataToSend.hdTrnSum = $scope.hdTrnSum;
+            dataToSend.teacherInservTr = $scope.teacherInservTr;
+            dataToSend.teacherTrainInfo = $scope.teacherTrainInfo;
+            dataToSend.teacherRetAwInfo = $scope.teacherRetAwInfo;
+            $http.post('http://127.0.0.1:8000/collegeSecondPage/submitData',
+                dataToSend).then(
+                function (response) {
+                    console.log(response);
+                    alert("succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("fucked");
+                }
+            );
+        }
+    });
 })(app);
