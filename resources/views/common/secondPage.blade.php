@@ -434,6 +434,43 @@
                             </tr>
                             </tbody>
                         </table>
+                        <label>
+                            ১.৭.১১ প্রতিষ্ঠানের প্রার্থনা গৃহঃ
+                        </label>
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <td>
+                                    <label class="label-number" for="">মসজিদ</label>
+                                    <input type="checkbox" class="form-control"  v-model="data.building_use[0].mosjid"
+                                           style="width: 20px">
+                                </td>
+                                <td>
+                                    <label class="label-number" for="">নামাজ ঘর</label>
+                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].prayer_room"
+                                           style="width: 20px">
+                                </td>
+                                <td>
+                                    <label class="label-number" for="">মন্দির</label>
+                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].mondir"
+                                           style="width: 20px">
+                                </td>
+                                <td>
+                                    <label class="label-number" for="">গীর্জা</label>
+                                    <input type="checkbox" class="form-control"  v-model="data.building_use[0].girja"
+                                           style="width: 20px">
+                                </td>
+                                <td>
+                                    <label class="label-number" for="">প্যাগোডা</label>
+                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].pagoda"
+                                           style="width: 20px">
+                                </td>
+                                <td>
+                                    <label class="label-number" for="">অন্যান্য</label>
+                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].other_religious_place"
+                                           style="width: 20px">
+                                </td>
+                            </tr>
+                        </table>
                     </div>
 
 

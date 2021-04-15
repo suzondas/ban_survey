@@ -198,8 +198,7 @@
                                 <div class="row">
                                     <div class="col">মানবিক <input type="checkbox" v-model="data.arts_group"/></div>
                                     <div class="col">বিজ্ঞান <input type="checkbox" v-model="data.science_group"/></div>
-                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox"
-                                                                           v-model="data.commerce_group"/></div>
+                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" v-model="data.commerce_group"/></div>
                                 </div>
                             </td>
                             <td v-if="data.institute_type_id !=1">
