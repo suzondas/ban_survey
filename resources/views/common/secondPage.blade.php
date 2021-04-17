@@ -480,13 +480,11 @@
                             <table class="table table-bordered" style="text-align:center">
                                 <thead>
                                 <tr class="custom-table-header">
-                                    <th>স্তর</th>
                                     <th>শ্রেণি/পর্ব</th>
                                     <th colspan="3">কক্ষ সংখ্যা</th>
                                     <th colspan="3">কক্ষের আয়তন (বর্গফুট)</th>
                                 </tr>
                                 <tr>
-                                    <th></th>
                                     <th></th>
                                     <th>পাকা</th>
                                     <th>আধা-পাকা</th>
@@ -497,126 +495,14 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr v-if="">
-                                    <td rowspan="3">nimmo</td>
-                                    <td>৬ষ্ঠ</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-
-
-                                <tr>
-                                    <td>৭ম</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-
-                                    <td>৮ম</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">মাধ্যমিক</td>
-                                    <td>৯ম</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-
-                                    <td>১০ম</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">উচ্চ মাধ্যমিক</td>
-                                    <td>১ম বর্ষ(১১শ)</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-
-                                    <td>২য় বর্ষ(১২শ)</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="3">স্নাতক পাশ</td>
-                                    <td>১ম বর্ষ</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-
-                                    <td>২য় বর্ষ</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-
-                                    <td>৩য় বর্ষ</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-                                    <td>স্নাতক সম্মান</td>
-                                    <td>-</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                </tr>
-                                <tr>
-                                    <td>স্নাতকোত্তর</td>
-                                    <td>-</td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
-                                    <td><input type="number" class="form-control" name="" id=""></td>
+                                <tr v-for="item in data.classwise_room_space">
+                                    <td>@{{ className(item.class_id) }}</td>
+                                    <td><input type="text" class="form-control" v-model="item.packa"></td>
+                                    <td><input type="text" class="form-control" v-model="item.semi_packa"></td>
+                                    <td><input type="text" class="form-control" v-model="item.kancha"></td>
+                                    <td><input type="text" class="form-control" v-model="item.packa_sft"></td>
+                                    <td><input type="text" class="form-control" v-model="item.semi_packa_sft"></td>
+                                    <td><input type="text" class="form-control" v-model="item.kancha_sft"></td>
                                 </tr>
                                 </tbody>
                             </table>

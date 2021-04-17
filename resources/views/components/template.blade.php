@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Auth;
 $inst_id=Auth::user()->institute_id;
+$inst_type=Auth::user()->institute_type;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,7 @@ $inst_id=Auth::user()->institute_id;
     <!-- Scripts -->
     <script>
         var inst_id="<?php echo $inst_id;?>"
+        var inst_type="<?php echo $inst_type;?>"
     </script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/datatable.js') }}" defer></script>
