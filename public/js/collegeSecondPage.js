@@ -174,8 +174,24 @@ var app = angular.module('collegeSecondPage', []);
             dataToSend.teacherInservTr = $scope.teacherInservTr;
             dataToSend.teacherTrainInfo = $scope.teacherTrainInfo;
             dataToSend.teacherRetAwInfo = $scope.teacherRetAwInfo;
-            $http.post('http://127.0.0.1:8000/collegeSecondPage/submitData',
-                dataToSend).then(
+            $http({
+                method: 'POST',
+                url: 'http://127.0.0.1:8000/collegeSecondPage/submitData/',
+                data:dataToSend,
+                dataType:'json'
+            }).then(
+                function (response) {
+                    console.log(response);
+                    alert("succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("Try again");
+                }
+            );
+
+            /*$http.post('http://127.0.0.1:8000/collegeSecondPage/submitData',dataToSend
+                ).then(
                 function (response) {
                     console.log(response);
                     alert("succesfull");
@@ -184,7 +200,9 @@ var app = angular.module('collegeSecondPage', []);
                     console.log(response);
                     alert("fucked");
                 }
-            );
+            );*/
+
+
         }
     });
 })(app);

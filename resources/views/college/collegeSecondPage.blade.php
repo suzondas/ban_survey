@@ -654,8 +654,8 @@
                                 <option value="2">না</option>
                             </select></td>
                         <td>সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
-                        <td><input type="number" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
-                        <td><input type="number" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
+                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
                     </tr>
 
                     <tr>
