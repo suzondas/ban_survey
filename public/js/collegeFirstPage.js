@@ -151,22 +151,88 @@ var app = angular.module('collegeFirstPage', []);
 
         /*==========================Data Saving=======================================*/
         $scope.save = function () {
-            // console.log($scope.data.studentSummaryTotal);
+            console.log($scope.data.studentSummaryTotal);
             console.log($scope.stuentsSummery);
-            // console.log($scope.data.studentSummaryRepeater);
-            // console.log($scope.data.studentSummaryDropout);
-            // console.log($scope.data.hscVocStudent);
-            // console.log($scope.data.hscBmStudent);
-            // console.log($scope.data.hscDiplomaFisheries);
-            // console.log($scope.data.hscDiplomaAgriculture);
-            // console.log($scope.data.categoryWiseStudent);
-            // console.log($scope.data.instituteSpecialStudents);
-            // console.log($scope.data.categoryWiseDisableStudent);
-            // console.log($scope.data.categoryWiseUpajati);
-            // console.log($scope.data.ageWiseStudent);
-            // console.log($scope.data.guardianOccupation);
+            console.log($scope.data.studentSummaryRepeater);
+            console.log($scope.data.studentSummaryDropout);
+            console.log($scope.data.hscVocStudent);
+            console.log($scope.data.hscBmStudent);
+            console.log($scope.data.hscDiplomaFisheries);
+            console.log($scope.data.hscDiplomaAgriculture);
+            console.log($scope.data.categoryWiseStudent);
+            console.log($scope.data.instituteSpecialStudents);
+            console.log($scope.data.categoryWiseDisableStudent);
+            console.log($scope.data.categoryWiseUpajati);
+            console.log($scope.data.ageWiseStudent);
+            console.log($scope.data.guardianOccupation);
         }
         /*==========================Data Saving Ends=======================================*/
+        $scope.submitData = function () {
+            var dataToSend = {};
+            dataToSend.instId = inst_id;
+            dataToSend.studentSummaryTotal = $scope.studentSummaryTotal;
+            dataToSend.stuentsSummery = $scope.stuentsSummery;
+            dataToSend.studentSummaryRepeater = $scope.studentSummaryRepeater;
+            dataToSend.studentSummaryDropout = $scope.studentSummaryDropout;
+            dataToSend.hscVocStudent = $scope.hscVocStudent;
+            dataToSend.hscBmStudent = $scope.hscBmStudent;
+            dataToSend.hscDiplomaFisheries = $scope.hscDiplomaFisheries;
+            dataToSend.hscDiplomaAgriculture = $scope.hscDiplomaAgriculture;
+            dataToSend.categoryWiseStudent = $scope.categoryWiseStudent;
+            dataToSend.instituteSpecialStudents = $scope.instituteSpecialStudents;
+            dataToSend.categoryWiseDisableStudent = $scope.categoryWiseDisableStudent;
+            dataToSend.categoryWiseUpajati = $scope.categoryWiseUpajati;
+            dataToSend.ageWiseStudent = $scope.ageWiseStudent;
+            dataToSend.guardianOccupation = $scope.guardianOccupation;
+            console.log(dataToSend);
+            $http({
+                method: 'POST',
+                url: 'http://127.0.0.1:8000/collegeFirstPage/submitData/',
+                data:dataToSend,
+                dataType:'json'
+            }).then(
+                function (response) {
+                    console.log(response);
+                    alert("succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("Try again");
+                }
+            );
 
+            /*$http.post('http://127.0.0.1:8000/collegeFirstPage/submitData',dataToSend
+                ).then(
+                function (response) {
+                    console.log(response);
+                    alert("succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("error");
+                }
+            );*/
+
+
+        }
     });
 })(app);
+app.directive('numberConverter', function() {
+    return {
+        priority: 1,
+        restrict: 'A',
+        require: 'ngModel',
+        link: function(scope, element, attr, ngModel) {
+            function toModel(value) {
+                return "" + value; // convert to string
+            }
+
+            function toView(value) {
+                return parseInt(value); // convert to number
+            }
+
+            ngModel.$formatters.push(toView);
+            ngModel.$parsers.push(toModel);
+        }
+    };
+});
