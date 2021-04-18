@@ -654,8 +654,8 @@
                                 <option value="2">না</option>
                             </select></td>
                         <td>সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
+                        <td><input type="number" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
+                        <td><input type="number" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
                     </tr>
 
                     <tr>
@@ -972,84 +972,84 @@
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_inst_year"></td>
+                        <td><input type="radio" name="best_inst" ng-model="data.teacherRetAwInfo.best_inst_national"></td>
+                        <td><input type="radio" name="best_inst" ng-model="data.teacherRetAwInfo.best_inst_division"></td>
+                        <td><input type="radio" name="best_inst" ng-model="data.teacherRetAwInfo.best_inst_district"></td>
+                        <td><input type="radio" name="best_inst" ng-model="data.teacherRetAwInfo.best_inst_thana"></td>
+                        <td><input type="number" class="form-control" ng-model="data.teacherRetAwInfo.best_inst_year"></td>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান প্রধান</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_inst_head_year"></td>
+                        <td><input type="radio" name="best_inst_head" ng-model="data.teacherRetAwInfo.best_inst_head_national"></td>
+                        <td><input type="radio" name="best_inst_head" ng-model="data.teacherRetAwInfo.best_inst_head_division"></td>
+                        <td><input type="radio" name="best_inst_head" ng-model="data.teacherRetAwInfo.best_inst_head_district"></td>
+                        <td><input type="radio" name="best_inst_head" ng-model="data.teacherRetAwInfo.best_inst_head_thana"></td>
+                        <td><input type="number"  class="form-control" ng-model="data.teacherRetAwInfo.best_inst_head_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শ্রেণি শিক্ষক</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_class_tea_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_class_tea_year"></td>
+                        <td><input type="radio" name="best_cls_teacher_radio" ng-model="data.teacherRetAwInfo.best_class_tea_national"></td>
+                        <td><input type="radio" name="best_cls_teacher_radio" ng-model="data.teacherRetAwInfo.best_class_tea_division"></td>
+                        <td><input type="radio" name="best_cls_teacher_radio" ng-model="data.teacherRetAwInfo.best_class_tea_district"></td>
+                        <td><input type="radio" name="best_cls_teacher_radio" ng-model="data.teacherRetAwInfo.best_class_tea_thana"></td>
+                        <td><input type="number"  class="form-control" ng-model="data.teacherRetAwInfo.best_class_tea_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষক (বিএনসিসি)</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_bncc_year"></td>
+                        <td><input type="radio" name="best_teacher_bncc_radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_national"></td>
+                        <td><input type="radio" name="best_teacher_bncc_radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_division"></td>
+                        <td><input type="radio" name="best_teacher_bncc_radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_district"></td>
+                        <td><input type="radio" name="best_teacher_bncc_radio" ng-model="data.teacherRetAwInfo.best_tea_bncc_thana"></td>
+                        <td><input type="number" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_bncc_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষক (রোভার)</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_scout_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_scout_year"></td>
+                        <td><input type="radio" name="best_teacher_rover_radio" ng-model="data.teacherRetAwInfo.best_tea_scout_national"></td>
+                        <td><input type="radio" name="best_teacher_rover_radio" ng-model="data.teacherRetAwInfo.best_tea_scout_division"></td>
+                        <td><input type="radio" name="best_teacher_rover_radio" ng-model="data.teacherRetAwInfo.best_tea_scout_district"></td>
+                        <td><input type="radio" name="best_teacher_rover_radio" ng-model="data.teacherRetAwInfo.best_tea_scout_thana"></td>
+                        <td><input type="number" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_scout_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষক (রেঞ্জার)</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_gguide_year"></td>
+                        <td><input type="radio" name="best_teacher_ranger_radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_national"></td>
+                        <td><input type="radio" name="best_teacher_ranger_radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_division"></td>
+                        <td><input type="radio" name="best_teacher_ranger_radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_district"></td>
+                        <td><input type="radio" name="best_teacher_ranger_radio" ng-model="data.teacherRetAwInfo.best_tea_gguide_thana"></td>
+                        <td><input type="number" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_gguide_year"></td>
                     <tr>
                     </tr>
                     <tr>
                         <td rowspan="4"> শিক্ষার্থীদের জন্য</td>
                         <td>শ্রেষ্ঠ শিক্ষার্থী</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_year"></td>
+                        <td><input type="radio" name="best_student_radio" ng-model="data.teacherRetAwInfo.best_std_national"></td>
+                        <td><input type="radio" name="best_student_radio" ng-model="data.teacherRetAwInfo.best_std_division"></td>
+                        <td><input type="radio" name="best_student_radio" ng-model="data.teacherRetAwInfo.best_std_district"></td>
+                        <td><input type="radio" name="best_student_radio" ng-model="data.teacherRetAwInfo.best_std_thana"></td>
+                        <td><input type="number" class="form-control" ng-model="data.teacherRetAwInfo.best_std_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষার্থী (বিএনসিসি)</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_divisional"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_bncc_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_bncc_year"></td>
+                        <td><input type="radio" name="best_std_bncc_radio" ng-model="data.teacherRetAwInfo.best_std_bncc_national"></td>
+                        <td><input type="radio" name="best_std_bncc_radio"  ng-model="data.teacherRetAwInfo.best_std_bncc_divisional"></td>
+                        <td><input type="radio" name="best_std_bncc_radio"  ng-model="data.teacherRetAwInfo.best_std_bncc_district"></td>
+                        <td><input type="radio" name="best_std_bncc_radio"  ng-model="data.teacherRetAwInfo.best_std_bncc_thana"></td>
+                        <td><input type="number"  name="best_std_bncc_radio" class="form-control" ng-model="data.teacherRetAwInfo.best_std_bncc_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষার্থী (রোভার)</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_scout_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_scout_year"></td>
+                        <td><input type="radio" name="best_std_rover_radio" ng-model="data.teacherRetAwInfo.best_std_scout_national"></td>
+                        <td><input type="radio" name="best_std_rover_radio"  ng-model="data.teacherRetAwInfo.best_std_scout_division"></td>
+                        <td><input type="radio" name="best_std_rover_radio" ng-model="data.teacherRetAwInfo.best_std_scout_district"></td>
+                        <td><input type="radio" name="best_std_rover_radio" ng-model="data.teacherRetAwInfo.best_std_scout_thana"></td>
+                        <td><input type="number" class="form-control" ng-model="data.teacherRetAwInfo.best_std_scout_year"></td>
                     </tr>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষার্থী (রেঞ্জার)</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_national"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_division"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_district"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.best_std_gguide_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_gguide_year"></td>
+                        <td><input type="radio" name="best_std_ranger_radio" ng-model="data.teacherRetAwInfo.best_std_gguide_national"></td>
+                        <td><input type="radio" name="best_std_ranger_radio"  ng-model="data.teacherRetAwInfo.best_std_gguide_division"></td>
+                        <td><input type="radio" name="best_std_ranger_radio"  ng-model="data.teacherRetAwInfo.best_std_gguide_district"></td>
+                        <td><input type="radio" name="best_std_ranger_radio"  ng-model="data.teacherRetAwInfo.best_std_gguide_thana"></td>
+                        <td><input type="number" class="form-control" ng-model="data.teacherRetAwInfo.best_std_gguide_year"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1070,78 +1070,78 @@
                     <tr>
                         <td rowspan="2">সাহিত্য ও সংস্কৃতি</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_cultureal_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_cultureal_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_cultureal_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_cultureal_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_cultureal_parti"></td>
+                        <td><input type="radio" name="lit_perticipant_radio" ng-model="data.teacherRetAwInfo.institute_cultureal_parti"></td>
+                        <td><input type="radio" name="lit_perticipant_radio" ng-model="data.teacherRetAwInfo.upazila_cultureal_parti"></td>
+                        <td><input type="radio" name="lit_perticipant_radio" ng-model="data.teacherRetAwInfo.district_cultureal_parti"></td>
+                        <td><input type="radio" name="lit_perticipant_radio" ng-model="data.teacherRetAwInfo.division_cultureal_parti"></td>
+                        <td><input type="radio" name="lit_perticipant_radio" ng-model="data.teacherRetAwInfo.national_cultureal_parti"></td>
                     </tr>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_cultureal_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_cultureal_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_cultureal_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_cultureal_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_cultureal_award"></td>
+                        <td><input type="radio" name="lit_award_radio" ng-model="data.teacherRetAwInfo.institute_cultureal_award"></td>
+                        <td><input type="radio" name="lit_award_radio" ng-model="data.teacherRetAwInfo.upazila_cultureal_award"></td>
+                        <td><input type="radio" name="lit_award_radio" ng-model="data.teacherRetAwInfo.district_cultureal_award"></td>
+                        <td><input type="radio" name="lit_award_radio" ng-model="data.teacherRetAwInfo.division_cultureal_award"></td>
+                        <td><input type="radio" name="lit_award_radio" ng-model="data.teacherRetAwInfo.national_cultureal_award"></td>
                     </tr>
                     <tr>
                         <td rowspan="2">ক্রীড়া (আউটডোর)</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_sports_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_sports_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_sports_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_sports_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_sports_parti"></td>
+                        <td><input type="radio" name="sport_perticipant_radio" ng-model="data.teacherRetAwInfo.institute_sports_parti"></td>
+                        <td><input type="radio" name="sport_perticipant_radio" ng-model="data.teacherRetAwInfo.upazila_sports_parti"></td>
+                        <td><input type="radio" name="sport_perticipant_radio" ng-model="data.teacherRetAwInfo.district_sports_parti"></td>
+                        <td><input type="radio" name="sport_perticipant_radio" ng-model="data.teacherRetAwInfo.division_sports_parti"></td>
+                        <td><input type="radio" name="sport_perticipant_radio" ng-model="data.teacherRetAwInfo.national_sports_parti"></td>
                     </tr>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_sports_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_sports_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_sports_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_sports_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_sports_award"></td>
+                        <td><input type="radio" name="sport_award_radio" ng-model="data.teacherRetAwInfo.institute_sports_award"></td>
+                        <td><input type="radio" name="sport_award_radio" ng-model="data.teacherRetAwInfo.upazila_sports_award"></td>
+                        <td><input type="radio" name="sport_award_radio" ng-model="data.teacherRetAwInfo.district_sports_award"></td>
+                        <td><input type="radio" name="sport_award_radio" ng-model="data.teacherRetAwInfo.division_sports_award"></td>
+                        <td><input type="radio" name="sport_award_radio" ng-model="data.teacherRetAwInfo.national_sports_award"></td>
                     </tr>
                     <tr>
                         <td rowspan="2">ক্রীড়া (ইনডোর)</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_indoor_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_indoor_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_indoor_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_indoor_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_indoor_parti"></td>
+                        <td><input type="radio" name="sport_in_pert_radio" ng-model="data.teacherRetAwInfo.institute_indoor_parti"></td>
+                        <td><input type="radio" name="sport_in_pert_radio" ng-model="data.teacherRetAwInfo.upazila_indoor_parti"></td>
+                        <td><input type="radio" name="sport_in_pert_radio" ng-model="data.teacherRetAwInfo.district_indoor_parti"></td>
+                        <td><input type="radio" name="sport_in_pert_radio" ng-model="data.teacherRetAwInfo.division_indoor_parti"></td>
+                        <td><input type="radio" name="sport_in_pert_radio"  ng-model="data.teacherRetAwInfo.national_indoor_parti"></td>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_indoor_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_indoor_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_indoor_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_indoor_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_indoor_award"></td>
+                        <td><input type="radio" name="sport_in_award_radio" ng-model="data.teacherRetAwInfo.institute_indoor_award"></td>
+                        <td><input type="radio" name="sport_in_award_radio" ng-model="data.teacherRetAwInfo.upazila_indoor_award"></td>
+                        <td><input type="radio" name="sport_in_award_radio" ng-model="data.teacherRetAwInfo.district_indoor_award"></td>
+                        <td><input type="radio" name="sport_in_award_radio" ng-model="data.teacherRetAwInfo.division_indoor_award"></td>
+                        <td><input type="radio" name="sport_in_award_radio" ng-model="data.teacherRetAwInfo.national_indoor_award"></td>
                     </tr>
                     <tr>
                         <td rowspan="2">সৃজনশীল মেধা অন্বেষণ</td>
                         <td>অংশগ্রহণকারী</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_creative_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_creative_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_creative_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_creative_parti"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_creative_parti"></td>
+                        <td><input type="radio" name="creative_perticipant_radio"  ng-model="data.teacherRetAwInfo.institute_creative_parti"></td>
+                        <td><input type="radio" name="creative_perticipant_radio"  ng-model="data.teacherRetAwInfo.upazila_creative_parti"></td>
+                        <td><input type="radio" name="creative_perticipant_radio"  ng-model="data.teacherRetAwInfo.district_creative_parti"></td>
+                        <td><input type="radio" name="creative_perticipant_radio"  ng-model="data.teacherRetAwInfo.division_creative_parti"></td>
+                        <td><input type="radio" name="creative_perticipant_radio"  ng-model="data.teacherRetAwInfo.national_creative_parti"></td>
                     </tr>
                     <tr>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_creative_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_creative_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_creative_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_creative_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_creative_award"></td>
+                        <td><input type="radio" name="creative_award_radio" ng-model="data.teacherRetAwInfo.institute_creative_award"></td>
+                        <td><input type="radio" name="creative_award_radio" ng-model="data.teacherRetAwInfo.upazila_creative_award"></td>
+                        <td><input type="radio" name="creative_award_radio" ng-model="data.teacherRetAwInfo.district_creative_award"></td>
+                        <td><input type="radio" name="creative_award_radio" ng-model="data.teacherRetAwInfo.division_creative_award"></td>
+                        <td><input type="radio" name="creative_award_radio" ng-model="data.teacherRetAwInfo.national_creative_award"></td>
                     </tr>
                     <tr>
                         <td>বিশেষ কৃতিত্বপূর্ণ অবদান</td>
                         <td>পুরষ্কারপ্রাপ্ত</td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.institute_special_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.upazila_special_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.district_special_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.division_special_award"></td>
-                        <td><input type="radio" ng-model="data.teacherRetAwInfo.national_special_award"></td>
+                        <td><input type="radio" name="special_award_radio" ng-model="data.teacherRetAwInfo.institute_special_award"></td>
+                        <td><input type="radio" name="special_award_radio" ng-model="data.teacherRetAwInfo.upazila_special_award"></td>
+                        <td><input type="radio" name="special_award_radio" ng-model="data.teacherRetAwInfo.district_special_award"></td>
+                        <td><input type="radio" name="special_award_radio" ng-model="data.teacherRetAwInfo.division_special_award"></td>
+                        <td><input type="radio" name="special_award_radio" ng-model="data.teacherRetAwInfo.national_special_award"></td>
                     </tr>
                     </tbody>
                 </table>

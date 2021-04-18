@@ -174,6 +174,7 @@ var app = angular.module('collegeSecondPage', []);
             dataToSend.teacherInservTr = $scope.teacherInservTr;
             dataToSend.teacherTrainInfo = $scope.teacherTrainInfo;
             dataToSend.teacherRetAwInfo = $scope.teacherRetAwInfo;
+            console.log(dataToSend);
             $http({
                 method: 'POST',
                 url: 'http://127.0.0.1:8000/collegeSecondPage/submitData/',
