@@ -158,6 +158,7 @@ var app = angular.module('collegeSecondPage', []);
 
         $scope.submitData = function () {
             var dataToSend = {};
+            dataToSend.instId = inst_id;
             dataToSend.studentSummeryPrevYr = $scope.studentSummeryPrevYr;
             dataToSend.subjectWiseData = $scope.subjectWiseData;
             dataToSend.boardWiseExamResults = $scope.boardWiseExamResults;
@@ -207,3 +208,22 @@ var app = angular.module('collegeSecondPage', []);
         }
     });
 })(app);
+app.directive('numberConverter', function() {
+    return {
+        priority: 1,
+        restrict: 'A',
+        require: 'ngModel',
+        link: function(scope, element, attr, ngModel) {
+            function toModel(value) {
+                return "" + value; // convert to string
+            }
+
+            function toView(value) {
+                return parseInt(value); // convert to number
+            }
+
+            ngModel.$formatters.push(toView);
+            ngModel.$parsers.push(toModel);
+        }
+    };
+});
