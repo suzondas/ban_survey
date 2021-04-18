@@ -9,7 +9,7 @@ const app = new Vue({
     },
     mounted() {
         var self=this
-        axios.get('http://127.0.0.1:8000/secondPage/'+inst_id)
+        axios.get('http://127.0.0.1:8000/secondPage/'+inst_id+'/'+inst_type)
             .then(function (response) {
                 self.data=response.data
                 self.dataLoaded = true;
@@ -37,7 +37,17 @@ const app = new Vue({
                     "updated_at": null
                 }
             )
-    }
+    },
+        className: function (classId) {
+            var self = this;
+            // console.log(self.data);return;
+
+            for (var i = 0; i < self.data.classes.length; i++) {
+                if (self.data.classes[i].class_id == classId) {
+                    return self.data.classes[i].class_name_bangla;
+                }
+            }
+        },
     }
 
 });
