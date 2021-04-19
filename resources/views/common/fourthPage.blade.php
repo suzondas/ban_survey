@@ -39,7 +39,7 @@
                     <tr>
                         <td>
                             <label>৩.৫.২ একজন শিক্ষককে সপ্তাহে গড়ে কতটি ক্লাস নিতে হয় ? </label>
-                            <input type="text" v-model="data.summary_infos.weekly_class_num"/>
+                            <input type="number" v-model="data.summary_infos.weekly_class_num"/>
                         </td>
                         <td>
                             <label>৩.৫.৩ অতিরিক্ত ক্লাস নেয়া হয় কি? </label>
@@ -59,13 +59,13 @@
                         </td>
                         <td>
                             <label>৩.৫.৫ প্রতি পিরিয়ডে পাঠদানের জন্য নির্ধারিত সময় কত?</label>
-                            <input type="text" v-model="data.summary_infos.per_period_time"/> মিনিট
+                            <input type="number" v-model="data.summary_infos.per_period_time"/> মিনিট
                         </td>
                     </tr>
                     <tr>
                         <td class="align-middle">
                             <label>৩.৫.৬ সপ্তাহে কত ঘন্টা বিজ্ঞানাগার ব্যবহার করা হয়?</label>
-                            <input type="text" v-model="data.summary_infos.lab_hr"/> ঘন্টা
+                            <input type="number" v-model="data.summary_infos.lab_hr"/> ঘন্টা
                         </td>
                         <td>
                             <label>৩.৫.৭ বিজ্ঞানাগারে ব্যবহৃত প্রধান ৪টি এ্যাপারেটাস ও কেমিক্যালস এর নাম:</label>
@@ -157,7 +157,7 @@
                     <tr>
                         <td>
                             <label>৩.৫.১৮ পূর্ববর্তী বছর (২০২০) সালে কত কার্য দিবস পাঠদান করা হয়েছে </label>
-                            <input type="text" class="w-25"  v-model="data.summary_infos.working_day_lastyr"/>
+                            <input type="number" class="w-25"  v-model="data.summary_infos.working_day_lastyr"/>
                         </td>
                         <td>
                             <label>৩.৬ প্রতিষ্ঠানটিতে মাদক বিরোধী কার্যক্রম হয় কি?</label>
@@ -363,7 +363,7 @@
                             </select>
                         </td>
                         <td><label> ৩.৭.২৭ উত্তর হ্যাঁ হলে, মামলার সংখ্যা </label>
-                            <input type="text" class="w-25" v-model="data.summary_audit_infos.inst_case_no"/>
+                            <input type="number" class="w-25" v-model="data.summary_audit_infos.inst_case_no"/>
                         </td>
                         <td><label> ৩.৭.২৮ উত্তর হ্যাঁ হলে, মামলার বিষয়</label>
                             <input type="text" class="w-100" v-model="data.summary_audit_infos.inst_case_details"/>
@@ -480,17 +480,17 @@
                     </tr>
                     <tr>
                         <td>সদস্য/ছাত্র-ছাত্রীর সংখ্যা</td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.boys_scout"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.girls_guide"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.rover_scout"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.kab"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.bncc"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.red_cresent"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.student_cabinat"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.health_service"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.counciling_service"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.transport"/> </td>
-                        <td class="text-center"><input type="text" class="w-50" v-model="data.community_services.cantain"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.boys_scout"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.girls_guide"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.rover_scout"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.kab"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.bncc"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.red_cresent"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.student_cabinat"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.health_service"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.counciling_service"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.transport"/> </td>
+                        <td class="text-center"><input type="number" class="w-50" v-model="data.community_services.cantain"/> </td>
                     </tr>
                 </table>
                 <table class="table table-bordered table-striped">

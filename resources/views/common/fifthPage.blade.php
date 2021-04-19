@@ -75,108 +75,108 @@
                         <tr>
                             <td><label>১. ছাত্রাবাসের কক্ষ ক্ষতিগ্রস্ত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.hostal_damage_last"/> টি</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.hostal_damage_amfan"/> টি</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.hostal_damage_flood"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.hostal_damage_last"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.hostal_damage_amfan"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.hostal_damage_flood"/> টি</td>
                         </tr>
                         <tr>
                             <td><label>২. শ্রেণিকক্ষ ক্ষতিগ্রস্ত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.classroom_damage_last"/> টি</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.classroom_damage_amfan"/> টি</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.classroom_damage_flood"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.classroom_damage_last"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.classroom_damage_amfan"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.classroom_damage_flood"/> টি</td>
                         </tr>
                         <tr>
                             <td><label>৩. বৃক্ষ মারা গিয়াছে অন্তত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.tree_damage_last"/> টি</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.tree_damage_amfan"/> টি</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.tree_damage_flood"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.tree_damage_last"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.tree_damage_amfan"/> টি</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.tree_damage_flood"/> টি</td>
                         </tr>
                         <tr>
                             <td><label>৪. শিক্ষা প্রতিষ্ঠান বন্ধ ছিল</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_close_damage_last"/> দিন</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_close_amfan"/> দিন</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_close_flood"/> দিন</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_close_damage_last"/> দিন</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_close_amfan"/> দিন</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_close_flood"/> দিন</td>
                         </tr>
                         <tr>
                             <td><label>৫. প্রতিষ্ঠান খোলা ছিল, কিন্তু ক্লাস নেয়া যায় নি</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.class_close_damage_last"/> দিন</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.class_close_amfan"/> দিন</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.class_close_flood"/> দিন</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.class_close_damage_last"/> দিন</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.class_close_amfan"/> দিন</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.class_close_flood"/> দিন</td>
                         </tr>
                         <tr>
                             <td><label>৬. প্রতিষ্ঠান স্থানান্তর করতে হয়েছে</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_replace_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_replace_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_replace_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_replace_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_replace_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_replace_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>৭. প্রতিষ্ঠানে আসার রাস্তা আংশিক ক্ষতিগ্রস্থ হয়েছে</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.road_partial_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.road_partial_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.road_partial_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.road_partial_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.road_partial_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.road_partial_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>৮. প্রতিষ্ঠানে আসার রাস্তা পুরা ক্ষতিগ্রস্থ হয়েছ</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.road_full_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.road_full_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.road_full_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.road_full_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.road_full_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.road_full_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>৯. প্রতিষ্ঠান খোলা ছিল, কিন্তু শিক্ষকদের স্কুল আসতে খু সমস্যা হয়েছিল</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.teach_problem_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.teach_problem_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.teach_problem_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.teach_problem_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.teach_problem_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.teach_problem_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>১০. শিক্ষকদের দুর্যোগ সহায়তা কাজে নিয়োজিত হবার জন্য অন্যত্র যেতে হয়েছিল
                                     অন্তত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.teach_volantier_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.teach_volantier_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.teach_volantier_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.teach_volantier_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.teach_volantier_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.teach_volantier_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>১১.পানি সরবরাহ ব্যবস্থা ভেঙ্গে পড়েছিল অন্তত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.water_sup_fail_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.water_sup_fail_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.water_sup_fail_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.water_sup_fail_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.water_sup_fail_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.water_sup_fail_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>১২. টয়লেট ব্যবস্থা ভেঙ্গে পড়েছিল অন্তত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.sanit_fail_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.sanit_fail_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.sanit_fail_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.sanit_fail_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.sanit_fail_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.sanit_fail_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>১৩. প্রতিষ্ঠানটি আশ্রয় কেন্দ্র হিসেবে ব্যবহৃত হয়েছিল অন্তত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_shelter_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_shelter_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.inst_shelter_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_shelter_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_shelter_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.inst_shelter_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>১৪. খেলার মাঠ ব্যবহার অনুপযোগী হয়ে পড়েছিল</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.playground_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.playground_damage_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.playground_damage_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.playground_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.playground_damage_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.playground_damage_flood"/> বার</td>
                         </tr>
                         <tr>
                             <td><label>১৫. কারিকুলাম সটিকভাবে শেষ করা যায়নি অন্তত</label>
                             </td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.syllabus_damage_last"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.psyllabus_amfan"/> বার</td>
-                            <td><input type="text" class="w-50" v-model="data.climate_disaster_manage_infos.syllabus_flood"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.syllabus_damage_last"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.psyllabus_amfan"/> বার</td>
+                            <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.syllabus_flood"/> বার</td>
                     </table>
                 </div>
                 <div><label class="align-middle"> ৩.১০.৩ সর্বশেষ দুর্যোগের ফলে শিক্ষার্থীঝরে পড়ার
@@ -196,42 +196,42 @@
                         <tr>
                             <td rowspan="3">প্রাকৃতিক</td>
                             <td>১. <input type="text" class="w-75" v-model="data.climate_disaster_manage_infos.natural_disaster_name1"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_male1"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_female1"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_total1"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_male1"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_female1"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_total1"></td>
                         </tr>
                         <tr>
                             <td>২. <input type="text" class="w-75" v-model="data.climate_disaster_manage_infos.natural_disaster_name2"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_male2"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_female2"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_total2"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_male2"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_female2"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_total2"></td>
                         </tr>
                         <tr>
                             <td>৩. <input type="text" class="w-75" v-model="data.climate_disaster_manage_infos.natural_disaster_name3"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_male3"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_female3"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_total3"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_male3"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_female3"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.natural_dis_dropout_total3"></td>
 
                         </tr>
                         <tr>
                             <td rowspan="3">মানব সৃষ্ট</td>
                             <td>১. <input type="text" class="w-75" v-model="data.climate_disaster_manage_infos.human_disaster_name1"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_male1"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_female1"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_total1"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_male1"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_female1"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_total1"></td>
 
                         </tr>
                         <tr>
                             <td>২. <input type="text" class="w-75" v-model="data.climate_disaster_manage_infos.human_disaster_name2"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_male2"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_female2"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_total2"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_male2"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_female2"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_total2"></td>
                         </tr>
                         <tr>
                             <td>৩. <input type="text" class="w-75" v-model="data.climate_disaster_manage_infos.human_disaster_name3"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_male3"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_female3"></td>
-                            <td><input type="text" v-model="data.climate_disaster_manage_infos.human_dis_dropout_total3"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_male3"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_female3"></td>
+                            <td><input type="number" v-model="data.climate_disaster_manage_infos.human_dis_dropout_total3"></td>
                         </tr>
                     </table>
                 </div>
