@@ -497,12 +497,12 @@
                                 <tbody>
                                 <tr v-for="item in data.classwise_room_space">
                                     <td>@{{ className(item.class_id) }}</td>
-                                    <td><input type="text" class="form-control" v-model="item.packa"></td>
-                                    <td><input type="text" class="form-control" v-model="item.semi_packa"></td>
-                                    <td><input type="text" class="form-control" v-model="item.kancha"></td>
-                                    <td><input type="text" class="form-control" v-model="item.packa_sft"></td>
-                                    <td><input type="text" class="form-control" v-model="item.semi_packa_sft"></td>
-                                    <td><input type="text" class="form-control" v-model="item.kancha_sft"></td>
+                                    <td><input type="number" class="form-control" v-model="item.packa"></td>
+                                    <td><input type="number" class="form-control" v-model="item.semi_packa"></td>
+                                    <td><input type="number" class="form-control" v-model="item.kancha"></td>
+                                    <td><input type="number" class="form-control" v-model="item.packa_sft"></td>
+                                    <td><input type="number" class="form-control" v-model="item.semi_packa_sft"></td>
+                                    <td><input type="number" class="form-control" v-model="item.kancha_sft"></td>
                                 </tr>
                                 </tbody>
                             </table>

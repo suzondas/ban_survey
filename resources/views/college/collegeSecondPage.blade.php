@@ -42,13 +42,13 @@
                         <tr ng-repeat="i in item.groups">
                         <td>@{{i.group_name_bn}}</td>
                         <td><input  class="w-50" type="number" number-converter ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="studentSummeryPrevYr[idx].total_student"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_student"  /></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].total_candidate"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_candidate"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].total_promoted"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_promoted"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].total_failed"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_failed"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="studentSummeryPrevYr[idx].female_student"  /></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="studentSummeryPrevYr[idx].total_candidate"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="studentSummeryPrevYr[idx].female_candidate"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="studentSummeryPrevYr[idx].total_promoted"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="studentSummeryPrevYr[idx].female_promoted"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="studentSummeryPrevYr[idx].total_failed"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="studentSummeryPrevYr[idx].female_failed"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -159,24 +159,24 @@
                     <td rowspan="@{{item.exam.length+1}}">@{{item.level}}</td>
                     <tr ng-repeat="i in item.exam">
                         <td>@{{i.name}}</td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-init="idx = findIndexEx(i.exam_id,i.subject)" ng-model="boardWiseExamResults[idx].registered_total"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].registerd_female"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].total_candidate"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].female_candidate"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_plus_total"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_total"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_minus_total"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].b_total"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].c_total"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].d_total"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_plus_girls"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_girls"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_minus_girls"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].b_girls"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].c_girls"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].d_girls"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].total_pass"/></td>
-                        <td><input type="number" number-converter class="w-50" type="text" ng-model="boardWiseExamResults[idx].girls_pass"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-init="idx = findIndexEx(i.exam_id,i.subject)" ng-model="boardWiseExamResults[idx].registered_total"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].registerd_female"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].total_candidate"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].female_candidate"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].a_plus_total"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].a_total"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].a_minus_total"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].b_total"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].c_total"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].d_total"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].a_plus_girls"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].a_girls"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].a_minus_girls"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].b_girls"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].c_girls"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].d_girls"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].total_pass"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="boardWiseExamResults[idx].girls_pass"/></td>
                     </tr>
                     </tbody>
                 </table>
