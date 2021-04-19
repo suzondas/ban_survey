@@ -207,7 +207,8 @@ var app = angular.module('collegeSecondPage', []);
 
         }
     });
-})(app);
+})
+(app);
 app.directive('numberConverter', function() {
     return {
         priority: 1,
