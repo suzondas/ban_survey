@@ -193,7 +193,7 @@ var app = angular.module('collegeFirstPage', []);
             }).then(
                 function (response) {
                     console.log(response);
-                    alert("succesfull");
+                    alert("College first page data has been saved succesfull");
                 },
                 function (response) {
                     console.log(response);
