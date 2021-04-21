@@ -41,14 +41,14 @@
                         <td rowspan="@{{item.groups.length+1}}">@{{item.class_name_bangla}}</td>
                     <tr ng-repeat="i in item.groups">
                         <td>@{{i.group_name_bn}}</td>
-                        <td><input class="w-50" type="text" ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="studentSummeryPrevYr[idx].total_student"/></td>
-                        <td><input class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_student"/></td>
-                        <td><input class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].total_candidate"/></td>
-                        <td><input class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_candidate"/></td>
-                        <td><input class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].total_promoted"/></td>
-                        <td><input class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_promoted"/></td>
-                        <td><input class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].total_failed"/></td>
-                        <td><input class="w-50" type="text" ng-model="studentSummeryPrevYr[idx].female_failed"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="studentSummeryPrevYr[idx].total_student"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_student"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].total_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].total_promoted"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_promoted"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].total_failed"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_failed"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -97,20 +97,20 @@
                     <tbody>
                     <tr ng-repeat="item in data.subjectWiseData">
                         <td ng-bind="subjectName(item.subject_id)"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_teacher"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_teacher_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.six"></td>
-                        <td><input type="text" class="w-50" ng-model="item.six_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.seven"></td>
-                        <td><input type="text" class="w-50" ng-model="item.seven_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eight"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eight_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.nine"></td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.hsc"></td>
-                        <td><input type="text" class="w-50" ng-model="item.hsc_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.six"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.six_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.seven"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.seven_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eight"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eight_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.hsc"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.hsc_female"></td>
                     </tr>
                     </tbody>
                     </tbody>
@@ -163,24 +163,24 @@
                     <td rowspan="@{{item.exam.length+1}}">@{{item.level}}</td>
                     <tr ng-repeat="i in item.exam">
                         <td>@{{i.name}}</td>
-                        <td><input class="w-50" type="text" ng-init="idx = findIndexEx(i.exam_id,i.subject)" ng-model="boardWiseExamResults[idx].registered_total"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].registerd_female"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].total_candidate"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].female_candidate"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_plus_total"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_plus_girls"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_total"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_girls"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_minus_total"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].a_minus_girls"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].b_total"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].b_girls"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].c_total"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].c_girls"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].d_total"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].d_girls"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].total_pass"/></td>
-                        <td><input class="w-50" type="text" ng-model="boardWiseExamResults[idx].girls_pass"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-init="idx = findIndexEx(i.exam_id,i.subject)" ng-model="boardWiseExamResults[idx].registered_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].registerd_female"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].total_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].female_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_plus_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_plus_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_minus_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_minus_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].b_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].b_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].c_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].c_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].d_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].d_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].total_pass"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].girls_pass"/></td>
                     </tr>
 
                     </tbody>
@@ -222,14 +222,14 @@
                     <tr ng-repeat="item in data.sscVocStd">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_candidate"></td>
-                        <td><input type="text" class="w-50" ng-model="item.girls_candidate"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.girls_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -270,14 +270,14 @@
                     <tr ng-repeat="item in data.hscVocStd">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_candidate"></td>
-                        <td><input type="text" class="w-50" ng-model="item.girls_candidate"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.girls_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -318,14 +318,14 @@
                     <tr ng-repeat="item in data.hscBMStd">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_candidate"></td>
-                        <td><input type="text" class="w-50" ng-model="item.girls_candidate"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.girls_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -378,14 +378,14 @@
                     <tbody>
                     <tr ng-repeat="item in data.openUnStd">
                         <td>@{{ item.admit_year }}</td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_total"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -419,25 +419,25 @@
                     <tr>
                         <td rowspan="2">@{{ item.year }}</td>
                         <td>মোট</td>
-                        <td><input type="text" class="w-50" string-to-number ng-model="item.nine_std"></td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_female"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_std"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_fem_std"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_std"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_fem_std"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_std"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_fem_std"></td>
+                        <td><input type="number" number-converter class="w-50" string-to-number ng-model="item.nine_std"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_std"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_fem_std"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_std"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_fem_std"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_std"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_fem_std"></td>
                     </tr>
                     <tr>
                         <td>ছাত্রী</td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.nine_fem_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.ten_fem_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.eleven_fem_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_pass"></td>
-                        <td><input type="text" class="w-50" ng-model="item.twelve_fem_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_fem_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_fem_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_fem_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_fem_pass"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -475,15 +475,15 @@
                     <tbody>
                     <tr ng-repeat="item in data.teachStafSum">
                         <td ng-bind="desigName(item.designation_id)"></td>
-                        <td><input type="text" class="w-50" ng-model="item.teachers_in_service"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.female_teachers_in_service"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.mpo_teachers"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.female_mpo_teachers"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.blank_post_no"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.brance_teacher"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.ntrc_teacher"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.parttime_teacher"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.ntrc_blank_post"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.teachers_in_service"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teachers_in_service"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.mpo_teachers"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_mpo_teachers"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.blank_post_no"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.brance_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.parttime_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_blank_post"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -507,11 +507,11 @@
                     <tbody>
                     <tr ng-repeat="item in data.teachVocStafSum">
                         <td ng-bind="desigVocName(item.designation_id)"></td>
-                        <td><input type="text" class="w-50" ng-model="item.teachers_in_service"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.female_teachers_in_service"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.mpo_teachers"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.female_mpo_teachers"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.blank_post_no"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.teachers_in_service"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teachers_in_service"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.mpo_teachers"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_mpo_teachers"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.blank_post_no"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -539,8 +539,8 @@
                     <tbody>
                     <tr ng-repeat="item in data.teachQualiSum">
                         <td ng-bind="qualiName(item.quli_id)"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -559,8 +559,8 @@
                     <tbody>
                     <tr ng-repeat="item in data.hdTeachSum">
                         <td ng-bind="hdName(item.higher_degree_id)"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -579,8 +579,8 @@
                     <tbody>
                     <tr ng-repeat="item in data.hdTrnSum">
                         <td ng-bind="hdTrName(item.higher_degree_id)"></td>
-                        <td><input type="text" class="w-50" ng-model="item.total_teacher"/></td>
-                        <td><input type="text" class="w-50" ng-model="item.female_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -609,10 +609,10 @@
                                     <td colspan="2" class="text-center">১২ দিন প্রশিক্ষণপ্রাপ্ত</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center"> মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_3day_total"/></td>
-                                    <td class="text-center"> মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_3day_female"/></td>
-                                    <td class="text-center"> মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_12day_total"/></td>
-                                    <td class="text-center"> মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.creative_12day_female"/></td>
+                                    <td class="text-center"> মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_3day_total"/></td>
+                                    <td class="text-center"> মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_3day_female"/></td>
+                                    <td class="text-center"> মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_12day_total"/></td>
+                                    <td class="text-center"> মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_12day_female"/></td>
                                 </tr>
                             </table>
                         </td>
@@ -621,12 +621,12 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td><label>২.৪.৭ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
-                            মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_total"/>
-                            মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_female"/></td>
+                            মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_total"/>
+                            মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_female"/></td>
                         <td><label>২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
                                 লিখুন)</label><br>
-                            মোট: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_total"/>
-                            মহিলা: <input type="text" class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_female"/></td>
+                            মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_total"/>
+                            মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_female"/></td>
                         <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
                                 কি? </label><br>
                             <select class="w-25" ng-model="data.teacherTrainInfo.autism_guide_teacher_yn">
@@ -641,16 +641,16 @@
                                 <option> না</option>
                             </select></td>
                         <td><label>২.৪.১১ উত্তর হ্যাঁ হলে কয়জন?</label><br>
-                            <input type="text" class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher"/>
+                            <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher"/>
                     </tr>
                 </table>
                 <table>
                     <tr>
                         <td>২.৪.১২শিক্ষকদের কোন কোন বিষয়ে প্রশিক্ষণ প্রয়োজন?</td>
-                        <td>১.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required1"/></td>
-                        <td>২.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required2"/></td>
-                        <td>৩.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required3"/></td>
-                        <td>৪.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required4"/></td>
+                        <td>১.<input type="number" number-converter class="form-control" ng-model="data.teacherTrainInfo.training_required1"/></td>
+                        <td>২.<input type="number" number-converter class="form-control" ng-model="data.teacherTrainInfo.training_required2"/></td>
+                        <td>৩.<input type="number" number-converter class="form-control" ng-model="data.teacherTrainInfo.training_required3"/></td>
+                        <td>৪.<input type="number" number-converter class="form-control" ng-model="data.teacherTrainInfo.training_required4"/></td>
                     </tr>
                 </table>
             </div>
@@ -690,8 +690,8 @@
                                 <option value="2">না</option>
                             </select></td>
                         <td>সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
                     </tr>
 
                     <tr>
@@ -702,8 +702,8 @@
                                 <option value="2">না</option>
                             </select></td>
                         <td>সিপিডি-২ ট্রেনিং (৫ দিন)</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd2_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd2_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd2_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd2_female"></td>
                     </tr>
                     <tr>
                         <td>হেড টিচার প্রি-সার্ভিস ট্রেনিং (৩৫ দিন)</td>
@@ -713,36 +713,36 @@
                                 <option value="2">না</option>
                             </select></td>
                         <td>ক্লাস্টার ট্রেনিং (১ দিন)</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cluster_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cluster_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cluster_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cluster_female"></td>
                     </tr>
                     <tr>
                         <td rowspan="2"></td>
                         <td colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক সংখ্যা</td>
                         <td>এস.বি. এ ট্রেনিং</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.sba_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.sba_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.sba_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.sba_female"></td>
                     </tr>
                     <tr>
 
                         <td>মোট</td>
                         <td>মহিলা</td>
                         <td>সৃজনশীল প্রশ্ন সংক্রান্ত ট্রেনিং</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.srizonsil_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.srizonsil_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.srizonsil_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.srizonsil_female"></td>
                     </tr>
                     <tr>
                         <td>এসটিসি ট্রেনিং (৩ মাস)</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stc_training_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stc_training_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stc_training_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stc_training_female"></td>
                         <td>অন্যান্য ট্রেনিং</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.other_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.other_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.other_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.other_female"></td>
                     </tr>
                     <tr>
                         <td>এসটিটি থেকে বি.এড (৯ মাস)</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stt_bed_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.stt_bed_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stt_bed_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stt_bed_female"></td>
                         <td colspan="3" rowspan="2">•প্রধান শিক্ষকগণ হ্যাঁ/না টিক দিবেন <br>
                             •অন্যান্য শিক্ষকগণের সংখ্যা লিখবেন
                         </td>
@@ -750,8 +750,8 @@
                     </tr>
                     <tr>
                         <td>সিপিডি-১ ট্রেনিং (১৪ দিন)</td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_total"></td>
-                        <td><input type="text" class="w-50" ng-model="data.teacherInservTr.cpd1_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_female"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -776,8 +776,8 @@
                         <tbody>
                         <tr>
                             <td style="width: 350px">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.total_eng_teachers"></td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.female_eng_teacher"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.total_eng_teachers"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.female_eng_teacher"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -795,32 +795,32 @@
                         <tr>
                             <td>১</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে বাধ্যতামূলক ১০০ নম্বরের ইংরেজি ছিল</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_100_eng"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_100_eng"></td>
                         </tr>
                         <tr>
                             <td>২</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ৩০০ নম্বরের ইংরেজি ছিল</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_300_eng"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_300_eng"></td>
                         </tr>
                         <tr>
                             <td>৩</td>
                             <td style="width: 350px">ইংরেজিতে স্নাতক সম্মান</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.eng_hons"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.eng_hons"></td>
                         </tr>
                         <tr>
                             <td>৪</td>
                             <td style="width: 350px">ইংরেজিতে স্নাতকোত্তর</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.eng_hons_mst"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.eng_hons_mst"></td>
                         </tr>
                         <tr>
                             <td>৫</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ইংরেজি ছিলা না</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_without_eng"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_without_eng"></td>
                         </tr>
                         <tr>
                             <td>৬</td>
                             <td style="width: 350px">এইচ এস সি পাস</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.eng_hsc_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.eng_hsc_pass"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -838,8 +838,8 @@
                         <tr>
                             <td style="width: 350px">২.৪.১৬ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:
                             </td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.total_math_teachers"></td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.female_math_teacher"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.total_math_teachers"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.female_math_teacher"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -857,32 +857,32 @@
                         <tr>
                             <td>১</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে পদার্থ ও রসায়নসহ গণিত ছিল</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_pcm"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_pcm"></td>
                         </tr>
                         <tr>
                             <td>২</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে অন্যান্য বিষয়সহ গণিত ছিল</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_other_math"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_other_math"></td>
                         </tr>
                         <tr>
                             <td>৩</td>
                             <td style="width: 350px">গণিতে স্নাতক সম্মান</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.math_hons"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.math_hons"></td>
                         </tr>
                         <tr>
                             <td>৪</td>
                             <td style="width: 350px">গণিতে স্নাতকোত্তর</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.math_hons_mst"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.math_hons_mst"></td>
                         </tr>
                         <tr>
                             <td>৫</td>
                             <td style="width: 350px">স্নাতক (পাস) পর্যায়ে গণিত ছিল না কিন্তু এইচএসসিতে ছিল</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.deg_hsc_with_math"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.deg_hsc_with_math"></td>
                         </tr>
                         <tr>
                             <td>৬</td>
                             <td style="width: 350px">স্নাতক বা এইচ এস সি পর্যায়ে ছিল না</td>
-                            <td><input type="text" class="w-50" ng-model="data.teacherTrainInfo.hons_without_math"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_without_math"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -914,73 +914,73 @@
                     <tr>
                         <td>১</td>
                         <td style="width: 300px">তথ্য প্রদানের দিন শিক্ষক উপস্থিতি</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.count_day_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.count_day_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.count_day_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.count_day_female" id=""></td>
                     </tr>
                     <tr>
                         <td>২</td>
                         <td style="width: 300px">অবসরে গিয়েছেন (১/৭/২০২০থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.retired_teacher_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.rerired_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.retired_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.rerired_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৩</td>
                         <td style="width: 300px">অবসরে যাবেন (১/৭/২০২১ থেকে ৩০/৬/২০২২ পর্যন্ত)</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.retiredfu_teacher_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.reriredfu_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.retiredfu_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.reriredfu_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৪</td>
                         <td style="width: 300px">নতুন নিয়োগপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.new_recruite_teacher_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.new_recruite_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.new_recruite_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.new_recruite_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৫</td>
                         <td style="width: 300px">শিক্ষকতা পেশা ছেড়ে দিয়েছেন (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.leave_teacher_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.leave_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.leave_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.leave_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৬</td>
                         <td style="width: 300px">NTRCA কর্তৃক সুপারিশকৃত শিক্ষকের সংখ্যা</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.ntrc_teacher_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.ntrc_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.ntrc_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.ntrc_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৭</td>
                         <td style="width: 300px">বর্তমানে কতজন শিক্ষক গবেষণা কাজে সম্পৃক্ত</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.research_teacher_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.research_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.research_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.research_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৮</td>
                         <td style="width: 300px">একাডেমিক বিষয়ের ওপর পুরষ্কারপ্রাপ্ত শিক্ষকের সংখ্যা</td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৯</td>
                         <td style="width: 300px">শিখন-শেখানো বিষয়ে প্রশিক্ষণপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)
                         </td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_female" id=""></td>
                     </tr>
                     <tr>
                         <td>১০</td>
                         <td style="width: 300px">বিশেষ চাহিদাসম্পন্ন (Special needs) শিক্ষার্থীর শিক্ষা বিষয়ে
                             প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা
                         </td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_total" id=""></td>
-                        <td><input type="text" class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_female" id=""></td>
                     </tr>
                     <tr>
                         <td>১১</td>
                         <td style="width: 300px">একীভূত শিক্ষা (Inclusive education), শিশু অধিকার এবং বিদ্যালয়ের ইতিবাচক
                             শৃঙ্খলা বিষয়ের ওপর প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা
                         </td>
-                        <td><input type="text" class="form-control w-25" ng-model="data.teacherRetAwInfo.inclusive_total" id=""></td>
-                        <td><input type="text" class="form-control w-25" ng-model="data.teacherRetAwInfo.inclusive_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.inclusive_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.inclusive_female" id=""></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1013,7 +1013,7 @@
                         <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_division"></td>
                         <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_district"></td>
                         <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_thana"></td>
-                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_inst_year"></td>
+                        <td><input type="number" number-converter class="form-control" ng-model="data.teacherRetAwInfo.best_inst_year"></td>
                     <tr>
                         <td>শ্রেষ্ঠ শিক্ষা প্রতিষ্ঠান প্রধান</td>
                         <td><input type="radio" ng-model="data.teacherRetAwInfo.best_inst_head_national"></td>

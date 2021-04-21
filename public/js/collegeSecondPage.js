@@ -184,11 +184,11 @@ var app = angular.module('collegeSecondPage', []);
             }).then(
                 function (response) {
                     console.log(response);
-                    alert("succesfull");
+                    alert("College second page data has been saved succesfull");
                 },
                 function (response) {
                     console.log(response);
-                    alert("Try again");
+                    alert("Error Try again");
                 }
             );
 
@@ -207,7 +207,8 @@ var app = angular.module('collegeSecondPage', []);
 
         }
     });
-})(app);
+})
+(app);
 app.directive('numberConverter', function() {
     return {
         priority: 1,
