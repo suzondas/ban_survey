@@ -220,5 +220,5 @@
     </div>
 @endsection
 @section('javascript')
-    <script src="{{ asset('js/sncSecPage.js') }}" type="module" defer></script>
+    <script src="{{ asset('js/sncSecondPage.js') }}" type="module" defer></script>
 @stop

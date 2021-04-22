@@ -130,40 +130,49 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.২.৪</span>
                 </div>
+                <div class="form-control bg-number-label"> বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর
+                </div>
+            </div>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
+                    <select ng-model="data.instituteSpecialStudents.special_std_yn">
+                        <option>Select</option>
+                        <option>হ্যাঁ-১</option>
+                        <option>না-২</option>
+                    </select></td>
+                <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
+                    <input type="checkbox"
+                           ng-model="data.instituteSpecialStudents.disable_facility_audio">&nbsp; অডিও-১
+                    &nbsp;
+                    <input type="checkbox"
+                           ng-model="data.instituteSpecialStudents.disable_facility_braille">&nbsp;
+                    ব্রেইল-২ &nbsp;
+                    <input type="checkbox"
+                           ng-model="data.instituteSpecialStudents.disable_facility_signlan"> &nbsp;সাইন
+                    ভাষা-৩ &nbsp;
+                    <input type="checkbox"
+                           ng-model="data.instituteSpecialStudents.disable_facility_others"> &nbsp;অন্যান্য-৪
+                </td>
+                <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
+                    <select ng-model="data.instituteSpecialStudents.ramp_access_yn">
+                        <option>Select</option>
+                        <option>হ্যাঁ-১</option>
+                        <option>না-২</option>
+                    </select></td>
+            </tr>
+        </table>
+        </div>
+        <div class="contentBox">
+            <div class="input-group contentdeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.২.৪.১</span>
+                </div>
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর
                     সংখ্যা ২০২১
                 </div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered table-striped">
-                    <tr>
-                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
-                            <select ng-model="data.instituteSpecialStudents.special_std_yn">
-                                <option>Select</option>
-                                <option>হ্যাঁ-১</option>
-                                <option>না-২</option>
-                            </select></td>
-                        <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
-                            <input type="checkbox"
-                                   ng-model="data.instituteSpecialStudents.disable_facility_audio">&nbsp; অডিও-১
-                            &nbsp;
-                            <input type="checkbox"
-                                   ng-model="data.instituteSpecialStudents.disable_facility_braille">&nbsp;
-                            ব্রেইল-২ &nbsp;
-                            <input type="checkbox"
-                                   ng-model="data.instituteSpecialStudents.disable_facility_signlan"> &nbsp;সাইন
-                            ভাষা-৩ &nbsp;
-                            <input type="checkbox"
-                                   ng-model="data.instituteSpecialStudents.disable_facility_others"> &nbsp;অন্যান্য-৪
-                        </td>
-                        <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
-                            <select ng-model="data.instituteSpecialStudents.ramp_access_yn">
-                                <option>Select</option>
-                                <option>হ্যাঁ-১</option>
-                                <option>না-২</option>
-                            </select></td>
-                    </tr>
-                </table>
                 <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">ক্র. নং</td>
