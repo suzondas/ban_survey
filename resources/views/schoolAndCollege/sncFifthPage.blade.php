@@ -7,6 +7,64 @@
     </style>
     <div class="container-fluid" data-ng-app="sncFifthPage" ng-controller="myCtrl">
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
+        <div class="contentBox col-9">
+            <div class="input-group contentdeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩.৪</span>
+                </div>
+                <div class="form-control bg-number-label">মাধ্যমিক স্তরে শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, উত্তীর্ণ ও
+                    অনুত্তীর্ণ সম্পর্কিত তথ্য, ডিসেম্বর ২০২০ (বার্ষিক পরীক্ষার ফলাফল)
+                </div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                    <tr>
+                        <td rowspan="2">শ্রেণি</td>
+                        <td rowspan="2">বিভাগ</td>
+                        <td colspan="2">মোট শিক্ষার্থীর সংখ্যা</td>
+                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
+                        <td colspan="2">উত্তীর্ণ</td>
+                        <td colspan="2">অনুত্তীর্ণ</td>
+                    </tr>
+                    <tr>
+
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                    </tr>
+                    </thead>
+                    <tbody ng-repeat="item in data.schClasses">
+                    <td rowspan="@{{item.groups.length+1}}">@{{item.class_name_bangla}}</td>
+                    <td ng-if="item.groups.length==0">-</td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].total_student"/></td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].female_student"/></td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].total_candidate"/></td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].female_candidate"/></td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].total_promoted"/></td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].female_promoted"/></td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].total_failed"/></td>
+                    <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].female_failed"/></td>
+                    <tr ng-repeat="i in item.groups" ng-if="item.groups.length!=0">
+                        <td>@{{i.group_name_bn}}</td>
+                        <td><input class="w-50" type="number" number-converter ng-init="idx = findExSumIndex(i.group_id,item.class_id)" ng-model="studentSummeryPrevYr[idx].total_student"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_student"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].total_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].total_promoted"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_promoted"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].total_failed"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_failed"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
