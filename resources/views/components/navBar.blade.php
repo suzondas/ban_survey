@@ -43,6 +43,22 @@
             <a class="nav-link {{ request()->is('schoolAndCollege/sncSecondPage') ? 'active' : '' }}"
                href="{{ url('schoolAndCollege/sncSecondPage') }}">স্কুল এন্ড কলেজ-২</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('schoolAndCollege/sncThirdPage') ? 'active' : '' }}"
+               href="{{ url('schoolAndCollege/sncThirdPage') }}">স্কুল এন্ড কলেজ-৩</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('schoolAndCollege/sncFourthPage') ? 'active' : '' }}"
+               href="{{ url('schoolAndCollege/sncFourthPage') }}">স্কুল এন্ড কলেজ-৪</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('schoolAndCollege/sncFifthPage') ? 'active' : '' }}"
+               href="{{ url('schoolAndCollege/sncFifthPage') }}">স্কুল এন্ড কলেজ-৫</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('schoolAndCollege/sncSixPage') ? 'active' : '' }}"
+               href="{{ url('schoolAndCollege/sncSixPage') }}">স্কুল এন্ড কলেজ-৬</a>
+        </li>
         <?php } ?>
 
         {{--Bibidh--}}

@@ -90,6 +90,7 @@ var app = angular.module('collegeFirstPage', []);
         $scope.dipAgName = function (id) {
             var dipAgClassList = $scope.data.diplomaAgriClasses;
             var dipAgClsName = null;
+            //console.log(dipAgClassList);
             dipAgClassList.forEach(function (currentValue, index) {
                 if (currentValue.class_id == id) {
                     return dipAgClsName = currentValue.class_name_bangla;

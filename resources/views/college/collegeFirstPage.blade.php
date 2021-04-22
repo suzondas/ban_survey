@@ -111,7 +111,7 @@
                         <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].total_student"/></td>
                         <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].female_student"/></td>
                         <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].male_stipend"/></td>
-                        <td><input type="number" number-converterclass="w-50"  ng-model="stuentsSummery[idx].female_stipend"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-model="stuentsSummery[idx].female_stipend"/></td>
                         <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].male_scholarship"/></td>
                         <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].female_scholarship"/></td>
                         <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].total_eng"/></td>
@@ -326,19 +326,19 @@
                     </tr>
                     <tr ng-repeat="item in data.hscBmStudent">
                         <td ng-bind="hscBmName(item.class_id)"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.total_student"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.female_student"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.male_stipend"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.female_stipend"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.male_scholarship"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.female_scholarship"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.total_present"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.female_present"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.total_rep"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.female_rep"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.transfer_in"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.transfer_out"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.nextyr_book_reg"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_student"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_student"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.male_stipend"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_stipend"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.male_scholarship"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_scholarship"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_present"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_present"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_rep"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.female_rep"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.transfer_in"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.transfer_out"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nextyr_book_reg"></td>
                     </tr>
                     </tbody>
                 </table>
