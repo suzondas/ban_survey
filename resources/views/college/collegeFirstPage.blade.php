@@ -107,19 +107,19 @@
                     <td rowspan="@{{item.groups.length+1}}">@{{item.class_name_bangla}}</td>
                     <tr ng-repeat="i in item.groups">
                         <td>@{{i.group_name_bn}}</td>
-                        <td><input class="w-50" type="number" number-converter ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="stuentsSummery[idx].seat"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].total_student"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].female_student"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].male_stipend"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].female_stipend"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].male_scholarship"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].female_scholarship"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].total_eng"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].female_eng"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].total_present"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].female_present"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].transfer_in"/></td>
-                        <td><input class="w-50" type="number" number-converter ng-model="stuentsSummery[idx].transfer_out"/></td>
+                        <td><input type="number" number-converter class="w-50"  ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="stuentsSummery[idx].seat"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].total_student"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].female_student"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].male_stipend"/></td>
+                        <td><input type="number" number-converterclass="w-50"  ng-model="stuentsSummery[idx].female_stipend"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].male_scholarship"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].female_scholarship"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].total_eng"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].female_eng"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].total_present"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].female_present"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].transfer_in"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="stuentsSummery[idx].transfer_out"/></td>
                     </tr>
                     </tbody>
                 </table>

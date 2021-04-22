@@ -42,18 +42,18 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.one_five_total" ></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.one_five_girl"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.six_ten_total"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.six_ten_girl"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.eleven_twelve_total"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.eleven_twelve_girl"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.bachelor_pass_total"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.bachelor_pass_girl"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.bachelor_honors_total"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.bachelor_honors_girl"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.masters_total"></td>
-                        <td><input type="number" number-converter class="form-control" v-model="data.studentSummaryTotal.masters_girl"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.one_five_total" ></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.one_five_girl"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.six_ten_total"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.six_ten_girl"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.eleven_twelve_total"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.eleven_twelve_girl"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.bachelor_pass_total"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.bachelor_pass_girl"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.bachelor_honors_total"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.bachelor_honors_girl"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.masters_total"></td>
+                        <td><input type="number" number-converter class="form-control"ng-model="data.studentSummaryTotal.masters_girl"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -100,34 +100,34 @@
                 <tbody ng-repeat="item in data.schClasses">
                 <td rowspan="@{{item.groups.length+1}}">@{{item.class_name_bangla}}</td>
                 <td ng-if="item.groups.length==0">-</td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].total_student"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_student"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].male_stipend"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_stipend"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].male_scholarship"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_scholarship"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].total_eng"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_eng"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].total_present"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_present"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].transfer_in"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].transfer_out"/></td>
-                <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].nextyr_book_reg"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].total_student"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_student"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].male_stipend"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_stipend"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].male_scholarship"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_scholarship"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].total_eng"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_eng"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].total_present"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].female_present"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].transfer_in"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].transfer_out"/></td>
+                <td ng-if="item.groups.length==0"><input type="number" number-converter class="w-50" ng-init="idy = findClIndex(item.class_id,item.education_level_id)" ng-model="studentSummery[idy].nextyr_book_reg"/></td>
                 <tr ng-repeat="i in item.groups" ng-if="item.groups.length!=0">
                     <td>@{{i.group_name_bn}}</td>
-                    <td><input class="w-50" type="number" number-converter ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="studentSummery[idx].total_student"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].female_student"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].male_stipend"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].female_stipend"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].male_scholarship"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].female_scholarship"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].total_eng"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].female_eng"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].total_present"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].female_present"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].transfer_in"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].transfer_out"/></td>
-                    <td><input class="w-50" type="number" number-converter ng-model="studentSummery[idx].nextyr_book_reg"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="studentSummery[idx].total_student"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].female_student"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].male_stipend"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].female_stipend"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].male_scholarship"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].female_scholarship"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].total_eng"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].female_eng"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].total_present"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].female_present"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].transfer_in"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].transfer_out"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="studentSummery[idx].nextyr_book_reg"/></td>
                 </tr>
                 </tbody>
             </table>
@@ -168,25 +168,25 @@
                         <tbody>
                         <tr>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.six_total"></td>
+                                      ng-model="data.studentSummaryRepeater.six_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.six_female"></td>
+                                      ng-model="data.studentSummaryRepeater.six_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.seven_total"></td>
+                                      ng-model="data.studentSummaryRepeater.seven_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.seven_female"></td>
+                                      ng-model="data.studentSummaryRepeater.seven_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.eight_total"></td>
+                                      ng-model="data.studentSummaryRepeater.eight_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.eight_female"></td>
+                                      ng-model="data.studentSummaryRepeater.eight_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.nine_total"></td>
+                                      ng-model="data.studentSummaryRepeater.nine_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.nine_female"></td>
+                                      ng-model="data.studentSummaryRepeater.nine_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.ten_total"></td>
+                                      ng-model="data.studentSummaryRepeater.ten_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryRepeater.ten_female"></td>
+                                      ng-model="data.studentSummaryRepeater.ten_female"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -228,25 +228,25 @@
                         <tbody>
                         <tr>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.six_total"></td>
+                                      ng-model="data.studentSummaryDropout.six_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.six_female"></td>
+                                      ng-model="data.studentSummaryDropout.six_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.seven_total"></td>
+                                      ng-model="data.studentSummaryDropout.seven_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.seven_female"></td>
+                                      ng-model="data.studentSummaryDropout.seven_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.eight_total"></td>
+                                      ng-model="data.studentSummaryDropout.eight_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.eight_female"></td>
+                                      ng-model="data.studentSummaryDropout.eight_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.nine_total"></td>
+                                      ng-model="data.studentSummaryDropout.nine_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.nine_female"></td>
+                                      ng-model="data.studentSummaryDropout.nine_female"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.ten_total"></td>
+                                      ng-model="data.studentSummaryDropout.ten_total"></td>
                             <td><input type="number" number-converter class="form-control"
-                                       v-model="data.studentSummaryDropout.ten_female"></td>
+                                      ng-model="data.studentSummaryDropout.ten_female"></td>
                         </tr>
                         </tbody>
                     </table>
