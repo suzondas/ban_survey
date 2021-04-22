@@ -170,26 +170,26 @@ var app = angular.module('collegeFirstPage', []);
         $scope.submitData = function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
-            dataToSend.studentSummaryTotal = $scope.studentSummaryTotal;
+            dataToSend.studentSummaryTotal = $scope.data.studentSummaryTotal;
             dataToSend.stuentsSummery = $scope.stuentsSummery;
-            dataToSend.studentSummaryRepeater = $scope.studentSummaryRepeater;
-            dataToSend.studentSummaryDropout = $scope.studentSummaryDropout;
-            dataToSend.hscVocStudent = $scope.hscVocStudent;
-            dataToSend.hscBmStudent = $scope.hscBmStudent;
-            dataToSend.hscDiplomaFisheries = $scope.hscDiplomaFisheries;
-            dataToSend.hscDiplomaAgriculture = $scope.hscDiplomaAgriculture;
-            dataToSend.categoryWiseStudent = $scope.categoryWiseStudent;
-            dataToSend.instituteSpecialStudents = $scope.instituteSpecialStudents;
-            dataToSend.categoryWiseDisableStudent = $scope.categoryWiseDisableStudent;
-            dataToSend.categoryWiseUpajati = $scope.categoryWiseUpajati;
-            dataToSend.ageWiseStudent = $scope.ageWiseStudent;
-            dataToSend.guardianOccupation = $scope.guardianOccupation;
+            dataToSend.studentSummaryRepeater = $scope.data.studentSummaryRepeater;
+            dataToSend.studentSummaryDropout = $scope.data.studentSummaryDropout;
+            dataToSend.hscVocStudent = $scope.data.hscVocStudent;
+            dataToSend.hscBmStudent = $scope.data.hscBmStudent;
+            dataToSend.hscDiplomaFisheries = $scope.data.hscDiplomaFisheries;
+            dataToSend.hscDiplomaAgriculture = $scope.data.hscDiplomaAgriculture;
+            dataToSend.categoryWiseStudent = $scope.data.categoryWiseStudent;
+            dataToSend.instituteSpecialStudents = $scope.data.instituteSpecialStudents;
+            dataToSend.categoryWiseDisableStudent = $scope.data.categoryWiseDisableStudent;
+            dataToSend.categoryWiseUpajati = $scope.data.categoryWiseUpajati;
+            dataToSend.ageWiseStudent = $scope.data.ageWiseStudent;
+            dataToSend.guardianOccupation = $scope.data.guardianOccupation;
             console.log(dataToSend);
             $http({
                 method: 'POST',
                 url: 'http://127.0.0.1:8000/collegeFirstPage/submitData/',
-                data:dataToSend,
-                dataType:'json'
+                data: dataToSend,
+                dataType: 'json'
             }).then(
                 function (response) {
                     console.log(response);
@@ -200,29 +200,15 @@ var app = angular.module('collegeFirstPage', []);
                     alert("Try again");
                 }
             );
-
-            /*$http.post('http://127.0.0.1:8000/collegeFirstPage/submitData',dataToSend
-                ).then(
-                function (response) {
-                    console.log(response);
-                    alert("succesfull");
-                },
-                function (response) {
-                    console.log(response);
-                    alert("error");
-                }
-            );*/
-
-
         }
     });
 })(app);
-app.directive('numberConverter', function() {
+app.directive('numberConverter', function () {
     return {
         priority: 1,
         restrict: 'A',
         require: 'ngModel',
-        link: function(scope, element, attr, ngModel) {
+        link: function (scope, element, attr, ngModel) {
             function toModel(value) {
                 return "" + value; // convert to string
             }
