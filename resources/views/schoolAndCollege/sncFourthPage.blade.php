@@ -285,6 +285,7 @@
                 </table>
             </div>
         </div>
+        <div align="center"><button ng-click="submitData()" type="button" class="btn btn-success">Submit</button></div>
     </div>
 @endsection
 @section('javascript')

@@ -5,151 +5,8 @@
             width: 40px !important;
         }
     </style>
-    <div class="container-fluid" data-ng-app="sncSixPage" ng-controller="myCtrl">
+    <div class="container-fluid" data-ng-app="collegeFifthPage" ng-controller="myCtrl">
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
-        <div class="contentBox ">
-            <div class="input-group contentHeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪</span>
-                </div>
-                <div class="form-control bg-number-label">পদবীভিত্তিক কর্মরত ও এমপিওভুক্ত শিক্ষক ও কর্মচারীর সংখ্যা:
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="2">পদবী</td>
-                        <td colspan="2"> কর্মরত</td>
-                        <td colspan="2"> এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে)</td>
-                        <td rowspan="2">শূন্য পদের সংখ্যা</td>
-                        <td rowspan="2">শাখা শিক্ষক (কর্মরততেও অন্তর্ভূক্ত থাকবে)</td>
-                        <td rowspan="2">খন্ডকালীন শিক্ষক সংখ্যা</td>
-                        <td rowspan="2">নিবন্ধনকৃত শিক্ষক সংখ্যা (NTRCA) (প্রযোজ্য ক্ষেত্রে)</td>
-                        <td rowspan="2">NTRCA কর্তৃক পূরণযোগ্য শূন্য পদের সংখ্যা</td>
-
-
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                    </tr>
-                    <tbody>
-                    <tr ng-repeat="item in data.teachStafSum">
-                        <td ng-bind="desigName(item.designation_id)"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.teachers_in_service"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teachers_in_service"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.mpo_teachers"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_mpo_teachers"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.blank_post_no"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.brance_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.parttime_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_blank_post"/></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-9">
-                <label class="label-number" for="">২.৪.১ সংযু্ক্ত এসএসসি (ভোকেশনাল)/এইচএসসি (বিএম) শাখার
-                    শিক্ষক/কর্মচারীর সংখ্যা:</label>
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="2">পদবী</td>
-                        <td colspan="2"> কর্মরত</td>
-                        <td colspan="2"> এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে)</td>
-                        <td rowspan="2">শূন্য পদের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                    </tr>
-                    <tbody>
-                    <tr ng-repeat="item in data.teachVocStafSum">
-                        <td ng-bind="desigVocName(item.designation_id)"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.teachers_in_service"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teachers_in_service"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.mpo_teachers"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_mpo_teachers"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.blank_post_no"/></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <br>
-        <div class="row  contentBox">
-            <div class="input-group contentHeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪.২ </span>
-                </div>
-                <div class="form-control bg-number-label"> শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা</div>
-            </div>
-            <div class="col-md-4 contentBoxBody">২.৪.২ মূল প্রতিষ্ঠানের সার্বোচ্চ শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা:
-
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="2">শিক্ষাগত যোগ্যতা</td>
-                        <td colspan="2">শিক্ষক সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                    </tr>
-                    <tbody>
-                    <tr ng-repeat="item in data.teachQualiSum">
-                        <td ng-bind="qualiName(item.quli_id)"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-4 contentBoxBody">
-                ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
-                <table class="table table-bordered  table-striped text-center">
-                    <tr>
-                        <td rowspan="2">ডিগ্রী</td>
-                        <td colspan="2">শিক্ষক সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                    </tr>
-                    <tbody>
-                    <tr ng-repeat="item in data.hdTeachSum">
-                        <td ng-bind="hdName(item.higher_degree_id)"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-4 contentBoxBody">
-                ২.৪.৪ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="2">প্রশিক্ষণ/ ডিগ্রি</td>
-                        <td colspan="2">শিক্ষক সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                    </tr>
-                    <tbody>
-                    <tr ng-repeat="item in data.hdTrnSum">
-                        <td ng-bind="hdTrName(item.higher_degree_id)"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <br>
         {{--Special Training Info --}}
         <div class="contentBox">
             <div class="input-group contentHeader">
@@ -219,7 +76,6 @@
             </div>
         </div>
         {{--Special Trainig Ends--}}
-        <br>
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -320,7 +176,6 @@
                 </table>
             </div>
         </div>
-        <br>
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -519,23 +374,23 @@
                     <tr>
                         <td>৮</td>
                         <td style="width: 300px">একাডেমিক বিষয়ের ওপর পুরষ্কারপ্রাপ্ত শিক্ষকের সংখ্যা</td>
-                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.awarded_teacher_total" id=""></td>
-                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.awarded_teacher_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.awarded_teacher_female" id=""></td>
                     </tr>
                     <tr>
                         <td>৯</td>
                         <td style="width: 300px">শিখন-শেখানো বিষয়ে প্রশিক্ষণপ্রাপ্ত (১/৭/২০২০ থেকে ৩০/৬/২০২১ পর্যন্ত)
                         </td>
-                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.learning_trained_total" id=""></td>
-                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.learning_trained_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.learning_trained_female" id=""></td>
                     </tr>
                     <tr>
                         <td>১০</td>
                         <td style="width: 300px">বিশেষ চাহিদাসম্পন্ন (Special needs) শিক্ষার্থীর শিক্ষা বিষয়ে
                             প্রশিক্ষণপ্রাপ্ত শিক্ষকের সংখ্যা
                         </td>
-                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.special_trained_total" id=""></td>
-                        <td><input type="number" number-converter class="form-control w-25" ng-model="data.teacherRetAwInfo.special_trained_female" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_total" id=""></td>
+                        <td><input type="number" number-converter class="form-control w-25"ng-model="data.teacherRetAwInfo.special_trained_female" id=""></td>
                     </tr>
                     <tr>
                         <td>১১</td>
@@ -553,7 +408,7 @@
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৫ </span>
+                    <span class="input-group-text bg-number">২.৫</span>
                 </div>
                 <div class="form-control bg-number-label">প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য</div>
             </div>
@@ -754,5 +609,5 @@
     </div>
 @endsection
 @section('javascript')
-    <script src="{{ asset('js/sncSixPage.js') }}" type="module" defer></script>
+    <script src="{{ asset('js/collegeFifthPage.js') }}"></script>
 @stop

@@ -1,4 +1,4 @@
-var app = angular.module('sncSixPage', []);
+var app = angular.module('collegeFifthPage', []);
 (function (app) {
     "use strict";
     app.controller('myCtrl', function ($scope, $http) {
@@ -7,17 +7,12 @@ var app = angular.module('sncSixPage', []);
         $scope.data = null;
 
         /*===========================Helper Functions==============================*/
-        // Console global
-        $scope.console = function () {
-            console.log($scope.data.occupationsList);
-        };
-
         /*desigName finding*/
         $scope.desigName = function (id) {
             var desigList = $scope.data.desigList;
             var designationtName = null;
             desigList.forEach(function (currentValue, index, arr) {
-                if(currentValue.designation_id == id){
+                if (currentValue.designation_id == id) {
                     return designationtName = currentValue.designation_name_bn;
                 }
             });
@@ -30,7 +25,7 @@ var app = angular.module('sncSixPage', []);
             var desigVocList = $scope.data.desigVocList;
             var designationVocName = null;
             desigVocList.forEach(function (currentValue, index, arr) {
-                if(currentValue.designation_id == id){
+                if (currentValue.designation_id == id) {
                     return designationVocName = currentValue.designation_name;
                 }
             });
@@ -43,7 +38,7 @@ var app = angular.module('sncSixPage', []);
             var qualiList = $scope.data.qualiList;
             var qualificationName = null;
             qualiList.forEach(function (currentValue, index, arr) {
-                if(currentValue.id == id){
+                if (currentValue.id == id) {
                     return qualificationName = currentValue.name_bn;
                 }
             });
@@ -56,7 +51,7 @@ var app = angular.module('sncSixPage', []);
             var hdList = $scope.data.hdList;
             var hdTrName = null;
             hdList.forEach(function (currentValue, index, arr) {
-                if(currentValue.higher_degree_id == id){
+                if (currentValue.higher_degree_id == id) {
                     return hdTrName = currentValue.bn_name;
                 }
             });
@@ -69,22 +64,23 @@ var app = angular.module('sncSixPage', []);
             var hdTrList = $scope.data.hdTrList;
             var hdTrEdName = null;
             hdTrList.forEach(function (currentValue, index, arr) {
-                if(currentValue.higher_degree_id == id){
+                if (currentValue.higher_degree_id == id) {
                     return hdTrEdName = currentValue.bn_name;
                 }
             });
             return hdTrEdName;
         }
         /*hdTrName finding*/
+
         /*===========================Helper Functions Ends==============================*/
 
         /*==========================Data Fetching=======================================*/
         $http({
             method: 'GET',
-            url: 'http://127.0.0.1:8000/SnCSixPage/' + inst_id
+            url: 'http://127.0.0.1:8000/collegeFifthPage/' + inst_id
         }).then(function (response) {
-            // console.log(response.data)
             $scope.data = response.data;
+            $scope.boardWiseExamResults = $scope.data.boardWiseExamResults;
         }, function (error) {
             console.log(error);
         });
@@ -101,7 +97,6 @@ var app = angular.module('sncSixPage', []);
             console.log($scope.data.teacherTrainInfo);
             console.log($scope.data.teacherRetAwInfo);
         }
-
         $scope.submitData = function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
@@ -113,16 +108,17 @@ var app = angular.module('sncSixPage', []);
             dataToSend.teacherInservTr = $scope.data.teacherInservTr;
             dataToSend.teacherTrainInfo = $scope.data.teacherTrainInfo;
             dataToSend.teacherRetAwInfo = $scope.data.teacherRetAwInfo;
+
             console.log(dataToSend);
             $http({
                 method: 'POST',
-                url: 'http://127.0.0.1:8000/SnCSixPage/submitData/',
+                url: 'http://127.0.0.1:8000/collegeFifthPage/submitData/',
                 data: dataToSend,
                 dataType: 'json'
             }).then(
                 function (response) {
                     console.log(response);
-                    alert("Sixth page data has been saved succesfull");
+                    alert("Fifth page data has been saved succesfull");
                 },
                 function (response) {
                     console.log(response);
@@ -130,16 +126,16 @@ var app = angular.module('sncSixPage', []);
                 }
             );
         }
-        /*==========================Data Saving END=======================================*/
 
+        /*==========================Data Saving Ends=======================================*/
     });
 })(app);
-app.directive('numberConverter', function() {
+app.directive('numberConverter', function () {
     return {
         priority: 1,
         restrict: 'A',
         require: 'ngModel',
-        link: function(scope, element, attr, ngModel) {
+        link: function (scope, element, attr, ngModel) {
             function toModel(value) {
                 return "" + value; // convert to string
             }

@@ -67,6 +67,42 @@ var app = angular.module('sncFirstPage', []);
         });
         /*==========================Data Fetching Ends=======================================*/
 
+        /*==========================Data Saving=======================================*/
+        $scope.save = function () {
+            console.log($scope.studentSummery);
+            console.log($scope.studentSummeryCol);
+            console.log($scope.data.studentSummaryTotal);
+            console.log($scope.data.studentSummaryRepeater);
+            console.log($scope.data.studentSummaryDropout);
+        }
+
+        $scope.submitData = function () {
+            var dataToSend = {};
+            dataToSend.instId = inst_id;
+            dataToSend.studentSummery = $scope.data.studentSummery;
+            dataToSend.studentSummeryCol = $scope.data.studentSummeryCol;
+            dataToSend.studentSummaryTotal = $scope.data.studentSummaryTotal;
+            dataToSend.studentSummaryRepeater = $scope.data.studentSummaryRepeater;
+            dataToSend.studentSummaryDropout = $scope.data.studentSummaryDropout;
+            console.log(dataToSend);
+            $http({
+                method: 'POST',
+                url: 'http://127.0.0.1:8000/SnCFirstPage/submitData/',
+                data: dataToSend,
+                dataType: 'json'
+            }).then(
+                function (response) {
+                    console.log(response);
+                    alert("First page data has been saved succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("Try again");
+                }
+            );
+        }
+        /*==========================Data Saving END=======================================*/
+
     });
 })(app);
 app.directive('numberConverter', function() {

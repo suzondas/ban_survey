@@ -64,6 +64,40 @@ var app = angular.module('sncThirdPage', []);
         });
         /*==========================Data Fetching Ends=======================================*/
 
+        /*==========================Data Saving=======================================*/
+        $scope.save = function () {
+            console.log($scope.data.instituteSpecialStudents);
+            console.log($scope.data.categoryWiseStudent);
+            console.log($scope.data.categoryWiseDisableStudent);
+            console.log($scope.data.categoryWiseUpajati);
+        }
+
+        $scope.submitData = function () {
+            var dataToSend = {};
+            dataToSend.instId = inst_id;
+            dataToSend.instituteSpecialStudents = $scope.data.instituteSpecialStudents;
+            dataToSend.categoryWiseStudent = $scope.data.categoryWiseStudent;
+            dataToSend.categoryWiseDisableStudent = $scope.data.categoryWiseDisableStudent;
+            dataToSend.categoryWiseUpajati = $scope.data.categoryWiseUpajati;
+            console.log(dataToSend);
+            $http({
+                method: 'POST',
+                url: 'http://127.0.0.1:8000/SnCThirdPage/submitData/',
+                data: dataToSend,
+                dataType: 'json'
+            }).then(
+                function (response) {
+                    console.log(response);
+                    alert("Third page data has been saved succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("Try again");
+                }
+            );
+        }
+        /*==========================Data Saving END=======================================*/
+
     });
 })(app);
 app.directive('numberConverter', function() {

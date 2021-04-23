@@ -52,7 +52,7 @@
                     <td ng-if="item.groups.length==0"><input class="w-50" type="number" number-converter ng-init="idy = findExIndex(item.class_id,item.education_level_id)" ng-model="studentSummeryPrevYr[idy].female_failed"/></td>
                     <tr ng-repeat="i in item.groups" ng-if="item.groups.length!=0">
                         <td>@{{i.group_name_bn}}</td>
-                        <td><input class="w-50" type="number" number-converter ng-init="idx = findExSumIndex(i.group_id,item.class_id)" ng-model="studentSummeryPrevYr[idx].total_student"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-init="idx = findIndex(i.group_id,item.class_id)" ng-model="studentSummeryPrevYr[idx].total_student"/></td>
                         <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_student"/></td>
                         <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].total_candidate"/></td>
                         <td><input class="w-50" type="number" number-converter ng-model="studentSummeryPrevYr[idx].female_candidate"/></td>
@@ -99,7 +99,7 @@
                         <td rowspan="@{{item.groups.length+1}}">@{{item.class_name_bangla}}</td>
                     <tr ng-repeat="i in item.groups">
                         <td>@{{i.group_name_bn}}</td>
-                        <td><input class="w-50" type="number" number-converter ng-init="idx = findColIndex(i.group_id,item.class_id)" ng-model="studentSummeryPrevYr[idx].total_student"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-init="idx = findColIndex(i.group_id,item.class_id)" ng-model="studentSummeryColPrevYr[idx].total_student"/></td>
                         <td><input class="w-50" type="number" number-converter ng-model="studentSummeryColPrevYr[idx].female_student"/></td>
                         <td><input class="w-50" type="number" number-converter ng-model="studentSummeryColPrevYr[idx].total_candidate"/></td>
                         <td><input class="w-50" type="number" number-converter ng-model="studentSummeryColPrevYr[idx].female_candidate"/></td>
@@ -326,7 +326,118 @@
                 </table>
             </div>
             <br>
+            <div class="row contentBox ">
+                <div class="input-group contentHeader">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-number">২.৩.৭ </span>
+                    </div>
+                    <div class="form-control bg-number-label">উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম</div>
+                </div>
+                <div class="col-md-3 contentBoxBody">
+                    <label class="label-number" for="">২.৩.৭ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম
+                        পরিচালিত হয় কি?</label>
+                    <select class="custom-select" name="" style="width: 75px" ng-model="data.instOtherInfo.open_unvi_course_yn">
+                        <option value="" selected>Select</option>
+                        <option value="1">হ্যাঁ-১</option>
+                        <option value="2">না-২</option>
+                        >
+                    </select>
+                </div>
+                <div class="col-md-9 contentBoxBody">
+                    <label class="label-number" for="">২.৩.৮ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের
+                        ছক মোতাবেক প্রদান করুন</label>
+                    <table class="table table-bordered table-striped text-center">
+                        <tr>
+                            <td rowspan="3">ভর্তির বছর</td>
+                            <td colspan="4"> এসএসসি প্রোগ্রাম</td>
+                            <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">৯ম শ্রেণি</td>
+                            <td colspan="2">১০ম শ্রেণি</td>
+                            <td colspan="2">একাদশ শ্রেণি</td>
+                            <td colspan="2">দ্বাদশ শ্রেণি</td>
+                        </tr>
+                        <tr>
+                            <td>মোট</td>
+                            <td>ছাত্রী</td>
+                            <td>মোট</td>
+                            <td>ছাত্রী</td>
+                            <td>মোট</td>
+                            <td>ছাত্রী</td>
+                            <td>মোট</td>
+                            <td>ছাত্রী</td>
+                        </tr>
+                        <tbody>
+                        <tr ng-repeat="item in data.openUnStd">
+                            <td>@{{ item.admit_year }}</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-10 contentBoxBody">
+                    <label class="label-number" for="">২.৩.৯ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক
+                        প্রদান করুন</label>
+                    <table class="table table-bordered table-striped text-center">
+                        <tr>
+                            <td rowspan="3" colspan="2" style="width:250px">ভর্তির বছর</td>
+                            <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
+                            <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">৯ম শ্রেণি</td>
+                            <td colspan="2">১০ম শ্রেণি</td>
+                            <td colspan="2">দ্বাদশ শ্রেণি</td>
+                        </tr>
+                        <tr>
+                            <td>পরিক্ষার্থী</td>
+                            <td colspan="2">একাদশ শ্রেণি</td>
+                            <td>পাশের সংখ্যা</td>
+                            <td>পরিক্ষার্থী</td>
+                            <td>পাশের সংখ্যা</td>
+                            <td>পরিক্ষার্থী</td>
+                            <td>পাশের সংখ্যা</td>
+                            <td>পরিক্ষার্থী</td>
+                            <td>পাশের সংখ্যা</td>
+                        </tr>
+                        <tbody ng-repeat="item in data.openUnRes">
+                        <tr>
+                            <td rowspan="2">@{{ item.year }}</td>
+                            <td>মোট</td>
+                            <td><input type="number" number-converter class="w-50" string-to-number ng-model="item.nine_std"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.ten_std"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.ten_fem_std"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.eleven_std"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.eleven_fem_std"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.twelve_std"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.twelve_fem_std"></td>
+                        </tr>
+                        <tr>
+                            <td>ছাত্রী</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.nine_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.nine_fem_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.ten_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.ten_fem_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.eleven_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.eleven_fem_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.twelve_pass"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="item.twelve_fem_pass"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+        <div align="center"><button ng-click="submitData()" type="button" class="btn btn-success">Submit</button></div>
     </div>
 @endsection
 @section('javascript')
