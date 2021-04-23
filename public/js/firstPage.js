@@ -3,8 +3,8 @@ const app = new Vue({
     data() {
         return {
             data: null,
-            dataLoaded:false,
-            dataLoadingError:false
+            dataLoaded: false,
+            dataLoadingError: false
         }
     },
     mounted() {
@@ -41,6 +41,42 @@ const app = new Vue({
                     return self.data.eduLevel[j].education_level_bangla_name;
                 }
             }
+        },
+        submitData: function () {
+            var dataToSend = {};
+            dataToSend.instId = inst_id;
+            dataToSend.data=this.data;
+            dataToSend.eduLevel=this.data.eduLevel;
+            dataToSend.institutes_recognition=this.data.institutes_recognition;
+            dataToSend.committees=this.data.committees;
+            console.log(dataToSend);
+            axios.post('http://127.0.0.1:8000/firstpage/submitData/', dataToSend)
+                .then(
+                    function (response) {
+                        console.log(response);
+                        alert("First page data has been saved successfully");
+                    },
+                    function (response) {
+                        console.log(response);
+                        alert("Error Try again");
+                    });
+
+/* $http({
+                method: 'POST',
+                url: 'http://127.0.0.1:8000/firstpage/submitData/',
+                data:dataToSend,
+                dataType:'json'
+            }).then(
+                function (response) {
+                    console.log(response);
+                    alert("College second page data has been saved succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("Error Try again");
+                }
+            );*/
+
         }
     }
 });

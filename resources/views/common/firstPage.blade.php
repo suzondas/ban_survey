@@ -719,6 +719,7 @@
                 </div>
             </div>
 
+            <div align="center"><button type="button" @click="submitData" class="btn btn-success">Submit</button></div>
 
         </div>
 
