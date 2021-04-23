@@ -25,30 +25,6 @@ var app = angular.module('collegeFirstPage', []);
             return idx;
         };
 
-        /*Occupation name finding*/
-        $scope.occupationName = function (id) {
-            var occupationsList = $scope.data.occupationsList;
-            var occupationName = null;
-            occupationsList.forEach(function (currentValue, index, arr) {
-                if (currentValue.occupation_id == id) {
-                    return occupationName = currentValue.details_bn;
-                }
-            });
-            return occupationName;
-        };
-
-        /*upajatiName name finding*/
-        $scope.findUpajaitName = function (id) {
-            var upajatiList = $scope.data.upajatiList;
-            var upajatiName = null;
-            upajatiList.forEach(function (currentValue, index, arr) {
-                if (currentValue.upajati_id == id) {
-                    return upajatiName = currentValue.name_bn;
-                }
-            });
-            return upajatiName;
-        }
-
         /*FInding hscVocName*/
         $scope.hscVocName = function (id) {
             var vocClassList = $scope.data.vocClasses;
@@ -72,68 +48,6 @@ var app = angular.module('collegeFirstPage', []);
             });
             return bmClsName;
         }
-
-        /*FInding dipFName*/
-        $scope.dipFName = function (id) {
-            var dipFClassList = $scope.data.diplomaFisheriesClasses;
-            var dipFClsName = null;
-            dipFClassList.forEach(function (currentValue, index) {
-                if (currentValue.class_id == id) {
-                    return dipFClsName = currentValue.class_name_bangla;
-                }
-            });
-            return dipFClsName;
-        }
-
-
-        /*FInding dipAgName*/
-        $scope.dipAgName = function (id) {
-            var dipAgClassList = $scope.data.diplomaAgriClasses;
-            var dipAgClsName = null;
-            //console.log(dipAgClassList);
-            dipAgClassList.forEach(function (currentValue, index) {
-                if (currentValue.class_id == id) {
-                    return dipAgClsName = currentValue.class_name_bangla;
-                }
-            });
-            return dipAgClsName;
-        }
-
-        /*FInding catStdName*/
-        $scope.catStdName = function (id) {
-            var catStdList = $scope.data.categoryWiseList;
-            var catStdNm = null;
-            catStdList.forEach(function (currentValue, index) {
-                if (currentValue.category_id == id) {
-                    return catStdNm = currentValue.details_bn;
-                }
-            });
-            return catStdNm;
-        }
-
-        /*FInding catDisStdName*/
-        $scope.catDisStdName = function (id) {
-            var catDisStdList = $scope.data.disableCategory;
-            var catDisStdNm = null;
-            catDisStdList.forEach(function (currentValue, index) {
-                if (currentValue.disable_type == id) {
-                    return catDisStdNm = currentValue.disability_bn;
-                }
-            });
-            return catDisStdNm;
-        };
-
-        /*FInding class name*/
-        $scope.findClassName = function (id) {
-            var classList = $scope.data.classes;
-            var clsName = null;
-            classList.forEach(function (currentValue, index) {
-                if (currentValue.class_id == id) {
-                    return clsName = currentValue.class_name_bangla;
-                }
-            });
-            return clsName;
-        };
         /*===========================Helper Functions Ends==============================*/
 
         /*==========================Data Fetching=======================================*/
@@ -158,16 +72,7 @@ var app = angular.module('collegeFirstPage', []);
             console.log($scope.data.studentSummaryDropout);
             console.log($scope.data.hscVocStudent);
             console.log($scope.data.hscBmStudent);
-            console.log($scope.data.hscDiplomaFisheries);
-            console.log($scope.data.hscDiplomaAgriculture);
-            console.log($scope.data.categoryWiseStudent);
-            console.log($scope.data.instituteSpecialStudents);
-            console.log($scope.data.categoryWiseDisableStudent);
-            console.log($scope.data.categoryWiseUpajati);
-            console.log($scope.data.ageWiseStudent);
-            console.log($scope.data.guardianOccupation);
         }
-        /*==========================Data Saving Ends=======================================*/
         $scope.submitData = function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
@@ -177,14 +82,6 @@ var app = angular.module('collegeFirstPage', []);
             dataToSend.studentSummaryDropout = $scope.data.studentSummaryDropout;
             dataToSend.hscVocStudent = $scope.data.hscVocStudent;
             dataToSend.hscBmStudent = $scope.data.hscBmStudent;
-            dataToSend.hscDiplomaFisheries = $scope.data.hscDiplomaFisheries;
-            dataToSend.hscDiplomaAgriculture = $scope.data.hscDiplomaAgriculture;
-            dataToSend.categoryWiseStudent = $scope.data.categoryWiseStudent;
-            dataToSend.instituteSpecialStudents = $scope.data.instituteSpecialStudents;
-            dataToSend.categoryWiseDisableStudent = $scope.data.categoryWiseDisableStudent;
-            dataToSend.categoryWiseUpajati = $scope.data.categoryWiseUpajati;
-            dataToSend.ageWiseStudent = $scope.data.ageWiseStudent;
-            dataToSend.guardianOccupation = $scope.data.guardianOccupation;
             console.log(dataToSend);
             $http({
                 method: 'POST',
@@ -194,7 +91,7 @@ var app = angular.module('collegeFirstPage', []);
             }).then(
                 function (response) {
                     console.log(response);
-                    alert("College first page data has been saved succesfull");
+                    alert("First page data has been saved succesfull");
                 },
                 function (response) {
                     console.log(response);
@@ -202,6 +99,8 @@ var app = angular.module('collegeFirstPage', []);
                 }
             );
         }
+
+        /*==========================Data Saving Ends=======================================*/
     });
 })(app);
 app.directive('numberConverter', function () {

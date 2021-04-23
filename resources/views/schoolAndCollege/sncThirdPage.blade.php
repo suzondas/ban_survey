@@ -138,27 +138,27 @@
                 <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
                     <select ng-model="data.instituteSpecialStudents.special_std_yn">
                         <option>Select</option>
-                        <option>হ্যাঁ-১</option>
-                        <option>না-২</option>
+                        <option value="1">হ্যাঁ-১</option>
+                        <option value="2">না-২</option>
                     </select></td>
                 <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
-                    <input type="checkbox"
-                           ng-model="data.instituteSpecialStudents.disable_facility_audio">&nbsp; অডিও-১
+                    <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_audio==1"
+                           ng-model="data.instituteSpecialStudents.disable_facility_audio" ng-value="data.instituteSpecialStudents.disable_facility_audio" ng-true-value="'1'" ng-false-value="'0'" >&nbsp; অডিও-১
                     &nbsp;
-                    <input type="checkbox"
-                           ng-model="data.instituteSpecialStudents.disable_facility_braille">&nbsp;
+                    <input type="checkbox"  ng-checked="data.instituteSpecialStudents.disable_facility_braille==1"
+                           ng-model="data.instituteSpecialStudents.disable_facility_braille" ng-true-value="'1'" ng-false-value="'0'" >&nbsp;
                     ব্রেইল-২ &nbsp;
-                    <input type="checkbox"
-                           ng-model="data.instituteSpecialStudents.disable_facility_signlan"> &nbsp;সাইন
+                    <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_signlan==1"
+                           ng-model="data.instituteSpecialStudents.disable_facility_signlan" ng-true-value="'1'" ng-false-value="'0'" > &nbsp;সাইন
                     ভাষা-৩ &nbsp;
-                    <input type="checkbox"
-                           ng-model="data.instituteSpecialStudents.disable_facility_others"> &nbsp;অন্যান্য-৪
+                    <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_others==1"
+                           ng-model="data.instituteSpecialStudents.disable_facility_others" ng-true-value="'1'" ng-false-value="'0'"> &nbsp;অন্যান্য-৪
                 </td>
                 <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
                     <select ng-model="data.instituteSpecialStudents.ramp_access_yn">
                         <option>Select</option>
-                        <option>হ্যাঁ-১</option>
-                        <option>না-২</option>
+                        <option value="1">হ্যাঁ-১</option>
+                        <option value="2">না-২</option>
                     </select></td>
             </tr>
         </table>
@@ -405,6 +405,7 @@
                 </table>
             </div>
         </div>
+        <div align="center"><button ng-click="submitData()" type="button" class="btn btn-success">Submit</button></div>
     </div>
 @endsection
 @section('javascript')

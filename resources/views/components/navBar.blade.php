@@ -25,11 +25,23 @@
         <?php if (Auth::user()->institute_type == 3){?>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('college/collegeFirstPage') ? 'active' : '' }}"
-               href="{{ url('college/collegeFirstPage') }}">কলেজ(১ম পাতা)</a>
+               href="{{ url('college/collegeFirstPage') }}">কলেজ-১</a>
         </li>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('college/collegeSecondPage') ? 'active' : '' }}"
-               href="{{ url('college/collegeSecondPage') }}">কলেজ(২য় পাতা)</a>
+               href="{{ url('college/collegeSecondPage') }}">কলেজ-২</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('college/collegeThirdPage') ? 'active' : '' }}"
+               href="{{ url('college/collegeThirdPage') }}">কলেজ-৩</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('college/collegeFourthPage') ? 'active' : '' }}"
+               href="{{ url('college/collegeFourthPage') }}">কলেজ-৪</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('college/collegeFifthPage') ? 'active' : '' }}"
+               href="{{ url('college/collegeFifthPage') }}">কলেজ-৫</a>
         </li>
         <?php } ?>
 

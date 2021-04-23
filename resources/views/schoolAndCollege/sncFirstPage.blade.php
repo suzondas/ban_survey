@@ -219,25 +219,25 @@
                         </tr>
                         <tbody>
                         <tr>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.six_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.six_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.seven_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.seven_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.eight_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.eight_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.nine_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.nine_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.ten_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryRepeater.ten_female"></td>
                         </tr>
                         </tbody>
@@ -279,25 +279,25 @@
                         </tdead>
                         <tbody>
                         <tr>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.six_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.six_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.seven_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.seven_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.eight_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.eight_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.nine_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.nine_female"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.ten_total"></td>
-                            <td><input type="number" number-converter class="form-control"
+                            <td><input type="number" number-converter class="w-50"
                                       ng-model="data.studentSummaryDropout.ten_female"></td>
                         </tr>
                         </tbody>
@@ -313,7 +313,7 @@
                 <div class="form-control bg-number-label"> উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে রিপিটার ও ড্রপআউট</div>
             </div>
             <div class="col-md-6 contentBoxBody">
-                <label class="label-text" for="">২.১.৪.১ উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে রিপিটার সংক্রান্ত: ২০২০ সালের শিক্ষার্থী ২০২১ সালে একই
+                <label class="label-text" for="">২.১.৫.১ উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে রিপিটার সংক্রান্ত: ২০২০ সালের শিক্ষার্থী ২০২১ সালে একই
                     শ্রেণিতে অধ্যয়নরত আছে এইরুপ শিক্ষার্থীর সংখ্যা (রিপিটার)</label>
                 <table class="table table-bordered table-striped text-center">
                     <thead>
@@ -339,32 +339,32 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tr>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryRepeater.eleven_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryRepeater.eleven_total">
                         </td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.eleven_female"></td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryRepeater.twelve_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryRepeater.twelve_total">
                         </td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.twelve_female"></td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.honours_pass_total"></td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.honours_pass_female"></td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.honours_somman_total"></td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.honours_somman_female"></td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.masters_total"></td>
-                        <td><input type="number" number-converter class="form-control"
+                        <td><input type="number" number-converter class="w-50"
                                    ng-model="data.studentSummaryRepeater.masters_female"></td>
                     </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col-md-6 contentBoxBody">
-                <label class="label-text" for="">২.১.৪.২ উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে ২০২০ সালের ঝরেপড়া শিক্ষার্থীর সংখ্যা (ড্রপআউট)</label>
+                <label class="label-text" for="">২.১.৫.২ উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে ২০২০ সালের ঝরেপড়া শিক্ষার্থীর সংখ্যা (ড্রপআউট)</label>
                 <table class="table table-bordered table-striped mt-4 text-center">
                     <thead>
                     <tr>
@@ -390,31 +390,31 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tr>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.eleven_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_total">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.eleven_female">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_female">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.twelve_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.twelve_total">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.twelve_female">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.twelve_female">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.honours_pass_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.honours_pass_total">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.honours_pass_female">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.honours_pass_female">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.honours_somman_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.honours_somman_total">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.honours_somman_female">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.honours_somman_female">
                         </td>
-                        <td><input type="number" number-converter class="form-control" ng-model="data.studentSummaryDropout.masters_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.masters_total">
                         </td>
-                        <td><input type="number" number-converter class="form-control"
-                                   ng-model="data.studentSummaryDropout.masters_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.masters_female"></td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+        <div align="center"><button ng-click="submitData()" type="button" class="btn btn-success">Submit</button></div>
     </div>
 @endsection
 @section('javascript')

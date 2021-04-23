@@ -77,6 +77,50 @@ var app = angular.module('sncFifthPage', []);
         });
         /*==========================Data Fetching Ends=======================================*/
 
+        /*==========================Data Saving=======================================*/
+        $scope.save = function () {
+            console.log($scope.studentSummeryPrevYr);
+            console.log($scope.studentSummeryColPrevYr);
+            console.log($scope.boardWiseExamResults);
+            console.log($scope.data.sscVocStd);
+            console.log($scope.data.hscVocStd);
+            console.log($scope.data.hscBMStd);
+            console.log($scope.data.instOtherInfo);
+            console.log($scope.data.openUnStd);
+            console.log($scope.data.openUnRes);
+        }
+
+        $scope.submitData = function () {
+            var dataToSend = {};
+            dataToSend.instId = inst_id;
+            dataToSend.studentSummeryPrevYr = $scope.studentSummeryPrevYr;
+            dataToSend.studentSummeryColPrevYr = $scope.studentSummeryColPrevYr;
+            dataToSend.boardWiseExamResults = $scope.boardWiseExamResults;
+            dataToSend.sscVocStd = $scope.data.sscVocStd;
+            dataToSend.hscVocStd = $scope.data.hscVocStd;
+            dataToSend.hscBMStd = $scope.data.hscBMStd;
+            dataToSend.instOtherInfo = $scope.data.instOtherInfo;
+            dataToSend.openUnStd = $scope.data.openUnStd;
+            dataToSend.openUnRes = $scope.data.openUnRes;
+            console.log(dataToSend);
+            $http({
+                method: 'POST',
+                url: 'http://127.0.0.1:8000/SnCFifthPage/submitData/',
+                data: dataToSend,
+                dataType: 'json'
+            }).then(
+                function (response) {
+                    console.log(response);
+                    alert("Fifth page data has been saved succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("Try again");
+                }
+            );
+        }
+        /*==========================Data Saving END=======================================*/
+
     });
 })(app);
 app.directive('numberConverter', function() {
