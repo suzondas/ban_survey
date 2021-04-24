@@ -49,7 +49,7 @@ const app = new Vue({
             dataToSend.eduLevel=this.data.eduLevel;
             dataToSend.institutes_recognition=this.data.institutes_recognition;
             dataToSend.committees=this.data.committees;
-            console.log(dataToSend);
+           // console.log(dataToSend);
             axios.post('http://127.0.0.1:8000/firstpage/submitData/', dataToSend)
                 .then(
                     function (response) {
@@ -61,21 +61,6 @@ const app = new Vue({
                         alert("Error Try again");
                     });
 
-/* $http({
-                method: 'POST',
-                url: 'http://127.0.0.1:8000/firstpage/submitData/',
-                data:dataToSend,
-                dataType:'json'
-            }).then(
-                function (response) {
-                    console.log(response);
-                    alert("College second page data has been saved succesfull");
-                },
-                function (response) {
-                    console.log(response);
-                    alert("Error Try again");
-                }
-            );*/
 
         }
     }
