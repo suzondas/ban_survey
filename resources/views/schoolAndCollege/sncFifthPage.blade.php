@@ -389,17 +389,17 @@
                     <table class="table table-bordered table-striped text-center">
                         <tr>
                             <td rowspan="3" colspan="2" style="width:250px">ভর্তির বছর</td>
-                            <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
+                            <td colspan="4"> এসএসসি প্রোগ্রাম</td>
                             <td colspan="4"> এইচএসসি প্রোগ্রাম</td>
                         </tr>
                         <tr>
                             <td colspan="2">৯ম শ্রেণি</td>
                             <td colspan="2">১০ম শ্রেণি</td>
+                            <td colspan="2">একাদশ শ্রেণি</td>
                             <td colspan="2">দ্বাদশ শ্রেণি</td>
                         </tr>
                         <tr>
                             <td>পরিক্ষার্থী</td>
-                            <td colspan="2">একাদশ শ্রেণি</td>
                             <td>পাশের সংখ্যা</td>
                             <td>পরিক্ষার্থী</td>
                             <td>পাশের সংখ্যা</td>

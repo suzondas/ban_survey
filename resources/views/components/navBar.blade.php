@@ -13,11 +13,23 @@
         <?php if (Auth::user()->institute_type == 1){?>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('school/schoolFirstPage') ? 'active' : '' }}"
-               href="{{ url('school/schoolFirstPage') }}">স্কুল সম্পর্কিত-১</a>
+               href="{{ url('school/schoolFirstPage') }}">স্কুল-১</a>
         </li>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('school/schoolSecondPage') ? 'active' : '' }}"
-               href="{{ url('school/schoolSecondPage') }}">স্কুল সম্পর্কিত-২</a>
+               href="{{ url('school/schoolSecondPage') }}">স্কুল-২</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('school/schoolThirdPage') ? 'active' : '' }}"
+               href="{{ url('school/schoolThirdPage') }}">স্কুল-৩</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('school/schoolFourthPage') ? 'active' : '' }}"
+               href="{{ url('school/schoolFourthPage') }}">স্কুল-৪</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->is('school/schoolFifthPage') ? 'active' : '' }}"
+               href="{{ url('school/schoolFifthPage') }}">স্কুল-৫</a>
         </li>
         <?php } ?>
 

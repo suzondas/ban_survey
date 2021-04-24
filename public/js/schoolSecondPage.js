@@ -1,22 +1,129 @@
-const app = new Vue({
-    el: '#schoolSecondPage',
-    data() {
-        return {
-            data:null,
-            dataLoaded:false,
-            banglaBorno:['ক','খ','গ','ঘ','ঙ','চ','ছ','জ','ঝ','ঞ']
-        }
-    },
-    mounted() {
-        var self=this
-        axios.get('http://127.0.0.1:8000/schoolSecondPage/'+inst_id)
-            .then(function (response) {
-                self.data=response.data
-                self.dataLoaded=true
-                console.log(self.data)
-            })
-            .catch(function (error) {
-                console.log(error)
+var app = angular.module('schoolSecondPage', []);
+(function (app) {
+    "use strict";
+    app.controller('myCtrl', function ($scope, $http) {
+
+        /*Initial Variables*/
+        $scope.data = null;
+
+        /*===========================Helper Functions==============================*/
+
+        /*FInding sscVocName*/
+        $scope.sscVocName = function (id) {
+            var svocClassList = $scope.data.sscVocClasses;
+            var svocClsName = null;
+            svocClassList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return svocClsName = currentValue.class_name_bangla;
+                }
             });
-    },
+            return svocClsName;
+        }
+
+        /*FInding catStdName*/
+        $scope.catStdName = function (id) {
+            var catStdList = $scope.data.categoryWiseList;
+            var catStdNm = null;
+            catStdList.forEach(function (currentValue, index) {
+                if (currentValue.category_id == id) {
+                    return catStdNm = currentValue.details_bn;
+                }
+            });
+            return catStdNm;
+        }
+
+        /*FInding catDisStdName*/
+        $scope.catDisStdName = function (id) {
+            var catDisStdList = $scope.data.disableCategory;
+            var catDisStdNm = null;
+            catDisStdList.forEach(function (currentValue, index) {
+                if (currentValue.disable_type == id) {
+                    return catDisStdNm = currentValue.disability_bn;
+                }
+            });
+            return catDisStdNm;
+        };
+
+        /*upajatiName name finding*/
+        $scope.findUpajaitName = function (id) {
+            var upajatiList = $scope.data.upajatiList;
+            var upajatiName = null;
+            upajatiList.forEach(function (currentValue, index, arr) {
+                if (currentValue.upajati_id == id) {
+                    return upajatiName = currentValue.name_bn;
+                }
+            });
+            return upajatiName;
+        }
+        /*===========================Helper Functions Ends==============================*/
+
+        /*==========================Data Fetching=======================================*/
+        $http({
+            method: 'GET',
+            url: 'http://127.0.0.1:8000/schoolSecondPage/' + inst_id
+        }).then(function (response) {
+            // console.log(response.data)
+            $scope.data = response.data;
+
+        }, function (error) {
+            console.log(error);
+        });
+        /*==========================Data Fetching Ends=======================================*/
+
+        /*==========================Data Saving=======================================*/
+        $scope.save = function () {
+            console.log($scope.data.sscVocStudent);
+            console.log($scope.data.instituteSpecialStudents);
+            console.log($scope.data.categoryWiseStudent);
+            console.log($scope.data.categoryWiseDisableStudent);
+            console.log($scope.data.categoryWiseUpajati);
+
+        }
+        $scope.submitData = function () {
+            var dataToSend = {};
+            dataToSend.instId = inst_id;
+            dataToSend.sscVocStudent = $scope.data.sscVocStudent;
+            dataToSend.instituteSpecialStudents = $scope.data.instituteSpecialStudents;
+            dataToSend.categoryWiseStudent = $scope.data.categoryWiseStudent;
+            dataToSend.categoryWiseDisableStudent = $scope.data.categoryWiseDisableStudent;
+            dataToSend.categoryWiseUpajati = $scope.data.categoryWiseUpajati;
+            console.log(dataToSend);
+            $http({
+                method: 'POST',
+                url: 'http://127.0.0.1:8000/schoolSecondPage/submitData/',
+                data: dataToSend,
+                dataType: 'json'
+            }).then(
+                function (response) {
+                    console.log(response);
+                    alert("Second page data has been saved succesfull");
+                },
+                function (response) {
+                    console.log(response);
+                    alert("Try again");
+                }
+            );
+        }
+
+        /*==========================Data Saving Ends=======================================*/
+    });
+})(app);
+app.directive('numberConverter', function () {
+    return {
+        priority: 1,
+        restrict: 'A',
+        require: 'ngModel',
+        link: function (scope, element, attr, ngModel) {
+            function toModel(value) {
+                return "" + value; // convert to string
+            }
+
+            function toView(value) {
+                return parseInt(value); // convert to number
+            }
+
+            ngModel.$formatters.push(toView);
+            ngModel.$parsers.push(toModel);
+        }
+    };
 });

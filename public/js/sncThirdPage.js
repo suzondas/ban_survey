@@ -12,19 +12,6 @@ var app = angular.module('sncThirdPage', []);
             console.log($scope. $scope.data.upajatiList);
         };
 
-        /*upajatiName name finding*/
-        $scope.findUpajaitName = function (id) {
-            var upajatiList = $scope.data.upajatiList;
-            var upajatiName = null;
-            upajatiList.forEach(function (currentValue, index, arr) {
-                if (currentValue.upajati_id == id) {
-                    return upajatiName = currentValue.name_bn;
-                }
-            });
-            return upajatiName;
-        }
-
-
         /*FInding catStdName*/
         $scope.catStdName = function (id) {
             var catStdList = $scope.data.categoryWiseList;
@@ -48,6 +35,18 @@ var app = angular.module('sncThirdPage', []);
             });
             return catDisStdNm;
         };
+
+        /*upajatiName name finding*/
+        $scope.findUpajaitName = function (id) {
+            var upajatiList = $scope.data.upajatiList;
+            var upajatiName = null;
+            upajatiList.forEach(function (currentValue, index, arr) {
+                if (currentValue.upajati_id == id) {
+                    return upajatiName = currentValue.name_bn;
+                }
+            });
+            return upajatiName;
+        }
 
         /*===========================Helper Functions Ends==============================*/
 
