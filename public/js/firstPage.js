@@ -45,12 +45,12 @@ const app = new Vue({
         submitData: function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
-            dataToSend.data=this.data; 67 7
-            dataToSend.eduLevel=this.data.eduLevel;
+            dataToSend.institutes=this.data.institutes;
             dataToSend.institutes_recognition=this.data.institutes_recognition;
             dataToSend.committees=this.data.committees;
-           // console.log(dataToSend);
-            axios.post('http://127.0.0.1:8000/firstpage/submitData/', dataToSend)
+            dataToSend.institutes_mpo_status=this.data.institutes_mpo_status;
+           console.log(dataToSend);
+            axios.post('http://127.0.0.1:8000/firstPage/submitData/', dataToSend)
                 .then(
                     function (response) {
                         console.log(response);
