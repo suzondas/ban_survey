@@ -45,7 +45,7 @@ const app = new Vue({
         submitData: function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
-            dataToSend.data=this.data;
+            dataToSend.data=this.data; 67 7
             dataToSend.eduLevel=this.data.eduLevel;
             dataToSend.institutes_recognition=this.data.institutes_recognition;
             dataToSend.committees=this.data.committees;
