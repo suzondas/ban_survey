@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "v-mask": "^2.2.4",
+        "vue-toast-notification": "^0.6.1",
         "vuejs-datepicker": "^1.6.2"
     }
 }

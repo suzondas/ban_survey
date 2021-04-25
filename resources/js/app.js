@@ -6,8 +6,13 @@
 
 require('./bootstrap');
 import datepicker from 'vuejs-datepicker';
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
 window.Vue = require('vue').default;
 Vue.component('datepicker', datepicker);
+Vue.use(VueToast);
+
 
 /**
  * The following block of code may be used to automatically register your
