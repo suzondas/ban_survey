@@ -22,7 +22,24 @@ const app = new Vue({
     },
     methods:
         {
-
+            submitData: function () {
+                var dataToSend = {};
+                dataToSend.instId = inst_id;
+                dataToSend.summary_infos = this.data.summary_infos;
+                dataToSend.summary_audit_infos = this.data.summary_audit_infos;
+                dataToSend.community_services = this.data.community_services;
+               // console.log(dataToSend);
+                axios.post('http://127.0.0.1:8000/fourthPage/submitData', dataToSend)
+                    .then(
+                        function (response) {
+                            console.log(response);
+                            alert("Fourth page data has been saved successfully");
+                        },
+                        function (response) {
+                            console.log(response);
+                            alert("Error Try again");
+                        });
+            }
         }
 
 });

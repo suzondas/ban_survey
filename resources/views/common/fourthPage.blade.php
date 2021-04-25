@@ -518,6 +518,7 @@
                 </table>
             </div>
         </div>
+            <div align="center"><button type="button" @click="submitData" class="btn btn-success">Submit</button></div>
     </div>
         <div v-show="dataLoadingError">
             <span class="d-flex justify-content-center btn-warning">Error in Fetching Data, Please contact System Administrator!</span>
