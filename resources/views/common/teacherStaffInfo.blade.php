@@ -29,13 +29,13 @@
                     <td>@{{ index+1 }}</td>
                     <td><input  style="width:130px;" type="text" v-model="item.teach_name"/></td>
                     <td><select v-model="item.desig_id" style="width:130px;">
-                            <option value="null">Select</option>
+                            <option value="000">Select</option>
                             <option v-for="designation in data.designation" v-bind:value="designation.designation_id">@{{ designation.designation_name }}</option>
                         </select>
                     </td>
                     <td><select v-model="item.subject_id" style="width:130px;">
                             <option value="000">Select</option>
-                            <option v-for="subject in data.subjects" v-bind:value="subject.subject_id">@{{ subject.subject_name }}</option>
+                            <option v-for="subject in data.subjects" v-bind:value="subject.subject_id">@{{ subject.subject_name_eng }}</option>
                         </select>
                     </td>
                     <td><datepicker v-model="item.dob"></datepicker>
@@ -45,7 +45,7 @@
                     <td class="form-inline">
                         <div class="btn-group" role="group" style="font-size: 11px;">
                             <button type="button" class="btn btn-success p-1 m-0" data-toggle="modal"
-                                    data-target="#exampleModalLong">Details
+                                    data-target="#exampleModalLong" @click="showDetail(index)">Details
                             </button>
                             <button type="button" class="btn btn-danger p-1 m-0" @click="removeTeacher(item.teach_name, item.id,index)">Delete
                             </button>
@@ -62,7 +62,7 @@
         <div v-show="dataLoadingError">
             <span class="d-flex justify-content-center btn-warning">Error in Fetching Data, Please contact System Administrator!</span>
         </div>
+        @include('components/teacherStaffInfoModal')
     </div>
-    @include('components/teacherStaffInfoModal')
     <script src="{{ asset('js/teacherStaffInfo.js') }}" type="module" defer></script>
 @endsection

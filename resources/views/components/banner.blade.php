@@ -8,9 +8,10 @@
             www.banbeis.gov.bd, e-mail: info@banbeis.gov.bd<br><br>
             <span style="font-weight: bold;">শিক্ষা প্রতিষ্ঠান বার্ষিক জরিপ, ২০২১<br>
             <?php if (Auth::check()) {?>
-            শিক্ষা প্রতিষ্ঠান: <?php echo(Auth::user()->user_name); ?> (EIIN: <?php echo(Auth::user()->eiin); ?>)
+            <span style="color:#c51f1a">শিক্ষা প্রতিষ্ঠান: <?php echo(Auth::user()->user_name); ?> (EIIN: <?php echo(Auth::user()->eiin); ?>)
             <?php }?>
-        </span>
+            </span>
+            </span>
         </div>
     </div>
 </div>
