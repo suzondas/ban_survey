@@ -5,7 +5,8 @@ const app = new Vue({
             data: null,
             dataLoaded: false,
             dataLoadingError: false,
-            addedTeacherY: false
+            addedTeacherY: false,
+            selectedTeacherIdx:null
         }
     },
     mounted() {
@@ -23,6 +24,10 @@ const app = new Vue({
     },
     methods:
         {
+            showDetail:function(index){
+                var self = this;
+                self.selectedTeacherIdx = index;
+            },
             addTeacher: function () {
                 var self = this;
                 axios.get('http://127.0.0.1:8000/TeacherStaff/addTeacher/' + inst_id)

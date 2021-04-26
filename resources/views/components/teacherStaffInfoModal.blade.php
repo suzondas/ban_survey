@@ -1,4 +1,4 @@
-<div class="modal modal-max" id="exampleModalLong" tabindex="-1" role="dialog">
+<div class="modal modal-max" id="exampleModalLong" tabindex="-1" role="dialog" v-if="selectedTeacherIdx !== null">
     <div class="modal-dialog modal-max" role="document">
         <div class="modal-content modal-max">
             <div class="modal-header">
@@ -13,8 +13,8 @@
                         <div class="row">
                             <div class="col-md-6 text-white"><label>সাধারণ তথ্য</label></div>
                             <div class="col-md-6 text-right">বর্তমানে কর্মরত কি না ?
-                                <select name="isInactive" id="isInactive">
-                                    <option class="englishTextC1" value="" selected="selected">কর্মরত</option>
+                                <select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].is_inactive">
+                                    <option class="englishTextC1" value="null">কর্মরত</option>
                                     <option class="englishTextC1" value="R">অবসরপ্রাপ্ত</option>
                                     <option class="englishTextC1" value="D">মৃত</option>
                                     <option class="englishTextC1" value="T">বদলি</option>
@@ -31,24 +31,23 @@
                             <tr>
                                 <td class="text-right">শিক্ষক / কর্মচারীর নাম</td>
                                 <td>
-                                    <input id="techGeneralInfoIdS" name="techGeneralInfoIdS" type="hidden" value="">
-                                    <input id="techName" name="techName" type="text">
+                                    <input type="text" v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].teach_name">
                                 </td>
                                 <td class="text-right"> পুরুষ / মহিলা</td>
                                 <td>
-                                    <select name="sex" id="sex">
-                                        <option value=""></option>
-                                        <option value="2" selected="selected">মহিলা</option>
+                                    <select  v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].sex">
+                                        <option value="null">Select</option>
                                         <option value="1">পুরুষ</option>
+                                        <option value="2">মহিলা</option>
                                     </select>
                                 </td>
                                 <td class="text-right">জাতীয় পরিচয়পত্র নং</td>
-                                <td><input id="nid" name="nid" type="text"></td>
+                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].nid"></td>
                             </tr>
                             <tr>
                                 <td class="text-right">ধর্ম</td>
-                                <td><select name="religion" id="religion">
-                                        <option value="">None</option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].religion">
+                                        <option value="null">Select</option>
                                         <option value="ISLAM" selected="selected">ISLAM</option>
                                         <option value="HINDUISM">HINDUISM</option>
                                         <option value="CHRISTIANITY">CHRISTIANITY</option>
@@ -57,25 +56,33 @@
                                     </select></td>
                                 <td class="text-right">পদবি</td>
                                 <td>
-                                    <select name="desigIdS" id="desigIdS">
+                                    <select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].desig_id" style="width:130px;">
+                                        <option value="null">Select</option>
+                                        <option v-for="designation in data.designation" v-bind:value="designation.designation_id">@{{ designation.designation_name }}</option>
                                     </select>
                                 </td>
                                 <td class="text-right"> শিক্ষক / কর্মচারীর ধরন</td>
-                                <td><select name="teacherType" id="teacherType">
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].teacher_type">
+                                        <option value="null">Select</option>
+                                        <option value="GENERAL">জেনারেল</option>
                                         <option value="TECHNICAL">কারিগরি</option>
-                                        <option value="GENERAL" selected="selected">জেনারেল</option>
                                     </select></td>
                             </tr>
                             <tr>
                                 <td class="text-right">বিষয়</td>
-                                <td><select name="subjectIdS" id="subjectIdS">
+                                <td>
+                                    <select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].subject_id" style="width:130px;">
+                                        <option value="000">Select</option>
+                                        <option v-for="subject in data.subjects" v-bind:value="subject.subject_id">@{{ subject.subject_name_eng }}</option>
                                     </select>
                                 </td>
                                 <td class="text-right">বিষয় (যদি list এ না থাকে)</td>
-                                <td><input id="subName" name="subName" type="text"></td>
+                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].other_subject"></td>
+                                {{--<td><input type="text"></td>--}}
                                 <td class="text-right"> নিয়োগের ধরন</td>
-                                <td><select name="recruitmentType" id="recruitmentType">
-                                        <option value="PERMANENT" selected="selected">নিয়মিত</option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].recruitment_type">
+                                        <option value="null">Select</option>
+                                        <option value="PERMANENT">নিয়মিত</option>
                                         <option value="PART TIME">খন্ডকালীন</option>
                                     </select></td>
                             </tr>
@@ -83,24 +90,24 @@
                                 <td class="text-right">চাকুরিতে
                                     প্রথম যোগদানের তারিখ
                                 </td>
-                                <td><input id="fristJoiningDateS" name="fristJoiningDateS"/><br> দিন/মাস/বছর
+                                <td><datepicker v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].first_joining_date"></datepicker><br> দিন/মাস/বছর
                                 </td>
                                 <td class="text-right">বর্তমান
                                     পদে যোগদানের তারিখ
                                 </td>
-                                <td><input id="currentJoiningDateS" name="currentJoiningDateS"> <br> দিন/মাস/বছর
+                                <td><datepicker v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].current_joining_date"></datepicker> <br> দিন/মাস/বছর
                                 </td>
                                 <td class="text-right">জন্ম তারিখ</td>
-                                <td><input id="dobS" name="dobS"> <br> দিন/মাস/বছর
+                                <td><datepicker v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].dob"></datepicker> <br> দিন/মাস/বছর
                                 </td>
                             </tr>
 
                             <tr>
                                 <td class="text-right">মোবাইল নম্বর</td>
-                                <td><input id="mobileNumber" name="mobileNumber" type="text"></td>
+                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].mobile_number" type="text"></td>
                                 <td class="text-right">মোবাইল ব্যাংকিং এর ধরন <br>(যদি থাকে)</td>
-                                <td><select name="mobBankingType" id="mobBankingType">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
+                                <td><select  v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].mob_banking_type" >
+                                        <option value="null">Select</option>
                                         <option selected="selected" value="bKash">bKash
                                         </option>
                                         <option value="Nagad">Nagad
@@ -117,28 +124,29 @@
                                         </option>
                                     </select></td>
                                 <td class="text-right">মোবাইল ব্যাংকিং নম্বর <br> (যদি থাকে)</td>
-                                <td><input id="mobileBankingNum" name="mobileBankingNum" type="text"></td>
+                                <td><input  v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].mobile_banking_num" type="text"></td>
                             </tr>
                             <tr>
                                 <td class="text-right">জাতীয় বেতন গ্রেড</td>
-                                <td><input name="payScale" id="payScale" type="text"/>
+                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].payscale" type="text"/>
                                 </td>
                                 <td class="text-right">এমপিওভুক্তির তারিখ</td>
-                                <td><input id="mpoDateS" name="mpoDateS"> <br> দিন/মাস/বছর
+                                <td><datepicker v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].mpo_date"></datepicker> <br> দিন/মাস/বছর
                                 </td>
                                 <td class="text-right">NTRCA সুপারিশকৃত নিয়োগ কিনা</td>
-                                <td><select name="ntrcRecruitmentYN" id="ntrcRecruitmentYN">
-                                        <option value="2" selected="selected">No</option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].ntrc_recruitment_yn">
+                                        <option value="null">Select</option>
                                         <option value="1">Yes</option>
+                                        <option value="2">No</option>
                                     </select></td>
                             </tr>
                             <tr class="">
                                 <td class="text-right">NTRCA Reg. (যদি থাকে)</td>
-                                <td><input id="ntrca" name="ntrca" type="text" value=""></td>
+                                <td><input  type="text"></td>
                                 <td class="text-right">Index নম্বর</td>
-                                <td><input id="indexNo" name="indexNo" type="text" value=""></td>
+                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].index_no" type="text"></td>
                                 <td class="text-right">TIN নম্বর</td>
-                                <td><input id="tinNumber" name="tinNumber" type="text" value=""></td>
+                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].tin_number" type="text"></td>
                             </tr>
                             </tbody>
                         </table>
