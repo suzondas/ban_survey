@@ -33,14 +33,14 @@
             <div class="contentBox">
                 <div class="input-group contentdeader">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-number">৩.১</span>
+                        <span class="input-group-text bg-number">১.১</span>
                     </div>
                     <div class="form-control bg-number-label">সাধারণ তথ্য</div>
                 </div>
                 <div class="contentBoxBody">
                     <table class="table table-striped table-bordered">
                         <tr>
-                            <td colspan="2" class="font-weight-bold">১.১ প্রতিষ্ঠানের নাম:</td>
+                            <td colspan="2" class="font-weight-bold">১.১.১ প্রতিষ্ঠানের নাম:</td>
                         </tr>
                         <tr>
 
@@ -61,7 +61,7 @@
                     </table>
                     <table class="table table-bordered table-striped">
                         <tr>
-                            <td colspan="5"><b>১.১.১ ঠিকানা:</b></td>
+                            <td colspan="5"><b>১.১.২ ঠিকানা:</b></td>
                         </tr>
                         <tr>
                             <td>
@@ -163,7 +163,7 @@
             <div class="contentBox">
                 <div class="input-group contentdeader">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-number">৩.১</span>
+                        <span class="input-group-text bg-number">১.২</span>
                     </div>
                     <div class="form-control bg-number-label">প্রতিষ্ঠান সংক্রান্ত তথ্য</div>
                 </div>
@@ -171,7 +171,7 @@
                     <table class="table table-striped table-bordered">
                         <tr>
                             <td>
-                                <label class="" for="">১.২.১প্রতিষ্ঠানের ধরনঃ</label>
+                                <label class="" for="">১.২.১ প্রতিষ্ঠানের ধরনঃ</label>
                                 <select class="" name="institute_type_id" v-model="data.institutes.institute_type_id">
                                     <option value="">Select</option>
                                     <option value="1">১.স্কুল</option>
@@ -180,7 +180,7 @@
                                 </select>
                             </td>
                             <td>
-                                <label class="" for="education_level">১.২ প্রতিষ্ঠানের স্তর :</label>
+                                <label class="" for="education_level">১.২.২ প্রতিষ্ঠানের স্তর :</label>
                                 <select class="" name="education_level" v-model="data.institutes.education_level_id" disabled>
                                     <option value="">Select</option>
                                     <option value="12">নিম্ন মাধ্যমিক</option>
@@ -193,7 +193,7 @@
                                 </select>
                             </td>
                             <td v-if="data.institutes.institute_type_id !=3">
-                                <label class="" for="education_group">১.২.১ গ্রুপ স্কুল শাখা (একাধিক হতে
+                                <label class="" for="education_group">১.২.৩ গ্রুপ স্কুল শাখা (একাধিক হতে
                                     পারে):</label>
                                 <div class="row">
                                     <div class="col">মানবিক <input type="checkbox" v-model="data.institutes.arts_group"/></div>
@@ -202,7 +202,7 @@
                                 </div>
                             </td>
                             <td v-if="data.institutes.institute_type_id !=1">
-                                <label class="" for="education_group_col">১.২.২ গ্রুপ কলেজ শাখা:(একাধিক হতে
+                                <label class="" for="education_group_col">১.২.৪ গ্রুপ কলেজ শাখা:(একাধিক হতে
                                     পারে)</label>
                                 <div class="row">
                                     <div class="col">মানবিক <input type="checkbox" v-model="data.institutes.arts_group_col"/></div>
@@ -230,7 +230,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <label class="" for="education_group_col">১.২.৩ সংযুক্ত কারিগরি শাখার ধরন (প্রযোজ্য
+                                <label class="" for="education_group_col">১.২.৫ সংযুক্ত কারিগরি শাখার ধরন (প্রযোজ্য
                                     ক্ষেত্রে):</label>
                                 <div class="row">
                                     <div class="col">এসএসসি (ভোক) <input type="checkbox"
@@ -254,13 +254,13 @@
                                 </div>
                             </td>
                             <td>
-                                <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
+                                <label class="label-date" for="establish_date">১.২.৬ প্রতিষ্ঠার তারিখ :</label> &nbsp
                                 <div class="input-group date">
                                     <datepicker v-model="data.institutes.establish_date"></datepicker>
                                 </div>
                             </td>
                             <td>
-                                <label>১.২.৫ প্রতিষ্ঠানটিতে ইংরেজি ভার্সনে পাঠদান হয় কি?</label>
+                                <label>১.২.৭ প্রতিষ্ঠানটিতে ইংরেজি ভার্সনে পাঠদান হয় কি?</label>
                                 <select class="" name="english_ver_yn" v-model="data.institutes.english_ver_yn">
                                     <option value="">Select</option>
                                     <option value="1">হ্যাঁ-১</option>
@@ -273,7 +273,7 @@
                 <div class="contentBox">
                     <div class="input-group contentdeader">
                         <div class="input-group-prepend">
-                            <span class="input-group-text bg-number">১.২.৭ </span>
+                            <span class="input-group-text bg-number">১.৩ </span>
                         </div>
                         <div class="form-control bg-number-label">ব্যবস্থাপনা সংক্রান্ত:</div>
                     </div>
@@ -281,7 +281,7 @@
                         <table class="table table-bordered table-striped">
                             <tr>
                                 <td>
-                                    <label class="" for="management">১.২.৭ ব্যবস্থাপনা </label>
+                                    <label class="" for="management">১.৩.১ ব্যবস্থাপনা </label>
                                     <select class="" name="management" v-model="data.institutes.management">
                                         <option value="">Select</option>
                                         <option value="1">সরকারি</option>
@@ -293,12 +293,12 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <label class="" for="nationalization_date">১.২.৮ সরকারি হলে জাতীয়করণের তারিখ
+                                    <label class="" for="nationalization_date">১.৩.২ সরকারি হলে জাতীয়করণের তারিখ
                                         :</label>
                                     <datepicker v-model="data.institutes.nationalization_date"></datepicker>
                                 </td>
                                 <td>
-                                    <label>১.২.৯ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
+                                    <label>১.৩.৩ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
                                     <select class="" name="for_whom" v-model="data.institutes.for_whom">
                                         <option value="">Select</option>
                                         <option value="1">বালক</option>
@@ -308,7 +308,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <label>১.৩ ভৌগলিক অবস্থান:</label>
+                                    <label>১.৩.৪ ভৌগলিক অবস্থান:</label>
                                     <select name="geographical_status" v-model="data.institutes.geographical_status">
                                         <option value="">Select</option>
                                         <option value="1">সমতল</option>
@@ -328,7 +328,7 @@
                                 </td>
                             </tr>
                             <td>
-                                <label>১.৩.১ প্রতিষ্ঠানটি কোন এলাকায়?</label>
+                                <label>১.৩.৫ প্রতিষ্ঠানটি কোন এলাকায়?</label>
                                 <select class="" name="area_status1" v-model="data.institutes.area_status1">
                                     <option value="">Select</option>
                                     <option value="1">গ্রামীণ</option>
@@ -340,7 +340,7 @@
                                 </select>
                             </td>
                             <td class="form-inline">
-                                <label>১.৩.২ প্রশাসনিক ইউনিটের সাথে যোগাযোগ ব্যবস্থার
+                                <label>১.৩.৬ প্রশাসনিক ইউনিটের সাথে যোগাযোগ ব্যবস্থার
                                     ধরন:</label>
                                 <select name="admin_unit_communication" v-model="data.institutes.admin_unit_communication">
                                     <option value="">Select</option>
@@ -350,11 +350,11 @@
                                 </select>
                             </td>
                             <td>
-                                <label>১.৩.৩ নিকটবর্তী অনুরুপ শিক্ষা প্রতিষ্ঠানের দূরত্ব: &nbsp;</label>
+                                <label>১.৩.৭ নিকটবর্তী অনুরুপ শিক্ষা প্রতিষ্ঠানের দূরত্ব: &nbsp;</label>
                                 <input type="text" class="w-25" v-model="data.institutes.nearest_inst_distant"> কি.মি.
                             </td>
                             <td>
-                                <label>১.৪ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
+                                <label>১.৩.৮ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
                                 <select class="" name="branch_yn" v-model="data.institutes.branch_yn">
                                     <option value="">Select</option>
                                     <option value="1">হ্যাঁ-১</option>
@@ -364,11 +364,11 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label>১.৪.১ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
+                                    <label>১.৩.৯ উত্তর হ্যাঁ হলে, শাখা সংখ্যা</label> &nbsp
                                     <input type="number" class="w-25" v-model="data.institutes.branch_no">
                                 </td>
                                 <td>
-                                    <label>১.৪.২ প্রতিষ্ঠানটিতে ডাবল-শিফট আছে কি? </label>
+                                    <label>১.৩.১০ প্রতিষ্ঠানটিতে ডাবল-শিফট আছে কি? </label>
                                     <select name="double_shipt_yn" v-model="data.institutes.double_shipt_yn">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
@@ -376,7 +376,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <label>১.৪.৩ প্রতিষ্ঠানটির নিজস্ব ক্যাম্পাস আছে
+                                    <label>১.৩.১১ প্রতিষ্ঠানটির নিজস্ব ক্যাম্পাস আছে
                                         কি?</label>
                                     <select name="campus_yn" v-model="data.institutes.campus_yn">
                                         <option value="">Select</option>
@@ -385,7 +385,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <label>১.৪.৪ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা
+                                    <label>১.৩.১২ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা
                                         প্রতিষ্ঠান আছে?</label>
                                     <select name="attach_inst_yn" v-model="data.institutes.attach_inst_yn">
                                         <option value="">Select</option>
@@ -395,7 +395,7 @@
                                 </td>
                             <tr>
                                 <td>
-                                    <label>১.৪.৫ উত্তর হ্যাঁ হলে, প্রতিষ্ঠানটির ধরন: </label>
+                                    <label>১.৩.১৩ উত্তর হ্যাঁ হলে, প্রতিষ্ঠানটির ধরন: </label>
                                     <select name="">
                                         <option value="" selected>Select</option>
                                         <option value="1">প্রাথমিক বিদ্যালয়</option>
@@ -407,7 +407,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <label>১.৫ প্রতিষ্ঠানটি এমপিওভুক্ত কি?</label>
+                                    <label>১.৩.১৪ প্রতিষ্ঠানটি এমপিওভুক্ত কি?</label>
                                     <select class="" name="mpo_status" v-model="data.institutes.mpo_status">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
@@ -416,7 +416,7 @@
                                     </select>
                                 </td>
                                 <td colspan="2">
-                                    <label>১.৫.১ কারিগরি শাখা এমপিওভুক্ত কি?</label>
+                                    <label>১.৩.১৫ কারিগরি শাখা এমপিওভুক্ত কি?</label>
                                     <select name="technical_branch_mpo_status"
                                             v-model="data.institutes.technical_branch_mpo_status">
                                         <option value="">Select</option>
@@ -429,10 +429,8 @@
                         </table>
                         <div class="row">
                             <div class="col-md-8">
-                                <label class="font-weight-bold">১.২.৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের
-                                    ক্ষেত্রে
-                                    প্রযোজ্য
-                                    নয়):</label>
+                                <label class="font-weight-bold">১.৩.১৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের
+                                    ক্ষেত্রে প্রযোজ্য নয়):</label>
                                 <table class="table table-bordered">
                                     <thead>
                                     <tr class="custom-table-header">
@@ -467,7 +465,7 @@
                                 </table>
                             </div>
                             <div class="col-md-4" v-if="data.institutes_mpo_status.length!=0">
-                                <label class="font-weight-bold">১.৫.২ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
+                                <label class="font-weight-bold">১.৩.১৭ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
                                 <table class="table table-bordered" style="text-align:center">
                                     <tr class="custom-table-header">
                                         <td>এমপিওভুক্তির স্তর</td>
@@ -490,7 +488,7 @@
                 <div class="contentBox">
                     <div class="input-group contentdeader">
                         <div class="input-group-prepend">
-                            <span class="input-group-text bg-number">১.৬</span>
+                            <span class="input-group-text bg-number">১.৪</span>
                         </div>
                         <div class="form-control bg-number-label">কমিটি সংক্রান্ত তথ্য</div>
                     </div>
@@ -498,7 +496,7 @@
                         <table class="table table-bordered">
                             <tr>
                                 <td>
-                                    <label>১.৬ কমিটির ধরন:</label>
+                                    <label>১.৪.১ কমিটির ধরন:</label>
                                     <select class="custom-select" v-model="data.committees[0].type" style="width:120px">
                                         <option value="">Select</option>
                                         <option value="1">ম্যানেজিং কমিটি</option>
@@ -509,7 +507,7 @@
                                         <option value="6">অন্যান্য</option>
                                     </select>
                                 </td>
-                                <td><label>১.৬.১ কমিটি থাকলে: </label>
+                                <td><label>১.৪.২ কমিটি থাকলে: </label>
                                     <table class="table table-bordered" style="text-align:center">
                                         <tr>
                                             <td>অনুমোদনের তারিখ</td>
@@ -529,7 +527,7 @@
                                         </tbody>
                                     </table>
                                 </td>
-                                <td><label>১.৬.২ কমিটিতে সদস্য সংখ্যা:</label>
+                                <td><label>১.৪.৩ কমিটিতে সদস্য সংখ্যা:</label>
                                     <div class="row">
                                         <div class="col-md-4">
                                             <label for="total"> মোট:</label>
@@ -543,7 +541,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><label>১.৬.৩ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
+                                <td><label>১.৪.৪ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
                                     <datepicker type="text"
                                                 v-model="data.committees[0].last_commitee_expire_date"></datepicker>
                                 </td>
@@ -551,7 +549,7 @@
                             <tr>
                                 <td colspan="2">
                                     <div class="row">
-                                        <div class="col-md-6"><label> ৩.১ ২০২০ সালে ম্যানেজিং কমিটির কতটি সভা
+                                        <div class="col-md-6"><label> ১.৪.৫ ২০২০ সালে ম্যানেজিং কমিটির কতটি সভা
                                                 হয়েছে? </label>
                                         </div>
                                         <div><input type="number" class="w-25"
@@ -564,7 +562,7 @@
                                 <td colspan="2">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label class="" for="pti_meeting"> ৩.২ ২০২১ সালে পিটিএ এর কতগুলো সভা
+                                            <label class="" for="pti_meeting"> ১.৪.৬ ২০২১ সালে পিটিএ এর কতগুলো সভা
                                                 হয়েছে? </label></div>
                                         <div><input type="number" class="w-25"
                                                     v-model="data.committees[0].last_yr_pta_meeting">
@@ -575,7 +573,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <label class="" for="meeting_discuss">৩.১.১ ম্যানেজিং কমিটির সভায় শিক্ষার
+                                    <label class="" for="meeting_discuss">১.৪.৭ ম্যানেজিং কমিটির সভায় শিক্ষার
                                         মানোন্নয়ন সম্পর্কিত বিষয়ে কী কী আলোচনা হয়েছে?</label>
                                     <table class="table table-bordered">
 
@@ -654,7 +652,7 @@
                                     </table>
                                 </td>
                                 <td colspan="2">
-                                    <label class="" for="pti_discuss">৩.২.১ পিটিএ সভায় কী কী বিষয় আলোচনা ও সিদ্ধান্ত
+                                    <label class="" for="pti_discuss">১.৪.৮ পিটিএ সভায় কী কী বিষয় আলোচনা ও সিদ্ধান্ত
                                         গৃহীত হয়েছ?</label>
                                     <table class="table table-bordered">
                                         <tr>
