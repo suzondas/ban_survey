@@ -16,14 +16,14 @@
             <div class="contentBox">
                 <div class="input-group contentdeader">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-number">১.৭ </span>
+                        <span class="input-group-text bg-number">১.৫ </span>
                     </div>
                     <div class="form-control bg-number-label">জমি সংক্রান্ত তথ্য</div>
                 </div>
                 <div class="contentBoxBody">
                     <div class="row">
                         <div class="col-md-8">
-                            <label class="font-weight-bold">১.৭ জমির অবস্থান:</label>
+                            <label class="font-weight-bold">১.৫.১ জমির অবস্থান:</label>
                             <table class="table table-striped table-bordered">
                                 <tr class="custom-table-header">
                                     <td colspan="2">
@@ -67,7 +67,7 @@
                             </table>
                         </div>
                         <div class="col-md-4">
-                            <label>১.৭ প্রতিষ্ঠানটির মোট জমির পরিমাণ:</label>
+                            <label class="font-weight-bold">১.৫.২ প্রতিষ্ঠানটির মোট জমির পরিমাণ:</label>
                             <table class="table table-bordered table-striped">
                                 <tr>
                                     <td>
@@ -89,7 +89,7 @@
                             </table>
                         </div>
                     </div>
-                    <label class="label-text container">১.৭.২ জমির ব্যবহার ও পরিমাণ (শতাংশে):</label>
+                    <label class="label-text container font-weight-bold">১.৫.৩ জমির ব্যবহার ও পরিমাণ (শতাংশে):</label>
                     <table class="table table-bordered" style="text-align:center">
                         <thead>
                         <tr class="custom-table-header">
@@ -142,7 +142,7 @@
             <div class="contentBox">
                 <div class="input-group contentdeader">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-number">১.৭.৩</span>
+                        <span class="input-group-text bg-number">১.৬</span>
                     </div>
                     <div class="form-control bg-number-label">ভবন সংক্রান্ত</div>
                 </div>
@@ -153,21 +153,21 @@
                                 <tr>
                                     <td>
                                         <label>
-                                            ১.৭.৩ প্রতিষ্ঠানের সবচেয়ে পুরাতন ভবনটি নির্মাণের বছর
+                                            ১.৬.১ প্রতিষ্ঠানের সবচেয়ে পুরাতন ভবনটি নির্মাণের বছর
                                         </label>
                                         <input type="number" name="" class="form-control"
                                                v-model="data.building_infos[0].oldest_building_estab_year">
                                     </td>
                                     <td>
                                         <label>
-                                            ১.৭.৪ প্রতিষ্ঠানের সর্বশেষ নতুন ভবনটি নির্মাণের বছর
+                                            ১.৬.২ প্রতিষ্ঠানের সর্বশেষ নতুন ভবনটি নির্মাণের বছর
                                         </label>
                                         <input type="number" name="" class="form-control"
                                                v-model="data.building_infos[0].latest_building_estab_year">
                                     </td>
                                     <td>
                                         <label>
-                                            ১.৭.৫ সর্বশেষ ভবনটি নির্মাণে অর্থের উৎস
+                                            ১.৬.৩ সর্বশেষ ভবনটি নির্মাণে অর্থের উৎস
                                         </label>
                                         <select class="" name="english_version"
                                                 v-model="data.building_infos[0].latest_building_money_source">
@@ -182,20 +182,20 @@
 
                                 <tr>
                                     <td>
-                                        <label>১.৭.৬ সর্বশেষ নির্মিত ভবনের আয়তন(বর্গফুট)</label>
+                                        <label>১.৬.৪ সর্বশেষ নির্মিত ভবনের আয়তন(বর্গফুট)</label>
                                         <input type="number" name="" class="form-control"
                                                v-model="data.building_infos[0].latest_building_area_sft">
                                     </td>
                                     <td>
                                         <label>
-                                            ১.৭.৭ সকল ভবনের মোট আয়তন(বর্গফুট)
+                                            ১.৬.৫ সকল ভবনের মোট আয়তন(বর্গফুট)
                                         </label>
                                         <input type="number" name="" class="form-control"
                                                v-model="data.building_infos[0].latest_building_area_sft">
                                     </td>
                                     <td>
                                         <label>
-                                            ১.৭.৮ প্রতিষ্ঠানটির অবস্থান:
+                                            ১.৬.৬ প্রতিষ্ঠানটির অবস্থান:
                                         </label>
                                         <select name="english_version" style="width: 130px"
                                                 v-model="data.building_infos[0].total_building_area_sft">
@@ -207,7 +207,7 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <label>১.৭.১১ ভবনভিত্তিক তলা ও উর্ধ্মূখী সম্প্রসারণ ইত্যাদি সম্পর্কিত তথ্য</label>
+                            <label class="font-weight-bold">১.৬.৭ ভবনভিত্তিক তলা ও উর্ধ্মূখী সম্প্রসারণ ইত্যাদি সম্পর্কিত তথ্য</label>
                             <table class="table table-bordered" style="text-align:center">
                                 <thead>
                                 <tr class="custom-table-header">
@@ -241,7 +241,7 @@
                             <input type="button" class="btn-warning" value="Add row" @click="addBuildingDetails()">
                         </div>
                     </div>
-                    <label>১.৭.৯ ভবন গৃহের মালিকানা, ধরন ও অবস্থা অনুযায়ী সংখ্যাঃ</label>
+                    <label class="font-weight-bold">১.৬.৮ ভবন গৃহের মালিকানা, ধরন ও অবস্থা অনুযায়ী সংখ্যাঃ</label>
 
                     <table class="table table-bordered" style="text-align:center">
                         <thead>
@@ -329,7 +329,7 @@
                         </tbody>
                     </table>
 
-                    <label>১.৭.১০ ভবন/গৃহের ব্যবহার</label>
+                    <label class="font-weight-bold">১.৬.৯ ভবন/গৃহের ব্যবহার</label>
                     <div class="table-bordered">
                         <table class="table table-bordered" style="text-align:center">
                             <thead>
@@ -434,9 +434,7 @@
                             </tr>
                             </tbody>
                         </table>
-                        <label>
-                            ১.৭.১১ প্রতিষ্ঠানের প্রার্থনা গৃহঃ
-                        </label>
+                        <label class="font-weight-bold">১.৬.১০ প্রতিষ্ঠানের প্রার্থনা গৃহঃ</label>
                         <table class="table table-bordered table-striped">
                             <tr>
                                 <td>
@@ -476,7 +474,7 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <label>১.৭.১৩ শ্রেণী ভিত্তিক কক্ষ সংখ্যা ও আয়তনঃ</label>
+                            <label class="font-weight-bold">১.৬.১১ শ্রেণী ভিত্তিক কক্ষ সংখ্যা ও আয়তনঃ</label>
                             <table class="table table-bordered" style="text-align:center">
                                 <thead>
                                 <tr class="custom-table-header">

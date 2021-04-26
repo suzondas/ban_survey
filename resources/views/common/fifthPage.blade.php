@@ -1,7 +1,7 @@
 @extends('components/template')
 @section('content')
     <div class="container" id="fifthPage">
-        <h3 class="text-center">বিবিধ তথ্য (৩)</h3>
+        <h3 class="text-center">সেকশন-৩: বিবিধ তথ্য (৩)</h3>
         <div v-if="!dataLoaded">
             <div class="d-flex justify-content-center">
                 <h3 class="p-2">Loading...</h3>
