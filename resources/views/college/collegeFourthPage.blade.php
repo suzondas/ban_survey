@@ -10,7 +10,7 @@
         <div class="contentBox col-12" style="font-size: 11px;">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৪ </span>
+                    <span class="input-group-text bg-number">২.১৫ </span>
                 </div>
                 <div class="form-control bg-number-label">বিভাগভিত্তিক বিভিন্ন বোর্ড এবং বিশ্ববিদ্যালয় পরীক্ষার ফলাফল
                 </div>
@@ -80,12 +80,12 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৫ </span>
+                    <span class="input-group-text bg-number">২.১৬ </span>
                 </div>
                 <div class="form-control bg-number-label">ট্রেডভিত্তিক শিক্ষার্থী</div>
             </div>
-            <div class="col-md-12">
-                ২.৩.৫ ট্রেডভিত্তিক এইচএসসি (ভোকেশনাল) শাখার শিক্ষার্থী ২০২১ (যদি এইচএসসি (ভোকেশনাল) থাকে)
+            <div class="col-md-12 font-weight-bold">
+                ২.১৬.১ ট্রেডভিত্তিক এইচএসসি (ভোকেশনাল) শাখার শিক্ষার্থী ২০২১ (যদি এইচএসসি (ভোকেশনাল) থাকে)
                 <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="3"> কোড</td>
@@ -125,8 +125,8 @@
                 </table>
             </div>
             <br>
-            <div class="col-md-12">
-                ২.৩.৬ ট্রেডভিত্তিক এইচএসসি-বিএম শাখার শিক্ষার্থী-২০২১ (যদি এইচএসসি বিএম থাকে)
+            <div class="col-md-12 font-weight-bold">
+                ২.১৬.২ ট্রেডভিত্তিক এইচএসসি-বিএম শাখার শিক্ষার্থী-২০২১ (যদি এইচএসসি বিএম থাকে)
                 <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="3"> কোড</td>
@@ -172,12 +172,12 @@
 
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৭ </span>
+                    <span class="input-group-text bg-number">২.১৭ </span>
                 </div>
                 <div class="form-control bg-number-label">উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম</div>
             </div>
             <div class="col-md-2">
-                <label class="label-number" for="">২.৩.৭ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম
+                <label class="label-number font-weight-bold" >২.১৭.১ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম
                     পরিচালিত হয় কি?</label>
                 <select class="custom-select" name="" style="width: 75px" ng-model="data.instOtherInfo.open_unvi_course_yn">
                     <option value="" selected>Select</option>
@@ -187,7 +187,7 @@
                 </select>
             </div>
             <div class="col-md-10">
-                <label class="label-number" for="">২.৩.৮ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের ছক
+                <label class="label-number font-weight-bold" >২.১৭.২ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের ছক
                     মোতাবেক প্রদান করুন</label>
                 <table class="table table-bordered text-center">
                     <tr>
@@ -237,7 +237,7 @@
                 </table>
             </div>
             <div class="col">
-                <label class="label-number" for="">২.৩.৯ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক
+                <label class="label-number font-weight-bold">২.১৭.৩ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক
                     প্রদান করুন</label>
                 <table class="table table-bordered" style="text-align:center">
                     <tr>

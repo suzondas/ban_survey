@@ -10,7 +10,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩</span>
+                    <span class="input-group-text bg-number">২.১৮</span>
                 </div>
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১
                     তারিখে বয়স)
@@ -82,7 +82,7 @@
         <div class="contentBoxBody">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.১</span>
+                    <span class="input-group-text bg-number">২.১৯</span>
                 </div>
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক- সর্বোচ্চ স্তরে বয়সভিত্তিক শিক্ষার্থীর সংখ্যা
                     (০১/০১/২০২১)
@@ -147,7 +147,7 @@
         <div class="contentBox col-8">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.২</span>
+                    <span class="input-group-text bg-number">২.২০</span>
                 </div>
                 <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী মাধ্যমিক স্তরে শিক্ষার্থী সংখ্যা
                     (৬ষ্ঠ-১০ম):
@@ -187,7 +187,7 @@
         <div class="contentBox col-8">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৩</span>
+                    <span class="input-group-text bg-number">২.২১</span>
                 </div>
                 <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে
                     শিক্ষার্থীর সংখ্যা:
@@ -226,7 +226,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৪</span>
+                    <span class="input-group-text bg-number">২.২২</span>
                 </div>
                 <div class="form-control bg-number-label">বিষয়ভিত্তিক পাঠদানের তথ্য:</div>
             </div>

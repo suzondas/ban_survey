@@ -10,7 +10,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩</span>
+                    <span class="input-group-text bg-number">২.১১</span>
                 </div>
                 <div class="form-control bg-number-label">প্রাইমারি স্তরে বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১ তারিখের বয়স)
                 </div>
@@ -71,7 +71,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.১</span>
+                    <span class="input-group-text bg-number">২.১২</span>
                 </div>
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বয়সভিত্তিক শিক্ষার্থীর সংখ্যা (০১/০১/২০২১
                     তারিখে বয়স)
@@ -144,7 +144,7 @@
         <div class="contentBox col-8">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.২</span>
+                    <span class="input-group-text bg-number">২.১৩</span>
                 </div>
                 <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী শিক্ষার্থী সংখ্যা
                 </div>
@@ -184,7 +184,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৩</span>
+                    <span class="input-group-text bg-number">২.১৪</span>
                 </div>
                 <div class="form-control bg-number-label">বিষয়ভিত্তিক পাঠদানের তথ্য:</div>
             </div>

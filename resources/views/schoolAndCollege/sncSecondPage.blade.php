@@ -10,7 +10,7 @@
         <div class="contentBox col-12">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৬</span>
+                    <span class="input-group-text bg-number">২.৭</span>
                 </div>
                 <div class="form-control bg-number-label">সেকশনভিত্তিক শিক্ষার্থীর তথ্য ২০২১ (সেকশন না থাকলে পূরণ
                     করা প্রযোজ্য নয়)
@@ -55,7 +55,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৭</span>
+                    <span class="input-group-text bg-number">২.৮</span>
                 </div>
                 <div class="form-control bg-number-label">এসএসসি ভোকেশনাল এর শ্রেণিভিত্তিক শিক্ষার্থী তথ্য ২০২১
                 </div>
@@ -112,7 +112,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৮</span>
+                    <span class="input-group-text bg-number">২.৯</span>
                 </div>
                 <div class="form-control bg-number-label">এইচএসসি ভোকেশনাল এর বর্ষভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>
@@ -166,7 +166,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৯</span>
+                    <span class="input-group-text bg-number">২.১০</span>
                 </div>
                 <div class="form-control bg-number-label">এইচএসসি বিএম এর বর্ষভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>

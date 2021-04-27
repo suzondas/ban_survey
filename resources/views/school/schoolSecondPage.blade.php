@@ -10,7 +10,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৫</span>
+                    <span class="input-group-text bg-number">২.৬ </span>
                 </div>
                 <div class="form-control bg-number-label">এসএসসি ভোকেশনাল এর শ্রেণিভিত্তিক শিক্ষার্থী তথ্য ২০২১
                 </div>
@@ -68,7 +68,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৬</span>
+                    <span class="input-group-text bg-number">২.৭</span>
                 </div>
                 <div class="form-control bg-number-label">স্তর ও ক্যাটাগরিভিত্তিক শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
@@ -122,20 +122,20 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২</span>
+                    <span class="input-group-text bg-number">২.৮</span>
                 </div>
                 <div class="form-control bg-number-label"> বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর
                 </div>
             </div>
             <table class="table table-bordered table-striped">
                 <tr>
-                    <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
+                    <td>২.৮.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
                         <select ng-model="data.instituteSpecialStudents.special_std_yn">
                             <option>Select</option>
                             <option value="1">হ্যাঁ-১</option>
                             <option value="2">না-২</option>
                         </select></td>
-                    <td>২.২.২ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
+                    <td>২.৮.২ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
                         <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_audio==1"
                                ng-model="data.instituteSpecialStudents.disable_facility_audio" ng-value="data.instituteSpecialStudents.disable_facility_audio" ng-true-value="'1'" ng-false-value="'0'" >&nbsp; অডিও-১
                         &nbsp;
@@ -148,7 +148,7 @@
                         <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_others==1"
                                ng-model="data.instituteSpecialStudents.disable_facility_others" ng-true-value="'1'" ng-false-value="'0'"> &nbsp;অন্যান্য-৪
                     </td>
-                    <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
+                    <td>২.৮.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
                         <select ng-model="data.instituteSpecialStudents.ramp_access_yn">
                             <option>Select</option>
                             <option value="1">হ্যাঁ-১</option>
@@ -160,7 +160,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৪</span>
+                    <span class="input-group-text bg-number">২.৯</span>
                 </div>
                 <div class="form-control bg-number-label"> বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর ধরন অনুযায়ী শিক্ষক ও শিক্ষার্থীর সংখ্যা ২০২১
                 </div>
@@ -216,7 +216,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৫</span>
+                    <span class="input-group-text bg-number">২.১০</span>
                 </div>
                 <div class="form-control bg-number-label"> ক্ষুদ্র নৃ-গোষ্ঠীর ধরন অনুযায়ী শিক্ষক ও
                     শিক্ষার্থীর সংখ্যা ২০২১

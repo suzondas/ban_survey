@@ -10,7 +10,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩</span>
+                    <span class="input-group-text bg-number">২.১১</span>
                 </div>
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক- সর্বোচ্চ স্তরে বয়সভিত্তিক শিক্ষার্থীর সংখ্যা
                     (০১/০১/২০২১)
@@ -78,7 +78,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.১</span>
+                    <span class="input-group-text bg-number">২.১২</span>
                 </div>
                 <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী শিক্ষার্থী সংখ্যা ২০২১</div>
             </div>
@@ -112,7 +112,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.২</span>
+                    <span class="input-group-text bg-number">২.১৩</span>
                 </div>
                 <div class="form-control bg-number-label">শ্রেণি, বিষয়ভিত্তিক শিক্ষার্থী, উত্তীর্ণ ও অনুত্তীর্ণ
                     সম্পর্কিত তথ্য ২০২১
@@ -160,7 +160,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৩</span>
+                    <span class="input-group-text bg-number">২.১৪</span>
                 </div>
                 <div class="form-control bg-number-label">বিষয়ভিত্তিক শিক্ষক ও শিক্ষার্থীর সংখ্যা (শিক্ষকগণের তথ্য নিয়োগ
                     অনুযায়ী সন্নিবেশিত করুন):

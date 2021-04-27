@@ -10,7 +10,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪</span>
+                    <span class="input-group-text bg-number">২.১৯</span>
                 </div>
                 <div class="form-control bg-number-label">পদবীভিত্তিক কর্মরত ও এমপিওভুক্ত শিক্ষক ও কর্মচারীর সংখ্যা:
                 </div>
@@ -52,7 +52,7 @@
                 </table>
             </div>
             <div class="col-md-9">
-                <label class="label-number" for="">২.৪.১ সংযু্ক্ত এসএসসি (ভোকেশনাল)/এইচএসসি (বিএম) শাখার
+                <label class="label-number font-weight-bold">২.১৯.১ সংযু্ক্ত এসএসসি (ভোকেশনাল)/এইচএসসি (বিএম) শাখার
                     শিক্ষক/কর্মচারীর সংখ্যা:</label>
                 <table class="table table-bordered table-striped text-center">
                     <tr>
@@ -84,11 +84,12 @@
         <div class="row  contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪.২ </span>
+                    <span class="input-group-text bg-number">২.২০</span>
                 </div>
                 <div class="form-control bg-number-label"> শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা</div>
             </div>
-            <div class="col-md-4 contentBoxBody">২.৪.২ মূল প্রতিষ্ঠানের সার্বোচ্চ শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা:
+            <div class="col-md-4 contentBoxBody">
+                <label class="font-weight-bold"> ২.২০.১ মূল প্রতিষ্ঠানের সার্বোচ্চ শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা:</label>
 
                 <table class="table table-bordered table-striped text-center">
                     <tr>
@@ -109,7 +110,7 @@
                 </table>
             </div>
             <div class="col-md-4 contentBoxBody">
-                ২.৪.৩ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:
+                <label class="font-weight-bold">২.২০.২ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:</label>
                 <table class="table table-bordered  table-striped text-center">
                     <tr>
                         <td rowspan="2">ডিগ্রী</td>
@@ -129,7 +130,7 @@
                 </table>
             </div>
             <div class="col-md-4 contentBoxBody">
-                ২.৪.৪ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা
+                <label class="font-weight-bold"> ২.২০.৩ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা: </label>
                 <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">প্রশিক্ষণ/ ডিগ্রি</td>
@@ -154,7 +155,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪.১২</span>
+                    <span class="input-group-text bg-number">২.২১</span>
                 </div>
                 <div class="form-control bg-number-label">বিশেষ প্রশিক্ষণের তথ্য
                 </div>
@@ -164,7 +165,7 @@
                     <tr>
                         <td>
 
-                            <label>২.৪.৬ সৃজনশীল প্রশ্নপত্র প্রণয়ন ও উত্তরপত্র মূল্যায়ন বিষয়ক প্রশিক্ষণপ্রাপ্ত শিক্ষক
+                            <label class="font-weight-bold">২.২১.১ সৃজনশীল প্রশ্নপত্র প্রণয়ন ও উত্তরপত্র মূল্যায়ন বিষয়ক প্রশিক্ষণপ্রাপ্ত শিক্ষক
                                 সংখ্যা</label>
                             <table class="table table-bordered table-striped">
                                 <tr>
@@ -183,14 +184,14 @@
                 </table>
                 <table class="table table-bordered table-striped">
                     <tr>
-                        <td><label>২.৪.৭ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
+                        <td><label class="font-weight-bold">২.২১.২ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
                             মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_total"/>
                             মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_female"/></td>
-                        <td><label>২.৪.৮ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
+                        <td><label class="font-weight-bold">২.২১.৩ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
                                 লিখুন)</label><br>
                             মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_total"/>
                             মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_female"/></td>
-                        <td class="form-inline"><label>২.৪.৯ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
+                        <td class="form-inline"><label class="font-weight-bold">২.২১.৪ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
                                 কি? </label><br>
                             <select class="w-25" ng-model="data.teacherTrainInfo.autism_guide_teacher_yn">
                                 <option value="1"> হ্যাঁ</option>
@@ -198,18 +199,18 @@
                             </select></td>
                     </tr>
                     <tr>
-                        <td class="form-inline"><label>২.৪.১০ দুর্যোগ ব্যবস্থাপনা সংক্রান্ত প্রশিক্ষণপ্রাপ্ত শিক্ষক আছে কি? </label><br>
+                        <td class="form-inline"><label class="font-weight-bold">২.২১.৫ দুর্যোগ ব্যবস্থাপনা সংক্রান্ত প্রশিক্ষণপ্রাপ্ত শিক্ষক আছে কি? </label><br>
                             <select class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher_yn">
                                 <option value="1"> হ্যাঁ</option>
                                 <option value="2"> না</option>
                             </select></td>
-                        <td><label>২.৪.১১ উত্তর হ্যাঁ হলে কয়জন?</label><br>
+                        <td><label class="font-weight-bold">২.২১.৬ উত্তর হ্যাঁ হলে কয়জন?</label><br>
                             <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher"/>
                     </tr>
                 </table>
                 <table>
                     <tr>
-                        <td>২.৪.১২শিক্ষকদের কোন কোন বিষয়ে প্রশিক্ষণ প্রয়োজন?</td>
+                        <td class="font-weight-bold">২.২১.৭ শিক্ষকদের কোন কোন বিষয়ে প্রশিক্ষণ প্রয়োজন?</td>
                         <td>১.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required1"/></td>
                         <td>২.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required2"/></td>
                         <td>৩.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required3"/></td>
@@ -223,7 +224,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪.১৩</span>
+                    <span class="input-group-text bg-number">২.২২</span>
                 </div>
                 <div class="form-control bg-number-label">কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন):</div>
             </div>
@@ -324,7 +325,7 @@
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪.১৪</span>
+                    <span class="input-group-text bg-number">২.২৩</span>
                 </div>
                 <div class="form-control bg-number-label"> বিষয়ভিত্তিক শিক্ষক সংখ্যা</div>
             </div>
@@ -338,15 +339,15 @@
                         </tr>
                         <tbody>
                         <tr>
-                            <td style="width: 350px">২.৪.১৪ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
+                            <td style="width: 350px" class="font-weight-bold">২.২৩.১ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
                             <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.total_eng_teachers"></td>
                             <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.female_eng_teacher"></td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="col">২.৪.১৫ ইংরেজি বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর
-                    পর্যায়ে ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
+                <div class="col"><label class="font-weight-bold"> ২.২৩.২ ইংরেজি বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর
+                        পর্যায়ে ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:</label>
 
                     <table class="table table-bordered table-striped text-center">
                         <tr>
@@ -399,7 +400,7 @@
                         </tr>
                         <tbody>
                         <tr>
-                            <td style="width: 350px">২.৪.১৬ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:
+                            <td style="width: 350px" class="font-weight-bold">২.২৩.৩ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:
                             </td>
                             <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.total_math_teachers"></td>
                             <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.female_math_teacher"></td>
@@ -407,8 +408,9 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col">২.৪.১৭ গণিত বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর
-                    পর্যায়ে গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
+                <div class="col">
+                    <label class="font-weight-bold">২.২৩.৪ গণিত বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর
+                        পর্যায়ে গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:</label>
 
                     <table class="table table-bordered table-striped text-center">
                         <tr>
@@ -456,7 +458,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৪.১৮</span>
+                    <span class="input-group-text bg-number">২.২৪</span>
                 </div>
                 <div class="form-control bg-number-label">অবসর গ্রহণ, নতুন নিয়োগপ্রাপ্ত, গবেষণা কাজ, পুরষ্কার প্রাপ্ত
                     ইত্যাদি সম্পর্কিত শিক্ষকের সংখ্যা
@@ -553,12 +555,12 @@
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৫ </span>
+                    <span class="input-group-text bg-number">২.২৫</span>
                 </div>
                 <div class="form-control bg-number-label">প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য</div>
             </div>
             <div class="col-md-6">
-                ২.৫.১ শিক্ষা প্রতিষ্ঠানে প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য (নির্দিষ্ট স্থানে টিক চিহ্ন দিন)
+                <label class="font-weight-bold"> ২.২৫.১ শিক্ষা প্রতিষ্ঠানে প্রাপ্ত পুরষ্কার সম্পর্কিত তথ্য (নির্দিষ্ট স্থানে টিক চিহ্ন দিন):</label>
                 <table class="table table-bordered text-center">
                     <tbody>
                     <tr>
@@ -653,12 +655,10 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
         </div>
         <br>
-        <div class="contentBox">
             <div class="col-md-6">
-                ২.৫.২ বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা
+                <label class="font-weight-bold"> ২.২৫.২ বিভিন্ন পর্যায়ে অংশগ্রহণকারী ও পুরষ্কারপ্রাপ্ত শিক্ষার্থী সংখ্যা</label>
                 <table class="table table-bordered text-center">
                     <tbody>
                     <tr>

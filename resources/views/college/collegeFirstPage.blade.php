@@ -67,7 +67,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.১</span>
+                    <span class="input-group-text bg-number">২.২</span>
                 </div>
                 <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, ট্রান্সফার ইন, ট্রান্সফার
                     আউট, পুস্তকের চাহিদা অনুযায়ী শিক্ষার্থীর সংখ্যা ২০২০
@@ -129,12 +129,12 @@
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.২</span>
+                    <span class="input-group-text bg-number">২.৩</span>
                 </div>
                 <div class="form-control bg-number-label">রিপিটার ও ড্রপআউট</div>
             </div>
             <div class="col-md-6 contentBoxBody">
-                <label class="label-text" for="">২.১.২ রিপিটার সংক্রান্ত: ২০২০ সালের শিক্ষার্থী ২০২১ সালে একই
+                <label class="label-text font-weight-bold">২.৩.১ রিপিটার সংক্রান্ত: ২০২০ সালের শিক্ষার্থী ২০২১ সালে একই
                     শ্রেণিতে অধ্যয়নরত আছে এইরুপ শিক্ষার্থীর সংখ্যা (রিপিটার)</label>
                 <table class="table table-bordered table-striped text-center">
                     <thead>
@@ -185,7 +185,7 @@
                 </table>
             </div>
             <div class="col-md-6 contentBoxBody">
-                <label class="label-text" for="">২.১.৩ ২০২০ সালের ঝরেপড়া শিক্ষার্থীর সংখ্যা (ড্রপআউট)</label>
+                <label class="label-text font-weight-bold">২.৩.২ ২০২০ সালের ঝরেপড়া শিক্ষার্থীর সংখ্যা (ড্রপআউট)</label>
                 <table class="table table-bordered table-striped mt-4 text-center">
                     <thead>
                     <tr>
@@ -240,7 +240,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৪</span>
+                    <span class="input-group-text bg-number">২.৪</span>
                 </div>
                 <div class="form-control bg-number-label">এইচএসসি ভোকেশনাল এর বর্ষভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>
@@ -294,7 +294,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৫</span>
+                    <span class="input-group-text bg-number">২.৫</span>
                 </div>
                 <div class="form-control bg-number-label">এইচএসসি বিএম এর বর্ষভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>

@@ -10,7 +10,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.১০</span>
+                    <span class="input-group-text bg-number">২.১১</span>
                 </div>
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বিভিন্ন ক্যাটাগরিভিত্তিক শিক্ষার্থীর তথ্য
                     ২০২১
@@ -64,7 +64,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২</span>
+                    <span class="input-group-text bg-number">২.১২</span>
                 </div>
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে বিভিন্ন ক্যাটাগরিভিত্তিক
                     শিক্ষার্থীর তথ্য ২০২১
@@ -128,20 +128,20 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৪</span>
+                    <span class="input-group-text bg-number">২.১৩</span>
                 </div>
                 <div class="form-control bg-number-label"> বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর
                 </div>
             </div>
         <table class="table table-bordered table-striped">
             <tr>
-                <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
+                <td class="font-weight-bold">২.১৩.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?
                     <select ng-model="data.instituteSpecialStudents.special_std_yn">
                         <option>Select</option>
                         <option value="1">হ্যাঁ-১</option>
                         <option value="2">না-২</option>
                     </select></td>
-                <td>২.২.১ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
+                <td class="font-weight-bold">২.১৩.২ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
                     <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_audio==1"
                            ng-model="data.instituteSpecialStudents.disable_facility_audio" ng-value="data.instituteSpecialStudents.disable_facility_audio" ng-true-value="'1'" ng-false-value="'0'" >&nbsp; অডিও-১
                     &nbsp;
@@ -154,7 +154,7 @@
                     <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_others==1"
                            ng-model="data.instituteSpecialStudents.disable_facility_others" ng-true-value="'1'" ng-false-value="'0'"> &nbsp;অন্যান্য-৪
                 </td>
-                <td>২.২.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
+                <td class="font-weight-bold">২.১৩.৩ বিল্ডিং এ Ramp এর ব্যবস্থা আছে কি?
                     <select ng-model="data.instituteSpecialStudents.ramp_access_yn">
                         <option>Select</option>
                         <option value="1">হ্যাঁ-১</option>
@@ -166,7 +166,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৪.১</span>
+                    <span class="input-group-text bg-number">২.১৪</span>
                 </div>
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে বিশেষ চাহিদাসম্পন্ন শিক্ষক ও শিক্ষার্থীর
                     সংখ্যা ২০২১
@@ -222,7 +222,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৫</span>
+                    <span class="input-group-text bg-number">২.১৫</span>
                 </div>
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে বিশেষ চাহিদাসম্পন্ন
                     শিক্ষার্থীর সংখ্যা ২০২১
@@ -284,7 +284,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৬</span>
+                    <span class="input-group-text bg-number">২.১৬</span>
                 </div>
                 <div class="form-control bg-number-label">মাধ্যমিক স্তরে ক্ষুদ্র নৃ-গোষ্ঠীর ধরন অনুযায়ী শিক্ষক ও
                     শিক্ষার্থীর সংখ্যা ২০২১
@@ -345,7 +345,7 @@
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.২.৭</span>
+                    <span class="input-group-text bg-number">২.১৭</span>
                 </div>
                 <div class="form-control bg-number-label">উচ্চ মাধ্যমিক ও তদুর্ধ্ব স্তরে ক্ষুদ্র নৃ-গোষ্ঠীর ধরন
                     অনুযায়ী শিক্ষার্থীর সংখ্যা ২০২১

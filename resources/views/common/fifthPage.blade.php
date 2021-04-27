@@ -13,7 +13,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৬</span>
+                    <span class="input-group-text bg-number">৩.১২</span>
                 </div>
                 <div class="form-control bg-number-label">দুর্যোগ সংক্রান্ত</div>
             </div>
@@ -21,7 +21,7 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td class="align-middle">
-                            <label>৩.৯.২৯ প্রতিষ্ঠানটি দূর্যোগকালীন আশ্রয় কেন্দ্র হিসেবে ব্যবহৃত হয় কি?</label>
+                            <label>৩.১২.১ প্রতিষ্ঠানটি দূর্যোগকালীন আশ্রয় কেন্দ্র হিসেবে ব্যবহৃত হয় কি?</label>
                             <select class="contentBoxInput" v-model="data.climate_disaster_manage_infos.shilter_house_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
@@ -29,7 +29,7 @@
                         </td>
 
                         <td class="align-middle">
-                            <label>৩.৯.৩০ প্রতিষ্ঠানের সকল ধরনের তথ্য সংরক্ষণ পদ্ধতি কোন ধরনের</label>
+                            <label>৩.১২.২ প্রতিষ্ঠানের সকল ধরনের তথ্য সংরক্ষণ পদ্ধতি কোন ধরনের</label>
                             <input type="checkbox" v-model="data.climate_disaster_manage_infos.record_keeping_manual"> ম্যানুয়েল/হার্ড কপি &nbsp;
                             <input type="checkbox" v-model="data.climate_disaster_manage_infos.record_keeping_digital"> ডিজিটাল/সফটওয়্যার &nbsp;
                             <input type="checkbox" v-model="data.climate_disaster_manage_infos.record_keeping_both"> ম্যানুয়েল ও সফটওয়্যার উভয় &nbsp;
@@ -37,14 +37,14 @@
                     </tr>
                     <tr>
                         <td class="align-middle">
-                            <label>৩.১০ আপনার প্রতিষ্ঠানটি দুর্যোপপ্রবণ এলাকায় অবস্থিত কি?</label>
+                            <label>৩.১২.৩ আপনার প্রতিষ্ঠানটি দুর্যোপপ্রবণ এলাকায় অবস্থিত কি?</label>
                             <select class="contentBox"  v-model="data.climate_disaster_manage_infos.disaster_area_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td class="align-middle">
-                            <label>৩.১০.১ আপনার প্রতিষ্ঠানটি ২০২০ সালে কোন ধরনের দূর্যোগে কবলিত হয়েছিল?</label>
+                            <label>৩.১২.৪ আপনার প্রতিষ্ঠানটি ২০২০ সালে কোন ধরনের দূর্যোগে কবলিত হয়েছিল?</label>
                             <select class="contentBox"  v-model="data.climate_disaster_manage_infos.disaster_area_type">
                                 <option>SELECT</option>
                                 <option value="1">জলোচ্ছ্বাস-১</option>
@@ -62,8 +62,8 @@
                         </td>
                     </tr>
                 </table>
-                <div><label class="align-middle font-weight-bold"> ৩.১০.১ গত ১০ বছর এবং সর্বশেষ দূর্যোগে আক্রান্ত হয়ে এ
-                        শিক্ষা প্রতিষ্ঠানে যে সকল ক্ষতি হয়েছে তার বিবরণ (সংখ্যা লিখুন):?</label>
+                <div><label class="align-middle font-weight-bold">৩.১২.৫ গত ১০ বছর এবং সর্বশেষ দূর্যোগে আক্রান্ত হয়ে এ
+                        শিক্ষা প্রতিষ্ঠানে যে সকল ক্ষতি হয়েছে তার বিবরণ (সংখ্যা লিখুন):</label>
                     <table class="table table-bordered table-striped">
 
                         <tr class="custom-table-header">
@@ -179,7 +179,7 @@
                             <td><input type="number" class="w-50" v-model="data.climate_disaster_manage_infos.syllabus_flood"/> বার</td>
                     </table>
                 </div>
-                <div><label class="align-middle"> ৩.১০.৩ সর্বশেষ দুর্যোগের ফলে শিক্ষার্থীঝরে পড়ার
+                <div><label class="align-middle">৩.১২.৬ সর্বশেষ দুর্যোগের ফলে শিক্ষার্থীঝরে পড়ার
                         সংখ্যা:</label>
                     <table class="table table-bordered table-striped">
 
@@ -238,7 +238,7 @@
 
                 <div>
                     <label class="align-middle font-weight-bold">
-                        ৩.১০.৪ সর্বশেষ দুর্যোগের পর কোন ধরনের ক্ষয়ক্ষতি কাটিয়ে ওঠা যায় নি? (একাধিক টিক হতে পারে)
+                        ৩.১২.৭ সর্বশেষ দুর্যোগের পর কোন ধরনের ক্ষয়ক্ষতি কাটিয়ে ওঠা যায় নি? (একাধিক টিক হতে পারে)
                     </label>
                     <table class="table table-bordered">
                         <tr>
@@ -259,7 +259,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <label class="align-middle"> ৩.১০.৫ দুর্যোগের ফলে ছাত্র-ছাত্রীরা কোন বিষয়সমূহে ক্ষতিগ্রস্ত হয়/পিছিয়ে
+                        <label class="align-middle">৩.১২.৮ দুর্যোগের ফলে ছাত্র-ছাত্রীরা কোন বিষয়সমূহে ক্ষতিগ্রস্ত হয়/পিছিয়ে
                             পড়ে? (ক্ষতিগ্রস্ত বিষয় (টিক চিহ্ন দিন))</label>
                         <table class="table table-bordered table-striped text-center">
                             <tr>
@@ -325,7 +325,7 @@
                         </table>
                     </div>
                     <div class="col-md-6">
-                        <label> ৩.১০.৬ দুর্যোগ মোকাবেলায় সক্ষমতা বাড়ানোর জন্য কী কী পদক্ষেপ
+                        <label>৩.১২.৯ দুর্যোগ মোকাবেলায় সক্ষমতা বাড়ানোর জন্য কী কী পদক্ষেপ
                             গ্রহণ করা হয়েছে? </label>
                         <table class="table table-bordered table-striped">
                             <tr>
@@ -341,7 +341,7 @@
 
                             </tr>
                         </table>
-                        <label> ৩.১০.৭ প্রতিষ্ঠানটি প্রতিবছর এবং দীর্ঘমেয়াদী দুর্যোগ ঝুঁকি
+                        <label>৩.১২.১০ প্রতিষ্ঠানটি প্রতিবছর এবং দীর্ঘমেয়াদী দুর্যোগ ঝুঁকি
                             সংক্রান্ত কোন মূল্যায়ন প্রতিবেদন করেছে/পাঠিয়েছে কী? </label>
                         <table class="table table-bordered table-striped">
 
@@ -367,7 +367,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৭</span>
+                    <span class="input-group-text bg-number">৩.১৩</span>
                 </div>
                 <div class="form-control bg-number-label">কোভিড-১৯ সংক্রান্ত</div>
             </div>
@@ -375,9 +375,9 @@
                 <table class="table table-bordered table-striped">
 
                     <tr>
-                        <td>৩.১১ করোনাকালীন শিক্ষার্থীদের পড়াশোনার ক্ষেত্রে আপনার প্রতিষ্ঠানের ভূমিকা কী ছিল?</td>
+                        <td>৩.১৩.১ করোনাকালীন শিক্ষার্থীদের পড়াশোনার ক্ষেত্রে আপনার প্রতিষ্ঠানের ভূমিকা কী ছিল?</td>
                         <td>
-                            <label>৩.১১.১ সংসদ টেলিভিশনে প্রচারিত শিখন-শেখানো কার্যক্রমে আপনার শিক্ষা প্রতিষ্ঠানের
+                            <label>৩.১৩.২ সংসদ টেলিভিশনে প্রচারিত শিখন-শেখানো কার্যক্রমে আপনার শিক্ষা প্রতিষ্ঠানের
                                 শিক্ষার্থীদের অংশগ্রহণ কেমন?</label>
                             <select class="contentBox" v-model="data.covid_infos.tv_prog_std_participant">
                                 <option value="Satisfaction">সন্তোষজনক-১</option>
@@ -391,7 +391,7 @@
                             হয়েছে-১
                         </td>
                         <td>
-                            <label>৩.১১.৪ আপনার প্রতিষ্ঠানে স্বাস্থ্যবিধি নিশ্চিত করে পাঠদান কার্যক্রম পরিচালনা করা
+                            <label>৩.১৩.৩ আপনার প্রতিষ্ঠানে স্বাস্থ্যবিধি নিশ্চিত করে পাঠদান কার্যক্রম পরিচালনা করা
                                 সম্ভব হচ্ছে কি না?</label>
                             <select class="contentBox"  v-model="data.covid_infos.class_start_yn">
                                 <option value="1">হ্যাঁ-১</option>
@@ -418,8 +418,8 @@
                 <table class="table table-bordered table-striped">
 
                     <tr>
-                        <td colspan="6">৩.১১.২ করোনায় আক্রান্ত শিক্ষার্থী, শিক্ষক ও কর্মচারীদের তথ্য:</td>
-                        <td colspan="6">৩.১১.৩ করোনায় মৃত্যুবরণকারী শিক্ষার্থী, শিক্ষক ও কর্মচারীদের তথ্য:</td>
+                        <td colspan="6">৩.১৩.৪ করোনায় আক্রান্ত শিক্ষার্থী, শিক্ষক ও কর্মচারীদের তথ্য:</td>
+                        <td colspan="6">৩.১৩.৫ করোনায় মৃত্যুবরণকারী শিক্ষার্থী, শিক্ষক ও কর্মচারীদের তথ্য:</td>
                     </tr>
                     <tr class="text-center">
                         <td colspan="2">শিক্ষার্থী</td>

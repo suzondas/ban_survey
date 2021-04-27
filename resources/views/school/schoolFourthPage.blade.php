@@ -10,7 +10,7 @@
         <div class="contentBox col-9">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৪</span>
+                    <span class="input-group-text bg-number">২.১৫</span>
                 </div>
                 <div class="form-control bg-number-label">শ্রেণি, বিভাগভিত্তিক শিক্ষার্থী, উত্তীর্ণ ও
                     অনুত্তীর্ণ সম্পর্কিত তথ্য, ডিসেম্বর ২০২০ (বার্ষিক পরীক্ষার ফলাফল)
@@ -70,7 +70,7 @@
         <div class="contentBox col-12 " style="font-size: 11px;">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৫</span>
+                    <span class="input-group-text bg-number">২.১৬</span>
                 </div>
                 <div class="form-control bg-number-label">বিভাগভিত্তিক বিভিন্ন বোর্ড পরীক্ষার ফলাফল:</div>
             </div>
@@ -140,7 +140,7 @@
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৬</span>
+                    <span class="input-group-text bg-number">২.১৭</span>
                 </div>
                 <div class="form-control bg-number-label">কোর্স ভিত্তিক এসএসসি (ভোকেশনাল) শাখার শিক্ষার্থী ২০২১</div>
             </div>
@@ -188,12 +188,12 @@
         <div class="row contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩.৭ </span>
+                    <span class="input-group-text bg-number">২.১৮</span>
                 </div>
                 <div class="form-control bg-number-label">উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম</div>
             </div>
             <div class="col-md-3 contentBoxBody">
-                <label class="label-number" for="">২.৩.৭.১ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম
+                <label class="label-number font-weight-bold">২.১৮.১ আপনার প্রতিষ্ঠানে উন্মুক্ত বিশ্ববিদ্যালয়ের শিক্ষা প্রোগ্রাম
                     পরিচালিত হয় কি?</label>
                 <select class="custom-select" name="" style="width: 75px" ng-model="data.instOtherInfo.open_unvi_course_yn">
                     <option value="" selected>Select</option>
@@ -203,7 +203,7 @@
                 </select>
             </div>
             <div class="col-md-9 contentBoxBody">
-                <label class="label-number" for="">২.৩.৮ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের
+                <label class="label-number font-weight-bold">২.১৮.২ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক শিক্ষার্থীর তথ্য নিম্নের
                     ছক মোতাবেক প্রদান করুন</label>
                 <table class="table table-bordered table-striped text-center">
                     <tr>
@@ -232,7 +232,7 @@
                 </table>
             </div>
             <div class="col-md-10 contentBoxBody">
-                <label class="label-number" for="">২.৩.৯ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক
+                <label class="label-number font-weight-bold" >২.১৮.৩ উত্তর হ্যাঁ হলে প্রোগ্রাম ভিত্তিক ফলাফল নিম্নের ছক মোতাবেক
                     প্রদান করুন</label>
                 <table class="table table-bordered table-striped text-center">
                     <tr>
