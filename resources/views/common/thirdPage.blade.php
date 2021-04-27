@@ -1,7 +1,7 @@
 @extends('components.template')
 @section('content')
     <div class="container"  id="thirdPage">
-        <h3 class="text-center">বিবিধ তথ্য (১)</h3>
+        <h3 class="text-center">সেকশন-৩: বিবিধ তথ্য (১)</h3>
         <div v-if="!dataLoaded">
             <div class="d-flex justify-content-center">
                 <h3 class="p-2">Loading...</h3>
@@ -22,14 +22,14 @@
                 <div class="">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="labYN">৩.১.১। প্রতিষ্ঠানে কম্পিউটার ল্যাব আছে কি?</label>
+                            <label for="labYN">৩.১.১ প্রতিষ্ঠানে কম্পিউটার ল্যাব আছে কি?</label>
                             <select class="contentBoxInput" id="labYN" v-model="data.institutes_computer_lab_infos.computer_lab_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <label for="labYN">প্রতিষ্ঠানে কম্পিউটার ল্যাবের সংখ্যা</label>
+                            <label for="labYN">৩.১.২ প্রতিষ্ঠানে কম্পিউটার ল্যাবের সংখ্যা</label>
                             <input type="number" v-model="data.institutes_computer_lab_infos.computer_lab_no"/> টি
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <label for="labYN">৩.১.২। ল্যাব ব্যতিত অন্য কম্পিউটার আছে কি?</label>
+                    <label for="labYN">৩.১.৩ ল্যাব ব্যতিত অন্য কম্পিউটার আছে কি?</label>
                     <select class="contentBoxInput" v-model="data.institutes_computer_lab_infos.computer_yn">
                         <option value="1">হ্যাঁ</option>
                         <option value="2">না</option>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div>
-                    <label>৩.১.৩। কম্পিউটার প্রদানকারী সংস্থা অনুযায়ী সংখ্যা:</label>
+                    <label>৩.১.৪ কম্পিউটার প্রদানকারী সংস্থা অনুযায়ী সংখ্যা:</label>
                     <table class="table table-bordered text-center font-weight-bold">
                         <tr>
                             <td>সংস্থার নাম</td>
@@ -157,11 +157,11 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td class="">
-                            <label for="multimediaClassroom">৩.২.১। মাল্টিমিডিয়া ক্লাসরুমের সংখ্যা</label>
+                            <label for="multimediaClassroom">৩.২.১ মাল্টিমিডিয়া ক্লাসরুমের সংখ্যা</label>
                             <input class="" id="multimediaClassroom" type="number" v-model="data.multimedia_infos.class_room_multimedia"/>
                         </td>
                         <td>
-                            ৩.২.১। মাল্টিমিডিয়া ক্লাসরুম ব্যবহারে সক্ষম শিক্ষকের সংখ্যা<br>
+                            ৩.২.২ মাল্টিমিডিয়া ক্লাসরুম ব্যবহারে সক্ষম শিক্ষকের সংখ্যা<br>
                             <div class="row">
                                 <div class="col-md-6 input-group form-inline">
                                     মোট:<input class="" id="" type="number" v-model="data.multimedia_infos.mult_expert_teach_tot"/>
@@ -174,11 +174,11 @@
                     </tr>
                     <tr>
                         <td class="">
-                            <label for="">৩.২.১। মাল্টিমিডিয়া ব্যবহার করে প্রতিদিন কয়টি ক্লাস নেওয়া হয়</label>
+                            <label for="">৩.২.৩ মাল্টিমিডিয়া ব্যবহার করে প্রতিদিন কয়টি ক্লাস নেওয়া হয়</label>
                             <input style="width: 40px;" id="" type="number" v-model="data.multimedia_infos.multimedia_class_num"/> টি
                         </td>
                         <td>
-                            ৩.১.১। মাল্টিমিডিয়া ক্লাসরুমের ব্যবহার করে ক্লাস নেওয়ার<br> পর
+                            ৩.২.৪ মাল্টিমিডিয়া ক্লাসরুমের ব্যবহার করে ক্লাস নেওয়ার<br> পর
                             ড্যাসবোর্ডে এন্ট্রি দেওয়া হয় কি?
                             <select class="" id="dashboardEntry"  v-model="data.multimedia_infos.dashboard_entry_yn">
                                 <option value="1">হ্যাঁ</option>
@@ -188,14 +188,14 @@
                     </tr>
                     <tr>
                         <td class="">
-                            <label for="projectorYN">৩.১.১। মাল্টিমিডিয়া প্রজেক্টর আছে কি?</label>
+                            <label for="projectorYN">৩.২.৫ মাল্টিমিডিয়া প্রজেক্টর আছে কি?</label>
                             <select class="" id="projectorYN"  v-model="data.multimedia_infos.multimedia_projector_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td class="">
-                            <label for="">৩.২.১। মাল্টিমিডিয়া প্রজেক্টরের সংখ্যা</label>
+                            <label for="">৩.২.৬ মাল্টিমিডিয়া প্রজেক্টরের সংখ্যা</label>
                             <input class="" id="" type="number"  v-model="data.multimedia_infos.multimedia_projector_number"/> টি
                         </td>
                     </tr>
@@ -214,7 +214,7 @@
                 <table class="table table-striped table-bordered">
                     <tr>
                         <td colspan="2">
-                            <label for="ictClassYN">৩.২.১। আইসিটি বিষয়ে পাঠদান করা হয় কি?</label>
+                            <label for="ictClassYN">৩.৩.১ আইসিটি বিষয়ে পাঠদান করা হয় কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.computer_teaching_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
@@ -223,14 +223,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="ictTeacherYN">৩.২.১। আইসিটি বিষয়ে শিক্ষক আছে কি?</label>
+                            <label for="ictTeacherYN">৩.৩.২ আইসিটি বিষয়ে শিক্ষক আছে কি?</label>
                             <select class="contentBoxInput"  v-model="data.institutes_ict_infos.comp_teacher_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="ictTeacherQualification">৩.২.১। আইসিটি বিষয়ে পাঠদানকারী শিক্ষকের শিক্ষাগত
+                            <label for="ictTeacherQualification">৩.৩.৩ আইসিটি বিষয়ে পাঠদানকারী শিক্ষকের শিক্ষাগত
                                 যোগ্যতা কী (সর্বোচ্চ)?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.comp_teacher_qual">
                                 <option value="1">১. স্নাতক (পাস)</option>
@@ -244,7 +244,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="nonIctTeacherQualification">৩.২.১। আইসিটি বিষয়ে ডিগ্রিধারী নয় এমন শিক্ষকের
+                            <label for="nonIctTeacherQualification">৩.৩.৪ আইসিটি বিষয়ে ডিগ্রিধারী নয় এমন শিক্ষকের
                                 শিক্ষাগত যোগ্যতা কী (সর্বোচ্চ)?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.comp_teacher_other_edu">
                                 <option value="1">১. স্নাতক (পাস)</option>
@@ -253,7 +253,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="ictTeacherTraining"> ৩.২.১। আইসিটি বিষয়ে ডিগ্রিধারী নয় এমন শিক্ষক কী ধরনের
+                            <label for="ictTeacherTraining">৩.৩.৫ আইসিটি বিষয়ে ডিগ্রিধারী নয় এমন শিক্ষক কী ধরনের
                                 প্রশিক্ষণ গ্রহণ করেছেন</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.comp_training_type">
                                 <option value="1">১. সার্টিফিকেট কোর্স</option>
@@ -264,7 +264,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="shikkhokBatayonYN">৩.২.১। প্রতিষ্ঠানের শিক্ষকগণ শিক্ষক বাতায়নের সদস্য
+                            <label for="shikkhokBatayonYN">৩.৩.৬ প্রতিষ্ঠানের শিক্ষকগণ শিক্ষক বাতায়নের সদস্য
                                 কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.tea_socity_member_yn">
                                 <option value="1"> হ্যাঁ</option>
@@ -273,7 +273,7 @@
                         </td>
                         <td>
                             <div class="">
-                                <label for="shikkhokBatayonTeacher"> ৩.২.১। শিক্ষক বাতায়নে সদস্য শিক্ষকের
+                                <label for="shikkhokBatayonTeacher">৩.৩.৭ শিক্ষক বাতায়নে সদস্য শিক্ষকের
                                     সংখ্যা</label><br>
                                 মোট:<input class="contentBoxInput" id="" type="number"  v-model="data.institutes_ict_infos.tea_socity_member_total"/> জন
                                 মহিলা:<input class="contentBoxInput" id="" type="number"  v-model="data.institutes_ict_infos.tea_socity_member_female"/> জন
@@ -282,14 +282,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="digitalHajiraYN">৩.২.১। প্রতিষ্ঠানে ডিজিটাল হাজিরা ব্যবহৃত হয় কি?</label>
+                            <label for="digitalHajiraYN">৩.৩.৮ প্রতিষ্ঠানে ডিজিটাল হাজিরা ব্যবহৃত হয় কি?</label>
                             <select class="contentBoxInput" id="digitalHajiraYN" v-model="data.institutes_ict_infos.digital_attendance_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="digitalHajiraType">৩.২.১। প্রতিষ্ঠানে ডিজিটাল হাজিরা কাদের জন্য ব্যবহৃত
+                            <label for="digitalHajiraType">৩.৩.৯ প্রতিষ্ঠানে ডিজিটাল হাজিরা কাদের জন্য ব্যবহৃত
                                 হয়?</label>
                             <div class="row">
                                 <div class="col">শিক্ষার্থীর জন্য <input type="checkbox" v-model="data.institutes_ict_infos.digital_attendance_std"/></div>
@@ -299,14 +299,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="internetYN">৩.২.১। ইন্টারনেট সংযোগ আছে কি?</label>
+                            <label for="internetYN">৩.৩.১০ ইন্টারনেট সংযোগ আছে কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.internet_conn_yn" >
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="wifiYN">৩.২.১। প্রতিষ্ঠানে WiFi সংযোগ আছে কি?</label>
+                            <label for="wifiYN">৩.৩.১১ প্রতিষ্ঠানে WiFi সংযোগ আছে কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.wifi_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
@@ -315,33 +315,33 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="ccCameraYN">৩.২.১। প্রতিষ্ঠানে সিসি ক্যামেরা আছে কি?</label>
+                            <label for="ccCameraYN">৩.৩.১২ প্রতিষ্ঠানে সিসি ক্যামেরা আছে কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.cc_camera_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="ccCameraAmount">৩.২.১। প্রতিষ্ঠানে সিসি ক্যামেরার সংখ্যা?</label>
+                            <label for="ccCameraAmount">৩.৩.১৩ প্রতিষ্ঠানে সিসি ক্যামেরার সংখ্যা?</label>
                             <input class="contentBoxInput" type="number" v-model="data.institutes_ict_infos.cc_camera_num"/> টি
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="internetType">৩.২.১। ইন্টারনেট সংযোগের ধরণ?</label>
+                            <label for="internetType">৩.৩.১৪ ইন্টারনেট সংযোগের ধরণ?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.internet_conn_type">
                                 <option value="MODEM">১-মডেম</option>
                                 <option value="BROAD BAND">২-ব্রডব্যান্ড</option>
                             </select>
                         </td>
                         <td>
-                            <label for="bandwidth">৩.২.১। ইন্টারনেট সংযোগ ব্রডব্যান্ড হলে ব্যান্ডউইথ কত?</label>
+                            <label for="bandwidth">৩.৩.১৫ ইন্টারনেট সংযোগ ব্রডব্যান্ড হলে ব্যান্ডউইথ কত?</label>
                             <input class="contentBoxInput" v-model="data.institutes_ict_infos.bandwith_mpbs" type="number"/>
                         </td>
                     </tr>
                     <tr>
                         <td class="align-middle">
-                            <label for="computerInPedagogy">৩.২.১। Pedagogical(শিখন-শেখানো) কাজে কম্পিউটার ব্যবহৃত
+                            <label for="computerInPedagogy">৩.৩.১৬ Pedagogical(শিখন-শেখানো) কাজে কম্পিউটার ব্যবহৃত
                                 হয়
                                 কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.padago_computer_yn">
@@ -350,7 +350,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="computerInPedagogyAmount">৩.২.১। শিখন-শেখানো কাজে ব্যবহহৃত কম্পিউটার
+                            <label for="computerInPedagogyAmount">৩.৩.১৭ শিখন-শেখানো কাজে ব্যবহহৃত কম্পিউটার
                                 সংখ্যা?</label>
                             <table class="table-bordered">
                                 <tr>
@@ -368,14 +368,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="internetInPedagogy">৩.২.১। শিখন-শেখানো কাজে ইন্টারনেট ব্যবহৃত হয় কি?</label>
+                            <label for="internetInPedagogy">৩.৩.১৮ শিখন-শেখানো কাজে ইন্টারনেট ব্যবহৃত হয় কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.padago_internet_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label for="internetInPedagogyUser">৩.২.১। শিখন-শেখানো কাজে ইন্টারনেট কে ব্যবহার
+                            <label for="internetInPedagogyUser">৩.৩.১৯ শিখন-শেখানো কাজে ইন্টারনেট কে ব্যবহার
                                 করে?</label>
                             <div class="row">
                                 <div class="col">শিক্ষার্থী <input type="checkbox" v-model="data.institutes_ict_infos.padago_internet_std"/></div>
@@ -386,7 +386,7 @@
                     </tr>
                     <tr>
                         <td class="align-middle">
-                            <label for="computerBasicCourseYN">৩.২.১। প্রতিষ্ঠানটিতে Computer Basic Course পাঠদান
+                            <label for="computerBasicCourseYN">৩.৩.২০ প্রতিষ্ঠানটিতে Computer Basic Course পাঠদান
                                 করানো
                                 হয় কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_ict_infos.basic_course_yn">
@@ -395,7 +395,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="computerBasicCourseStudents">৩.২.১। Computer Basic Course পাঠদানরত মোট
+                            <label for="computerBasicCourseStudents">৩.৩.২১ Computer Basic Course পাঠদানরত মোট
                                 শিক্ষার্থীর সংখ্যা?</label>
                             <table class="table-bordered">
                                 <tr>
@@ -444,19 +444,19 @@
             <div class="contentBox">
                 <div class="input-group contentHeader">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-number">৩.৩</span>
+                        <span class="input-group-text bg-number">৩.৪</span>
                     </div>
                     <div class="form-control bg-number-label">বিদ্যুৎ সংক্রান্ত</div>
                 </div>
                 <div class="contentBoxBody">
                     <table class="table table-bordered table-striped">
                         <tr>
-                            <td>প্রতিষ্ঠানে বিদ্যুৎ সংযোগ আছে কি?
+                            <td>৩.৪.১ প্রতিষ্ঠানে বিদ্যুৎ সংযোগ আছে কি?
                                 <select class="contentBoxInput" v-model="data.institutes_ict_infos.electricity_yn">
                                     <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select></td>
-                            <td>প্রতিষ্ঠানে কোন ধরনের সংযোগ আছে?
+                            <td>৩.৪.২ প্রতিষ্ঠানে কোন ধরনের সংযোগ আছে?
                                 <div class="row">
                                     <div class="col">বিদ্যুৎ <input type="checkbox" v-model="data.institutes_ict_infos.electricity_conn"/></div>
                                     <div class="col">সোলার প্যানেল <input type="checkbox" v-model="data.institutes_ict_infos.solar_pannel_conn"/></div>
@@ -466,11 +466,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>প্রতিষ্ঠানে সোলার প্যানেল আছে কি?<select class="contentBoxInput" v-model="data.institutes_ict_infos.solar_panel_yn">
+                            <td>৩.৪.৩ প্রতিষ্ঠানে সোলার প্যানেল আছে কি?<select class="contentBoxInput" v-model="data.institutes_ict_infos.solar_panel_yn">
                                     <option value="1">হ্যাঁ</option>
                                     <option value="2">না</option>
                                 </select></td>
-                            <td>সোলার প্যানেলে কতটি লাইট ফ্যান চলে?
+                            <td>৩.৪.৪ সোলার প্যানেলে কতটি লাইট ফ্যান চলে?
                                 <div class="row">
                                     <div class="col">ফ্যান: <input type="number" v-model="data.institutes_ict_infos.solar_fan"/></div>
                                     <div class="col">লাইট: <input type="number" v-model="data.institutes_ict_infos.solar_light"/></div>
@@ -484,18 +484,18 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৩</span>
+                    <span class="input-group-text bg-number">৩.৫</span>
                 </div>
                 <div class="form-control bg-number-label">অবকাঠামো/সুবিধা সংক্রান্ত</div>
             </div>
             <div class="contentBoxBody">
                 <div class="row">
                 <div class="col-md-6">
-                    <label> ১.৭.১৫ প্রতিষ্ঠানের সীমানা প্রাচীর সংক্রান্ত তথ্য</label>
+                    <label>৩.৫.১ প্রতিষ্ঠানের সীমানা প্রাচীর সংক্রান্ত তথ্য</label>
                     <table class="table table-bordered table-striped">
                         <tr>
                             <td>
-                                প্রতিষ্ঠানের সীমানা প্রাচীর আছে কি?
+                                ৩.৫.২ প্রতিষ্ঠানের সীমানা প্রাচীর আছে কি?
                                 <select v-model="data.institutes_facilities_others.boundarywall_yn">
                                     <option value="">select</option>
                                     <option value="1">হ্যাঁ</option>
@@ -503,7 +503,7 @@
                                 </select>
                             </td>
                             <td>
-                                উত্তর হ্যাঁ হলে, প্রাচীরের অবস্থাঃ
+                                ৩.৫.৩ উত্তর হ্যাঁ হলে, প্রাচীরের অবস্থাঃ
                                 <select v-model="data.institutes_facilities_others.boundary_status">
                                     <option value="">select</option>
                                     <option value="1">সম্পূর্ণ</option>
@@ -511,7 +511,7 @@
                                 </select>
                             </td>
                             <td>
-                                প্রাচীরের ধরন
+                                ৩.৫.৪ প্রাচীরের ধরন
                                 <select v-model="data.institutes_facilities_others.boundary_type">
                                     <option value="">select</option>
                                     <option value="1">পাকা</option>
@@ -524,7 +524,7 @@
                     </table>
                 </div>
                 <div class="col-md-6">
-                    <label>১.৭.১৪ প্রতিষ্ঠানটির কী কী অবকাঠামো/ সুবিধা রয়েছে ?
+                    <label>৩.৫.৫ প্রতিষ্ঠানটির কী কী অবকাঠামো/ সুবিধা রয়েছে ?
                     </label>
                     <table class="table table-striped table-bordered">
                         <tr>
@@ -558,7 +558,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৪</span>
+                    <span class="input-group-text bg-number">৩.৬</span>
                 </div>
                 <div class="form-control bg-number-label">খাবার পানি সংক্রান্ত</div>
             </div>
@@ -566,14 +566,14 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td class="align-middle">
-                            <label>৩.২.১। শিক্ষক ও শিক্ষার্থীদের জন্য নিরাপদ খাবার পানির ব্যবস্থা আছে কি ?</label>
+                            <label>৩.৬.১ শিক্ষক ও শিক্ষার্থীদের জন্য নিরাপদ খাবার পানির ব্যবস্থা আছে কি ?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.pure_drinking_water">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। উত্তর হাঁ হলে খাবার পানির উৎস কী ? (একাধিক হতে পারে)</label>
+                            <label>৩.৬.২ উত্তর হাঁ হলে খাবার পানির উৎস কী ? (একাধিক হতে পারে)</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td><input class="mr-2" type="checkbox"v-model="data.institutes_facilities_others.kup">কূপ
@@ -603,14 +603,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। পানির উৎস নলকূপ হলে আর্সেনিক পরীক্ষা করা হয়েছে কি ?</label>
+                            <label>৩.৬.৩ পানির উৎস নলকূপ হলে আর্সেনিক পরীক্ষা করা হয়েছে কি ?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.arsenic_test">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। পানির আর্সেনিক পরীক্ষার ফলাফল কী ?</label>
+                            <label>৩.৬.৪ পানির আর্সেনিক পরীক্ষার ফলাফল কী ?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.arsenic_result">
                                 <option value="1">১-মাত্রা সহনীয়</option>
                                 <option value="2">২-মাত্রা অসহনীয়</option>
@@ -619,14 +619,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। পানির ম্যাঙ্গানিজ পরীক্ষা করা হয়েছে কি ?</label>
+                            <label>৩.৬.৫ পানির ম্যাঙ্গানিজ পরীক্ষা করা হয়েছে কি ?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.manganese_test">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। পানির ম্যাঙ্গানিজ পরীক্ষার ফলাফল কি?</label>
+                            <label>৩.৬.৬ পানির ম্যাঙ্গানিজ পরীক্ষার ফলাফল কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.manganese_result">
                                 <option value="1">১-মাত্রা সহনীয়</option>
                                 <option value="2">২-মাত্রা অসহনীয়</option>
@@ -635,7 +635,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <label>৩.২.১। পানি বিশুদ্ধকরণ মেশিন / সুবিধা আছে কি?</label>
+                            <label>৩.৬.৭ পানি বিশুদ্ধকরণ মেশিন / সুবিধা আছে কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.water_purifier_machine">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
@@ -649,7 +649,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৩</span>
+                    <span class="input-group-text bg-number">৩.৭</span>
                 </div>
                 <div class="form-control bg-number-label">টয়লেট ও ওয়াশব্লক সংক্রান্ত</div>
             </div>
@@ -657,14 +657,14 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td class="align-middle">
-                            <label>৩.২.১। প্রতিষ্ঠানটিতে টয়লেট সুবিধা আছে কি?</label>
+                            <label>৩.৭.১ প্রতিষ্ঠানটিতে টয়লেট সুবিধা আছে কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.toilet_facilities_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td class="w-50">
-                            <label>৩.২.১। উত্তর হাঁ হলে কোন ধরনের টয়লেট (সংখ্যা)</label>
+                            <label>৩.৭.২ উত্তর হাঁ হলে কোন ধরনের টয়লেট (সংখ্যা)</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>স্লাব টয়লেট</td>
@@ -683,7 +683,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। অবস্থা অনুযায়ী টয়লেট সংখ্যা</label>
+                            <label>৩.৭.৩ অবস্থা অনুযায়ী টয়লেট সংখ্যা</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>ব্যবহার যোগ্য</td>
@@ -698,7 +698,7 @@
                             </table>
                         </td>
                         <td class="align-middle">
-                            <label>৩.২.১।প্রতিষ্ঠান প্রধানের জন্য সংযুক্ত টয়লেটের সুবিধা আছে কি ?</label>
+                            <label>৩.৭.৪ প্রতিষ্ঠান প্রধানের জন্য সংযুক্ত টয়লেটের সুবিধা আছে কি ?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.attached_toilet_inst_head">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
@@ -706,13 +706,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="align-middle"><label>৩.২.১। ছাত্রীদের জন্য পৃথক টয়লেটের ব্যবস্থা আছে কি ?</label>
+                        <td class="align-middle"><label>৩.৭.৫ ছাত্রীদের জন্য পৃথক টয়লেটের ব্যবস্থা আছে কি ?</label>
                             <select class="contentBoxInput" v-model="data.institutes_facilities_others.female_seperate_toilet">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
-                        <td><label>৩.২.১। ছাত্রীদের পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৭.৬ ছাত্রীদের পৃথক টয়লেট সংখ্যা:</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -728,7 +728,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label>৩.২.১। ছাত্রদের পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৭.৭ ছাত্রদের পৃথক টয়লেট সংখ্যা:</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -742,7 +742,7 @@
                                 </tr>
                             </table>
                         </td>
-                        <td><label>৩.২.১। শিক্ষকদের পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৭.৮ শিক্ষকদের পৃথক টয়লেট সংখ্যা:</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -758,7 +758,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label>৩.২.১। কর্মচারীর পৃথক টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৭.৯ কর্মচারীর পৃথক টয়লেট সংখ্যা:</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -772,7 +772,7 @@
                                 </tr>
                             </table>
                         </td>
-                        <td><label>৩.২.১। যৌথ ব্যবহার্য টয়লেট সংখ্যা:</label>
+                        <td><label>৩.৭.১০ যৌথ ব্যবহার্য টয়লেট সংখ্যা:</label>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>নতুন</td>
@@ -789,14 +789,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। বিশেষ চাহিদা সম্পন্ন শিক্ষার্থীদের জন্য পৃথক টয়লেট আছে কি ?</label>
+                            <label>৩.৭.১১ বিশেষ চাহিদা সম্পন্ন শিক্ষার্থীদের জন্য পৃথক টয়লেট আছে কি ?</label>
                             <select class="" v-model="data.institutes_facilities_others.autistic_seperate_toilet">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। টয়লেট পরিষ্কার পরিচ্ছন্ন রাখা হয় কি ?</label>
+                            <label>৩.৭.১২ টয়লেট পরিষ্কার পরিচ্ছন্ন রাখা হয় কি ?</label>
                             <select class="" v-model="data.institutes_facilities_others.toilet_common_clear">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
@@ -805,14 +805,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <label>৩.২.১। ব্যবহারের জন্য পর্যাপ্ত পানির ব্যবস্থা আছে কি ?</label>
+                            <label>৩.৭.১৩ ব্যবহারের জন্য পর্যাপ্ত পানির ব্যবস্থা আছে কি ?</label>
                             <select class="" v-model="data.institutes_facilities_others.toilet_common_water">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select>
                         </td>
                         <td>
-                            <label>৩.২.১। প্রতিষ্ঠানে সাবান পানিসহ হাত ধোয়ার ব্যবস্থা আছে কি ?</label>
+                            <label>৩.৭.১৪ প্রতিষ্ঠানে সাবান পানিসহ হাত ধোয়ার ব্যবস্থা আছে কি ?</label>
                             <select class="" v-model="data.institutes_facilities_others.handwash_facility_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
@@ -821,7 +821,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <label>৩.২.১। প্রতিষ্ঠানে সাবান পানিসহ হাত ধোয়ার ব্যবস্থা থাকলে কোন ধরনের ব্যবস্থা
+                            <label>৩.৭.১৫ প্রতিষ্ঠানে সাবান পানিসহ হাত ধোয়ার ব্যবস্থা থাকলে কোন ধরনের ব্যবস্থা
                                 আছে</label>
                             <table>
                                 <tr>
@@ -838,29 +838,29 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label>৩.২.১। ওয়াশ ব্লক আছে কি ?</label>
+                        <td><label>৩.৭.১৬ ওয়াশ ব্লক আছে কি ?</label>
                             <select class="" v-model="data.institutes_facilities_others.wash_block_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select></td>
-                        <td><label>৩.২.১। ওয়াশ ব্লক পরিষ্কার পরিচ্ছন্ন রাখা হয় কি ?</label>
+                        <td><label>৩.৭.১৭ ওয়াশ ব্লক পরিষ্কার পরিচ্ছন্ন রাখা হয় কি ?</label>
                             <select v-model="data.institutes_facilities_others.wash_block_clean_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select></td>
                     </tr>
                     <tr>
-                        <td><label>৩.২.১। ওয়াশ ব্লকের সংখ্যা ?</label>
+                        <td><label>৩.৭.১৮ ওয়াশ ব্লকের সংখ্যা ?</label>
                             <input type="number" v-model="data.institutes_facilities_others.wash_block_number"/> টি
                         </td>
-                        <td><label>৩.২.১। ওয়াশ ব্লক সংখ্যা পর্যাপ্ত কি ?</label>
+                        <td><label>৩.৭.১৯ ওয়াশ ব্লক সংখ্যা পর্যাপ্ত কি ?</label>
                             <select v-model="data.institutes_facilities_others.wash_block_enough_yn">
                                 <option value="1">হ্যাঁ</option>
                                 <option value="2">না</option>
                             </select></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><label>৩.২.১। ট্যাংক হতে ট্যাপের মাধ্যমে (Running Water)পানি সরবারহের
+                        <td colspan="2"><label>৩.৭.২০ ট্যাংক হতে ট্যাপের মাধ্যমে (Running Water)পানি সরবারহের
                                 ব্যবস্থা আছে কি ?</label>
                             <select v-model="data.institutes_facilities_others.running_water_yn">
                                 <option value="1">হ্যাঁ</option>
@@ -876,7 +876,7 @@
         <div class="contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৩.৩</span>
+                    <span class="input-group-text bg-number">৩.৮</span>
                 </div>
                 <div class="form-control bg-number-label">লাইব্রেরী সংক্রান্ত তথ্য</div>
             </div>
@@ -884,7 +884,7 @@
                 <table class="table table-bordered table-striped">
                     <tr>
                         <td>
-                            ১.৮ লাইব্রেরির জন্য পৃথক ভবন আছে কি?
+                            ৩.৮.১ লাইব্রেরির জন্য পৃথক ভবন আছে কি?
                             <select v-model="data.institutes_libraries.seperate_building_yn">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -892,7 +892,7 @@
                             </select>
                         </td>
                         <td>
-                            ১.৮.১ লাইব্রেরির জন্য কক্ষ আছে কি?
+                            ৩.৮.২ লাইব্রেরির জন্য কক্ষ আছে কি?
                             <select v-model="data.institutes_libraries.library_yn">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -900,7 +900,7 @@
                             </select>
                         </td>
                         <td>
-                            ১.৮.২ লাইব্রেরিতে বইয়ের সংখ্যা
+                            ৩.৮.৩ লাইব্রেরিতে বইয়ের সংখ্যা
                             <div class="row">
                                 <div class="col form-inline"><label class="label-number" for="">পাঠ্যপুস্তক</label>
                                     <input type="number" class="w-50 ml-2 form-control" v-model="data.institutes_libraries.no_book"/></div>
@@ -911,7 +911,7 @@
                     </tr>
                     <tr>
                         <td>
-                            ১.৮.৩ শিক্ষার্থীদের লাইব্রেরি থেকে বই ইস্যু করা হয় কি?
+                            ৩.৮.৪ শিক্ষার্থীদের লাইব্রেরি থেকে বই ইস্যু করা হয় কি?
                             <select v-model="data.institutes_libraries.book_issue_yn">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -919,7 +919,7 @@
                             </select>
                         </td>
                         <td>
-                            ১.৮.৪ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
+                            ৩.৮.৫ উত্তর হ্যাঁ হলে, নিয়মিত বই ইস্যু করা হয় কি?
                             <select v-model="data.institutes_libraries.regular_issue_yn">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -927,13 +927,13 @@
                             </select>
                         </td>
                         <td>
-                            ১.৮.৫ উত্তর হ্যাঁ হলে, মাসে ইস্যুকৃত বই এর সংখ্যা
+                            ৩.৮.৬ উত্তর হ্যাঁ হলে, মাসে ইস্যুকৃত বই এর সংখ্যা
                             <input type="number" class="form-control w-25" v-model="data.institutes_libraries.monthly_issue_book"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            ১.৮.৭ লাইব্রেরির পুস্তকাদির ক্যাটালগিং কম্পিউটারাইজড কি?
+                            ৩.৮.৭ লাইব্রেরির পুস্তকাদির ক্যাটালগিং কম্পিউটারাইজড কি?
                             <select v-model="data.institutes_libraries.computerized_catelog_yn">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -941,7 +941,7 @@
                             </select>
                         </td>
                         <td colspan="2">
-                            ১.৮.৮ লাইব্রেরি পরিচালনার জন্য সহকারী লাইব্রেরিয়ান আছে কি?
+                            ৩.৮.৮ লাইব্রেরি পরিচালনার জন্য সহকারী লাইব্রেরিয়ান আছে কি?
                             <select v-model="data.institutes_libraries.librarian_teacher_yn" style="width: 90px">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -951,7 +951,7 @@
                     </tr>
                     <tr>
                         <td>
-                            ১.৮.৯ লাইব্রেরি বিষয়ে সহকারী লাইব্রেরিয়ানের প্রশিক্ষণ আছে কি?
+                            ৩.৮.৯ লাইব্রেরি বিষয়ে সহকারী লাইব্রেরিয়ানের প্রশিক্ষণ আছে কি?
                             <select v-model="data.institutes_libraries.training_yn" style="width: 90px">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -959,7 +959,7 @@
                             </select>
                         </td>
                         <td colspan="2">
-                            ১.৮.১০ লাইব্রেরি আওয়ার ক্লাস রুটিনে অনর্ভুক্ত আছে কি ?
+                            ৩.৮.১০ লাইব্রেরি আওয়ার ক্লাস রুটিনে অনর্ভুক্ত আছে কি ?
                             <select v-model="data.institutes_libraries.lib_hour_inclusive_yn" style="width: 90px">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -969,7 +969,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="languageClubYN">৩.২.১। প্রতিষ্ঠানে ল্যাংগুয়েজ ক্লাব আছে কি?</label>
+                            <label for="languageClubYN">৩.৮.১১ প্রতিষ্ঠানে ল্যাংগুয়েজ ক্লাব আছে কি?</label>
                             <select class="contentBoxInput" v-model="data.institutes_libraries.language_club_yn">
                                 <option value="">select</option>
                                 <option value="1">হ্যাঁ</option>
@@ -977,7 +977,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="languageClubType">৩.২.১। ল্যাংগুয়েজ ক্লাবে কোন ধরনের ভাষার চর্চা
+                            <label for="languageClubType">৩.৮.১২ ল্যাংগুয়েজ ক্লাবে কোন ধরনের ভাষার চর্চা
                                 হয়?</label>
                             <table class="table table-bordered">
                             <tr>
