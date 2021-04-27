@@ -2,7 +2,6 @@
 @section('content')
     <div class="container" id="pagecontainer">
         @include('components/banner')
-
         {{--Login Area--}}
         <div class="row justify-content-center pt-5" style="margin-left:-60px;">
             <div class="card">
