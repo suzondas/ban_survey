@@ -6,7 +6,8 @@ const app = new Vue({
             dataLoaded: false,
             dataLoadingError: false,
             addedTeacherY: false,
-            selectedTeacherIdx:null
+            selectedTeacherIdx:null,
+            trainingArray:[]
         }
     },
     mounted() {
@@ -27,6 +28,17 @@ const app = new Vue({
             showDetail:function(index){
                 var self = this;
                 self.selectedTeacherIdx = index;
+                let trainingInfo = self.data.teacherStaffInfoGeneral[index].training_info;
+                if(trainingInfo === null){
+                    self.trainingArray = [];
+                }else{
+                    try {
+                        let parsedTrainingInfo = JSON.parse(trainingInfo);
+                        self.trainingArray = parsedTrainingInfo;
+                    } catch (e) {
+                        self.trainingArray = [];
+                    }
+                }
             },
             addTeacher: function () {
                 var self = this;
@@ -43,6 +55,7 @@ const app = new Vue({
             removeTeacher: function (teacher_name, teacher_id, index) {
                 if (confirm('Are you sure to Delete teacher: ' + teacher_name)) {
                     var self = this;
+                    this.selectedTeacherIdx = null;
                     axios.get('http://127.0.0.1:8000/TeacherStaff/removeTeacher/' + teacher_id)
                         .then(function (response) {
                             self.data.teacherStaffInfoGeneral.splice(index,1);

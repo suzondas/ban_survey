@@ -1,10 +1,10 @@
 @extends('welcomeTemplate')
 @section('content')
-    <div class="container">
+    <div class="container" id="pagecontainer">
         @include('components/banner')
 
         {{--Login Area--}}
-        <div class="row justify-content-center pt-5">
+        <div class="row justify-content-center pt-5" style="margin-left:-60px;">
             <div class="card">
                 <div class="card-header" style="text-align:center">
                     তথ্য প্রদান করতে সাইন ইন করুন

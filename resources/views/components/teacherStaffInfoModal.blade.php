@@ -14,13 +14,13 @@
                             <div class="col-md-6 text-white"><label>সাধারণ তথ্য</label></div>
                             <div class="col-md-6 text-right">বর্তমানে কর্মরত কি না ?
                                 <select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].is_inactive">
-                                    <option class="englishTextC1" value="null">কর্মরত</option>
-                                    <option class="englishTextC1" value="R">অবসরপ্রাপ্ত</option>
-                                    <option class="englishTextC1" value="D">মৃত</option>
-                                    <option class="englishTextC1" value="T">বদলি</option>
-                                    <option class="englishTextC1" value="A">বহিঃস্কৃত</option>
-                                    <option class="englishTextC1" value="S">সাময়িক বহিঃস্কৃত</option>
-                                    <option class="englishTextC1" value="G">চাকুরি হতে ইস্তফা নিয়েছেন</option>
+                                    <option class="" value="null">কর্মরত</option>
+                                    <option class="" value="R">অবসরপ্রাপ্ত</option>
+                                    <option class="" value="D">মৃত</option>
+                                    <option class="" value="T">বদলি</option>
+                                    <option class="" value="A">বহিঃস্কৃত</option>
+                                    <option class="" value="S">সাময়িক বহিঃস্কৃত</option>
+                                    <option class="" value="G">চাকুরি হতে ইস্তফা নিয়েছেন</option>
                                 </select>
                             </div>
                         </div>
@@ -153,352 +153,309 @@
                     </div>
                 </div>
 
-                <div class="card mt-2">
+                <tr class="card mt-2">
                     <div class="card-header bg-info font-weight-bold text-white">
                         <label>শিক্ষাগত যোগ্যতা/প্রশিক্ষণ সংক্রান্ত</label>
                     </div>
-                    <div class="card-body">
+                    <td class="card-body">
                         <table class="table table-bordered table-striped">
                             <tr class="">
                                 <td class="text-right">এস.এস.সি. / সমমান</td>
-                                <td><select name="ssc" id="ssc" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="02">2ND
+                                <td><select  v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].ssc" style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
 
                                 <td class="text-right">এইচ এসসি / সমমান</td>
-                                <td><select name="hsc" id="hsc" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].hsc"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
                                 <td class="text-right">ডিপ্লোমা</td>
-                                <td><select name="diploma" id="diploma" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].diploma"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
                             </tr>
                             <tr class="">
                                 <td class="text-right"> প্রফেশনাল ডিপ্লোমা</td>
-                                <td><select name="profDiploma" id="profDiploma">
-                                        <option value=""></option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].prof_diploma" >
+                                        <option value="null">select</option>
                                         <option value="DUMS">D.U.M.S</option>
                                         <option value="DAMS">D.A.M.S</option>
                                         <option value="DHMS">D.H.M.S</option>
                                     </select></td>
                                 <td class="text-right"> প্রফেশনাল ডিগ্রী</td>
-                                <td><select name="profDegree" id="profDegree">
-                                        <option value=""></option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].prof_degree" >
+                                        <option value="null">Select</option>
                                         <option value="MBBS">M.B.B.S</option>
                                         <option value="BUMS">B.U.M.S</option>
                                         <option value="BAMS">B.A.M.S</option>
                                         <option value="BHMS">B.H.M.S</option>
                                     </select></td>
                                 <td class="text-right">বিএসসি ইঞ্জিনিয়ার</td>
-                                <td><select name="bscEng" id="bscEng" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].bsc_eng"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
                             </tr>
                             <tr class="">
                                 <td class="text-right">স্নাতক পাস / ফাযিল</td>
-                                <td><select name="ba" id="ba" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].ba"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
                                 <td class="text-right">স্নাতক সম্মান</td>
-                                <td><select name="hons" id="hons" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].hons" style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
                                 <td class="text-right">স্নাতকোত্তর /এমএস<br>/কামিল
                                 </td>
-                                <td><select name="mst" id="mst" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].mst"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
+                                        <option class="" value="09">D
                                         </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
-                                        </option>
+
                                     </select></td>
                             </tr>
                             <tr class="">
                                 <td class="text-right">বি.এজি.এড.</td>
-                                <td><select name="baged" id="baged" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].baged"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
                                 <td class="text-right">বি.এড.</td>
-                                <td><select name="bed" id="bed" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].bed"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
                                 <td class="text-right">এম.এড.</td>
-                                <td><select name="med" id="med" style="width: 100px;">
-                                        <option value="" selected="selected">নির্দিষ্ট করুন</option>
-                                        <option selected="selected" value="00">None
+                                <td>
+                                    <select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].med"  style="width: 100px;">
+                                        <option class="" value="00">Select
                                         </option>
-                                        <option class="englishTextC1" value="00">None
+                                        <option class="" value="01">1ST
                                         </option>
-                                        <option class="englishTextC1" value="01">1ST
+                                        <option class="" value="02">2ND
                                         </option>
-                                        <option class="englishTextC1" value="02">2ND
+                                        <option class="" value="03">3RD
                                         </option>
-                                        <option class="englishTextC1" value="03">3RD
+                                        <option class="" value="04">A+
                                         </option>
-                                        <option class="englishTextC1" value="04">A+
+                                        <option class="" value="05">A
                                         </option>
-                                        <option class="englishTextC1" value="05">A
+                                        <option class="" value="06">A-
                                         </option>
-                                        <option class="englishTextC1" value="06">A-
+                                        <option class="" value="07">B
                                         </option>
-                                        <option class="englishTextC1" value="07">B
+                                        <option class="" value="08">C
                                         </option>
-                                        <option class="englishTextC1" value="08">C
-                                        </option>
-                                        <option class="englishTextC1" value="09">D
-                                        </option>
-                                        <option class="englishTextC1" value="10">EIGHT
+                                        <option class="" value="09">D
                                         </option>
                                     </select></td>
 
                             </tr>
                             <tr class="banglaText">
                                 <td class="text-right">দাওরায়ে হাদিস</td>
-                                <td><select name="dauraHadish" id="dauraHadish">
-                                        <option value="2" selected="selected">No</option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].daura_hadish" >
                                         <option value="1">Yes</option>
+                                        <option value="2">No</option>
                                     </select></td>
                                 <td class="text-right">এম ফিল</td>
-                                <td><select name="mphil" id="mphil" style="width: 100px;">
-                                        <option value="2" selected="selected">No</option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].mphil"  style="width: 100px;">
                                         <option value="1">Yes</option>
+                                        <option value="2">No</option>
                                     </select></td>
                                 <td class="text-right">পিএইচডি</td>
-                                <td><select name="phd" id="phd" style="width: 100px;">
-                                        <option value="2" selected="selected">No</option>
+                                <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].phd"  style="width: 100px;">
                                         <option value="1">Yes</option>
+                                        <option value="2">No</option>
                                     </select></td>
                             </tr>
                             <tr class="banglaText">
-                                <td class="text-right">অন্যান্য শিক্ষাগত যোগ্যতা</td>
+                                <td class="text-right">অন্যান্য শিক্ষাগত যোগ্যতা<br>ইংরেজীতে লিখুন(সর্বোচ্চ ৩০০ ক্যারেক্টার)</td>
                                 <td colspan="2">
-                                    <textarea style="width: 100%;height: 110px;" id="otherEdu" name="otherEdu" type="text"></textarea>
+                                    <textarea style="width: 100%;height: 110px;" v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].other_edu"></textarea>
                                 </td>
                                 <td class="text-right">প্রশিক্ষণের তথ্য:</td>
                                 <td colspan="2">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <select class="w-100 form-control"><option></option></select>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <button class=" btn btn-danger m-0 p-1">ডিলিট</button>
-                                        </div>
-                                    </div>
+                                    <table class="table table-striped w-50">
+                                        <tr v-for="(item,index)  in trainingArray">
+                                            <td class="col-md-8">
+                                                <select v-model="trainingArray[index]">
+                                                    <option value="null">Select</option>
+                                                    <option v-for="training in data.trainings" v-bind:value="training.training_id">@{{ training.training_name}}</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button class=" btn btn-danger" @click="trainingArray.splice(index,1)">ডিলিট</button>
+                                            </td>
+                                        </tr>
+                                    </table>
                                     <br>
-                                    <button class="btn btn-success">প্রশিক্ষণ যোগ করুন</button>
+                                    <button class="btn btn-success" @click="trainingArray.push(1)">প্রশিক্ষণ যোগ করুন</button>
                                 </td>
                             </tr>
                         </table>
@@ -506,8 +463,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary"  data-dismiss="modal" @click="selectedTeacherIdx=null">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" @click="selectedTeacherIdx=null">Close</button>
             </div>
         </div>
     </div>
