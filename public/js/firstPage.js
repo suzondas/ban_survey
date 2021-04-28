@@ -50,6 +50,7 @@ const app = new Vue({
             dataToSend.committees=this.data.committees;
             dataToSend.institutes_mpo_status=this.data.institutes_mpo_status;
            console.log(dataToSend);
+           // return;
             axios.post('http://127.0.0.1:8000/firstPage/submitData/', dataToSend)
                 .then(
                     function (response) {
@@ -62,6 +63,9 @@ const app = new Vue({
                     });
 
 
+        },
+        customFormatter:function (date) {
+            return '09/02/2010';
         }
     }
 });

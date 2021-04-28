@@ -85,7 +85,7 @@
     if (!isSupported) {
         //render unsupported message
         document.write("<h1 style='color:red;'>The website is not supported in Your Browser. Please use other browsers! " +
-            "We highly recommend you to use Latest Chrome Browser</h1>");
+            "We highly recommend you to use latest Chrome Browser</h1>");
         document.getElementById("pagecontainer").style.display = "none";
     }
 </script>

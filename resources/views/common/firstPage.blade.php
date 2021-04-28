@@ -516,8 +516,8 @@
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <datepicker type="text"
-                                                            v-model="data.committees[0].approve_date"></datepicker>
+                                                <input type="date"
+                                                            v-model="data.committees[0].approve_date"/>
                                             </td>
                                             <td>
                                                 <datepicker type="text"

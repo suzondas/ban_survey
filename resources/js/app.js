@@ -7,11 +7,13 @@
 require('./bootstrap');
 import datepicker from 'vuejs-datepicker';
 import VueToast from 'vue-toast-notification';
+import VueMask from 'v-mask'
 import 'vue-toast-notification/dist/theme-sugar.css';
 
 window.Vue = require('vue').default;
 Vue.component('datepicker', datepicker);
 Vue.use(VueToast);
+Vue.use(VueMask);
 
 
 /**

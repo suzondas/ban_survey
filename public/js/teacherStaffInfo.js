@@ -59,7 +59,7 @@ const app = new Vue({
                     axios.get('http://127.0.0.1:8000/TeacherStaff/removeTeacher/' + teacher_id)
                         .then(function (response) {
                             self.data.teacherStaffInfoGeneral.splice(index,1);
-                            let toastInstance = Vue.$toast.open('Teacher has be removed!');
+                            let toastInstance = Vue.$toast.open('Teacher has been removed!');
                         })
                         .catch(function (error) {
                             console.log(error)
