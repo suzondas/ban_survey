@@ -497,7 +497,7 @@
                             <tr>
                                 <td>
                                     <label>১.৪.১ কমিটির ধরন:</label>
-                                    <select class="custom-select" v-model="data.committees[0].type" style="width:120px">
+                                    <select class="custom-select" v-model="data.committees.type" style="width:120px">
                                         <option value="">Select</option>
                                         <option value="1">ম্যানেজিং কমিটি</option>
                                         <option value="2">গর্ভনিং বডি</option>
@@ -517,11 +517,11 @@
                                         <tr>
                                             <td>
                                                 <input type="date"
-                                                            v-model="data.committees[0].approve_date"/>
+                                                            v-model="data.committees.approve_date"/>
                                             </td>
                                             <td>
                                                 <datepicker type="text"
-                                                            v-model="data.committees[0].expire_date"></datepicker>
+                                                            v-model="data.committees.expire_date"></datepicker>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -532,18 +532,18 @@
                                         <div class="col-md-4">
                                             <label for="total"> মোট:</label>
                                             <input type="number" class="form-control"
-                                                   v-model="data.committees[0].total_member">
+                                                   v-model="data.committees.total_member">
                                         </div>
                                         <div class="col-md-4">
                                             <label for="female"> মহিলা: </label>
                                             <input type="number" class="form-control"
-                                                   v-model="data.committees[0].total_female">
+                                                   v-model="data.committees.total_female">
                                         </div>
                                     </div>
                                 </td>
                                 <td><label>১.৪.৪ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
                                     <datepicker type="text"
-                                                v-model="data.committees[0].last_commitee_expire_date"></datepicker>
+                                                v-model="data.committees.last_commitee_expire_date"></datepicker>
                                 </td>
                             </tr>
                             <tr>
@@ -553,7 +553,7 @@
                                                 হয়েছে? </label>
                                         </div>
                                         <div><input type="number" class="w-25"
-                                                    v-model="data.committees[0].last_yr_meeting">
+                                                    v-model="data.committees.last_yr_meeting">
                                             টি
                                         </div>
                                     </div>
@@ -565,7 +565,7 @@
                                             <label class="" for="pti_meeting"> ১.৪.৬ ২০২১ সালে পিটিএ এর কতগুলো সভা
                                                 হয়েছে? </label></div>
                                         <div><input type="number" class="w-25"
-                                                    v-model="data.committees[0].last_yr_pta_meeting">
+                                                    v-model="data.committees.last_yr_pta_meeting">
                                             টি
                                         </div>
                                     </div>
@@ -580,73 +580,73 @@
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_teacher_training">শিক্ষক প্রশিক্ষণ
+                                                       v-model="data.committees.mc_teacher_training">শিক্ষক প্রশিক্ষণ
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_teacher_std_presents">শিক্ষক ও
+                                                       v-model="data.committees.mc_teacher_std_presents">শিক্ষক ও
                                                 শিক্ষার্থীর উপস্থিতি
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_awarness_program">সচেতনতা মূলক
+                                                       v-model="data.committees.mc_awarness_program">সচেতনতা মূলক
                                                 কার্যক্রম
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_eve_teasing">ইভটিজিং
+                                                       v-model="data.committees.mc_eve_teasing">ইভটিজিং
                                             </td>
                                         </tr>
                                         <tr>
                                             <td><input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_bulling_related">নিগ্রহ/পীড়ন
+                                                       v-model="data.committees.mc_bulling_related">নিগ্রহ/পীড়ন
                                                 (বুলিং)
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_early_marriage">বাল্যবিবাহ
+                                                       v-model="data.committees.mc_early_marriage">বাল্যবিবাহ
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_poor_std">পিছিয়ে পড়া
+                                                       v-model="data.committees.mc_poor_std">পিছিয়ে পড়া
                                                 শিক্ষার্থী
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_disabled_std">বিশেষ চাহিদা সম্পন্ন
+                                                       v-model="data.committees.mc_disabled_std">বিশেষ চাহিদা সম্পন্ন
                                                 শিক্ষার্থী
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_std_transport">শিক্ষার্থীদের
+                                                       v-model="data.committees.mc_std_transport">শিক্ষার্থীদের
                                                 যাতায়াতে
                                                 নিরাপত্তা
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_anti_drug">মাদক বিরোধী
+                                                       v-model="data.committees.mc_anti_drug">মাদক বিরোধী
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_dropout">ঝড়ে
+                                                       v-model="data.committees.mc_dropout">ঝড়ে
                                                 পড়া রোধ
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_saferoad">নিরাপদ সড়ক
+                                                       v-model="data.committees.mc_saferoad">নিরাপদ সড়ক
                                             </td>
                                         </tr>
                                         <tr>
                                             <td colspan="2"><input class="mr-2" type="checkbox"
-                                                                   v-model="data.committees[0].mc_other">অন্যান্য
+                                                                   v-model="data.committees.mc_other">অন্যান্য
                                             </td>
                                         </tr>
                                     </table>
@@ -658,55 +658,55 @@
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_std_present">শিক্ষার্থীর
+                                                       v-model="data.committees.pta_std_present">শিক্ষার্থীর
                                                 উপস্থিতি
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].ptaawarnessprogram">সচেতনতামূলক
+                                                       v-model="data.committees.ptaawarnessprogram">সচেতনতামূলক
                                                 কার্যক্রম
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_bulling_related">নিগ্রহ/পীড়ন
+                                                       v-model="data.committees.pta_bulling_related">নিগ্রহ/পীড়ন
                                                 (বুলিং)
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_early_marriage">বাল্যবিবাহ
+                                                       v-model="data.committees.pta_early_marriage">বাল্যবিবাহ
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_eve_teasing">ইভটিজিং
+                                                       v-model="data.committees.pta_eve_teasing">ইভটিজিং
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_militant">জঙ্গীবাদ দমন
+                                                       v-model="data.committees.pta_militant">জঙ্গীবাদ দমন
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_std_transport">শিক্ষার্থীদের
+                                                       v-model="data.committees.pta_std_transport">শিক্ষার্থীদের
                                                 যাতায়াতে নিরাপত্তা
                                             </td>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_anti_drug">মাদক বিরোধী
+                                                       v-model="data.committees.pta_anti_drug">মাদক বিরোধী
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_acid_throw">এসিড নিক্ষেপ
+                                                       v-model="data.committees.pta_acid_throw">এসিড নিক্ষেপ
                                             </td>
                                             <td colspan="2">
                                                 <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_other">অন্যান্য
+                                                       v-model="data.committees.pta_other">অন্যান্য
                                             </td>
                                         </tr>
                                     </table>
