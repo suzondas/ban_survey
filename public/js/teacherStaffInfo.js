@@ -68,6 +68,20 @@ const app = new Vue({
                 }
             },
             saveTeacher: function () {
+                var self = this;
+                self.data.teacherStaffInfoGeneral[self.selectedTeacherIdx].training_info = '['+self.trainingArray.toString()+']';
+                let tData = self.data.teacherStaffInfoGeneral[self.selectedTeacherIdx];
+                axios.post('http://127.0.0.1:8000/TeacherStaff/saveTeacher', tData)
+                    .then(
+                        function (response) {
+                            console.log(response);
+                            let toastInstance = Vue.$toast.open('Teacher Data has been Saved!');
+                        },
+                        function (response) {
+                            console.log(response);
+                            alert("Error Try again");
+                        });
+
             },
             saveAll: function () {
                 var dataToSend = {};
