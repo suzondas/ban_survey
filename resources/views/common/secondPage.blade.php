@@ -238,7 +238,7 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <input type="button" class="btn-warning" value="Add row" @click="addBuildingDetails()">
+                            {{--<input type="button" class="btn-warning" value="Add row" @click="addBuildingDetails()">--}}
                         </div>
                     </div>
                     <label class="font-weight-bold">১.৬.৮ ভবন গৃহের মালিকানা, ধরন ও অবস্থা অনুযায়ী সংখ্যাঃ</label>
@@ -439,32 +439,32 @@
                             <tr>
                                 <td>
                                     <label class="label-number" for="">মসজিদ</label>
-                                    <input type="checkbox" class="form-control"  v-model="data.building_use[0].mosjid"
+                                    <input type="checkbox" true-value="1" false-value="0" class="form-control"  v-model="data.building_use[0].mosjid"
                                            style="width: 20px">
                                 </td>
                                 <td>
                                     <label class="label-number" for="">নামাজ ঘর</label>
-                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].prayer_room"
+                                    <input type="checkbox" true-value="1" false-value="0" class="form-control" v-model="data.building_use[0].prayer_room"
                                            style="width: 20px">
                                 </td>
                                 <td>
                                     <label class="label-number" for="">মন্দির</label>
-                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].mondir"
+                                    <input type="checkbox" true-value="1" false-value="0" class="form-control" v-model="data.building_use[0].mondir"
                                            style="width: 20px">
                                 </td>
                                 <td>
                                     <label class="label-number" for="">গীর্জা</label>
-                                    <input type="checkbox" class="form-control"  v-model="data.building_use[0].girja"
+                                    <input type="checkbox" true-value="1" false-value="0" class="form-control"  v-model="data.building_use[0].girja"
                                            style="width: 20px">
                                 </td>
                                 <td>
                                     <label class="label-number" for="">প্যাগোডা</label>
-                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].pagoda"
+                                    <input type="checkbox" true-value="1" false-value="0" class="form-control" v-model="data.building_use[0].pagoda"
                                            style="width: 20px">
                                 </td>
                                 <td>
                                     <label class="label-number" for="">অন্যান্য</label>
-                                    <input type="checkbox" class="form-control" v-model="data.building_use[0].other_religious_place"
+                                    <input type="checkbox" true-value="1" false-value="0" class="form-control" v-model="data.building_use[0].other_religious_place"
                                            style="width: 20px">
                                 </td>
                             </tr>
