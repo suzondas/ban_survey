@@ -24,8 +24,8 @@
                             <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="" v-model="data.institutes.latitude" readonly></td>
-                            <td><input type="text" class=""  v-model="data.institutes.longitude" readonly></td>
+                            <td><input type="text" class="" v-model="data.institutes.latitude"></td>
+                            <td><input type="text" class=""  v-model="data.institutes.longitude"></td>
                         </tr>
                     </table>
                 </div>
