@@ -3,15 +3,13 @@
     <div class="container" id="teacherStaffInfo">
         <div v-if="!dataLoaded">
             <div class="d-flex justify-content-center">
-                <h3 class="p-2">Loading...</h3>
-                <div class="spinner-border" role="status">
-                </div>
+                <h3>Loading <img src="{{ asset('img/loader2.gif') }}" style="height: 100px;"/></h3>
             </div>
         </div>
 
-        <div v-if="dataLoaded" class="shadow p-3 mb-5 bg-white rounded p-2">
+        <div v-if="dataLoaded" class="shadow p-3 mb-5 bg-white rounded p-2 table-responsive">
             <h3 style="text-align:center">শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
-            <table id="example" class="table table-bordered" style="width:100%">
+            <table class="table table-bordered">
                 <thead>
                 <tr class="custom-table-header">
                     <th>ক্রমিক</th>
@@ -29,16 +27,14 @@
                     <td>@{{ index+1 }}</td>
                     <td><input  style="width:130px;" type="text" v-model="item.teach_name"/></td>
                     <td><select v-model="item.desig_id" style="width:130px;">
-                            <option value="000">Select</option>
                             <option v-for="designation in data.designation" v-bind:value="designation.designation_id">@{{ designation.designation_name }}</option>
                         </select>
                     </td>
                     <td><select v-model="item.subject_id" style="width:130px;">
-                            <option value="000">Select</option>
                             <option v-for="subject in data.subjects" v-bind:value="subject.subject_id">@{{ subject.subject_name_eng }}</option>
                         </select>
                     </td>
-                    <td><datepicker v-model="item.dob"></datepicker>
+                    <td><input type="date"  v-model="item.dob">
                     </td>
                     <td><input type="text" v-model="item.nid" style="width:100px;"/></td>
                     <td><input type="text" v-model="item.mobile_number" style="width:100px;"/></td>

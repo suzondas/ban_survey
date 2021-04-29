@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0 pb-0 sticky-top">
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary p-0 pb-0 sticky-top">
     <ul class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link {{ (request()->is('common/firstPage')) ? 'active' : '' }}"
