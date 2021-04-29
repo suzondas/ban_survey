@@ -1,6 +1,6 @@
 @extends('components.template')
 @section('content')
-    <div class="container" id="firstPage">
+    <div class="container" id="madFirstPage">
         <div v-if="!dataLoaded">
             <div class="d-flex justify-content-center">
                 <h3 class="p-2">Loading...</h3>
@@ -171,96 +171,59 @@
                     <table class="table table-striped table-bordered">
                         <tr>
                             <td>
-                                <label class="" for="">১.২.১ প্রতিষ্ঠানের ধরনঃ</label>
-                                <select class="" v-model="data.institutes.institute_type_id">
+                                <label class="" for="education_level">১.২.১ প্রতিষ্ঠানের স্তর :</label>
+                                <select class="" v-model="data.institutes.education_level_id" disabled>
                                     <option value="">Select</option>
-                                    <option value="1">১.স্কুল</option>
-                                    <option value="3">২.কলেজ</option>
-                                    <option value="4">৩. স্কুল এন্ড কলেজ</option>
+                                    <option value="21">দাখিল</option>
+                                    <option value="22">আলিম</option>
+                                    <option value="23">ফাজিল</option>
+                                    <option value="24">কামিল</option>
                                 </select>
                             </td>
                             <td>
-                                <label class="" for="education_level">১.২.২ প্রতিষ্ঠানের স্তর :</label>
-                                <select class="" v-model="data.institutes.education_level_id" disabled>
-                                    <option value="">Select</option>
-                                    <option value="12">নিম্ন মাধ্যমিক</option>
-                                    <option value="13">মাধ্যমিক</option>
-                                    <option value="11">৮ম শ্রেণি পর্যন্ত সরকারি প্রাথমিক বিদ্যালয়</option>
-                                    <option value="31">উচ্চ মাধ্যমিক</option>
-                                    <option value="32">স্নাতক (পাস)</option>
-                                    <option value="33">স্নাতক (সম্মান)</option>
-                                    <option value="34">স্নাতকোত্তর</option>
-                                </select>
-                            </td>
-                            <td v-if="data.institutes.institute_type_id !=3">
-                                <label class="" for="education_group">১.২.৩ গ্রুপ স্কুল শাখা (একাধিক হতে
+                                <label class="" for="education_group">১.২.২ গ্রুপ (একাধিক হতে
                                     পারে):</label>
                                 <div class="row">
-                                    <div class="col">মানবিক <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.arts_group"/></div>
-                                    <div class="col">বিজ্ঞান <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.science_group"/></div>
-                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.commerce_group"/></div>
-                                </div>
-                            </td>
-                            <td v-if="data.institutes.institute_type_id !=1">
-                                <label class="" for="education_group_col">১.২.৪ গ্রুপ কলেজ শাখা:(একাধিক হতে
-                                    পারে)</label>
-                                <div class="row">
-                                    <div class="col">মানবিক <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.arts_group_col"/></div>
-                                    <div class="col">বিজ্ঞান <input type="checkbox" true-value="2" false-value="0" v-model="data.institutes.science_group_col"/>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" true-value="3" false-value="0"
-                                                                           v-model="data.institutes.commerce_group_col"/></div>
-                                    <div class="col">সামাজিক বিজ্ঞান <input type="checkbox" true-value="4" false-value="0"
-                                                                            v-model="data.institutes.social_science_group"/></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">ইসলামী শিক্ষা <input type="checkbox" true-value="5" false-value="0"
-                                                                          v-model="data.institutes.islamic_stadies_group"/></div>
-                                    <div class="col">গার্হস্থ্য বিজ্ঞান <input type="checkbox" true-value="6" false-value="0"
-                                                                               v-model="data.institutes.home_economic_group"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">সংগীত<input type="checkbox" true-value="7" false-value="0" v-model="data.institutes.music_group"/></div>
+                                    <div class="col">সাধারণ <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.arts_group"/></div>
+                                    <div class="col">বিজ্ঞান <input type="checkbox" true-value="2" false-value="0" v-model="data.institutes.science_group"/></div>
+                                    <div class="col">মোজাব্বিদ <input type="checkbox" true-value="3" false-value="0" v-model="data.institutes.mojjabid_group"/></div>
+                                    <div class="col">হিফজুল কোরআন <input type="checkbox" true-value="4" false-value="0" v-model="data.institutes.hifjul_group"/></div>
+                                    <div class="col">মোজাব্বিদ মাহির<input type="checkbox" true-value="6" false-value="0" v-model="data.institutes.mojjabid_mahir_group"/></div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label class="" for="education_group_col">১.২.৫ সংযুক্ত কারিগরি শাখার ধরন (প্রযোজ্য
+                                <label class="" for="education_group_col">১.২.৩ সংযুক্ত কারিগরি শাখার ধরন (প্রযোজ্য
                                     ক্ষেত্রে):</label>
                                 <div class="row">
-                                    <div class="col">এসএসসি (ভোক) <input type="checkbox" true-value="1" false-value="0"
+                                    <div class="col">এস.এস.সি/দাখিল (ভোক) <input type="checkbox" true-value="1" false-value="0"
                                                                          v-model="data.institutes.technical_branch_type"></div>
-                                    <div class="col">এইচএসসি(ভোক) <input type="checkbox" true-value="1" false-value="0"
-                                                                         v-model="data.institutes.technical_branch_type_hscvoc">
+                                    <div class="col">এইচ.এস.সি/আলিম (ভোক) <input type="checkbox" true-value="1" false-value="0"
+                                                                         v-model="data.institutes.technical_branch_type_alim_voc">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">এইচএসসি (বিএম) <input type="checkbox" true-value="1" false-value="0"
+                                    <div class="col">এইচ.এস.সি/আলিম (বিএম) <input type="checkbox" true-value="1" false-value="0"
                                                                            v-model="data.institutes.technical_branch_type_bm">
                                     </div>
-                                    <div class="col">ডিপ্লোমা ইন ফিশারিজ <input type="checkbox" true-value="1" false-value="0"
-                                                                                v-model="data.institutes.technical_branch_type_fish">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">ডিপ্লোমা ইন এগ্রিকালচার <input type="checkbox" true-value="1" false-value="0"
+                                    <div class="col">কৃষি ডিপ্লোমা<input type="checkbox" true-value="1" false-value="0"
                                                                                     v-model="data.institutes.technical_branch_type_agro">
                                     </div>
                                 </div>
-                            </td>
-                            <td>
-                                <label class="label-date" for="establish_date">১.২.৬ প্রতিষ্ঠার তারিখ :</label> &nbsp
-                                <div class="input-group date">
-                                    <input type="date" v-model="data.institutes.establish_date"/>
+                                <div class="row">
+                                    <div class="col">অন্যান্য ডিপ্লোমা ও সমমান <input type="checkbox" true-value="1" false-value="0"
+                                                                                v-model="data.institutes.technical_branch_type_fish">
+                                    </div>
                                 </div>
                             </td>
                             <td>
-                                <label>১.২.৭ প্রতিষ্ঠানটিতে ইংরেজি ভার্সনে পাঠদান হয় কি?</label>
+                                <label class="label-date" for="establish_date">১.২.৪ প্রতিষ্ঠার তারিখ :</label> &nbsp
+                                <div class="input-group date">
+                                    <input type="date" v-model="data.institutes.establish_date"/>
+                                </div>
+                                <br>
+                                <label>১.২.৫ প্রতিষ্ঠানটিতে ইংরেজি ভার্সনে পাঠদান হয় কি?</label>
                                 <select class="" name="english_ver_yn" v-model="data.institutes.english_ver_yn">
                                     <option value="">Select</option>
                                     <option value="1">হ্যাঁ-১</option>
@@ -467,23 +430,23 @@
                         </div>
                         <div class="row">
                             <div class="col-md-8">
-                            <label class="font-weight-bold">১.৩.১৭ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
-                            <table class="table table-bordered" style="text-align:center" v-if="data.institutes_mpo_status.length!=0">
-                                <tr class="custom-table-header">
-                                    <td>এমপিওভুক্তির স্তর</td>
-                                    <td>এমপিও ভুক্তির তারিখ</td>
-                                </tr>
-                                <tbody>
-                                <tr v-for="mpo in data.institutes_mpo_status">
-                                    <td>@{{levelMpo(mpo.education_level_id) }}</td>
-                                    <td>
-                                        <input type="date" v-model="mpo.mpo_date"/>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <p v-else="data.institutes_mpo_status.length==0">প্রযোজ্য নয়</p>
-                        </div>
+                                <label class="font-weight-bold">১.৩.১৭ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
+                                <table class="table table-bordered" style="text-align:center" v-if="data.institutes_mpo_status.length!=0">
+                                    <tr class="custom-table-header">
+                                        <td>এমপিওভুক্তির স্তর</td>
+                                        <td>এমপিও ভুক্তির তারিখ</td>
+                                    </tr>
+                                    <tbody>
+                                    <tr v-for="mpo in data.institutes_mpo_status">
+                                        <td>@{{levelMpo(mpo.education_level_id) }}</td>
+                                        <td>
+                                            <input type="date" v-model="mpo.mpo_date"/>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p v-else="data.institutes_mpo_status.length==0">প্রযোজ্য নয়</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -728,5 +691,5 @@
 @endsection
 {{--Page wise js--}}
 @section('javascript')
-    <script src="{{ asset('js/firstPage.js') }}" type="module" defer></script>
+    <script src="{{ asset('js/madFirstPage.js') }}" type="module" defer></script>
 @stop

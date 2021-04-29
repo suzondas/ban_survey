@@ -1,9 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0 pb-0 sticky-top">
     <ul class="navbar-nav">
+       <?php if(in_array(Auth::user()->institute_type, array(1,3,4))){?>
         <li class="nav-item">
             <a class="nav-link {{ (request()->is('common/firstPage')) ? 'active' : '' }}"
                href="{{ url('common/firstPage') }}"> মৌলিক তথ্য-১</a>
         </li>
+        <?php } ?>
+
+           <?php if (Auth::user()->institute_type == 2){?>
+           <li class="nav-item">
+               <a class="nav-link {{ (request()->is('common/madFirstPage')) ? 'active' : '' }}"
+                  href="{{ url('common/madFirstPage') }}"> মৌলিক তথ্য-১</a>
+           </li>
+
+           <?php } ?>
+
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/secondPage') ? 'active' : '' }}"
                href="{{ url('common/secondPage') }}">মৌলিক তথ্য-২</a>
