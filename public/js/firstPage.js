@@ -63,9 +63,6 @@ const app = new Vue({
                     });
 
 
-        },
-        customFormatter:function (date) {
-            return '09/02/2010';
         }
     }
 });
