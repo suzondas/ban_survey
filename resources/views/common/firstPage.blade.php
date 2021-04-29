@@ -24,8 +24,8 @@
                             <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="" name="latitude" v-model="data.institutes.latitude" readonly></td>
-                            <td><input type="text" class="" name="longitude" v-model="data.institutes.longitude" readonly></td>
+                            <td><input type="text" class="" v-model="data.institutes.latitude"></td>
+                            <td><input type="text" class=""  v-model="data.institutes.longitude"></td>
                         </tr>
                     </table>
                 </div>
@@ -47,14 +47,14 @@
                             <td style="width:50%"><label class="" for="bangla_name"> বাংলায় (অনুমতি/স্বীকৃতিপত্র
                                     অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):
                                 </label>
-                                <input type="text" class="form-control" name="institute_name_bangla"
+                                <input type="text" class="form-control"
                                        v-model="data.institutes.institute_name_bangla">
                             </td>
                             <td>
                                 <label class="" for="english_name" style="text-align: right">ইংরেজিতে (ব্লক
                                     লেটার): </label>
                                 &nbsp
-                                <input type="text" class="form-control" name="institute_name_new"
+                                <input type="text" class="form-control"
                                        v-model="data.institutes.institute_name_new" disabled>
                             </td>
                         </tr>
@@ -66,15 +66,15 @@
                         <tr>
                             <td>
                                 <label class="" for="holding_no">হোল্ডিং নম্বর/রোড:</label> &nbsp
-                                <input type="text" class="form-control" name="location" v-model="data.institutes.location">
+                                <input type="text" class="form-control" v-model="data.institutes.location">
                             </td>
                             <td>
                                 <label class="" for="post_office">ডাকঘর:</label> &nbsp
-                                <input type="text" class="form-control" name="post_office" v-model="data.institutes.post_office">
+                                <input type="text" class="form-control" v-model="data.institutes.post_office">
                             </td>
                             <td>
                                 <label class="" for="post_code">পোস্ট কোড:</label> &nbsp
-                                <input type="number" class="form-control" name="post_code" v-model="data.institutes.post_code">
+                                <input type="number" class="form-control" v-model="data.institutes.post_code">
                             </td>
                             <td>
                                 <label class="" for="division">বিভাগ:</label>
@@ -121,11 +121,11 @@
                             </td>
                             <td>
                                 <label class="" for="mobile">মোবাইল নম্বর:</label> &nbsp
-                                <input type="number" class="form-control" name="mobphone" v-model="data.institutes.mobphone">
+                                <input type="number" class="form-control" v-model="data.institutes.mobphone">
                             </td>
                             <td>
                                 <label class="" for="alt_mobile">বিকল্প মোবাইর নম্বর:</label> &nbsp
-                                <input type="number" class="form-control" name="mobphone_alternate"
+                                <input type="number" class="form-control"
                                        v-model="data.institutes.mobphone_alternate">
                             </td>
                         </tr>
@@ -133,24 +133,24 @@
 
                             <td>
                                 <label class="" for="phone">ফোন:</label> &nbsp
-                                <input type="number" class="form-control" name="telephone" v-model="data.institutes.telephone">
+                                <input type="number" class="form-control" v-model="data.institutes.telephone">
                             </td>
                             <td>
                                 <label class="" for="email">ই-মেইল:</label> &nbsp
-                                <input type="text" class="form-control" name="e_mail" v-model="data.institutes.e_mail">
+                                <input type="text" class="form-control" v-model="data.institutes.e_mail">
                             </td>
                             <td>
                                 <label class="" for="website">ওয়েবসাইট:</label> &nbsp
-                                <input type="text" class="form-control" name="web_site" v-model="data.institutes.web_site">
+                                <input type="text" class="form-control" v-model="data.institutes.web_site">
                             </td>
                             <td>
                                 <label class="" for="constituency_area">নির্বাচনী এলাকা (জাতীয় নম্বর):</label>
-                                <input type="text" class="form-control" name="ec_national_code"
+                                <input type="text" class="form-control"
                                        v-model="data.institutes.ec_national_code">
                             </td>
                             <td>
                                 <label class="" for="constituency_dist">নির্বাচনী এলাকা (জেলা নম্বর):</label>
-                                <input type="text" class="form-control" name="ec_district_code"
+                                <input type="text" class="form-control"
                                        v-model="data.institutes.ec_district_code">
 
                             </td>
@@ -172,7 +172,7 @@
                         <tr>
                             <td>
                                 <label class="" for="">১.২.১ প্রতিষ্ঠানের ধরনঃ</label>
-                                <select class="" name="institute_type_id" v-model="data.institutes.institute_type_id">
+                                <select class="" v-model="data.institutes.institute_type_id">
                                     <option value="">Select</option>
                                     <option value="1">১.স্কুল</option>
                                     <option value="3">২.কলেজ</option>
@@ -181,7 +181,7 @@
                             </td>
                             <td>
                                 <label class="" for="education_level">১.২.২ প্রতিষ্ঠানের স্তর :</label>
-                                <select class="" name="education_level" v-model="data.institutes.education_level_id" disabled>
+                                <select class="" v-model="data.institutes.education_level_id" disabled>
                                     <option value="">Select</option>
                                     <option value="12">নিম্ন মাধ্যমিক</option>
                                     <option value="13">মাধ্যমিক</option>
@@ -196,35 +196,35 @@
                                 <label class="" for="education_group">১.২.৩ গ্রুপ স্কুল শাখা (একাধিক হতে
                                     পারে):</label>
                                 <div class="row">
-                                    <div class="col">মানবিক <input type="checkbox" v-model="data.institutes.arts_group"/></div>
-                                    <div class="col">বিজ্ঞান <input type="checkbox" v-model="data.institutes.science_group"/></div>
-                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" v-model="data.institutes.commerce_group"/></div>
+                                    <div class="col">মানবিক <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.arts_group"/></div>
+                                    <div class="col">বিজ্ঞান <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.science_group"/></div>
+                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.commerce_group"/></div>
                                 </div>
                             </td>
                             <td v-if="data.institutes.institute_type_id !=1">
                                 <label class="" for="education_group_col">১.২.৪ গ্রুপ কলেজ শাখা:(একাধিক হতে
                                     পারে)</label>
                                 <div class="row">
-                                    <div class="col">মানবিক <input type="checkbox" v-model="data.institutes.arts_group_col"/></div>
-                                    <div class="col">বিজ্ঞান <input type="checkbox" v-model="data.institutes.science_group_col"/>
+                                    <div class="col">মানবিক <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.arts_group_col"/></div>
+                                    <div class="col">বিজ্ঞান <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.science_group_col"/>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox"
+                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" true-value="1" false-value="0"
                                                                            v-model="data.institutes.commerce_group_col"/></div>
-                                    <div class="col">সামাজিক বিজ্ঞান <input type="checkbox"
+                                    <div class="col">সামাজিক বিজ্ঞান <input type="checkbox" true-value="1" false-value="0"
                                                                             v-model="data.institutes.social_science_group"/></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">ইসলামী শিক্ষা <input type="checkbox"
+                                    <div class="col">ইসলামী শিক্ষা <input type="checkbox" true-value="1" false-value="0"
                                                                           v-model="data.institutes.islamic_stadies_group"/></div>
-                                    <div class="col">গার্হস্থ্য বিজ্ঞান <input type="checkbox"
+                                    <div class="col">গার্হস্থ্য বিজ্ঞান <input type="checkbox" true-value="1" false-value="0"
                                                                                v-model="data.institutes.home_economic_group"/>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">সংগীত<input type="checkbox" v-model="data.institutes.music_group"/></div>
+                                    <div class="col">সংগীত<input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.music_group"/></div>
                                 </div>
                             </td>
                         </tr>
@@ -233,22 +233,22 @@
                                 <label class="" for="education_group_col">১.২.৫ সংযুক্ত কারিগরি শাখার ধরন (প্রযোজ্য
                                     ক্ষেত্রে):</label>
                                 <div class="row">
-                                    <div class="col">এসএসসি (ভোক) <input type="checkbox"
+                                    <div class="col">এসএসসি (ভোক) <input type="checkbox" true-value="1" false-value="0"
                                                                          v-model="data.institutes.technical_branch_type"></div>
-                                    <div class="col">এইচএসসি(ভোক) <input type="checkbox"
+                                    <div class="col">এইচএসসি(ভোক) <input type="checkbox" true-value="1" false-value="0"
                                                                          v-model="data.institutes.technical_branch_type_hscvoc">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">এইচএসসি (বিএম) <input type="checkbox"
+                                    <div class="col">এইচএসসি (বিএম) <input type="checkbox" true-value="1" false-value="0"
                                                                            v-model="data.institutes.technical_branch_type_bm">
                                     </div>
-                                    <div class="col">ডিপ্লোমা ইন ফিশারিজ <input type="checkbox"
+                                    <div class="col">ডিপ্লোমা ইন ফিশারিজ <input type="checkbox" true-value="1" false-value="0"
                                                                                 v-model="data.institutes.technical_branch_type_fish">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">ডিপ্লোমা ইন এগ্রিকালচার <input type="checkbox"
+                                    <div class="col">ডিপ্লোমা ইন এগ্রিকালচার <input type="checkbox" true-value="1" false-value="0"
                                                                                     v-model="data.institutes.technical_branch_type_agro">
                                     </div>
                                 </div>
@@ -256,7 +256,7 @@
                             <td>
                                 <label class="label-date" for="establish_date">১.২.৬ প্রতিষ্ঠার তারিখ :</label> &nbsp
                                 <div class="input-group date">
-                                    <datepicker v-model="data.institutes.establish_date"></datepicker>
+                                    <input type="date" v-model="data.institutes.establish_date"/>
                                 </div>
                             </td>
                             <td>
@@ -282,7 +282,7 @@
                             <tr>
                                 <td>
                                     <label class="" for="management">১.৩.১ ব্যবস্থাপনা </label>
-                                    <select class="" name="management" v-model="data.institutes.management">
+                                    <select class="" v-model="data.institutes.management">
                                         <option value="">Select</option>
                                         <option value="1">সরকারি</option>
                                         <option value="2">বেসরকারি</option>
@@ -295,11 +295,11 @@
                                 <td>
                                     <label class="" for="nationalization_date">১.৩.২ সরকারি হলে জাতীয়করণের তারিখ
                                         :</label>
-                                    <datepicker v-model="data.institutes.nationalization_date"></datepicker>
+                                    <input type="date" v-model="data.institutes.nationalization_date"/>
                                 </td>
                                 <td>
                                     <label>১.৩.৩ প্রতিষ্ঠানে শিক্ষার্থীর ধরন:</label>
-                                    <select class="" name="for_whom" v-model="data.institutes.for_whom">
+                                    <select class="" v-model="data.institutes.for_whom">
                                         <option value="">Select</option>
                                         <option value="1">বালক</option>
                                         <option value="2">বালিকা</option>
@@ -309,7 +309,7 @@
                                 </td>
                                 <td>
                                     <label>১.৩.৪ ভৌগলিক অবস্থান:</label>
-                                    <select name="geographical_status" v-model="data.institutes.geographical_status">
+                                    <select v-model="data.institutes.geographical_status">
                                         <option value="">Select</option>
                                         <option value="1">সমতল</option>
                                         <option value="2">পাহাড়ি</option>
@@ -329,7 +329,7 @@
                             </tr>
                             <td>
                                 <label>১.৩.৫ প্রতিষ্ঠানটি কোন এলাকায়?</label>
-                                <select class="" name="area_status1" v-model="data.institutes.area_status1">
+                                <select class="" v-model="data.institutes.area_status1">
                                     <option value="">Select</option>
                                     <option value="1">গ্রামীণ</option>
                                     <option value="2">জেলা সদর পৌরসভা</option>
@@ -342,7 +342,7 @@
                             <td class="form-inline">
                                 <label>১.৩.৬ প্রশাসনিক ইউনিটের সাথে যোগাযোগ ব্যবস্থার
                                     ধরন:</label>
-                                <select name="admin_unit_communication" v-model="data.institutes.admin_unit_communication">
+                                <select v-model="data.institutes.admin_unit_communication">
                                     <option value="">Select</option>
                                     <option value="1">উত্তম</option>
                                     <option value="2">মোটমুটি</option>
@@ -355,7 +355,7 @@
                             </td>
                             <td>
                                 <label>১.৩.৮ মূল প্রতিষ্ঠান ব্যতীত অন্যত্র শাখা আছে কি</label>
-                                <select class="" name="branch_yn" v-model="data.institutes.branch_yn">
+                                <select class="" v-model="data.institutes.branch_yn">
                                     <option value="">Select</option>
                                     <option value="1">হ্যাঁ-১</option>
                                     <option value="2">না-২</option>
@@ -369,7 +369,7 @@
                                 </td>
                                 <td>
                                     <label>১.৩.১০ প্রতিষ্ঠানটিতে ডাবল-শিফট আছে কি? </label>
-                                    <select name="double_shipt_yn" v-model="data.institutes.double_shipt_yn">
+                                    <select v-model="data.institutes.double_shipt_yn">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
@@ -378,7 +378,7 @@
                                 <td>
                                     <label>১.৩.১১ প্রতিষ্ঠানটির নিজস্ব ক্যাম্পাস আছে
                                         কি?</label>
-                                    <select name="campus_yn" v-model="data.institutes.campus_yn">
+                                    <select v-model="data.institutes.campus_yn">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
@@ -387,7 +387,7 @@
                                 <td>
                                     <label>১.৩.১২ প্রতিষ্ঠানটির ক্যাম্পাস অন্য কোন শিক্ষা
                                         প্রতিষ্ঠান আছে?</label>
-                                    <select name="attach_inst_yn" v-model="data.institutes.attach_inst_yn">
+                                    <select v-model="data.institutes.attach_inst_yn">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
@@ -396,7 +396,7 @@
                             <tr>
                                 <td>
                                     <label>১.৩.১৩ উত্তর হ্যাঁ হলে, প্রতিষ্ঠানটির ধরন: </label>
-                                    <select name="">
+                                    <select>
                                         <option value="" selected>Select</option>
                                         <option value="1">প্রাথমিক বিদ্যালয়</option>
                                         <option value="2">কিন্ডার গার্টেন</option>
@@ -408,7 +408,7 @@
                                 </td>
                                 <td>
                                     <label>১.৩.১৪ প্রতিষ্ঠানটি এমপিওভুক্ত কি?</label>
-                                    <select class="" name="mpo_status" v-model="data.institutes.mpo_status">
+                                    <select class="" v-model="data.institutes.mpo_status">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
@@ -417,7 +417,7 @@
                                 </td>
                                 <td colspan="2">
                                     <label>১.৩.১৫ কারিগরি শাখা এমপিওভুক্ত কি?</label>
-                                    <select name="technical_branch_mpo_status"
+                                    <select
                                             v-model="data.institutes.technical_branch_mpo_status">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
@@ -445,42 +445,45 @@
                                     <tbody>
                                     <tr v-for="item in data.institutes_recognition">
                                         <td>@{{ levelName(item.education_level_id) }}</td>
-                                        <td><select class="" name="" v-model="item.recognition_status">
+                                        <td><select class="" v-model="item.recognition_status">
                                                 <option value="">Select</option>
                                                 <option value="1">স্বীকৃতি প্রাপ্ত</option>
                                                 <option value="2">অনুমতি প্রাপ্ত</option>
                                                 <option value="3">প্রযোজ্য নয়</option>
                                             </select></td>
                                         <td>
-                                            <datepicker type="text" v-model="item.permitted_date"></datepicker>
+                                            <input type="date" v-model="item.permitted_date" />
                                         </td>
                                         <td>
-                                            <datepicker type="text" v-model="item.recognition_date"></datepicker>
+                                            <input type="date" v-model="item.recognition_date" />
                                         </td>
                                         <td>
-                                            <datepicker type="text" v-model="item.recognition_expire_date"></datepicker>
+                                            <input type="date" v-model="item.recognition_expire_date"/>
                                         </td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="col-md-4" v-if="data.institutes_mpo_status.length!=0">
-                                <label class="font-weight-bold">১.৩.১৭ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
-                                <table class="table table-bordered" style="text-align:center">
-                                    <tr class="custom-table-header">
-                                        <td>এমপিওভুক্তির স্তর</td>
-                                        <td>এমপিও ভুক্তির তারিখ</td>
-                                    </tr>
-                                    <tbody>
-                                    <tr v-for="mpo in data.institutes_mpo_status">
-                                        <td>@{{levelMpo(mpo.education_level_id) }}</td>
-                                        <td>
-                                            <datepicker type="text" v-model="mpo.mpo_date"></datepicker>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                            <label class="font-weight-bold">১.৩.১৭ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
+                            <table class="table table-bordered" style="text-align:center" v-if="data.institutes_mpo_status.length!=0">
+                                <tr class="custom-table-header">
+                                    <td>এমপিওভুক্তির স্তর</td>
+                                    <td>এমপিও ভুক্তির তারিখ</td>
+                                </tr>
+                                <tbody>
+                                <tr v-for="mpo in data.institutes_mpo_status">
+                                    <td>@{{levelMpo(mpo.education_level_id) }}</td>
+                                    <td>
+                                        <input type="date" v-model="mpo.mpo_date"/>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p v-else="data.institutes_mpo_status.length==0">প্রযোজ্য নয়</p>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -497,7 +500,7 @@
                             <tr>
                                 <td>
                                     <label>১.৪.১ কমিটির ধরন:</label>
-                                    <select class="custom-select" v-model="data.committees[0].type" style="width:120px">
+                                    <select class="custom-select" v-model="data.committees.type" style="width:120px">
                                         <option value="">Select</option>
                                         <option value="1">ম্যানেজিং কমিটি</option>
                                         <option value="2">গর্ভনিং বডি</option>
@@ -516,12 +519,10 @@
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <input type="date"
-                                                            v-model="data.committees[0].approve_date"/>
+                                                <input type="date" v-model="data.committees.approve_date"/>
                                             </td>
                                             <td>
-                                                <datepicker type="text"
-                                                            v-model="data.committees[0].expire_date"></datepicker>
+                                                <input type="date" v-model="data.committees.expire_date"/>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -532,18 +533,17 @@
                                         <div class="col-md-4">
                                             <label for="total"> মোট:</label>
                                             <input type="number" class="form-control"
-                                                   v-model="data.committees[0].total_member">
+                                                   v-model="data.committees.total_member">
                                         </div>
                                         <div class="col-md-4">
                                             <label for="female"> মহিলা: </label>
                                             <input type="number" class="form-control"
-                                                   v-model="data.committees[0].total_female">
+                                                   v-model="data.committees.total_female">
                                         </div>
                                     </div>
                                 </td>
                                 <td><label>১.৪.৪ কমিটি না থাকলে বিগত কমিটির মেয়াদ শেষ হওয়ার তারিখ</label>
-                                    <datepicker type="text"
-                                                v-model="data.committees[0].last_commitee_expire_date"></datepicker>
+                                    <input type="date" v-model="data.committees.last_commitee_expire_date" />
                                 </td>
                             </tr>
                             <tr>
@@ -553,7 +553,7 @@
                                                 হয়েছে? </label>
                                         </div>
                                         <div><input type="number" class="w-25"
-                                                    v-model="data.committees[0].last_yr_meeting">
+                                                    v-model="data.committees.last_yr_meeting">
                                             টি
                                         </div>
                                     </div>
@@ -565,7 +565,7 @@
                                             <label class="" for="pti_meeting"> ১.৪.৬ ২০২১ সালে পিটিএ এর কতগুলো সভা
                                                 হয়েছে? </label></div>
                                         <div><input type="number" class="w-25"
-                                                    v-model="data.committees[0].last_yr_pta_meeting">
+                                                    v-model="data.committees.last_yr_pta_meeting">
                                             টি
                                         </div>
                                     </div>
@@ -579,74 +579,74 @@
 
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_teacher_training">শিক্ষক প্রশিক্ষণ
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_teacher_training">শিক্ষক প্রশিক্ষণ
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_teacher_std_presents">শিক্ষক ও
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_teacher_std_presents">শিক্ষক ও
                                                 শিক্ষার্থীর উপস্থিতি
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_awarness_program">সচেতনতা মূলক
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_awarness_program">সচেতনতা মূলক
                                                 কার্যক্রম
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_eve_teasing">ইভটিজিং
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_eve_teasing">ইভটিজিং
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_bulling_related">নিগ্রহ/পীড়ন
+                                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_bulling_related">নিগ্রহ/পীড়ন
                                                 (বুলিং)
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_early_marriage">বাল্যবিবাহ
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_early_marriage">বাল্যবিবাহ
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_poor_std">পিছিয়ে পড়া
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_poor_std">পিছিয়ে পড়া
                                                 শিক্ষার্থী
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_disabled_std">বিশেষ চাহিদা সম্পন্ন
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_disabled_std">বিশেষ চাহিদা সম্পন্ন
                                                 শিক্ষার্থী
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_std_transport">শিক্ষার্থীদের
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_std_transport">শিক্ষার্থীদের
                                                 যাতায়াতে
                                                 নিরাপত্তা
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_anti_drug">মাদক বিরোধী
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_anti_drug">মাদক বিরোধী
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_dropout">ঝড়ে
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_dropout">ঝড়ে
                                                 পড়া রোধ
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].mc_saferoad">নিরাপদ সড়ক
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.mc_saferoad">নিরাপদ সড়ক
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2"><input class="mr-2" type="checkbox"
-                                                                   v-model="data.committees[0].mc_other">অন্যান্য
+                                            <td colspan="2"><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                                   v-model="data.committees.mc_other">অন্যান্য
                                             </td>
                                         </tr>
                                     </table>
@@ -657,56 +657,56 @@
                                     <table class="table table-bordered">
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_std_present">শিক্ষার্থীর
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_std_present">শিক্ষার্থীর
                                                 উপস্থিতি
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].ptaawarnessprogram">সচেতনতামূলক
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.ptaawarnessprogram">সচেতনতামূলক
                                                 কার্যক্রম
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_bulling_related">নিগ্রহ/পীড়ন
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_bulling_related">নিগ্রহ/পীড়ন
                                                 (বুলিং)
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_early_marriage">বাল্যবিবাহ
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_early_marriage">বাল্যবিবাহ
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_eve_teasing">ইভটিজিং
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_eve_teasing">ইভটিজিং
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_militant">জঙ্গীবাদ দমন
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_militant">জঙ্গীবাদ দমন
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_std_transport">শিক্ষার্থীদের
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_std_transport">শিক্ষার্থীদের
                                                 যাতায়াতে নিরাপত্তা
                                             </td>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_anti_drug">মাদক বিরোধী
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_anti_drug">মাদক বিরোধী
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_acid_throw">এসিড নিক্ষেপ
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_acid_throw">এসিড নিক্ষেপ
                                             </td>
                                             <td colspan="2">
-                                                <input class="mr-2" type="checkbox"
-                                                       v-model="data.committees[0].pta_other">অন্যান্য
+                                                <input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                                       v-model="data.committees.pta_other">অন্যান্য
                                             </td>
                                         </tr>
                                     </table>
