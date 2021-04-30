@@ -26,7 +26,6 @@ const app = new Vue({
     },
     methods:
         {
-
             addTeacher: function () {
                 var self = this;
                 axios.get('http://127.0.0.1:8000/TeacherStaff/addTeacher/' + inst_id)

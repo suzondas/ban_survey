@@ -69,7 +69,9 @@
                                     </select>
                                 </td>
                                 <td class="text-right">বিষয় (যদি list এ না থাকে)</td>
-                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].other_subject"></td>
+                                <td><input v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].other_subject">
+                                    <br>
+                                    ইংরেজীতে লিখুন<br>(সর্বোচ্চ ১০০ ক্যারেক্টার)</td>
                                 {{--<td><input type="text"></td>--}}
                                 <td class="text-right"> নিয়োগের ধরন</td>
                                 <td><select v-model="data.teacherStaffInfoGeneral[selectedTeacherIdx].recruitment_type">
