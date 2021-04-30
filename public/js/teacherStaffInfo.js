@@ -6,8 +6,9 @@ const app = new Vue({
             dataLoaded: false,
             dataLoadingError: false,
             addedTeacherY: false,
-            selectedTeacherIdx:null,
-            trainingArray:[]
+            selectedTeacherIdx: null,
+            trainingArray: [],
+            selectedTeacherData:null
         }
     },
     mounted() {
@@ -25,26 +26,12 @@ const app = new Vue({
     },
     methods:
         {
-            showDetail:function(index){
-                var self = this;
-                self.selectedTeacherIdx = index;
-                let trainingInfo = self.data.teacherStaffInfoGeneral[index].training_info;
-                if(trainingInfo === null){
-                    self.trainingArray = [];
-                }else{
-                    try {
-                        let parsedTrainingInfo = JSON.parse(trainingInfo);
-                        self.trainingArray = parsedTrainingInfo;
-                    } catch (e) {
-                        self.trainingArray = [];
-                    }
-                }
-            },
+
             addTeacher: function () {
                 var self = this;
                 axios.get('http://127.0.0.1:8000/TeacherStaff/addTeacher/' + inst_id)
                     .then(function (response) {
-                        let toastInstance = Vue.$toast.open('New Teacher has been added!');
+                        let toastInstance = Vue.$toast.open('New Teacher has been added! Now Edit teacher');
                         self.data.teacherStaffInfoGeneral.push(response.data);
                     })
                     .catch(function (error) {
@@ -58,7 +45,7 @@ const app = new Vue({
                     this.selectedTeacherIdx = null;
                     axios.get('http://127.0.0.1:8000/TeacherStaff/removeTeacher/' + teacher_id)
                         .then(function (response) {
-                            self.data.teacherStaffInfoGeneral.splice(index,1);
+                            self.data.teacherStaffInfoGeneral.splice(index, 1);
                             let toastInstance = Vue.$toast.open('Teacher has been removed!');
                         })
                         .catch(function (error) {
@@ -67,43 +54,52 @@ const app = new Vue({
                         });
                 }
             },
+            showDetail: function (index) {
+                var self = this;
+                self.selectedTeacherIdx = index; //set selected teacher index
+
+                //copying data of before update
+                self.selectedTeacherData = JSON.parse(JSON.stringify(self.data.teacherStaffInfoGeneral[self.selectedTeacherIdx]));
+                // console.log(self.data.teacherStaffInfoGeneral[index]);return;
+
+                //working with training info array [db data returns string, we have to convert it into array
+                let trainingInfo = self.data.teacherStaffInfoGeneral[self.selectedTeacherIdx].training_info;
+                if (trainingInfo === null) {//checking if data found in db is null
+                    self.trainingArray = []; //then setting it new
+                } else {
+                    //try valid parsing of existing array string
+                    try {
+                        let parsedTrainingInfo = JSON.parse(trainingInfo);
+                        self.trainingArray = parsedTrainingInfo;
+                    } catch (e) {
+                        self.trainingArray = [];
+                    }
+                }
+            },
             saveTeacher: function () {
                 var self = this;
-                self.data.teacherStaffInfoGeneral[self.selectedTeacherIdx].training_info = '['+self.trainingArray.toString()+']';
+                // console.log(self.selectedTeacherData);return;
+                self.data.teacherStaffInfoGeneral[self.selectedTeacherIdx].training_info = '[' + self.trainingArray.toString() + ']';
                 let tData = self.data.teacherStaffInfoGeneral[self.selectedTeacherIdx];
                 axios.post('http://127.0.0.1:8000/TeacherStaff/saveTeacher', tData)
                     .then(
                         function (response) {
-                            console.log(response);
+                            // console.log(response);
                             let toastInstance = Vue.$toast.open('Teacher Data has been Saved!');
+                            $('#exampleModalLong').modal('toggle');
                         },
-                        function (response) {
-                            console.log(response);
-                            alert("Error Try again");
+                        function (err) {
+                            console.log(err);
+                            let toastInstance = Vue.$toast.open({message: 'Could Not update Data!', type: 'error'});
+                            Vue.set(self.data.teacherStaffInfoGeneral, self.selectedTeacherIdx, self.selectedTeacherData)
+                            $('#exampleModalLong').modal('toggle');
                         });
-
             },
-            saveAll: function () {
-                var dataToSend = {};
-                dataToSend.instId = inst_id;
-                dataToSend.institutes_land_usage = this.data.institutes_land_usage;
-                dataToSend.building_infos = this.data.building_infos;
-                dataToSend.building_numbers = this.data.building_numbers;
-                dataToSend.building_use = this.data.building_use;
-                dataToSend.building_details = this.data.building_details;
-                dataToSend.classwise_room_space = this.data.classwise_room_space;
-                dataToSend.classes = this.data.classes;
-                console.log(dataToSend);
-                axios.post('http://127.0.0.1:8000/secondPage/submitData', dataToSend)
-                    .then(
-                        function (response) {
-                            console.log(response);
-                            alert("Second page data has been saved successfully");
-                        },
-                        function (response) {
-                            console.log(response);
-                            alert("Error Try again");
-                        });
+            cancelUpdate:function () {
+                var self = this;
+                //set back to original data of selected teacher as user cancelled the update
+                Vue.set(self.data.teacherStaffInfoGeneral, self.selectedTeacherIdx, self.selectedTeacherData)
+                $('#exampleModalLong').modal('toggle');
             }
         }
 

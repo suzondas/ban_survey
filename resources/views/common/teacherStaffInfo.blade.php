@@ -25,23 +25,23 @@
                 <tbody>
                 <tr v-for="(item, index) in data.teacherStaffInfoGeneral">
                     <td>@{{ index+1 }}</td>
-                    <td><input  style="width:130px;" type="text" v-model="item.teach_name"/></td>
-                    <td><select v-model="item.desig_id" style="width:130px;">
+                    <td><input  style="width:130px;" type="text" v-model="item.teach_name" disabled/></td>
+                    <td><select v-model="item.desig_id" style="width:130px;" disabled>
                             <option v-for="designation in data.designation" v-bind:value="designation.designation_id">@{{ designation.designation_name }}</option>
                         </select>
                     </td>
-                    <td><select v-model="item.subject_id" style="width:130px;">
+                    <td><select v-model="item.subject_id" style="width:130px;" disabled>
                             <option v-for="subject in data.subjects" v-bind:value="subject.subject_id">@{{ subject.subject_name_eng }}</option>
                         </select>
                     </td>
-                    <td><input type="date"  v-model="item.dob">
+                    <td><input type="date"  v-model="item.dob" disabled>
                     </td>
-                    <td><input type="text" v-model="item.nid" style="width:100px;"/></td>
-                    <td><input type="text" v-model="item.mobile_number" style="width:100px;"/></td>
+                    <td><input type="text" v-model="item.nid" style="width:100px;" disabled/></td>
+                    <td><input type="text" v-model="item.mobile_number" style="width:100px;" disabled/></td>
                     <td class="form-inline">
                         <div class="btn-group" role="group" style="font-size: 11px;">
                             <button type="button" class="btn btn-success p-1 m-0" data-toggle="modal"
-                                    data-target="#exampleModalLong" @click="showDetail(index)">Details
+                                    data-target="#exampleModalLong" @click="showDetail(index)">Edit
                             </button>
                             <button type="button" class="btn btn-danger p-1 m-0" @click="removeTeacher(item.teach_name, item.id,index)">Delete
                             </button>
@@ -52,7 +52,6 @@
                 </tbody>
             </table>
             <button class="btn btn-info" @click="addTeacher" style="border:1px solid black !important;">+ Add Teacher</button>
-            <button class="btn btn-success" @click="saveAll">Save All</button>
         </div>
 
         <div v-show="dataLoadingError">

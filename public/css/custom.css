@@ -125,11 +125,11 @@ input[type=number] {
 
 /*disabled class*/
 input:disabled {
-    font-weight: bold;
+    /*font-weight: bold;*/
     color:black;
 }
 select:disabled {
-    font-weight: bold;
+    /*font-weight: bold;*/
     color:black;
 }
 

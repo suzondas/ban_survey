@@ -429,7 +429,7 @@
             </div>
             <div class="modal-footer" style="background-color: gainsboro;">
                 <button type="button" class="btn btn-primary"  @click="saveTeacher">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" @click="selectedTeacherIdx=null">Close</button>
+                <button type="button" class="btn btn-secondary" @click="cancelUpdate">Cancel</button>
             </div>
         </div>
     </div>
