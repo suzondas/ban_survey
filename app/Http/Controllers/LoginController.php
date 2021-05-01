@@ -26,6 +26,10 @@ class LoginController extends Controller
                     //    if (Auth::user()->institute_type == 1) {
                     return redirect('common/madFirstPage');
                 }
+                if (Auth::user()->institute_type == 5) {
+                    return redirect('technical/tecFirstPage');
+                }
+
             } else {
                 return redirect('/')->withErrors(['Wrong Type of Login! Contact System Administrator!']);
             }
