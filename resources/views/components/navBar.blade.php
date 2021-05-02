@@ -15,6 +15,13 @@
 
            <?php } ?>
 
+           <?php if (Auth::user()->institute_type==5){?>
+           <li class="nav-item">
+               <a class="nav-link {{ (request()->is('technical/tecFirstPage')) ? 'active' : '' }}"
+                  href="{{ url('technical/tecFirstPage') }}"> মৌলিক তথ্য-১</a>
+           </li>
+           <?php }?>
+
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/secondPage') ? 'active' : '' }}"
                href="{{ url('common/secondPage') }}">মৌলিক তথ্য-২</a>
