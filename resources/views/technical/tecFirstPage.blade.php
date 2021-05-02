@@ -174,22 +174,48 @@
                                 <label class="" for="">১.২.১ প্রতিষ্ঠানের ধরনঃ</label>
                                 <select class="" v-model="data.institutes.institute_type_id">
                                     <option value="">Select</option>
-                                    <option value="1">১.স্কুল</option>
-                                    <option value="3">২.কলেজ</option>
-                                    <option value="4">৩. স্কুল এন্ড কলেজ</option>
+                                    <option value="1">১.পলিটেকনিক ইনস্টিটিউট</option>
+                                    <option value="2">২.টেকনিক্যাল স্কুল এন্ড কলেজ</option>
+                                    <option value="3">৩.টেকনিক্যাল ট্রেনিং সেন্টার</option>
+                                    <option value="4">৪. কৃষি প্রশিক্ষণ ইনস্টিটিউট</option>
+                                    <option value="5">৫. টেক্সটাইল ইনস্টিটিউট</option>
+                                    <option value="6">৬. সার্ভে ইনস্টিটিউট</option>
+                                    <option value="7">৭. গ্রাফিক আর্টস ইনস্টিটিউট</option>
+                                    <option value="8">৮. নেভাল/মেরিন ইনস্টিটিউট</option>
+                                    <option value="9">৯. হেলথ টেকনোলজি/মেডিক্যাল ইনস্টিটিউট</option>
+                                    <option value="10">১০. টেক্সটাইল ভোক/ ইনস্টিটিউট</option>
+                                    <option value="11">১১. এইসএসসি বিএম ইনস্টিটিউট/কলেজ</option>
+                                    <option value="12">১২. প্রফেশনাল ডিপ্লোমা ইনস্টিটিউট</option>
+                                    <option value="13">১৩. ফিশারিজ ইনস্টিটিউট </option>
+                                    <option value="14">১৪. লাইভস্টক/এনিমেল হেলথ এন্ড প্রডাকশন ইনস্টিটিউট </option>
+                                    <option value="15">১৫. ট্যুরিজম এন্ড হসপিটালিটি ইনস্টিটিউট </option>
+                                    <option value="16">১৬. ইঞ্জিনিয়ারিং ইনস্টিটিউট(আর্মি) </option>
+                                    <option value="17">১৭. এইচএসসি ভোক(৫৪)</option>
+                                    <option value="18">১৮. ডিপ্লোমা ইন কমার্স(৯৪)ইনস্টিটিউট</option>
+                                    <option value="19">১৯. এইচএসসি ভোক(৫৩)ইনস্টিটিউট</option>
+                                    <option value="20">২০. দাখিল ভোক ইনস্টিটিউট</option>
+                                    <option value="21">২১. ভোকেশনাল টিচার্স ট্রেনিং ইনস্টিটিউট</option>
+                                    <option value="22">২২. টেকনিক্যাল টিচার্স ট্রেনিং কলেজ</option>
+                                    <option value="23">২৩. এরোনটিক্যাল ইনস্টিটিউট</option>
+                                    <option value="24">২৪. সার্টিফিকেট কোর্স</option>
+                                    <option value="25">২৫. জাতীয় দক্ষতা মান</option>
                                 </select>
                             </td>
                             <td>
                                 <label class="" for="education_level">১.২.২ প্রতিষ্ঠানের স্তর :</label>
                                 <select class="" v-model="data.institutes.education_level_id" disabled>
                                     <option value="">Select</option>
-                                    <option value="12">নিম্ন মাধ্যমিক</option>
-                                    <option value="13">মাধ্যমিক</option>
-                                    <option value="11">৮ম শ্রেণি পর্যন্ত সরকারি প্রাথমিক বিদ্যালয়</option>
-                                    <option value="31">উচ্চ মাধ্যমিক</option>
-                                    <option value="32">স্নাতক (পাস)</option>
-                                    <option value="33">স্নাতক (সম্মান)</option>
-                                    <option value="34">স্নাতকোত্তর</option>
+                                    <option value="51">এসএসসি (ভোক)(১)</option>
+                                    <option value="21">দাখিল(ভোক)(২)</option>
+                                    <option value="54">এইসএসসি (ভোক)(৩)</option>
+                                    <option value="52">এইসএসসি (বিএম)(৪)</option>
+                                    <option value="32">এইচএসসি ডিপ্লোমা ইন কমার্স(৫)</option>
+                                    <option value="67">ডিপ্লোমা(৬)</option>
+                                    <option value="34">সার্টিফিকেট কোর্স ৬ মাস/এক বছর/দুই বছর(৭)</option>
+                                    <option value="34">জাতীয় দক্ষতামান(এক বছর মেয়াদি)(৮)</option>
+                                    <option value="34">জাতীয় দক্ষতামান/বেসিক(৩৬০ ঘন্টা)(৯)</option>
+                                    <option value="34">স্নাতক পর্যায়(১০)</option>
+                                    <option value="34">শিক্ষক প্রশিক্ষণ(১১)</option>
                                 </select>
                             </td>
                             <td v-if="data.institutes.institute_type_id !=3">
