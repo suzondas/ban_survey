@@ -103,6 +103,45 @@
         </li>
         <?php } ?>
 
+           {{--Madrasah--}}
+           <?php if (Auth::user()->institute_type == 2){?>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('madrasah/madStdFirstPage') ? 'active' : '' }}"
+                  href="{{ url('madrasah/madStdFirstPage') }}">মাদ্রাসা-১</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('madrasah/madStdSecondPage') ? 'active' : '' }}"
+                  href="{{ url('madrasah/madStdSecondPage') }}">মাদ্রাসা-২</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('madrasah/madStdThirdPage') ? 'active' : '' }}"
+                  href="{{ url('madrasah/madStdThirdPage') }}">মাদ্রাসা-৩</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('madrasah/madStdFourthPage') ? 'active' : '' }}"
+                  href="{{ url('madrasah/madStdFourthPage') }}">মাদ্রাসা-৪</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('madrasah/madStdFifthPage') ? 'active' : '' }}"
+                  href="{{ url('madrasah/madStdFifthPage') }}">মাদ্রাসা-৫</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('madrasah/madStdSixthPage') ? 'active' : '' }}"
+                  href="{{ url('madrasah/madStdSixthPage') }}">মাদ্রাসা-৬</a>
+           </li>
+
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('madrasah/madStdSeventhPage') ? 'active' : '' }}"
+                  href="{{ url('madrasah/madStdSeventhPage') }}">মাদ্রাসা-৭</a>
+           </li>
+
+           <?php } ?>
+
         {{--Bibidh--}}
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/thirdPage') ? 'active' : '' }}"
