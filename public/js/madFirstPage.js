@@ -26,7 +26,6 @@ const app = new Vue({
         levelName: function (levelId) {
             var self = this;
             // console.log(self.data);return;
-
             for (var i = 0; i < self.data.eduLevel.length; i++) {
                 if (self.data.eduLevel[i].education_level_id == levelId) {
                     return self.data.eduLevel[i].education_level_bangla_name;
@@ -35,7 +34,6 @@ const app = new Vue({
         },
         levelMpo: function (mpoId) {
             var self = this;
-
             for (var j = 0; j < self.data.eduLevel.length; j++) {
                 if (self.data.eduLevel[j].education_level_id == mpoId) {
                     return self.data.eduLevel[j].education_level_bangla_name;
