@@ -141,6 +141,37 @@
            </li>
 
            <?php } ?>
+           {{--Technical pages--}}
+           <?php if (Auth::user()->institute_type==5){?>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdFirstPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdFirstPage') }}">টেকনিক্যাল-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdSecondPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdSecondPage') }}">টেকনিক্যাল-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdThirdPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdThirdPage') }}">টেকনিক্যাল-৩</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdFourthPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdFourthPage') }}">টেকনিক্যাল-৪</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdFifthPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdFifthPage') }}">টেকনিক্যাল-৫</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdSixthPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdSixthPage') }}">টেকনিক্যাল-৬</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdSeventhPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdSeventhPage') }}">টেকনিক্যাল-৭</a>
+           </li>
+           <?php }?>
 
         {{--Bibidh--}}
         <li class="nav-item">
