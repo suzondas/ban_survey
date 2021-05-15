@@ -1008,5 +1008,7 @@
     </div>
 @endsection
 @section('javascript')
+{{--
     <script src="{{ asset('js/thirdPage.js') }}" type="module" defer></script>
+--}}
 @stop

@@ -218,67 +218,10 @@
                                     <option value="34">শিক্ষক প্রশিক্ষণ(১১)</option>
                                 </select>
                             </td>
-                            <td v-if="data.institutes.institute_type_id !=3">
-                                <label class="" for="education_group">১.২.৩ গ্রুপ স্কুল শাখা (একাধিক হতে
-                                    পারে):</label>
-                                <div class="row">
-                                    <div class="col">মানবিক <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.arts_group"/></div>
-                                    <div class="col">বিজ্ঞান <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.science_group"/></div>
-                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.commerce_group"/></div>
-                                </div>
-                            </td>
-                            <td v-if="data.institutes.institute_type_id !=1">
-                                <label class="" for="education_group_col">১.২.৪ গ্রুপ কলেজ শাখা:(একাধিক হতে
-                                    পারে)</label>
-                                <div class="row">
-                                    <div class="col">মানবিক <input type="checkbox" true-value="1" false-value="0" v-model="data.institutes.arts_group_col"/></div>
-                                    <div class="col">বিজ্ঞান <input type="checkbox" true-value="2" false-value="0" v-model="data.institutes.science_group_col"/>
-                                    </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col">ব্যবসায় শিক্ষা <input type="checkbox" true-value="3" false-value="0"
-                                                                           v-model="data.institutes.commerce_group_col"/></div>
-                                    <div class="col">সামাজিক বিজ্ঞান <input type="checkbox" true-value="4" false-value="0"
-                                                                            v-model="data.institutes.social_science_group"/></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">ইসলামী শিক্ষা <input type="checkbox" true-value="5" false-value="0"
-                                                                          v-model="data.institutes.islamic_stadies_group"/></div>
-                                    <div class="col">গার্হস্থ্য বিজ্ঞান <input type="checkbox" true-value="6" false-value="0"
-                                                                               v-model="data.institutes.home_economic_group"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">সংগীত<input type="checkbox" true-value="7" false-value="0" v-model="data.institutes.music_group"/></div>
-                                </div>
-                            </td>
+
                         </tr>
                         <tr>
-                            <td>
-                                <label class="" for="education_group_col">১.২.৫ সংযুক্ত কারিগরি শাখার ধরন (প্রযোজ্য
-                                    ক্ষেত্রে):</label>
-                                <div class="row">
-                                    <div class="col">এসএসসি (ভোক) <input type="checkbox" true-value="1" false-value="0"
-                                                                         v-model="data.institutes.technical_branch_type"></div>
-                                    <div class="col">এইচএসসি(ভোক) <input type="checkbox" true-value="1" false-value="0"
-                                                                         v-model="data.institutes.technical_branch_type_hscvoc">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">এইচএসসি (বিএম) <input type="checkbox" true-value="1" false-value="0"
-                                                                           v-model="data.institutes.technical_branch_type_bm">
-                                    </div>
-                                    <div class="col">ডিপ্লোমা ইন ফিশারিজ <input type="checkbox" true-value="1" false-value="0"
-                                                                                v-model="data.institutes.technical_branch_type_fish">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">ডিপ্লোমা ইন এগ্রিকালচার <input type="checkbox" true-value="1" false-value="0"
-                                                                                    v-model="data.institutes.technical_branch_type_agro">
-                                    </div>
-                                </div>
-                            </td>
                             <td>
                                 <label class="label-date" for="establish_date">১.২.৬ প্রতিষ্ঠার তারিখ :</label> &nbsp
                                 <div class="input-group date">
@@ -441,56 +384,8 @@
                                         <option value="3">প্রযোজ্য নয়-৩</option>
                                     </select>
                                 </td>
-                                <td colspan="2">
-                                    <label>১.৩.১৫ কারিগরি শাখা এমপিওভুক্ত কি?</label>
-                                    <select
-                                            v-model="data.institutes.technical_branch_mpo_status">
-                                        <option value="">Select</option>
-                                        <option value="1">হ্যাঁ-১</option>
-                                        <option value="2">না-২</option>
-                                        <option value="3">প্রযোজ্য নয়-৩</option>
-                                    </select>
-                                </td>
                             </tr>
                         </table>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <label class="font-weight-bold">১.৩.১৬ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের
-                                    ক্ষেত্রে প্রযোজ্য নয়):</label>
-                                <table class="table table-bordered">
-                                    <thead>
-                                    <tr class="custom-table-header">
-                                        <th style="text-align:center">স্তর</th>
-                                        <th style="text-align:center">স্বীকৃতি/অনুমতি (টিক চিহ্ন দিন)</th>
-                                        <th style="text-align:center">প্রথম অনুমতির তারিখ</th>
-                                        <th style="text-align:center">প্রথম স্বীকৃতির তারিখ</th>
-                                        <th style="text-align:center">সর্বশেষ স্বীকৃতি/ অনুমতি মেয়াদ শেষ হওয়ার তারিখ
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr v-for="item in data.institutes_recognition">
-                                        <td>@{{ levelName(item.education_level_id) }}</td>
-                                        <td><select class="" v-model="item.recognition_status">
-                                                <option value="">Select</option>
-                                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
-                                                <option value="2">অনুমতি প্রাপ্ত</option>
-                                                <option value="3">প্রযোজ্য নয়</option>
-                                            </select></td>
-                                        <td>
-                                            <input type="date" v-model="item.permitted_date" />
-                                        </td>
-                                        <td>
-                                            <input type="date" v-model="item.recognition_date" />
-                                        </td>
-                                        <td>
-                                            <input type="date" v-model="item.recognition_expire_date"/>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="col-md-8">
                             <label class="font-weight-bold">১.৩.১৭ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>

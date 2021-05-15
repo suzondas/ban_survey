@@ -306,53 +306,6 @@
                 </table>
             </div>
         </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৯</span>
-                </div>
-                <div class="form-control bg-number-label">ডিপ্লোমা ইন কমার্স এর স্পেশালাইজেশন ভিত্তিক শিক্ষার্থীর তথ্য ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">ট্রেড কোড</td>
-                        <td rowspan="3">ট্রেডের নাম</td>
-                        <td rowspan="3">আসন সংখ্যা</td>
-                        <td colspan="4">শ্রেণী</td>
-                        <td colspan="2" rowspan="2">মোট</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">১১শ</td>
-                        <td colspan="2">১২শ</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
         <div align="center">
             <button ng-click="submitData()" type="button" class="btn btn-success">Submit</button>
         </div>
