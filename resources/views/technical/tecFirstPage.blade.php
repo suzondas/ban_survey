@@ -1,13 +1,13 @@
 @extends('components.template')
 @section('content')
-    <div class="container" id="firstPage">
-      {{--  <div v-if="!dataLoaded">
+    <div class="container" id="tecFirstPage">
+        <div v-if="!dataLoaded">
             <div class="d-flex justify-content-center">
                 <h3 class="p-2">Loading...</h3>
                 <div class="spinner-border" role="status">
                 </div>
             </div>
-        </div>--}}
+        </div>
 
         <div v-if="dataLoaded">
             <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (ক)</h3>
@@ -649,5 +649,5 @@
 @endsection
 {{--Page wise js--}}
 @section('javascript')
-    <script src="{{ asset('js/') }}" type="module" defer></script>
+    <script src="{{ asset('js/tecFirstPage.js') }}" type="module" defer></script>
 @stop
