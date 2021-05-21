@@ -44,6 +44,18 @@ var app = angular.module('tecStdFirstPage', []);
             });
             return bmClsName;
         }
+
+        /*FInding oneYr Certificate Name*/
+        $scope.oneYrName = function (id) {
+            var oneYrClassList = $scope.data.oneYrClasses;
+            var oneYrClsName = null;
+            oneYrClassList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return oneYrClsName = currentValue.class_name_bangla;
+                }
+            });
+            return oneYrClsName;
+        }
         /*===========================Helper Functions Ends==============================*/
 
         /*==========================Data Fetching=======================================*/

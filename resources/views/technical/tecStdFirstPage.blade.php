@@ -250,7 +250,7 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="item in data.one_yr_certificate">
-                        <td ng-bind="one_yr_certificate(item.class_id)"></td>
+                        <td ng-bind="oneYrName(item.class_id)"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.total_student"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.female_student"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.male_stipend"></td>
