@@ -5,7 +5,7 @@
             width: 40px !important;
         }
     </style>
-    <div class="container-fluid" data-ng-app="madStdSecondPage" ng-controller="myCtrl">
+    <div class="container-fluid" data-ng-app="tecStdSecondPage" ng-controller="myCtrl">
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
         <div class="contentBox">
             <div class="input-group contentdeader">
@@ -312,7 +312,5 @@
     </div>
 @endsection
 @section('javascript')
-    {{--
-        <script src="{{ asset('js/madStdSecondPage.js') }}" type="module" defer></script>
-    --}}
+        <script src="{{ asset('js/tecStdSecondPage.js') }}" type="module" defer></script>
 @stop

@@ -1,4 +1,4 @@
-var app = angular.module('tecStdFirstPage', []);
+var app = angular.module('tecStdSecondPage', []);
 (function (app) {
     "use strict";
     app.controller('myCtrl', function ($scope, $http) {
@@ -45,36 +45,13 @@ var app = angular.module('tecStdFirstPage', []);
             return bmClsName;
         }
 
-        /*FInding oneYr Certificate Name*/
-        $scope.oneYrName = function (id) {
-            var oneYrClassList = $scope.data.oneYrClasses;
-            var oneYrClsName = null;
-            oneYrClassList.forEach(function (currentValue, index) {
-                if (currentValue.class_id == id) {
-                    return oneYrClsName = currentValue.class_name_bangla;
-                }
-            });
-            return oneYrClsName;
-        }
-        /*Finding one yr adv certificate name oneYrAdvClasses*/
 
-        $scope.oneYrAdvName = function (id) {
-            var oneYrAdvClassList = $scope.data.oneYrAdvClasses;
-            var oneYrAdvClassName = null;
-            oneYrAdvClassList.forEach(function (currentValue, index) {
-                    if (currentValue.class_id == id) {
-                        return oneYrAdvClassName = currentValue.class_name_bangla;
-                    }
-                }
-            );
-            return oneYrAdvClassName;
-        }
         /*===========================Helper Functions Ends==============================*/
 
         /*==========================Data Fetching=======================================*/
         $http({
             method: 'GET',
-            url: 'http://127.0.0.1:8000/tecStdFirstPage/' + inst_id
+            url: 'http://127.0.0.1:8000/tecStdSecondPage/' + inst_id
         }).then(function (response) {
             // console.log(response.data)
             $scope.data = response.data;
