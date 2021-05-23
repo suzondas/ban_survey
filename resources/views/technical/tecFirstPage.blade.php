@@ -201,6 +201,7 @@
                                     <option value="25">২৫. জাতীয় দক্ষতা মান</option>
                                 </select>
                             </td>
+
                             <td>
                                 <label class="" for="education_level">১.২.২ প্রতিষ্ঠানের স্তর :</label>
                                 <select class="" v-model="data.institutes.education_level_id" disabled>
@@ -216,6 +217,14 @@
                                     <option value="34">জাতীয় দক্ষতামান/বেসিক(৩৬০ ঘন্টা)(৯)</option>
                                     <option value="34">স্নাতক পর্যায়(১০)</option>
                                     <option value="34">শিক্ষক প্রশিক্ষণ(১১)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label class="" for="division">প্রতিষ্ঠানে চলমান কারিকুলাম বা শিক্ষাক্রমসমূহ:</label>
+                                <select v-model="data.institutes.division_id" class="form-control">
+                                    <option v-for="option in data.division" v-bind:value="option.division_id">
+                                        @{{ option.division_name }}
+                                    </option>
                                 </select>
                             </td>
 

@@ -95,72 +95,70 @@
                     <tr>
                         <td rowspan="2">বেসিক</td>
                         <td>৩ মাস ৩৬০ ঘন্টা</td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_3motn_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_3motn_fem"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_3motn_stip_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_3motn_stip_fem"/></td>
                     </tr>
                     <tr>
                         <td>৬ মাস ৩৬০ ঘন্টা</td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_6motn_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_6motn_fem"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_6motn_stip_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.bas_6motn_stip_fem"/></td>
                     </tr>
                     <tr>
                         <td>RTO-()</td>
                         <td>৩ মাস ৩৬০ ঘন্টা</td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rto_3motn_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rto_3motn_fem"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rto_3motn_stip_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rto_3motn_stip_fem"/></td>
                     </tr>
                     <tr>
                         <td>NTVQF(Level1-6)</td>
                         <td>প্রতিটি কোর্সের মেয়াদ সর্বোচ্চ ৩৬০ ঘন্টা</td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.ntv_360_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.ntv_360_fem"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.ntv_360_stip_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.ntv_360_stip_fem"/></td>
                     </tr>
                     <tr>
                         <td>RPL</td>
                         <td>৩৬০ ঘন্টা</td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_360_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_360_fem"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_360_stip_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_360_stip_fem"/></td>
                     </tr>
                     <tr>
                         <td>RPL</td>
                         <td>২-৩ দিন (ওরিয়েন্টেশনমূলক কোর্স) এবং এসেস্মেন্ট ১ দিন</td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
-                        <td><input type="number" number-converter class="w-50"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_days_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_days_fem"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_days_stip_tot"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.stdBasicCrsdata.rpl_days_stip_fem"/></td>
                     </tr>
 
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৮</span>
+                    <span class="input-group-text bg-number">২.২৬</span>
                 </div>
-                <div class="form-control bg-number-label">এসএসসি ভোকেশনাল এর ট্রেডভিত্তিক শিক্ষার্থী তথ্য ২০২১
-                </div>
+                <div class="form-control bg-number-label">এসএসসি ভোকেশনাল এর ট্রেডভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>
             <div class="contentBoxBody">
                 <table class="table table-bordered table-striped text-center">
                     <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">ট্রেড কোড</td>
-                        <td rowspan="3">ট্রেডের নাম</td>
-                        <td rowspan="3">আসন সংখ্যা</td>
-                        <td colspan="4">শ্রেণী</td>
-                        <td colspan="2" rowspan="2">মোট</td>
+                        <td rowspan="3"> কোড</td>
+                        <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
+                        <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
+                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা (২০২০)</td>
+                        <td rowspan="2" colspan="2"> পাসের সংখ্যা (২০২০)</td>
                     </tr>
                     <tr>
                         <td colspan="2">৯ম</td>
@@ -173,113 +171,21 @@
                         <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৯</span>
-                </div>
-                <div class="form-control bg-number-label">এইচএসসি ভোকেশনাল এর ট্রেডভিত্তিক শিক্ষার্থী তথ্য ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">ট্রেড কোড</td>
-                        <td rowspan="3">ট্রেডের নাম</td>
-                        <td rowspan="3">আসন সংখ্যা</td>
-                        <td colspan="4">শ্রেণী</td>
-                        <td colspan="2" rowspan="2">মোট</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">১১শ</td>
-                        <td colspan="2">১২শ</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.১.৯</span>
-                </div>
-                <div class="form-control bg-number-label">এইচএসসি(বিএম) এর স্পেশালাইজেশন ভিত্তিক শিক্ষার্থীর তথ্য ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">ট্রেড কোড</td>
-                        <td rowspan="3">ট্রেডের নাম</td>
-                        <td rowspan="3">আসন সংখ্যা</td>
-                        <td colspan="4">শ্রেণী</td>
-                        <td colspan="2" rowspan="2">মোট</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">১১শ</td>
-                        <td colspan="2">১২শ</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
+                    <tr ng-repeat="item in data.sscVocStd">
+                        <td>@{{ item.trade_code }}</td>
+                        <td>@{{ item.trade_name }}</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     </tbody>
                 </table>

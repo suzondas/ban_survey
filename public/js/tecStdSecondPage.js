@@ -100,12 +100,12 @@ var app = angular.module('tecStdSecondPage', []);
 
     });
 })(app);
-app.directive('numberConverter', function () {
+app.directive('numberConverter', function() {
     return {
         priority: 1,
         restrict: 'A',
         require: 'ngModel',
-        link: function (scope, element, attr, ngModel) {
+        link: function(scope, element, attr, ngModel) {
             function toModel(value) {
                 return "" + value; // convert to string
             }
