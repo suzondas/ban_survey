@@ -170,7 +170,7 @@
                 <div class="contentBoxBody">
                     <table class="table table-striped table-bordered">
                         <tr>
-                            <td>
+                            <td colspan="2">
                                 <label class="" for="">১.২.১ প্রতিষ্ঠানের ধরনঃ</label>
                                 <select class="" v-model="data.institutes.institute_type_id">
                                     <option value="">Select</option>
@@ -202,9 +202,9 @@
                                 </select>
                             </td>
 
-                            <td>
+                            <td colspan="2">
                                 <label class="" for="education_level">১.২.২ প্রতিষ্ঠানের স্তর :</label>
-                                <select class="" v-model="data.institutes.education_level_id" disabled>
+                                <select class="" v-model="data.institutes.education_level_id" >
                                     <option value="">Select</option>
                                     <option value="51">এসএসসি (ভোক)(১)</option>
                                     <option value="21">দাখিল(ভোক)(২)</option>
@@ -219,22 +219,15 @@
                                     <option value="34">শিক্ষক প্রশিক্ষণ(১১)</option>
                                 </select>
                             </td>
-                            <td>
-
-                                <label class="" for="division">প্রতিষ্ঠানে চলমান কারিকুলাম বা শিক্ষাক্রমসমূহ:</label>
-
-                            </td>
-
-
                         </tr>
                         <tr>
-                            <td>
+                            <td colspan="2">
                                 <label class="label-date" for="establish_date">১.২.৬ প্রতিষ্ঠার তারিখ :</label> &nbsp
                                 <div class="input-group date">
                                     <input type="date" v-model="data.institutes.establish_date"/>
                                 </div>
                             </td>
-                            <td>
+                            <td colspan="2">
                                 <label>১.২.৭ প্রতিষ্ঠানটিতে ইংরেজি ভার্সনে পাঠদান হয় কি?</label>
                                 <select class="" name="english_ver_yn" v-model="data.institutes.english_ver_yn">
                                     <option value="">Select</option>
@@ -243,6 +236,108 @@
                                 </select>
                             </td>
                         </tr>
+                        <tr>
+                            <td colspan="4">
+                                <label class="" for="division">প্রতিষ্ঠানে চলমান কারিকুলাম বা শিক্ষাক্রমসমূহ:</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       >ডিপ্লোমা ইন টেকনিকাল এডুকেশন</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       >ডিপ্লোমা ইন ভোকেশনাল এডুকেশন</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       >ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং</td>
+                        </tr>
+
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন এগ্রিকালচার</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন ফিসারিজ(৯৩)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন ফিসারিজ(ইন সার্ভিস)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন ফরেস্ট্রি</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন ফরেস্ট্রি (ইন সার্ভিস) </td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন লাইভস্টক</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন মেডিকেল টেকনোলজি</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং(নেভাল)</td>
+                        </tr>
+
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন ইঞ্জি (আর্মি) </td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন ট্যুরিজম ও হসপিটালিটি</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন মেডিকেল আলট্রাসাউন্ড</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন এনিমেল হেলথ এন্ড প্রোডাকশন (ইন সার্ভিস)</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >এইচএসসি বিএম (৫৫) </td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >এইচএসসি ভোক (৫৪)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >ডিপ্লোমা ইন কমার্স(৯৪)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >এসএসসি ভোক (৫৩)</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >দাখিল ভোক</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >সার্টিফিকেট ইন মেরিন ট্রেড</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >স্কিল সার্টিফিকেট কোর্স</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >সার্টিফিকেট ইন ভোকেশনাল এডুকেশন</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >সার্টিফিকেট ইন হেলথ টেকনোলজি</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >সার্টিফিকেট ইন পোলট্রি ফার্মিং</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >সার্টিফিকেট ইন এনিমেল হেলথ এন্ড প্রোডাকশন</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >জাতীয় দক্ষতামান-২</td>
+                        </tr>
+                        <tr>
+
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >জাতীয় দক্ষতামান-৩</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >প্রোফেশনাল ডিপ্লোমা ইন অটোমোবাইল</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >NTVQF(Level:1-6)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >মেরিন এন্ড শিপ বিল্ডিং ট্রেড সার্টিফিকেট</td>
+                        </tr>
+
+                        <tr>
+
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                >এডভান্সড সার্টিফিকেট কোর্স</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+
+
+
+
                     </table>
                 </div>
                 <div class="contentBox">

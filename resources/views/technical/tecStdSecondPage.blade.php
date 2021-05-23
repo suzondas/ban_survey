@@ -191,6 +191,100 @@
                 </table>
             </div>
         </div>
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.২৬</span>
+                </div>
+                <div class="form-control bg-number-label">এইচএসসি ভোকেশনাল এর ট্রেডভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
+                    <tr>
+                        <td rowspan="3"> কোড</td>
+                        <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
+                        <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
+                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা (২০২০)</td>
+                        <td rowspan="2" colspan="2"> পাসের সংখ্যা (২০২০)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">১১শ</td>
+                        <td colspan="2">১২শ</td>
+                    </tr>
+                    <tr>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                    </tr>
+                    <tbody>
+                    <tr ng-repeat="item in data.HscVocStdData">
+                        <td>@{{ item.trade_code }}</td>
+                        <td>@{{ item.trade_name }}</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.২৬</span>
+                </div>
+                <div class="form-control bg-number-label">এইচএসসি(বিএম) এর স্পেশালাইজেশন ভিত্তিক শিক্ষার্থীর তথ্য ২০২১</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
+                    <tr>
+                        <td rowspan="3">স্পেশালাইজেশন কোড</td>
+                        <td rowspan="3" style="width: 300px"> ট্রেডের নাম</td>
+                        <td colspan="4"> শিক্ষার্থীর সংখ্যা</td>
+                        <td rowspan="2" colspan="2"> পরীক্ষার্থীর সংখ্যা (২০২০)</td>
+                        <td rowspan="2" colspan="2"> পাসের সংখ্যা (২০২০)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">১১শ</td>
+                        <td colspan="2">১২শ</td>
+                    </tr>
+                    <tr>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                    </tr>
+                    <tbody>
+                    <tr ng-repeat="item in data.HscBmStdData">
+                        <td>@{{ item.trade_code }}</td>
+                        <td>@{{ item.trade_name }}</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <div align="center">
             <button ng-click="submitData()" type="button" class="btn btn-success">Submit</button>
         </div>
