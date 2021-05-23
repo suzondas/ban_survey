@@ -8,6 +8,17 @@ var app = angular.module('tecStdSecondPage', []);
 
         /*===========================Helper Functions==============================*/
         // Console global
+/*Finding diploma level names*/
+        $scope.diplomaName = function (id) {
+            var diplomaClassList = $scope.data.diplomaClasses;
+            var diplomaClsName = null;
+            diplomaClassList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return diplomaClsName = currentValue.class_name_bangla;
+                }
+            });
+            return diplomaClsName;
+        }
 
         /*FInding sscVocName*/
         $scope.sscVocName = function (id) {
