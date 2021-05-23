@@ -220,12 +220,9 @@
                                 </select>
                             </td>
                             <td>
+
                                 <label class="" for="division">প্রতিষ্ঠানে চলমান কারিকুলাম বা শিক্ষাক্রমসমূহ:</label>
-                                <select v-model="data.institutes.division_id" class="form-control">
-                                    <option v-for="option in data.division" v-bind:value="option.division_id">
-                                        @{{ option.division_name }}
-                                    </option>
-                                </select>
+
                             </td>
 
 
