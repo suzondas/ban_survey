@@ -49,6 +49,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
@@ -106,6 +107,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
@@ -159,6 +161,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
@@ -212,6 +215,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
@@ -268,6 +272,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
@@ -324,6 +329,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -345,15 +351,16 @@
                     <td>ছাত্রী</td>
                 </tr>
                 <tr>
-                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_total">
+                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryRepeater.tec_total">
                     </td>
-                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_female">
+                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryRepeater.tec_female">
                     </td>
                 </tr>
                 </tbody>
             </table>
         </div>
         </div>
+        <br>
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -375,9 +382,9 @@
                     <td>ছাত্রী</td>
                 </tr>
                 <tr>
-                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_total">
+                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.tec_total">
                     </td>
-                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_female">
+                    <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.tec_female">
                     </td>
                 </tr>
                 </tbody>

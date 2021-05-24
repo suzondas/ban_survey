@@ -66,6 +66,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
@@ -144,6 +145,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -191,6 +193,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -238,6 +241,7 @@
                 </table>
             </div>
         </div>
+        <br>
         <div class="contentBox ">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
