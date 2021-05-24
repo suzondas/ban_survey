@@ -171,6 +171,10 @@
                <a class="nav-link {{ request()->is('technical/tecStdSeventhPage') ? 'active' : '' }}"
                   href="{{ url('technical/tecStdSeventhPage') }}">টেকনিক্যাল-৭</a>
            </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdSeventhPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdEightPage') }}">টেকনিক্যাল-৮</a>
+           </li>
            <?php }?>
 
         {{--Bibidh--}}

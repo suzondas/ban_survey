@@ -1,4 +1,4 @@
-var app = angular.module('tecStdThirdPage', []);
+var app = angular.module('tecStdFourthPage', []);
 (function (app) {
     "use strict";
     app.controller('myCtrl', function ($scope, $http) {
@@ -14,7 +14,7 @@ var app = angular.module('tecStdThirdPage', []);
         /*==========================Data Fetching=======================================*/
         $http({
             method: 'GET',
-            url: 'http://127.0.0.1:8000/tecStdThirdPage/' + inst_id
+            url: 'http://127.0.0.1:8000/tecStdFourthPage/' + inst_id
         }).then(function (response) {
             // console.log(response.data)
             $scope.data = response.data;
@@ -34,7 +34,7 @@ var app = angular.module('tecStdThirdPage', []);
             console.log(dataToSend);
             $http({
                 method: 'POST',
-                url: 'http://127.0.0.1:8000/tecStdThirdPage/submitData/',
+                url: 'http://127.0.0.1:8000/tecStdFourthPage/submitData/',
                 data: dataToSend,
                 dataType: 'json'
             }).then(
