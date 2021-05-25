@@ -5,338 +5,126 @@
             width: 40px !important;
         }
     </style>
-    <div class="container-fluid" data-ng-app="madStdSixthPage" ng-controller="myCtrl">
+    <div class="container-fluid" data-ng-app="tecStdSeventhPage" ng-controller="myCtrl">
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
+        <div class="contentBox col-12 " style="font-size: 11px;">
+            <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৫.১</span>
+                    <span class="input-group-text bg-number">২.২৫</span>
                 </div>
-                <div class="form-control bg-number-label">এসএসসি (ভোকেশনাল) এর ট্রেডভিত্তিক পরীক্ষার্থী ও পাসের সংখ্যা ২০২১
-                </div>
+                <div class="form-control bg-number-label">বিভাগভিত্তিক বিভিন্ন বোর্ড পরীক্ষার ফলাফল:</div>
             </div>
-            <div class="contentBoxBody">
+            <div class="contentBoxBody ">
                 <table class="table table-bordered table-striped text-center">
                     <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">ট্রেড কোড</td>
-                        <td rowspan="3">ট্রেডের নাম</td>
-                        <td colspan="4">ফলাফল</td>
+                        <td scope="col" rowspan="3">পরীক্ষার নাম ও বছর</td>
+                        <td scope="col" rowspan="3">বিভাগ</td>
+                        <td scope="col" rowspan="2" colspan="2">রেজি: শিক্ষার্থী সংখ্যা</td>
+                        <td scope="col" rowspan="2" colspan="2">পরিক্ষার্থীর সংখ্যা</td>
+                        <td scope="col" colspan="12">প্রাপ্ত জিপিএ অনুযায়ী পাসের সংখ্যা</td>
+                        <td scope="col" rowspan="2" colspan="2">মোট পাস</td>
                     </tr>
                     <tr>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
+                        <td scope="col" colspan="6">ছাত্র</td>
+                        <td scope="col" colspan="6">ছাত্রী</td>
                     </tr>
                     <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
+                        <td scope="col">মোট</td>
+                        <td scope="col">ছাত্রী</td>
+                        <td scope="col">মোট</td>
+                        <td scope="col">ছাত্রী</td>
+                        <td scope="col">৫.০০</td>
+                        <td scope="col">৪- ৪.৯৯</td>
+                        <td scope="col">৩.৫- ৩.৯৯</td>
+                        <td scope="col">৩- ৩.৫</td>
+                        <td scope="col">২- ২.৯৯</td>
+                        <td scope="col">২ এর কম</td>
+                        <td scope="col">৫.০০</td>
+                        <td scope="col">৪- ৪.৯৯</td>
+                        <td scope="col">৩.৫- ৩.৯৯</td>
+                        <td scope="col">৩- ৩.৫</td>
+                        <td scope="col">২- ২.৯৯</td>
+                        <td scope="col">২ এর কম</td>
+                        <td scope="col">মোট</td>
+                        <td scope="col">ছাত্রী</td>
                     </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
+                    <tbody ng-repeat="item in data.examLevel">
+                    <td rowspan="@{{item.exam.length+1}}">@{{item.level}}</td>
+                    <tr ng-repeat="i in item.exam">
+                        <td>@{{i.name}}</td>
+                        <td><input class="w-50" type="number" number-converter ng-init="idx = findIndexEx(i.exam_id,i.subject)" ng-model="boardWiseExamResults[idx].registered_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].registerd_female"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].total_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].female_candidate"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_plus_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_plus_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_minus_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].a_minus_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].b_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].b_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].c_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].c_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].d_total"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].d_girls"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].total_pass"/></td>
+                        <td><input class="w-50" type="number" number-converter ng-model="boardWiseExamResults[idx].girls_pass"/></td>
                     </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৫.২</span>
-                </div>
-                <div class="form-control bg-number-label">এইচএসসি (ভোকেশনাল) এর ট্রেডভিত্তিক পরীক্ষার্থী ও পাসের সংখ্যা ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">ট্রেড কোড</td>
-                        <td rowspan="3">ট্রেডের নাম</td>
-                        <td colspan="4">ফলাফল</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৫.৩</span>
-                </div>
-                <div class="form-control bg-number-label">এইচএসসি (বিএম) এর ট্রেডভিত্তিক পরীক্ষার্থী ও পাসের সংখ্যা ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">ট্রেড কোড</td>
-                        <td rowspan="3">ট্রেডের নাম</td>
-                        <td colspan="4">ফলাফল</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৫.৪</span>
-                </div>
-                <div class="form-control bg-number-label"> ডিপ্লোমা ইন ইঞ্জিনিয়ারিং, হেলথ টেকনোলজি/মেডিকেল ইন্সটিটিউট, টেক্সটাইল ইঞ্জিনিয়ারিং, এগ্রিকালচার, ফিসারিজ ও কমার্স এর টেকনোলজি/ট্রেডভিত্তিক পরীক্ষার্থী ও পাসের সংখ্যা ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="3">কারিকুলাম আইডি</td>
-                        <td rowspan="3">টেকনোলজি/ট্রেড কোড</td>
-                        <td rowspan="3">টেকনোলজি/ট্রেডের নাম</td>
-                        <td colspan="4">ফলাফল</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৫.৫</span>
-                </div>
-                <div class="form-control bg-number-label">সার্টিফিকেট কোর্সে ট্রেডভিত্তিক পরীক্ষার্থী ও পাসের সংখ্যা ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="4">কারিকুলাম আইডি</td>
-                        <td rowspan="4">ট্রেড কোড</td>
-                        <td rowspan="4">ট্রেডের নাম</td>
-                        <td colspan="12">কোর্সের মেয়াদ</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">৩ মাস/৬ মাস</td>
-                        <td colspan="4">১ বছর</td>
-                        <td colspan="4">২ বছর</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৫.৬</span>
-                </div>
-                <div class="form-control bg-number-label">জাতীয় দক্ষতামান কোর্সে ট্রেডভিত্তিক পরীক্ষার্থী ও পাসের সংখ্যা ২০২১
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="4">কারিকুলাম আইডি</td>
-                        <td rowspan="4">ট্রেড কোড</td>
-                        <td rowspan="4">ট্রেডের নাম</td>
-                        <td colspan="4">কোর্সের মেয়াদ</td>
-                    </tr>
-                    <tr>
 
-                        <td colspan="4">১ বছর</td>
-
-                    </tr>
-                    <tr>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="contentBox">
-            <div class="input-group contentdeader">
+        <br>
+        <div class="contentBox ">
+            <div class="input-group contentHeader">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">৫.৭</span>
+                    <span class="input-group-text bg-number">২.৩০</span>
                 </div>
-                <div class="form-control bg-number-label">বেসিক কোর্সে ট্রেডভিত্তিক পরীক্ষার্থী ও পাসের সংখ্যা ২০২১
+                <div class="form-control bg-number-label">পদবীভিত্তিক কর্মরত ও এমপিওভুক্ত শিক্ষক ও কর্মচারীর সংখ্যা:
                 </div>
             </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="4">কারিকুলাম আইডি</td>
-                        <td rowspan="4">ট্রেড কোড</td>
-                        <td rowspan="4">ট্রেডের নাম</td>
-                        <td colspan="8">কোর্সের মেয়াদ</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">৩ মাস/৬ মাস</td>
-                        <td colspan="4">১ বছর</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                        <td colspan="2">পরীক্ষার্থীর সংখ্যা</td>
-                        <td colspan="2">পাশের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
+        <div class="contentBoxBody">
+            <table class="table table-bordered table-striped text-center">
+                <tr>
+                    <td rowspan="2">পদবী</td>
+                    <td colspan="2"> কর্মরত</td>
+                    <td colspan="2"> এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে)</td>
+                    <td rowspan="2">শূন্য পদের সংখ্যা</td>
+                    <td rowspan="2">শাখা শিক্ষক (কর্মরততেও অন্তর্ভূক্ত থাকবে)</td>
+                    <td rowspan="2">খন্ডকালীন শিক্ষক সংখ্যা</td>
+                    <td rowspan="2">নিবন্ধনকৃত শিক্ষক সংখ্যা (NTRCA) (প্রযোজ্য ক্ষেত্রে)</td>
+                    <td rowspan="2">NTRCA কর্তৃক পূরণযোগ্য শূন্য পদের সংখ্যা</td>
 
-                    </tr>
-                    <tbody>
-                    <tr>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                        <td><input type="number" number-converter class="w-50"></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+
+                </tr>
+                <tr>
+                    <td>মোট</td>
+                    <td>মহিলা</td>
+                    <td>মোট</td>
+                    <td>মহিলা</td>
+                </tr>
+                <tbody>
+                <tr ng-repeat="item in data.teachStafSum">
+                    <td ng-bind="desigName(item.designation_id)"></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.teachers_in_service"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.female_teachers_in_service"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.mpo_teachers"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.female_mpo_teachers"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.blank_post_no"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.brance_teacher"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_teacher"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.parttime_teacher"/></td>
+                    <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_blank_post"/></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
         </div>
         <div align="center"><button ng-click="submitData()" type="button" class="btn btn-success">Submit</button></div>
     </div>
 @endsection
 @section('javascript')
-    {{--
-        <script src="{{ asset('js/madStdSixthPage.js') }}" type="module" defer></script>
-    --}}
+        <script src="{{ asset('js/tecStdSeventhPage.js') }}" type="module" defer></script>
 @stop

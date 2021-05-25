@@ -82,7 +82,7 @@ var app = angular.module('tecStdSecondPage', []);
             console.log(dataToSend);
             $http({
                 method: 'POST',
-                url: 'http://127.0.0.1:8000/madStdSecondPage/submitData/',
+                url: 'http://127.0.0.1:8000/tecStdSecondPage/submitData/',
                 data: dataToSend,
                 dataType: 'json'
             }).then(

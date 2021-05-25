@@ -94,13 +94,13 @@ var app = angular.module('tecStdFirstPage', []);
             console.log(dataToSend);
             $http({
                 method: 'POST',
-                url: 'http://127.0.0.1:8000/madStdSecondPage/submitData/',
+                url: 'http://127.0.0.1:8000/tecStdFirstPage/submitData/',
                 data: dataToSend,
                 dataType: 'json'
             }).then(
                 function (response) {
                     console.log(response);
-                    alert("Second page data has been saved succesfull");
+                    alert("First page data has been saved succesfull");
                 },
                 function (response) {
                     console.log(response);

@@ -5,8 +5,44 @@
             width: 40px !important;
         }
     </style>
-    <div class="container-fluid" data-ng-app="madStdFourthPage" ng-controller="myCtrl">
+    <div class="container-fluid" data-ng-app="tecStdSixthPage" ng-controller="myCtrl">
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
+        <div class="contentBox col-8">
+            <div class="input-group contentdeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.২০</span>
+                </div>
+                <div class="form-control bg-number-label">অভিভাবকের পেশা অনুযায়ী শিক্ষার্থী সংখ্যা</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+
+                    <tr>
+                        <td rowspan="2">ক্র. নং</td>
+                        <td rowspan="2">অভিভাবকের পেশা</td>
+                        <td colspan="5">শিক্ষার্থীর সংখ্যা</td>
+                    </tr>
+                    <tr>
+                        <td>৯ম শ্রেণি</td>
+                        <td>১০ম শ্রেণি</td>
+                        <td>উচ্চ মাধ্যমিক</td>
+                        <td>ডিপ্লোমা</td>
+                    </tr>
+                    </tdead>
+                    <tbody>
+                    <tr ng-repeat="item in data.guardianOccupation">
+                        <td ng-bind="$index+1"></td>
+                        <td ng-bind="occupationName(item.occupation_id)"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.hsc"/></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.voc"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
         <div class="contentBox">
             <div class="input-group contentdeader">
                 <div class="input-group-prepend">
@@ -66,39 +102,40 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr ng-repeat="item in data.ageWiseSecStudentData">
+                    <tr ng-repeat="item in data.ageWiseStudent">
                         <td ng-bind="findClassName(item.class_id)"></td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
-                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.ten_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.fourteen_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.fourteen_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.fifteen_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.fifteen_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.sixteen_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.sixteen_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.seventeen_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.seventeen_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.eighteen_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.eighteen_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.nineteen_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.nineteen_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twenty_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twenty_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentyone_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentyone_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentytwo_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentytwo_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentythree_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentythree_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentyfour_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentyfour_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentyfive_total"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.twentyfive_female"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.total_student"/> </td>
+                        <td><input type="number" number-converter class="w-25 form-control" ng-model="item.female_student"/> </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+        <br>
         <div class="row contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -120,15 +157,16 @@
                         <td>Adult(25+)</td>
                     </tr>
                     <tr>
-                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_total">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.enterprenerData.en_15_24_tot">
                         </td>
-                        <td><input type="number" number-converter class="w-50" ng-model="data.studentSummaryDropout.eleven_female">
+                        <td><input type="number" number-converter class="w-50" ng-model="data.enterprenerData.en_25_plus_tot">
                         </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+        <br>
         <div class="row contentBox">
 
             <div class="input-group contentHeader">
@@ -267,7 +305,6 @@
     </div>
 @endsection
 @section('javascript')
-    {{--
-        <script src="{{ asset('js/madStdFourthPage.js') }}" type="module" defer></script>
-    --}}
+
+        <script src="{{ asset('js/tecStdSixthPage.js') }}" type="module" defer></script>
 @stop

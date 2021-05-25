@@ -1,4 +1,4 @@
-var app = angular.module('tecStdFourthPage', []);
+var app = angular.module('tecStdSixthPage', []);
 (function (app) {
     "use strict";
     app.controller('myCtrl', function ($scope, $http) {
@@ -8,13 +8,40 @@ var app = angular.module('tecStdFourthPage', []);
 
         /*===========================Helper Functions==============================*/
         // Console global
+        $scope.console = function () {
+            console.log($scope.data.occupationsList);
+        };
+
+        /*Occupation name finding*/
+        $scope.occupationName = function (id) {
+            var occupationsList = $scope.data.occupationsList;
+            var occupationName = null;
+            occupationsList.forEach(function (currentValue, index, arr) {
+                if (currentValue.occupation_id == id) {
+                    return occupationName = currentValue.details_bn;
+                }
+            });
+            return occupationName;
+        };
+
+        /*FInding  age class name*/
+        $scope.findClassName = function (id) {
+            var classList = $scope.data.ageClasses;
+            var clsName = null;
+            classList.forEach(function (currentValue, index) {
+                if (currentValue.class_id == id) {
+                    return clsName = currentValue.class_name_bangla;
+                }
+            });
+            return clsName;
+        };
 
         /*===========================Helper Functions Ends==============================*/
 
         /*==========================Data Fetching=======================================*/
         $http({
             method: 'GET',
-            url: 'http://127.0.0.1:8000/tecStdFourthPage/' + inst_id
+            url: 'http://127.0.0.1:8000/tecStdSixthPage/' + inst_id
         }).then(function (response) {
             // console.log(response.data)
             $scope.data = response.data;
@@ -28,19 +55,21 @@ var app = angular.module('tecStdFourthPage', []);
         $scope.submitData = function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
-            dataToSend.sscVocStudent = $scope.data.sscVocStudent;
-            dataToSend.hscVocStudent = $scope.data.hscVocStudent;
-            dataToSend.hscBmStudent = $scope.data.hscBmStudent;
+            dataToSend.guardianOccupation = $scope.data.guardianOccupation;
+            dataToSend.ageWiseStudent = $scope.data.ageWiseStudent;
+            dataToSend.instOtherInfo = $scope.data.instOtherInfo;
+            dataToSend.openUnStd = $scope.data.openUnStd;
+            dataToSend.openUnRes = $scope.data.openUnRes;
             console.log(dataToSend);
             $http({
                 method: 'POST',
-                url: 'http://127.0.0.1:8000/tecStdFourthPage/submitData/',
+                url: 'http://127.0.0.1:8000/tecStdSixthPage/submitData/',
                 data: dataToSend,
                 dataType: 'json'
             }).then(
                 function (response) {
                     console.log(response);
-                    alert("Fourth page data has been saved succesfull");
+                    alert("Sixth page data has been saved succesfull");
                 },
                 function (response) {
                     console.log(response);
@@ -49,7 +78,6 @@ var app = angular.module('tecStdFourthPage', []);
             );
         }
         /*==========================Data Saving END=======================================*/
-
     });
 })(app);
 app.directive('numberConverter', function() {

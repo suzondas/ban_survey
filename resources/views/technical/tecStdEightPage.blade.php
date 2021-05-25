@@ -5,74 +5,9 @@
             width: 40px !important;
         }
     </style>
-    <div class="container-fluid" data-ng-app="madStdSeventhPage" ng-controller="myCtrl">
+    <div class="container-fluid" data-ng-app="tecStdEightPage" ng-controller="myCtrl">
         <h3 style="text-align:center">সেকশন ২: শিক্ষার্থী, শিক্ষক ও কর্মচারী সম্পর্কিত তথ্য</h3>
-        <div class="contentBox ">
-            <div class="input-group contentHeader">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-number">২.৩০</span>
-                </div>
-                <div class="form-control bg-number-label">পদবীভিত্তিক কর্মরত ও এমপিওভুক্ত শিক্ষক ও কর্মচারীর সংখ্যা:
-                </div>
-            </div>
-            <div class="contentBoxBody">
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="2">পদবী</td>
-                        <td colspan="2">বর্তমানে কর্মরত</td>
-                        <td colspan="2">সংশ্লিষ্ট টেকনোলজির প্রশিক্ষণ প্রাপ্ত</td>
-                        <td colspan="2">এমপিওভুক্ত (প্রযোজ্য ক্ষেত্রে)</td>
-                        <td rowspan="2">শূন্য পদের সংখ্যা</td>
-                        <td rowspan="2">খন্ডকালীন শিক্ষক</td>
-                        <td rowspan="2">নিবন্ধনকৃত শিক্ষক সংখ্যা (NTRCA)</td>
-                        <td rowspan="2">NTRCA কর্তৃক পূরণযোগ্য শূন্য পদের সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                    </tr>
-                    <tbody>
-                    <tr ng-repeat="item in data.teachStafSum">
-                        <td ng-bind="desigName(item.designation_id)"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.teachers_in_service"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teachers_in_service"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.mpo_teachers"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_mpo_teachers"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.blank_post_no"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.brance_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.parttime_teacher"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_blank_post"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ntrc_blank_post"/></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-9">
-                <label class="label-number font-weight-bold">২.৩০.১ স্তরভিত্তিক শিক্ষকদের বিভাজন(একজন শিক্ষক একাধিক স্তরে পাঠদান করলে প্রত্যেক স্তরেই তাঁর সংখ্যা অনর্ভুক্ত হবে)</label>
-                <table class="table table-bordered table-striped text-center">
-                    <tr>
-                        <td rowspan="2">পাঠদানের স্তর</td>
-                        <td colspan="2">শিক্ষক সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
-                    </tr>
-                    <tbody>
-                    <tr ng-repeat="item in data.teachVocStafSum">
-                        <td ng-bind="desigVocName(item.designation_id)"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.teachers_in_service"/></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.female_teachers_in_service"/></td>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <br>
+
         <div class="row  contentBox">
             <div class="input-group contentHeader">
                 <div class="input-group-prepend">
@@ -81,7 +16,7 @@
                 <div class="form-control bg-number-label"> শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা</div>
             </div>
             <div class="col-md-4 contentBoxBody">
-                <label class="font-weight-bold"> ২.৩১.১ প্রতিষ্ঠানের সার্বোচ্চ শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা:</label>
+                <label class="font-weight-bold"> ২.৩১.১ মূল প্রতিষ্ঠানের সার্বোচ্চ শিক্ষাগত যোগ্যতাভিত্তিক শিক্ষক সংখ্যা:</label>
 
                 <table class="table table-bordered table-striped text-center">
                     <tr>
@@ -102,10 +37,10 @@
                 </table>
             </div>
             <div class="col-md-4 contentBoxBody">
-                <label class="font-weight-bold"> ২.৩১.২ প্রতিষ্ঠানের সর্বোচ্চ শিক্ষক প্রশিক্ষণপ্রাপ্ত শিক্ষক সংখ্যা:</label>
+                <label class="font-weight-bold"> ২.৩১.২ মূল প্রতিষ্ঠানের সর্বোচ্চ পেশাগত ডিগ্রিপ্রাপ্ত শিক্ষক সংখ্যা:</label>
                 <table class="table table-bordered  table-striped text-center">
                     <tr>
-                        <td rowspan="2">প্রশিক্ষণ</td>
+                        <td rowspan="2">ডিগ্রী</td>
                         <td colspan="2">শিক্ষক সংখ্যা</td>
                     </tr>
                     <tr>
@@ -122,7 +57,7 @@
                 </table>
             </div>
             <div class="col-md-4 contentBoxBody">
-                <label class="font-weight-bold"> ২.৩১.৩ আইসিটি বিষয়ক প্রশিক্ষণ প্রাপ্ত শিক্ষক সংখ্যাঃ</label>
+                <label class="font-weight-bold"> ২.৩১.৩ আইসিটি বিষয়ক প্রশিক্ষণ/ ডিগ্রি প্রাপ্ত শিক্ষক সংখ্যা</label>
                 <table class="table table-bordered table-striped text-center">
                     <tr>
                         <td rowspan="2">প্রশিক্ষণ/ ডিগ্রি</td>
@@ -143,6 +78,310 @@
             </div>
         </div>
         <br>
+        {{--Special Training Info --}}
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩২</span>
+                </div>
+                <div class="form-control bg-number-label">বিশেষ প্রশিক্ষণের তথ্য
+                </div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td>
+
+                            <label class="font-weight-bold">২.৩২.১ সৃজনশীল প্রশ্নপত্র প্রণয়ন ও উত্তরপত্র মূল্যায়ন বিষয়ক প্রশিক্ষণপ্রাপ্ত শিক্ষক
+                                সংখ্যা</label>
+                            <table class="table table-bordered table-striped">
+                                <tr>
+                                    <td colspan="2" class="text-center">৩ দিন প্রশিক্ষণপ্রাপ্ত</td>
+                                    <td colspan="2" class="text-center">১২ দিন প্রশিক্ষণপ্রাপ্ত</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"> মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_3day_total"/></td>
+                                    <td class="text-center"> মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_3day_female"/></td>
+                                    <td class="text-center"> মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_12day_total"/></td>
+                                    <td class="text-center"> মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.creative_12day_female"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td><label class="font-weight-bold">২.৩২.২ বিশেষ চাহিদাসম্পন্ন শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন)</label><br>
+                            মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_total"/>
+                            মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_female"/></td>
+                        <td><label class="font-weight-bold">২.৩২.৩ ক্ষুদ্র-নৃ-গোষ্ঠী শিক্ষক এর কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা
+                                লিখুন)</label><br>
+                            মোট: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_total"/>
+                            মহিলা: <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.onjob_training_tribe_female"/></td>
+                        <td class="form-inline"><label class="font-weight-bold">২.৩২.৪ বিশেষ চাহিদাসম্পন্ন শিক্ষার্থীর জন্য গাইড শিক্ষক আছে
+                                কি? </label><br>
+                            <select class="w-25" ng-model="data.teacherTrainInfo.autism_guide_teacher_yn">
+                                <option value="1"> হ্যাঁ</option>
+                                <option value="2"> না</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="form-inline"><label class="font-weight-bold">২.৩২.৫ দুর্যোগ ব্যবস্থাপনা সংক্রান্ত প্রশিক্ষণপ্রাপ্ত শিক্ষক আছে কি? </label><br>
+                            <select class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher_yn">
+                                <option value="1"> হ্যাঁ</option>
+                                <option value="2"> না</option>
+                            </select></td>
+                        <td><label class="font-weight-bold">২.৩২.৬ উত্তর হ্যাঁ হলে কয়জন?</label><br>
+                            <input type="number" number-converter class="w-25" ng-model="data.teacherTrainInfo.disaster_train_teacher"/>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="font-weight-bold">২.৩২.৭ শিক্ষকদের কোন কোন বিষয়ে প্রশিক্ষণ প্রয়োজন?</td>
+                        <td>১.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required1"/></td>
+                        <td>২.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required2"/></td>
+                        <td>৩.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required3"/></td>
+                        <td>৪.<input type="text" class="form-control" ng-model="data.teacherTrainInfo.training_required4"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {{--Special Trainig Ends--}}
+        <br>
+        <div class="contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩৩</span>
+                </div>
+                <div class="form-control bg-number-label">কর্মকালীন প্রশিক্ষণের তথ্য (সংখ্যা লিখুন):</div>
+            </div>
+            <div class="contentBoxBody">
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                    <tr>
+                        <th rowspan="2">প্রশিক্ষণ</th>
+                        <th colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+                        <th rowspan="2">প্রশিক্ষণ</th>
+                        <th colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক</th>
+
+                    </tr>
+                    <tr>
+
+                        <th colspan="2">হ্যাঁ/না</th>
+                        <th>মোট</th>
+                        <th>মহিলা</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>হেড টিচার ট্রেনিং (২১ দিন)</td>
+                        <td colspan="2"><select class="custom-select " ng-model="data.teacherInservTr.ht_training_yn" style="width: 90px" >
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td>সিপিডি-১ শুধুমাত্র ইংরেজি ট্রেনিং (২১ দিন)</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_eng_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_eng_female"></td>
+                    </tr>
+
+                    <tr>
+                        <td>হেড টিচার ফলো-আপ ট্রেনিং (৬ দিন)</td>
+                        <td colspan="2"><select class="custom-select " ng-model="data.teacherInservTr.ht_fl_training_yn" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td>সিপিডি-২ ট্রেনিং (৫ দিন)</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd2_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd2_female"></td>
+                    </tr>
+                    <tr>
+                        <td>হেড টিচার প্রি-সার্ভিস ট্রেনিং (৩৫ দিন)</td>
+                        <td colspan="2"><select class="custom-select " ng-model="data.teacherInservTr.ht_prserv_training_yn" style="width: 90px">
+                                <option value="">Select</option>
+                                <option value="1">হ্যাঁ</option>
+                                <option value="2">না</option>
+                            </select></td>
+                        <td>ক্লাস্টার ট্রেনিং (১ দিন)</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cluster_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cluster_female"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td colspan="2">প্রশিক্ষণপ্রাপ্ত শিক্ষক সংখ্যা</td>
+                        <td>এস.বি. এ ট্রেনিং</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.sba_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.sba_female"></td>
+                    </tr>
+                    <tr>
+
+                        <td>মোট</td>
+                        <td>মহিলা</td>
+                        <td>সৃজনশীল প্রশ্ন সংক্রান্ত ট্রেনিং</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.srizonsil_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.srizonsil_female"></td>
+                    </tr>
+                    <tr>
+                        <td>এসটিসি ট্রেনিং (৩ মাস)</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stc_training_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stc_training_female"></td>
+                        <td>অন্যান্য ট্রেনিং</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.other_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.other_female"></td>
+                    </tr>
+                    <tr>
+                        <td>এসটিটি থেকে বি.এড (৯ মাস)</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stt_bed_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.stt_bed_female"></td>
+                        <td colspan="3" rowspan="2">•প্রধান শিক্ষকগণ হ্যাঁ/না টিক দিবেন <br>
+                            •অন্যান্য শিক্ষকগণের সংখ্যা লিখবেন
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>সিপিডি-১ ট্রেনিং (১৪ দিন)</td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="data.teacherInservTr.cpd1_female"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="row contentBox">
+            <div class="input-group contentHeader">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-number">২.৩৪</span>
+                </div>
+                <div class="form-control bg-number-label"> বিষয়ভিত্তিক শিক্ষক সংখ্যা</div>
+            </div>
+            <div class="col-md-6 mt-2">
+                <div class="col">
+                    <table class="table table-bordered table-striped text-center">
+                        <tr>
+                            <td></td>
+                            <td>মোট</td>
+                            <td>মহিলা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td style="width: 350px" class="font-weight-bold">২.৩৪.১ ক্লাস রুটিন অনুযায়ী ইংরেজি পাঠদানকারী শিক্ষক সংখ্যা:</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.total_eng_teachers"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.female_eng_teacher"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <label class="font-weight-bold">২.৩৪.২ ইংরেজি বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর</label>
+                    পর্যায়ে ইংরেজি বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
+
+                    <table class="table table-bordered table-striped text-center">
+                        <tr>
+                            <td>ক্রমিক নং</td>
+                            <td>বিবরণ</td>
+                            <td>শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td>১</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে বাধ্যতামূলক ১০০ নম্বরের ইংরেজি ছিল</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_100_eng"></td>
+                        </tr>
+                        <tr>
+                            <td>২</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ৩০০ নম্বরের ইংরেজি ছিল</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_300_eng"></td>
+                        </tr>
+                        <tr>
+                            <td>৩</td>
+                            <td style="width: 350px">ইংরেজিতে স্নাতক সম্মান</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.eng_hons"></td>
+                        </tr>
+                        <tr>
+                            <td>৪</td>
+                            <td style="width: 350px">ইংরেজিতে স্নাতকোত্তর</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.eng_hons_mst"></td>
+                        </tr>
+                        <tr>
+                            <td>৫</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে ইংরেজি ছিলা না</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_without_eng"></td>
+                        </tr>
+                        <tr>
+                            <td>৬</td>
+                            <td style="width: 350px">এইচ এস সি পাস</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.eng_hsc_pass"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6 mt-2">
+                <div class="col">
+                    <table class="table table-bordered  table-striped text-center">
+                        <tr>
+                            <td></td>
+                            <td>মোট</td>
+                            <td>মহিলা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td style="width: 350px" class="font-weight-bold">২.৩৪.৩ ক্লাস রুটিন অনুযায়ী গণিত বিষয়ে পাঠদানকারী শিক্ষক সংখ্যা:
+                            </td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.total_math_teachers"></td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.female_math_teacher"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <label class="font-weight-bold">২.৩৪.৪ গণিত বিষয়ে পাঠদানকারী শিক্ষকের স্নাতক (পাস), স্নাতক (সম্মান) ও স্নাতকোত্তর</label>
+                    পর্যায়ে গণিত বিষয় অধ্যয়ন সম্পর্কিত তথ্য:
+
+                    <table class="table table-bordered table-striped text-center">
+                        <tr>
+                            <td>ক্রমিক নং</td>
+                            <td>বিবরণ</td>
+                            <td>শিক্ষক/ শিক্ষিকার সংখ্যা</td>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td>১</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে পদার্থ ও রসায়নসহ গণিত ছিল</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_pcm"></td>
+                        </tr>
+                        <tr>
+                            <td>২</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে অন্যান্য বিষয়সহ গণিত ছিল</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_other_math"></td>
+                        </tr>
+                        <tr>
+                            <td>৩</td>
+                            <td style="width: 350px">গণিতে স্নাতক সম্মান</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.math_hons"></td>
+                        </tr>
+                        <tr>
+                            <td>৪</td>
+                            <td style="width: 350px">গণিতে স্নাতকোত্তর</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.math_hons_mst"></td>
+                        </tr>
+                        <tr>
+                            <td>৫</td>
+                            <td style="width: 350px">স্নাতক (পাস) পর্যায়ে গণিত ছিল না কিন্তু এইচএসসিতে ছিল</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.deg_hsc_with_math"></td>
+                        </tr>
+                        <tr>
+                            <td>৬</td>
+                            <td style="width: 350px">স্নাতক বা এইচ এস সি পর্যায়ে ছিল না</td>
+                            <td><input type="number" number-converter class="w-50" ng-model="data.teacherTrainInfo.hons_without_math"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         <br>
         <div class="contentBox ">
             <div class="input-group contentHeader">
@@ -293,7 +532,7 @@
                         <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_bncc_year"></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শিক্ষক (স্কাউট)</td>
+                        <td>শ্রেষ্ঠ শিক্ষক (রোভার)</td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_tea_scout_national" ng-checked="data.teacherRetAwInfo.best_tea_scout_national==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_tea_scout_division" ng-checked="data.teacherRetAwInfo.best_tea_scout_division==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_tea_scout_district" ng-checked="data.teacherRetAwInfo.best_tea_scout_district==1" ng-true-value="'1'" ng-false-value="'0'"></td>
@@ -301,7 +540,7 @@
                         <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_tea_scout_year"></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শিক্ষক (গার্ল গাইড)</td>
+                        <td>শ্রেষ্ঠ শিক্ষক (রেঞ্জার)</td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_tea_gguide_national" ng-checked="data.teacherRetAwInfo.best_tea_gguide_national==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_tea_gguide_division" ng-checked="data.teacherRetAwInfo.best_tea_gguide_division==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_tea_gguide_district" ng-checked="data.teacherRetAwInfo.best_tea_gguide_district==1" ng-true-value="'1'" ng-false-value="'0'"></td>
@@ -318,9 +557,16 @@
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_thana" ng-checked="data.teacherRetAwInfo.best_std_thana==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_year"></td>
                     </tr>
-
                     <tr>
-                        <td>শ্রেষ্ঠ শিক্ষার্থী (স্কাউট)</td>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী (বিএনসিসি)</td>
+                        <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_bncc_national" ng-checked="data.teacherRetAwInfo.best_std_bncc_national==1" ng-true-value="'1'" ng-false-value="'0'"></td>
+                        <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_bncc_divisional" ng-checked="data.teacherRetAwInfo.best_std_bncc_divisional==1" ng-true-value="'1'" ng-false-value="'0'"></td>
+                        <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_bncc_district" ng-checked="data.teacherRetAwInfo.best_std_bncc_district==1" ng-true-value="'1'" ng-false-value="'0'"></td>
+                        <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_bncc_thana" ng-checked="data.teacherRetAwInfo.best_std_bncc_thana==1" ng-true-value="'1'" ng-false-value="'0'"></td>
+                        <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_bncc_year"></td>
+                    </tr>
+                    <tr>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী (রোভার)</td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_scout_national" ng-checked="data.teacherRetAwInfo.best_std_scout_national==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_scout_division" ng-checked="data.teacherRetAwInfo.best_std_scout_division==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_scout_district" ng-checked="data.teacherRetAwInfo.best_std_scout_district==1" ng-true-value="'1'" ng-false-value="'0'"></td>
@@ -328,7 +574,7 @@
                         <td><input type="text" class="form-control" ng-model="data.teacherRetAwInfo.best_std_scout_year"></td>
                     </tr>
                     <tr>
-                        <td>শ্রেষ্ঠ শিক্ষার্থী (গার্ল গাইড)</td>
+                        <td>শ্রেষ্ঠ শিক্ষার্থী (রেঞ্জার)</td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_gguide_national" ng-checked="data.teacherRetAwInfo.best_std_gguide_national==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_gguide_division" ng-checked="data.teacherRetAwInfo.best_std_gguide_division==1" ng-true-value="'1'" ng-false-value="'0'"></td>
                         <td><input type="checkbox" ng-model="data.teacherRetAwInfo.best_std_gguide_district" ng-checked="data.teacherRetAwInfo.best_std_gguide_district==1" ng-true-value="'1'" ng-false-value="'0'"></td>
@@ -436,7 +682,5 @@
     </div>
 @endsection
 @section('javascript')
-    {{--
-        <script src="{{ asset('js/madStdSeventhPage.js') }}" type="module" defer></script>
-    --}}
+    <script src="{{ asset('js/tecStdEightPage.js') }}" type="module" defer></script>
 @stop

@@ -40,7 +40,7 @@ var app = angular.module('tecStdThirdPage', []);
             }).then(
                 function (response) {
                     console.log(response);
-                    alert("Second page data has been saved succesfull");
+                    alert("Third page data has been saved succesfull");
                 },
                 function (response) {
                     console.log(response);
