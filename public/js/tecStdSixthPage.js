@@ -57,6 +57,7 @@ var app = angular.module('tecStdSixthPage', []);
             dataToSend.instId = inst_id;
             dataToSend.guardianOccupation = $scope.data.guardianOccupation;
             dataToSend.ageWiseStudent = $scope.data.ageWiseStudent;
+            dataToSend.enterprenerData = $scope.data.enterprenerData;
             dataToSend.instOtherInfo = $scope.data.instOtherInfo;
             dataToSend.openUnStd = $scope.data.openUnStd;
             dataToSend.openUnRes = $scope.data.openUnRes;

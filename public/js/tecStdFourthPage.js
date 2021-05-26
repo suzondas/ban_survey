@@ -28,9 +28,8 @@ var app = angular.module('tecStdFourthPage', []);
         $scope.submitData = function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
-            dataToSend.sscVocStudent = $scope.data.sscVocStudent;
-            dataToSend.hscVocStudent = $scope.data.hscVocStudent;
-            dataToSend.hscBmStudent = $scope.data.hscBmStudent;
+            dataToSend.natSkillStd = $scope.data.natSkillStd;
+            dataToSend.dipBasTradeStd = $scope.data.dipBasTradeStd;
             console.log(dataToSend);
             $http({
                 method: 'POST',

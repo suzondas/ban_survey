@@ -216,17 +216,17 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/> </td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/> </td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_girls"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_girls"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.honors_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.honors_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.honors_girls"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.masters_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.masters_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.masters_girls"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -347,17 +347,17 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_teacher"/> </td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.female_teacher"/> </td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_girls"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_girls"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.honors_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.honors_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.honors_girls"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.masters_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.masters_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.masters_girls"></td>
                     </tr>
 
                     </tbody>
@@ -391,8 +391,6 @@
                     <tr>
                         <td></td>
                         <td></td>
-                        <td>মোট</td>
-                        <td>মহিলা</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                         <td>মোট</td>

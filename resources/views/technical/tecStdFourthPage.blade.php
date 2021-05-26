@@ -85,8 +85,6 @@
                         <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
-                        <td>মোট</td>
-                        <td>ছাত্রী</td>
                     </tr>
                     <tbody>
                     <tr ng-repeat="item in data.dipBasTradeStd">

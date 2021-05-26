@@ -42,10 +42,10 @@
                     <tr ng-repeat="item in data.dipCommerceStd">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>

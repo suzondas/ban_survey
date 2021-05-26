@@ -88,9 +88,14 @@ var app = angular.module('tecStdFirstPage', []);
         $scope.submitData = function () {
             var dataToSend = {};
             dataToSend.instId = inst_id;
+            dataToSend.studentSummaryTotal = $scope.data.studentSummaryTotal;
             dataToSend.sscVocStudent = $scope.data.sscVocStudent;
             dataToSend.hscVocStudent = $scope.data.hscVocStudent;
             dataToSend.hscBmStudent = $scope.data.hscBmStudent;
+            dataToSend.one_yr_certificate = $scope.data.one_yr_certificate;
+            dataToSend.one_yr_adv_certificate = $scope.data.one_yr_adv_certificate;
+            dataToSend.studentSummaryRepeater = $scope.data.studentSummaryRepeater;
+            dataToSend.studentSummaryDropout = $scope.data.studentSummaryDropout;
             console.log(dataToSend);
             $http({
                 method: 'POST',

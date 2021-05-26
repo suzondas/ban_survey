@@ -44,22 +44,22 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr  ng-repeat="item in data.diplomaClasses">
+                    <tr  ng-repeat="item in data.dipStudentData">
                         <td ng-bind="diplomaName(item.class_id)"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_student"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.female_student"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.male_stipend"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.female_stipend"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.male_scholarship"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.female_scholarship"></td>
+                        <td><input type="number" number-converter class="w-50"ng-model="item.govt_male_stipend"></td>
+                        <td><input type="number" number-converter class="w-50"ng-model="item.govt_female_stipend"></td>
+                        <td><input type="number" number-converter class="w-50"ng-model="item.pr_male_stipend"></td>
+                        <td><input type="number" number-converter class="w-50"ng-model="item.pr_female_stipend"></td>
+                        <td><input type="number" number-converter class="w-50"ng-model="item.gpr_male_stipend"></td>
+                        <td><input type="number" number-converter class="w-50"ng-model="item.gpr_female_stipend"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.total_present"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.female_present"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.total_rep"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.female_rep"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.transfer_in"></td>
                         <td><input type="number" number-converter class="w-50"ng-model="item.transfer_out"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.nextyr_book_reg"></td>
-                        <td><input type="number" number-converter class="w-50"ng-model="item.nextyr_book_reg"></td>
                     </tr>
 
                     </tbody>
@@ -225,13 +225,13 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.HscVocStdData">
+                    <tr ng-repeat="item in data.hscVocStdData">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
@@ -273,13 +273,13 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.HscBmStdData">
+                    <tr ng-repeat="item in data.hscBmStdData">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.nine_female"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_total"></td>
-                        <td><input type="number" number-converter class="w-50" ng-model="item.ten_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.eleven_female"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_total"></td>
+                        <td><input type="number" number-converter class="w-50" ng-model="item.twelve_female"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
