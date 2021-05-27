@@ -243,92 +243,92 @@
                         </tr>
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       >ডিপ্লোমা ইন টেকনিকাল এডুকেশন</td>
+                                       v-model="data.instCurriculum.EL_DIP_TECH_EDUCATION"  >ডিপ্লোমা ইন টেকনিকাল এডুকেশন</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       >ডিপ্লোমা ইন ভোকেশনাল এডুকেশন</td>
+                                       v-model="data.instCurriculum.EL_DIP_VOC_EDUCATION">ডিপ্লোমা ইন ভোকেশনাল এডুকেশন</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং</td>
+                                       v-model="data.instCurriculum.EL_DIP_ENGINEERING" >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       >ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং</td>
+                                       v-model="data.instCurriculum.EL_DIP_TEXTILE" >ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং</td>
                         </tr>
 
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন এগ্রিকালচার</td>
+                                       v-model="data.instCurriculum.EL_DIP_AGRICULTURE" >ডিপ্লোমা ইন এগ্রিকালচার</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন ফিসারিজ(৯৩)</td>
+                                       v-model="data.instCurriculum.EL_DIP_FISHERIES" >ডিপ্লোমা ইন ফিসারিজ(৯৩)</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন ফিসারিজ(ইন সার্ভিস)</td>
+                                       v-model="data.instCurriculum.EL_DIP_FISHERIES_SERVICE" >ডিপ্লোমা ইন ফিসারিজ(ইন সার্ভিস)</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন ফরেস্ট্রি</td>
+                                       v-model="data.instCurriculum.EL_DIP_FORESTRY" >ডিপ্লোমা ইন ফরেস্ট্রি</td>
                         </tr>
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন ফরেস্ট্রি (ইন সার্ভিস) </td>
+                                       v-model="data.instCurriculum.EL_DIP_FORESTRY_SERVICE"  >ডিপ্লোমা ইন ফরেস্ট্রি (ইন সার্ভিস) </td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন লাইভস্টক</td>
+                                       v-model="data.instCurriculum.EL_DIP_LIVESTOCK"  >ডিপ্লোমা ইন লাইভস্টক</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন মেডিকেল টেকনোলজি</td>
+                                       v-model="data.instCurriculum.EL_DIP_MEDICAL_TECH" >ডিপ্লোমা ইন মেডিকেল টেকনোলজি</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং(নেভাল)</td>
-                        </tr>
-
-                        <tr>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন ইঞ্জি (আর্মি) </td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন ট্যুরিজম ও হসপিটালিটি</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন মেডিকেল আলট্রাসাউন্ড</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন এনিমেল হেলথ এন্ড প্রোডাকশন (ইন সার্ভিস)</td>
-                        </tr>
-                        <tr>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >এইচএসসি বিএম (৫৫) </td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >এইচএসসি ভোক (৫৪)</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >ডিপ্লোমা ইন কমার্স(৯৪)</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >এসএসসি ভোক (৫৩)</td>
-                        </tr>
-                        <tr>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >দাখিল ভোক</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >সার্টিফিকেট ইন মেরিন ট্রেড</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >স্কিল সার্টিফিকেট কোর্স</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >সার্টিফিকেট ইন ভোকেশনাল এডুকেশন</td>
-                        </tr>
-                        <tr>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >সার্টিফিকেট ইন হেলথ টেকনোলজি</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >সার্টিফিকেট ইন পোলট্রি ফার্মিং</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >সার্টিফিকেট ইন এনিমেল হেলথ এন্ড প্রোডাকশন</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >জাতীয় দক্ষতামান-২</td>
-                        </tr>
-                        <tr>
-
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >জাতীয় দক্ষতামান-৩</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >প্রোফেশনাল ডিপ্লোমা ইন অটোমোবাইল</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >NTVQF(Level:1-6)</td>
-                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >মেরিন এন্ড শিপ বিল্ডিং ট্রেড সার্টিফিকেট</td>
+                                       v-model="data.instCurriculum.EL_DIP_NAVAL" >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং(নেভাল)</td>
                         </tr>
 
                         <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_DIP_ARMY" >ডিপ্লোমা ইন ইঞ্জি (আর্মি) </td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_DIP_TOURISM" >ডিপ্লোমা ইন ট্যুরিজম ও হসপিটালিটি</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_DIP_ULTRASOUND"  >ডিপ্লোমা ইন মেডিকেল আলট্রাসাউন্ড</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_DIP_ANIMAL_SERVICE"  >ডিপ্লোমা ইন এনিমেল হেলথ এন্ড প্রোডাকশন (ইন সার্ভিস)</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_HSC_BM"  >এইচএসসি বিএম (৫৫) </td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_HSC_VOC"  >এইচএসসি ভোক (৫৪)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_DIP_COMMERCE"  >ডিপ্লোমা ইন কমার্স(৯৪)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_SSC_VOC"  >এসএসসি ভোক (৫৩)</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_DAKHIL_VOC" >দাখিল ভোক</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_CERTIFICATE_MARINE"  >সার্টিফিকেট ইন মেরিন ট্রেড</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_SKILL_CERTIFICATE"  >স্কিল সার্টিফিকেট কোর্স</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_CERTIFICATE_VOC"  >সার্টিফিকেট ইন ভোকেশনাল এডুকেশন</td>
+                        </tr>
+                        <tr>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_CERTIFICATE_HEALTH"  >সার্টিফিকেট ইন হেলথ টেকনোলজি</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_CERTIFICATE_POULTRY"  >সার্টিফিকেট ইন পোলট্রি ফার্মিং</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_CERTIFICATE_ANIMAL_HEALTH"  >সার্টিফিকেট ইন এনিমেল হেলথ এন্ড প্রোডাকশন</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_NATIONAL_SKILLS2"  >জাতীয় দক্ষতামান-২</td>
+                        </tr>
+                        <tr>
 
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                >এডভান্সড সার্টিফিকেট কোর্স</td>
+                                       v-model="data.instCurriculum.EL_NATIONAL_SKILLS3"  >জাতীয় দক্ষতামান-৩</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_PROF_DIP_AUTOMOBILE"  >প্রোফেশনাল ডিপ্লোমা ইন অটোমোবাইল</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum." >NTVQF(Level:1-6)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum."  >মেরিন এন্ড শিপ বিল্ডিং ট্রেড সার্টিফিকেট</td>
+                        </tr>
+
+                        <tr>
+
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculum.EL_ADVANCED_CERTIFICATE"  >এডভান্সড সার্টিফিকেট কোর্স</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -750,5 +750,5 @@
 @endsection
 {{--Page wise js--}}
 @section('javascript')
-    <script src="{{ asset('js/tecFirstPage.js') }}" type="module" defer></script>
+   {{-- <script src="{{ asset('js/tecFirstPage.js') }}" type="module" defer></script>--}}
 @stop
