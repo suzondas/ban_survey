@@ -174,32 +174,36 @@
                                 <label class="" for="">১.২.১ প্রতিষ্ঠানের ধরনঃ</label>
                                 <select class="" v-model="data.institutes.institute_type_id">
                                     <option value="">Select</option>
-                                    <option value="1">১.পলিটেকনিক ইনস্টিটিউট</option>
-                                    <option value="2">২.টেকনিক্যাল স্কুল এন্ড কলেজ</option>
-                                    <option value="3">৩.টেকনিক্যাল ট্রেনিং সেন্টার</option>
-                                    <option value="4">৪. কৃষি প্রশিক্ষণ ইনস্টিটিউট</option>
-                                    <option value="5">৫. টেক্সটাইল ইনস্টিটিউট</option>
-                                    <option value="6">৬. সার্ভে ইনস্টিটিউট</option>
-                                    <option value="7">৭. গ্রাফিক আর্টস ইনস্টিটিউট</option>
-                                    <option value="8">৮. নেভাল/মেরিন ইনস্টিটিউট</option>
-                                    <option value="9">৯. হেলথ টেকনোলজি/মেডিক্যাল ইনস্টিটিউট</option>
-                                    <option value="10">১০. টেক্সটাইল ভোক/ ইনস্টিটিউট</option>
-                                    <option value="11">১১. এইসএসসি বিএম ইনস্টিটিউট/কলেজ</option>
-                                    <option value="12">১২. প্রফেশনাল ডিপ্লোমা ইনস্টিটিউট</option>
-                                    <option value="13">১৩. ফিশারিজ ইনস্টিটিউট </option>
-                                    <option value="14">১৪. লাইভস্টক/এনিমেল হেলথ এন্ড প্রডাকশন ইনস্টিটিউট </option>
-                                    <option value="15">১৫. ট্যুরিজম এন্ড হসপিটালিটি ইনস্টিটিউট </option>
-                                    <option value="16">১৬. ইঞ্জিনিয়ারিং ইনস্টিটিউট(আর্মি) </option>
-                                    <option value="17">১৭. এইচএসসি ভোক(৫৪)</option>
-                                    <option value="18">১৮. ডিপ্লোমা ইন কমার্স(৯৪)ইনস্টিটিউট</option>
-                                    <option value="19">১৯. এইচএসসি ভোক(৫৩)ইনস্টিটিউট</option>
-                                    <option value="20">২০. দাখিল ভোক ইনস্টিটিউট</option>
-                                    <option value="21">২১. ভোকেশনাল টিচার্স ট্রেনিং ইনস্টিটিউট</option>
-                                    <option value="22">২২. টেকনিক্যাল টিচার্স ট্রেনিং কলেজ</option>
-                                    <option value="23">২৩. এরোনটিক্যাল ইনস্টিটিউট</option>
-                                    <option value="24">২৪. সার্টিফিকেট কোর্স</option>
-                                    <option value="25">২৫. জাতীয় দক্ষতা মান</option>
+                                    <option value="5">৫.কারিগরি</option>
                                 </select>
+                                {{--<select class="" v-model="data.institutes.institute_type_id">--}}
+                                    {{--<option value="">Select</option>--}}
+                                    {{--<option value="1">১.পলিটেকনিক ইনস্টিটিউট</option>--}}
+                                    {{--<option value="2">২.টেকনিক্যাল স্কুল এন্ড কলেজ</option>--}}
+                                    {{--<option value="3">৩.টেকনিক্যাল ট্রেনিং সেন্টার</option>--}}
+                                    {{--<option value="4">৪. কৃষি প্রশিক্ষণ ইনস্টিটিউট</option>--}}
+                                    {{--<option value="5">৫. টেক্সটাইল ইনস্টিটিউট</option>--}}
+                                    {{--<option value="6">৬. সার্ভে ইনস্টিটিউট</option>--}}
+                                    {{--<option value="7">৭. গ্রাফিক আর্টস ইনস্টিটিউট</option>--}}
+                                    {{--<option value="8">৮. নেভাল/মেরিন ইনস্টিটিউট</option>--}}
+                                    {{--<option value="9">৯. হেলথ টেকনোলজি/মেডিক্যাল ইনস্টিটিউট</option>--}}
+                                    {{--<option value="10">১০. টেক্সটাইল ভোক/ ইনস্টিটিউট</option>--}}
+                                    {{--<option value="11">১১. এইসএসসি বিএম ইনস্টিটিউট/কলেজ</option>--}}
+                                    {{--<option value="12">১২. প্রফেশনাল ডিপ্লোমা ইনস্টিটিউট</option>--}}
+                                    {{--<option value="13">১৩. ফিশারিজ ইনস্টিটিউট </option>--}}
+                                    {{--<option value="14">১৪. লাইভস্টক/এনিমেল হেলথ এন্ড প্রডাকশন ইনস্টিটিউট </option>--}}
+                                    {{--<option value="15">১৫. ট্যুরিজম এন্ড হসপিটালিটি ইনস্টিটিউট </option>--}}
+                                    {{--<option value="16">১৬. ইঞ্জিনিয়ারিং ইনস্টিটিউট(আর্মি) </option>--}}
+                                    {{--<option value="17">১৭. এইচএসসি ভোক(৫৪)</option>--}}
+                                    {{--<option value="18">১৮. ডিপ্লোমা ইন কমার্স(৯৪)ইনস্টিটিউট</option>--}}
+                                    {{--<option value="19">১৯. এইচএসসি ভোক(৫৩)ইনস্টিটিউট</option>--}}
+                                    {{--<option value="20">২০. দাখিল ভোক ইনস্টিটিউট</option>--}}
+                                    {{--<option value="21">২১. ভোকেশনাল টিচার্স ট্রেনিং ইনস্টিটিউট</option>--}}
+                                    {{--<option value="22">২২. টেকনিক্যাল টিচার্স ট্রেনিং কলেজ</option>--}}
+                                    {{--<option value="23">২৩. এরোনটিক্যাল ইনস্টিটিউট</option>--}}
+                                    {{--<option value="24">২৪. সার্টিফিকেট কোর্স</option>--}}
+                                    {{--<option value="25">২৫. জাতীয় দক্ষতা মান</option>--}}
+                                {{--</select>--}}
                             </td>
 
                             <td colspan="2">
@@ -210,13 +214,13 @@
                                     <option value="21">দাখিল(ভোক)(২)</option>
                                     <option value="54">এইসএসসি (ভোক)(৩)</option>
                                     <option value="52">এইসএসসি (বিএম)(৪)</option>
-                                    <option value="32">এইচএসসি ডিপ্লোমা ইন কমার্স(৫)</option>
+                                    <option value="94">এইচএসসি ডিপ্লোমা ইন কমার্স(৫)</option>
                                     <option value="67">ডিপ্লোমা(৬)</option>
-                                    <option value="34">সার্টিফিকেট কোর্স ৬ মাস/এক বছর/দুই বছর(৭)</option>
-                                    <option value="34">জাতীয় দক্ষতামান(এক বছর মেয়াদি)(৮)</option>
-                                    <option value="34">জাতীয় দক্ষতামান/বেসিক(৩৬০ ঘন্টা)(৯)</option>
-                                    <option value="34">স্নাতক পর্যায়(১০)</option>
-                                    <option value="34">শিক্ষক প্রশিক্ষণ(১১)</option>
+                                    <option value="99">সার্টিফিকেট কোর্স ৬ মাস/এক বছর/দুই বছর(৭)</option>
+                                    <option value="89">জাতীয় দক্ষতামান(এক বছর মেয়াদি)(৮)</option>
+                                    <option value="48">জাতীয় দক্ষতামান/বেসিক(৩৬০ ঘন্টা)(৯)</option>
+                                    <option value="33">স্নাতক পর্যায়(১০)</option>
+                                    <option value="95">শিক্ষক প্রশিক্ষণ(১১)</option>
                                 </select>
                             </td>
                         </tr>
@@ -238,105 +242,98 @@
                         </tr>
                         <tr>
                             <td colspan="4">
-                                <label class="" for="division">প্রতিষ্ঠানে চলমান কারিকুলাম বা শিক্ষাক্রমসমূহ:</label>
+                                <label class="" for="division">১.২.৮ প্রতিষ্ঠানে চলমান কারিকুলাম বা শিক্ষাক্রমসমূহ:</label>
                             </td>
                         </tr>
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_TECH_EDUCATION"  >ডিপ্লোমা ইন টেকনিকাল এডুকেশন</td>
+                                       v-model="data.instCurriculums.el_dip_tech_education"  >ডিপ্লোমা ইন টেকনিকাল এডুকেশন</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_VOC_EDUCATION">ডিপ্লোমা ইন ভোকেশনাল এডুকেশন</td>
+                                       v-model="data.instCurriculums.el_dip_voc_education">ডিপ্লোমা ইন ভোকেশনাল এডুকেশন</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_ENGINEERING" >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং</td>
+                                       v-model="data.instCurriculums.el_dip_engineering" >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_TEXTILE" >ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং</td>
+                                       v-model="data.instCurriculums.el_dip_textile" >ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং</td>
                         </tr>
 
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_AGRICULTURE" >ডিপ্লোমা ইন এগ্রিকালচার</td>
+                                       v-model="data.instCurriculums.el_dip_agriculture" >ডিপ্লোমা ইন এগ্রিকালচার</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_FISHERIES" >ডিপ্লোমা ইন ফিসারিজ(৯৩)</td>
+                                       v-model="data.instCurriculums.el_dip_fisheries" >ডিপ্লোমা ইন ফিসারিজ(৯৩)</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_FISHERIES_SERVICE" >ডিপ্লোমা ইন ফিসারিজ(ইন সার্ভিস)</td>
+                                       v-model="data.instCurriculums.el_dip_fisheries_service" >ডিপ্লোমা ইন ফিসারিজ(ইন সার্ভিস)</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_FORESTRY" >ডিপ্লোমা ইন ফরেস্ট্রি</td>
+                                       v-model="data.instCurriculums.el_dip_forestry" >ডিপ্লোমা ইন ফরেস্ট্রি</td>
                         </tr>
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_FORESTRY_SERVICE"  >ডিপ্লোমা ইন ফরেস্ট্রি (ইন সার্ভিস) </td>
+                                       v-model="data.instCurriculums.el_dip_forestry_service"  >ডিপ্লোমা ইন ফরেস্ট্রি (ইন সার্ভিস) </td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_LIVESTOCK"  >ডিপ্লোমা ইন লাইভস্টক</td>
+                                       v-model="data.instCurriculums.el_dip_livestock"  >ডিপ্লোমা ইন লাইভস্টক</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_MEDICAL_TECH" >ডিপ্লোমা ইন মেডিকেল টেকনোলজি</td>
+                                       v-model="data.instCurriculums.el_dip_medical_tech" >ডিপ্লোমা ইন মেডিকেল টেকনোলজি</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_NAVAL" >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং(নেভাল)</td>
+                                       v-model="data.instCurriculums.el_dip_naval" >ডিপ্লোমা ইন ইঞ্জিনিয়ারিং(নেভাল)</td>
                         </tr>
 
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_ARMY" >ডিপ্লোমা ইন ইঞ্জি (আর্মি) </td>
+                                       v-model="data.instCurriculums.el_dip_army" >ডিপ্লোমা ইন ইঞ্জি (আর্মি) </td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_TOURISM" >ডিপ্লোমা ইন ট্যুরিজম ও হসপিটালিটি</td>
+                                       v-model="data.instCurriculums.el_dip_tourism" >ডিপ্লোমা ইন ট্যুরিজম ও হসপিটালিটি</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_ULTRASOUND"  >ডিপ্লোমা ইন মেডিকেল আলট্রাসাউন্ড</td>
+                                       v-model="data.instCurriculums.el_dip_ultrasound"  >ডিপ্লোমা ইন মেডিকেল আলট্রাসাউন্ড</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_ANIMAL_SERVICE"  >ডিপ্লোমা ইন এনিমেল হেলথ এন্ড প্রোডাকশন (ইন সার্ভিস)</td>
+                                       v-model="data.instCurriculums.el_dip_animal_service"  >ডিপ্লোমা ইন এনিমেল হেলথ এন্ড প্রোডাকশন (ইন সার্ভিস)</td>
                         </tr>
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_HSC_BM"  >এইচএসসি বিএম (৫৫) </td>
+                                       v-model="data.instCurriculums.el_hsc_bm"  >এইচএসসি বিএম (৫৫) </td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_HSC_VOC"  >এইচএসসি ভোক (৫৪)</td>
+                                       v-model="data.instCurriculums.el_hsc_voc"  >এইচএসসি ভোক (৫৪)</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DIP_COMMERCE"  >ডিপ্লোমা ইন কমার্স(৯৪)</td>
+                                       v-model="data.instCurriculums.el_dip_commerce"  >ডিপ্লোমা ইন কমার্স(৯৪)</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_SSC_VOC"  >এসএসসি ভোক (৫৩)</td>
+                                       v-model="data.instCurriculums.el_ssc_voc"  >এসএসসি ভোক (৫৩)</td>
                         </tr>
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_DAKHIL_VOC" >দাখিল ভোক</td>
+                                       v-model="data.instCurriculums.el_dakhil_voc" >দাখিল ভোক</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_CERTIFICATE_MARINE"  >সার্টিফিকেট ইন মেরিন ট্রেড</td>
+                                       v-model="data.instCurriculums.el_certificate_marine"  >সার্টিফিকেট ইন মেরিন ট্রেড</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_SKILL_CERTIFICATE"  >স্কিল সার্টিফিকেট কোর্স</td>
+                                       v-model="data.instCurriculums.el_skill_certificate"  >স্কিল সার্টিফিকেট কোর্স</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_CERTIFICATE_VOC"  >সার্টিফিকেট ইন ভোকেশনাল এডুকেশন</td>
+                                       v-model="data.instCurriculums.el_certificate_voc"  >সার্টিফিকেট ইন ভোকেশনাল এডুকেশন</td>
                         </tr>
                         <tr>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_CERTIFICATE_HEALTH"  >সার্টিফিকেট ইন হেলথ টেকনোলজি</td>
+                                       v-model="data.instCurriculums.el_certificate_health"  >সার্টিফিকেট ইন হেলথ টেকনোলজি</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_CERTIFICATE_POULTRY"  >সার্টিফিকেট ইন পোলট্রি ফার্মিং</td>
+                                       v-model="data.instCurriculums.el_certificate_poultry"  >সার্টিফিকেট ইন পোলট্রি ফার্মিং</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_CERTIFICATE_ANIMAL_HEALTH"  >সার্টিফিকেট ইন এনিমেল হেলথ এন্ড প্রোডাকশন</td>
+                                       v-model="data.instCurriculums.el_certificate_animal_health"  >সার্টিফিকেট ইন এনিমেল হেলথ এন্ড প্রোডাকশন</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_NATIONAL_SKILLS2"  >জাতীয় দক্ষতামান-২</td>
+                                       v-model="data.instCurriculums.el_national_skills2"  >জাতীয় দক্ষতামান-২</td>
                         </tr>
                         <tr>
 
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_NATIONAL_SKILLS3"  >জাতীয় দক্ষতামান-৩</td>
+                                       v-model="data.instCurriculums.el_national_skills3"  >জাতীয় দক্ষতামান-৩</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_PROF_DIP_AUTOMOBILE"  >প্রোফেশনাল ডিপ্লোমা ইন অটোমোবাইল</td>
+                                       v-model="data.instCurriculums.el_prof_dip_automobile"  >প্রোফেশনাল ডিপ্লোমা ইন অটোমোবাইল</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum." >NTVQF(Level:1-6)</td>
+                                       v-model="data.instCurriculums.el_ntvq" >NTVQF(Level:1-6)</td>
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum."  >মেরিন এন্ড শিপ বিল্ডিং ট্রেড সার্টিফিকেট</td>
+                                       v-model="data.instCurriculums.el_merin"  >মেরিন এন্ড শিপ বিল্ডিং ট্রেড সার্টিফিকেট</td>
                         </tr>
-
                         <tr>
-
                             <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
-                                       v-model="data.instCurriculum.EL_ADVANCED_CERTIFICATE"  >এডভান্সড সার্টিফিকেট কোর্স</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
+                                       v-model="data.instCurriculums.el_national_skills360"  >সার্টিফিকেট কোর্স(৩৬০ ঘন্টা)</td>
+                            <td><input class="mr-2" type="checkbox" true-value="1"  false-value="0"
+                                       v-model="data.instCurriculums.el_advanced_certificate"  >এডভান্সড সার্টিফিকেট কোর্স</td>
                         </tr>
-
-
-
 
                     </table>
                 </div>
@@ -489,7 +486,45 @@
                         </table>
                         <div class="row">
                             <div class="col-md-8">
-                            <label class="font-weight-bold">১.৩.১৭ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
+                                <label class="font-weight-bold">১.৩.১৫ স্বীকৃতি সংক্রান্ত তথ্য (সরকারি প্রতিষ্ঠানের
+                                    ক্ষেত্রে প্রযোজ্য নয়):</label>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr class="custom-table-header">
+                                        <th style="text-align:center">স্তর</th>
+                                        <th style="text-align:center">স্বীকৃতি/অনুমতি (টিক চিহ্ন দিন)</th>
+                                        <th style="text-align:center">প্রথম অনুমতির তারিখ</th>
+                                        <th style="text-align:center">প্রথম স্বীকৃতির তারিখ</th>
+                                        <th style="text-align:center">সর্বশেষ স্বীকৃতি/ অনুমতি মেয়াদ শেষ হওয়ার তারিখ
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr v-for="item in data.institutes_recognition">
+                                        <td>@{{ levelName(item.education_level_id) }}</td>
+                                        <td><select class="" v-model="item.recognition_status">
+                                                <option value="">Select</option>
+                                                <option value="1">স্বীকৃতি প্রাপ্ত</option>
+                                                <option value="2">অনুমতি প্রাপ্ত</option>
+                                                <option value="3">প্রযোজ্য নয়</option>
+                                            </select></td>
+                                        <td>
+                                            <input type="date" v-model="item.permitted_date" />
+                                        </td>
+                                        <td>
+                                            <input type="date" v-model="item.recognition_date" />
+                                        </td>
+                                        <td>
+                                            <input type="date" v-model="item.recognition_expire_date"/>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                            <label class="font-weight-bold">১.৩.১৬ প্রতিষ্ঠানটি এমপিও ভূক্ত হলে স্তর ও তারিখ:</label>
                             <table class="table table-bordered" style="text-align:center" v-if="data.institutes_mpo_status.length!=0">
                                 <tr class="custom-table-header">
                                     <td>এমপিওভুক্তির স্তর</td>
@@ -748,7 +783,6 @@
         </div>
     </div>
 @endsection
-{{--Page wise js--}}
 @section('javascript')
-   {{-- <script src="{{ asset('js/tecFirstPage.js') }}" type="module" defer></script>--}}
+   <script src="{{ asset('js/tecFirstPage.js') }}" type="module" defer></script>
 @stop

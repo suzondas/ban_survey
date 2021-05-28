@@ -47,6 +47,7 @@ const app = new Vue({
             dataToSend.instId = inst_id;
             dataToSend.institutes=this.data.institutes;
             dataToSend.institutes_recognition=this.data.institutes_recognition;
+            dataToSend.instCurriculums=this.data.instCurriculums;
             dataToSend.committees=this.data.committees;
             dataToSend.institutes_mpo_status=this.data.institutes_mpo_status;
            console.log(dataToSend);

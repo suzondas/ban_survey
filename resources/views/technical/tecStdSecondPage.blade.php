@@ -151,7 +151,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-number">২.২৬</span>
                 </div>
-                <div class="form-control bg-number-label">এসএসসি ভোকেশনাল এর ট্রেডভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
+                <div class="form-control bg-number-label">এসএসসি/দাখিল ভোকেশনাল এর ট্রেডভিত্তিক শিক্ষার্থী তথ্য ২০২১</div>
             </div>
             <div class="contentBoxBody">
                 <table class="table table-bordered table-striped text-center">
@@ -177,7 +177,8 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.sscVocStd">
+
+                    <tr ng-repeat="item in data.sscVocStd" ng-if="data.sscVocStd.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.nine_total"></td>
@@ -188,6 +189,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.sscVocStd.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
@@ -225,7 +229,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.hscVocStdData">
+                    <tr ng-repeat="item in data.hscVocStdData" ng-if="data.hscVocStdData.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
@@ -236,6 +240,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.hscVocStdData.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
@@ -273,7 +280,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.hscBmStdData">
+                    <tr ng-repeat="item in data.hscBmStdData" ng-if="data.hscBmStdData.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
@@ -284,6 +291,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.hscBmStdData.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
