@@ -37,7 +37,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.natSkillStd">
+                    <tr ng-repeat="item in data.natSkillStd" ng-if="data.natSkillStd.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.one_yr_total"></td>
@@ -46,6 +46,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.natSkillStd.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
@@ -87,7 +90,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.dipBasTradeStd">
+                    <tr ng-repeat="item in data.dipBasTradeStd" ng-if="data.dipBasTradeStd.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.bas_3motn_tot"></td>
@@ -100,6 +103,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.dipBasTradeStd.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>

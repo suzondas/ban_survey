@@ -39,7 +39,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.dipCommerceStd">
+                    <tr ng-repeat="item in data.dipCommerceStd" ng-if="data.dipCommerceStd.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.eleven_total"></td>
@@ -50,6 +50,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.dipCommerceStd.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
@@ -106,7 +109,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.dipEnHlStd">
+                    <tr ng-repeat="item in data.dipEnHlStd" ng-if="data.dipEnHlStd.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.frst_sem_total"></td>
@@ -129,6 +132,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.dipEnHlStd.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
@@ -169,7 +175,7 @@
                         <td>ছাত্রী</td>
                     </tr>
                     <tbody>
-                    <tr ng-repeat="item in data.dipCertStd">
+                    <tr ng-repeat="item in data.dipCertStd" ng-if="data.dipCertStd.length!=0">
                         <td>@{{ item.trade_code }}</td>
                         <td>@{{ item.trade_name }}</td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.bas_6motn_tot"></td>
@@ -182,6 +188,9 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_candidate"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.total_pass"></td>
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
+                    </tr>
+                    <tr ng-if="data.dipCertStd.length==0">
+                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
