@@ -134,7 +134,7 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     <tr ng-if="data.dipEnHlStd.length==0">
-                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
+                        <td colspan="22" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
@@ -173,6 +173,8 @@
                         <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
                     </tr>
                     <tbody>
                     <tr ng-repeat="item in data.dipCertStd" ng-if="data.dipCertStd.length!=0">
@@ -190,7 +192,7 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     <tr ng-if="data.dipCertStd.length==0">
-                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
+                        <td colspan="12" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>

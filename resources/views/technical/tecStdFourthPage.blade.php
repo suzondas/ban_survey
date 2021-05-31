@@ -105,7 +105,7 @@
                         <td><input type="number" number-converter class="w-50" ng-model="item.girls_pass"></td>
                     </tr>
                     <tr ng-if="data.dipBasTradeStd.length==0">
-                        <td colspan="10" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
+                        <td colspan="12" style="color: red">প্রথম পাতায় সংশ্লিষ্ট্য কারিকুলাম সিলেক্ট করুন এবং উক্ত পাতার save বাটন এ ক্লিক করুন</td>
                     </tr>
                     </tbody>
                 </table>
