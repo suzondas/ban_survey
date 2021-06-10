@@ -12,6 +12,7 @@
 @yield('javascript')
 
     <!-- Styles -->
+    {{--<link href="https://fonts.maateen.me/adorsho-lipi/font.css" rel="stylesheet">--}}
     <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">

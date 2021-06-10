@@ -29,7 +29,7 @@
                         </td>
 
                         <td class="align-middle">
-                            <label>৩.১২.২ প্রতিষ্ঠানের সকল ধরনের তথ্য সংরক্ষণ পদ্ধতি কোন ধরনের</label>
+                            <label>৩.১২.২ প্রতিষ্ঠানের সকল ধরনের তথ্য সংরক্ষণ পদ্ধতি কোন ধরনের</label><br>
                             <input type="checkbox" v-model="data.climate_disaster_manage_infos.record_keeping_manual"> ম্যানুয়েল/হার্ড কপি &nbsp;
                             <input type="checkbox" v-model="data.climate_disaster_manage_infos.record_keeping_digital"> ডিজিটাল/সফটওয়্যার &nbsp;
                             <input type="checkbox" v-model="data.climate_disaster_manage_infos.record_keeping_both"> ম্যানুয়েল ও সফটওয়্যার উভয় &nbsp;

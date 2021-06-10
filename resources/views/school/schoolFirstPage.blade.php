@@ -49,7 +49,6 @@
             </div>
             <div class="contentBoxBody">
                 <table class="table table-bordered table-striped text-center">
-
                     <tr>
                         {{--<td>স্তর</td>--}}
                         <td rowspan="2">শ্রেণি</td>
@@ -188,7 +187,6 @@
                         <td colspan="2">৮ম শ্রেণি</td>
                         <td colspan="2">৯ম শ্রেণি</td>
                         <td colspan="2">১০ম শ্রেণি</td>
-
                     </tr>
                     <tr>
                         <td>মোট</td>
