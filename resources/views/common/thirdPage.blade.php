@@ -43,7 +43,7 @@
                                 <td rowspan="2">মেরামতযোগ্য</td>
                                 <td rowspan="2">অচল</td>
                                 <td rowspan="2">প্রতিষ্ঠার তারিখ</td>
-                                <td rowspan="2">প্রদানকারী সংস্থা</td>
+                                <td rowspan="2" style="width: 250px" >প্রদানকারী সংস্থা</td>
                                 <td rowspan="2">প্রতিদিন কত ঘন্টা ব্যবহার হয়</td>
                                 <td rowspan="2">ব্যবহারকারী শিক্ষার্থীর সংখ্যা</td>
                             </tr>
@@ -61,18 +61,20 @@
                                 <td>
                                     <table class="table table-bordered">
                                         <tr>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_edu_ministry"/>শিক্ষা মন্ত্রণালয়</td>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_mausi"/>মাউশি</td>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_project"/>প্রকল্প</td>
+                                            <td class="text-left"><input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_edu_ministry"/>&nbsp; শিক্ষা মন্ত্রণালয়</td>
+                                            <td class="text-left"><input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_mausi"/>&nbsp; মাউশি</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_eduboard"/>শিক্ষাবোর্ড</td>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_bcc"/>বিসিসি</td>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_ngo"/>এনজিও</td>
+                                            <td class="text-left"><input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_project"/>&nbsp;  প্রকল্প</td>
+                                            <td class="text-left"> <input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_eduboard"/>&nbsp; শিক্ষাবোর্ড</td>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_inst"/>ক্রয়কৃত</td>
-                                            <td><input type="checkbox" v-model="data.institutes_computer_lab_infos.lab_others"/>অন্যান্য</td>
+                                            <td class="text-left"><input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_bcc"/>&nbsp; বিসিসি</td>
+                                            <td class="text-left"><input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_ngo"/>&nbsp; এনজিও</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_inst"/>&nbsp; ক্রয়কৃত</td>
+                                            <td class="text-left"><input type="checkbox"  v-model="data.institutes_computer_lab_infos.lab_others"/>&nbsp; অন্যান্য</td>
                                         </tr>
                                     </table>
                                 </td>
@@ -91,7 +93,7 @@
                     </select>
                     {{--if Lab Available--}}
                     <div class="container">
-                        <table class="table table-bordered text-center font-weight-bold">
+                        <table class="table table-sm table-bordered text-center font-weight-bold">
                             <tbody>
                             <tr>
                                 <td colspan="2">সচল</td>
@@ -103,10 +105,10 @@
                                 <td>ল্যাপটপ</td>
                             </tr>
                             <tr>
-                                <td><input type="number" class="contentBoxInput w-50" v-model="data.institutes_computer_lab_infos.computer_working"/></td>
-                                <td><input type="number" class="contentBoxInput w-50" v-model="data.institutes_computer_lab_infos.laptop_working"/></td>
-                                <td><input type="number" class="contentBoxInput w-50" v-model="data.institutes_computer_lab_infos.computer_workable"/></td>
-                                <td><input type="number" class="contentBoxInput w-50" v-model="data.institutes_computer_lab_infos.computer_notworking"/></td>
+                                <td><input type="number" class="contentBoxInput w-25" v-model="data.institutes_computer_lab_infos.computer_working"/></td>
+                                <td><input type="number" class="contentBoxInput w-25" v-model="data.institutes_computer_lab_infos.laptop_working"/></td>
+                                <td><input type="number" class="contentBoxInput w-25" v-model="data.institutes_computer_lab_infos.computer_workable"/></td>
+                                <td><input type="number" class="contentBoxInput w-25" v-model="data.institutes_computer_lab_infos.computer_notworking"/></td>
                             </tr>
                             </tbody>
                         </table>
@@ -114,7 +116,7 @@
                 </div>
                 <div>
                     <label>৩.১.৪ কম্পিউটার প্রদানকারী সংস্থা অনুযায়ী সংখ্যা:</label>
-                    <table class="table table-bordered text-center font-weight-bold">
+                    <table class="table table-sm table-bordered text-center font-weight-bold">
                         <tr>
                             <td>সংস্থার নাম</td>
                             <td>শিক্ষা মন্ত্রণালয়</td>
@@ -154,20 +156,20 @@
                 <div class="form-control bg-number-label">মাল্টিমিডিয়া ক্লাসরুম সংক্রান্ত</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-bordered table-striped">
+                <table class="table table-sm table-bordered table-striped">
                     <tr>
                         <td class="">
                             <label for="multimediaClassroom">৩.২.১ মাল্টিমিডিয়া ক্লাসরুমের সংখ্যা</label>
-                            <input class="" id="multimediaClassroom" type="number" v-model="data.multimedia_infos.class_room_multimedia"/>
+                            <input style="width: 40px;" id="multimediaClassroom" type="number" v-model="data.multimedia_infos.class_room_multimedia"/>
                         </td>
                         <td>
                             ৩.২.২ মাল্টিমিডিয়া ক্লাসরুম ব্যবহারে সক্ষম শিক্ষকের সংখ্যা<br>
                             <div class="row">
                                 <div class="col-md-6 input-group form-inline">
-                                    মোট:<input class="" id="" type="number" v-model="data.multimedia_infos.mult_expert_teach_tot"/>
+                                    মোট:<input style="width: 40px;" id="" type="number" v-model="data.multimedia_infos.mult_expert_teach_tot"/>
                                 </div>
                                 <div class="col-md-6 input-group form-inline">
-                                    মহিলা:<input class="" id="" type="number" v-model="data.multimedia_infos.mult_expert_teach_fem"/>
+                                    মহিলা:<input style="width: 40px;" id="" type="number" v-model="data.multimedia_infos.mult_expert_teach_fem"/>
                                 </div>
                             </div>
                         </td>
@@ -178,7 +180,7 @@
                             <input style="width: 40px;" id="" type="number" v-model="data.multimedia_infos.multimedia_class_num"/> টি
                         </td>
                         <td>
-                            ৩.২.৪ মাল্টিমিডিয়া ক্লাসরুমের ব্যবহার করে ক্লাস নেওয়ার<br> পর
+                            ৩.২.৪ মাল্টিমিডিয়া ক্লাসরুমের ব্যবহার করে ক্লাস নেওয়ার পর
                             ড্যাসবোর্ডে এন্ট্রি দেওয়া হয় কি?
                             <select class="" id="dashboardEntry"  v-model="data.multimedia_infos.dashboard_entry_yn">
                                 <option value="1">হ্যাঁ</option>
@@ -196,7 +198,7 @@
                         </td>
                         <td class="">
                             <label for="">৩.২.৬ মাল্টিমিডিয়া প্রজেক্টরের সংখ্যা</label>
-                            <input class="" id="" type="number"  v-model="data.multimedia_infos.multimedia_projector_number"/> টি
+                            <input style="width: 40px;" id="" type="number"  v-model="data.multimedia_infos.multimedia_projector_number"/> টি
                         </td>
                     </tr>
                 </table>
@@ -275,8 +277,8 @@
                             <div class="">
                                 <label for="shikkhokBatayonTeacher">৩.৩.৭ শিক্ষক বাতায়নে সদস্য শিক্ষকের
                                     সংখ্যা</label><br>
-                                মোট:<input class="contentBoxInput" id="" type="number"  v-model="data.institutes_ict_infos.tea_socity_member_total"/> জন
-                                মহিলা:<input class="contentBoxInput" id="" type="number"  v-model="data.institutes_ict_infos.tea_socity_member_female"/> জন
+                                মোট:<input class="contentBoxInput" id="" style="width: 50px;" type="number"  v-model="data.institutes_ict_infos.tea_socity_member_total"/> জন
+                                মহিলা:<input class="contentBoxInput" id="" style="width: 50px;" type="number"  v-model="data.institutes_ict_infos.tea_socity_member_female"/> জন
                             </div>
                         </td>
                     </tr>
@@ -292,8 +294,8 @@
                             <label for="digitalHajiraType">৩.৩.৯ প্রতিষ্ঠানে ডিজিটাল হাজিরা কাদের জন্য ব্যবহৃত
                                 হয়?</label>
                             <div class="row">
-                                <div class="col">শিক্ষার্থীর জন্য <input type="checkbox" v-model="data.institutes_ict_infos.digital_attendance_std"/></div>
-                                <div class="col">শিক্ষক ও কর্মচারীর জন্য <input type="checkbox" v-model="data.institutes_ict_infos.digital_attendance_staff"/></div>
+                                <div class="col"> <input type="checkbox" v-model="data.institutes_ict_infos.digital_attendance_std"/>&nbsp;  শিক্ষার্থীর জন্য</div>
+                                <div class="col"> <input type="checkbox" v-model="data.institutes_ict_infos.digital_attendance_staff"/>&nbsp;  শিক্ষক ও কর্মচারীর জন্য</div>
                             </div>
                         </td>
                     </tr>
@@ -323,7 +325,7 @@
                         </td>
                         <td>
                             <label for="ccCameraAmount">৩.৩.১৩ প্রতিষ্ঠানে সিসি ক্যামেরার সংখ্যা?</label>
-                            <input class="contentBoxInput" type="number" v-model="data.institutes_ict_infos.cc_camera_num"/> টি
+                            <input class="contentBoxInput" style="width: 50px;" type="number" v-model="data.institutes_ict_infos.cc_camera_num"/> টি
                         </td>
                     </tr>
                     <tr>
@@ -336,7 +338,7 @@
                         </td>
                         <td>
                             <label for="bandwidth">৩.৩.১৫ ইন্টারনেট সংযোগ ব্রডব্যান্ড হলে ব্যান্ডউইথ কত?</label>
-                            <input class="contentBoxInput" v-model="data.institutes_ict_infos.bandwith_mpbs" type="number"/>
+                            <input class="contentBoxInput" style="width: 50px;" v-model="data.institutes_ict_infos.bandwith_mpbs" type="number"/>
                         </td>
                     </tr>
                     <tr>
@@ -352,16 +354,16 @@
                         <td>
                             <label for="computerInPedagogyAmount">৩.৩.১৭ শিখন-শেখানো কাজে ব্যবহহৃত কম্পিউটার
                                 সংখ্যা?</label>
-                            <table class="table-bordered">
+                            <table class="table table-sm table-bordered text-center">
                                 <tr>
                                     <td>ডেস্কটপ</td>
                                     <td>ল্যাপটপ</td>
                                     <td>মোট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="contentBoxInput w-50" id="" type="number" v-model="data.institutes_ict_infos.dsktop_padagogical"/></td>
-                                    <td><input class="contentBoxInput w-50" id="" type="number" v-model="data.institutes_ict_infos.laptop_padagogical"/></td>
-                                    <td><input class="contentBoxInput w-50" id="" type="number" v-model="data.institutes_ict_infos.padagogical_computer"/></td>
+                                    <td><input class="contentBoxInput w-25" id="" type="number" v-model="data.institutes_ict_infos.dsktop_padagogical"/></td>
+                                    <td><input class="contentBoxInput w-25" id="" type="number" v-model="data.institutes_ict_infos.laptop_padagogical"/></td>
+                                    <td><input class="contentBoxInput w-25" id="" type="number" v-model="data.institutes_ict_infos.padagogical_computer"/></td>
                                 </tr>
                             </table>
                         </td>
@@ -397,7 +399,7 @@
                         <td>
                             <label for="computerBasicCourseStudents">৩.৩.২১ Computer Basic Course পাঠদানরত মোট
                                 শিক্ষার্থীর সংখ্যা?</label>
-                            <table class="table-bordered">
+                            <table class="table-sm table-bordered text-center">
                                 <tr>
                                     <td>শ্রেণি</td>
                                     <td>মোট</td>
@@ -405,33 +407,33 @@
                                 </tr>
                                 <tr>
                                     <td>৬ষ্ঠ-৮ম</td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_total_6to8"/></td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_female_6to8"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_total_6to8"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_female_6to8"/></td>
                                 </tr>
                                 <tr>
                                     <td>৯ম-১০ম</td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_total_6to8"/></td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_female_6to8"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_total_6to8"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_female_6to8"/></td>
                                 </tr>
                                 <tr>
                                     <td>১১তম-১২তম</td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_total_9to10"/></td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_female_9to10"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_total_9to10"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_female_9to10"/></td>
                                 </tr>
                                 <tr>
                                     <td>স্নাতক(পাস)</td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_hn_pass"/></td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_hn_pass_fem"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_hn_pass"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_hn_pass_fem"/></td>
                                 </tr>
                                 <tr>
                                     <td>স্নাতক(সম্মান)</td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_hn"/></td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_hn_fem"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_hn"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_hn_fem"/></td>
                                 </tr>
                                 <tr>
                                     <td>স্নাতকোত্তর</td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_mas"/></td>
-                                    <td><input class="contentBoxInput w-50" type="number" v-model="data.institutes_ict_infos.basic_course_mas_fem"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_mas"/></td>
+                                    <td><input class="contentBoxInput w-25" type="number" v-model="data.institutes_ict_infos.basic_course_mas_fem"/></td>
                                 </tr>
                             </table>
                         </td>
@@ -458,10 +460,10 @@
                                 </select></td>
                             <td>৩.৪.২ প্রতিষ্ঠানে কোন ধরনের সংযোগ আছে?
                                 <div class="row">
-                                    <div class="col">বিদ্যুৎ <input type="checkbox" v-model="data.institutes_ict_infos.electricity_conn"/></div>
-                                    <div class="col">সোলার প্যানেল <input type="checkbox" v-model="data.institutes_ict_infos.solar_pannel_conn"/></div>
-                                    <div class="col">ফুয়েল গ্যাস জেনারেটর <input type="checkbox" v-model="data.institutes_ict_infos.generator_conn"/></div>
-                                    <div class="col">অন্যান্য <input type="checkbox" v-model="data.institutes_ict_infos.other_conn"/></div>
+                                    <div class="col"> <input type="checkbox" v-model="data.institutes_ict_infos.electricity_conn"/>&nbsp;  বিদ্যুৎ</div>
+                                    <div class="col"> <input type="checkbox" v-model="data.institutes_ict_infos.solar_pannel_conn"/>&nbsp;  সোলার প্যানেল</div>
+                                    <div class="col"> <input type="checkbox" v-model="data.institutes_ict_infos.generator_conn"/>&nbsp;  ফুয়েল গ্যাস জেনারেটর</div>
+                                    <div class="col"> <input type="checkbox" v-model="data.institutes_ict_infos.other_conn"/>&nbsp; অন্যান্য</div>
                                 </div>
                             </td>
                         </tr>
@@ -472,8 +474,8 @@
                                 </select></td>
                             <td>৩.৪.৪ সোলার প্যানেলে কতটি লাইট ফ্যান চলে?
                                 <div class="row">
-                                    <div class="col">ফ্যান: <input type="number" v-model="data.institutes_ict_infos.solar_fan"/></div>
-                                    <div class="col">লাইট: <input type="number" v-model="data.institutes_ict_infos.solar_light"/></div>
+                                    <div class="col">ফ্যান: <input type="number" style="width: 50px;" v-model="data.institutes_ict_infos.solar_fan"/></div>
+                                    <div class="col">লাইট: <input type="number" style="width: 50px;" v-model="data.institutes_ict_infos.solar_light"/></div>
                                 </div>
                             </td>
                         </tr>
@@ -529,24 +531,24 @@
                     <table class="table table-striped table-bordered">
                         <tr>
                             <td>
+                                <input type="checkbox"  v-model="data.institutes_facilities_others.shaid_menar_yn"
+                                       style="width: 20px">
                                 <label class="label-number" for="">শহীদ মিনার</label>
-                                <input type="checkbox" class="form-control" v-model="data.institutes_facilities_others.shaid_menar_yn"
-                                       style="width: 20px">
                             </td>
                             <td>
+                                <input type="checkbox" v-model="data.institutes_facilities_others.permanent_altar_yn"
+                                       style="width: 20px">
                                 <label class="label-number" for="">পতাকা স্ট্যান্ড </label>
-                                <input type="checkbox" class="form-control" v-model="data.institutes_facilities_others.permanent_altar_yn"
-                                       style="width: 20px">
                             </td>
                             <td>
+                                <input type="checkbox" v-model="data.institutes_facilities_others.sotota_store_yn"
+                                       style="width: 20px">
                                 <label class="label-number" for="">সততা স্টোর</label>
-                                <input type="checkbox" class="form-control" v-model="data.institutes_facilities_others.sotota_store_yn"
-                                       style="width: 20px">
                             </td>
                             <td>
-                                <label class="label-number" for="">গ্যাস সংযোগ</label>
-                                <input type="checkbox" class="form-control" v-model="data.institutes_facilities_others.gas_connection_yn"
+                                <input type="checkbox" v-model="data.institutes_facilities_others.gas_connection_yn"
                                        style="width: 20px">
+                                <label class="label-number" for="">গ্যাস সংযোগ</label>
                             </td>
                         </tr>
                     </table>
@@ -665,7 +667,7 @@
                         </td>
                         <td class="w-50">
                             <label>৩.৭.২ উত্তর হাঁ হলে কোন ধরনের টয়লেট (সংখ্যা)</label>
-                            <table class="table table-bordered">
+                            <table class="table table-sm table-bordered text-center">
                                 <tr>
                                     <td>স্লাব টয়লেট</td>
                                     <td>ফ্লাশসহ টয়লেট</td>
@@ -673,10 +675,10 @@
                                     <td>কাঁ‍‌‍‍‌‌‌চা টয়লেট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.slub_toilet"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_with_flash"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_without_flash"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.kacha_toilet"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.slub_toilet"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_with_flash"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_without_flash"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.kacha_toilet"/></td>
                                 </tr>
                             </table>
                         </td>
@@ -684,16 +686,16 @@
                     <tr>
                         <td>
                             <label>৩.৭.৩ অবস্থা অনুযায়ী টয়লেট সংখ্যা</label>
-                            <table class="table table-bordered">
+                            <table class="table table-sm table-bordered text-center">
                                 <tr>
                                     <td>ব্যবহার যোগ্য</td>
                                     <td>ব্যবহার অযোগ্য</td>
                                     <td>মোট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.usable_toilet"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.unusable_toilet"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.tot_us_toilet"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.usable_toilet"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.unusable_toilet"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.tot_us_toilet"/></td>
                                 </tr>
                             </table>
                         </td>
@@ -713,76 +715,76 @@
                             </select>
                         </td>
                         <td><label>৩.৭.৬ ছাত্রীদের পৃথক টয়লেট সংখ্যা:</label>
-                            <table class="table table-bordered">
+                            <table class="table table-sm table-bordered text-center">
                                 <tr>
                                     <td>নতুন</td>
                                     <td>পুরাতন</td>
                                     <td>মোট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.female_toilet_new"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.female_toilet_old"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.female_toilet_total"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.female_toilet_new"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.female_toilet_old"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.female_toilet_total"/></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
                         <td><label>৩.৭.৭ ছাত্রদের পৃথক টয়লেট সংখ্যা:</label>
-                            <table class="table table-bordered">
+                            <table class="table table-bordered table-sm text-center">
                                 <tr>
                                     <td>নতুন</td>
                                     <td>পুরাতন</td>
                                     <td>মোট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.male_toilet_new"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.male_toilet_old"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.male_toilet_total"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.male_toilet_new"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.male_toilet_old"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.male_toilet_total"/></td>
                                 </tr>
                             </table>
                         </td>
                         <td><label>৩.৭.৮ শিক্ষকদের পৃথক টয়লেট সংখ্যা:</label>
-                            <table class="table table-bordered">
+                            <table class="table table-sm table-bordered text-center">
                                 <tr>
                                     <td>নতুন</td>
                                     <td>পুরাতন</td>
                                     <td>মোট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.teacher_toilet_new"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.teacher_toilet_old"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.teacher_toilet_total"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.teacher_toilet_new"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.teacher_toilet_old"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.teacher_toilet_total"/></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
                         <td><label>৩.৭.৯ কর্মচারীর পৃথক টয়লেট সংখ্যা:</label>
-                            <table class="table table-bordered">
+                            <table class="table table-sm table-bordered text-center">
                                 <tr>
                                     <td>নতুন</td>
                                     <td>পুরাতন</td>
                                     <td>মোট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_staff_new"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_staff_old"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_staff_total"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_staff_new"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_staff_old"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_staff_total"/></td>
                                 </tr>
                             </table>
                         </td>
                         <td><label>৩.৭.১০ যৌথ ব্যবহার্য টয়লেট সংখ্যা:</label>
-                            <table class="table table-bordered">
+                            <table class="table table-sm table-bordered text-center">
                                 <tr>
                                     <td>নতুন</td>
                                     <td>পুরাতন</td>
                                     <td>মোট</td>
                                 </tr>
                                 <tr>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_common_new"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_common_old"/></td>
-                                    <td><input class="w-50" v-model="data.institutes_facilities_others.toilet_common_total"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_common_new"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_common_old"/></td>
+                                    <td><input class="w-25" v-model="data.institutes_facilities_others.toilet_common_total"/></td>
                                 </tr>
                             </table>
                         </td>
@@ -825,14 +827,9 @@
                                 আছে</label>
                             <table>
                                 <tr>
-                                    <td>ছাত্রদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
-                                    <td>ছাত্রীদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
-                                    <td>শিক্ষকদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" v-model="data.institutes_facilities_others.handwash_facility_boys"/></td>
-                                    <td><input type="checkbox" v-model="data.institutes_facilities_others.handwash_facility_girls"/></td>
-                                    <td><input type="checkbox" v-model="data.institutes_facilities_others.handwash_facility_teachers"/></td>
+                                    <td><input type="checkbox" v-model="data.institutes_facilities_others.handwash_facility_boys"/>&nbsp;  ছাত্রদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
+                                    <td><input type="checkbox" v-model="data.institutes_facilities_others.handwash_facility_girls"/>&nbsp; ছাত্রীদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
+                                    <td><input type="checkbox" v-model="data.institutes_facilities_others.handwash_facility_teachers"/>&nbsp; শিক্ষকদের জন্য সাবান / সাবান জাতীয় উপাদান দিয়ে হাত ধোয়ার ব্যবস্থা</td>
                                 </tr>
                             </table>
                         </td>
@@ -851,7 +848,7 @@
                     </tr>
                     <tr>
                         <td><label>৩.৭.১৮ ওয়াশ ব্লকের সংখ্যা ?</label>
-                            <input type="number" v-model="data.institutes_facilities_others.wash_block_number"/> টি
+                            <input type="number" style="width:50px; " v-model="data.institutes_facilities_others.wash_block_number"/> টি
                         </td>
                         <td><label>৩.৭.১৯ ওয়াশ ব্লক সংখ্যা পর্যাপ্ত কি ?</label>
                             <select v-model="data.institutes_facilities_others.wash_block_enough_yn">
@@ -903,9 +900,9 @@
                             ৩.৮.৩ লাইব্রেরিতে বইয়ের সংখ্যা
                             <div class="row">
                                 <div class="col form-inline"><label class="label-number" for="">পাঠ্যপুস্তক</label>
-                                    <input type="number" class="w-50 ml-2 form-control" v-model="data.institutes_libraries.no_book"/></div>
+                                    <input type="number" class="w-25 ml-2 " v-model="data.institutes_libraries.no_book"/></div>
                                 <div class="col form-inline"><label class="label-number" for="">সহায়ক</label>
-                                    <input type="number" class="w-50 ml-2 form-control" v-model="data.institutes_libraries.no_additional_book"/></div>
+                                    <input type="number" class="w-25 ml-2" v-model="data.institutes_libraries.no_additional_book"/></div>
                             </div>
                         </td>
                     </tr>
@@ -928,7 +925,7 @@
                         </td>
                         <td>
                             ৩.৮.৬ উত্তর হ্যাঁ হলে, মাসে ইস্যুকৃত বই এর সংখ্যা
-                            <input type="number" class="form-control w-25" v-model="data.institutes_libraries.monthly_issue_book"/>
+                            <input type="number" class="w-25" v-model="data.institutes_libraries.monthly_issue_book"/>
                         </td>
                     </tr>
                     <tr>
