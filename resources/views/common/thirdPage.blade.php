@@ -30,12 +30,12 @@
                         </div>
                         <div class="col-md-6">
                             <label for="labYN">৩.১.২ প্রতিষ্ঠানে কম্পিউটার ল্যাবের সংখ্যা</label>
-                            <input type="number" v-model="data.institutes_computer_lab_infos.computer_lab_no"/> টি
+                            <input type="number" style="width:50px;" v-model="data.institutes_computer_lab_infos.computer_lab_no"/> টি
                         </div>
                     </div>
                     {{--if Lab Available--}}
                     <div class="container">
-                        <table class="table table-bordered text-center font-weight-bold">
+                        <table class="table table-sm table-bordered text-center font-weight-bold">
                             <tbody>
                             <tr>
                                 <td rowspan="2">মোট কম্পিউটার</td>
@@ -211,7 +211,7 @@
                 <div class="form-control bg-number-label">আইসিটি সংক্রান্ত</div>
             </div>
             <div class="contentBoxBody">
-                <table class="table table-striped table-bordered">
+                <table class="table table-sm table-striped table-bordered">
                     <tr>
                         <td colspan="2">
                             <label for="ictClassYN">৩.৩.১ আইসিটি বিষয়ে পাঠদান করা হয় কি?</label>

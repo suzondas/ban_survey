@@ -89,50 +89,47 @@
                             </table>
                         </div>
                     </div>
-                    <label class="label-text container font-weight-bold">১.৫.৩ জমির ব্যবহার ও পরিমাণ (শতাংশে):</label>
-                    <table class="table table-bordered" style="text-align:center">
-                        <thead>
+                    <label class="font-weight-bold">১.৫.৩ জমির ব্যবহার ও পরিমাণ (শতাংশে):</label>
+                    <table class="table table-sm table-bordered" style="text-align:center">
                         <tr class="custom-table-header">
-                            <th>বিবরণ</th>
-                            <th>প্রতিষ্ঠানের ভবন</th>
-                            <th>খেলার মাঠ</th>
-                            <th>ছাত্রাবাস</th>
-                            <th>শিক্ষক আবাসন</th>
-                            <th>আবাদি জমি</th>
-                            <th>পুকুর</th>
-                            <th>বাগান</th>
-                            <th>শহিদ মিনার</th>
-                            <th>অব্যবহৃত</th>
-                            <th>অন্যান্য</th>
-                            <th>মোট</th>
+                            <td>বিবরণ</td>
+                            <td>প্রতিষ্ঠানের ভবন</td>
+                            <td>খেলার মাঠ</td>
+                            <td>ছাত্রাবাস</td>
+                            <td>শিক্ষক আবাসন</td>
+                            <td>আবাদি জমি</td>
+                            <td>পুকুর</td>
+                            <td>বাগান</td>
+                            <td>শহিদ মিনার</td>
+                            <td>অব্যবহৃত</td>
+                            <td>অন্যান্য</td>
+                            <td>মোট</td>
                         </tr>
-                        </thead>
                         <tbody>
                         <tr>
                             <td>শতাংশ</td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].institue_building"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].play_ground"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].hostel"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].teachers_residence"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].cultivable"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].pond"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].garden"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].sahida_minar"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].unused"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].others"></td>
-                            <td><input type="number" class="form-control" name="" id=""
+                            <td><input type="number" class="w-75" name="" id=""
                                        v-model="data.institutes_land_usage[0].total"></td>
-
                         </tr>
                         </tbody>
                     </table>
@@ -149,26 +146,29 @@
                 <div class="contentBoxBody">
                     <div class="row">
                         <div class="col-md-6">
-                            <table class="table table-striped table-bordered">
+                            <table class="table table-sm table-striped table-bordered">
                                 <tr>
                                     <td>
-                                        <label>
-                                            ১.৬.১ প্রতিষ্ঠানের সবচেয়ে পুরাতন ভবনটি নির্মাণের বছর
-                                        </label>
-                                        <input type="number" name="" class="form-control"
+                                        ১.৬.১ প্রতিষ্ঠানের সবচেয়ে পুরাতন ভবনটি নির্মাণের বছর</td>
+                                    <td>
+                                        <input type="number" name="" class="w-50"
                                                v-model="data.building_infos[0].oldest_building_estab_year">
                                     </td>
+                                </tr>
+                                <tr>
                                     <td>
-                                        <label>
-                                            ১.৬.২ প্রতিষ্ঠানের সর্বশেষ নতুন ভবনটি নির্মাণের বছর
-                                        </label>
-                                        <input type="number" name="" class="form-control"
-                                               v-model="data.building_infos[0].latest_building_estab_year">
+                                        ১.৬.২ প্রতিষ্ঠানের সর্বশেষ নতুন ভবনটি নির্মাণের বছর
                                     </td>
                                     <td>
-                                        <label>
+                                        <input type="number" name="" class="w-50"
+                                               v-model="data.building_infos[0].latest_building_estab_year">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                             ১.৬.৩ সর্বশেষ ভবনটি নির্মাণে অর্থের উৎস
-                                        </label>
+                                        </td>
+                                    <td>
                                         <select class="" name="english_version"
                                                 v-model="data.building_infos[0].latest_building_money_source">
                                             <option value="1">সরকার-১</option>
@@ -179,25 +179,30 @@
                                         </select>
                                     </td>
                                 </tr>
-
                                 <tr>
                                     <td>
-                                        <label>১.৬.৪ সর্বশেষ নির্মিত ভবনের আয়তন(বর্গফুট)</label>
-                                        <input type="number" name="" class="form-control"
-                                               v-model="data.building_infos[0].latest_building_area_sft">
+                                        ১.৬.৪ সর্বশেষ নির্মিত ভবনের আয়তন(বর্গফুট)
                                     </td>
                                     <td>
-                                        <label>
+                                        <input type="number" name="" class="w-50"
+                                               v-model="data.building_infos[0].latest_building_area_sft">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                             ১.৬.৫ সকল ভবনের মোট আয়তন(বর্গফুট)
-                                        </label>
-                                        <input type="number" name="" class="form-control"
+                                        </td>
+                                    <td>
+                                        <input type="number" name="" class="w-50"
                                                v-model="data.building_infos[0].latest_building_area_sft">
                                     </td>
+                                </tr>
+                                <tr>
                                     <td>
-                                        <label>
                                             ১.৬.৬ প্রতিষ্ঠানটির অবস্থান:
-                                        </label>
-                                        <select name="english_version" style="width: 130px"
+                                    </td>
+                                    <td>
+                                        <select name="english_version"
                                                 v-model="data.building_infos[0].total_building_area_sft">
                                             <option value="1">নিজস্ব জমিতে</option>
                                             <option value="2">ভাড়া বাড়িতে</option>
@@ -208,27 +213,25 @@
                         </div>
                         <div class="col-md-6">
                             <label class="font-weight-bold">১.৬.৭ ভবনভিত্তিক তলা ও উর্ধ্মূখী সম্প্রসারণ ইত্যাদি সম্পর্কিত তথ্য</label>
-                            <table class="table table-bordered" style="text-align:center">
-                                <thead>
+                            <table class="table table-sm table-striped table-bordered text-center">
                                 <tr class="custom-table-header">
-                                    <th>ভবন নং</th>
-                                    <th>ভবনের নাম</th>
-                                    <th>কত তলা ফাউন্ডেশন</th>
-                                    <th>কত তলা নির্মিত</th>
-                                    <th>নির্মানের বছর</th>
-                                    <th>উর্ধ্মুখী সম্প্রসারণ যোগ্য কিনা? হাঁ-১, না-২</th>
+                                    <td>ভবন নং</td>
+                                    <td>ভবনের নাম</td>
+                                    <td>কত তলা ফাউন্ডেশন</td>
+                                    <td>কত তলা নির্মিত</td>
+                                    <td>নির্মানের বছর</td>
+                                    <td>উর্ধ্মুখী সম্প্রসারণ যোগ্য কিনা? হাঁ-১, না-২</td>
                                 </tr>
-                                </thead>
                                 <tbody>
                                 <tr v-for="(item,index) in data.building_details">
                                     <td>@{{index+1}}</td>
-                                    <td><input type="text" class="form-control" name="" v-model="item.building_name">
+                                    <td><input type="text" class="w-100" name="" v-model="item.building_name">
                                     </td>
-                                    <td><input type="number" class="form-control" name=""
+                                    <td><input type="number" class="w-75" name=""
                                                v-model="item.foundation_floor"></td>
-                                    <td><input type="number" class="form-control" name="" v-model="item.build_floor">
+                                    <td><input type="number" class="w-75" name="" v-model="item.build_floor">
                                     </td>
-                                    <td><input type="number" class="form-control" name="" v-model="item.build_year">
+                                    <td><input type="number" class="w-75" name="" v-model="item.build_year">
                                     </td>
                                     <td><select class="" name="" v-model="item.upper_increase_yn">
                                             <option value="">select</option>
@@ -242,87 +245,84 @@
                         </div>
                     </div>
                     <label class="font-weight-bold">১.৬.৮ ভবন গৃহের মালিকানা, ধরন ও অবস্থা অনুযায়ী সংখ্যাঃ</label>
-
-                    <table class="table-bordered" style="text-align:center">
-                        <thead>
+                    <table class="table table-sm table-bordered table-striped text-center">
                         <tr class="custom-table-header">
-                            <th colspan="7">ভবন সংখ্যা</th>
-                            <th colspan="2">মালিকানা অনুসারে ভবন সংখ্যা</th>
-                            <th colspan="3">ধরন অনুযায়ী ভবন সংখ্যা</th>
-                            <th colspan="4">অবস্থা অনুযায়ী ভবন সংখ্যা</th>
-                            <th>মোট কক্ষ সংখ্যা</th>
+                            <td colspan="7">ভবন সংখ্যা</td>
+                            <td colspan="2">মালিকানা অনুসারে ভবন সংখ্যা</td>
+                            <td colspan="3">ধরন অনুযায়ী ভবন সংখ্যা</td>
+                            <td colspan="4">অবস্থা অনুযায়ী ভবন সংখ্যা</td>
+                            <td>মোট কক্ষ সংখ্যা</td>
                         </tr>
                         <tr>
-                            <th>১ তলা</th>
-                            <th>২ তলা</th>
-                            <th>৩ তলা</th>
-                            <th>৪ তলা</th>
-                            <th>৫ তলা</th>
-                            <th>৫ তলা+</th>
-                            <th>মোট</th>
-                            <th>নিজস্ব</th>
-                            <th>ভাড়া</th>
-                            <th>পাকা</th>
-                            <th>আধাপাকা</th>
-                            <th>কাঁচা</th>
-                            <th>নতুন</th>
-                            <th>পুরাতন</th>
-                            <th>জরাজীর্ণ</th>
-                            <th>কর্তৃপক্ষ কর্তৃক পরিত্যাক্ত</th>
-                            <th></th>
+                            <td>১ তলা</td>
+                            <td>২ তলা</td>
+                            <td>৩ তলা</td>
+                            <td>৪ তলা</td>
+                            <td>৫ তলা</td>
+                            <td>৫ তলা+</td>
+                            <td>মোট</td>
+                            <td>নিজস্ব</td>
+                            <td>ভাড়া</td>
+                            <td>পাকা</td>
+                            <td>আধাপাকা</td>
+                            <td>কাঁচা</td>
+                            <td>নতুন</td>
+                            <td>পুরাতন</td>
+                            <td>জরাজীর্ণ</td>
+                            <td>কর্তৃপক্ষ কর্তৃক পরিত্যাক্ত</td>
+                            <td></td>
                         </tr>
-                        </thead>
                         <tbody>
                         <tr>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].no_building_1floor">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].no_building_2floor">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].no_building_3floor">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].no_building_4floor">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].no_building_5floor">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].no_building_5plus_floor">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].no_building">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].own_building">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].rented">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].packa">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].semi_packa">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].kancha">
                             </td>
-                            <td><input type="number" class="form-control" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].new_building">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].old_building">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].damage">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].abandoned">
                             </td>
-                            <td><input type="number" class="" name="" id="" style=""
+                            <td><input type="number" class="w-100" name="" id="" style=""
                                        v-model="data.building_numbers[0].class_room">
                             </td>
                         </tr>
@@ -331,111 +331,107 @@
 
                     <label class="font-weight-bold">১.৬.৯ ভবন/গৃহের ব্যবহার</label>
                     <div class="table-bordered">
-                        <table class="table table-bordered" style="text-align:center">
+                        <table class="table table-sm table-striped table-bordered text-center">
                             <thead>
                             <tr class="custom-table-header">
-                                <th>ভবন/কক্ষ</th>
-                                <th>অফিস কক্ষ</th>
-                                <th>প্রতিষ্ঠান প্রধানের কক্ষ</th>
-                                <th>শিক্ষক মিলনায়তন</th>
-                                <th>সাধারণ শ্রেণি কক্ষ</th>
-                                <th>বিজ্ঞানাগার</th>
-                                <th>গ্রন্থাগার কক্ষ</th>
-                                <th>ছাত্র কমন রুম</th>
-                                <th>ছাত্রী কমন রুম</th>
-                                <th>সিক রুম</th>
-                                <th>ছাত্রাবাসের সংখ্যা</th>
-
+                                <td>ভবন/কক্ষ</td>
+                                <td>অফিস কক্ষ</td>
+                                <td>প্রতিষ্ঠান প্রধানের কক্ষ</td>
+                                <td>শিক্ষক মিলনায়তন</td>
+                                <td>সাধারণ শ্রেণি কক্ষ</td>
+                                <td>বিজ্ঞানাগার</td>
+                                <td>গ্রন্থাগার কক্ষ</td>
+                                <td>ছাত্র কমন রুম</td>
+                                <td>ছাত্রী কমন রুম</td>
+                                <td>সিক রুম</td>
+                                <td>ছাত্রাবাসের সংখ্যা</td>
                             </tr>
-                            </thead>
                             <tbody>
                             <tr>
                                 <td>সংখ্যা</td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].office_room">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].inst_head_room">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].teachers_room">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].class_room">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].laboratory">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].library">
                                 </td>
 
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].male_common_room">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].female_common_room">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].sick_room">
                                 </td>
-                                <td><input type="number" class="form-control" name="" id="" style=""
+                                <td><input type="number" class="w-75" name="" id="" style=""
                                            v-model="data.building_use[0].hostel">
                                 </td>
                             </tr>
                             </tbody>
                         </table>
 
-                        <table class="table table-bordered" style="text-align:center">
-                            <thead>
+                        <table class="table table-sm table-striped table-bordered text-center">
                             <tr class="custom-table-header">
-                                <th>ভবন/কক্ষ</th>
-                                <th>ছাত্রাবাসের সিট সংখ্যা</th>
-                                <th>ছাত্রাবাসে অবস্থানকারী</th>
-                                <th>ছাত্রীনিবাসের সিট সংখ্যা</th>
-                                <th>ছাত্রীনিবাসে অবস্থানকারী</th>
-                                <th>প্রতিষ্ঠান প্রধানের আবাসন</th>
-                                <th>শিক্ষক আবাসিক ভবন</th>
-                                <th>আবাসিক শিক্ষক সংখ্যা</th>
-                                <th>শিক্ষক আবাসন সিট</th>
-                                <th>বিশেষ চাহিদা সম্পন্ন</th>
-                                <th>কাউন্সিলিং রুম</th>
-                                <th>শিক্ষা উপকরণ</th>
-                                <th>অন্যান্য</th>
+                                <td>ভবন/কক্ষ</td>
+                                <td>ছাত্রাবাসের সিট সংখ্যা</td>
+                                <td>ছাত্রাবাসে অবস্থানকারী</td>
+                                <td>ছাত্রীনিবাসের সিট সংখ্যা</td>
+                                <td>ছাত্রীনিবাসে অবস্থানকারী</td>
+                                <td>প্রতিষ্ঠান প্রধানের আবাসন</td>
+                                <td>শিক্ষক আবাসিক ভবন</td>
+                                <td>আবাসিক শিক্ষক সংখ্যা</td>
+                                <td>শিক্ষক আবাসন সিট</td>
+                                <td>বিশেষ চাহিদা সম্পন্ন</td>
+                                <td>কাউন্সিলিং রুম</td>
+                                <td>শিক্ষা উপকরণ</td>
+                                <td>অন্যান্য</td>
                             </tr>
-                            </thead>
                             <tbody>
                             <tr>
                                 <td>সংখ্যা</td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].hostal_sit"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].resident_boy_total"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].girls_hostal_sit"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].resident_girl_total"></td>
-                                <td><input type="number" class="form-control" name=""></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""></td>
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].teachers_residence"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].resident_teacher_total"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].teachers_residence_sit"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].autistic_rest_room"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].counseling_room"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].edu_instrument_room"></td>
-                                <td><input type="number" class="form-control" name=""
+                                <td><input type="number" class="w-75" name=""
                                            v-model="data.building_use[0].others"></td>
 
                             </tr>
                             </tbody>
                         </table>
                         <label class="font-weight-bold">১.৬.১০ প্রতিষ্ঠানের প্রার্থনা গৃহঃ</label>
-                        <table class="table table-bordered table-striped">
+                        <table class="table table-sm table-bordered table-striped">
                             <tr>
                                 <td>
                                     <label class="label-number" for="">মসজিদ</label>
@@ -471,27 +467,24 @@
                         </table>
                     </div>
 
-
                     <div class="row">
                         <div class="col-md-12">
                             <label class="font-weight-bold">১.৬.১১ শ্রেণী ভিত্তিক কক্ষ সংখ্যা ও আয়তনঃ</label>
-                            <table class="table table-bordered" style="text-align:center">
-                                <thead>
+                            <table class="table table-sm table-striped table-bordered text-center">
                                 <tr class="custom-table-header">
-                                    <th>শ্রেণি/পর্ব</th>
-                                    <th colspan="3">কক্ষ সংখ্যা</th>
-                                    <th colspan="3">কক্ষের আয়তন (বর্গফুট)</th>
+                                    <td>শ্রেণি/পর্ব</td>
+                                    <td colspan="3">কক্ষ সংখ্যা</td>
+                                    <td colspan="3">কক্ষের আয়তন (বর্গফুট)</td>
                                 </tr>
                                 <tr>
-                                    <th></th>
-                                    <th>পাকা</th>
-                                    <th>আধা-পাকা</th>
-                                    <th>কাঁচা</th>
-                                    <th>পাকা</th>
-                                    <th>আধা-পাকা</th>
-                                    <th>কাঁচা</th>
+                                    <td></td>
+                                    <td>পাকা</td>
+                                    <td>আধা-পাকা</td>
+                                    <td>কাঁচা</td>
+                                    <td>পাকা</td>
+                                    <td>আধা-পাকা</td>
+                                    <td>কাঁচা</td>
                                 </tr>
-                                </thead>
                                 <tbody>
                                 <tr v-for="item in data.classwise_room_space">
                                     <td>@{{ className(item.class_id) }}</td>
