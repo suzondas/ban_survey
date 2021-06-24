@@ -16,9 +16,14 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/adminap', function () {
+    return view('admin_panel/adminPanelAp');
+});
+Route::get('/admindeo', function () {
+    return view('admin_panel/adminPanelDeo');
+});
 Route::post('login', [\App\Http\Controllers\LoginController::class, 'login']);
 Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
-
 /*Dynamic Routing*/
 Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
