@@ -82,7 +82,7 @@
             </div>
 
             <div class="mt-2">
-                <table class="table table-bordered text-center">
+                <table id="deoTable" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                     <tr class="custom-table-header">
                         <th>ক্রম</th>
@@ -103,23 +103,18 @@
                         <td><button type="button" class="btn btn-danger p-1">Unvarify</button></td>
                     </tr>
                     </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>ক্রম</th>
+                        <th>প্রতিষ্ঠানের নাম</th>
+                        <th>মোবাইল নম্বর</th>
+                        <th>জরিপের তথ্য</th>
+                        <th>বর্তমান অবস্থা</th>
+                        <th>ভেরিফিকেশন</th>
+                    </tr>
+                    </tfoot>
                 </table>
             </div>
-<div class="mt-2">
-    <nav>
-        <ul class="pagination justify-content-end">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
-</div>
         </div>
 
         <div v-show="dataLoadingError">

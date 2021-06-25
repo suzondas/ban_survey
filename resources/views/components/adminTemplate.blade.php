@@ -52,5 +52,8 @@ $inst_type = Auth::user()->institute_type;
 
 {{--Checking Browser Compatibility--}}
 <script src="{{ asset('js/browserCheck.js') }}" type="text/javascript"></script>
+<script type="text/javascript">
+
+</script>
 </body>
 </html>
