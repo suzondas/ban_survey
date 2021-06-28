@@ -177,6 +177,44 @@
            </li>
            <?php }?>
 
+
+             <?php ?>
+           {{--Private University--}}
+           <?php if (Auth::user()->institute_type==12){?>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('privateUni/privateComFirstPage') ? 'active' : '' }}"
+                  href="{{ url('privateUni/privateComFirstPage') }}">মৌলিক তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdSecondPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdSecondPage') }}">টেকনিক্যাল-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdThirdPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdThirdPage') }}">টেকনিক্যাল-৩</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdFourthPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdFourthPage') }}">টেকনিক্যাল-৪</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdFifthPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdFifthPage') }}">টেকনিক্যাল-৫</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdSixthPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdSixthPage') }}">টেকনিক্যাল-৬</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdSeventhPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdSeventhPage') }}">টেকনিক্যাল-৭</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('technical/tecStdEightPage') ? 'active' : '' }}"
+                  href="{{ url('technical/tecStdEightPage') }}">টেকনিক্যাল-৮</a>
+           </li>
+           <?php }?>
+
         {{--Bibidh--}}
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/thirdPage') ? 'active' : '' }}"
