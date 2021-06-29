@@ -1,5 +1,5 @@
 const app = new Vue({
-    el: '#privateComFirstPage',
+    el: '#privateComSecondPage',
     data() {
         return {
             data: [],
