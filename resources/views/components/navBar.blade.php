@@ -197,6 +197,18 @@
                <a class="nav-link {{ request()->is('privateUni/privateStdSecondPage') ? 'active' : '' }}"
                   href="{{ url('privateUni/privateStdSecondPage') }}">শিক্ষার্থীর তথ্য-২</a>
            </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('privateUni/privateTeachFirstPage') ? 'active' : '' }}"
+                  href="{{ url('privateUni/privateTeachFirstPage') }}">শিক্ষকের তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('privateUni/privateTeachSecondPage') ? 'active' : '' }}"
+                  href="{{ url('privateUni/privateTeachSecondPage') }}">শিক্ষকের তথ্য-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('privateUni/privateBibid') ? 'active' : '' }}"
+                  href="{{ url('privateUni/privateBibid') }}">বিবিধ</a>
+           </li>
            <?php }?>
 
         {{--Bibidh--}}
