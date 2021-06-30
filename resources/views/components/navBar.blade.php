@@ -21,12 +21,12 @@
                   href="{{ url('technical/tecFirstPage') }}"> মৌলিক তথ্য-১</a>
            </li>
            <?php }?>
-
+           <?php if (Auth::user()->institute_type!=12){?>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/secondPage') ? 'active' : '' }}"
                href="{{ url('common/secondPage') }}">মৌলিক তথ্য-২</a>
         </li>
-
+           <?php }?>
         {{--School pages--}}
         <?php if (Auth::user()->institute_type == 1){?>
         <li class="nav-item">
@@ -189,10 +189,19 @@
                <a class="nav-link {{ request()->is('privateUni/privateComSecondPage') ? 'active' : '' }}"
                   href="{{ url('privateUni/privateComSecondPage') }}">মৌলিক তথ্য-২</a>
            </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('privateUni/privateStdFirstPage') ? 'active' : '' }}"
+                  href="{{ url('privateUni/privateStdFirstPage') }}">শিক্ষার্থীর তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('privateUni/privateStdSecondPage') ? 'active' : '' }}"
+                  href="{{ url('privateUni/privateStdSecondPage') }}">শিক্ষার্থীর তথ্য-২</a>
+           </li>
            <?php }?>
 
         {{--Bibidh--}}
-        <li class="nav-item">
+           <?php if (Auth::user()->institute_type!=12){?>
+           <li class="nav-item">
             <a class="nav-link {{ request()->is('common/thirdPage') ? 'active' : '' }}"
                href="{{ url('common/thirdPage') }}"> বিবিধ-১ </a>
         </li>
@@ -204,7 +213,7 @@
             <a class="nav-link {{ request()->is('common/fifthPage') ? 'active' : '' }}"
                href="{{ url('common/fifthPage') }}">বিবিধ-৩</a>
         </li>
-
+           <?php }?>
         {{--Teacher and Staff Page--}}
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/teacherStaffInfo') ? 'active' : '' }}"
