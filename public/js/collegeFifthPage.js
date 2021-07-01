@@ -80,7 +80,6 @@ var app = angular.module('collegeFifthPage', []);
             url: 'http://127.0.0.1:8000/collegeFifthPage/' + inst_id
         }).then(function (response) {
             $scope.data = response.data;
-            $scope.boardWiseExamResults = $scope.data.boardWiseExamResults;
         }, function (error) {
             console.log(error);
         });

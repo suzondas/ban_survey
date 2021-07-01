@@ -21,7 +21,7 @@
                   href="{{ url('technical/tecFirstPage') }}"> মৌলিক তথ্য-১</a>
            </li>
            <?php }?>
-           <?php if (Auth::user()->institute_type!=12){?>
+           <?php if (!in_array(Auth::user()->institute_type,array(9,12))){?>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/secondPage') ? 'active' : '' }}"
                href="{{ url('common/secondPage') }}">মৌলিক তথ্য-২</a>
@@ -208,6 +208,31 @@
            <li class="nav-item">
                <a class="nav-link {{ request()->is('privateUni/privateBibid') ? 'active' : '' }}"
                   href="{{ url('privateUni/privateBibid') }}">বিবিধ</a>
+           </li>
+           <?php }?>
+
+           <?php ?>
+           {{--Private University--}}
+           <?php if (Auth::user()->institute_type==9){?>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('english/engComFirstPage') ? 'active' : '' }}"
+                  href="{{ url('english/engComFirstPage') }}">মৌলিক তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('english/engComSecondPage') ? 'active' : '' }}"
+                  href="{{ url('english/engComSecondPage') }}">মৌলিক তথ্য-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('english/engStdFirstPage') ? 'active' : '' }}"
+                  href="{{ url('english/engStdFirstPage') }}">শিক্ষার্থীর তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('english/engStdSecondPage') ? 'active' : '' }}"
+                  href="{{ url('english/engStdSecondPage') }}">শিক্ষার্থীর তথ্য-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('english/engTeachFirstPage') ? 'active' : '' }}"
+                  href="{{ url('english/engTeachFirstPage') }}">শিক্ষকের তথ্য-১</a>
            </li>
            <?php }?>
 

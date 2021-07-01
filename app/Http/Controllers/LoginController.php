@@ -29,6 +29,9 @@ class LoginController extends Controller
                 if (Auth::user()->institute_type == 5) {
                     return redirect('technical/tecFirstPage');
                 }
+                if (Auth::user()->institute_type == 9) {
+                    return redirect('english/engComFirstPage');
+                }
                 if (Auth::user()->institute_type == 12) {
                     return redirect('privateUni/privateComFirstPage');
                 }
