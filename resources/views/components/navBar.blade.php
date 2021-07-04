@@ -178,7 +178,6 @@
            <?php }?>
 
 
-             <?php ?>
            {{--Private University--}}
            <?php if (Auth::user()->institute_type==12){?>
            <li class="nav-item">
@@ -211,8 +210,41 @@
            </li>
            <?php }?>
 
-           <?php ?>
            {{--Private University--}}
+
+           {{--Public University--}}
+           <?php if (Auth::user()->institute_type==8){?>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('publicUni/publicComFirstPage') ? 'active' : '' }}"
+                  href="{{ url('publicUni/publicComFirstPage') }}">মৌলিক তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('publicUni/publicComSecondPage') ? 'active' : '' }}"
+                  href="{{ url('publicUni/publicComSecondPage') }}">মৌলিক তথ্য-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('publicUni/publicStdFirstPage') ? 'active' : '' }}"
+                  href="{{ url('publicUni/publicStdFirstPage') }}">শিক্ষার্থীর তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('publicUni/publicStdSecondPage') ? 'active' : '' }}"
+                  href="{{ url('publicUni/publicStdSecondPage') }}">শিক্ষার্থীর তথ্য-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('publicUni/publicTeachFirstPage') ? 'active' : '' }}"
+                  href="{{ url('publicUni/publicTeachFirstPage') }}">শিক্ষকের তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('publicUni/publicTeachSecondPage') ? 'active' : '' }}"
+                  href="{{ url('publicUni/publicTeachSecondPage') }}">শিক্ষকের তথ্য-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('publicUni/publicBibid') ? 'active' : '' }}"
+                  href="{{ url('publicUni/privateBibid') }}">বিবিধ</a>
+           </li>
+           <?php }?>
+
+           {{--Public University--}}
            <?php if (Auth::user()->institute_type==9){?>
            <li class="nav-item">
                <a class="nav-link {{ request()->is('english/engComFirstPage') ? 'active' : '' }}"
