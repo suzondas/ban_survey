@@ -240,7 +240,7 @@
            </li>
            <li class="nav-item">
                <a class="nav-link {{ request()->is('publicUni/publicBibid') ? 'active' : '' }}"
-                  href="{{ url('publicUni/privateBibid') }}">বিবিধ</a>
+                  href="{{ url('publicUni/publicBibid') }}">বিবিধ</a>
            </li>
            <?php }?>
 
