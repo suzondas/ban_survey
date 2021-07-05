@@ -35,6 +35,9 @@ class LoginController extends Controller
                 if (Auth::user()->institute_type == 12) {
                     return redirect('privateUni/privateComFirstPage');
                 }
+                if (Auth::user()->institute_type == 8) {
+                    return redirect('publicUni/publicComFirstPage');
+                }
 
             } else {
                 return redirect('/')->withErrors(['Wrong Type of Login! Contact System Administrator!']);
