@@ -328,6 +328,39 @@
                             </td>
                         </tr>
                     </table>
+                    <table class="table table-sm table-striped table-bordered text-center">
+                        <label class="font-weight-bold">২.২.৩ গ্রন্থাগার ও পাঠোপকরণের বিবরণ:</label>
+                        <tr>
+                            <td>বিবরণ</td>
+                            <td>বই</td>
+                            <td>জার্নাল</td>
+                            <td>অডিওভিজ্যুয়াল সামগ্রী</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">১. ২০২০ সাল পর্যন্ত গ্রন্থাগার সামগ্রীর মোট ক্রমপূঞ্জিত (cumulative) সংখ্যা</td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">২. শুধুমাত্র ২০২০ সালে সংগৃহীত সংখ্যা</td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">৩. ২০২০ সালে গৃহীত (subscribed) ইলেকট্রনিক পুস্তক ও সাময়িকীর সংখ্যা</td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">৪. অন্যান্য</td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                            <td><input type="number" class="w-50"/></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
