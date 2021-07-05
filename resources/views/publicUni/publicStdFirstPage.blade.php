@@ -22,8 +22,6 @@
                         {{--<td>স্তর</td>--}}
                         <td rowspan="3">ক্র</td>
                         <td rowspan="3">বিষয়</td>
-                        <td rowspan="3">লিঙ্গ</td>
-                        <td rowspan="3">স্নাতক পাশ</td>
                         <td rowspan="3">১ম বর্ষে ভর্তির <br> আসন সংখ্যা ২০২০</td>
                         <td colspan="8">স্নাতক (সম্মান)</td>
                         <td colspan="4">স্নাতকোত্তর</td>
@@ -61,32 +59,7 @@
                     </tr>
                     <tr>
                         <td rowspan="2">১</td>
-                        <td rowspan="2" class="text-left">computer sciecne and engineering</td>
-                        <td>মোট</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td>ছাত্রী</td>
-                        <td><input type="number" class="w-50"/></td>
+                        <td rowspan="2" class="text-left">computer sciecne</td>
                         <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
@@ -120,244 +93,56 @@
             </div>
             <div class="contentBoxBody">
                 <label class="font-weight-bold">৩.২.১ বিভাগ, বর্ষ ও লিঙ্গভিত্তিক বিদেশী শিক্ষার্থীর সংখ্যা</label>
-                <table class="table table-sm table-bordered table-striped text-center">
+                <table class="table  table-sm table-bordered table-striped text-center">
                     <tr>
                         {{--<td>স্তর</td>--}}
-                        <td rowspan="2">দেশের নাম</td>
-                        <td rowspan="2">বিশ্ববিদ্যালয় প্রদত্ত বৃত্তি/নিজ দেশের বৃত্তি/আন্তর্জাতিক সংস্থা/অন্যান্য</td>
-                        <td rowspan="2">লিঙ্গ</td>
-                        <td rowspan="2">স্নাতক পাশ</td>
-                        <td rowspan="2">১ম বর্ষে ভর্তির <br> আসন সংখ্যা ২০২০</td>
-                        <td colspan="12">স্নাতক (সম্মান)</td>
+                        <td rowspan="3">ক্র</td>
+                        <td rowspan="3">দেশের নাম</td>
+                        <td rowspan="3">বিশ্ববিদ্যালয় প্রদত্ত বৃত্তি/ নিজ দেশের বৃত্তি/আর্ন্তজাতিক সংস্থা/অন্যান্য</td>
+                        <td colspan="8">স্নাতক (সম্মান)</td>
+                        <td colspan="4">স্নাতকোত্তর</td>
+                        <td colspan="2" rowspan="2">এম এস সি</td>
+                        <td rowspan="3">এম ফিল শিক্ষার্থী</td>
+                        <td rowspan="3">পিএইচডি শিক্ষার্থী</td>
+                        <td colspan="2" rowspan="2">বিদেশী শিক্ষার্থী</td>
                     </tr>
                     <tr>
-                        <td>১ম</td>
-                        <td>২য়</td>
-                        <td>৩য়</td>
-                        <td>৪র্থ</td>
-                        <td>৫ম</td>
-                        <td>৬ষ্ঠ</td>
-                        <td>৭ম</td>
-                        <td>৮ম</td>
-                        <td>৯ম</td>
-                        <td>১০ম</td>
-                        <td>১১শ</td>
-                        <td>১২শ</td>
+                        <td colspan="2">১ম বর্ষ</td>
+                        <td colspan="2">২য় বর্ষ</td>
+                        <td colspan="2">৩য় বর্ষ</td>
+                        <td colspan="2">৪র্থ বর্ষ</td>
+                        <td colspan="2">১ম বর্ষ</td>
+                        <td colspan="2">শেষ বর্ষ</td>
                     </tr>
                     <tr>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
                         <td>মোট</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
                         <td>ছাত্রী</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
                         <td>মোট</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
                         <td>ছাত্রী</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
                         <td>মোট</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
                         <td>ছাত্রী</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                </table>
-                <table class="table table-sm table-bordered table-striped text-center">
-                    <tr>
-                        {{--<td>স্তর</td>--}}
-                        <td rowspan="2">দেশের নাম</td>
-                        <td rowspan="2">বিশ্ববিদ্যালয় প্রদত্ত বৃত্তি/নিজ দেশের বৃত্তি/আন্তর্জাতিক সংস্থা/অন্যান্য</td>
-                        <td rowspan="2">লিঙ্গ</td>
-                        <td rowspan="2">স্নাতক পাশ</td>
-                        <td rowspan="2">১ম বর্ষে ভর্তির <br> আসন সংখ্যা ২০২০</td>
-                        <td colspan="6">স্নাতকোত্তর</td>
-                        <td rowspan="2">এমএসসি</td>
-                        <td rowspan="2">এমফিল</td>
-                        <td rowspan="2">পিএইচডি </td>
-                        <td rowspan="2">শিক্ষার্থীর সংখ্যা</td>
-                    </tr>
-                    <tr>
-                        <td>১ম</td>
-                        <td>২য়</td>
-                        <td>৩য়</td>
-                        <td>৪র্থ</td>
-                        <td>৫ম</td>
-                        <td>৬ষ্ঠ</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
                         <td>মোট</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
                         <td>ছাত্রী</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
                         <td>মোট</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
                         <td>ছাত্রী</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
-                        <td rowspan="2"><input type="text" class="w-100"></td>
                         <td>মোট</td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+                        <td>মোট</td>
+                        <td>ছাত্রী</td>
+
                     </tr>
                     <tr>
-                        <td>ছাত্রী</td>
+                        <td >১</td>
+                        <td ><input type="number" class="w-100"/></td >
+                        <td><input type="number" class="w-100"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
