@@ -313,30 +313,6 @@
                                     <option value="1">৪টি</option>
                                 </select>
                             </td>
-                            <td>
-                                <label>১.৩.৭ পরিচালনা পর্ষদের ধরন: </label>
-                                <select class="">
-                                    <option value="">Select</option>
-                                    <option value="1">সিন্ডিকেট-১</option>
-                                    <option value="2">বোর্ড অব গভর্নরস-২</option>
-                                    <option value="3">অন্যান্য-৩</option>
-                                </select>
-
-                            </td>
-                            <td><label>১.৩.৮ পর্ষদ থাকলে সদস্য সংখ্যা:</label>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="total"> মোট:</label>
-                                        <input type="number" class="w-50"
-                                               v-model="data.committees.total_member">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="female"> মহিলা: </label>
-                                        <input type="number" class="w-50"
-                                               v-model="data.committees.total_female">
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                     </table>
                 </div>

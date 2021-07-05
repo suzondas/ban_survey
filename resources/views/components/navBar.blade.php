@@ -269,7 +269,7 @@
            <?php }?>
 
         {{--Bibidh--}}
-           <?php if (Auth::user()->institute_type!=12){?>
+           <?php if (!in_array(Auth::user()->institute_type,array(8,12))){?>
            <li class="nav-item">
             <a class="nav-link {{ request()->is('common/thirdPage') ? 'active' : '' }}"
                href="{{ url('common/thirdPage') }}"> বিবিধ-১ </a>
