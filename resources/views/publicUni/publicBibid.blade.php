@@ -106,109 +106,174 @@
                         </table>
                     </div>
                 </div>
+            </div>
+            </div>
+                <div class="contentBox">
+                    <div class="input-group contentdeader">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-number">৫.২</span>
+                        </div>
+                        <div class="form-control bg-number-label">বাজেট সংক্রান্ত তথ্য
+                        </div>
+                    </div>
                 <div class="row">
-                    <div class="col-md-5">
-                        <label class="font-weight-bold">৫.১.২ ২০২০ সালে বিশ্ববিদ্যালয়ের সর্বমোট আয় : </label>
+                    <div class="col-md-6">
+                        <label class="font-weight-bold">৫.২.১ ২০২০-২০২১ অর্থ বছরে গবেষণা খাতে ব্যয়ের পরিমাণ: </label>
                         <table class="table table-sm table-bordered table-striped text-center">
                             <tr>
                                 {{--<td>স্তর</td>--}}
-                                <td>ক্রমিক</td>
-                                <td>আয়ের খাত</td>
-                                <td>আয়ের পরিমাণ (টাকায়)</td>
+                                <td>ক্র</td>
+                                <td>উৎস</td>
+                                <td>ব্যয়ের পরিমাণ (টাকায়)	</td>
+                                <td>ব্যয়ের কত শতাংশ</td>
                             </tr>
                             <tr>
                                 <td>১</td>
-                                <td>নিজ আয়</td>
+                                <td class="text-left">রাজস্ব বরাদ্দ</td>
+                                <td><input type="number" class="w-75"/></td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                             <tr>
                                 <td>২</td>
-                                <td>শিক্ষার্থীদের থেকে প্রাপ্ত</td>
+                                <td class="text-left"> উন্নয়ন বরাদ্দ</td>
+                                <td><input type="number" class="w-75"/></td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                             <tr>
                                 <td>৩</td>
-                                <td>নিজস্ব উৎস</td>
+                                <td class="text-left">নিজস্ব আয়</td>
+                                <td><input type="number" class="w-75"/></td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                             <tr>
                                 <td>৪</td>
-                                <td>বিদেশি উৎস/ফান্ড থেকে আয়</td>
+                                <td class="text-left">বিদেশি উৎস থেকে প্রাপ্ত</td>
+                                <td><input type="number" class="w-75"/></td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                             <tr>
                                 <td>৫</td>
-                                <td>অন্যান্য উৎস/ফান্ড থেকে আয়</td>
+                                <td class="text-left">অন্যান্য উৎস থেকে প্রাপ্ত</td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td class="text-right font-weight-bold" colspan="2" >সর্বমোট ব্যয়=</td>
+                                <td><input type="number" class="w-75"/></td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                         </table>
                     </div>
                     <div class="col-md-5">
-                        <label class="font-weight-bold">৫.১.৩ ২০২০ সালে বিভিন্ন খাতে ব্যয়ের বিবরণ: </label>
+                        <label class="font-weight-bold">৫.২.২ ২০২০-২০২১ অর্থ বছরে বিশ্ববিদ্যালয়ের বাজেটের অর্থের উৎস ও টাকার পরিমাণ: </label>
                         <table class="table table-sm table-bordered table-striped text-center">
                             <tr>
                                 {{--<td>স্তর</td>--}}
-                                <td>ক্রমিক</td>
-                                <td>খাত</td>
-                                <td>ব্যয়ের পরিমাণ (টাকায়)</td>
+                                <td>ক্র</td>
+                                <td>উৎস</td>
+                                <td>অর্থের পরিমাণ (টাকা)</td>
                             </tr>
                             <tr>
                                 <td>১</td>
-                                <td class="text-left">শিক্ষা</td>
+                                <td class="text-left">UGC হতে অনুদানপ্রাপ্ত</td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                             <tr>
                                 <td>২</td>
-                                <td class="text-left"> গবেষণা </td>
+                                <td class="text-left">নিজস্ব আয়</td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                             <tr>
                                 <td>৩</td>
-                                <td class="text-left">গ্রন্থাগার</td>
+                                <td class="text-left">বিশেষ উন্নয়ন বরাদ্দ</td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                             <tr>
                                 <td>৪</td>
-                                <td class="text-left">বেতন ভাতা</td>
+                                <td class="text-left">অন্যান্য</td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
-                            <tr>
-                                <td>৫</td>
-                                <td class="text-left">গবেষণা বৃত্তি</td>
-                                <td><input type="number" class="w-75"/></td>
-                            </tr>
-                            <tr>
-                                <td>৬</td>
-                                <td class="text-left">পরিবহন</td>
-                                <td><input type="number" class="w-75"/></td>
-                            </tr>
-                            <tr>
-                                <td>৭</td>
-                                <td class="text-left">বিদ্যুৎ</td>
-                                <td><input type="number" class="w-75"/></td>
-                            </tr>
-                            <tr>
-                                <td>৮</td>
-                                <td class="text-left">অবকাঠামোগত উন্নয়ন ও রক্ষণাবেক্ষণ</td>
-                                <td><input type="number" class="w-75"/></td>
-                            </tr>
-                            <tr>
-                                <td>৯</td>
-                                <td class="text-left">চিকিৎসা</td>
-                                <td><input type="number" class="w-75"/></td>
-                            </tr>
-                            <tr>
-                                <td>১০</td>
-                                <td class="text-left"> অন্যান্য </td>
-                                <td><input type="number" class="w-75"/></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="text-right font-weight-bold"> মোট </td>
+                                <td colspan="2" class="text-right font-weight-bold"> সর্বমোট অর্থ= </td>
                                 <td><input type="number" class="w-75"/></td>
                             </tr>
                         </table>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="font-weight-bold">৫.২.৩ ২০২০-২০২১ অর্থ বছরে বিভিন্ন খাতে মোট ব্যয়ের বিবরণ: </label>
+                        <table class="table table-sm table-bordered table-striped text-center">
+                            <tr>
+                                {{--<td>স্তর</td>--}}
+                                <td>ক্র</td>
+                                <td>খাত</td>
+                                <td>টাকার পরিমাণ (ব্যয়)</td>
+                                <td>বাজেটের কত শতাংশ</td>
+                            </tr>
+                            <tr>
+                                <td>১</td>
+                                <td class="text-left">শিক্ষা</td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>২</td>
+                                <td class="text-left">গবেষণা </td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>৩</td>
+                                <td class="text-left">বেতন ভাতা </td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>৪</td>
+                                <td class="text-left">গবেষণা বৃত্তি</td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>৫</td>
+                                <td class="text-left">পরিবহন </td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>৬</td>
+                                <td class="text-left">বিদ্যুৎ</td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>৭</td>
+                                <td class="text-left">অবকাঠামোগত উন্নয়ন ও রক্ষণাবেক্ষণ </td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>৮</td>
+                                <td class="text-left">চিকিৎসা</td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td>৯</td>
+                                <td class="text-left">অন্যান্য </td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                            <tr>
+                                <td class="text-right font-weight-bold" colspan="2" >সর্বমোট ব্যয়=</td>
+                                <td><input type="number" class="w-75"/></td>
+                                <td><input type="number" class="w-75"/></td>
+                            </tr>
+                        </table>
+                        <label class="font-weight-bold">৫.২.৪ ২০২০-২০২১ অর্থ বছরে বিভিন্ন খাতে মোট ব্যয়ের বিবরণ: </label> &nbsp;
+                        <input type="number" style="width: 100px;" />
+                    </div>
+                    </div>
             </div>
         </div>
         <hr />
