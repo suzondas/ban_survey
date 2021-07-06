@@ -20,6 +20,11 @@ class LoginCheck
         if(Auth::guest()){
             return redirect()->route('logout');
         }
+      /*  elseif (Auth::user()->user_type !=='USEO' &&  class_basename($request->route()->getController()) === 'USEOController'){
+            return redirect()->route('logout');
+        }*/
+
         return $next($request);
     }
 }
+

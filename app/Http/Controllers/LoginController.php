@@ -14,7 +14,6 @@ class LoginController extends Controller
             'eiin' => 'required',
             'password' => 'required'
         ]);
-
         $credentials = $request->only('eiin', 'password');
         if (Auth::attempt($credentials)) {
             if (Auth::user()->user_type == 'Institute') {
@@ -36,10 +35,11 @@ class LoginController extends Controller
                     return redirect('privateUni/privateComFirstPage');
                 }
 
+            } elseif (Auth::user()->user_type == 'USEO') {
+                return redirect('admin/USEO');
             } else {
                 return redirect('/')->withErrors(['Wrong Type of Login! Contact System Administrator!']);
             }
-
         } else {
             return redirect('/')->withErrors(['Email or Password did not match!']);
         }

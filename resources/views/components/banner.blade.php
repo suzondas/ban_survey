@@ -9,8 +9,8 @@
             <span style="font-weight: bold;">শিক্ষা প্রতিষ্ঠান বার্ষিক জরিপ, ২০২১<br>
             <?php if (Auth::check()) {?>
             <span style="color:#c51f1a">শিক্ষা প্রতিষ্ঠান: <?php echo(Auth::user()->user_name); ?> (EIIN: <?php echo(Auth::user()->eiin); ?>)
-            <?php }?>
             </span>
+            <?php }?>
             </span>
         </div>
     </div>

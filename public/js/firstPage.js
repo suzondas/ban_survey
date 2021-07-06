@@ -49,7 +49,7 @@ const app = new Vue({
             dataToSend.institutes_recognition=this.data.institutes_recognition;
             dataToSend.committees=this.data.committees;
             dataToSend.institutes_mpo_status=this.data.institutes_mpo_status;
-           console.log(dataToSend);
+            console.log(dataToSend);
            // return;
             axios.post('http://127.0.0.1:8000/firstPage/submitData/', dataToSend)
                 .then(

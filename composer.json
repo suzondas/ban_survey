@@ -47,6 +47,8 @@
             "Tests\\": "tests/"
         }
     },
+    "files": [
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
