@@ -22,21 +22,16 @@
                         {{--<td>স্তর</td>--}}
                         <td rowspan="3">বিষয় কোড<br>(ব্যানবেইস <br>  পূরণ করবে)</td>
                         <td rowspan="3">বিভাগ/বিষয় এর নাম</td>
-                        <td colspan="3">অধ্যাপক <br>কর্মরত</td>
-                        <td colspan="3">সহযোগী<br> অধ্যাপক কর্মরত</td>
-                        <td colspan="3">সহকারী <br>অধ্যাপক কর্মরত</td>
-                        <td colspan="3">প্রভাষক <br>কর্মরত</td>
+                        <td colspan="3" rowspan="2">অধ্যাপক <br>কর্মরত</td>
+                        <td colspan="3" rowspan="2">সহযোগী<br> অধ্যাপক কর্মরত</td>
+                        <td colspan="3" rowspan="2">সহকারী <br>অধ্যাপক কর্মরত</td>
+                        <td colspan="3" rowspan="2">প্রভাষক <br>কর্মরত</td>
                         <td colspan="4">উচ্চতর ডিগ্রিধারী <br>শিক্ষকের সংখ্যা</td>
-                        <td colspan="2">বিদেশি শিক্ষক সংখ্যা</td>
+                        <td colspan="2" rowspan="2">বিদেশি শিক্ষক সংখ্যা</td>
                     </tr>
                     <tr>
-                        <td colspan="3"></td>
-                        <td colspan="3"></td>
-                        <td colspan="3"></td>
-                        <td colspan="3"></td>
                         <td colspan="2">এম ফিল</td>
                         <td colspan="2">পিএইচডি</td>
-                        <td colspan="2"></td>
                     </tr>
                     <tr>
                         <td>মোট</td>
@@ -57,204 +52,6 @@
                         <td>মহিলা</td>
                         <td>মোট</td>
                         <td>মহিলা</td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-100"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
-                        <td><input type="number" class="w-50"/></td>
                     </tr>
                     <tr>
                         <td><input type="number" class="w-50"/></td>

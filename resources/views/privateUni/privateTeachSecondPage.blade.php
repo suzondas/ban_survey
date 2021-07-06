@@ -156,6 +156,16 @@
                         <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
                     </tr>
+                    <tr>
+                        <td class="font-weight-bold text-right">সর্বমোট</td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                        <td><input type="number" class="w-50"/></td>
+                    </tr>
                 </table>
                 </div>
             </div>

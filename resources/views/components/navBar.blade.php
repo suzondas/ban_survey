@@ -21,7 +21,7 @@
                   href="{{ url('technical/tecFirstPage') }}"> মৌলিক তথ্য-১</a>
            </li>
            <?php }?>
-           <?php if (!in_array(Auth::user()->institute_type,array(9,12))){?>
+           <?php if (!in_array(Auth::user()->institute_type,array(8,9,12))){?>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/secondPage') ? 'active' : '' }}"
                href="{{ url('common/secondPage') }}">মৌলিক তথ্য-২</a>
@@ -240,7 +240,7 @@
            </li>
            <li class="nav-item">
                <a class="nav-link {{ request()->is('publicUni/publicBibid') ? 'active' : '' }}"
-                  href="{{ url('publicUni/privateBibid') }}">বিবিধ</a>
+                  href="{{ url('publicUni/publicBibid') }}">বিবিধ</a>
            </li>
            <?php }?>
 
@@ -269,7 +269,7 @@
            <?php }?>
 
         {{--Bibidh--}}
-           <?php if (Auth::user()->institute_type!=12){?>
+           <?php if (!in_array(Auth::user()->institute_type,array(8,12))){?>
            <li class="nav-item">
             <a class="nav-link {{ request()->is('common/thirdPage') ? 'active' : '' }}"
                href="{{ url('common/thirdPage') }}"> বিবিধ-১ </a>
