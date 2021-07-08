@@ -22,6 +22,10 @@ Route::get('/adminap', function () {
 Route::get('/admindeo', function () {
     return view('admin_panel/adminPanelDeo');
 });
+Route::get('/adminbanbeis', function () {
+    return view('admin_panel/adminPanelBanbeis');
+});
+
 Route::post('login', [\App\Http\Controllers\LoginController::class, 'login']);
 Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
 
