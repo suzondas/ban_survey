@@ -33,6 +33,10 @@ Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->
 Route::get('admin/USEO', [\App\Http\Controllers\USEOController::class, 'index'])->middleware('login.check');
 /*USEO LOGIN*/
 
+/*DEO LOGIN*/
+Route::get('admin/DEO', [\App\Http\Controllers\DEOController::class, 'index'])->middleware('login.check');
+/*DEO LOGIN*/
+
 /*Dynamic Routing*/
 Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
