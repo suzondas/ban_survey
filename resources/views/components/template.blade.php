@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Auth;
 $inst_id = Auth::user()->institute_id;
 $inst_type = Auth::user()->institute_type;
 //print_r(Auth::user());die;
+//echo $inst_id;exit;
 ?>
         <!DOCTYPE html>
 <html lang="en">

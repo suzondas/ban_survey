@@ -3,9 +3,11 @@
     <div class="container">
         <div class="shadow mb-5 bg-white rounded p-2 table-responsive mt-2">
             <a href="/logout" class="float-right logOutButton btn" style="">Logout</a>
-            <h5 class="m-1 text-center font-weight-bold text-secondary">Upazila Secondary Education Officer (USEO) Panel</h5>
+            <h5 class="m-1 text-center font-weight-bold text-secondary">Upazila Secondary Education Officer (USEO)
+                Panel</h5>
             <h6 class=" text-center font-weight-bold text-primary ">{{$thanaDtl->thana->thana_name}}
                 , {{$thanaDtl->district->district_name}}</h6>
+            <hr>
             <div class="row col-12 mt-1">
                 <div class="row col-6">
                     <div class="col-4">
@@ -89,7 +91,7 @@
                             <td>{{$institute->eiin}}</td>
                             <td>{{$institute->institute_name_new}}</td>
                             <td>{{$institute->mobphone}}</td>
-                            <td><input type="button" value="View" class="w-100"></td>
+                            <td><a href="AdminViewInst?instTypeId={{$institute->institute_type_id}}&instId={{$institute->institute_id}}" target="_blank"><input type="button" value="View" class="w-100"></a> </td>
                             <td>
                                 @if($institute->submitted ==1)
                                     <span style="color:green">Submitted</span>

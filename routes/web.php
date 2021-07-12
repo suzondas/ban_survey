@@ -25,6 +25,14 @@ Route::get('/admindeo', function () {
 Route::post('login', [\App\Http\Controllers\LoginController::class, 'login']);
 Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
 
+/*AdminViewInst*/
+Route::get('admin/AdminViewInst', [\App\Http\Controllers\AdminViewInstController::class, 'index'])->middleware('login.check');
+/*AdminViewInst*/
+
+/*Admin Verify*/
+Route::get('admin/verify', [\App\Http\Controllers\AdminVerifyController::class, 'index'])->middleware('login.check');
+/*Admin Verify*/
+
 /*USEO LOGIN*/
 Route::get('admin/USEO', [\App\Http\Controllers\USEOController::class, 'index'])->middleware('login.check');
 /*USEO LOGIN*/
