@@ -13,7 +13,7 @@
             <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (ক)</h3>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="">ইআইআইএন (EIIN): &nbsp</label>
+                    <label for="">টিইআইআইএন (EIIN): &nbsp</label>
                     <input type="text" v-model="data.institutes.eiin" readonly disabled>
                 </div>
                 <div class="col-md-6 d-flex flex-row-reverse">
@@ -24,8 +24,8 @@
                             <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                         </tr>
                         <tr>
-                            <td><input type="number" class="" v-model="data.institutes.latitude"></td>
-                            <td><input type="number" class=""  v-model="data.institutes.longitude"></td>
+                            <td><input type="text" class="" v-model="data.institutes.latitude"></td>
+                            <td><input type="text" class=""  v-model="data.institutes.longitude"></td>
                         </tr>
                     </table>
                 </div>
@@ -38,13 +38,14 @@
                     <div class="form-control bg-number-label">সাধারণ তথ্য</div>
                 </div>
                 <div class="contentBoxBody">
-                    <table class="table table-sm table-striped table-bordered">
+                    <table class="table table-striped table-bordered">
                         <tr>
-                            <td colspan="2" class="font-weight-bold">১.১.১ বিশ্ববিদ্যালয়ের নাম:</td>
+                            <td colspan="2" class="font-weight-bold">১.১.১ প্রতিষ্ঠানের নাম:</td>
                         </tr>
                         <tr>
 
-                            <td style="width:50%"><label class="" for="bangla_name"> বাংলায় (ইউনিকোড ব্যবহার করে লিখুন):
+                            <td style="width:50%"><label class="" for="bangla_name"> বাংলায় (অনুমতি/স্বীকৃতিপত্র
+                                    অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):
                                 </label>
                                 <input type="text" class="form-control"
                                        v-model="data.institutes.institute_name_bangla">
@@ -58,7 +59,7 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="table table-sm table-bordered table-striped">
+                    <table class="table table-bordered table-striped">
                         <tr>
                             <td colspan="5"><b>১.১.২ ঠিকানা:</b></td>
                         </tr>
@@ -73,7 +74,7 @@
                             </td>
                             <td>
                                 <label class="" for="post_code">পোস্ট কোড:</label> &nbsp
-                                <input type="text" class="form-control" v-model="data.institutes.post_code">
+                                <input type="number" class="form-control" v-model="data.institutes.post_code">
                             </td>
                             <td>
                                 <label class="" for="division">বিভাগ:</label>
@@ -120,11 +121,11 @@
                             </td>
                             <td>
                                 <label class="" for="mobile">মোবাইল নম্বর:</label> &nbsp
-                                <input type="text" class="form-control" v-model="data.institutes.mobphone">
+                                <input type="number" class="form-control" v-model="data.institutes.mobphone">
                             </td>
                             <td>
                                 <label class="" for="alt_mobile">বিকল্প মোবাইর নম্বর:</label> &nbsp
-                                <input type="text" class="form-control"
+                                <input type="number" class="form-control"
                                        v-model="data.institutes.mobphone_alternate">
                             </td>
                         </tr>
@@ -132,7 +133,7 @@
 
                             <td>
                                 <label class="" for="phone">ফোন:</label> &nbsp
-                                <input type="text" class="form-control" v-model="data.institutes.telephone">
+                                <input type="number" class="form-control" v-model="data.institutes.telephone">
                             </td>
                             <td>
                                 <label class="" for="email">ই-মেইল:</label> &nbsp
@@ -159,6 +160,7 @@
             </div>
 
             {{-- General Info ends here--}}
+
             <div class="contentBox">
                 <div class="input-group contentdeader">
                     <div class="input-group-prepend">
@@ -177,12 +179,12 @@
                                 <label class="" for="">১.২.২ প্রতিষ্ঠানটি কোন এলাকায়:</label>
                                 <select class="" v-model="data.institutes.area_status1">
                                     <option value="">Select</option>
-                                    <option value="1">গ্রামীণ -১</option>
-                                    <option value="2">জেলা সদর পৌরসভা -২</option>
-                                    <option value="3">উপজেলা সদর পৌরসভা -৩</option>
-                                    <option value="4">উপজেলা সদর পৌরসভা নয়-৪</option>
-                                    <option value="5">মেট্রোপলিটন -৫</option>
-                                    <option value="6">অন্যান্য পৌর এলাকা-৬</option>
+                                    <option value="1">গ্রামীণ</option>
+                                    <option value="2">জেলা সদর পৌরসভা </option>
+                                    <option value="3">উপজেলা সদর পৌরসভা</option>
+                                    <option value="4">উপজেলা সদর পৌরসভা নয়</option>
+                                    <option value="5">মেট্রোপলিটন</option>
+                                    <option value="6">অন্যান্য পৌর এলাকা</option>
                                     <option value="7">সিটি কর্পোরেশন</option>
                                 </select>
                             </td>
@@ -317,18 +319,17 @@
                 </div>
 
             </div>
+
+            <div align="center"><button type="button" @click="submitData" class="btn btn-success">Submit</button></div>
+
+        </div>
+
+        <div v-show="dataLoadingError">
+            <span class="d-flex justify-content-center btn-warning">Error in Fetching Data, Please contact System Administrator!</span>
         </div>
     </div>
-
-    <div align="center"><button type="button" @click="submitData" class="btn btn-success">Submit</button></div>
-
-    </div>
-
-    <div v-show="dataLoadingError">
-        <span class="d-flex justify-content-center btn-warning">Error in Fetching Data, Please contact System Administrator!</span>
-    </div>
-    </div>
 @endsection
+{{--Page wise js--}}
 @section('javascript')
     <script src="{{ asset('js/publicComFirstPage.js') }}" type="module" defer></script>
 @stop
