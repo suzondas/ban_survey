@@ -21,6 +21,13 @@
                   href="{{ url('technical/tecFirstPage') }}"> মৌলিক তথ্য-১</a>
            </li>
            <?php }?>
+           <?php if (Auth::user()->institute_type==7){?>
+           <li class="nav-item">
+               <a class="nav-link {{ (request()->is('professional/profFirstPage')) ? 'active' : '' }}"
+                  href="{{ url('professional/profFirstPage') }}"> মৌলিক তথ্য-১</a>
+           </li>
+           <?php }?>
+
            <?php if (!in_array(Auth::user()->institute_type,array(8,9,12))){?>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('common/secondPage') ? 'active' : '' }}"
@@ -265,6 +272,25 @@
            <li class="nav-item">
                <a class="nav-link {{ request()->is('english/engTeachFirstPage') ? 'active' : '' }}"
                   href="{{ url('english/engTeachFirstPage') }}">শিক্ষকের তথ্য-১</a>
+           </li>
+           <?php }?>
+           {{-- Professional--}}
+           <?php if (Auth::user()->institute_type==7){?>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('professional/profStdFirstPage') ? 'active' : '' }}"
+                  href="{{ url('professional/profStdFirstPage') }}">শিক্ষার্থীর তথ্য-১</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('professional/profStdSecondPage') ? 'active' : '' }}"
+                  href="{{ url('professional/profStdSecondPage') }}">শিক্ষার্থীর তথ্য-২</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('professional/profStdThirdPage') ? 'active' : '' }}"
+                  href="{{ url('professional/profStdThirdPage') }}">শিক্ষার্থীর তথ্য-৩</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link {{ request()->is('professional/profStdFourthPage') ? 'active' : '' }}"
+                  href="{{ url('professional/profStdFourthPage') }}">শিক্ষার্থীর তথ্য-৪</a>
            </li>
            <?php }?>
 

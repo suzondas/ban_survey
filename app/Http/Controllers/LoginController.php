@@ -37,6 +37,9 @@ class LoginController extends Controller
                 if (Auth::user()->institute_type == 8) {
                     return redirect('publicUni/publicComFirstPage');
                 }
+                if (Auth::user()->institute_type == 7) {
+                    return redirect('professional/profFirstPage');
+                }
 
             } elseif (Auth::user()->user_type == 'USEO') {
                 return redirect('admin/USEO');

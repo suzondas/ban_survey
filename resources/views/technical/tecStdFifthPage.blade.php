@@ -149,7 +149,7 @@
                             <option value="1">হ্যাঁ-১</option>
                             <option value="2">না-২</option>
                         </select></td>
-                    <td class="font-weight-bold">২.১৩.২ প্রতিষ্ঠানে বিশেষ চাহিদাসম্পন্ন শিক্ষার্থী আছে কি?<br>
+                    <td class="font-weight-bold">২.১৩.২ উত্তর হ্যাঁ হলে তাদের জন্য সুবিধাসমূহ কী কী?   <br>
                         <input type="checkbox" ng-checked="data.instituteSpecialStudents.disable_facility_audio==1"
                                ng-model="data.instituteSpecialStudents.disable_facility_audio" ng-value="data.instituteSpecialStudents.disable_facility_audio" ng-true-value="'1'" ng-false-value="'0'" >&nbsp; অডিও-১
                         &nbsp;
