@@ -13,7 +13,7 @@
             <h3 class="text-center" style="margin-top: 10px">সেকশন ১: মৌলিক তথ্য (ক)</h3>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="">ইআইআইএন (EIIN): &nbsp</label>
+                    <label for="">টিইআইআইএন (EIIN): &nbsp</label>
                     <input type="text" v-model="data.institutes.eiin" readonly disabled>
                 </div>
                 <div class="col-md-6 d-flex flex-row-reverse">
@@ -24,8 +24,8 @@
                             <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                         </tr>
                         <tr>
-                            <td><input type="number" class="" v-model="data.institutes.latitude"></td>
-                            <td><input type="number" class=""  v-model="data.institutes.longitude"></td>
+                            <td><input type="text" class="" v-model="data.institutes.latitude"></td>
+                            <td><input type="text" class=""  v-model="data.institutes.longitude"></td>
                         </tr>
                     </table>
                 </div>
@@ -38,13 +38,14 @@
                     <div class="form-control bg-number-label">সাধারণ তথ্য</div>
                 </div>
                 <div class="contentBoxBody">
-                    <table class="table table-sm table-striped table-bordered">
+                    <table class="table table-striped table-bordered">
                         <tr>
-                            <td colspan="2" class="font-weight-bold">১.১.১ বিশ্ববিদ্যালয়ের নাম:</td>
+                            <td colspan="2" class="font-weight-bold">১.১.১ প্রতিষ্ঠানের নাম:</td>
                         </tr>
                         <tr>
 
-                            <td style="width:50%"><label class="" for="bangla_name"> বাংলায় (ইউনিকোড ব্যবহার করে লিখুন):
+                            <td style="width:50%"><label class="" for="bangla_name"> বাংলায় (অনুমতি/স্বীকৃতিপত্র
+                                    অনুযায়ী অভ্র/ইউনিকোড ব্যবহার করে লিখুন):
                                 </label>
                                 <input type="text" class="form-control"
                                        v-model="data.institutes.institute_name_bangla">
@@ -58,7 +59,7 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="table table-sm table-bordered table-striped">
+                    <table class="table table-bordered table-striped">
                         <tr>
                             <td colspan="5"><b>১.১.২ ঠিকানা:</b></td>
                         </tr>
@@ -73,7 +74,7 @@
                             </td>
                             <td>
                                 <label class="" for="post_code">পোস্ট কোড:</label> &nbsp
-                                <input type="text" class="form-control" v-model="data.institutes.post_code">
+                                <input type="number" class="form-control" v-model="data.institutes.post_code">
                             </td>
                             <td>
                                 <label class="" for="division">বিভাগ:</label>
@@ -159,6 +160,7 @@
             </div>
 
             {{-- General Info ends here--}}
+
             <div class="contentBox">
                 <div class="input-group contentdeader">
                     <div class="input-group-prepend">
@@ -171,7 +173,7 @@
                         <tr>
                             <td colspan="2">
                                 ১.২.১ প্রতিষ্ঠার তারিখ: &nbsp
-                                    <input type="date" v-model="data.institutes.establish_date"/>
+                                <input type="date" v-model="data.institutes.establish_date"/>
                             </td>
                             <td colspan="2">
                                 <label class="" for="">১.২.২ প্রতিষ্ঠানটি কোন এলাকায়:</label>
@@ -230,117 +232,115 @@
                     </table>
                 </div>
             </div>
-                <div class="contentBox">
-                    <div class="input-group contentdeader">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text bg-number">১.৩ </span>
-                        </div>
-                        <div class="form-control bg-number-label">ব্যবস্থাপনা সংক্রান্ত:</div>
+            <div class="contentBox">
+                <div class="input-group contentdeader">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-number">১.৩ </span>
                     </div>
-                    <div class="contentBoxBody">
-                        <table class="table table-sm table-bordered table-striped">
-                            <tr>
-                                <td>
-                                    <label>১.৩.১ ভৌগলিক অবস্থান:</label> &nbsp;
-                                    <select v-model="data.institutes.geographical_status">
-                                        <option value="">Select</option>
-                                        <option value="1">সমতল</option>
-                                        <option value="2">পাহাড়ি</option>
-                                        <option value="3">সমুদ্র উপকূল</option>
-                                        <option value="9">শিল্পাঞ্চল</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>১.৩.২ বিশ্ববিদ্যালয়টির সাথে বিদেশী বিশ্ববিদ্যালয়ের সনঝোতা স্বাক্ষর আছে কি?</label> &nbsp;
-                                    <select v-model="data.institutes.forgine_univ_attath_yn">
-                                        <option value="">Select</option>
-                                        <option value="1">হ্যাঁ-১</option>
-                                        <option value="2">না-২</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </table>
-                        <label>১.৩.৩ উত্তর হ্যাঁ হলে বিশ্ববিদ্যালয়/বিশ্ববিদ্যালয়সমূহের নাম লিখুন: (ইংরেজি বড় অক্ষরে)</label>
-                        <table class="table table-sm table-striped table-bordered text-center">
-                            <tr>
-                                <td>বিশ্ববিদ্যালয়ের নাম</td>
-                                <td>দেশের নাম</td>
-                                <td style="width:190px;">পরবর্তী বিশ্ববিদ্যালয়ের নাম যুক্ত করতে Add More -এ ক্লিক করুন</td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" class="w-100" v-model="data.foreign_univ_institutes[0].univ_name"/></td>
-                                <td><input type="text" class="w-50" v-model="data.foreign_univ_institutes[0].country_name"/></td>
-                                <td> <button type="button" class="btn btn-info">Add More</button></td>
-                            </tr>
-                        </table>
-                            <label>১.৩.৪ বিশ্ববিদ্যালয়টির অধীন অনুষদ, বিভাগ, ইনস্টিটিউট ও অন্যান্য প্রতিষ্ঠানের সংখ্যা:</label>
-                            <table class="table table-sm table-striped table-bordered text-center">
-                                <tr>
-                                    <td>অনুষদ সংখ্যা</td>
-                                    <td>বিভাগ সংখ্যা</td>
-                                    <td>ইনস্টিটিউট সংখ্যা</td>
-                                    <td>ক্যাম্পাস</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_anushad_no"/></td>
-                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_dept_no"/></td>
-                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_inst_no"/></td>
-                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_branch_no"/></td>
-                                </tr>
-                            </table>
-                            <table class="table table-bordered">
-                            <tr>
-                                <td>
-                                    <label>১.৩.৫ বিশ্ববিদ্যালয়টির পাঠদান পদ্ধতি:</label>
-                                    <select class="" v-model="data.institutes.univ_edu_type">
-                                        <option value="">Select</option>
-                                        <option value="1">সনাতন/কোর্স-১</option>
-                                        <option value="2">সেমিস্টার-২</option>
-                                        <option value="3">অন্যান্য</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    ১.৩.৬ সেমিস্টার পদ্ধতি হলে বৎসরে কতটি সেমিস্টার:
-                                    <select class="" v-model="data.institutes.semister_no">
-                                        <option value="">Select</option>
-                                        <option value="1">১টি</option>
-                                        <option value="2">২টি</option>
-                                        <option value="3">৩টি</option>
-                                        <option value="4">৪টি</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <label>১.৩.৭ পরিচালনা পর্ষদের ধরন: </label>
-                                    <select class="" v-model="data.institutes.uni_committee_type">
-                                        <option value="">Select</option>
-                                        <option value="1">সিন্ডিকেট-১</option>
-                                        <option value="2">বোর্ড অব গভর্নরস-২</option>
-                                        <option value="3">অন্যান্য-৩</option>
-                                    </select>
-
-                                </td>
-                                <td><label>১.৩.৮ পর্ষদ থাকলে সদস্য সংখ্যা:</label>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="total"> মোট:</label>
-                                            <input type="number" class="w-50"
-                                                   v-model="data.institutes.uni_member_total">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="female"> মহিলা: </label>
-                                            <input type="number" class="w-50"
-                                                   v-model="data.institutes.uni_member_female"">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        </div>
-
-                    </div>
+                    <div class="form-control bg-number-label">ব্যবস্থাপনা সংক্রান্ত:</div>
                 </div>
+                <div class="contentBoxBody">
+                    <table class="table table-sm table-bordered table-striped">
+                        <tr>
+                            <td>
+                                <label>১.৩.১ ভৌগলিক অবস্থান:</label> &nbsp;
+                                <select v-model="data.institutes.geographical_status">
+                                    <option value="">Select</option>
+                                    <option value="1">সমতল</option>
+                                    <option value="2">পাহাড়ি</option>
+                                    <option value="3">সমুদ্র উপকূল</option>
+                                    <option value="9">শিল্পাঞ্চল</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>১.৩.২ বিশ্ববিদ্যালয়টির সাথে বিদেশী বিশ্ববিদ্যালয়ের সনঝোতা স্বাক্ষর আছে কি?</label> &nbsp;
+                                <select v-model="data.institutes.forgine_univ_attath_yn">
+                                    <option value="">Select</option>
+                                    <option value="1">হ্যাঁ-১</option>
+                                    <option value="2">না-২</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <label>১.৩.৩ উত্তর হ্যাঁ হলে বিশ্ববিদ্যালয়/বিশ্ববিদ্যালয়সমূহের নাম লিখুন: (ইংরেজি বড় অক্ষরে)</label>
+                    <table class="table table-sm table-striped table-bordered text-center">
+                        <tr>
+                            <td>বিশ্ববিদ্যালয়ের নাম</td>
+                            <td>দেশের নাম</td>
+                            <td style="width:190px;">পরবর্তী বিশ্ববিদ্যালয়ের নাম যুক্ত করতে Add More -এ ক্লিক করুন</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="w-100" v-model="data.foreign_univ_institutes[0].univ_name"/></td>
+                            <td><input type="text" class="w-50" v-model="data.foreign_univ_institutes[0].country_name"/></td>
+                            <td> <button type="button" class="btn btn-info">Add More</button></td>
+                        </tr>
+                    </table>
+                    <label>১.৩.৪ বিশ্ববিদ্যালয়টির অধীন অনুষদ, বিভাগ, ইনস্টিটিউট ও অন্যান্য প্রতিষ্ঠানের সংখ্যা:</label>
+                    <table class="table table-sm table-striped table-bordered text-center">
+                        <tr>
+                            <td>অনুষদ সংখ্যা</td>
+                            <td>বিভাগ সংখ্যা</td>
+                            <td>ইনস্টিটিউট সংখ্যা</td>
+                            <td>ক্যাম্পাস</td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" class="w-25" v-model="data.institutes.univ_anushad_no"/></td>
+                            <td><input type="number" class="w-25" v-model="data.institutes.univ_dept_no"/></td>
+                            <td><input type="number" class="w-25" v-model="data.institutes.univ_inst_no"/></td>
+                            <td><input type="number" class="w-25" v-model="data.institutes.univ_branch_no"/></td>
+                        </tr>
+                    </table>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>
+                                <label>১.৩.৫ বিশ্ববিদ্যালয়টির পাঠদান পদ্ধতি:</label>
+                                <select class="" v-model="data.institutes.univ_edu_type">
+                                    <option value="">Select</option>
+                                    <option value="1">সনাতন/কোর্স-১</option>
+                                    <option value="2">সেমিস্টার-২</option>
+                                    <option value="3">অন্যান্য</option>
+                                </select>
+                            </td>
+                            <td>
+                                ১.৩.৬ সেমিস্টার পদ্ধতি হলে বৎসরে কতটি সেমিস্টার:
+                                <select class="" v-model="data.institutes.semister_no">
+                                    <option value="">Select</option>
+                                    <option value="1">১টি</option>
+                                    <option value="2">২টি</option>
+                                    <option value="3">৩টি</option>
+                                    <option value="4">৪টি</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label>১.৩.৭ পরিচালনা পর্ষদের ধরন: </label>
+                                <select class="" v-model="data.institutes.uni_committee_type">
+                                    <option value="">Select</option>
+                                    <option value="1">সিন্ডিকেট-১</option>
+                                    <option value="2">বোর্ড অব গভর্নরস-২</option>
+                                    <option value="3">অন্যান্য-৩</option>
+                                </select>
+
+                            </td>
+                            <td><label>১.৩.৮ পর্ষদ থাকলে সদস্য সংখ্যা:</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="total"> মোট:</label>
+                                        <input type="number" class="w-50"
+                                               v-model="data.institutes.uni_member_total">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="female"> মহিলা: </label>
+                                        <input type="number" class="w-50"
+                                               v-model="data.institutes.uni_member_female">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
             </div>
 
             <div align="center"><button type="button" @click="submitData" class="btn btn-success">Submit</button></div>
@@ -352,6 +352,7 @@
         </div>
     </div>
 @endsection
+{{--Page wise js--}}
 @section('javascript')
     <script src="{{ asset('js/privateComFirstPage.js') }}" type="module" defer></script>
 @stop
