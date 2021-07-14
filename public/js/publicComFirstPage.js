@@ -20,6 +20,7 @@ const app = new Vue({
             });
     },
     methods: {
+
         test: function (v) {
             console.log(v);
         },
@@ -40,8 +41,20 @@ const app = new Vue({
                         console.log(response);
                         alert("Error Try again");
                     });
-
-
+        },
+        addMoreForeignUniv:function(){
+            this.data.foreign_univ_institutes.push(
+                {
+                    "id": null,
+                    "institute_id":inst_id,
+                    "sl_no": null,
+                    "univ_name": "",
+                    "country_name": "",
+                    "year": null,
+                    "created_at": null,
+                    "updated_at": null
+                }
+            )
         }
     }
 });

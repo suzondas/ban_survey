@@ -1,11 +1,11 @@
-@extends('components.ngTemplate')
+@extends('components.template')
 @section('content')
     <style>
         .w-50 {
             width: 40px !important;
         }
     </style>
-    <div class="container-fluid" data-ng-app="publicStdFirstPage" ng-controller="myCtrl">
+    <div class="container-fluid" id="publicStdFirstPage">
         <h3 style="text-align:center">সেকশন ৩ (ক): শিক্ষার্থী সম্পর্কিত তথ্য</h3>
         <div class="contentBox">
             <div class="input-group contentdeader">
@@ -29,6 +29,7 @@
                         <td rowspan="3">এম ফিল শিক্ষার্থী</td>
                         <td rowspan="3">পিএইচডি শিক্ষার্থী</td>
                         <td colspan="2" rowspan="2">বিদেশী শিক্ষার্থী</td>
+                        <td>Action</td>
                     </tr>
                     <tr>
                         <td colspan="2">১ম বর্ষ</td>
@@ -55,9 +56,8 @@
                         <td>ছাত্রী</td>
                         <td>মোট</td>
                         <td>ছাত্রী</td>
-
                     </tr>
-                    <tr>
+                    <tr v-for="(item,index) in testArray">
                         <td rowspan="2">১</td>
                         <td rowspan="2" class="text-left">computer sciecne</td>
                         <td><input type="number" class="w-50"/></td>
@@ -79,8 +79,10 @@
                         <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
                         <td><input type="number" class="w-50"/></td>
+                        <td><button @click="testArray.splice(index,1)">Delete</button></td>
                     </tr>
                 </table>
+                <button @click="addTestArray">Add Button</button>
             </div>
         </div>
         <div class="contentBox">
@@ -159,9 +161,9 @@
                 </table>
             </div>
         </div>
-        <div align="center"><button ng-click="submitData()" type="button" class="btn btn-success">Submit</button></div>
+        <div align="center"><button @click="submitData" type="button" class="btn btn-success">Submit</button></div>
     </div>
 @endsection
 @section('javascript')
-    {{--<script src="{{ asset('js/schoolFirstPage.js') }}" type="module" defer></script>--}}
+    <script src="{{ asset('js/publicStdFirstPage.js') }}" type="module" defer></script>
 @stop

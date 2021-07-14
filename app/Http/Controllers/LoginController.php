@@ -42,6 +42,8 @@ class LoginController extends Controller
                 return redirect('admin/USEO');
             } elseif (Auth::user()->user_type == 'DEO') {
                 return redirect('admin/DEO');
+            } elseif (Auth::user()->user_type == 'BANBEIS') {
+                return redirect('admin/BANBEIS');
             } else {
                 return redirect('/')->withErrors(['Wrong Type of Login! Contact System Administrator!']);
             }
