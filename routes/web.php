@@ -13,18 +13,15 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+/*Login check free*/
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/adminap', function () {
-    return view('admin_panel/adminPanelAp');
-});
-Route::get('/admindeo', function () {
-    return view('admin_panel/adminPanelDeo');
-});
 Route::post('login', [\App\Http\Controllers\LoginController::class, 'login']);
 Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
+/*Login check free Ends*/
 
+/*Admin Login*/
 /*AdminViewInst*/
 Route::get('admin/AdminViewInst', [\App\Http\Controllers\AdminViewInstController::class, 'index'])->middleware('login.check');
 /*AdminViewInst*/
@@ -44,10 +41,18 @@ Route::get('admin/DEO', [\App\Http\Controllers\DEOController::class, 'index'])->
 /*DEO LOGIN*/
 Route::get('admin/BANBEIS', [\App\Http\Controllers\BANBEISController::class, 'index'])->middleware('login.check');
 /*DEO LOGIN*/
+/*Admin Login Ends*/
 
-/*Dynamic Routing*/
+/*Routing for Helpers*/
+Route::get('admin/getGeo', [\App\Helpers\GetGeo::class, 'GetGeoAll']);
+/*Routing for Helpers Ends*/
+
+/*Dynamic Routing for Institutes' pages*/
 Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
         return view("{$Controller}.{$action}")->with('inst_id',Auth::user()->institute_id);
-})
- ->middleware('login.check');
+})->middleware('login.check');
+/*Dynamic Routing for Institutes' pages End*/
+
+
+

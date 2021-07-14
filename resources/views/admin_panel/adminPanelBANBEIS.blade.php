@@ -1,6 +1,11 @@
 @extends('components.adminTemplate')
 @section('content')
     <style>
+        canvas {
+            -webkit-box-shadow: 5px 5px 14px 2px rgb(35 16 0 / 26%);
+            box-shadow: 5px 5px 14px 2px rgb(130 90 59 / 26%);
+        }
+
         .nav-link {
             color: black !important;
         }
@@ -15,7 +20,7 @@
         }
 
         .tab-pane {
-            color: black;
+            color: black !important;
         }
 
         .tab-content .row {
@@ -24,7 +29,7 @@
             border: 1px dashed grey;
         }
     </style>
-    <div class="container">
+    <div class="container" id="">
         <div class="shadow mb-5 bg-white rounded p-2 table-responsive mt-2">
             <a href="/logout" class="float-right logOutButton btn" style="">Logout</a>
             <h5 class="m-1 text-center font-weight-bold">BANBEIS Panel
@@ -40,11 +45,10 @@
                            aria-controls="summery">Summery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">Messages</a>
+                        <a class="nav-link" data-toggle="tab" href="#report" role="tab"
+                           aria-controls="report">Report</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings">Settings</a>
-                    </li>
+
                 </ul>
 
                 <div class="tab-content">
@@ -157,16 +161,16 @@
                                     new Chart(document.getElementById("divisions"), {
                                         type: 'bar',
                                         data: {
-                                            labels: ["Dhaka", "Chattogram", "Sylhet", "Rangpur","Rajshahi","Barisal","Khulna","Mymensingh"],
+                                            labels: ["Dhaka", "Chattogram", "Sylhet", "Rangpur", "Rajshahi", "Barisal", "Khulna", "Mymensingh"],
                                             datasets: [
                                                 {
                                                     label: "Total",
                                                     backgroundColor: "#3e95cd",
-                                                    data: [133,221,783,2478,122,321,112,423,]
+                                                    data: [133, 221, 783, 2478, 122, 321, 112, 423,]
                                                 }, {
                                                     label: "Submitted",
                                                     backgroundColor: "#8e5ea2",
-                                                    data: [408,547,675,734,121,4232,232,1211]
+                                                    data: [408, 547, 675, 734, 121, 4232, 232, 1211]
                                                 }
                                             ]
                                         },
@@ -233,8 +237,8 @@
                         </div>
                     </div>
                     <div class="tab-pane" style="padding:5px;" id="summery" role="tabpanel">
-                        <h4 align="center" style="color:black;">Institutes Summery</h4>
-                        <table class="table table-bordered">
+                        <h4 align="center" style="color:black;">Institutes Type wise Summery</h4>
+                        <table class="w-100 table-bordered">
                             <thead>
                             <tr class="custom-table-header">
                                 <td align="center">&nbsp;</td>
@@ -338,9 +342,182 @@
                             </tr>
                             </tbody>
                         </table>
+                        <br>
+                        <h4 align="center" style="color:black;">Division wise Summery</h4>
+                        <table class="w-100 table-bordered">
+                            <thead>
+                            <tr class="custom-table-header">
+                                <td>Sl.</td>
+                                <td>Division name</td>
+                                <td>Total Institute</td>
+                                <td>Submitted</td>
+                                <td>Not Submitted</td>
+                                <td>Verified by USEO</td>
+                                <td>Verified by DEO</td>
+                                <td>Verified by BANBEIS</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Dhaka</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Chattogram</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Sylhet</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Rangpur</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Rajshahi</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Barisal</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Khulna</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Mymensingh</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <h4 align="center">Distirct Wise Summery</h4>
+                        <table class="w-100 table-bordered">
+                            <thead>
+                            <tr class="custom-table-header">
+                                <td>Sl.</td>
+                                <td>Division name</td>
+                                <td>Total Institute</td>
+                                <td>Submitted</td>
+                                <td>Not Submitted</td>
+                                <td>Verified by USEO</td>
+                                <td>Verified by DEO</td>
+                                <td>Verified by BANBEIS</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($districts as $key=>$district)
+                                <tr>
+                                    <td>{{$key+1}}</td>
+                                    <td>{{$district->district_name}}</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+
                     </div>
-                    <div class="tab-pane" id="messages" role="tabpanel"></div>
-                    <div class="tab-pane" id="settings" role="tabpanel"></div>
+                    <div class="tab-pane" id="report" role="tabpanel">
+                        <div class="container" id="adminPanelBANBEIS">
+                            <h4 align="center">Report</h4>
+                            <hr>
+                            <h5 align="left">Submission Ranking wise Report</h5>
+                            Submitted Rank (District): <select class="pr-2">
+                                <option value="hTl">Highest to Lowest</option>
+                                <option value="lTh">Lowest to Highest</option>
+                            </select>
+                            <button class="btn-success">Make Report</button>
+                            <br>
+                            <br>
+                            <br>
+                            <h5 align="left">Administrative Geography wise Report</h5>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    Division: <select class="" @change="changeDivision">
+                                        <option value="all">All</option>
+                                        <option v-for="(division,index) in divisions"
+                                                v-bind:value="division.division_id">
+                                            @{{ division.division_name }}
+                                        </option>
+                                    </select></div>
+                                <div class="col-md-3"> District:
+                                    <select class="" @change="changeDistrict">
+                                        <option value="all">All</option>
+                                        <option v-for="district in districts" v-bind:value="district.district_id">@{{
+                                            district.district_name }}
+                                        </option>
+                                    </select></div>
+                                <div class="col-md-3">Upazila:
+                                    <select class="">
+                                        <option value="all">All</option>
+                                        <option v-for="thana in thanas" v-bind:value="thana.thana_id">@{{
+                                            thana.thana_name }}
+                                        </option>
+                                    </select></div>
+                                <div class="col-md-3">
+                                    <button class="btn-success">Make Report</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
@@ -348,5 +525,36 @@
 @endsection
 @section('javascript')
     <script src="{{ asset('js/chart.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('cache/getGeo.js') }}" type="application/javascript"></script>
+    <script type="module">
+        const app = new Vue({
+            el: '#adminPanelBANBEIS',
+            data() {
+                return {
+                    data: null,
+                    divisions: [],
+                    districts: [],
+                    thanas: []
+                }
+            },
+            mounted() {
+                var self = this;
+                self.divisions = getGeo;
+            },
+            methods:
+                {
+                    changeDivision: function (event) {
+                        this.districts = [];
+                        this.thanas = [];
+                        this.districts = this.divisions[event.target.selectedIndex-1].districts
+                    },
+                    changeDistrict: function (event) {
+                        this.thanas = [];
+                        this.thanas = this.districts[event.target.selectedIndex-1].thanas
+                    }
+                }
 
+        });
+
+    </script>
 @endsection
