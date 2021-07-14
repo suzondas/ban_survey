@@ -43,4 +43,8 @@ $(document).ready(function () {
         adminTable.column(8).search(this.value).draw();
     });
 
+    /*GetGeoCode*/
+
+    /*GetGeoCode*/
+
 });

@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+/*Login check free*/
 Route::get('/', function () {
     return view('welcome');
 });
@@ -25,9 +26,18 @@ Route::get('/admindeo', function () {
 Route::get('/adminbanbeis', function () {
     return view('admin_panel/adminPanelBanbeis');
 });
-
 Route::post('login', [\App\Http\Controllers\LoginController::class, 'login']);
 Route::get('logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
+/*Login check free Ends*/
+
+/*Admin Login*/
+/*AdminViewInst*/
+Route::get('admin/AdminViewInst', [\App\Http\Controllers\AdminViewInstController::class, 'index'])->middleware('login.check');
+/*AdminViewInst*/
+
+/*Admin Verify*/
+Route::get('admin/verify', [\App\Http\Controllers\AdminVerifyController::class, 'index'])->middleware('login.check');
+/*Admin Verify*/
 
 /*USEO LOGIN*/
 Route::get('admin/USEO', [\App\Http\Controllers\USEOController::class, 'index'])->middleware('login.check');
@@ -37,9 +47,21 @@ Route::get('admin/USEO', [\App\Http\Controllers\USEOController::class, 'index'])
 Route::get('admin/DEO', [\App\Http\Controllers\DEOController::class, 'index'])->middleware('login.check');
 /*DEO LOGIN*/
 
-/*Dynamic Routing*/
+/*DEO LOGIN*/
+Route::get('admin/BANBEIS', [\App\Http\Controllers\BANBEISController::class, 'index'])->middleware('login.check');
+/*DEO LOGIN*/
+/*Admin Login Ends*/
+
+/*Routing for Helpers*/
+Route::get('admin/getGeo', [\App\Helpers\GetGeo::class, 'GetGeoAll']);
+/*Routing for Helpers Ends*/
+
+/*Dynamic Routing for Institutes' pages*/
 Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
         return view("{$Controller}.{$action}")->with('inst_id',Auth::user()->institute_id);
-})
- ->middleware('login.check');
+})->middleware('login.check');
+/*Dynamic Routing for Institutes' pages End*/
+
+
+

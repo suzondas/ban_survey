@@ -320,13 +320,18 @@
             <a type="button" class="nav-link" data-toggle="modal"
                data-target="#helpModal">Help</a>
         </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link" style="">Print</a>
-        </li>
+        {{--<li class="nav-item">--}}
+            {{--<a href="#" class="nav-link" style="">Print</a>--}}
+        {{--</li>--}}
         <li>
             <a href="/logout" class="btn logOutButton" style="">Logout</a>
         </li>
     </ul>
 </nav>
 <hr>
+@if(Auth::user()->user_type !='Institute')
+<div class="row justify-content-center pt-3 p-3 sticky-top" style="background:grey !important;">
+    <a class="btn btn-success" href="/admin/verify?instId={{Auth::user()->institute_id}}">Verify</a>
+</div>
+@endif
 

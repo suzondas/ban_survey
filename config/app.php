@@ -228,8 +228,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'GetDistrict'=> App\Helpers\GetDistrict::class,
-        'GetThanas'=> App\Helpers\GetThanas::class
-
+        'GetThanas'=> App\Helpers\GetThanas::class,
+        'GetDivisions'=> App\Helpers\GetThanas::class,
+        'GetGeo'=> App\Helpers\GetThanas::class
     ],
 
 ];

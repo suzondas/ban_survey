@@ -6,6 +6,7 @@
             <h5 class="m-1 text-center font-weight-bold">District Education Officer (DEO) Panel
             </h5>
             <h6 class=" text-center font-weight-bold text-primary ">{{$districtDtl->district->district_name}}</h6>
+            <hr>
             <div class="row col-12 mt-1">
                 <div class="row col-6">
                     <div class="col-4">
@@ -70,10 +71,16 @@
                             <td>{{$countData->total - $countData->submitted}}</td>
                         </tr>
                         <tr>
-                            <td>Verified</td>
+                            <td>Verified by USEO</td>
                             <td>{{$countData->verified_useo}}</td>
-                            <td>Not Verified</td>
+                            <td>Not Verified by USEO</td>
                             <td>{{$countData->total - $countData->verified_useo}}</td>
+                        </tr>
+                        <tr>
+                            <td>Verified by DEO</td>
+                            <td>{{$countData->verified_deo}}</td>
+                            <td>Not Verified by DEO</td>
+                            <td>{{$countData->total - $countData->verified_deo}}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -103,7 +110,7 @@
                             <td>{{$institute->eiin}}</td>
                             <td>{{$institute->institute_name_new}}</td>
                             <td>{{$institute->mobphone}}</td>
-                            <td><input type="button" value="View" class="w-100"></td>
+                            <td><a href="AdminViewInst?instTypeId={{$institute->institute_type_id}}&instId={{$institute->institute_id}}" target="_blank"><input type="button" value="View" class="w-100"></a> </td>
                             <td>
                                 @if($institute->submitted ==1)
                                     <span style="color:green">Submitted</span>
@@ -112,7 +119,7 @@
                                 @endif
                             </td>
                             <td>
-                                @if($institute->verified_useo =='yes')
+                                @if($institute->verified_deo =='yes')
                                     <span style="color:green">Verified</span>
                                 @else
                                     <span style="color:red">Not Verified</span>

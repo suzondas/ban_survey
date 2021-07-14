@@ -17,6 +17,7 @@ class DEOController extends Controller
         $countData->total = $institutes->count();
         $countData->submitted = $institutes->where('submitted',1)->count();
         $countData->verified_useo = $institutes->where('verified_useo','yes')->count();
+        $countData->verified_deo = $institutes->where('verified_deo','yes')->count();
         return view('admin_panel/adminPanelDEO')->with(['districtDtl'=>GetDistrict::GetDistrictDtl($district_id), 'institutes'=> $institutes, 'countData'=> $countData]);
     }
 }

@@ -402,8 +402,9 @@
                                     <option value="2">জেলা সদর পৌরসভা</option>
                                     <option value="3">উপজেলা সদর পৌরসভা</option>
                                     <option value="4">উপজেলা সদর পৌরসভা নয়</option>
-                                    <option value="5">সিটি কর্পোরেশন</option>
+                                    <option value="5">মেট্রোপলিটন</option>
                                     <option value="6">অন্যান্য পৌর এলাকা</option>
+                                    <option value="7">সিটি কর্পোরেশন</option>
                                 </select>
                             </td>
                             <td class="form-inline">
