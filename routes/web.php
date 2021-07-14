@@ -41,6 +41,10 @@ Route::get('admin/USEO', [\App\Http\Controllers\USEOController::class, 'index'])
 Route::get('admin/DEO', [\App\Http\Controllers\DEOController::class, 'index'])->middleware('login.check');
 /*DEO LOGIN*/
 
+/*DEO LOGIN*/
+Route::get('admin/BANBEIS', [\App\Http\Controllers\BANBEISController::class, 'index'])->middleware('login.check');
+/*DEO LOGIN*/
+
 /*Dynamic Routing*/
 Route::get('/{Controller}/{action}',
     function ($Controller, $action) {
