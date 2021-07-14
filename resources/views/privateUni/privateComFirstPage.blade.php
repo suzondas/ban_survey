@@ -24,8 +24,8 @@
                             <td class="text-center">দ্রাঘিমাংশ(Longititude)</td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="" v-model="data.institutes.latitude"></td>
-                            <td><input type="text" class=""  v-model="data.institutes.longitude"></td>
+                            <td><input type="number" class="" v-model="data.institutes.latitude"></td>
+                            <td><input type="number" class=""  v-model="data.institutes.longitude"></td>
                         </tr>
                     </table>
                 </div>
@@ -73,7 +73,7 @@
                             </td>
                             <td>
                                 <label class="" for="post_code">পোস্ট কোড:</label> &nbsp
-                                <input type="number" class="form-control" v-model="data.institutes.post_code">
+                                <input type="text" class="form-control" v-model="data.institutes.post_code">
                             </td>
                             <td>
                                 <label class="" for="division">বিভাগ:</label>
@@ -120,11 +120,11 @@
                             </td>
                             <td>
                                 <label class="" for="mobile">মোবাইল নম্বর:</label> &nbsp
-                                <input type="number" class="form-control" v-model="data.institutes.mobphone">
+                                <input type="text" class="form-control" v-model="data.institutes.mobphone">
                             </td>
                             <td>
                                 <label class="" for="alt_mobile">বিকল্প মোবাইর নম্বর:</label> &nbsp
-                                <input type="number" class="form-control"
+                                <input type="text" class="form-control"
                                        v-model="data.institutes.mobphone_alternate">
                             </td>
                         </tr>
@@ -132,7 +132,7 @@
 
                             <td>
                                 <label class="" for="phone">ফোন:</label> &nbsp
-                                <input type="number" class="form-control" v-model="data.institutes.telephone">
+                                <input type="text" class="form-control" v-model="data.institutes.telephone">
                             </td>
                             <td>
                                 <label class="" for="email">ই-মেইল:</label> &nbsp
@@ -175,7 +175,7 @@
                             </td>
                             <td colspan="2">
                                 <label class="" for="">১.২.২ প্রতিষ্ঠানটি কোন এলাকায়:</label>
-                                <select class="" v-model="data.institutes.institute_type_id">
+                                <select class="" v-model="data.institutes.area_status1">
                                     <option value="">Select</option>
                                     <option value="1">গ্রামীণ -১</option>
                                     <option value="2">জেলা সদর পৌরসভা -২</option>
@@ -189,7 +189,7 @@
                         <tr>
                             <td colspan="2">
                                 <label class="" for="">১.২.৩ বিশ্ববিদ্যালয়ের ধরনঃ</label>
-                                <select class="" v-model="data.institutes.institute_type_id">
+                                <select class="" v-model="data.institutes.univ_education_level_id">
                                     <option value="">Select</option>
                                     <option value="1">সাধারণ -১</option>
                                     <option value="2">প্রকৌশল-২</option>
@@ -203,7 +203,7 @@
                             </td>
                             <td colspan="2">
                                 <label class="" for="">১.২.৪ শিক্ষার্থীর ধরন:</label>
-                                <select class="" v-model="data.institutes.institute_type_id">
+                                <select class="" v-model="data.institutes.for_whom">
                                     <option value="">Select</option>
                                     <option value="1">ছেলেদের জন্য-১</option>
                                     <option value="2">মেয়েদের জন্য-২</option>
@@ -215,7 +215,7 @@
                         <tr>
                             <td colspan="2">
                                 <label>১.২.৫ অনুমোদন:</label>
-                                <select class="">
+                                <select class="" v-model="data.institutes.recognition">
                                     <option value="">Select</option>
                                     <option value="1">অনুমোদন প্রাপ্ত-১</option>
                                     <option value="2">অনুমোদন প্রাপ্ত নয়-২</option>
@@ -224,7 +224,7 @@
                             </td>
                             <td colspan="2">
                                 ১.২.৬ সরকারি অনুমোদনের তারিখ: &nbsp
-                                <input type="date" v-model="data.institutes.establish_date"/>
+                                <input type="date" v-model="data.institutes.nationalization_date"/>
                             </td>
                         </tr>
                     </table>
@@ -254,7 +254,7 @@
                             <tr>
                                 <td>
                                     <label>১.৩.২ বিশ্ববিদ্যালয়টির সাথে বিদেশী বিশ্ববিদ্যালয়ের সনঝোতা স্বাক্ষর আছে কি?</label> &nbsp;
-                                    <select v-model="data.institutes.geographical_status">
+                                    <select v-model="data.institutes.forgine_univ_attath_yn">
                                         <option value="">Select</option>
                                         <option value="1">হ্যাঁ-১</option>
                                         <option value="2">না-২</option>
@@ -265,16 +265,14 @@
                         <label>১.৩.৩ উত্তর হ্যাঁ হলে বিশ্ববিদ্যালয়/বিশ্ববিদ্যালয়সমূহের নাম লিখুন: (ইংরেজি বড় অক্ষরে)</label>
                         <table class="table table-sm table-striped table-bordered text-center">
                             <tr>
-                                <td class="text-left" style="width:50px">ক্র নং</td>
                                 <td>বিশ্ববিদ্যালয়ের নাম</td>
                                 <td>দেশের নাম</td>
                                 <td style="width:190px;">পরবর্তী বিশ্ববিদ্যালয়ের নাম যুক্ত করতে Add More -এ ক্লিক করুন</td>
                             </tr>
                             <tr>
-                                <td class="text-left">১</td>
-                                <td><input type="text" class="w-100" /></td>
-                                <td><input type="text" class="w-50"/></td>
-                                <td>   <button type="button" class="btn btn-info">Add More</button></td>
+                                <td><input type="text" class="w-100" v-model="data.foreign_univ_institutes[0].univ_name"/></td>
+                                <td><input type="text" class="w-50" v-model="data.foreign_univ_institutes[0].country_name"/></td>
+                                <td> <button type="button" class="btn btn-info">Add More</button></td>
                             </tr>
                         </table>
                             <label>১.৩.৪ বিশ্ববিদ্যালয়টির অধীন অনুষদ, বিভাগ, ইনস্টিটিউট ও অন্যান্য প্রতিষ্ঠানের সংখ্যা:</label>
@@ -286,17 +284,17 @@
                                     <td>ক্যাম্পাস</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" class="w-25" /></td>
-                                    <td><input type="text" class="w-25"/></td>
-                                    <td><input type="text" class="w-25"/></td>
-                                    <td><input type="text" class="w-25"/></td>
+                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_anushad_no"/></td>
+                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_dept_no"/></td>
+                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_inst_no"/></td>
+                                    <td><input type="number" class="w-25" v-model="data.institutes.univ_branch_no"/></td>
                                 </tr>
                             </table>
                             <table class="table table-bordered">
                             <tr>
                                 <td>
                                     <label>১.৩.৫ বিশ্ববিদ্যালয়টির পাঠদান পদ্ধতি:</label>
-                                    <select class="" v-model="data.committees.type">
+                                    <select class="" v-model="data.institutes.univ_edu_type">
                                         <option value="">Select</option>
                                         <option value="1">সনাতন/কোর্স-১</option>
                                         <option value="2">সেমিস্টার-২</option>
@@ -305,12 +303,12 @@
                                 </td>
                                 <td>
                                     ১.৩.৬ সেমিস্টার পদ্ধতি হলে বৎসরে কতটি সেমিস্টার:
-                                    <select class="" v-model="data.committees.type">
+                                    <select class="" v-model="data.institutes.semister_no">
                                         <option value="">Select</option>
                                         <option value="1">১টি</option>
-                                        <option value="1">২টি</option>
-                                        <option value="1">৩টি</option>
-                                        <option value="1">৪টি</option>
+                                        <option value="2">২টি</option>
+                                        <option value="3">৩টি</option>
+                                        <option value="4">৪টি</option>
                                     </select>
                                 </td>
                                 <td>
@@ -355,5 +353,5 @@
     </div>
 @endsection
 @section('javascript')
-    {{--<script src="{{ asset('js/privateComFirstPage.js') }}" type="module" defer></script>--}}
+    <script src="{{ asset('js/privateComFirstPage.js') }}" type="module" defer></script>
 @stop
