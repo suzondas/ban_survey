@@ -121,11 +121,11 @@
                             </td>
                             <td>
                                 <label class="" for="mobile">মোবাইল নম্বর:</label> &nbsp
-                                <input type="number" class="form-control" v-model="data.institutes.mobphone">
+                                <input type="text" class="form-control" v-model="data.institutes.mobphone">
                             </td>
                             <td>
                                 <label class="" for="alt_mobile">বিকল্প মোবাইর নম্বর:</label> &nbsp
-                                <input type="number" class="form-control"
+                                <input type="text" class="form-control"
                                        v-model="data.institutes.mobphone_alternate">
                             </td>
                         </tr>
@@ -133,7 +133,7 @@
 
                             <td>
                                 <label class="" for="phone">ফোন:</label> &nbsp
-                                <input type="number" class="form-control" v-model="data.institutes.telephone">
+                                <input type="text" class="form-control" v-model="data.institutes.telephone">
                             </td>
                             <td>
                                 <label class="" for="email">ই-মেইল:</label> &nbsp

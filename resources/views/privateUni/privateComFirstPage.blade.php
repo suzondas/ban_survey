@@ -313,7 +313,7 @@
                                 </td>
                                 <td>
                                     <label>১.৩.৭ পরিচালনা পর্ষদের ধরন: </label>
-                                    <select class="">
+                                    <select class="" v-model="data.institutes.uni_committee_type">
                                         <option value="">Select</option>
                                         <option value="1">সিন্ডিকেট-১</option>
                                         <option value="2">বোর্ড অব গভর্নরস-২</option>
@@ -326,12 +326,12 @@
                                         <div class="col-md-6">
                                             <label for="total"> মোট:</label>
                                             <input type="number" class="w-50"
-                                                   v-model="data.committees.total_member">
+                                                   v-model="data.institutes.uni_member_total">
                                         </div>
                                         <div class="col-md-6">
                                             <label for="female"> মহিলা: </label>
                                             <input type="number" class="w-50"
-                                                   v-model="data.committees.total_female">
+                                                   v-model="data.institutes.uni_member_female"">
                                         </div>
                                     </div>
                                 </td>
