@@ -3,6 +3,7 @@ const app = new Vue({
     data() {
         return {
             data: [],
+            testArray:[1,3,4,4,4],
             dataLoaded: true,
             dataLoadingError: true
         }
@@ -11,7 +12,12 @@ const app = new Vue({
 
     },
     methods: {
+        submitData:function () {
 
+        },
+        addTestArray:function () {
+            this.testArray.push(1);
+        }
     }
 });
 

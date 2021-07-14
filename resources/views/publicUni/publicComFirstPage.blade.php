@@ -268,16 +268,20 @@
                     <label>১.৩.৩ উত্তর হ্যাঁ হলে বিশ্ববিদ্যালয়/বিশ্ববিদ্যালয়সমূহের নাম লিখুন: (ইংরেজি বড় অক্ষরে)</label>
                     <table class="table table-sm table-striped table-bordered text-center">
                         <tr>
+                            <td>ক্রমিক</td>
                             <td>বিশ্ববিদ্যালয়ের নাম</td>
                             <td>দেশের নাম</td>
-                            <td style="width:190px;">পরবর্তী বিশ্ববিদ্যালয়ের নাম যুক্ত করতে Add More -এ ক্লিক করুন</td>
+                            <td>Action</td>
                         </tr>
-                        <tr>
-                            <td><input type="text" class="w-100" v-model="data.foreign_univ_institutes[0].univ_name"/></td>
-                            <td><input type="text" class="w-50" v-model="data.foreign_univ_institutes[0].country_name"/></td>
-                            <td> <button type="button" class="btn btn-info">Add More</button></td>
-                        </tr>
+                       <tr v-for="(item, index) in data.foreign_univ_institutes">
+                           <td>@{{ index+1 }}</td>
+                           <td><input type="text" v-model="item.univ_name"/> </td>
+                           <td><input type="text" v-model="item.country_name"/> </td>
+                           <td><button @click="data.foreign_univ_institutes.splice(index, 1)" class="btn btn-danger">Delete</button> </td>
+                       </tr>
                     </table>
+                    <input type="button" @click="addMoreForeignUniv" value="Add More" class="btn btn-warning"/>
+                    <br>
                     <label>১.৩.৪ বিশ্ববিদ্যালয়টির অধীন অনুষদ, বিভাগ, ইনস্টিটিউট ও অন্যান্য প্রতিষ্ঠানের সংখ্যা:</label>
                     <table class="table table-sm table-striped table-bordered text-center">
                         <tr>
