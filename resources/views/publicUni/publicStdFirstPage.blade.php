@@ -29,7 +29,7 @@
                         <td rowspan="3">এম ফিল শিক্ষার্থী</td>
                         <td rowspan="3">পিএইচডি শিক্ষার্থী</td>
                         <td colspan="2" rowspan="2">বিদেশী শিক্ষার্থী</td>
-                        <td>Action</td>
+                        <td rowspan="3" class="font-weight-bold">Action</td>
                     </tr>
                     <tr>
                         <td colspan="2">১ম বর্ষ</td>
@@ -57,7 +57,7 @@
                         <td>মোট</td>
                         <td>ছাত্রী</td>
                     </tr>
-                    <tr v-for="(item,index) in testArray">
+                    <tr v-for="(item,index) in ">
                         <td rowspan="2">১</td>
                         <td rowspan="2" class="text-left">computer sciecne</td>
                         <td><input type="number" class="w-50"/></td>
@@ -82,7 +82,7 @@
                         <td><button @click="testArray.splice(index,1)">Delete</button></td>
                     </tr>
                 </table>
-                <button @click="addTestArray">Add Button</button>
+                <button @click="addTestArray" class="btn btn-warning">Add Button</button>
             </div>
         </div>
         <div class="contentBox">

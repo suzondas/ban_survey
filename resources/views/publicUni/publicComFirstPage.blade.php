@@ -275,9 +275,9 @@
                         </tr>
                        <tr v-for="(item, index) in data.foreign_univ_institutes">
                            <td>@{{ index+1 }}</td>
-                           <td><input type="text" v-model="item.univ_name"/> </td>
-                           <td><input type="text" v-model="item.country_name"/> </td>
-                           <td><button @click="data.foreign_univ_institutes.splice(index, 1)" class="btn btn-danger">Delete</button> </td>
+                           <td><input type="text" class="w-100" v-model="item.univ_name"/> </td>
+                           <td><input type="text" class="w-50" v-model="item.country_name"/> </td>
+                           <td><button @click="data.foreign_univ_institutes.splice(index, 1)" >Delete</button> </td>
                        </tr>
                     </table>
                     <input type="button" @click="addMoreForeignUniv" value="Add More" class="btn btn-warning"/>
